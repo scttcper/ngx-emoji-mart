@@ -38,7 +38,11 @@ function addCustomToPool(custom, pool) {
 
 function search(
   value,
-  { emojisToShowFilter, maxResults, include, exclude, custom = [] } = {},
+  emojisToShowFilter,
+  maxResults,
+  include,
+  exclude,
+  custom = [],
 ) {
   addCustomToPool(custom, originalPool);
 

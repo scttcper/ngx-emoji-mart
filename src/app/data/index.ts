@@ -2,7 +2,7 @@ import buildSearch from '../utils/build-search';
 import data from './data';
 
 function uncompress(list) {
-  for (const short_name of list) {
+  for (const short_name of Object.keys(list)) {
     const datum = list[short_name];
 
     if (!datum.short_names) {

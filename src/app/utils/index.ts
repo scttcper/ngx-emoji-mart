@@ -54,8 +54,8 @@ function sanitize(emoji) {
   };
 }
 
-function getSanitizedData(...args) {
-  return sanitize(getData(args));
+function getSanitizedData(emoji, skin?, set?) {
+  return sanitize(getData(emoji, skin, set));
 }
 
 function getData(emoji, skin?, set?) {
