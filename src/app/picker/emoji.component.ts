@@ -1,8 +1,12 @@
-import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import {
+  Component,
+  OnChanges,
+  EventEmitter,
+  Output,
+  Input,
+} from '@angular/core';
 
 import { getData, getSanitizedData, unifiedToNative } from '../utils';
-
-const SHEET_COLUMNS = 52;
 
 @Component({
   selector: 'ngx-emoji',
@@ -19,7 +23,7 @@ const SHEET_COLUMNS = 52;
   `,
   styles: [],
 })
-export class EmojiComponent implements OnInit {
+export class EmojiComponent implements OnChanges {
   @Input() skin: 1 | 2 | 3 | 4 | 5 | 6 = 1;
   @Input()
   set:
@@ -39,7 +43,9 @@ export class EmojiComponent implements OnInit {
   @Output() leave = new EventEmitter<any>();
   @Output() click = new EventEmitter<any>();
   style: any;
+  SHEET_COLUMNS = 52;
   // TODO: replace 4.0.3 w/ dynamic get verison from emoji-datasource in package.json
+  @Input()
   backgroundImageFn = (set, sheetSize) =>
     `https://unpkg.com/emoji-datasource-${this.set}@4.0.3/img/${
       this.set
@@ -47,25 +53,23 @@ export class EmojiComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
-    console.log(this.size)
-    console.log(this.getPosition())
+  ngOnChanges() {
     this.style = {
       width: this.size + 'px',
       height: this.size + 'px',
       display: 'inline-block',
       'background-image': `url(${this.backgroundImageFn(
         this.set,
-        this.sheetSize
+        this.sheetSize,
       )})`,
-      'background-size': `${100 * SHEET_COLUMNS}%`,
+      'background-size': `${100 * this.SHEET_COLUMNS}%`,
       'background-position': this.getPosition(),
     };
   }
 
   getPosition() {
     const { sheet_x, sheet_y } = this.getData();
-    const multiply = 100 / (SHEET_COLUMNS - 1);
+    const multiply = 100 / (this.SHEET_COLUMNS - 1);
     return `${multiply * sheet_x}% ${multiply * sheet_y}%`;
   }
 
@@ -79,19 +83,16 @@ export class EmojiComponent implements OnInit {
 
   handleClick($event) {
     const emoji = this.getSanitizedData();
-
     this.click.emit({ emoji, $event });
   }
 
   handleOver($event) {
     const emoji = this.getSanitizedData();
-
     this.over.emit({ emoji, $event });
   }
 
   handleLeave($event) {
     const emoji = this.getSanitizedData();
-
     this.leave.emit({ emoji, $event });
   }
 }
