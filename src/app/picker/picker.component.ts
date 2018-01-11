@@ -1,25 +1,37 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  ViewChild,
+  ElementRef,
+  ViewChildren,
+  QueryList,
+} from '@angular/core';
 
 import data from '../data';
+import store from '../utils/store';
+import { CategoryComponent } from './category.component';
+import { AnchorsComponent } from './anchors.component';
+
 
 const CUSTOM_EMOJIS = [
   {
     name: 'Party Parrot',
     short_names: ['parrot'],
     keywords: ['party'],
-    imageUrl: 'http://cultofthepartyparrot.com/parrots/hd/parrot.gif'
+    imageUrl: 'http://cultofthepartyparrot.com/parrots/hd/parrot.gif',
   },
   {
     name: 'Octocat',
     short_names: ['octocat'],
     keywords: ['github'],
-    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7'
+    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7',
   },
   {
     name: 'Squirrel',
     short_names: ['shipit', 'squirrel'],
     keywords: ['github'],
-    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/shipit.png?v7'
+    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/shipit.png?v7',
   },
 ];
 
@@ -78,12 +90,18 @@ export class PickerComponent implements OnInit {
   @Input() hideRecent = true;
   @Input() include: string[] = [];
   @Input() exclude: string[] = [];
+  @ViewChild('scrollRef') scrollRef: ElementRef;
+  @ViewChild('anchorsRef') anchorsRef: AnchorsComponent;
+  @ViewChildren('categoryRef') categoryRefs: QueryList<CategoryComponent>;
+  @Input() skin: any;
+  firstRender = true;
 
   constructor() {}
 
   ngOnInit() {
     this.i18n = { ...I18N, ...this.i18n };
     this.i18n.categories = { ...I18N.categories, ...this.i18n.categories };
+    this.skin = store.get('skin') || this.skin;
 
     const allCategories = [].concat(data.categories);
 
@@ -171,5 +189,35 @@ export class PickerComponent implements OnInit {
     }
 
     this.categories.unshift(SEARCH_CATEGORY);
+  }
+
+  handleAnchorClick($event) {
+    const component = this.categoryRefs.find((n) => n.id === $event.category.id);
+      debugger;
+    let scrollToComponent = null;
+
+    scrollToComponent = () => {
+      debugger;
+      if (component) {
+        let { top } = component;
+
+        if ($event.category.first) {
+          top = 0;
+        } else {
+          top += 1;
+        }
+        debugger;
+        this.scrollRef.nativeElement.scrollTop = top;
+      }
+    };
+
+    if (SEARCH_CATEGORY.emojis) {
+      // this.handleSearch(null);
+      // this.search.clear();
+
+      window.requestAnimationFrame(scrollToComponent);
+    } else {
+      scrollToComponent();
+    }
   }
 }

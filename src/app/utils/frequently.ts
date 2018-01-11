@@ -1,4 +1,4 @@
-import store from './store'
+import store from './store';
 
 const DEFAULTS = [
   '+1',
@@ -17,65 +17,73 @@ const DEFAULTS = [
   'sunglasses',
   'heart',
   'poop',
-]
+];
 
-let frequently, initialized
-let defaults = {}
+let frequently, initialized;
+let defaults = {};
 
 function init() {
-  initialized = true
-  frequently = store.get('frequently')
+  initialized = true;
+  frequently = store.get('frequently');
 }
 
 function add(emoji) {
-  if (!initialized) init()
-  var { id } = emoji
+  if (!initialized) {
+    init();
+  }
+  const { id } = emoji;
 
-  frequently || (frequently = defaults)
-  frequently[id] || (frequently[id] = 0)
-  frequently[id] += 1
+  if (!frequently) {
+    frequently = defaults;
+  }
+  if (!frequently[id]) {
+    frequently[id] = 0;
+  }
+  frequently[id] += 1;
 
-  store.set('last', id)
-  store.set('frequently', frequently)
+  store.set('last', id);
+  store.set('frequently', frequently);
 }
 
 function get(perLine) {
-  if (!initialized) init()
+  if (!initialized) {
+    init();
+  }
   if (!frequently) {
-    defaults = {}
+    defaults = {};
 
-    const result = []
+    const result = [];
 
     for (let i = 0; i < perLine; i++) {
-      defaults[DEFAULTS[i]] = perLine - i
-      result.push(DEFAULTS[i])
+      defaults[DEFAULTS[i]] = perLine - i;
+      result.push(DEFAULTS[i]);
     }
 
-    return result
+    return result;
   }
 
-  const quantity = perLine * 4
-  const frequentlyKeys = []
+  const quantity = perLine * 4;
+  const frequentlyKeys = [];
 
-  for (let key in frequently) {
+  for (const key of Object.keys(frequently)) {
     if (frequently.hasOwnProperty(key)) {
-      frequentlyKeys.push(key)
+      frequentlyKeys.push(key);
     }
   }
 
   const sorted = frequentlyKeys
     .sort((a, b) => frequently[a] - frequently[b])
-    .reverse()
-  const sliced = sorted.slice(0, quantity)
+    .reverse();
+  const sliced = sorted.slice(0, quantity);
 
-  const last = store.get('last')
+  const last = store.get('last');
 
-  if (last && sliced.indexOf(last) == -1) {
-    sliced.pop()
-    sliced.push(last)
+  if (last && sliced.indexOf(last) === -1) {
+    sliced.pop();
+    sliced.push(last);
   }
 
-  return sliced
+  return sliced;
 }
 
-export default { add, get }
+export default { add, get };

@@ -1,11 +1,25 @@
 <div [attr.width]="width" class="emoji-mart">
-  <emoji-mart-anchors [categories]="categories"></emoji-mart-anchors>
+  <emoji-mart-anchors
+    #anchorsRef
+    [categories]="categories"
+    (anchorClick)="handleAnchorClick($event)"
+  >
+  </emoji-mart-anchors>
+  <div
+    #scrollRef
+    class="emoji-mart-scroll"
+  >
+    <emoji-category
+      *ngFor="let category of categories; let idx = index;"
+      #categoryRef
+      [id]="category.id"
+      [name]="category.name"
+      [emojis]="category.emojis"
+      [perLine]="perLine"
+      [native]="native"
+      [hasStickyPosition]="native"
+      [i18n]="i18n"
+    >
+    </emoji-category>
 
 </div>
-
-
-<ngx-emoji
-  [native]="true"
-  [emoji]="'+1'"
-  size="48"
-></ngx-emoji>

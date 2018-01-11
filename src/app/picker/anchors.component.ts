@@ -41,7 +41,8 @@ export class AnchorsComponent implements OnInit {
   ngOnInit() {
   }
 
-  handleClick($event, index) {
+  handleClick($event, index: number) {
+    console.log(this.categories[index]);
     this.anchorClick.emit({
       category: this.categories[index],
       index,

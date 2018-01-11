@@ -1,57 +1,64 @@
-var NAMESPACE = 'emoji-mart'
+let NAMESPACE = 'emoji-mart';
 
-const _JSON = JSON
+const _JSON = JSON;
 
-var isLocalStorageSupported =
-  typeof window !== 'undefined' && 'localStorage' in window
+const isLocalStorageSupported =
+  typeof window !== 'undefined' && 'localStorage' in window;
 
-let getter
-let setter
+let getter;
+let setter;
 
 function setHandlers(handlers) {
-  handlers || (handlers = {})
+  if (!handlers) {
+    handlers = {};
+  }
 
-  getter = handlers.getter
-  setter = handlers.setter
+  getter = handlers.getter;
+  setter = handlers.setter;
 }
 
 function setNamespace(namespace) {
-  NAMESPACE = namespace
+  NAMESPACE = namespace;
 }
 
 function update(state) {
-  for (let key in state) {
-    let value = state[key]
-    set(key, value)
+  for (const key of Object.keys(state)) {
+    const value = state[key];
+    set(key, value);
   }
 }
 
 function set(key, value) {
   if (setter) {
-    setter(key, value)
+    setter(key, value);
   } else {
-    if (!isLocalStorageSupported) return
+    if (!isLocalStorageSupported) {
+      return;
+    }
     try {
-      window.localStorage[`${NAMESPACE}.${key}`] = _JSON.stringify(value)
+      window.localStorage[`${NAMESPACE}.${key}`] = _JSON.stringify(value);
     } catch (e) {}
   }
 }
 
 function get(key) {
   if (getter) {
-    return getter(key)
+    return getter(key);
   } else {
-    if (!isLocalStorageSupported) return
+    let value;
+    if (!isLocalStorageSupported) {
+      return;
+    }
     try {
-      var value = window.localStorage[`${NAMESPACE}.${key}`]
+      value = window.localStorage[`${NAMESPACE}.${key}`];
     } catch (e) {
-      return
+      return;
     }
 
     if (value) {
-      return JSON.parse(value)
+      return JSON.parse(value);
     }
   }
 }
 
-export default { update, set, get, setNamespace, setHandlers }
+export default { update, set, get, setNamespace, setHandlers };
