@@ -10,7 +10,7 @@
     class="emoji-mart-scroll"
   >
     <emoji-category
-      *ngFor="let category of categories; let idx = index;"
+      *ngFor="let category of categories; let idx = index; trackBy: categoryTrack"
       #categoryRef
       [id]="category.id"
       [name]="category.name"

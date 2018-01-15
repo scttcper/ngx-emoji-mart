@@ -6,6 +6,7 @@ import {
   ElementRef,
   ViewChildren,
   QueryList,
+  ChangeDetectionStrategy,
 } from '@angular/core';
 
 import data from '../data';
@@ -66,6 +67,8 @@ const I18N = {
   selector: 'emoji-mart',
   templateUrl: './picker.component.html',
   styles: [],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  preserveWhitespaces: false,
 })
 export class PickerComponent implements OnInit {
   @Input() emojiSize = 24;
@@ -83,7 +86,7 @@ export class PickerComponent implements OnInit {
   // backgroundImageFn = Emoji.defaultProps.backgroundImageFn;
   @Input() emojisToShowFilter = null;
   @Input() showPreview = true;
-  // emojiTooltip = Emoji.defaultProps.tooltip;
+  @Input() emojiTooltip = false;
   @Input() autoFocus = false;
   // TODO: move CUSTOM_EMOJIS to demo make empty array
   @Input() custom = CUSTOM_EMOJIS;
@@ -216,5 +219,8 @@ export class PickerComponent implements OnInit {
     } else {
       scrollToComponent();
     }
+  }
+  categoryTrack(index, item) {
+    return item.id;
   }
 }

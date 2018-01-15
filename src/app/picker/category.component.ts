@@ -5,6 +5,7 @@ import {
   ViewChild,
   ElementRef,
   AfterViewInit,
+  ChangeDetectionStrategy,
 } from '@angular/core';
 
 import frequently from '../utils/frequently';
@@ -31,7 +32,7 @@ import { getData } from '../utils';
 
       <ng-template [ngIf]="emojis">
         <ngx-emoji
-          *ngFor="let emoji of emojis"
+          *ngFor="let emoji of emojis; trackBy: trackById"
           [emoji]="emoji"
           [size]="emojiSize"
           [native]="emojiNative"
@@ -57,6 +58,8 @@ import { getData } from '../utils';
     </div>
   `,
   styles: [],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  preserveWhitespaces: false,
 })
 export class CategoryComponent implements OnInit, AfterViewInit {
   @Input() emojis: any[] = [];
@@ -165,5 +168,8 @@ export class CategoryComponent implements OnInit, AfterViewInit {
     }
 
     return this.emojis;
+  }
+  trackById(index, item) {
+    return item;
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 
 import SVGs from '../svgs';
 
@@ -29,6 +29,8 @@ import SVGs from '../svgs';
   </div>
   `,
   styles: [],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  preserveWhitespaces: false,
 })
 export class AnchorsComponent implements OnInit {
   @Input() categories: any = [];

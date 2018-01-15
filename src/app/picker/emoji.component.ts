@@ -4,6 +4,7 @@ import {
   EventEmitter,
   Output,
   Input,
+  ChangeDetectionStrategy,
 } from '@angular/core';
 
 import { getData, getSanitizedData, unifiedToNative } from '../utils';
@@ -17,6 +18,8 @@ import { getData, getSanitizedData, unifiedToNative } from '../utils';
     (mouseleave)="handleLeave($event)"
     [title]="title"
     class="emoji-mart-emoji {{ className }}"
+    [class.emoji-mart-emoji-native]="native"
+    [class.emoji-mart-emoji-custom]="custom"
   >
     <span [ngStyle]="style">
       {{ unified }}
@@ -25,6 +28,8 @@ import { getData, getSanitizedData, unifiedToNative } from '../utils';
   </span>
   `,
   styles: [],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  preserveWhitespaces: false,
 })
 export class EmojiComponent implements OnChanges {
   @Input() skin: 1 | 2 | 3 | 4 | 5 | 6 = 1;
@@ -48,8 +53,8 @@ export class EmojiComponent implements OnChanges {
   @Output() click = new EventEmitter<any>();
   style: any;
   title = '';
-  className = '';
   unified: string | null;
+  custom: boolean;
   SHEET_COLUMNS = 52;
   // TODO: replace 4.0.3 w/ dynamic get verison from emoji-datasource in package.json
   @Input()
@@ -71,6 +76,7 @@ export class EmojiComponent implements OnChanges {
     // const children = this.children;
     const title = null;
     this.unified = null;
+    this.custom = custom;
 
     if (!unified && !custom) {
       return null;
@@ -81,7 +87,6 @@ export class EmojiComponent implements OnChanges {
     }
 
     if (this.native && unified) {
-      this.className += ' emoji-mart-emoji-native';
       this.style = { fontSize: `${this.size}px` };
       this.unified = unifiedToNative(unified);
 
@@ -91,7 +96,6 @@ export class EmojiComponent implements OnChanges {
         this.style.height = `${this.size}px`;
       }
     } else if (custom) {
-      this.className += ' emoji-mart-emoji-custom';
       this.style = {
         width: this.size,
         height: this.size,
