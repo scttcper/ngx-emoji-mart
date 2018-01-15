@@ -30,7 +30,16 @@ import { getData } from '../utils';
       </div>
 
       <ng-template [ngIf]="emojis">
-        <ngx-emoji *ngFor="let emoji of emojis" [emoji]="emoji" [size]="38">
+        <ngx-emoji
+          *ngFor="let emoji of emojis"
+          [emoji]="emoji"
+          [size]="emojiSize"
+          [native]="emojiNative"
+          [set]="emojiSet"
+          [sheetSize]="emojiSheetSize"
+          [forceSize]="emojiForceSize"
+          [tooltip]="emojiTooltip"
+        >
         </ngx-emoji>
       </ng-template>
 
@@ -55,17 +64,22 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   @Input() name: string;
   @Input() native: boolean;
   @Input() perLine: number;
-  @Input() emojiProps: object;
   @Input() recent: string[];
   @Input() custom: any;
   @Input() i18n: any;
   @Input() id: any;
+  @Input() emojiNative: any;
+  @Input() emojiSkin: any;
+  @Input() emojiSize: any;
+  @Input() emojiSet: any;
+  @Input() emojiSheetSize: any;
+  @Input() emojiForceSize: any;
+  @Input() emojiTooltip: any;
   @ViewChild('container') container: ElementRef;
   @ViewChild('label') label: ElementRef;
   containerStyles: any = {};
   labelStyles: any = {};
   labelSpanStyles: any = {};
-  console = console;
   parent: Element;
   margin = 0;
   minMargin = 0;

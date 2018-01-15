@@ -7,6 +7,12 @@ import { CategoryComponent } from './category.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [PickerComponent, EmojiComponent, AnchorsComponent, CategoryComponent],
+  exports: [PickerComponent, EmojiComponent],
+  declarations: [
+    PickerComponent,
+    EmojiComponent,
+    AnchorsComponent,
+    CategoryComponent,
+  ],
 })
 export class PickerModule {}

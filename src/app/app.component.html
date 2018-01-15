@@ -1,3 +1,15 @@
+<button
+  *ngFor="let theme of themes"
+  (click)="setTheme(theme)"
+>
+{{ theme }}
+</button>
 
+<div style="width: 338px;">
+  <emoji-mart
+    [set]="set"
+    [native]="native"
+  ></emoji-mart>
+</div>
 
 <router-outlet></router-outlet>

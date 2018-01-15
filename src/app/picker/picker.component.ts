@@ -76,10 +76,10 @@ export class PickerComponent implements OnInit {
   @Input() emoji = 'department_store';
   @Input() color = '#ae65c5';
   @Input() categories: any[] = [];
-  // set = Emoji.defaultProps.set;
+  @Input() set: 'apple' | 'google' | 'twitter' | 'emojione' | 'messenger' | 'facebook';
   // skin = Emoji.defaultProps.skin;
-  // native = Emoji.defaultProps.native;
-  // sheetSize = Emoji.defaultProps.sheetSize;
+  @Input() native = true;
+  sheetSize: 16 | 20 | 32 | 64 = 64;
   // backgroundImageFn = Emoji.defaultProps.backgroundImageFn;
   @Input() emojisToShowFilter = null;
   @Input() showPreview = true;
@@ -193,11 +193,9 @@ export class PickerComponent implements OnInit {
 
   handleAnchorClick($event) {
     const component = this.categoryRefs.find((n) => n.id === $event.category.id);
-      debugger;
     let scrollToComponent = null;
 
     scrollToComponent = () => {
-      debugger;
       if (component) {
         let { top } = component;
 
@@ -206,7 +204,6 @@ export class PickerComponent implements OnInit {
         } else {
           top += 1;
         }
-        debugger;
         this.scrollRef.nativeElement.scrollTop = top;
       }
     };

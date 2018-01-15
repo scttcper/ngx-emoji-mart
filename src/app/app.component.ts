@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
-  title = 'app';
+  themes = ['native', 'apple', 'google', 'twitter', 'emojione', 'messenger', 'facebook'];
+  set = 'native';
+  native = true;
+
+  setTheme(set: string) {
+    this.native = set === 'native';
+    this.set = set;
+  }
 }
