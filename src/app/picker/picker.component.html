@@ -1,10 +1,21 @@
 <div [attr.width]="width" class="emoji-mart">
-  <emoji-mart-anchors
-    #anchorsRef
-    [categories]="categories"
-    (anchorClick)="handleAnchorClick($event)"
+  <div class="emoji-mart-bar">
+    <emoji-mart-anchors
+      #anchorsRef
+      [categories]="categories"
+      (anchorClick)="handleAnchorClick($event)"
+    >
+    </emoji-mart-anchors>
+  </div>
+  <emoji-search
+    [i18n]="i18n"
+    (search)="handleSearch($event)"
+    [include]="include"
+    [exclude]="exclude"
+    [custom]="custom"
+    [emojisToShowFilter]="emojisToShowFilter"
   >
-  </emoji-mart-anchors>
+  </emoji-search>
   <div
     #scrollRef
     class="emoji-mart-scroll"
@@ -19,6 +30,7 @@
       [native]="native"
       [hasStickyPosition]="native"
       [i18n]="i18n"
+      [custom]="custom"
 
       [emojiNative]="native"
       [emojiSkin]="skin"

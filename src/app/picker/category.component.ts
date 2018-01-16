@@ -6,6 +6,7 @@ import {
   ElementRef,
   AfterViewInit,
   ChangeDetectionStrategy,
+  ChangeDetectorRef,
 } from '@angular/core';
 
 import frequently from '../utils/frequently';
@@ -89,7 +90,7 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   maxMargin = 0;
   top: number;
 
-  constructor() {}
+  constructor(private changeDetectorRef: ChangeDetectorRef) {}
 
   ngOnInit() {
     if (!this.emojis) {
@@ -168,6 +169,11 @@ export class CategoryComponent implements OnInit, AfterViewInit {
     }
 
     return this.emojis;
+  }
+  updateDisplay(display) {
+    const emojis = this.getEmojis();
+    this.containerStyles.display = display;
+    this.changeDetectorRef.detectChanges();
   }
   trackById(index, item) {
     return item;

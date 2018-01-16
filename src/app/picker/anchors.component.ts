@@ -12,8 +12,8 @@ import SVGs from '../svgs';
         title="i18n.categories[category.id]"
         (click)="this.handleClick($event, idx)"
         class="emoji-mart-anchor"
-        [class.emoji-mart-anchor-selected]="isSelected"
-        [style.color]="isSelected ? color : null"
+        [class.emoji-mart-anchor-selected]="category.name === selected"
+        [style.color]="category.name === selected ? color : null"
       >
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -36,15 +36,19 @@ export class AnchorsComponent implements OnInit {
   @Input() categories: any = [];
   @Input() color: any = [];
   @Output() anchorClick = new EventEmitter<any>();
+  selected = false;
   svgs = SVGs;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
+    const defaultCategory = this.categories.filter(category => category.first)[0];
+    this.selected = defaultCategory.name;
   }
 
   handleClick($event, index: number) {
-    console.log(this.categories[index]);
     this.anchorClick.emit({
       category: this.categories[index],
       index,

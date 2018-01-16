@@ -1,12 +1,13 @@
 import data from '../data';
 import { getData, getSanitizedData, intersect } from '.';
 
+// TODO: make service
 const originalPool: any = {};
 const index: any = {};
 const emojisList: any = {};
 const emoticonsList: any = {};
 
-for (const emoji of data.emojis) {
+for (const emoji of Object.keys(data.emojis)) {
   const emojiData = data.emojis[emoji];
   const { short_names, emoticons } = emojiData;
   const id = short_names[0];
@@ -25,6 +26,7 @@ for (const emoji of data.emojis) {
   originalPool[id] = emojiData;
 }
 
+
 function addCustomToPool(custom, pool) {
   custom.forEach(emoji => {
     const emojiId = emoji.id || emoji.short_names[0];
@@ -36,23 +38,23 @@ function addCustomToPool(custom, pool) {
   });
 }
 
-function search(
-  value,
-  emojisToShowFilter,
-  maxResults,
-  include,
-  exclude,
-  custom = [],
+export function search(
+  value: string,
+  emojisToShowFilter: (x: any) => boolean,
+  maxResults: number,
+  include: any[],
+  exclude: any[],
+  custom: any[] = [],
 ) {
   addCustomToPool(custom, originalPool);
 
-  if (maxResults) {
+  if (!maxResults) {
     maxResults = 75;
   }
-  if (include) {
+  if (!include) {
     include = [];
   }
-  if (exclude) {
+  if (!exclude) {
     exclude = [];
   }
 
@@ -98,6 +100,8 @@ function search(
         }
       }
     }
+    console.log(values)
+    console.log(pool)
 
     allResults = values
       .map(v => {
@@ -108,7 +112,7 @@ function search(
         for (let charIndex = 0; charIndex < v.length; charIndex++) {
           const char = v[charIndex];
           length++;
-          if (aIndex[char]) {
+          if (!aIndex[char]) {
             aIndex[char] = {};
           }
           aIndex = aIndex[char];
@@ -177,4 +181,3 @@ function search(
   return results;
 }
 
-export default { search, emojis: emojisList, emoticons: emoticonsList };

@@ -59,6 +59,9 @@ function getSanitizedData(emoji, skin?, set?) {
 }
 
 function getData(emoji, skin?, set?) {
+  if (!emoji) {
+    return;
+  }
   let emojiData: any = {};
 
   if (typeof emoji === 'string') {

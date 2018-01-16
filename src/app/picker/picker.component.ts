@@ -93,9 +93,9 @@ export class PickerComponent implements OnInit {
   @Input() hideRecent = true;
   @Input() include: string[] = [];
   @Input() exclude: string[] = [];
-  @ViewChild('scrollRef') scrollRef: ElementRef;
-  @ViewChild('anchorsRef') anchorsRef: AnchorsComponent;
-  @ViewChildren('categoryRef') categoryRefs: QueryList<CategoryComponent>;
+  @ViewChild('scrollRef') private scrollRef: ElementRef;
+  @ViewChild('anchorsRef') private anchorsRef: AnchorsComponent;
+  @ViewChildren('categoryRef') private categoryRefs: QueryList<CategoryComponent>;
   @Input() skin: any;
   firstRender = true;
 
@@ -222,5 +222,20 @@ export class PickerComponent implements OnInit {
   }
   categoryTrack(index, item) {
     return item.id;
+  }
+  handleSearch(emojis: any) {
+    SEARCH_CATEGORY.emojis = emojis;
+    for (const component of this.categoryRefs.toArray()) {
+      if (component.name === 'Search') {
+        component.emojis = emojis;
+        component.updateDisplay('inherit');
+      } else {
+        component.updateDisplay('none');
+      }
+    }
+
+    // this.forceUpdate();
+    this.scrollRef.nativeElement.scrollTop = 0;
+    // this.handleScroll();
   }
 }
