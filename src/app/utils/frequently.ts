@@ -27,7 +27,7 @@ function init() {
   frequently = store.get('frequently');
 }
 
-function add(emoji) {
+export function add(emoji) {
   if (!initialized) {
     init();
   }
@@ -45,7 +45,7 @@ function add(emoji) {
   store.set('frequently', frequently);
 }
 
-function get(perLine) {
+export function get(perLine) {
   if (!initialized) {
     init();
   }
@@ -58,7 +58,6 @@ function get(perLine) {
       defaults[DEFAULTS[i]] = perLine - i;
       result.push(DEFAULTS[i]);
     }
-
     return result;
   }
 
@@ -85,5 +84,3 @@ function get(perLine) {
 
   return sliced;
 }
-
-export default { add, get };

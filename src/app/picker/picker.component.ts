@@ -98,6 +98,8 @@ export class PickerComponent implements OnInit {
   @ViewChildren('categoryRef') private categoryRefs: QueryList<CategoryComponent>;
   @Input() skin: any;
   firstRender = true;
+  RECENT_CATEGORY = RECENT_CATEGORY;
+  recent: string[];
 
   constructor() {}
 
@@ -228,9 +230,9 @@ export class PickerComponent implements OnInit {
     for (const component of this.categoryRefs.toArray()) {
       if (component.name === 'Search') {
         component.emojis = emojis;
-        component.updateDisplay('inherit');
+        component.updateDisplay(emojis ? 'inherit' : 'none');
       } else {
-        component.updateDisplay('none');
+        component.updateDisplay(emojis ? 'none' : 'inherit');
       }
     }
 

@@ -9,7 +9,7 @@ import {
   ChangeDetectorRef,
 } from '@angular/core';
 
-import frequently from '../utils/frequently';
+import * as frequently from '../utils/frequently';
 import { getData } from '../utils';
 
 @Component({
@@ -93,6 +93,8 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   constructor(private changeDetectorRef: ChangeDetectorRef) {}
 
   ngOnInit() {
+    this.emojis = this.getEmojis();
+
     if (!this.emojis) {
       this.containerStyles = { display: 'none' };
     }
@@ -144,7 +146,7 @@ export class CategoryComponent implements OnInit, AfterViewInit {
 
   getEmojis() {
     if (this.name === 'Recent') {
-      const frequentlyUsed = this.recent || frequently.get(this.perLine);
+      const frequentlyUsed: any[] = this.recent || frequently.get(this.perLine);
 
       if (frequentlyUsed.length) {
         this.emojis = frequentlyUsed
