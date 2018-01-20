@@ -4,6 +4,8 @@
       #anchorsRef
       [categories]="categories"
       (anchorClick)="handleAnchorClick($event)"
+      [color]="color"
+      [selected]="selected"
     >
     </emoji-mart-anchors>
   </div>
@@ -19,8 +21,9 @@
   <div
     #scrollRef
     class="emoji-mart-scroll"
+    (scroll)="handleScroll()"
   >
-    <emoji-category
+    <div emoji-category
       *ngFor="let category of categories; let idx = index; trackBy: categoryTrack"
       #categoryRef
       [id]="category.id"
@@ -41,6 +44,6 @@
       [emojiForceSize]="native"
       [emojiTooltip]="emojiTooltip"
     >
-    </emoji-category>
+    </div>
 
 </div>

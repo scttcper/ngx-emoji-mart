@@ -13,50 +13,50 @@ import * as frequently from '../utils/frequently';
 import { getData } from '../utils';
 
 @Component({
-  selector: 'emoji-category',
+  selector: '[emoji-category]',
   template: `
+  <div
+    #container
+    class="emoji-mart-category"
+    [class.emoji-mart-no-results]="emojis && !emojis.length"
+    [ngStyle]="containerStyles"
+  >
     <div
-      #container
-      class="emoji-mart-category"
-      [class.emoji-mart-no-results]="emojis && !emojis.length"
-      [ngStyle]="containerStyles"
+      [ngStyle]="labelStyles"
+      [attr.data-name]="name"
+      class="emoji-mart-category-label"
     >
-      <div
-        [ngStyle]="labelStyles"
-        [attr.data-name]="name"
-        class="emoji-mart-category-label"
-      >
-        <span style="labelSpanStyles" #label>
-          {{ i18n.categories[id] }}
-        </span>
-      </div>
-
-      <ng-template [ngIf]="emojis">
-        <ngx-emoji
-          *ngFor="let emoji of emojis; trackBy: trackById"
-          [emoji]="emoji"
-          [size]="emojiSize"
-          [native]="emojiNative"
-          [set]="emojiSet"
-          [sheetSize]="emojiSheetSize"
-          [forceSize]="emojiForceSize"
-          [tooltip]="emojiTooltip"
-        >
-        </ngx-emoji>
-      </ng-template>
-
-      <div *ngIf="emojis && !emojis.length">
-        <div>
-          <ngx-emoji [emoji]="emoji" [size]="38">
-          </ngx-emoji>
-        </div>
-
-        <div className="emoji-mart-no-results-label">
-          {{ i18n.notfound }}
-        </div>
-      </div>
-
+      <span style="labelSpanStyles" #label>
+        {{ i18n.categories[id] }}
+      </span>
     </div>
+
+    <ng-template [ngIf]="emojis">
+      <ngx-emoji
+        *ngFor="let emoji of emojis; trackBy: trackById"
+        [emoji]="emoji"
+        [size]="emojiSize"
+        [native]="emojiNative"
+        [set]="emojiSet"
+        [sheetSize]="emojiSheetSize"
+        [forceSize]="emojiForceSize"
+        [tooltip]="emojiTooltip"
+      >
+      </ngx-emoji>
+    </ng-template>
+
+    <div *ngIf="emojis && !emojis.length">
+      <div>
+        <ngx-emoji [emoji]="emoji" [size]="38">
+        </ngx-emoji>
+      </div>
+
+      <div className="emoji-mart-no-results-label">
+        {{ i18n.notfound }}
+      </div>
+    </div>
+
+  </div>
   `,
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,

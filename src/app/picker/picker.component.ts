@@ -7,6 +7,7 @@ import {
   ViewChildren,
   QueryList,
   ChangeDetectionStrategy,
+  AfterViewInit,
 } from '@angular/core';
 
 import data from '../data';
@@ -70,7 +71,7 @@ const I18N = {
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
-export class PickerComponent implements OnInit {
+export class PickerComponent implements OnInit, AfterViewInit {
   @Input() emojiSize = 24;
   @Input() perLine = 9;
   @Input() i18n: any = {};
@@ -97,6 +98,10 @@ export class PickerComponent implements OnInit {
   @ViewChild('anchorsRef') private anchorsRef: AnchorsComponent;
   @ViewChildren('categoryRef') private categoryRefs: QueryList<CategoryComponent>;
   @Input() skin: any;
+  scrollHeight: number;
+  clientHeight: number;
+  selected: string;
+  scrollTop: number;
   firstRender = true;
   RECENT_CATEGORY = RECENT_CATEGORY;
   recent: string[];
@@ -194,6 +199,26 @@ export class PickerComponent implements OnInit {
     }
 
     this.categories.unshift(SEARCH_CATEGORY);
+    this.selected = this.categories.filter(category => category.first)[0].name;
+  }
+
+  ngAfterViewInit() {
+    this.updateCategoriesSize();
+  }
+
+  updateCategoriesSize() {
+    for (let i = 0, l = this.categories.length; i < l; i++) {
+      const component = this.categoryRefs[`category-${i}`];
+      if (component) {
+        component.memoizeSize();
+      }
+    }
+
+    if (this.scrollRef) {
+      const target = this.scrollRef.nativeElement;
+      this.scrollHeight = target.scrollHeight;
+      this.clientHeight = target.clientHeight;
+    }
   }
 
   handleAnchorClick($event) {
@@ -224,6 +249,62 @@ export class PickerComponent implements OnInit {
   }
   categoryTrack(index, item) {
     return item.id;
+  }
+  handleScroll() {
+    // this.waitingForPaint = false;
+
+    // if (!this.scroll) {
+    //   return;
+    // }
+
+    let activeCategory = null;
+    let scrollTop;
+
+    if (SEARCH_CATEGORY.emojis) {
+      activeCategory = SEARCH_CATEGORY;
+    } else {
+      const target = this.scrollRef.nativeElement;
+      scrollTop = target.scrollTop;
+      const scrollingDown = scrollTop > (this.scrollTop || 0);
+      let minTop = 0;
+      console.log(scrollTop)
+
+      for (let i = 0, l = this.categories.length; i < l; i++) {
+        const ii = scrollingDown ? this.categories.length - 1 - i : i;
+        const category = this.categories[ii];
+        const component = this.categoryRefs.find((n) => n.id === category.id);
+
+        if (component) {
+          const active = component.handleScroll(scrollTop);
+
+          if (!minTop || component.top < minTop) {
+            if (component.top > 0) {
+              minTop = component.top;
+            }
+          }
+
+          if (active && !activeCategory) {
+            activeCategory = category;
+          }
+        }
+      }
+
+      if (scrollTop < minTop) {
+        activeCategory = this.categories.filter(category => !(category.anchor === false))[0];
+      } else if (scrollTop + this.clientHeight >= this.scrollHeight) {
+        activeCategory = this.categories[this.categories.length - 1];
+      }
+    }
+
+    if (activeCategory) {
+      const { name: categoryName } = activeCategory;
+
+      if (this.selected !== categoryName) {
+        this.selected = categoryName;
+      }
+    }
+
+    this.scrollTop = scrollTop;
   }
   handleSearch(emojis: any) {
     SEARCH_CATEGORY.emojis = emojis;

@@ -35,8 +35,8 @@ import SVGs from '../svgs';
 export class AnchorsComponent implements OnInit {
   @Input() categories: any = [];
   @Input() color: any = [];
+  @Input() selected: string;
   @Output() anchorClick = new EventEmitter<any>();
-  selected = false;
   svgs = SVGs;
 
   constructor() {
@@ -44,8 +44,6 @@ export class AnchorsComponent implements OnInit {
   }
 
   ngOnInit() {
-    const defaultCategory = this.categories.filter(category => category.first)[0];
-    this.selected = defaultCategory.name;
   }
 
   handleClick($event, index: number) {

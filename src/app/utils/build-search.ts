@@ -10,7 +10,7 @@ export default data => {
       (split ? string.split(/[-|_|\s]+/) : [string]).forEach(s => {
         s = s.toLowerCase();
 
-        if (search.indexOf(s) == -1) {
+        if (search.indexOf(s) === -1) {
           search.push(s);
         }
       });
