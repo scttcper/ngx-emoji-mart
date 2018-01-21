@@ -100,8 +100,6 @@ export function search(
         }
       }
     }
-    console.log(values)
-    console.log(pool)
 
     allResults = values
       .map(v => {

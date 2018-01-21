@@ -43,7 +43,23 @@
       [emojiSheetSize]="sheetSize"
       [emojiForceSize]="native"
       [emojiTooltip]="emojiTooltip"
+      (over)="handleEmojiOver($event)"
     >
     </div>
 
+</div>
+<div class="emoji-mart-bar">
+  <emoji-preview
+    #previewRef
+    [title]="title"
+    [emoji]="previewEmoji"
+
+    [emojiNative]="native"
+    [emojiSize]="38"
+    [emojiSkin]="skin"
+    [emojiSet]="set"
+    [emojiSheetSize]="sheetSize"
+    [emojiBackgroundImageFn]="backgroundImageFn"
+
+  ></emoji-preview>
 </div>

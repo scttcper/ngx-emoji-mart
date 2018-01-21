@@ -97,8 +97,8 @@ export class EmojiComponent implements OnChanges {
       }
     } else if (custom) {
       this.style = {
-        width: this.size,
-        height: this.size,
+        width: `${this.size}px`,
+        height: `${this.size}px`,
         display: 'inline-block',
         backgroundImage: `url(${imageUrl})`,
         backgroundSize: 'contain',

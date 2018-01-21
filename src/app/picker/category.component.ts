@@ -2,11 +2,13 @@ import {
   Component,
   OnInit,
   Input,
+  Output,
   ViewChild,
   ElementRef,
   AfterViewInit,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
+  EventEmitter,
 } from '@angular/core';
 
 import * as frequently from '../utils/frequently';
@@ -41,6 +43,7 @@ import { getData } from '../utils';
         [sheetSize]="emojiSheetSize"
         [forceSize]="emojiForceSize"
         [tooltip]="emojiTooltip"
+        (over)="over.emit($event)"
       >
       </ngx-emoji>
     </ng-template>
@@ -79,6 +82,7 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   @Input() emojiSheetSize: any;
   @Input() emojiForceSize: any;
   @Input() emojiTooltip: any;
+  @Output() over = new EventEmitter<any>();
   @ViewChild('container') container: ElementRef;
   @ViewChild('label') label: ElementRef;
   containerStyles: any = {};

@@ -2,18 +2,22 @@ import {
   Component,
   OnInit,
   Input,
+  Output,
   ViewChild,
   ElementRef,
   ViewChildren,
   QueryList,
   ChangeDetectionStrategy,
   AfterViewInit,
+  EventEmitter,
 } from '@angular/core';
 
 import data from '../data';
-import store from '../utils/store';
+import * as store from '../utils/store';
+import * as frequently from '../utils/frequently';
 import { CategoryComponent } from './category.component';
 import { AnchorsComponent } from './anchors.component';
+import { PreviewComponent } from './preview.component';
 
 
 const CUSTOM_EMOJIS = [
@@ -96,8 +100,10 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() exclude: string[] = [];
   @ViewChild('scrollRef') private scrollRef: ElementRef;
   @ViewChild('anchorsRef') private anchorsRef: AnchorsComponent;
+  @ViewChild('previewRef') private previewRef: PreviewComponent;
   @ViewChildren('categoryRef') private categoryRefs: QueryList<CategoryComponent>;
   @Input() skin: any;
+  @Output() click = new EventEmitter<any>();
   scrollHeight: number;
   clientHeight: number;
   selected: string;
@@ -105,6 +111,8 @@ export class PickerComponent implements OnInit, AfterViewInit {
   firstRender = true;
   RECENT_CATEGORY = RECENT_CATEGORY;
   recent: string[];
+  previewEmoji: any;
+  leaveTimeout: any;
 
   constructor() {}
 
@@ -251,11 +259,9 @@ export class PickerComponent implements OnInit, AfterViewInit {
     return item.id;
   }
   handleScroll() {
-    // this.waitingForPaint = false;
-
-    // if (!this.scroll) {
-    //   return;
-    // }
+    if (!this.scrollRef) {
+      return;
+    }
 
     let activeCategory = null;
     let scrollTop;
@@ -267,7 +273,6 @@ export class PickerComponent implements OnInit, AfterViewInit {
       scrollTop = target.scrollTop;
       const scrollingDown = scrollTop > (this.scrollTop || 0);
       let minTop = 0;
-      console.log(scrollTop)
 
       for (let i = 0, l = this.categories.length; i < l; i++) {
         const ii = scrollingDown ? this.categories.length - 1 - i : i;
@@ -319,6 +324,66 @@ export class PickerComponent implements OnInit, AfterViewInit {
 
     // this.forceUpdate();
     this.scrollRef.nativeElement.scrollTop = 0;
-    // this.handleScroll();
+    this.handleScroll();
+  }
+
+  handleEmojiOver($event) {
+    if (!this.previewRef) {
+      return;
+    }
+
+    // Use Array.prototype.find() when it is more widely supported.
+    const emojiData = CUSTOM_CATEGORY.emojis.filter(customEmoji => customEmoji.id === $event.emoji.id)[0];
+    if (emojiData) {
+      for (const key of Object.keys(emojiData)) {
+        if (emojiData.hasOwnProperty(key)) {
+          $event.emoji[key] = emojiData[key];
+        }
+      }
+    }
+
+    this.previewEmoji = $event.emoji;
+    clearTimeout(this.leaveTimeout);
+  }
+
+  handleEmojiLeave($event) {
+    if (!this.previewRef) {
+      return;
+    }
+
+    this.leaveTimeout = setTimeout(() => {
+      this.previewEmoji = $event.emoji;
+    }, 16);
+  }
+
+  handleEmojiClick(emoji, $event) {
+    debugger;
+    this.click.emit({ emoji, $event });
+    if (!this.hideRecent && !this.recent) {
+      frequently.add(emoji);
+    }
+
+    const component = this.categoryRefs[1];
+    if (component) {
+      const maxMargin = component.maxMargin;
+      // component.forceUpdate();
+
+      window.requestAnimationFrame(() => {
+        if (!this.scrollRef) {
+          return;
+        }
+        component.memoizeSize();
+        if (maxMargin == component.maxMargin) {
+          return;
+        }
+
+        this.updateCategoriesSize();
+        this.handleScroll();
+
+        if (SEARCH_CATEGORY.emojis) {
+          component.updateDisplay('none');
+        }
+      });
+    }
   }
 }

@@ -6,6 +6,7 @@ import { EmojiComponent } from './emoji.component';
 import { AnchorsComponent } from './anchors.component';
 import { CategoryComponent } from './category.component';
 import { SearchComponent } from './search.component';
+import { PreviewComponent } from './preview.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule],
@@ -16,6 +17,7 @@ import { SearchComponent } from './search.component';
     AnchorsComponent,
     CategoryComponent,
     SearchComponent,
+    PreviewComponent,
   ],
 })
 export class PickerModule {}
