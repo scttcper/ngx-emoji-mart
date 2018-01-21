@@ -51,7 +51,6 @@ import { getData } from '../utils';
 
     </div>
   </div>
-
   `,
 })
 export class PreviewComponent implements OnInit, OnChanges {
@@ -68,14 +67,13 @@ export class PreviewComponent implements OnInit, OnChanges {
   constructor() {}
 
   ngOnInit() {
-
   }
   ngOnChanges() {
     if (!this.emoji) {
       return;
     }
     this.emojiData = getData(this.emoji);
-    const { emoticons = [] } = this.emojiData;
+    const emoticons = this.emojiData.emoticons || [];
     const knownEmoticons = [];
     const listedEmoticons = [];
     emoticons.forEach(emoticon => {

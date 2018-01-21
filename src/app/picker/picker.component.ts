@@ -10,6 +10,7 @@ import {
   ChangeDetectionStrategy,
   AfterViewInit,
   EventEmitter,
+  ChangeDetectorRef,
 } from '@angular/core';
 
 import data from '../data';
@@ -114,7 +115,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   previewEmoji: any;
   leaveTimeout: any;
 
-  constructor() {}
+  constructor(private ref: ChangeDetectorRef) { }
 
   ngOnInit() {
     this.i18n = { ...I18N, ...this.i18n };
@@ -352,7 +353,8 @@ export class PickerComponent implements OnInit, AfterViewInit {
     }
 
     this.leaveTimeout = setTimeout(() => {
-      this.previewEmoji = $event.emoji;
+      this.previewEmoji = null;
+      this.ref.markForCheck();
     }, 16);
   }
 

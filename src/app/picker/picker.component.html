@@ -44,6 +44,7 @@
       [emojiForceSize]="native"
       [emojiTooltip]="emojiTooltip"
       (over)="handleEmojiOver($event)"
+      (leave)="handleEmojiLeave($event)"
     >
     </div>
 
@@ -53,6 +54,7 @@
     #previewRef
     [title]="title"
     [emoji]="previewEmoji"
+    [idleEmoji]="emoji"
 
     [emojiNative]="native"
     [emojiSize]="38"

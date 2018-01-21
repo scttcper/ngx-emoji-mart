@@ -44,6 +44,7 @@ import { getData } from '../utils';
         [forceSize]="emojiForceSize"
         [tooltip]="emojiTooltip"
         (over)="over.emit($event)"
+        (leave)="leave.emit($event)"
       >
       </ngx-emoji>
     </ng-template>
@@ -83,6 +84,7 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   @Input() emojiForceSize: any;
   @Input() emojiTooltip: any;
   @Output() over = new EventEmitter<any>();
+  @Output() leave = new EventEmitter<any>();
   @ViewChild('container') container: ElementRef;
   @ViewChild('label') label: ElementRef;
   containerStyles: any = {};
