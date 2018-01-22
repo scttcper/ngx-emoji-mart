@@ -86,7 +86,6 @@ export class EmojiComponent implements OnChanges {
     }
 
     const { unified, custom, short_names, imageUrl } = data;
-    const style = {};
     // const children = this.children;
     const title = null;
     this.unified = null;
@@ -157,17 +156,17 @@ export class EmojiComponent implements OnChanges {
     return getSanitizedData(this.emoji, this.skin, this.set);
   }
 
-  handleClick($event) {
+  handleClick($event: Event) {
     const emoji = this.getSanitizedData();
     this.emojiClick.emit({ emoji, $event });
   }
 
-  handleOver($event) {
+  handleOver($event: Event) {
     const emoji = this.getSanitizedData();
     this.emojiOver.emit({ emoji, $event });
   }
 
-  handleLeave($event) {
+  handleLeave($event: Event) {
     const emoji = this.getSanitizedData();
     this.emojiLeave.emit({ emoji, $event });
   }

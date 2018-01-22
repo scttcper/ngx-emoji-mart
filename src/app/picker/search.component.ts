@@ -1,11 +1,11 @@
 import {
-  Component,
   AfterViewInit,
+  Component,
+  ElementRef,
+  EventEmitter,
   Input,
   Output,
-  EventEmitter,
   ViewChild,
-  ElementRef,
 } from '@angular/core';
 
 import { search } from '../utils/emoji-index';

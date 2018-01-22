@@ -58,7 +58,7 @@ export function get(perLine) {
       defaults[DEFAULTS[i]] = perLine - i;
       result.push(DEFAULTS[i]);
     }
-    console.log(result)
+    console.log(result);
     return result;
   }
 
@@ -83,7 +83,7 @@ export function get(perLine) {
     sliced.push(last);
   }
 
-  console.log(sliced)
+  console.log(sliced);
 
   return sliced;
 }

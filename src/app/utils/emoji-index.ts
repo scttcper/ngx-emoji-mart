@@ -1,5 +1,5 @@
-import data from '../data';
 import { getData, getSanitizedData, intersect } from '.';
+import data from '../data';
 
 // TODO: make service
 const originalPool: any = {};

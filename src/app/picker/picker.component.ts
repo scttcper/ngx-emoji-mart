@@ -1,25 +1,25 @@
 import {
-  Component,
-  OnInit,
-  Input,
-  Output,
-  ViewChild,
-  ElementRef,
-  ViewChildren,
-  QueryList,
-  ChangeDetectionStrategy,
   AfterViewInit,
-  EventEmitter,
+  ChangeDetectionStrategy,
   ChangeDetectorRef,
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  QueryList,
+  ViewChild,
+  ViewChildren,
 } from '@angular/core';
 
 import data from '../data';
-import * as store from '../utils/store';
 import * as frequently from '../utils/frequently';
-import { CategoryComponent } from './category.component';
+import * as store from '../utils/store';
 import { AnchorsComponent } from './anchors.component';
-import { PreviewComponent } from './preview.component';
+import { CategoryComponent } from './category.component';
 import { Emoji } from './emoji.component';
+import { PreviewComponent } from './preview.component';
 
 
 const RECENT_CATEGORY = { id: 'recent', name: 'Recent', emojis: null };
@@ -342,7 +342,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   handleEmojiClick($event) {
     this.click.emit($event);
     if (!this.hideRecent && !this.recent) {
-      console.log($event.emoji)
+      console.log($event.emoji);
       frequently.add($event.emoji);
     }
 

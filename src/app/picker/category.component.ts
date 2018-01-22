@@ -1,19 +1,19 @@
 import {
-  Component,
-  OnInit,
-  OnChanges,
-  Input,
-  Output,
-  ViewChild,
-  ElementRef,
   AfterViewInit,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
+  Component,
+  ElementRef,
   EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  ViewChild,
 } from '@angular/core';
 
-import * as frequently from '../utils/frequently';
 import { getData } from '../utils';
+import * as frequently from '../utils/frequently';
 import { Emoji } from './emoji.component';
 
 @Component({

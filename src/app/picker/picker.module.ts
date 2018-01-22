@@ -1,12 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { PickerComponent } from './picker.component';
-import { EmojiComponent } from './emoji.component';
 import { AnchorsComponent } from './anchors.component';
 import { CategoryComponent } from './category.component';
-import { SearchComponent } from './search.component';
+import { EmojiComponent } from './emoji.component';
+import { PickerComponent } from './picker.component';
 import { PreviewComponent } from './preview.component';
+import { SearchComponent } from './search.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule],
