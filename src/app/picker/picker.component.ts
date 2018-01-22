@@ -111,6 +111,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   scrollTop: number;
   firstRender = true;
   RECENT_CATEGORY = RECENT_CATEGORY;
+  CUSTOM_CATEGORY = CUSTOM_CATEGORY;
   recent: string[];
   previewEmoji: any;
   leaveTimeout: any;
@@ -333,8 +334,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
       return;
     }
 
-    // Use Array.prototype.find() when it is more widely supported.
-    const emojiData = CUSTOM_CATEGORY.emojis.filter(customEmoji => customEmoji.id === $event.emoji.id)[0];
+    const emojiData = CUSTOM_CATEGORY.emojis.find(customEmoji => customEmoji.id === $event.emoji.id);
     if (emojiData) {
       for (const key of Object.keys(emojiData)) {
         if (emojiData.hasOwnProperty(key)) {
@@ -358,24 +358,25 @@ export class PickerComponent implements OnInit, AfterViewInit {
     }, 16);
   }
 
-  handleEmojiClick(emoji, $event) {
-    debugger;
-    this.click.emit({ emoji, $event });
+  handleEmojiClick($event) {
+    this.click.emit($event);
     if (!this.hideRecent && !this.recent) {
-      frequently.add(emoji);
+      console.log($event.emoji)
+      frequently.add($event.emoji);
     }
 
-    const component = this.categoryRefs[1];
+    const component = this.categoryRefs.toArray()[1];
     if (component) {
       const maxMargin = component.maxMargin;
-      // component.forceUpdate();
+      component.emojis = frequently.get(maxMargin);
+      component.ref.markForCheck();
 
       window.requestAnimationFrame(() => {
         if (!this.scrollRef) {
           return;
         }
         component.memoizeSize();
-        if (maxMargin == component.maxMargin) {
+        if (maxMargin === component.maxMargin) {
           return;
         }
 

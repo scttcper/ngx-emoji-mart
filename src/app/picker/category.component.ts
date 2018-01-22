@@ -1,6 +1,7 @@
 import {
   Component,
   OnInit,
+  OnChanges,
   Input,
   Output,
   ViewChild,
@@ -45,6 +46,7 @@ import { getData } from '../utils';
         [tooltip]="emojiTooltip"
         (over)="over.emit($event)"
         (leave)="leave.emit($event)"
+        (emojiClick)="emojiClick.emit($event)"
       >
       </ngx-emoji>
     </ng-template>
@@ -66,7 +68,7 @@ import { getData } from '../utils';
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
-export class CategoryComponent implements OnInit, AfterViewInit {
+export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   @Input() emojis: any[] = [];
   @Input() hasStickyPosition = true;
   @Input() name: string;
@@ -85,6 +87,7 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   @Input() emojiTooltip: any;
   @Output() over = new EventEmitter<any>();
   @Output() leave = new EventEmitter<any>();
+  @Output() emojiClick = new EventEmitter<any>();
   @ViewChild('container') container: ElementRef;
   @ViewChild('label') label: ElementRef;
   containerStyles: any = {};
@@ -96,7 +99,7 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   maxMargin = 0;
   top: number;
 
-  constructor(private changeDetectorRef: ChangeDetectorRef) {}
+  constructor(public ref: ChangeDetectorRef) {}
 
   ngOnInit() {
     this.emojis = this.getEmojis();
@@ -109,6 +112,10 @@ export class CategoryComponent implements OnInit, AfterViewInit {
       this.labelStyles = { height: 28 };
       this.labelSpanStyles = { position: 'absolute' };
     }
+  }
+
+  ngOnChanges() {
+
   }
 
   ngAfterViewInit() {
@@ -181,7 +188,7 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   updateDisplay(display) {
     const emojis = this.getEmojis();
     this.containerStyles.display = display;
-    this.changeDetectorRef.detectChanges();
+    this.ref.detectChanges();
   }
   trackById(index, item) {
     return item;

@@ -21,6 +21,7 @@
     "@angular/platform-browser": "^5.2.1",
     "@angular/platform-browser-dynamic": "^5.2.1",
     "@angular/router": "^5.2.1",
+    "@ctrl/ngx-github-buttons": "^1.0.5",
     "core-js": "^2.5.3",
     "emoji-datasource": "4.0.3",
     "rxjs": "^5.5.6",

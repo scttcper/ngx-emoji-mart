@@ -50,7 +50,7 @@ export class EmojiComponent implements OnChanges {
   @Input() fallback: (data: any) => string;
   @Output() over = new EventEmitter<any>();
   @Output() leave = new EventEmitter<any>();
-  @Output() click = new EventEmitter<any>();
+  @Output() emojiClick = new EventEmitter<any>();
   style: any;
   title = '';
   unified: string | null;
@@ -145,7 +145,7 @@ export class EmojiComponent implements OnChanges {
 
   handleClick($event) {
     const emoji = this.getSanitizedData();
-    this.click.emit({ emoji, $event });
+    this.emojiClick.emit({ emoji, $event });
   }
 
   handleOver($event) {
