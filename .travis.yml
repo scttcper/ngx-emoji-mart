@@ -1,0 +1,28 @@
+sudo: false
+dist: trusty
+language: node_js
+node_js: 8
+addons:
+  chrome: stable
+before_install: npm install -g greenkeeper-lockfile@1
+before_script: greenkeeper-lockfile-update
+after_script: greenkeeper-lockfile-upload
+script:
+  - npm run build
+  - npm run lint
+  - npm run bundlesize
+  - npm run test:ci
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  - npm run ghpages
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: dist
+  github_token: $PUSH_TOKEN
+  on:
+    branch: master
+notifications:
+  email:
+    on_success: never
+    on_failure: change

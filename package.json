@@ -5,10 +5,16 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "build": "ng-packagr -p src/lib/package.json && node prepublish.js",
+    "publish": "cd dist && npm publish",
+    "bundlesize": "npx bundlesize",
+    "test": "ng test --single-run --browsers=ChromeCI",
+    "test:ci": "ng test --single-run --code-coverage --no-progress --browsers=ChromeCI",
+    "lint": "ng lint --type-check -t stylish",
+    "lint:fix": "ng lint --type-check --fix -t stylish",
+    "e2e": "ng e2e",
+    "cleanup": "rimraf build dist waste deploy",
+    "ghpages": "ng build --prod --aot --build-optimizer --no-progress --baseHref='/ngx-trend/'"
   },
   "private": true,
   "dependencies": {
