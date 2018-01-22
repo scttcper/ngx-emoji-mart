@@ -19,28 +19,8 @@ import * as frequently from '../utils/frequently';
 import { CategoryComponent } from './category.component';
 import { AnchorsComponent } from './anchors.component';
 import { PreviewComponent } from './preview.component';
+import { Emoji } from './emoji.component';
 
-
-const CUSTOM_EMOJIS = [
-  {
-    name: 'Party Parrot',
-    short_names: ['parrot'],
-    keywords: ['party'],
-    imageUrl: 'http://cultofthepartyparrot.com/parrots/hd/parrot.gif',
-  },
-  {
-    name: 'Octocat',
-    short_names: ['octocat'],
-    keywords: ['github'],
-    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7',
-  },
-  {
-    name: 'Squirrel',
-    short_names: ['shipit', 'squirrel'],
-    keywords: ['github'],
-    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/shipit.png?v7',
-  },
-];
 
 const RECENT_CATEGORY = { id: 'recent', name: 'Recent', emojis: null };
 const SEARCH_CATEGORY = {
@@ -77,7 +57,6 @@ const I18N = {
   preserveWhitespaces: false,
 })
 export class PickerComponent implements OnInit, AfterViewInit {
-  @Input() emojiSize = 24;
   @Input() perLine = 9;
   @Input() i18n: any = {};
   @Input() style = {};
@@ -85,17 +64,16 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() emoji = 'department_store';
   @Input() color = '#ae65c5';
   @Input() categories: any[] = [];
-  @Input() set: 'apple' | 'google' | 'twitter' | 'emojione' | 'messenger' | 'facebook';
-  // skin = Emoji.defaultProps.skin;
-  @Input() native = true;
-  sheetSize: 16 | 20 | 32 | 64 = 64;
-  // backgroundImageFn = Emoji.defaultProps.backgroundImageFn;
+  @Input() set: Emoji['set'];
+  @Input() skin: Emoji['skin'];
+  @Input() native: Emoji['native'] = true;
+  @Input() emojiSize: Emoji['size'] = 24;
+  @Input() sheetSize: Emoji['sheetSize'] = 64;
   @Input() emojisToShowFilter = null;
   @Input() showPreview = true;
   @Input() emojiTooltip = false;
   @Input() autoFocus = false;
-  // TODO: move CUSTOM_EMOJIS to demo make empty array
-  @Input() custom = CUSTOM_EMOJIS;
+  @Input() custom: any[] = [];
   @Input() hideRecent = true;
   @Input() include: string[] = [];
   @Input() exclude: string[] = [];
@@ -103,7 +81,6 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @ViewChild('anchorsRef') private anchorsRef: AnchorsComponent;
   @ViewChild('previewRef') private previewRef: PreviewComponent;
   @ViewChildren('categoryRef') private categoryRefs: QueryList<CategoryComponent>;
-  @Input() skin: any;
   @Output() click = new EventEmitter<any>();
   scrollHeight: number;
   clientHeight: number;
@@ -115,6 +92,10 @@ export class PickerComponent implements OnInit, AfterViewInit {
   recent: string[];
   previewEmoji: any;
   leaveTimeout: any;
+  @Input() backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
+    `https://unpkg.com/emoji-datasource-${this.set}@4.0.3/img/${
+      this.set
+    }/sheets-256/${this.sheetSize}.png`
 
   constructor(private ref: ChangeDetectorRef) { }
 

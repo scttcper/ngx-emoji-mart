@@ -14,6 +14,7 @@ import {
 
 import * as frequently from '../utils/frequently';
 import { getData } from '../utils';
+import { Emoji } from './emoji.component';
 
 @Component({
   selector: '[emoji-category]',
@@ -44,8 +45,8 @@ import { getData } from '../utils';
         [sheetSize]="emojiSheetSize"
         [forceSize]="emojiForceSize"
         [tooltip]="emojiTooltip"
-        (over)="over.emit($event)"
-        (leave)="leave.emit($event)"
+        (emojiOver)="emojiOver.emit($event)"
+        (emojiLeave)="emojiLeave.emit($event)"
         (emojiClick)="emojiClick.emit($event)"
       >
       </ngx-emoji>
@@ -78,16 +79,16 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   @Input() custom: any;
   @Input() i18n: any;
   @Input() id: any;
-  @Input() emojiNative: any;
-  @Input() emojiSkin: any;
-  @Input() emojiSize: any;
-  @Input() emojiSet: any;
-  @Input() emojiSheetSize: any;
-  @Input() emojiForceSize: any;
-  @Input() emojiTooltip: any;
-  @Output() over = new EventEmitter<any>();
-  @Output() leave = new EventEmitter<any>();
-  @Output() emojiClick = new EventEmitter<any>();
+  @Input() emojiNative: Emoji['native'];
+  @Input() emojiSkin: Emoji['skin'];
+  @Input() emojiSize: Emoji['size'];
+  @Input() emojiSet: Emoji['set'];
+  @Input() emojiSheetSize: Emoji['sheetSize'];
+  @Input() emojiForceSize: Emoji['forceSize'];
+  @Input() emojiTooltip: Emoji['tooltip'];
+  @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
+  @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
+  @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
   @ViewChild('container') container: ElementRef;
   @ViewChild('label') label: ElementRef;
   containerStyles: any = {};

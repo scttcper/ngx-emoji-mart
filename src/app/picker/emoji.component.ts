@@ -9,6 +9,27 @@ import {
 
 import { getData, getSanitizedData, unifiedToNative } from '../utils';
 
+export interface Emoji {
+  native: boolean;
+  forceSize: boolean;
+  tooltip: boolean;
+  skin: 1 | 2 | 3 | 4 | 5 | 6;
+  sheetSize: 16 | 20 | 32 | 64;
+  set: 'apple' | 'google' | 'twitter' | 'emojione' | 'messenger' | 'facebook';
+  size: number;
+  emoji: string | object;
+  backgroundImageFn: (set: string, sheetSize: Emoji['sheetSize']) => string;
+  fallback: (data: any) => string;
+  emojiOver: EventEmitter<EmojiEvent>;
+  emojiLeave: EventEmitter<EmojiEvent>;
+  emojiClick: EventEmitter<EmojiEvent>;
+}
+
+export interface EmojiEvent {
+  emoji: string | object;
+  $event: Event;
+}
+
 @Component({
   selector: 'ngx-emoji',
   template: `
@@ -32,25 +53,18 @@ import { getData, getSanitizedData, unifiedToNative } from '../utils';
   preserveWhitespaces: false,
 })
 export class EmojiComponent implements OnChanges {
-  @Input() skin: 1 | 2 | 3 | 4 | 5 | 6 = 1;
-  @Input()
-  set:
-    | 'apple'
-    | 'google'
-    | 'twitter'
-    | 'emojione'
-    | 'messenger'
-    | 'facebook' = 'apple';
-  @Input() sheetSize: 16 | 20 | 32 | 64 = 64;
-  @Input() native = false;
-  @Input() forceSize = false;
-  @Input() tooltip = false;
-  @Input() size: number;
-  @Input() emoji: string | object;
-  @Input() fallback: (data: any) => string;
-  @Output() over = new EventEmitter<any>();
-  @Output() leave = new EventEmitter<any>();
-  @Output() emojiClick = new EventEmitter<any>();
+  @Input() skin: Emoji['skin'] = 1;
+  @Input() set: Emoji['set'] = 'apple';
+  @Input() sheetSize: Emoji['sheetSize'] = 64;
+  @Input() native: Emoji['native'] = false;
+  @Input() forceSize: Emoji['forceSize'] = false;
+  @Input() tooltip: Emoji['tooltip'] = false;
+  @Input() size: Emoji['size'];
+  @Input() emoji: Emoji['emoji'];
+  @Input() fallback: Emoji['fallback'];
+  @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
+  @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
+  @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
   style: any;
   title = '';
   unified: string | null;
@@ -58,7 +72,7 @@ export class EmojiComponent implements OnChanges {
   SHEET_COLUMNS = 52;
   // TODO: replace 4.0.3 w/ dynamic get verison from emoji-datasource in package.json
   @Input()
-  backgroundImageFn = (set, sheetSize) =>
+  backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
     `https://unpkg.com/emoji-datasource-${this.set}@4.0.3/img/${
       this.set
     }/sheets-256/${this.sheetSize}.png`
@@ -150,11 +164,11 @@ export class EmojiComponent implements OnChanges {
 
   handleOver($event) {
     const emoji = this.getSanitizedData();
-    this.over.emit({ emoji, $event });
+    this.emojiOver.emit({ emoji, $event });
   }
 
   handleLeave($event) {
     const emoji = this.getSanitizedData();
-    this.leave.emit({ emoji, $event });
+    this.emojiLeave.emit({ emoji, $event });
   }
 }
