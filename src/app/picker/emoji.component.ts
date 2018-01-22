@@ -1,10 +1,10 @@
 import {
-  Component,
-  OnChanges,
-  EventEmitter,
-  Output,
-  Input,
   ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  Output,
 } from '@angular/core';
 
 import { getData, getSanitizedData, unifiedToNative } from '../utils';

@@ -1,64 +1,51 @@
-import buildSearch from './build-search';
 import data from '../data';
-import stringFromCodePoint from '../polyfills/stringFromCodePoint';
+import buildSearch from './build-search';
 
 const _JSON = JSON;
 
 const COLONS_REGEX = /^(?:\:([^\:]+)\:)(?:\:skin-tone-(\d)\:)?$/;
 const SKINS = ['1F3FA', '1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF'];
 
-function unifiedToNative(unified) {
-  const unicodes = unified.split('-');
-  const codePoints = unicodes.map(u => `0x${u}`);
-
-  return stringFromCodePoint.apply(null, codePoints);
+export function unifiedToNative(unified: string) {
+  const codePoints = unified.split('-').map(u => parseInt(`0x${u}`, 16));
+  return String.fromCodePoint(...codePoints);
 }
 
-function sanitize(emoji) {
-  const {
-    name,
-    short_names,
-    skin_tone,
-    skin_variations,
-    emoticons,
-    unified,
-    custom,
-    imageUrl,
-  } = emoji;
-  const id = emoji.id || short_names[0];
+export function sanitize(emoji) {
+  const id = emoji.id || emoji.short_names[0];
   let colons = `:${id}:`;
 
-  if (custom) {
+  if (emoji.custom) {
     return {
       id,
       name,
       colons,
-      emoticons,
-      custom,
-      imageUrl,
+      emoticons: emoji.emoticons,
+      custom: emoji.custom,
+      imageUrl: emoji.imageUrl,
     };
   }
 
-  if (skin_tone) {
-    colons += `:skin-tone-${skin_tone}:`;
+  if (emoji.skin_tone) {
+    colons += `:skin-tone-${emoji.skin_tone}:`;
   }
 
   return {
     id,
     name,
     colons,
-    emoticons,
-    unified: unified.toLowerCase(),
-    skin: skin_tone || (skin_variations ? 1 : null),
-    native: unifiedToNative(unified),
+    emoticons: emoji.emoticons,
+    unified: emoji.unified.toLowerCase(),
+    skin: emoji.skin_tone || (emoji.skin_variations ? 1 : null),
+    native: unifiedToNative(emoji.unified),
   };
 }
 
-function getSanitizedData(emoji, skin?, set?) {
+export function getSanitizedData(emoji, skin?, set?) {
   return sanitize(getData(emoji, skin, set));
 }
 
-function getData(emoji, skin?, set?) {
+export function getData(emoji, skin?, set?) {
   if (!emoji) {
     return;
   }
@@ -116,8 +103,8 @@ function getData(emoji, skin?, set?) {
   if (emojiData.skin_variations && skin > 1 && set) {
     emojiData = JSON.parse(_JSON.stringify(emojiData));
 
-    const skinKey = SKINS[skin - 1],
-      variationData = emojiData.skin_variations[skinKey];
+    const skinKey = SKINS[skin - 1];
+    const variationData = emojiData.skin_variations[skinKey];
 
     if (!variationData.variations && emojiData.variations) {
       delete emojiData.variations;
@@ -126,7 +113,7 @@ function getData(emoji, skin?, set?) {
     if (variationData[`has_img_${set}`]) {
       emojiData.skin_tone = skin;
 
-      for (const k of variationData) {
+      for (const k of Object.keys(variationData)) {
         const v = variationData[k];
         emojiData[k] = v;
       }
@@ -150,14 +137,14 @@ function uniq(arr) {
   }, []);
 }
 
-function intersect(a, b) {
+export function intersect(a, b) {
   const uniqA = uniq(a);
   const uniqB = uniq(b);
 
   return uniqA.filter(item => uniqB.indexOf(item) >= 0);
 }
 
-function deepMerge(a, b) {
+export function deepMerge(a, b) {
   const o = {};
 
   for (const key of a) {
@@ -179,7 +166,7 @@ function deepMerge(a, b) {
 }
 
 // https://github.com/sonicdoe/measure-scrollbar
-function measureScrollbar() {
+export function measureScrollbar() {
   if (typeof document === 'undefined') {
     return 0;
   }
@@ -197,13 +184,3 @@ function measureScrollbar() {
 
   return scrollbarWidth;
 }
-
-export {
-  getData,
-  getSanitizedData,
-  uniq,
-  intersect,
-  deepMerge,
-  unifiedToNative,
-  measureScrollbar,
-};
