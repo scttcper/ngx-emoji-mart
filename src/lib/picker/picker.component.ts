@@ -14,11 +14,11 @@ import {
 } from '@angular/core';
 
 import data from '../data';
+import { Emoji } from '../emoji/emoji.component';
 import * as frequently from '../utils/frequently';
 import * as store from '../utils/store';
 import { AnchorsComponent } from './anchors.component';
 import { CategoryComponent } from './category.component';
-import { Emoji } from './emoji.component';
 import { PreviewComponent } from './preview.component';
 
 
@@ -77,11 +77,11 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() hideRecent = true;
   @Input() include: string[] = [];
   @Input() exclude: string[] = [];
+  @Output() click = new EventEmitter<any>();
   @ViewChild('scrollRef') private scrollRef: ElementRef;
   @ViewChild('anchorsRef') private anchorsRef: AnchorsComponent;
   @ViewChild('previewRef') private previewRef: PreviewComponent;
   @ViewChildren('categoryRef') private categoryRefs: QueryList<CategoryComponent>;
-  @Output() click = new EventEmitter<any>();
   scrollHeight: number;
   clientHeight: number;
   selected: string;

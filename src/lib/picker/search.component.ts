@@ -13,12 +13,12 @@ import { search } from '../utils/emoji-index';
 @Component({
   selector: 'emoji-search',
   template: `
-    <div class="emoji-mart-search">
-      <input #inputRef type="text"
-        [placeholder]="i18n.search" [autofocus]="autoFocus"
-        [(ngModel)]="query" (ngModelChange)="handleChange()"
-      />
-    </div>
+  <div class="emoji-mart-search">
+    <input #inputRef type="text"
+      [placeholder]="i18n.search" [autofocus]="autoFocus"
+      [(ngModel)]="query" (ngModelChange)="handleChange()"
+    />
+  </div>
   `,
   styles: [],
 })
@@ -29,10 +29,10 @@ export class SearchComponent implements AfterViewInit {
   @Input() include: any[];
   @Input() exclude: any[];
   @Input() custom: any[];
-  query = '';
   @Input() emojisToShowFilter: (x: any) => boolean;
   @Output() search = new EventEmitter<any>();
   @ViewChild('inputRef') private inputRef: ElementRef;
+  query = '';
 
   constructor() {}
 

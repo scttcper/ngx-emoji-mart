@@ -34,6 +34,7 @@ export interface EmojiEvent {
   selector: 'ngx-emoji',
   template: `
   <span
+    *ngIf="isVisible"
     (click)="handleClick($event)"
     (mouseenter)="handleOver($event)"
     (mouseleave)="handleLeave($event)"
@@ -52,7 +53,7 @@ export interface EmojiEvent {
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
-export class EmojiComponent implements OnChanges {
+export class EmojiComponent implements OnChanges, Emoji {
   @Input() skin: Emoji['skin'] = 1;
   @Input() set: Emoji['set'] = 'apple';
   @Input() sheetSize: Emoji['sheetSize'] = 64;
@@ -70,6 +71,7 @@ export class EmojiComponent implements OnChanges {
   unified: string | null;
   custom: boolean;
   SHEET_COLUMNS = 52;
+  isVisible = true;
   // TODO: replace 4.0.3 w/ dynamic get verison from emoji-datasource in package.json
   @Input()
   backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
@@ -92,7 +94,7 @@ export class EmojiComponent implements OnChanges {
     this.custom = custom;
 
     if (!unified && !custom) {
-      return null;
+      return this.isVisible = false;
     }
 
     if (this.tooltip) {
@@ -124,7 +126,7 @@ export class EmojiComponent implements OnChanges {
           this.style = { fontSize: `${this.size}px` };
           this.unified = this.fallback(data);
         } else {
-          return null;
+          return this.isVisible = false;
         }
       } else {
         this.style = {
@@ -140,6 +142,7 @@ export class EmojiComponent implements OnChanges {
         };
       }
     }
+    return this.isVisible = true;
   }
 
   getPosition() {

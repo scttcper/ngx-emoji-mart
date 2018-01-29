@@ -5,8 +5,8 @@ import { NtkmeButtonModule } from '@ctrl/ngx-github-buttons';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import { PickerModule } from '../lib/picker/picker.module';
 import { AppComponent } from './app.component';
-import { PickerModule } from './picker/picker.module';
 
 @NgModule({
   declarations: [AppComponent],

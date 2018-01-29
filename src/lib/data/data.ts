@@ -1,4 +1,8 @@
-const data: any = {
+
+
+
+
+const data = {
   categories: [
     {
       id: 'people',

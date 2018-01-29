@@ -12,9 +12,9 @@ import {
   ViewChild,
 } from '@angular/core';
 
+import { Emoji } from '../emoji/emoji.component';
 import { getData } from '../utils';
 import * as frequently from '../utils/frequently';
-import { Emoji } from './emoji.component';
 
 @Component({
   selector: '[emoji-category]',
