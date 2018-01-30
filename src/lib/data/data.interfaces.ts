@@ -7,13 +7,14 @@ export interface EmojiCategory {
 export interface EmojiData {
   name: string;
   unified: string;
+  short_name: string;
+  short_names?: string[];
   sheet: [number, number];
   keywords?: string[];
   hidden?: string[];
   emoticons?: string[];
   text?: string;
   skin_variations?: EmojiVariaiton[];
-  short_names?: string[];
   obsoleted_by?: string;
   obsoletes?: string;
 }

@@ -1,14 +1,13 @@
 import buildSearch from '../utils/build-search';
-import data from './data';
+import emojis from './emojis';
 
 function uncompress(list) {
-  for (const short_name of Object.keys(list)) {
-    const datum = list[short_name];
+  for (const datum of list) {
 
     if (!datum.short_names) {
       datum.short_names = [];
     }
-    datum.short_names.unshift(short_name);
+    datum.short_names.unshift(datum.short_name);
 
     datum.sheet_x = datum.sheet[0];
     datum.sheet_y = datum.sheet[1];
@@ -30,7 +29,7 @@ function uncompress(list) {
   }
 }
 
-uncompress(data.emojis);
-uncompress(data.skins);
+uncompress(emojis);
+// uncompress(data.skins);
 
-export default data;
+export default emojis;

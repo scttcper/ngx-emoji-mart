@@ -13,7 +13,8 @@ import {
   ViewChildren,
 } from '@angular/core';
 
-import data from '../data';
+import emojis from '../data';
+import categories from '../data/categories';
 import { Emoji } from '../emoji/emoji.component';
 import * as frequently from '../utils/frequently';
 import * as store from '../utils/store';
@@ -104,7 +105,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
     this.i18n.categories = { ...I18N.categories, ...this.i18n.categories };
     this.skin = store.get('skin') || this.skin;
 
-    const allCategories = [].concat(data.categories);
+    const allCategories = [].concat(categories);
 
     if (this.custom.length > 0) {
       CUSTOM_CATEGORY.emojis = this.custom.map(emoji => {
@@ -153,7 +154,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
         const { emojis } = category;
         for (let emojiIndex = 0; emojiIndex < emojis.length; emojiIndex++) {
           const emoji = emojis[emojiIndex];
-          if (this.emojisToShowFilter(data.emojis[emoji] || emoji)) {
+          if (this.emojisToShowFilter(emojis[emoji] || emoji)) {
             newEmojis.push(emoji);
           }
         }
@@ -294,14 +295,14 @@ export class PickerComponent implements OnInit, AfterViewInit {
 
     this.scrollTop = scrollTop;
   }
-  handleSearch(emojis: any) {
-    SEARCH_CATEGORY.emojis = emojis;
+  handleSearch($emojis: any) {
+    SEARCH_CATEGORY.emojis = $emojis;
     for (const component of this.categoryRefs.toArray()) {
       if (component.name === 'Search') {
-        component.emojis = emojis;
-        component.updateDisplay(emojis ? 'inherit' : 'none');
+        component.emojis = $emojis;
+        component.updateDisplay($emojis ? 'inherit' : 'none');
       } else {
-        component.updateDisplay(emojis ? 'none' : 'inherit');
+        component.updateDisplay($emojis ? 'none' : 'inherit');
       }
     }
 

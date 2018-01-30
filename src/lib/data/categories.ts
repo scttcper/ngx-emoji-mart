@@ -1611,5 +1611,5 @@ const data: EmojiCategory[] = [
       '1F6A9'
     ]
   }
-]
+];
 export default data;

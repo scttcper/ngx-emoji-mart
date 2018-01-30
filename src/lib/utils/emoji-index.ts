@@ -1,5 +1,6 @@
-import { getData, getSanitizedData, intersect } from '.';
-import data from '../data';
+import emojis from '../data';
+import categories from '../data/categories';
+import { getData, getSanitizedData, intersect } from './index';
 
 // TODO: make service
 const originalPool: any = {};
@@ -7,8 +8,7 @@ const index: any = {};
 const emojisList: any = {};
 const emoticonsList: any = {};
 
-for (const emoji of Object.keys(data.emojis)) {
-  const emojiData = data.emojis[emoji];
+for (const emojiData of emojis) {
   const { short_names, emoticons } = emojiData;
   const id = short_names[0];
 
@@ -76,7 +76,7 @@ export function search(
     if (include.length || exclude.length) {
       pool = {};
 
-      data.categories.forEach(category => {
+      categories.forEach(category => {
         const isIncluded =
           include && include.length ? include.indexOf(category.id) > -1 : true;
         const isExcluded =
@@ -86,7 +86,7 @@ export function search(
         }
 
         category.emojis.forEach(
-          emojiId => (pool[emojiId] = data.emojis[emojiId]),
+          emojiId => (pool[emojiId] = emojis[emojiId]),
         );
       });
 
@@ -167,7 +167,7 @@ export function search(
   if (results) {
     if (emojisToShowFilter) {
       results = results.filter(result =>
-        emojisToShowFilter(data.emojis[result.id]),
+        emojisToShowFilter(emojis[result.id]),
       );
     }
 

@@ -1,4 +1,5 @@
-import data from '../data';
+import emojis from '../data';
+import categories from '../data/categories';
 import buildSearch from './build-search';
 
 const _JSON = JSON;
@@ -45,6 +46,20 @@ export function getSanitizedData(emoji, skin?, set?) {
   return sanitize(getData(emoji, skin, set));
 }
 
+export function nameFinder(name: string) {
+  for (const x of emojis) {
+    if (x.unified === name) {
+      return x;
+    }
+    for (const n of x.short_names) {
+      if (n === name) {
+        return x;
+      }
+    }
+  }
+  return {};
+}
+
 export function getData(emoji, skin?, set?) {
   if (!emoji) {
     return;
@@ -62,25 +77,32 @@ export function getData(emoji, skin?, set?) {
       }
     }
 
-    if (data.short_names.hasOwnProperty(emoji)) {
-      emoji = data.short_names[emoji];
-    }
+    // if (data.short_names.hasOwnProperty(emoji)) {
+    //   emoji = data.short_names[emoji];
+    // }
 
-    if (data.emojis.hasOwnProperty(emoji)) {
-      emojiData = data.emojis[emoji];
-    } else {
-      return null;
-    }
+    emojiData = nameFinder(emoji);
+
+
+    // if (emojis.hasOwnProperty(emoji)) {
+    //   emojiData = emojis[emoji];
+    // } else {
+    //   return null;
+    // }
   } else if (emoji.id) {
-    if (data.short_names.hasOwnProperty(emoji.id)) {
-      emoji.id = data.short_names[emoji.id];
-    }
+    emojiData = nameFinder(emoji.id);
+    // if (data.short_names.hasOwnProperty(emoji.id)) {
+    //   emoji.id = data.short_names[emoji.id];
+    // }
 
-    if (data.emojis.hasOwnProperty(emoji.id)) {
-      emojiData = data.emojis[emoji.id];
-      if (skin) {
-        skin = emoji.skin;
-      }
+    // if (emojis.hasOwnProperty(emoji.id)) {
+    //   emojiData = emojis[emoji.id];
+    //   if (skin) {
+    //     skin = emoji.skin;
+    //   }
+    // }
+    if (skin) {
+      skin = emoji.skin;
     }
   }
 

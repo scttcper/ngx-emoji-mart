@@ -145,7 +145,7 @@ emojiData.forEach(datum => {
   delete datum.softbank;
   delete datum.google;
   delete datum.image;
-  delete datum.short_name;
+  // delete datum.short_name;
   delete datum.non_qualified;
   delete datum.category;
   delete datum.sort_order;
@@ -177,7 +177,7 @@ const sEmojis = stringifyObject(emojis, {
   indent: '  ',
 });
 let doc = `import { EmojiData } from './data.interfaces';
-const data: EmojiData[] = ${sEmojis}
+const data: EmojiData[] = ${sEmojis};
 export default data;
 `;
 fs.writeFileSync('./src/lib/data/emojis.ts', doc);
@@ -188,7 +188,7 @@ const sCategories = stringifyObject(categories, {
   indent: '  ',
 });
 doc = `import { EmojiCategory } from './data.interfaces';
-const data: EmojiCategory[] = ${sCategories}
+const data: EmojiCategory[] = ${sCategories};
 export default data;
 `;
 fs.writeFileSync('./src/lib/data/categories.ts', doc);
@@ -199,7 +199,7 @@ const sSkins = stringifyObject(skins, {
   indent: '  ',
 });
 doc = `import { SkinData } from './data.interfaces';
-const data: SkinData[] = ${sSkins}
+const data: any[] = ${sSkins};
 export default data;
 `;
 fs.writeFileSync('./src/lib/data/skins.ts', doc);
