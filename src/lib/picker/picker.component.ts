@@ -13,7 +13,6 @@ import {
   ViewChildren,
 } from '@angular/core';
 
-import emojis from '../data';
 import categories from '../data/categories';
 import { Emoji } from '../emoji/emoji.component';
 import * as frequently from '../utils/frequently';

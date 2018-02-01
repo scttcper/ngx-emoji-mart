@@ -39,7 +39,13 @@ import { getData } from '../utils';
 
   <div class="emoji-mart-preview" *ngIf="!emoji">
     <div class="emoji-mart-preview-emoji">
-      <ngx-emoji *ngIf="idleEmoji && idleEmoji.length" [emoji]="idleEmoji" [size]="38">
+      <ngx-emoji *ngIf="idleEmoji && idleEmoji.length"
+        [native]="emojiNative"
+        [skin]="emojiSkin"
+        [set]="emojiSet"
+        [emoji]="idleEmoji"
+        [backgroundImageFn]="emojiBackgroundImageFn"
+        [size]="38">
       </ngx-emoji>
     </div>
 

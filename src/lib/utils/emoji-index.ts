@@ -1,4 +1,4 @@
-import emojis from '../data';
+import { emojis } from '../data';
 import categories from '../data/categories';
 import { getData, getSanitizedData, intersect } from './index';
 

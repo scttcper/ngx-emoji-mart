@@ -1,8 +1,6 @@
-import emojis from '../data';
+import { emojis, names } from '../data';
 import categories from '../data/categories';
 import buildSearch from './build-search';
-
-const _JSON = JSON;
 
 const COLONS_REGEX = /^(?:\:([^\:]+)\:)(?:\:skin-tone-(\d)\:)?$/;
 const SKINS = ['1F3FA', '1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF'];
@@ -46,25 +44,11 @@ export function getSanitizedData(emoji, skin?, set?) {
   return sanitize(getData(emoji, skin, set));
 }
 
-export function nameFinder(name: string) {
-  for (const x of emojis) {
-    if (x.unified === name) {
-      return x;
-    }
-    for (const n of x.short_names) {
-      if (n === name) {
-        return x;
-      }
-    }
-  }
-  return {};
-}
-
 export function getData(emoji, skin?, set?) {
   if (!emoji) {
     return;
   }
-  let emojiData: any = {};
+  let emojiData: any;
 
   if (typeof emoji === 'string') {
     const matches = emoji.match(COLONS_REGEX);
@@ -81,7 +65,7 @@ export function getData(emoji, skin?, set?) {
     //   emoji = data.short_names[emoji];
     // }
 
-    emojiData = nameFinder(emoji);
+    emojiData = names[emoji];
 
 
     // if (emojis.hasOwnProperty(emoji)) {
@@ -90,7 +74,7 @@ export function getData(emoji, skin?, set?) {
     //   return null;
     // }
   } else if (emoji.id) {
-    emojiData = nameFinder(emoji.id);
+    emojiData = names[emoji.id];
     // if (data.short_names.hasOwnProperty(emoji.id)) {
     //   emoji.id = data.short_names[emoji.id];
     // }
@@ -106,7 +90,7 @@ export function getData(emoji, skin?, set?) {
     }
   }
 
-  if (!Object.keys(emojiData).length) {
+  if (!emojiData) {
     emojiData = emoji;
     emojiData.custom = true;
 
@@ -123,7 +107,7 @@ export function getData(emoji, skin?, set?) {
   }
 
   if (emojiData.skin_variations && skin > 1 && set) {
-    emojiData = JSON.parse(_JSON.stringify(emojiData));
+    emojiData = JSON.parse(JSON.stringify(emojiData));
 
     const skinKey = SKINS[skin - 1];
     const variationData = emojiData.skin_variations[skinKey];
@@ -143,7 +127,7 @@ export function getData(emoji, skin?, set?) {
   }
 
   if (emojiData.variations && emojiData.variations.length) {
-    emojiData = JSON.parse(_JSON.stringify(emojiData));
+    emojiData = JSON.parse(JSON.stringify(emojiData));
     emojiData.unified = emojiData.variations.shift();
   }
 

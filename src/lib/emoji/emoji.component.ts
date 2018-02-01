@@ -119,7 +119,10 @@ export class EmojiComponent implements OnChanges, Emoji {
         backgroundSize: 'contain',
       };
     } else {
-      const setHasEmoji = this.getData()[`has_img_${this.set}`];
+      let setHasEmoji = true;
+      if (data.hidden && data.hidden.indexOf(this.set) !== -1) {
+        setHasEmoji = true;
+      }
 
       if (!setHasEmoji) {
         if (this.fallback) {

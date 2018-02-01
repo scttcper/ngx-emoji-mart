@@ -1,8 +1,18 @@
 import buildSearch from '../utils/build-search';
 import emojis from './emojis';
 
+const names: any = {};
+
 function uncompress(list) {
   for (const datum of list) {
+    names[datum.unified] = datum;
+    names[datum.short_name] = datum;
+    if (datum.short_names) {
+      for (const n of datum.short_names) {
+        names[n] = datum;
+      }
+    }
+
 
     if (!datum.short_names) {
       datum.short_names = [];
@@ -31,5 +41,4 @@ function uncompress(list) {
 
 uncompress(emojis);
 // uncompress(data.skins);
-
-export default emojis;
+export { emojis, names };
