@@ -40,6 +40,7 @@ import * as frequently from '../utils/frequently';
         *ngFor="let emoji of emojis; trackBy: trackById"
         [emoji]="emoji"
         [size]="emojiSize"
+        [skin]="emojiSkin"
         [native]="emojiNative"
         [set]="emojiSet"
         [sheetSize]="emojiSheetSize"

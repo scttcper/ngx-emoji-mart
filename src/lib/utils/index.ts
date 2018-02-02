@@ -110,19 +110,16 @@ export function getData(emoji, skin?, set?) {
     emojiData = JSON.parse(JSON.stringify(emojiData));
 
     const skinKey = SKINS[skin - 1];
-    const variationData = emojiData.skin_variations[skinKey];
+    const variationData = emojiData.skin_variations.find((n) => n.unified.indexOf(skinKey) !== -1);
 
     if (!variationData.variations && emojiData.variations) {
       delete emojiData.variations;
     }
 
-    if (variationData[`has_img_${set}`]) {
+    if (!variationData.hidden || variationData.hidden.indexOf(set) === -1) {
       emojiData.skin_tone = skin;
 
-      for (const k of Object.keys(variationData)) {
-        const v = variationData[k];
-        emojiData[k] = v;
-      }
+      emojiData = { ...emojiData, ...variationData };
     }
   }
 

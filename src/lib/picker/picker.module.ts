@@ -8,6 +8,7 @@ import { CategoryComponent } from './category.component';
 import { PickerComponent } from './picker.component';
 import { PreviewComponent } from './preview.component';
 import { SearchComponent } from './search.component';
+import { SkinComponent } from './skins.component';
 
 const components: any[] = [
   PickerComponent,
@@ -15,6 +16,7 @@ const components: any[] = [
   CategoryComponent,
   SearchComponent,
   PreviewComponent,
+  SkinComponent,
 ];
 
 @NgModule({

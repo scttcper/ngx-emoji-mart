@@ -64,8 +64,8 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() emoji = 'department_store';
   @Input() color = '#ae65c5';
   @Input() categories: any[] = [];
-  @Input() set: Emoji['set'];
-  @Input() skin: Emoji['skin'];
+  @Input() set: Emoji['set'] = 'apple';
+  @Input() skin: Emoji['skin'] = 1;
   @Input() native: Emoji['native'] = true;
   @Input() emojiSize: Emoji['size'] = 24;
   @Input() sheetSize: Emoji['sheetSize'] = 64;
@@ -369,5 +369,9 @@ export class PickerComponent implements OnInit, AfterViewInit {
         }
       });
     }
+  }
+  handleSkinChange(skin: Emoji['skin']) {
+    console.log(skin)
+    this.skin = skin;
   }
 }

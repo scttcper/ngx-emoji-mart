@@ -1,4 +1,11 @@
-import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+} from '@angular/core';
 
 import { getData } from '../utils';
 
@@ -19,7 +26,7 @@ import { getData } from '../utils';
     </div>
 
     <div class="emoji-mart-preview-data">
-      <div class="emoji-mart-preview-name">{{ emoji.name }}</div>
+      <div class="emoji-mart-preview-name">{{ emojiData.name }}</div>
       <div class="emoji-mart-preview-shortnames">
 
         <span class="emoji-mart-preview-shortname" *ngFor="let short_name of emojiData.short_names">
@@ -54,7 +61,7 @@ import { getData } from '../utils';
     </div>
 
     <div class="emoji-mart-preview-skins">
-
+      <emoji-skins [skin]="emojiSkin" (change)="skinChange.emit($event)"></emoji-skins>
     </div>
   </div>
   `,
@@ -69,11 +76,11 @@ export class PreviewComponent implements OnInit, OnChanges {
   @Input() emojiSet: any;
   @Input() emojiSheetSize: any;
   @Input() emojiBackgroundImageFn: any;
+  @Output() skinChange = new EventEmitter<number>();
   emojiData: any;
   constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
   ngOnChanges() {
     if (!this.emoji) {
       return;
