@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'emoji-skins',
@@ -16,18 +22,14 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
     </div>
   </div>
   `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  preserveWhitespaces: false,
 })
-export class SkinComponent implements OnInit {
+export class SkinComponent {
   @Input() skin: any;
   @Output() change = new EventEmitter<number>();
   opened = false;
   skinTones = [1, 2, 3, 4, 5, 6];
-
-  constructor() {}
-
-  ngOnInit() {
-    console.log(this.skin);
-  }
 
   toggleOpen() {
     this.opened = !this.opened;

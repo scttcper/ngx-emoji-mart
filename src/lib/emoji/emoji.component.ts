@@ -123,6 +123,10 @@ export class EmojiComponent implements OnChanges, Emoji {
       if (data.hidden && data.hidden.indexOf(this.set) !== -1) {
         setHasEmoji = true;
       }
+      if (data.obsoleted_by) {
+        console.log(data)
+        return this.isVisible = false;
+      }
 
       if (!setHasEmoji) {
         if (this.fallback) {

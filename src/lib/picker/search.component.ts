@@ -1,5 +1,6 @@
 import {
   AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
   ElementRef,
   EventEmitter,
@@ -21,6 +22,8 @@ import { search } from '../utils/emoji-index';
   </div>
   `,
   styles: [],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  preserveWhitespaces: false,
 })
 export class SearchComponent implements AfterViewInit {
   @Input() maxResults = 75;
@@ -33,8 +36,6 @@ export class SearchComponent implements AfterViewInit {
   @Output() search = new EventEmitter<any>();
   @ViewChild('inputRef') private inputRef: ElementRef;
   query = '';
-
-  constructor() {}
 
   ngAfterViewInit() {
     if (this.autoFocus) {
