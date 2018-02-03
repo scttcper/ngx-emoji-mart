@@ -8,8 +8,7 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
-
-import { search } from '../utils/emoji-index';
+import { EmojiSearchService } from './emoji-search.service';
 
 @Component({
   selector: 'emoji-search',
@@ -37,6 +36,8 @@ export class SearchComponent implements AfterViewInit {
   @ViewChild('inputRef') private inputRef: ElementRef;
   query = '';
 
+  constructor(private emojiSearch: EmojiSearchService) {}
+
   ngAfterViewInit() {
     if (this.autoFocus) {
       this.inputRef.nativeElement.focus();
@@ -44,7 +45,7 @@ export class SearchComponent implements AfterViewInit {
   }
   handleChange() {
     this.search.emit(
-      search(
+      this.emojiSearch.search(
         this.query,
         this.emojisToShowFilter,
         this.maxResults,

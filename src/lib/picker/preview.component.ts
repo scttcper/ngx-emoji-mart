@@ -6,8 +6,7 @@ import {
   OnInit,
   Output,
 } from '@angular/core';
-
-import { getData } from '../utils';
+import { EmojiService } from '../emoji/emoji.service';
 
 @Component({
   selector: 'emoji-preview',
@@ -78,14 +77,15 @@ export class PreviewComponent implements OnInit, OnChanges {
   @Input() emojiBackgroundImageFn: any;
   @Output() skinChange = new EventEmitter<number>();
   emojiData: any;
-  constructor() {}
+
+  constructor(private emojiService: EmojiService) {}
 
   ngOnInit() {}
   ngOnChanges() {
     if (!this.emoji) {
       return;
     }
-    this.emojiData = getData(this.emoji);
+    this.emojiData = this.emojiService.getData(this.emoji);
     const emoticons = this.emojiData.emoticons || [];
     const knownEmoticons = [];
     const listedEmoticons = [];

@@ -7,7 +7,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { getData, getSanitizedData, unifiedToNative } from '../utils';
+import { EmojiService } from './emoji.service';
 
 export interface Emoji {
   native: boolean;
@@ -79,7 +79,9 @@ export class EmojiComponent implements OnChanges, Emoji {
       this.set
     }/sheets-256/${this.sheetSize}.png`
 
-  constructor() {}
+  constructor(
+    private emojiService: EmojiService,
+  ) {}
 
   ngOnChanges() {
     const data = this.getData();
@@ -87,7 +89,7 @@ export class EmojiComponent implements OnChanges, Emoji {
       return null;
     }
 
-    const { unified, custom, short_names, imageUrl } = data;
+    const { unified, custom, short_names, imageUrl, obsoleted_by } = data;
     // const children = this.children;
     const title = null;
     this.unified = null;
@@ -102,8 +104,12 @@ export class EmojiComponent implements OnChanges, Emoji {
     }
 
     if (this.native && unified) {
+      // hide older emoji before the split into gendered emoji
+      if (obsoleted_by) {
+        return this.isVisible = false;
+      }
       this.style = { fontSize: `${this.size}px` };
-      this.unified = unifiedToNative(unified);
+      this.unified = this.emojiService.unifiedToNative(unified);
 
       if (this.forceSize) {
         this.style.display = 'inline-block';
@@ -122,10 +128,6 @@ export class EmojiComponent implements OnChanges, Emoji {
       let setHasEmoji = true;
       if (data.hidden && data.hidden.indexOf(this.set) !== -1) {
         setHasEmoji = true;
-      }
-      if (data.obsoleted_by) {
-        console.log(data)
-        return this.isVisible = false;
       }
 
       if (!setHasEmoji) {
@@ -153,17 +155,17 @@ export class EmojiComponent implements OnChanges, Emoji {
   }
 
   getPosition() {
-    const { sheet_x, sheet_y } = this.getData();
+    const [sheet_x, sheet_y] = this.getData().sheet;
     const multiply = 100 / (this.SHEET_COLUMNS - 1);
     return `${multiply * sheet_x}% ${multiply * sheet_y}%`;
   }
 
   getData() {
-    return getData(this.emoji, this.skin, this.set);
+    return this.emojiService.getData(this.emoji, this.skin, this.set);
   }
 
   getSanitizedData() {
-    return getSanitizedData(this.emoji, this.skin, this.set);
+    return this.emojiService.getSanitizedData(this.emoji, this.skin, this.set);
   }
 
   handleClick($event: Event) {

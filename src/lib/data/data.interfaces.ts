@@ -17,6 +17,7 @@ export interface EmojiData {
   skin_variations?: EmojiVariaiton[];
   obsoleted_by?: string;
   obsoletes?: string;
+  search?: any;
 }
 
 export interface EmojiVariaiton {

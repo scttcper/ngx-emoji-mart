@@ -13,8 +13,8 @@ import {
 } from '@angular/core';
 
 import { Emoji } from '../emoji/emoji.component';
-import { getData } from '../utils';
 import * as frequently from '../utils/frequently';
+import { EmojiService } from '../emoji/emoji.service';
 
 @Component({
   selector: '[emoji-category]',
@@ -101,7 +101,10 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   maxMargin = 0;
   top: number;
 
-  constructor(public ref: ChangeDetectorRef) {}
+  constructor(
+    public ref: ChangeDetectorRef,
+    private emojiService: EmojiService,
+  ) {}
 
   ngOnInit() {
     this.emojis = this.getEmojis();
@@ -173,7 +176,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
 
             return id;
           })
-          .filter(id => !!getData(id));
+          .filter(id => !!this.emojiService.getData(id));
       }
 
       if (this.emojis.length === 0 && frequentlyUsed.length > 0) {
