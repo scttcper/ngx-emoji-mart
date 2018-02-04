@@ -15,11 +15,11 @@ import {
 
 import categories from '../data/categories';
 import { Emoji } from '../emoji/emoji.component';
-import * as frequently from '../utils/frequently';
 import * as store from '../utils/store';
 import { AnchorsComponent } from './anchors.component';
 import { CategoryComponent } from './category.component';
 import { PreviewComponent } from './preview.component';
+import { EmojiFrequentlyService } from './emoji-frequently.service';
 
 
 const RECENT_CATEGORY = { id: 'recent', name: 'Recent', emojis: null };
@@ -97,7 +97,10 @@ export class PickerComponent implements OnInit, AfterViewInit {
       this.set
     }/sheets-256/${this.sheetSize}.png`
 
-  constructor(private ref: ChangeDetectorRef) { }
+  constructor(
+    private ref: ChangeDetectorRef,
+    private frequently: EmojiFrequentlyService,
+  ) { }
 
   ngOnInit() {
     this.i18n = { ...I18N, ...this.i18n };
@@ -343,13 +346,13 @@ export class PickerComponent implements OnInit, AfterViewInit {
     this.click.emit($event);
     if (!this.hideRecent && !this.recent) {
       console.log($event.emoji);
-      frequently.add($event.emoji);
+      this.frequently.add($event.emoji);
     }
 
     const component = this.categoryRefs.toArray()[1];
     if (component) {
       const maxMargin = component.maxMargin;
-      component.emojis = frequently.get(maxMargin);
+      component.emojis = this.frequently.get(maxMargin);
       component.ref.markForCheck();
 
       window.requestAnimationFrame(() => {

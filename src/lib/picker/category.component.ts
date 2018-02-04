@@ -13,8 +13,8 @@ import {
 } from '@angular/core';
 
 import { Emoji } from '../emoji/emoji.component';
-import * as frequently from '../utils/frequently';
 import { EmojiService } from '../emoji/emoji.service';
+import { EmojiFrequentlyService } from './emoji-frequently.service';
 
 @Component({
   selector: '[emoji-category]',
@@ -104,6 +104,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   constructor(
     public ref: ChangeDetectorRef,
     private emojiService: EmojiService,
+    private frequently: EmojiFrequentlyService,
   ) {}
 
   ngOnInit() {
@@ -119,9 +120,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
     }
   }
 
-  ngOnChanges() {
-
-  }
+  ngOnChanges() {}
 
   ngAfterViewInit() {
     this.parent = this.container.nativeElement.parentNode.parentNode;
@@ -164,7 +163,8 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
 
   getEmojis() {
     if (this.name === 'Recent') {
-      const frequentlyUsed: any[] = this.recent || frequently.get(this.perLine);
+      const frequentlyUsed: any[] =
+        this.recent || this.frequently.get(this.perLine);
 
       if (frequentlyUsed.length) {
         this.emojis = frequentlyUsed

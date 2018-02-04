@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import categories from '../data/categories';
 import emojis from '../data/emojis';
 import { EmojiService } from '../emoji/emoji.service';
+import { intersect } from '../utils';
 
 @Injectable()
 export class EmojiSearchService {

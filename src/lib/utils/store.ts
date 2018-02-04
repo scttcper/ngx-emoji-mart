@@ -13,14 +13,14 @@ export function update(state) {
 
 export function set(key, value) {
   try {
-    window.localStorage[`${NAMESPACE}.${key}`] = JSON.stringify(value);
+    localStorage[`${NAMESPACE}.${key}`] = JSON.stringify(value);
   } catch (e) {}
 }
 
 export function get(key) {
   let value;
   try {
-    value = window.localStorage[`${NAMESPACE}.${key}`];
+    value = localStorage[`${NAMESPACE}.${key}`];
   } catch (e) {
     return;
   }
