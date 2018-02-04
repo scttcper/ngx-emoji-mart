@@ -5,7 +5,8 @@
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
     "module": "es2015",
-    "types": []
+    "types": [],
+    "strict": true
   },
   "exclude": ["test.ts", "**/*.spec.ts"],
   "angularCompilerOptions": {

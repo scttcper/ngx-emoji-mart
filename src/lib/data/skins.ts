@@ -1,5 +1,5 @@
 import { SkinData } from './data.interfaces';
-const data: any[] = [
+const data: SkinData[] = [
   {
     name: 'Emoji Modifier Fitzpatrick Type-1-2',
     unified: '1F3FB',

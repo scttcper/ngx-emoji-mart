@@ -31,8 +31,8 @@ export class EmojiSearchService {
       this.originalPool[id] = emojiData;
     }
   }
-  addCustomToPool(custom, pool) {
-    custom.forEach(emoji => {
+  addCustomToPool(custom: any, pool) {
+    custom.forEach((emoji: any) => {
       const emojiId = emoji.id || emoji.short_names[0];
 
       if (emojiId && !pool[emojiId]) {
@@ -44,22 +44,12 @@ export class EmojiSearchService {
   search(
     value: string,
     emojisToShowFilter: (x: any) => boolean,
-    maxResults: number,
-    include: any[],
-    exclude: any[],
+    maxResults = 75,
+    include: any[] = [],
+    exclude: any[] = [],
     custom: any[] = [],
   ) {
     this.addCustomToPool(custom, this.originalPool);
-
-    if (!maxResults) {
-      maxResults = 75;
-    }
-    if (!include) {
-      include = [];
-    }
-    if (!exclude) {
-      exclude = [];
-    }
 
     let results = null;
     let pool = this.originalPool;
@@ -171,7 +161,7 @@ export class EmojiSearchService {
 
     if (results) {
       if (emojisToShowFilter) {
-        results = results.filter(result =>
+        results = results.filter((result) =>
           emojisToShowFilter(emojis[result.id]),
         );
       }

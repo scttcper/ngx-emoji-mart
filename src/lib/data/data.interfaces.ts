@@ -1,10 +1,12 @@
+import { Emoji } from '../emoji/emoji.component';
+
 export interface EmojiCategory {
   id: string;
   name: string;
   emojis: string[];
 }
 
-export interface EmojiData {
+export interface CompressedEmojiData {
   name: string;
   unified: string;
   short_name: string;
@@ -17,7 +19,27 @@ export interface EmojiData {
   skin_variations?: EmojiVariaiton[];
   obsoleted_by?: string;
   obsoletes?: string;
-  search?: any;
+}
+
+export interface EmojiData {
+  id: string;
+  name: string;
+  unified: string;
+  short_name: string;
+  short_names: string[];
+  sheet: [number, number];
+  keywords: string[];
+  hidden: string[];
+  emoticons: string[];
+  text: string;
+  skin_variations: EmojiVariaiton[];
+  obsoleted_by?: string;
+  obsoletes?: string;
+  search: any;
+  skin_tone?: Emoji['skin'];
+  custom?: boolean;
+  native?: string;
+  imageUrl?: string;
 }
 
 export interface EmojiVariaiton {
@@ -27,8 +49,9 @@ export interface EmojiVariaiton {
 }
 
 export interface SkinData {
-  name: string,
-  unified: string,
-  hidden: string[],
-  sheet: [number, number]
+  name: string;
+  unified: string;
+  short_name: string;
+  hidden: string[];
+  sheet: [number, number];
 }

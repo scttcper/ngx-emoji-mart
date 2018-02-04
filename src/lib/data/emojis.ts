@@ -1,5 +1,5 @@
-import { EmojiData } from './data.interfaces';
-const data: EmojiData[] = [
+import { CompressedEmojiData } from './data.interfaces';
+const data: CompressedEmojiData[] = [
   {
     name: 'Monkey Face',
     unified: '1F435',

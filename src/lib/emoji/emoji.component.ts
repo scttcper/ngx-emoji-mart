@@ -7,6 +7,7 @@ import {
   Output,
 } from '@angular/core';
 
+import { EmojiData } from '../data/data.interfaces';
 import { EmojiService } from './emoji.service';
 
 export interface Emoji {
@@ -17,7 +18,7 @@ export interface Emoji {
   sheetSize: 16 | 20 | 32 | 64;
   set: 'apple' | 'google' | 'twitter' | 'emojione' | 'messenger' | 'facebook';
   size: number;
-  emoji: string | object;
+  emoji: string | EmojiData;
   backgroundImageFn: (set: string, sheetSize: Emoji['sheetSize']) => string;
   fallback: (data: any) => string;
   emojiOver: EventEmitter<EmojiEvent>;
@@ -89,11 +90,13 @@ export class EmojiComponent implements OnChanges, Emoji {
       return null;
     }
 
-    const { unified, custom, short_names, imageUrl, obsoleted_by } = data;
+    const { unified, custom, short_names, imageUrl, obsoleted_by, native } = data;
     // const children = this.children;
     const title = null;
     this.unified = null;
-    this.custom = custom;
+    if (custom) {
+      this.custom = custom;
+    }
 
     if (!unified && !custom) {
       return this.isVisible = false;
@@ -103,13 +106,13 @@ export class EmojiComponent implements OnChanges, Emoji {
       this.title = short_names[0];
     }
 
-    if (this.native && unified) {
+    if (this.native && unified && native) {
       // hide older emoji before the split into gendered emoji
       if (obsoleted_by) {
         return this.isVisible = false;
       }
       this.style = { fontSize: `${this.size}px` };
-      this.unified = this.emojiService.unifiedToNative(unified);
+      this.unified = native;
 
       if (this.forceSize) {
         this.style.display = 'inline-block';

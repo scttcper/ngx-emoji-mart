@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 
-import { EmojiData } from '../data/data.interfaces';
+import { CompressedEmojiData, EmojiData } from '../data/data.interfaces';
 import emojis from '../data/emojis';
+import { Emoji } from './emoji.component';
 
 const COLONS_REGEX = /^(?:\:([^\:]+)\:)(?:\:skin-tone-(\d)\:)?$/;
 const SKINS = ['1F3FA', '1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF'];
@@ -14,38 +15,54 @@ export class EmojiService {
     this.uncompress(emojis);
   }
 
-  uncompress(list: EmojiData[]) {
-    for (const datum of list) {
-      this.names[datum.unified] = datum;
-      this.names[datum.short_name] = datum;
-      if (datum.short_names) {
-        for (const n of datum.short_names) {
-          this.names[n] = datum;
-        }
+  uncompress(list: CompressedEmojiData[]) {
+    list.forEach((data: any) => {
+      if (!data.short_names) {
+        data.short_names = [];
+      }
+      data.short_names.unshift(data.short_name);
+      data.id = data.short_name;
+      data.native = this.unifiedToNative(data.unified);
+
+      if (!data.skin_variations) {
+        data.skin_variations = [];
       }
 
-      if (!datum.short_names) {
-        datum.short_names = [];
+      if (!data.keywords) {
+        data.keywords = [];
       }
-      datum.short_names.unshift(datum.short_name);
 
-      if (!datum.text) {
-        datum.text = '';
+      if (!data.emoticons) {
+        data.emoticons = [];
+      }
+
+      if (!data.hidden) {
+        data.hidden = [];
+      }
+
+      if (!data.text) {
+        data.text = '';
       }
 
       // TODO: build search as a second seperate step
-      datum.search = this.buildSearch({
-        short_names: datum.short_names,
-        name: datum.name,
-        keywords: datum.keywords,
-        emoticons: datum.emoticons,
-      });
-    }
+      data.search = this.buildSearch(
+        data.short_names,
+        data.name,
+        data.keywords,
+        data.emoticons,
+      );
+
+      this.names[data.unified] = data;
+      for (const n of data.short_names) {
+        this.names[n] = data;
+      }
+    });
   }
-  getData(emoji, skin?, set?) {
-    if (!emoji) {
-      return;
-    }
+  getData(
+    emoji: EmojiData | string,
+    skin?: Emoji['skin'],
+    set?: Emoji['set'],
+  ): EmojiData {
     let emojiData: any;
 
     if (typeof emoji === 'string') {
@@ -55,23 +72,28 @@ export class EmojiService {
         emoji = matches[1];
 
         if (matches[2]) {
-          skin = parseInt(matches[2], 10);
+          skin = (<Emoji['skin']>parseInt(matches[2], 10));
         }
       }
       emojiData = this.names[emoji];
     } else if (emoji.id) {
       emojiData = this.names[emoji.id];
-      if (skin) {
-        skin = emoji.skin;
-      }
+      // if (skin) {
+      //   skin = emoji.skin;
+      // }
     }
 
     if (!emojiData) {
       emojiData = emoji;
       emojiData.custom = true;
 
-      if (!emojiData.search) {
-        emojiData.search = this.buildSearch(emoji);
+      if (!emojiData.search && typeof emoji !== 'string') {
+        emojiData.search = this.buildSearch(
+          emoji.short_names,
+          emoji.name,
+          emoji.keywords,
+          emoji.emoticons,
+        );
       }
     }
 
@@ -82,13 +104,12 @@ export class EmojiService {
       emojiData.variations = [];
     }
 
-    if (emojiData.skin_variations && skin > 1 && set) {
-      // TODO: different solution for copying
-      emojiData = JSON.parse(JSON.stringify(emojiData));
+    if (emojiData.skin_variations && emojiData.skin_variations.length && skin && skin > 1 && set) {
+      emojiData = { ...emojiData };
 
       const skinKey = SKINS[skin - 1];
       const variationData = emojiData.skin_variations.find(
-        n => n.unified.indexOf(skinKey) !== -1,
+        (n: EmojiData) => n.unified.indexOf(skinKey) !== -1,
       );
 
       if (!variationData.variations && emojiData.variations) {
@@ -97,21 +118,26 @@ export class EmojiService {
 
       if (!variationData.hidden || variationData.hidden.indexOf(set) === -1) {
         emojiData.skin_tone = skin;
-
         emojiData = { ...emojiData, ...variationData };
       }
+      emojiData.native = this.unifiedToNative(emojiData.unified);
     }
 
     if (emojiData.variations && emojiData.variations.length) {
-      emojiData = JSON.parse(JSON.stringify(emojiData));
+      emojiData = { ...emojiData };
       emojiData.unified = emojiData.variations.shift();
     }
 
     return emojiData;
   }
 
-  buildSearch(data) {
-    const search = [];
+  buildSearch(
+    short_names: string[],
+    name: string,
+    keywords: string[],
+    emoticons: string[],
+  ) {
+    const search: string[] = [];
 
     const addToSearch = (strings: string | string[], split: boolean) => {
       if (!strings) {
@@ -129,10 +155,10 @@ export class EmojiService {
       });
     };
 
-    addToSearch(data.short_names, true);
-    addToSearch(data.name, true);
-    addToSearch(data.keywords, false);
-    addToSearch(data.emoticons, false);
+    addToSearch(short_names, true);
+    addToSearch(name, true);
+    addToSearch(keywords, false);
+    addToSearch(emoticons, false);
 
     return search.join(',');
   }
@@ -140,15 +166,15 @@ export class EmojiService {
     const codePoints = unified.split('-').map(u => parseInt(`0x${u}`, 16));
     return String.fromCodePoint(...codePoints);
   }
-  sanitize(emoji) {
+  sanitize(emoji: EmojiData) {
     const id = emoji.id || emoji.short_names[0];
     let colons = `:${id}:`;
 
     if (emoji.custom) {
       return {
         id,
-        name,
         colons,
+        name: emoji.name,
         emoticons: emoji.emoticons,
         custom: emoji.custom,
         imageUrl: emoji.imageUrl,
@@ -161,15 +187,15 @@ export class EmojiService {
 
     return {
       id,
-      name,
       colons,
+      name: emoji.name,
       emoticons: emoji.emoticons,
       unified: emoji.unified.toLowerCase(),
       skin: emoji.skin_tone || (emoji.skin_variations ? 1 : null),
       native: this.unifiedToNative(emoji.unified),
     };
   }
-  getSanitizedData(emoji, skin?, set?) {
+  getSanitizedData(emoji: string | EmojiData, skin?: Emoji['skin'], set?: Emoji['set']) {
     return this.sanitize(this.getData(emoji, skin, set));
   }
 }

@@ -18,19 +18,26 @@ import { Emoji } from '../emoji/emoji.component';
 import * as store from '../utils/store';
 import { AnchorsComponent } from './anchors.component';
 import { CategoryComponent } from './category.component';
-import { PreviewComponent } from './preview.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
+import { PreviewComponent } from './preview.component';
 
 
-const RECENT_CATEGORY = { id: 'recent', name: 'Recent', emojis: null };
+const RECENT_CATEGORY = {
+  id: 'recent',
+  name: 'Recent',
+  emojis: null,
+};
 const SEARCH_CATEGORY = {
   id: 'search',
   name: 'Search',
   emojis: null,
   anchor: false,
 };
-const CUSTOM_CATEGORY = { id: 'custom', name: 'Custom', emojis: [] };
-
+const CUSTOM_CATEGORY = {
+  id: 'custom',
+  name: 'Custom',
+  emojis: (<any[]>[]),
+};
 const I18N = {
   search: 'Search',
   notfound: 'No Emoji Found',
@@ -107,7 +114,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
     this.i18n.categories = { ...I18N.categories, ...this.i18n.categories };
     this.skin = store.get('skin') || this.skin;
 
-    const allCategories = [].concat(categories);
+    const allCategories = [...categories];
 
     if (this.custom.length > 0) {
       CUSTOM_CATEGORY.emojis = this.custom.map(emoji => {
@@ -201,12 +208,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   }
 
   updateCategoriesSize() {
-    for (let i = 0, l = this.categories.length; i < l; i++) {
-      const component = this.categoryRefs[`category-${i}`];
-      if (component) {
-        component.memoizeSize();
-      }
-    }
+    this.categoryRefs.forEach((component) => component.memoizeSize());
 
     if (this.scrollRef) {
       const target = this.scrollRef.nativeElement;
@@ -374,7 +376,6 @@ export class PickerComponent implements OnInit, AfterViewInit {
     }
   }
   handleSkinChange(skin: Emoji['skin']) {
-    console.log(skin)
     this.skin = skin;
   }
 }

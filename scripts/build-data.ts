@@ -176,8 +176,8 @@ const sEmojis = stringifyObject(emojis, {
   inlineCharacterLimit: 25,
   indent: '  ',
 });
-let doc = `import { EmojiData } from './data.interfaces';
-const data: EmojiData[] = ${sEmojis};
+let doc = `import { CompressedEmojiData } from './data.interfaces';
+const data: CompressedEmojiData[] = ${sEmojis};
 export default data;
 `;
 fs.writeFileSync('./src/lib/data/emojis.ts', doc);
@@ -199,7 +199,7 @@ const sSkins = stringifyObject(skins, {
   indent: '  ',
 });
 doc = `import { SkinData } from './data.interfaces';
-const data: any[] = ${sSkins};
+const data: SkinData[] = ${sSkins};
 export default data;
 `;
 fs.writeFileSync('./src/lib/data/skins.ts', doc);
