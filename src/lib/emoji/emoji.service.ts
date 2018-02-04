@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
 
-import { CompressedEmojiData, EmojiData } from '../data/data.interfaces';
+import {
+  CompressedEmojiData,
+  EmojiData,
+  EmojiVariaiton,
+} from '../data/data.interfaces';
 import emojis from '../data/emojis';
 import { Emoji } from './emoji.component';
 
@@ -10,13 +14,14 @@ const SKINS = ['1F3FA', '1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF'];
 @Injectable()
 export class EmojiService {
   names: { [key: string]: EmojiData } = {};
+  emojis: EmojiData[] = [];
 
   constructor() {
     this.uncompress(emojis);
   }
 
   uncompress(list: CompressedEmojiData[]) {
-    list.forEach((data: any) => {
+    this.emojis = list.map((data: any) => {
       if (!data.short_names) {
         data.short_names = [];
       }
@@ -56,6 +61,7 @@ export class EmojiService {
       for (const n of data.short_names) {
         this.names[n] = data;
       }
+      return data;
     });
   }
   getData(
@@ -97,19 +103,12 @@ export class EmojiService {
       }
     }
 
-    if (emojiData.emoticons) {
-      emojiData.emoticons = [];
-    }
-    if (emojiData.variations) {
-      emojiData.variations = [];
-    }
-
     if (emojiData.skin_variations && emojiData.skin_variations.length && skin && skin > 1 && set) {
       emojiData = { ...emojiData };
 
       const skinKey = SKINS[skin - 1];
       const variationData = emojiData.skin_variations.find(
-        (n: EmojiData) => n.unified.indexOf(skinKey) !== -1,
+        (n: EmojiVariaiton) => n.unified.indexOf(skinKey) !== -1,
       );
 
       if (!variationData.variations && emojiData.variations) {
@@ -166,34 +165,14 @@ export class EmojiService {
     const codePoints = unified.split('-').map(u => parseInt(`0x${u}`, 16));
     return String.fromCodePoint(...codePoints);
   }
-  sanitize(emoji: EmojiData) {
+  sanitize(emoji: EmojiData): EmojiData {
     const id = emoji.id || emoji.short_names[0];
     let colons = `:${id}:`;
-
-    if (emoji.custom) {
-      return {
-        id,
-        colons,
-        name: emoji.name,
-        emoticons: emoji.emoticons,
-        custom: emoji.custom,
-        imageUrl: emoji.imageUrl,
-      };
-    }
-
     if (emoji.skin_tone) {
       colons += `:skin-tone-${emoji.skin_tone}:`;
     }
-
-    return {
-      id,
-      colons,
-      name: emoji.name,
-      emoticons: emoji.emoticons,
-      unified: emoji.unified.toLowerCase(),
-      skin: emoji.skin_tone || (emoji.skin_variations ? 1 : null),
-      native: this.unifiedToNative(emoji.unified),
-    };
+    emoji.colons = colons;
+    return { ...emoji };
   }
   getSanitizedData(emoji: string | EmojiData, skin?: Emoji['skin'], set?: Emoji['set']) {
     return this.sanitize(this.getData(emoji, skin, set));

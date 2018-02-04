@@ -24,16 +24,14 @@
   <div class="row justify-content-center mb-3">
     <div class="col-12">
       <div class="d-flex justify-content-center">
-        <div style="width: 338px;">
-          <emoji-mart
-            [set]="set"
-            [native]="native"
-            [hideRecent]="false"
-            [custom]="CUSTOM_EMOJIS"
-            title="Pick your emoji…"
-            emoji='point_up'>
-          </emoji-mart>
-        </div>
+        <emoji-mart
+          [set]="set"
+          [native]="native"
+          [hideRecent]="false"
+          [custom]="CUSTOM_EMOJIS"
+          title="Pick your emoji…"
+          emoji='point_up'>
+        </emoji-mart>
       </div>
 
       <router-outlet></router-outlet>

@@ -1,4 +1,4 @@
-<div [attr.width]="width" class="emoji-mart">
+<div [style.width.px]="perLine * (emojiSize + 12) + 12 + 2 + measureScrollbar" class="emoji-mart">
   <div class="emoji-mart-bar">
     <emoji-mart-anchors
       #anchorsRef
@@ -50,7 +50,7 @@
     </div>
 
 </div>
-<div class="emoji-mart-bar">
+<div class="emoji-mart-bar" *ngIf="showPreview">
   <emoji-preview
     #previewRef
     [title]="title"

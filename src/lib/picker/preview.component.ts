@@ -1,4 +1,6 @@
 import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
   Component,
   EventEmitter,
   Input,
@@ -6,6 +8,8 @@ import {
   OnInit,
   Output,
 } from '@angular/core';
+
+import { EmojiData } from '../data/data.interfaces';
 import { EmojiService } from '../emoji/emoji.service';
 
 @Component({
@@ -27,18 +31,14 @@ import { EmojiService } from '../emoji/emoji.service';
     <div class="emoji-mart-preview-data">
       <div class="emoji-mart-preview-name">{{ emojiData.name }}</div>
       <div class="emoji-mart-preview-shortnames">
-
         <span class="emoji-mart-preview-shortname" *ngFor="let short_name of emojiData.short_names">
           :{{ short_name }}:
         </span>
-
       </div>
       <div class="emoji-mart-preview-emoticons">
-
         <span class="emoji-mart-preview-emoticon" *ngFor="let emoticon of listedEmoticons">
           {{ emoticon }}
         </span>
-
       </div>
     </div>
   </div>
@@ -60,12 +60,15 @@ import { EmojiService } from '../emoji/emoji.service';
     </div>
 
     <div class="emoji-mart-preview-skins">
-      <emoji-skins [skin]="emojiSkin" (change)="skinChange.emit($event)"></emoji-skins>
+      <emoji-skins [skin]="emojiSkin" (change)="skinChange.emit($event)">
+      </emoji-skins>
     </div>
   </div>
   `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  preserveWhitespaces: false,
 })
-export class PreviewComponent implements OnInit, OnChanges {
+export class PreviewComponent implements OnChanges {
   @Input() title: any;
   @Input() emoji: any;
   @Input() idleEmoji: any;
@@ -76,20 +79,23 @@ export class PreviewComponent implements OnInit, OnChanges {
   @Input() emojiSheetSize: any;
   @Input() emojiBackgroundImageFn: any;
   @Output() skinChange = new EventEmitter<number>();
-  emojiData: any;
+  emojiData: EmojiData;
+  listedEmoticons: string[];
 
-  constructor(private emojiService: EmojiService) {}
+  constructor(
+    public ref: ChangeDetectorRef,
+    private emojiService: EmojiService,
+  ) {}
 
-  ngOnInit() {}
   ngOnChanges() {
     if (!this.emoji) {
       return;
     }
     this.emojiData = this.emojiService.getData(this.emoji);
-    const emoticons = this.emojiData.emoticons || [];
-    const knownEmoticons = [];
-    const listedEmoticons = [];
-    emoticons.forEach(emoticon => {
+    const knownEmoticons: string[] = [];
+    const listedEmoticons: string[] = [];
+    const emoitcons = this.emojiData.emoticons || [];
+    emoitcons.forEach((emoticon: string) => {
       if (knownEmoticons.indexOf(emoticon.toLowerCase()) >= 0) {
         return;
       }
@@ -97,5 +103,6 @@ export class PreviewComponent implements OnInit, OnChanges {
       knownEmoticons.push(emoticon.toLowerCase());
       listedEmoticons.push(emoticon);
     });
+    this.listedEmoticons = listedEmoticons;
   }
 }

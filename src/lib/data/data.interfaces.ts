@@ -4,6 +4,7 @@ export interface EmojiCategory {
   id: string;
   name: string;
   emojis: string[];
+  first?: boolean;
 }
 
 export interface CompressedEmojiData {
@@ -24,7 +25,7 @@ export interface CompressedEmojiData {
 export interface EmojiData {
   id: string;
   name: string;
-  unified: string;
+  unified?: string;
   short_name: string;
   short_names: string[];
   sheet: [number, number];
@@ -40,6 +41,8 @@ export interface EmojiData {
   custom?: boolean;
   native?: string;
   imageUrl?: string;
+  colons?: string;
+  skin?: Emoji['skin'];
 }
 
 export interface EmojiVariaiton {

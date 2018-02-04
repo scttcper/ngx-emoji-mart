@@ -27,7 +27,7 @@ export interface Emoji {
 }
 
 export interface EmojiEvent {
-  emoji: string | object;
+  emoji: EmojiData;
   $event: Event;
 }
 

@@ -1,5 +1,13 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+} from '@angular/core';
 
+import { EmojiCategory } from '../data/data.interfaces';
 import SVGs from '../svgs';
 
 @Component({
@@ -33,10 +41,10 @@ import SVGs from '../svgs';
   preserveWhitespaces: false,
 })
 export class AnchorsComponent implements OnInit {
-  @Input() categories: any = [];
+  @Input() categories: EmojiCategory[] = [];
   @Input() color: any = [];
   @Input() selected: string;
-  @Output() anchorClick = new EventEmitter<any>();
+  @Output() anchorClick = new EventEmitter<{ category: EmojiCategory, index: number }>();
   svgs = SVGs;
 
   constructor() {
@@ -46,7 +54,7 @@ export class AnchorsComponent implements OnInit {
   ngOnInit() {
   }
 
-  handleClick($event, index: number) {
+  handleClick($event: Event, index: number) {
     this.anchorClick.emit({
       category: this.categories[index],
       index,

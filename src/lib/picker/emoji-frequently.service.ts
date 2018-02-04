@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import * as store from '../utils/store';
+import { EmojiData } from '../data/data.interfaces';
 
 const DEFAULTS = [
   '+1',
@@ -23,27 +23,26 @@ const DEFAULTS = [
 
 @Injectable()
 export class EmojiFrequentlyService {
+  NAMESPACE = 'emoji-mart';
   frequently: { [key: string]: number };
   defaults: { [key: string]: number } = {};
 
   constructor() {
-    this.frequently = store.get('frequently');
+    this.frequently = JSON.parse(localStorage.getItem(`${this.NAMESPACE}.frequently`) || 'null');
   }
-  add(emoji) {
-    const { id } = emoji;
-
+  add(emoji: EmojiData) {
     if (!this.frequently) {
       this.frequently = this.defaults;
     }
-    if (!this.frequently[id]) {
-      this.frequently[id] = 0;
+    if (!this.frequently[emoji.id]) {
+      this.frequently[emoji.id] = 0;
     }
-    this.frequently[id] += 1;
+    this.frequently[emoji.id] += 1;
 
-    store.set('last', id);
-    store.set('frequently', this.frequently);
+    localStorage.setItem(`${this.NAMESPACE}.last`, emoji.id);
+    localStorage.setItem(`${this.NAMESPACE}.frequently`, JSON.stringify(this.frequently));
   }
-  get(perLine) {
+  get(perLine: number) {
     if (!this.frequently) {
       this.defaults = {};
 
@@ -64,7 +63,7 @@ export class EmojiFrequentlyService {
       .reverse();
     const sliced = sorted.slice(0, quantity);
 
-    const last = store.get('last');
+    const last = localStorage.getItem(`${this.NAMESPACE}.last`);
 
     if (last && sliced.indexOf(last) === -1) {
       sliced.pop();

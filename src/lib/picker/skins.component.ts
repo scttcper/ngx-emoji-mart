@@ -35,14 +35,14 @@ export class SkinComponent {
     this.opened = !this.opened;
   }
 
-  handleClick(skin) {
+  handleClick(skin: number) {
     if (!this.opened) {
       this.opened = true;
-    } else {
-      this.opened = false;
-      if (skin !== this.skin) {
-        this.change.emit(skin);
-      }
+      return;
+    }
+    this.opened = false;
+    if (skin !== this.skin) {
+      this.change.emit(skin);
     }
   }
 }

@@ -1,37 +1,39 @@
 import { Injectable } from '@angular/core';
 
 import categories from '../data/categories';
-import emojis from '../data/emojis';
+import { EmojiData } from '../data/data.interfaces';
 import { EmojiService } from '../emoji/emoji.service';
 import { intersect } from '../utils';
 
 @Injectable()
 export class EmojiSearchService {
   originalPool: any = {};
-  index: any = {};
+  index: {
+    results?: EmojiData[],
+    pool?: { [key: string]: EmojiData },
+    [key: string]: any,
+  } = {};
   emojisList: any = {};
   emoticonsList: any = {};
 
   constructor(private emojiService: EmojiService) {
-    for (const emojiData of emojis) {
+    for (const emojiData of this.emojiService.emojis) {
       const { short_names, emoticons } = emojiData;
       const id = short_names[0];
 
-      if (emoticons) {
-        emoticons.forEach(emoticon => {
-          if (this.emoticonsList[emoticon]) {
-            return;
-          }
+      emoticons.forEach(emoticon => {
+        if (this.emoticonsList[emoticon]) {
+          return;
+        }
 
-          this.emoticonsList[emoticon] = id;
-        });
-      }
+        this.emoticonsList[emoticon] = id;
+      });
 
       this.emojisList[id] = this.emojiService.getSanitizedData(id);
       this.originalPool[id] = emojiData;
     }
   }
-  addCustomToPool(custom: any, pool) {
+  addCustomToPool(custom: any, pool: any) {
     custom.forEach((emoji: any) => {
       const emojiId = emoji.id || emoji.short_names[0];
 
@@ -82,7 +84,9 @@ export class EmojiSearchService {
             return;
           }
 
-          category.emojis.forEach(emojiId => (pool[emojiId] = emojis[emojiId]));
+          category.emojis.forEach(emojiId =>
+            pool[emojiId] = this.emojiService.names[emojiId],
+          );
         });
 
         if (custom.length) {
@@ -111,7 +115,7 @@ export class EmojiSearchService {
             aIndex = aIndex[char];
 
             if (!aIndex.results) {
-              const scores: any = {};
+              const scores: {[key: string]: number} = {};
 
               aIndex.results = [];
               aIndex.pool = {};
@@ -161,8 +165,8 @@ export class EmojiSearchService {
 
     if (results) {
       if (emojisToShowFilter) {
-        results = results.filter((result) =>
-          emojisToShowFilter(emojis[result.id]),
+        results = results.filter((result: EmojiData) =>
+          emojisToShowFilter(this.emojiService.names[result.id]),
         );
       }
 

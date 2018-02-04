@@ -70,14 +70,14 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
-export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
-  @Input() emojis: any[] = [];
+export class CategoryComponent implements OnInit, AfterViewInit {
+  @Input() emojis: any[] | null;
   @Input() hasStickyPosition = true;
   @Input() name: string;
   @Input() native: boolean;
   @Input() perLine: number;
   @Input() recent: string[];
-  @Input() custom: any;
+  @Input() custom: any[];
   @Input() i18n: any;
   @Input() id: any;
   @Input() emojiNative: Emoji['native'];
@@ -120,8 +120,6 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
     }
   }
 
-  ngOnChanges() {}
-
   ngAfterViewInit() {
     this.parent = this.container.nativeElement.parentNode.parentNode;
     this.memoizeSize();
@@ -144,7 +142,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
     }
   }
 
-  handleScroll(scrollTop) {
+  handleScroll(scrollTop: number) {
     let margin = scrollTop - this.top;
     margin = margin < this.minMargin ? this.minMargin : margin;
     margin = margin > this.maxMargin ? this.maxMargin : margin;
@@ -169,7 +167,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
       if (frequentlyUsed.length) {
         this.emojis = frequentlyUsed
           .map(id => {
-            const emoji = this.custom.filter(e => e.id === id)[0];
+            const emoji = this.custom.filter((e: any) => e.id === id)[0];
             if (emoji) {
               return emoji;
             }
@@ -179,7 +177,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
           .filter(id => !!this.emojiService.getData(id));
       }
 
-      if (this.emojis.length === 0 && frequentlyUsed.length > 0) {
+      if ((!this.emojis || this.emojis.length === 0) && frequentlyUsed.length > 0) {
         return null;
       }
     }
@@ -190,12 +188,12 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
 
     return this.emojis;
   }
-  updateDisplay(display) {
+  updateDisplay(display: 'none' | 'inherit') {
     const emojis = this.getEmojis();
     this.containerStyles.display = display;
     this.ref.detectChanges();
   }
-  trackById(index, item) {
+  trackById(index: number, item: any) {
     return item;
   }
 }

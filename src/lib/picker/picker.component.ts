@@ -14,8 +14,9 @@ import {
 } from '@angular/core';
 
 import categories from '../data/categories';
-import { Emoji } from '../emoji/emoji.component';
-import * as store from '../utils/store';
+import { EmojiCategory } from '../data/data.interfaces';
+import { Emoji, EmojiEvent } from '../emoji/emoji.component';
+import { measureScrollbar } from '../utils/index';
 import { AnchorsComponent } from './anchors.component';
 import { CategoryComponent } from './category.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
@@ -76,7 +77,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() native: Emoji['native'] = true;
   @Input() emojiSize: Emoji['size'] = 24;
   @Input() sheetSize: Emoji['sheetSize'] = 64;
-  @Input() emojisToShowFilter = null;
+  @Input() emojisToShowFilter: (x: string) => boolean;
   @Input() showPreview = true;
   @Input() emojiTooltip = false;
   @Input() autoFocus = false;
@@ -99,6 +100,8 @@ export class PickerComponent implements OnInit, AfterViewInit {
   recent: string[];
   previewEmoji: any;
   leaveTimeout: any;
+  NAMESPACE = 'emoji-mart';
+  measureScrollbar: number;
   @Input() backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
     `https://unpkg.com/emoji-datasource-${this.set}@4.0.3/img/${
       this.set
@@ -110,9 +113,12 @@ export class PickerComponent implements OnInit, AfterViewInit {
   ) { }
 
   ngOnInit() {
+    // measure scroll
+    this.measureScrollbar = measureScrollbar();
+
     this.i18n = { ...I18N, ...this.i18n };
     this.i18n.categories = { ...I18N.categories, ...this.i18n.categories };
-    this.skin = store.get('skin') || this.skin;
+    this.skin = JSON.parse(localStorage.getItem(`${this.NAMESPACE}.skin`) || 'null') || this.skin;
 
     const allCategories = [...categories];
 
@@ -163,7 +169,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
         const { emojis } = category;
         for (let emojiIndex = 0; emojiIndex < emojis.length; emojiIndex++) {
           const emoji = emojis[emojiIndex];
-          if (this.emojisToShowFilter(emojis[emoji] || emoji)) {
+          if (this.emojisToShowFilter(emoji)) {
             newEmojis.push(emoji);
           }
         }
@@ -217,7 +223,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
     }
   }
 
-  handleAnchorClick($event) {
+  handleAnchorClick($event: { category: EmojiCategory, index: number }) {
     const component = this.categoryRefs.find((n) => n.id === $event.category.id);
     let scrollToComponent = null;
 
@@ -243,7 +249,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
       scrollToComponent();
     }
   }
-  categoryTrack(index, item) {
+  categoryTrack(index: number, item: any) {
     return item.id;
   }
   handleScroll() {
@@ -315,39 +321,34 @@ export class PickerComponent implements OnInit, AfterViewInit {
     this.handleScroll();
   }
 
-  handleEmojiOver($event) {
-    if (!this.previewRef) {
+  handleEmojiOver($event: EmojiEvent) {
+    if (!this.showPreview || !this.previewRef) {
       return;
     }
 
     const emojiData = CUSTOM_CATEGORY.emojis.find(customEmoji => customEmoji.id === $event.emoji.id);
     if (emojiData) {
-      for (const key of Object.keys(emojiData)) {
-        if (emojiData.hasOwnProperty(key)) {
-          $event.emoji[key] = emojiData[key];
-        }
-      }
+      $event.emoji = { ...emojiData };
     }
 
     this.previewEmoji = $event.emoji;
     clearTimeout(this.leaveTimeout);
   }
 
-  handleEmojiLeave($event) {
-    if (!this.previewRef) {
+  handleEmojiLeave($event: EmojiEvent) {
+    if (!this.showPreview || !this.previewRef) {
       return;
     }
 
     this.leaveTimeout = setTimeout(() => {
       this.previewEmoji = null;
-      this.ref.markForCheck();
+      this.previewRef.ref.markForCheck();
     }, 16);
   }
 
-  handleEmojiClick($event) {
+  handleEmojiClick($event: EmojiEvent) {
     this.click.emit($event);
     if (!this.hideRecent && !this.recent) {
-      console.log($event.emoji);
       this.frequently.add($event.emoji);
     }
 
@@ -377,5 +378,6 @@ export class PickerComponent implements OnInit, AfterViewInit {
   }
   handleSkinChange(skin: Emoji['skin']) {
     this.skin = skin;
+    localStorage.setItem(`${this.NAMESPACE}.skin`, String(skin));
   }
 }

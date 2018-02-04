@@ -1,7 +1,7 @@
 import categories from '../data/categories';
 
-function uniq(arr) {
-  return arr.reduce((acc, item) => {
+function uniq(arr: any[]) {
+  return arr.reduce((acc: any, item: any) => {
     if (acc.indexOf(item) === -1) {
       acc.push(item);
     }
@@ -9,11 +9,11 @@ function uniq(arr) {
   }, []);
 }
 
-export function intersect(a, b) {
+export function intersect(a: any, b: any) {
   const uniqA = uniq(a);
   const uniqB = uniq(b);
 
-  return uniqA.filter(item => uniqB.indexOf(item) >= 0);
+  return uniqA.filter((item: any) => uniqB.indexOf(item) >= 0);
 }
 
 // https://github.com/sonicdoe/measure-scrollbar
