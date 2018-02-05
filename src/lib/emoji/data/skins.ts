@@ -1,5 +1,5 @@
 import { SkinData } from './data.interfaces';
-const data: SkinData[] = [
+export const skins: SkinData[] = [
   {
     name: 'Emoji Modifier Fitzpatrick Type-1-2',
     unified: '1F3FB',
@@ -36,4 +36,3 @@ const data: SkinData[] = [
     hidden: ['messenger']
   }
 ];
-export default data;

@@ -6,8 +6,8 @@ import {
   Output,
 } from '@angular/core';
 
-import { EmojiCategory } from 'ngx-emoji';
-import SVGs from '../svgs';
+import { EmojiCategory } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import SVGs from './svgs';
 
 @Component({
   selector: 'emoji-mart-anchors',

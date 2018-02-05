@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { EmojiData } from 'ngx-emoji';
+import { EmojiData } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 
 const DEFAULTS = [
   '+1',

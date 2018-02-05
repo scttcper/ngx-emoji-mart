@@ -8,7 +8,7 @@
     "target": "es5",
     "types": ["jasmine", "node"],
     "paths": {
-      "ngx-emoji": ["./lib/emoji/public_api"]
+      "@ctrl/ngx-emoji-mart/ngx-emoji": ["./lib/emoji/public_api"]
     }
   },
   "files": ["test.ts"],

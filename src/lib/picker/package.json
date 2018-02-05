@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../node_modules/ng-packagr/package.schema.json",
+  "name": "@ctrl/ngx-emoji-mart",
+  "version": "0.0.1",
+  "description": "Customizable Slack-like emoji picker for Angular",
+  "peerDependencies": {
+    "@angular/core": ">=5.0.0",
+    "@angular/common": ">=5.0.0",
+    "rxjs": "^5.5.0"
+  },
+  "bugs": "https://github.com/TypeCtrl/ngx-emoji-mart/issues",
+  "homepage": "https://github.com/TypeCtrl/ngx-emoji-mart",
+  "repository": "https://github.com/TypeCtrl/ngx-emoji-mart.git",
+  "license": "MIT",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts",
+      "umdModuleIds": {
+        "@ctrl/ngx-emoji-mart/ngx-emoji": "@ctrl/ngx-emoji-mart/ngx-emoji"
+      }
+    },
+    "dest": "../../../dist/picker"
+  },
+  "keywords": [
+    "angular",
+    "emoji",
+    "picker"
+  ]
+}

@@ -8,7 +8,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { EmojiData, EmojiService } from 'ngx-emoji';
+import { EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 
 @Component({
   selector: 'emoji-preview',

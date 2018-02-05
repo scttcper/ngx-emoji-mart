@@ -10,6 +10,6 @@
     "lib": {
       "entryFile": "public_api.ts"
     },
-    "dest": "../../../dist/packages-dist/block"
+    "dest": "../../../dist/ngx-emoji"
   }
 }

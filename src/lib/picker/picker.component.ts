@@ -12,11 +12,11 @@ import {
   ViewChildren,
 } from '@angular/core';
 
-import { categories, Emoji, EmojiCategory, EmojiEvent } from 'ngx-emoji';
-import { measureScrollbar } from '../utils/index';
+import { categories, Emoji, EmojiCategory, EmojiEvent } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { CategoryComponent } from './category.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 import { PreviewComponent } from './preview.component';
+import { measureScrollbar } from './utils';
 
 
 const RECENT_CATEGORY = {

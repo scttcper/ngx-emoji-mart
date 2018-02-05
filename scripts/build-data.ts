@@ -185,7 +185,7 @@ const sCategories = stringifyObject(categories, {
 doc = `import { EmojiCategory } from './data.interfaces';
 export const categories: EmojiCategory[] = ${sCategories};
 `;
-fs.writeFileSync('./src/lib/data/categories.ts', doc);
+fs.writeFileSync('./src/lib/emoji/data/categories.ts', doc);
 
 
 const sSkins = stringifyObject(skins, {

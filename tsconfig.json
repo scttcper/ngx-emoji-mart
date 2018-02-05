@@ -13,7 +13,7 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "paths": {
-      "ngx-emoji": ["./lib/emoji/public_api"]
+      "@ctrl/ngx-emoji-mart/ngx-emoji": ["./lib/emoji/public_api"]
     }
   }
 }

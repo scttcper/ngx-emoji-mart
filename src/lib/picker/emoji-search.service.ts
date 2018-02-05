@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { categories, EmojiData, EmojiService } from 'ngx-emoji';
-import { intersect } from '../utils';
+import { categories, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import { intersect } from './utils';
 
 @Injectable()
 export class EmojiSearchService {

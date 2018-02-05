@@ -11,7 +11,7 @@ import {
   ViewChild,
 } from '@angular/core';
 
-import { Emoji, EmojiService } from 'ngx-emoji';
+import { Emoji, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 
 @Component({
