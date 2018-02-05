@@ -14,7 +14,7 @@
     "lint:fix": "ng lint --type-check --fix -t stylish",
     "e2e": "ng e2e",
     "cleanup": "rimraf build dist waste deploy",
-    "ghpages": "ng build --prod --no-progress --baseHref='/ngx-trend/'"
+    "ghpages": "ng build --prod --no-progress --baseHref='/ngx-emoji-mart/'"
   },
   "private": true,
   "dependencies": {
