@@ -10,7 +10,7 @@ after_script: greenkeeper-lockfile-upload
 script:
   - npm run build
   - npm run lint
-  - npm run bundlesize
+  # - npm run bundlesize
   - npm run test:ci
 after_success:
   - bash <(curl -s https://codecov.io/bash)
