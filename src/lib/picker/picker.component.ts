@@ -1,7 +1,6 @@
 import {
   AfterViewInit,
   ChangeDetectionStrategy,
-  ChangeDetectorRef,
   Component,
   ElementRef,
   EventEmitter,
@@ -17,7 +16,6 @@ import categories from '../data/categories';
 import { EmojiCategory } from '../data/data.interfaces';
 import { Emoji, EmojiEvent } from '../emoji/emoji.component';
 import { measureScrollbar } from '../utils/index';
-import { AnchorsComponent } from './anchors.component';
 import { CategoryComponent } from './category.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 import { PreviewComponent } from './preview.component';
@@ -60,7 +58,6 @@ const I18N = {
 @Component({
   selector: 'emoji-mart',
   templateUrl: './picker.component.html',
-  styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
@@ -85,9 +82,8 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() hideRecent = true;
   @Input() include: string[] = [];
   @Input() exclude: string[] = [];
-  @Output() click = new EventEmitter<any>();
+  @Output() emojiClick = new EventEmitter<any>();
   @ViewChild('scrollRef') private scrollRef: ElementRef;
-  @ViewChild('anchorsRef') private anchorsRef: AnchorsComponent;
   @ViewChild('previewRef') private previewRef: PreviewComponent;
   @ViewChildren('categoryRef') private categoryRefs: QueryList<CategoryComponent>;
   scrollHeight: number;
@@ -108,7 +104,6 @@ export class PickerComponent implements OnInit, AfterViewInit {
     }/sheets-256/${this.sheetSize}.png`
 
   constructor(
-    private ref: ChangeDetectorRef,
     private frequently: EmojiFrequentlyService,
   ) { }
 
@@ -347,7 +342,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   }
 
   handleEmojiClick($event: EmojiEvent) {
-    this.click.emit($event);
+    this.emojiClick.emit($event);
     if (!this.hideRecent && !this.recent) {
       this.frequently.add($event.emoji);
     }

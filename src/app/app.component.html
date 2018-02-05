@@ -29,6 +29,7 @@
           [native]="native"
           [hideRecent]="false"
           [custom]="CUSTOM_EMOJIS"
+          (emojiClick)="handleClick($event)"
           title="Pick your emoji…"
           emoji='point_up'>
         </emoji-mart>

@@ -1,7 +1,6 @@
 <div [style.width.px]="perLine * (emojiSize + 12) + 12 + 2 + measureScrollbar" class="emoji-mart">
   <div class="emoji-mart-bar">
     <emoji-mart-anchors
-      #anchorsRef
       [categories]="categories"
       (anchorClick)="handleAnchorClick($event)"
       [color]="color"

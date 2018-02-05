@@ -6,7 +6,6 @@ import {
   ElementRef,
   EventEmitter,
   Input,
-  OnChanges,
   OnInit,
   Output,
   ViewChild,
@@ -189,7 +188,6 @@ export class CategoryComponent implements OnInit, AfterViewInit {
     return this.emojis;
   }
   updateDisplay(display: 'none' | 'inherit') {
-    const emojis = this.getEmojis();
     this.containerStyles.display = display;
     this.ref.detectChanges();
   }

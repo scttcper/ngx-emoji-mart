@@ -85,14 +85,16 @@ export class EmojiComponent implements OnChanges, Emoji {
   ) {}
 
   ngOnChanges() {
+    if (!this.emoji) {
+      return this.isVisible = false;
+    }
     const data = this.getData();
     if (!data) {
-      return null;
+      return this.isVisible = false;
     }
 
     const { unified, custom, short_names, imageUrl, obsoleted_by, native } = data;
     // const children = this.children;
-    const title = null;
     this.unified = null;
     if (custom) {
       this.custom = custom;
@@ -106,11 +108,12 @@ export class EmojiComponent implements OnChanges, Emoji {
       this.title = short_names[0];
     }
 
+    if (obsoleted_by) {
+      return this.isVisible = false;
+    }
+
     if (this.native && unified && native) {
       // hide older emoji before the split into gendered emoji
-      if (obsoleted_by) {
-        return this.isVisible = false;
-      }
       this.style = { fontSize: `${this.size}px` };
       this.unified = native;
 

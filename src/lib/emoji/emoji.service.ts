@@ -49,14 +49,6 @@ export class EmojiService {
         data.text = '';
       }
 
-      // TODO: build search as a second seperate step
-      data.search = this.buildSearch(
-        data.short_names,
-        data.name,
-        data.keywords,
-        data.emoticons,
-      );
-
       this.names[data.unified] = data;
       for (const n of data.short_names) {
         this.names[n] = data;
@@ -92,15 +84,6 @@ export class EmojiService {
     if (!emojiData) {
       emojiData = emoji;
       emojiData.custom = true;
-
-      if (!emojiData.search && typeof emoji !== 'string') {
-        emojiData.search = this.buildSearch(
-          emoji.short_names,
-          emoji.name,
-          emoji.keywords,
-          emoji.emoticons,
-        );
-      }
     }
 
     if (emojiData.skin_variations && emojiData.skin_variations.length && skin && skin > 1 && set) {
@@ -128,38 +111,6 @@ export class EmojiService {
     }
 
     return emojiData;
-  }
-
-  buildSearch(
-    short_names: string[],
-    name: string,
-    keywords: string[],
-    emoticons: string[],
-  ) {
-    const search: string[] = [];
-
-    const addToSearch = (strings: string | string[], split: boolean) => {
-      if (!strings) {
-        return;
-      }
-
-      (Array.isArray(strings) ? strings : [strings]).forEach(string => {
-        (split ? string.split(/[-|_|\s]+/) : [string]).forEach(s => {
-          s = s.toLowerCase();
-
-          if (search.indexOf(s) === -1) {
-            search.push(s);
-          }
-        });
-      });
-    };
-
-    addToSearch(short_names, true);
-    addToSearch(name, true);
-    addToSearch(keywords, false);
-    addToSearch(emoticons, false);
-
-    return search.join(',');
   }
   unifiedToNative(unified: string) {
     const codePoints = unified.split('-').map(u => parseInt(`0x${u}`, 16));

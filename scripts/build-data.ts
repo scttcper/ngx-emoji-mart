@@ -129,11 +129,7 @@ emojiData.forEach(datum => {
     datum.skin_variations = variations;
   }
 
-
-
-  // TODO: filtering obsoleted_by
-  datum.short_names = datum.short_names.filter(i => i !== datum.short_name);
-
+  datum.short_names = datum.short_names.filter((i: any) => i !== datum.short_name);
 
 
   if (datum.text === '') {

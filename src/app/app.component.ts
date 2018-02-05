@@ -44,4 +44,7 @@ export class AppComponent {
     this.native = set === 'native';
     this.set = set;
   }
+  handleClick($event: any) {
+    console.log($event);
+  }
 }

@@ -3,7 +3,6 @@ import {
   Component,
   EventEmitter,
   Input,
-  OnInit,
   Output,
 } from '@angular/core';
 
@@ -40,19 +39,12 @@ import SVGs from '../svgs';
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
-export class AnchorsComponent implements OnInit {
+export class AnchorsComponent {
   @Input() categories: EmojiCategory[] = [];
-  @Input() color: any = [];
+  @Input() color: string;
   @Input() selected: string;
   @Output() anchorClick = new EventEmitter<{ category: EmojiCategory, index: number }>();
   svgs = SVGs;
-
-  constructor() {
-
-  }
-
-  ngOnInit() {
-  }
 
   handleClick($event: Event, index: number) {
     this.anchorClick.emit({

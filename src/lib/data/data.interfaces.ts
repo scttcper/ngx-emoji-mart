@@ -36,7 +36,7 @@ export interface EmojiData {
   skin_variations: EmojiVariaiton[];
   obsoleted_by?: string;
   obsoletes?: string;
-  search: any;
+  // search: any;
   skin_tone?: Emoji['skin'];
   custom?: boolean;
   native?: string;

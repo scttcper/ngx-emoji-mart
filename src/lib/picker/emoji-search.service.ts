@@ -15,6 +15,7 @@ export class EmojiSearchService {
   } = {};
   emojisList: any = {};
   emoticonsList: any = {};
+  emojiSearch: { [key: string]: string } = {};
 
   constructor(private emojiService: EmojiService) {
     for (const emojiData of this.emojiService.emojis) {
@@ -50,10 +51,10 @@ export class EmojiSearchService {
     include: any[] = [],
     exclude: any[] = [],
     custom: any[] = [],
-  ) {
+  ): EmojiData[] | undefined {
     this.addCustomToPool(custom, this.originalPool);
 
-    let results = null;
+    let results: EmojiData[] | undefined;
     let pool = this.originalPool;
 
     if (value.length) {
@@ -122,7 +123,15 @@ export class EmojiSearchService {
 
               for (const id of Object.keys(aPool)) {
                 const emoji = aPool[id];
-                const query = emoji['search'];
+                if (!this.emojiSearch[id]) {
+                  this.emojiSearch[id] = this.buildSearch(
+                    emoji.short_names,
+                    emoji.name,
+                    emoji.keywords,
+                    emoji.emoticons,
+                  );
+                }
+                const query = this.emojiSearch[id];
                 const sub = v.substr(0, length);
                 const subIndex = query.indexOf(sub);
 
@@ -176,5 +185,36 @@ export class EmojiSearchService {
     }
 
     return results;
+  }
+  buildSearch(
+    short_names: string[],
+    name: string,
+    keywords: string[],
+    emoticons: string[],
+  ) {
+    const search: string[] = [];
+
+    const addToSearch = (strings: string | string[], split: boolean) => {
+      if (!strings) {
+        return;
+      }
+
+      (Array.isArray(strings) ? strings : [strings]).forEach(string => {
+        (split ? string.split(/[-|_|\s]+/) : [string]).forEach(s => {
+          s = s.toLowerCase();
+
+          if (search.indexOf(s) === -1) {
+            search.push(s);
+          }
+        });
+      });
+    };
+
+    addToSearch(short_names, true);
+    addToSearch(name, true);
+    addToSearch(keywords, false);
+    addToSearch(emoticons, false);
+
+    return search.join(',');
   }
 }

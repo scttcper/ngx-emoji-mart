@@ -5,6 +5,7 @@ import {
   Input,
   Output,
 } from '@angular/core';
+import { Emoji } from '../emoji/emoji.component';
 
 @Component({
   selector: 'emoji-skins',
@@ -26,7 +27,7 @@ import {
   preserveWhitespaces: false,
 })
 export class SkinComponent {
-  @Input() skin: any;
+  @Input() skin: Emoji['skin'];
   @Output() change = new EventEmitter<number>();
   opened = false;
   skinTones = [1, 2, 3, 4, 5, 6];

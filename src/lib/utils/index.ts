@@ -1,5 +1,3 @@
-import categories from '../data/categories';
-
 function uniq(arr: any[]) {
   return arr.reduce((acc: any, item: any) => {
     if (acc.indexOf(item) === -1) {
