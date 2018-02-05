@@ -14,7 +14,7 @@ export class EmojiSearchService {
     [key: string]: any,
   } = {};
   emojisList: any = {};
-  emoticonsList: any = {};
+  emoticonsList: { [key: string]: string } = {};
   emojiSearch: { [key: string]: string } = {};
 
   constructor(private emojiService: EmojiService) {
