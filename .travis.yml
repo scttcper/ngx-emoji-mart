@@ -19,7 +19,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   local_dir: dist
-  github_token: $PUSH_TOKEN
+  github_token: $GH_TOKEN
   on:
     branch: master
 notifications:
