@@ -7,7 +7,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { EmojiData } from '../data/data.interfaces';
+import { EmojiData } from './data/data.interfaces';
 import { EmojiService } from './emoji.service';
 
 export interface Emoji {

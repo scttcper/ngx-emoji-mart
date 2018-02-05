@@ -6,7 +6,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { EmojiCategory } from '../data/data.interfaces';
+import { EmojiCategory } from 'ngx-emoji';
 import SVGs from '../svgs';
 
 @Component({

@@ -4,11 +4,11 @@ import * as fs from 'fs';
 import * as inflection from 'inflection';
 import * as stringifyObject from 'stringify-object';
 
-const categories = [];
-const emojis = [];
-const skins = [];
-const short_names = {};
-const categoriesIndex = {};
+const categories: any[] = [];
+const emojis: any[] = [];
+const skins: any[] = [];
+const short_names: any = {};
+const categoriesIndex: any = {};
 
 const catPairs = [
   ['Smileys & People', 'people'],
@@ -35,15 +35,15 @@ catPairs.forEach((category, i) => {
   categoriesIndex[name] = i;
 });
 
-emojiData.sort((a, b) => {
+emojiData.sort((a: any, b: any) => {
   const aTest = a.sort_order || a.short_name,
     bTest = b.sort_order || b.short_name;
 
   return aTest - bTest;
 });
 
-function missingSets(datum) {
-  const hidden = [];
+function missingSets(datum: any) {
+  const hidden: any[] = [];
   sets.forEach(x => {
     if (!datum[`has_img_${x}`]) {
       hidden.push(x);
@@ -56,13 +56,13 @@ function missingSets(datum) {
   datum.hidden = hidden;
 }
 
-function setupSheet(datum) {
+function setupSheet(datum: any) {
   datum.sheet = [datum.sheet_x, datum.sheet_y];
   delete datum.sheet_x;
   delete datum.sheet_y;
 }
 
-emojiData.forEach(datum => {
+emojiData.forEach((datum: any) => {
   const category = datum.category;
   const keywords = [];
   let categoryIndex;
@@ -80,15 +80,15 @@ emojiData.forEach(datum => {
     throw new Error(`"${datum.short_name}" doesn’t have a name`);
   }
 
-  datum.emoticons = datum.texts || []
+  datum.emoticons = datum.texts || [];
   datum.emoticons = datum.emoticons.map((x: string) => {
     if (x.endsWith('\\')) {
       return x + `\\`;
     }
     return x;
-  })
-  datum.text = datum.text || ''
-  delete datum.texts
+  });
+  datum.text = datum.text || '';
+  delete datum.texts;
 
   if (emojiLib.lib[datum.short_name]) {
     datum.keywords = emojiLib.lib[datum.short_name].keywords;
@@ -107,7 +107,7 @@ emojiData.forEach(datum => {
 
   missingSets(datum);
   if (datum.skin_variations) {
-    const variations = []
+    const variations = [];
     for (const key of Object.keys(datum.skin_variations)) {
       const variation = datum.skin_variations[key];
       setupSheet(variation);
@@ -124,7 +124,7 @@ emojiData.forEach(datum => {
       delete variation.sort_order;
       delete variation.obsoleted_by;
       delete variation.obsoletes;
-      variations.push(variation)
+      variations.push(variation);
     }
     datum.skin_variations = variations;
   }
@@ -159,7 +159,7 @@ emojiData.forEach(datum => {
 
 const flags = categories[categoriesIndex['Flags']];
 flags.emojis = flags.emojis
-  .filter(flag => {
+  .filter((flag: any) => {
     // Until browsers support Flag UN
     if (flag === 'flag-un') {
       return;
@@ -173,10 +173,9 @@ const sEmojis = stringifyObject(emojis, {
   indent: '  ',
 });
 let doc = `import { CompressedEmojiData } from './data.interfaces';
-const data: CompressedEmojiData[] = ${sEmojis};
-export default data;
+export const emojis: CompressedEmojiData[] = ${sEmojis};
 `;
-fs.writeFileSync('./src/lib/data/emojis.ts', doc);
+fs.writeFileSync('./src/lib/emoji/data/emojis.ts', doc);
 
 
 const sCategories = stringifyObject(categories, {
@@ -184,8 +183,7 @@ const sCategories = stringifyObject(categories, {
   indent: '  ',
 });
 doc = `import { EmojiCategory } from './data.interfaces';
-const data: EmojiCategory[] = ${sCategories};
-export default data;
+export const categories: EmojiCategory[] = ${sCategories};
 `;
 fs.writeFileSync('./src/lib/data/categories.ts', doc);
 
@@ -195,10 +193,9 @@ const sSkins = stringifyObject(skins, {
   indent: '  ',
 });
 doc = `import { SkinData } from './data.interfaces';
-const data: SkinData[] = ${sSkins};
-export default data;
+export const skins: SkinData[] = ${sSkins};
 `;
-fs.writeFileSync('./src/lib/data/skins.ts', doc);
+fs.writeFileSync('./src/lib/emoji/data/skins.ts', doc);
 
 
 // const sShortNames = stringifyObject(short_names, {

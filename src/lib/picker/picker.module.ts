@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { EmojiModule } from '../emoji/emoji.module';
+import { EmojiModule } from 'ngx-emoji';
 import { AnchorsComponent } from './anchors.component';
 import { CategoryComponent } from './category.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';

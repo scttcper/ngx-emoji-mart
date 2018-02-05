@@ -6,7 +6,10 @@
     "baseUrl": "./",
     "module": "es2015",
     "types": [],
-    "strict": true
+    "strict": true,
+    "paths": {
+      "ngx-emoji": ["./lib/emoji/public_api"]
+    }
   },
   "exclude": ["test.ts", "**/*.spec.ts"],
   "angularCompilerOptions": {

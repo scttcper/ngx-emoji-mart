@@ -1,0 +1,15 @@
+{
+  "name": "@ctrl/ngx-emoji-mart/ngx-emoji",
+  "author": "scttcper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TypeCtrl/ngx-emoji-mart.git"
+  },
+  "license": "MIT",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts"
+    },
+    "dest": "../../../dist/packages-dist/block"
+  }
+}

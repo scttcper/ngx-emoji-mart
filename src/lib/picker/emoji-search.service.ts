@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import categories from '../data/categories';
-import { EmojiData } from '../data/data.interfaces';
-import { EmojiService } from '../emoji/emoji.service';
+import { categories, EmojiData, EmojiService } from 'ngx-emoji';
 import { intersect } from '../utils';
 
 @Injectable()

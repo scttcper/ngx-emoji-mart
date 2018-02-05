@@ -12,9 +12,7 @@ import {
   ViewChildren,
 } from '@angular/core';
 
-import categories from '../data/categories';
-import { EmojiCategory } from '../data/data.interfaces';
-import { Emoji, EmojiEvent } from '../emoji/emoji.component';
+import { categories, Emoji, EmojiCategory, EmojiEvent } from 'ngx-emoji';
 import { measureScrollbar } from '../utils/index';
 import { CategoryComponent } from './category.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';

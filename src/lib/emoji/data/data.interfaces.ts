@@ -1,4 +1,4 @@
-import { Emoji } from '../emoji/emoji.component';
+import { Emoji } from '../emoji.component';
 
 export interface EmojiCategory {
   id: string;

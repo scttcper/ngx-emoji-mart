@@ -4,8 +4,8 @@ import {
   CompressedEmojiData,
   EmojiData,
   EmojiVariaiton,
-} from '../data/data.interfaces';
-import emojis from '../data/emojis';
+} from './data/data.interfaces';
+import { emojis } from './data/emojis';
 import { Emoji } from './emoji.component';
 
 const COLONS_REGEX = /^(?:\:([^\:]+)\:)(?:\:skin-tone-(\d)\:)?$/;
