@@ -41,9 +41,21 @@ This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by
 ## Components
 
 ### Picker
-Import Module
+Import Module in ngModule
 ```ts
 import { PickerModule } from '@ctrl/ngx-emoji-mart'
+```
+
+Import styles in styles.scss if using SASS
+```scss
+@import "~@ctrl/ngx-emoji-mart/picker";
+```
+Or angular-cli can also include it via angular-cli.json
+```
+"styles": [
+  "styles.scss",
+  "../node_modules/@ctrl/ngx-emoji-mart/picker.css"
+]
 ```
 
 ```html
