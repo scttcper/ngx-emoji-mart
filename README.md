@@ -19,7 +19,8 @@
 <br>
 <br>
 
-DEMO: https://typectrl.github.io/ngx-emoji-mart/  
+__DEMO__: https://typectrl.github.io/ngx-emoji-mart/  
+
 This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by missive  
 
   - [Installation](#installation)
