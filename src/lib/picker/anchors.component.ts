@@ -41,8 +41,8 @@ import SVGs from './svgs';
 })
 export class AnchorsComponent {
   @Input() categories: EmojiCategory[] = [];
-  @Input() color: string;
-  @Input() selected: string;
+  @Input() color?: string;
+  @Input() selected?: string;
   @Output() anchorClick = new EventEmitter<{ category: EmojiCategory, index: number }>();
   svgs = SVGs;
 
@@ -52,5 +52,4 @@ export class AnchorsComponent {
       index,
     });
   }
-
 }

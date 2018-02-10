@@ -20,7 +20,7 @@ export interface Emoji {
   size: number;
   emoji: string | EmojiData;
   backgroundImageFn: (set: string, sheetSize: Emoji['sheetSize']) => string;
-  fallback: (data: any) => string;
+  fallback?: (data: any) => string;
   emojiOver: EventEmitter<EmojiEvent>;
   emojiLeave: EventEmitter<EmojiEvent>;
   emojiClick: EventEmitter<EmojiEvent>;
@@ -61,16 +61,16 @@ export class EmojiComponent implements OnChanges, Emoji {
   @Input() native: Emoji['native'] = false;
   @Input() forceSize: Emoji['forceSize'] = false;
   @Input() tooltip: Emoji['tooltip'] = false;
-  @Input() size: Emoji['size'];
-  @Input() emoji: Emoji['emoji'];
-  @Input() fallback: Emoji['fallback'];
+  @Input() size: Emoji['size'] = 24;
+  @Input() emoji: Emoji['emoji'] = '';
+  @Input() fallback?: Emoji['fallback'];
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
   style: any;
   title = '';
-  unified: string | null;
-  custom: boolean;
+  unified?: string | null;
+  custom = false;
   SHEET_COLUMNS = 52;
   isVisible = true;
   // TODO: replace 4.0.3 w/ dynamic get verison from emoji-datasource in package.json

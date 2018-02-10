@@ -44,7 +44,7 @@ export class EmojiSearchService {
   }
   search(
     value: string,
-    emojisToShowFilter: (x: any) => boolean,
+    emojisToShowFilter?: (x: any) => boolean,
     maxResults = 75,
     include: any[] = [],
     exclude: any[] = [],

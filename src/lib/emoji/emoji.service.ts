@@ -76,9 +76,9 @@ export class EmojiService {
       emojiData = this.names[emoji];
     } else if (emoji.id) {
       emojiData = this.names[emoji.id];
-      // if (skin) {
-      //   skin = emoji.skin;
-      // }
+      if (skin) {
+        skin = emoji.skin;
+      }
     }
 
     if (!emojiData) {

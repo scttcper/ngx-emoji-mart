@@ -1,4 +1,7 @@
-<div [style.width.px]="perLine * (emojiSize + 12) + 12 + 2 + measureScrollbar" class="emoji-mart">
+<div
+  [style.width.px]="perLine * (emojiSize + 12) + 12 + 2 + measureScrollbar"
+  [ngStyle]="style"
+  class="emoji-mart">
   <div class="emoji-mart-bar">
     <emoji-mart-anchors
       [categories]="categories"
@@ -14,6 +17,7 @@
     [include]="include"
     [exclude]="exclude"
     [custom]="custom"
+    [autoFocus]="autoFocus"
     [emojisToShowFilter]="emojisToShowFilter"
   >
   </emoji-search>

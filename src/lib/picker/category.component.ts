@@ -53,7 +53,19 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
 
     <div *ngIf="emojis && !emojis.length">
       <div>
-        <ngx-emoji [emoji]="emoji" [size]="38">
+        <ngx-emoji
+          [emoji]="emoji"
+          [size]="emojiSize"
+          [skin]="emojiSkin"
+          [native]="emojiNative"
+          [set]="emojiSet"
+          [sheetSize]="emojiSheetSize"
+          [forceSize]="emojiForceSize"
+          [tooltip]="emojiTooltip"
+          (emojiOver)="emojiOver.emit($event)"
+          (emojiLeave)="emojiLeave.emit($event)"
+          (emojiClick)="emojiClick.emit($event)"
+          >
         </ngx-emoji>
       </div>
 
@@ -69,35 +81,35 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
   preserveWhitespaces: false,
 })
 export class CategoryComponent implements OnInit, AfterViewInit {
-  @Input() emojis: any[] | null;
+  @Input() emojis?: any[] | null;
   @Input() hasStickyPosition = true;
-  @Input() name: string;
-  @Input() native: boolean;
-  @Input() perLine: number;
-  @Input() recent: string[];
-  @Input() custom: any[];
+  @Input() name = '';
+  @Input() native = true;
+  @Input() perLine = 9;
+  @Input() recent: string[] = [];
+  @Input() custom: any[] = [];
   @Input() i18n: any;
   @Input() id: any;
-  @Input() emojiNative: Emoji['native'];
-  @Input() emojiSkin: Emoji['skin'];
-  @Input() emojiSize: Emoji['size'];
-  @Input() emojiSet: Emoji['set'];
-  @Input() emojiSheetSize: Emoji['sheetSize'];
-  @Input() emojiForceSize: Emoji['forceSize'];
-  @Input() emojiTooltip: Emoji['tooltip'];
+  @Input() emojiNative?: Emoji['native'];
+  @Input() emojiSkin?: Emoji['skin'];
+  @Input() emojiSize?: Emoji['size'];
+  @Input() emojiSet?: Emoji['set'];
+  @Input() emojiSheetSize?: Emoji['sheetSize'];
+  @Input() emojiForceSize?: Emoji['forceSize'];
+  @Input() emojiTooltip?: Emoji['tooltip'];
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
-  @ViewChild('container') container: ElementRef;
-  @ViewChild('label') label: ElementRef;
+  @ViewChild('container') container?: ElementRef;
+  @ViewChild('label') label?: ElementRef;
   containerStyles: any = {};
   labelStyles: any = {};
   labelSpanStyles: any = {};
-  parent: Element;
+  parent?: Element;
   margin = 0;
   minMargin = 0;
   maxMargin = 0;
-  top: number;
+  top = 0;
 
   constructor(
     public ref: ChangeDetectorRef,
@@ -119,7 +131,7 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.parent = this.container.nativeElement.parentNode.parentNode;
+    this.parent = this.container!.nativeElement.parentNode.parentNode;
     this.memoizeSize();
   }
 
@@ -127,11 +139,11 @@ export class CategoryComponent implements OnInit, AfterViewInit {
     const {
       top,
       height,
-    } = this.container.nativeElement.getBoundingClientRect();
-    const parentTop = this.parent.getBoundingClientRect().top;
-    const labelHeight = this.label.nativeElement.getBoundingClientRect().height;
+    } = this.container!.nativeElement.getBoundingClientRect();
+    const parentTop = this.parent!.getBoundingClientRect().top;
+    const labelHeight = this.label!.nativeElement.getBoundingClientRect().height;
 
-    this.top = top - parentTop + this.parent.scrollTop;
+    this.top = top - parentTop + this.parent!.scrollTop;
 
     if (height === 0) {
       this.maxMargin = 0;
@@ -150,7 +162,7 @@ export class CategoryComponent implements OnInit, AfterViewInit {
     }
 
     if (!this.hasStickyPosition) {
-      this.label.nativeElement.style.top = `${margin}px`;
+      this.label!.nativeElement.style.top = `${margin}px`;
     }
 
     this.margin = margin;
@@ -159,9 +171,10 @@ export class CategoryComponent implements OnInit, AfterViewInit {
 
   getEmojis() {
     if (this.name === 'Recent') {
-      const frequentlyUsed: any[] =
-        this.recent || this.frequently.get(this.perLine);
-
+      let frequentlyUsed = this.recent || this.frequently.get(this.perLine);
+      if (!frequentlyUsed || !frequentlyUsed.length) {
+        frequentlyUsed = this.frequently.get(this.perLine);
+      }
       if (frequentlyUsed.length) {
         this.emojis = frequentlyUsed
           .map(id => {

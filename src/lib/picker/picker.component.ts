@@ -72,7 +72,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() native: Emoji['native'] = true;
   @Input() emojiSize: Emoji['size'] = 24;
   @Input() sheetSize: Emoji['sheetSize'] = 64;
-  @Input() emojisToShowFilter: (x: string) => boolean;
+  @Input() emojisToShowFilter?: (x: string) => boolean;
   @Input() showPreview = true;
   @Input() emojiTooltip = false;
   @Input() autoFocus = false;
@@ -81,21 +81,21 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() include: string[] = [];
   @Input() exclude: string[] = [];
   @Output() emojiClick = new EventEmitter<any>();
-  @ViewChild('scrollRef') private scrollRef: ElementRef;
-  @ViewChild('previewRef') private previewRef: PreviewComponent;
-  @ViewChildren('categoryRef') private categoryRefs: QueryList<CategoryComponent>;
-  scrollHeight: number;
-  clientHeight: number;
-  selected: string;
-  scrollTop: number;
+  @ViewChild('scrollRef') private scrollRef?: ElementRef;
+  @ViewChild('previewRef') private previewRef?: PreviewComponent;
+  @ViewChildren('categoryRef') private categoryRefs?: QueryList<CategoryComponent>;
+  scrollHeight = 0;
+  clientHeight = 0;
+  selected?: string;
+  scrollTop?: number;
   firstRender = true;
   RECENT_CATEGORY = RECENT_CATEGORY;
   CUSTOM_CATEGORY = CUSTOM_CATEGORY;
-  recent: string[];
+  recent?: string[];
   previewEmoji: any;
   leaveTimeout: any;
   NAMESPACE = 'emoji-mart';
-  measureScrollbar: number;
+  measureScrollbar?: number;
   @Input() backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
     `https://unpkg.com/emoji-datasource-${this.set}@4.0.3/img/${
       this.set
@@ -207,7 +207,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   }
 
   updateCategoriesSize() {
-    this.categoryRefs.forEach((component) => component.memoizeSize());
+    this.categoryRefs!.forEach((component) => component.memoizeSize());
 
     if (this.scrollRef) {
       const target = this.scrollRef.nativeElement;
@@ -217,7 +217,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   }
 
   handleAnchorClick($event: { category: EmojiCategory, index: number }) {
-    const component = this.categoryRefs.find((n) => n.id === $event.category.id);
+    const component = this.categoryRefs!.find((n) => n.id === $event.category.id);
     let scrollToComponent = null;
 
     scrollToComponent = () => {
@@ -229,7 +229,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
         } else {
           top += 1;
         }
-        this.scrollRef.nativeElement.scrollTop = top;
+        this.scrollRef!.nativeElement.scrollTop = top;
       }
     };
 
@@ -264,7 +264,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
       for (let i = 0, l = this.categories.length; i < l; i++) {
         const ii = scrollingDown ? this.categories.length - 1 - i : i;
         const category = this.categories[ii];
-        const component = this.categoryRefs.find((n) => n.id === category.id);
+        const component = this.categoryRefs!.find((n) => n.id === category.id);
 
         if (component) {
           const active = component.handleScroll(scrollTop);
@@ -300,7 +300,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   }
   handleSearch($emojis: any) {
     SEARCH_CATEGORY.emojis = $emojis;
-    for (const component of this.categoryRefs.toArray()) {
+    for (const component of this.categoryRefs!.toArray()) {
       if (component.name === 'Search') {
         component.emojis = $emojis;
         component.updateDisplay($emojis ? 'inherit' : 'none');
@@ -310,7 +310,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
     }
 
     // this.forceUpdate();
-    this.scrollRef.nativeElement.scrollTop = 0;
+    this.scrollRef!.nativeElement.scrollTop = 0;
     this.handleScroll();
   }
 
@@ -335,7 +335,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
 
     this.leaveTimeout = setTimeout(() => {
       this.previewEmoji = null;
-      this.previewRef.ref.markForCheck();
+      this.previewRef!.ref.markForCheck();
     }, 16);
   }
 
@@ -345,7 +345,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
       this.frequently.add($event.emoji);
     }
 
-    const component = this.categoryRefs.toArray()[1];
+    const component = this.categoryRefs!.toArray()[1];
     if (component) {
       const maxMargin = component.maxMargin;
       component.emojis = this.frequently.get(maxMargin);

@@ -26,20 +26,20 @@ import { EmojiSearchService } from './emoji-search.service';
 })
 export class SearchComponent implements AfterViewInit {
   @Input() maxResults = 75;
-  @Input() autoFocus = true;
+  @Input() autoFocus = false;
   @Input() i18n: any;
-  @Input() include: any[];
-  @Input() exclude: any[];
-  @Input() custom: any[];
-  @Input() emojisToShowFilter: (x: any) => boolean;
+  @Input() include: string[] = [];
+  @Input() exclude: string[] = [];
+  @Input() custom: any[] = [];
+  @Input() emojisToShowFilter?: (x: any) => boolean;
   @Output() search = new EventEmitter<any>();
-  @ViewChild('inputRef') private inputRef: ElementRef;
+  @ViewChild('inputRef') private inputRef?: ElementRef;
   query = '';
 
   constructor(private emojiSearch: EmojiSearchService) {}
 
   ngAfterViewInit() {
-    if (this.autoFocus) {
+    if (this.autoFocus && this.inputRef) {
       this.inputRef.nativeElement.focus();
     }
   }
