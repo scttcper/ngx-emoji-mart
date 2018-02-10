@@ -40,7 +40,7 @@ export interface EmojiEvent {
     (mouseenter)="handleOver($event)"
     (mouseleave)="handleLeave($event)"
     [title]="title"
-    class="emoji-mart-emoji {{ className }}"
+    class="emoji-mart-emoji"
     [class.emoji-mart-emoji-native]="native"
     [class.emoji-mart-emoji-custom]="custom"
   >

@@ -44,7 +44,7 @@ export class AnchorsComponent {
   @Input() color?: string;
   @Input() selected?: string;
   @Output() anchorClick = new EventEmitter<{ category: EmojiCategory, index: number }>();
-  svgs = SVGs;
+  svgs: any = SVGs;
 
   handleClick($event: Event, index: number) {
     this.anchorClick.emit({

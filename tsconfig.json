@@ -15,5 +15,9 @@
     "paths": {
       "@ctrl/ngx-emoji-mart/ngx-emoji": ["./lib/emoji/public_api"]
     }
+  },
+  "angularCompilerOptions": {
+    "preserveWhitespaces": false,
+    "fullTemplateTypeCheck": true
   }
 }

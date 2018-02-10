@@ -54,7 +54,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
     <div *ngIf="emojis && !emojis.length">
       <div>
         <ngx-emoji
-          [emoji]="emoji"
+          [emoji]="emojis"
           [size]="emojiSize"
           [skin]="emojiSkin"
           [native]="emojiNative"
