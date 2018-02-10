@@ -1,21 +1,19 @@
 <div class="container">
   <div class="row mb-3 mt-3 text-center">
     <div class="col-12">
-      <h1>Angular Emoji Mart ✨</h1>
+      <h2>Angular Emoji Mart ✨</h2>
     </div>
   </div>
 
-  <div class="row mb-4">
-    <div class="col-12">
-      <div class="d-flex justify-content-center">
-        <button type="button"
-          class="btn btn-sm btn-light mr-1"
-          *ngFor="let theme of themes"
-          (click)="setTheme(theme)"
-          [class.active]="theme === set">
-          {{ theme }}
-        </button>
-      </div>
+  <div class="row mb-1">
+    <div class="col-12 text-center">
+      <button type="button"
+        class="btn btn-sm btn-light mr-1 mb-2"
+        *ngFor="let theme of themes"
+        (click)="setTheme(theme)"
+        [class.active]="theme === set">
+        {{ theme }}
+      </button>
     </div>
   </div>
 
