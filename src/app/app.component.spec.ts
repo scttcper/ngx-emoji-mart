@@ -5,6 +5,7 @@ import { NtkmeButtonModule } from '@ctrl/ngx-github-buttons';
 
 import { PickerModule } from '../lib/picker/picker.module';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './footer.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -16,6 +17,7 @@ describe('AppComponent', () => {
       ],
       declarations: [
         AppComponent,
+        FooterComponent,
       ],
     }).compileComponents();
   }));
