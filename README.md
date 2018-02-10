@@ -58,6 +58,7 @@ Or angular-cli can also include it via angular-cli.json
 ]
 ```
 
+use component
 ```html
 <emoji-mart title="Pick your emoji…" emoji="point_up"></emoji-mart>
 <emoji-mart set="emojione"></emoji-mart>
