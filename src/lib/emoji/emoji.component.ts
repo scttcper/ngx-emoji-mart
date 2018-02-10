@@ -64,6 +64,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   @Input() size: Emoji['size'] = 24;
   @Input() emoji: Emoji['emoji'] = '';
   @Input() fallback?: Emoji['fallback'];
+  @Input() hideObsolete = false;
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
@@ -108,7 +109,7 @@ export class EmojiComponent implements OnChanges, Emoji {
       this.title = short_names[0];
     }
 
-    if (obsoleted_by) {
+    if (obsoleted_by && this.hideObsolete) {
       return this.isVisible = false;
     }
 

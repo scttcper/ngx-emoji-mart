@@ -49,6 +49,18 @@ export class EmojiService {
         data.text = '';
       }
 
+      if (data.obsoletes) {
+        // get keywords from emoji that it obsoletes since that is shared
+        const f = list.find((x) => x.unified === data.obsoletes);
+        if (f) {
+          if (f.keywords) {
+            data.keywords = [ ...data.keywords, ...f.keywords, f.short_name ];
+          } else {
+            data.keywords = [ ...data.keywords, f.short_name ];
+          }
+        }
+      }
+
       this.names[data.unified] = data;
       for (const n of data.short_names) {
         this.names[n] = data;

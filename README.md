@@ -77,6 +77,7 @@ import { PickerModule } from '@ctrl/ngx-emoji-mart'
 | **skin**               |          | `1`                       | Default skin color: `1, 2, 3, 4, 5, 6`                                                                                                                              |
 | **style**              |          |                           | Inline styles applied to the root element. Useful for positioning                                                                                                   |
 | **title**              |          | `Emoji Mart™`             | The title shown when no emojis are hovered                                                                                                                          |
+| **hideObsolete**              |          | `true`             | Hides ex: "cop" emoji in favor of female and male emoji                                                                                                                          |
 
 #### I18n
 
@@ -191,6 +192,7 @@ import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji'
 | **backgroundImageFn**                           |          | `` ((set, sheetSize) => `https://unpkg.com/emoji-datasource@3.0.0/sheet_${set}_${sheetSize}.png`) `` | A Fn that returns that image sheet to use for emojis. Useful for avoiding a request if you have the sheet locally. |
 | **skin**                                        |          | `1`                                                                                                  | Skin color: `1, 2, 3, 4, 5, 6`                                                                                     |
 | **tooltip**                                     |          | `false`                                                                                              | Show emoji short name when hovering (title)                                                                        |                                                  |
+| **hideObsolete**                                     |          | `false`                                                                                              | Hides ex: "cop" emoji in favor of female and male emoji                                                                         |                                                  |
 
 #### Unsupported emojis fallback
 

@@ -66,6 +66,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() title = 'Emoji Mart™';
   @Input() emoji = 'department_store';
   @Input() color = '#ae65c5';
+  @Input() hideObsolete = true;
   @Input() categories: any[] = [];
   @Input() set: Emoji['set'] = 'apple';
   @Input() skin: Emoji['skin'] = 1;

@@ -44,6 +44,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
         [sheetSize]="emojiSheetSize"
         [forceSize]="emojiForceSize"
         [tooltip]="emojiTooltip"
+        [hideObsolete]="hideObsolete"
         (emojiOver)="emojiOver.emit($event)"
         (emojiLeave)="emojiLeave.emit($event)"
         (emojiClick)="emojiClick.emit($event)"
@@ -54,17 +55,14 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
     <div *ngIf="emojis && !emojis.length">
       <div>
         <ngx-emoji
-          [emoji]="emojis"
-          [size]="emojiSize"
+          emoji="sleuth_or_spy"
+          size="38"
           [skin]="emojiSkin"
           [native]="emojiNative"
           [set]="emojiSet"
           [sheetSize]="emojiSheetSize"
           [forceSize]="emojiForceSize"
           [tooltip]="emojiTooltip"
-          (emojiOver)="emojiOver.emit($event)"
-          (emojiLeave)="emojiLeave.emit($event)"
-          (emojiClick)="emojiClick.emit($event)"
           >
         </ngx-emoji>
       </div>
@@ -90,6 +88,7 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   @Input() custom: any[] = [];
   @Input() i18n: any;
   @Input() id: any;
+  @Input() hideObsolete = true;
   @Input() emojiNative?: Emoji['native'];
   @Input() emojiSkin?: Emoji['skin'];
   @Input() emojiSize?: Emoji['size'];
