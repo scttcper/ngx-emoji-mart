@@ -6,7 +6,7 @@ import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { AnchorsComponent } from './anchors.component';
 import { CategoryComponent } from './category.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
-import { EmojiSearchService } from './emoji-search.service';
+import { EmojiSearch } from './emoji-search.service';
 import { PickerComponent } from './picker.component';
 import { PreviewComponent } from './preview.component';
 import { SearchComponent } from './search.component';
@@ -25,6 +25,6 @@ const components: any[] = [
   imports: [CommonModule, FormsModule, EmojiModule],
   exports: components,
   declarations: components,
-  providers: [EmojiSearchService, EmojiFrequentlyService],
+  providers: [EmojiSearch, EmojiFrequentlyService],
 })
 export class PickerModule {}

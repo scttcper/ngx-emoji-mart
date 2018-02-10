@@ -4,7 +4,7 @@ import { categories, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-em
 import { intersect } from './utils';
 
 @Injectable()
-export class EmojiSearchService {
+export class EmojiSearch {
   originalPool: any = {};
   index: {
     results?: EmojiData[],

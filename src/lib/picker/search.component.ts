@@ -8,7 +8,7 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
-import { EmojiSearchService } from './emoji-search.service';
+import { EmojiSearch } from './emoji-search.service';
 
 @Component({
   selector: 'emoji-search',
@@ -36,7 +36,7 @@ export class SearchComponent implements AfterViewInit {
   @ViewChild('inputRef') private inputRef?: ElementRef;
   query = '';
 
-  constructor(private emojiSearch: EmojiSearchService) {}
+  constructor(private emojiSearch: EmojiSearch) {}
 
   ngAfterViewInit() {
     if (this.autoFocus && this.inputRef) {

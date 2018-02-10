@@ -65,7 +65,7 @@ import { PickerModule } from '@ctrl/ngx-emoji-mart'
 | **custom**             |          | `[]`                      | [Custom emojis](#custom-emojis)                                                                                                                                     |
 | **recent**             |          |                           | Pass your own frequently used emojis as array of string IDs                                                                                                         |
 | **emojiSize**          |          | `24`                      | The emoji width and height                                                                                                                                          |
-| **emojiClick**         |          |                           | Params: `(emoji, event) => {}`                                                                                                                                      |
+| **(emojiClick)**         |          |                           | Params: `{ emoji, $event }`                                                                                                                                      |
 | **perLine**            |          | `9`                       | Number of emojis per line. While there’s no minimum or maximum, this will affect the picker’s width. This will set _Frequently Used_ length as well (`perLine * 4`) |
 | **i18n**               |          | [`{…}`](#i18n)            | [An object](#i18n) containing localized strings                                                                                                                     |
 | **native**             |          | `false`                   | Renders the native unicode emoji                                                                                                                                    |
@@ -132,7 +132,7 @@ Sheets are served from [unpkg](https://unpkg.com), a global CDN that serves file
 
 #### Examples of `emoji` object:
 
-```js
+```ts
 {
   id: 'smiley',
   name: 'Smiling Face with Open Mouth',
@@ -183,9 +183,9 @@ import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji'
 | **emoji**                                       |    ✓     |                                                                                                      | Either a string or an `emoji` object                                                                               |
 | **size**                                        |    ✓     |                                                                                                      | The emoji width and height.                                                                                        |
 | **native**                                      |          | `false`                                                                                              | Renders the native unicode emoji                                                                                   |
-| **onClick**                                     |          |                                                                                                      | Params: `(emoji, event) => {}`                                                                                     |
-| **onLeave**                                     |          |                                                                                                      | Params: `(emoji, event) => {}`                                                                                     |
-| **onOver**                                      |          |                                                                                                      | Params: `(emoji, event) => {}`                                                                                     |
+| **(emojiClick)**                                     |          |                                                                                                      | Params: `{ emoji, $event }`                                                                                     |
+| **(emojiLeave)**                                     |          |                                                                                                      | Params: `{ emoji, $event }`                                                                                     |
+| **(emojiOver)**                                      |          |                                                                                                      | Params: `{ emoji, $event }`                                                                                     |
 | [**fallback**](#unsupported-emojis-fallback)    |          |                                                                                                      | Params: `(emoji) => {}`                                                                                            |
 | **set**                                         |          | `apple`                                                                                              | The emoji set: `'apple', 'google', 'twitter', 'emojione'`                                                          |
 | **sheetSize**                                   |          | `64`                                                                                                 | The emoji [sheet size](#sheet-sizes): `16, 20, 32, 64`                                                             |
@@ -234,30 +234,20 @@ const customEmojis = [
 
 The `Picker` doesn’t have to be mounted for you to take advantage of the advanced search results.
 
-```js
-import { emojiIndex } from 'emoji-mart';
-
-emojiIndex.search('christmas').map(o => o.native);
-// => [🎄, 🎅🏼, 🔔, 🎁, ⛄️, ❄️]
+```ts
+import { EmojiSearch } from '@ctrl/ngx-emoji-mart';
+class ex {
+  constructor(private emojiSearch: EmojiSearch) {
+    this.emojiSearch.search('christmas').map(o => o.native);
+    // => [🎄, 🎅🏼, 🔔, 🎁, ⛄️, ❄️]
+  }
+}
 ```
 
 ## Storage
 
-By default EmojiMart will store user chosen skin and frequently used emojis in `localStorage`. That can however be overwritten should you want to store these in your own storage.
+By default EmojiMart will store user chosen skin and frequently used emojis in `localStorage`.
 
-```js
-import { store } from 'emoji-mart';
-
-store.setHandlers({
-  getter: key => {
-    // Get from your own storage (sync)
-  },
-
-  setter: (key, value) => {
-    // Persist in your own storage (can be async)
-  },
-});
-```
 
 Possible keys are:
 
@@ -309,17 +299,6 @@ Apple / Google / Twitter / EmojiOne / Messenger / Facebook
 
 <img width="214" alt="sets" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/sets.png">
 
-## Not opinionated
-
-**Emoji Mart** doesn’t automatically insert anything into a text input, nor does it show or hide itself. It simply returns an `emoji` object. It’s up to the developer to mount/unmount (it’s fast!) and position the picker. You can use the returned object as props for the `EmojiMart.Emoji` component. You could also use `emoji.colons` to insert text into a textarea or `emoji.native` to use the emoji.
-
-## Development
-
-```sh
-$ yarn build
-$ yarn start
-$ yarn storybook
-```
 
 ---
 
