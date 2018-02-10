@@ -31,9 +31,6 @@ This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by
   - [Features](#features)
     - [Powerful search](#powerful-search)
     - [Fully customizable](#fully-customizable)
-  - [Not opinionated](#not-opinionated)
-  - [Development](#development)
-  - [🎩 Hat tips!](#%F0%9F%8E%A9-hat-tips)
 
 ## Installation
 
