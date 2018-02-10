@@ -62,7 +62,7 @@ const I18N = {
 export class PickerComponent implements OnInit, AfterViewInit {
   @Input() perLine = 9;
   @Input() i18n: any = {};
-  @Input() style = {};
+  @Input() style: any = {};
   @Input() title = 'Emoji Mart™';
   @Input() emoji = 'department_store';
   @Input() color = '#ae65c5';
@@ -95,7 +95,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   previewEmoji: any;
   leaveTimeout: any;
   NAMESPACE = 'emoji-mart';
-  measureScrollbar?: number;
+  measureScrollbar = 0;
   @Input() backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
     `https://unpkg.com/emoji-datasource-${this.set}@4.0.3/img/${
       this.set
