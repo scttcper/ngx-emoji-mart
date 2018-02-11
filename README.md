@@ -3,8 +3,8 @@
   <br>
   <h1>ngx-emoji-mart</h1>
   <br>
-  <a href="https://www.npmjs.org/package/@ctrl/ngx-color">
-    <img src="https://badge.fury.io/js/%40ctrl%2Fngx-color.svg" alt="npm">
+  <a href="https://www.npmjs.org/package/@ctrl/ngx-emoji-mart">
+    <img src="https://badge.fury.io/js/%40ctrl%2Fngx-emoji-mart.svg" alt="npm">
   </a> 
   <a href="https://travis-ci.org/TypeCtrl/ngx-emoji-mart">
     <img src="https://travis-ci.org/TypeCtrl/ngx-emoji-mart.svg?branch=master" alt="travis"></a> 
