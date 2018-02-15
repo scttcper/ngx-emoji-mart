@@ -1,7 +1,7 @@
 {
   "$schema": "../../../node_modules/ng-packagr/package.schema.json",
   "name": "@ctrl/ngx-emoji-mart",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Customizable Slack-like emoji picker for Angular",
   "peerDependencies": {
     "@angular/core": ">=5.0.0",
