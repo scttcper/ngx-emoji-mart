@@ -70,7 +70,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() categories: any[] = [];
   @Input() set: Emoji['set'] = 'apple';
   @Input() skin: Emoji['skin'] = 1;
-  @Input() native: Emoji['native'] = true;
+  @Input() native: Emoji['native'] = false;
   @Input() emojiSize: Emoji['size'] = 24;
   @Input() sheetSize: Emoji['sheetSize'] = 64;
   @Input() emojisToShowFilter?: (x: string) => boolean;
