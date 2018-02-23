@@ -16,10 +16,10 @@ describe('EmojiSearch', () => {
   it(
     'should search',
     inject([EmojiSearch], (es: EmojiSearch) => {
-      const res: EmojiData[] = es.search('pineapple');
+      const res = es.search('pineapple');
       expect(res).toBeDefined();
-      expect(res.length).toBe(1);
-      expect(res[0]).toEqual({
+      expect(res!.length).toBe(1);
+      expect(res![0]).toEqual({
         name: 'Pineapple',
         unified: '1F34D',
         short_name: 'pineapple',
@@ -43,7 +43,7 @@ describe('EmojiSearch', () => {
       const emojisToShowFilter = (data: EmojiData) => {
         return data.unified !== '1F34D';
       };
-      const apples = es.search('apple', emojisToShowFilter).map(obj => obj.id);
+      const apples = es.search('apple', emojisToShowFilter)!.map(obj => obj.id);
       expect(apples.length).toBe(3);
       expect(apples).not.toContain('pineapple');
     }),
@@ -59,7 +59,7 @@ describe('EmojiSearch', () => {
   it(
     'can search for thinking_face',
     inject([EmojiSearch], (es: EmojiSearch) => {
-      expect(es.search('thinking_fac').map((x: any) => x.id)).toEqual([
+      expect(es.search('thinking_fac')!.map((x: any) => x.id)).toEqual([
         'thinking_face',
       ]);
     }),
@@ -68,7 +68,7 @@ describe('EmojiSearch', () => {
   it(
     'can search for woman-facepalming',
     inject([EmojiSearch], (es: EmojiSearch) => {
-      expect(es.search('woman-facep').map(x => x.id)).toEqual([
+      expect(es.search('woman-facep')!.map(x => x.id)).toEqual([
         'woman-facepalming',
       ]);
     }),
