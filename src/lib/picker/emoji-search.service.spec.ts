@@ -2,14 +2,21 @@ import { async, inject, TestBed } from '@angular/core/testing';
 
 import { EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { EmojiSearch } from './emoji-search.service';
+import { PickerModule } from './picker.module';
 
 describe('EmojiSearch', () => {
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        imports: [],
         providers: [EmojiSearch, EmojiService],
-      });
+      }).compileComponents();
+    }),
+  );
+
+  it(
+    'should return nothing',
+    inject([EmojiSearch], (es: EmojiSearch) => {
+      expect(es.search('')).toEqual(null);
     }),
   );
 
@@ -25,7 +32,7 @@ describe('EmojiSearch', () => {
         short_name: 'pineapple',
         keywords: ['fruit', 'nature', 'food'],
         sheet: [7, 15],
-        short_names: ['pineapple', 'pineapple'],
+        short_names: ['pineapple'],
         id: 'pineapple',
         native: '🍍',
         skin_variations: [],

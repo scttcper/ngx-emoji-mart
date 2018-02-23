@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EmojiSearch } from 'lib/picker/public_api';
 
 const CUSTOM_EMOJIS = [
   {

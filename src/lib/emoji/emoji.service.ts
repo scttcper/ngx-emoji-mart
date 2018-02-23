@@ -13,15 +13,20 @@ const SKINS = ['1F3FA', '1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF'];
 
 @Injectable()
 export class EmojiService {
+  uncompressed = false;
   names: { [key: string]: EmojiData } = {};
   emojis: EmojiData[] = [];
 
   constructor() {
-    this.uncompress(emojis);
+    if (!this.uncompressed) {
+      this.uncompress(emojis);
+      this.uncompressed = true;
+    }
   }
 
   uncompress(list: CompressedEmojiData[]) {
-    this.emojis = list.map((data: any) => {
+    this.emojis = list.map((emoji) => {
+      const data: any  = { ...emoji };
       if (!data.short_names) {
         data.short_names = [];
       }
