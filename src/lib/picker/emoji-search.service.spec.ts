@@ -1,22 +1,17 @@
-import { Location } from '@angular/common';
-import { SpyLocation } from '@angular/common/testing';
-import {
-  fakeAsync,
-  inject,
-  ComponentFixture,
-  TestBed,
-} from '@angular/core/testing';
+import { async, inject, TestBed } from '@angular/core/testing';
 
 import { EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { EmojiSearch } from './emoji-search.service';
 
 describe('EmojiSearch', () => {
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [],
-      providers: [EmojiSearch, EmojiService],
-    });
-  });
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        imports: [],
+        providers: [EmojiSearch, EmojiService],
+      });
+    }),
+  );
 
   it(
     'should search',
