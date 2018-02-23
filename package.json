@@ -27,7 +27,7 @@
     "@angular/platform-browser": "5.2.6",
     "@angular/platform-browser-dynamic": "5.2.6",
     "@angular/router": "5.2.6",
-    "@ctrl/ngx-github-buttons": "1.0.6",
+    "@ctrl/ngx-github-buttons": "1.0.8",
     "bootstrap": "4.0.0",
     "core-js": "2.5.3",
     "rxjs": "5.5.6",
