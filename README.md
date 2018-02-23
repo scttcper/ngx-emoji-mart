@@ -11,13 +11,10 @@
   <a href="https://codecov.io/github/typectrl/ngx-emoji-mart">
     <img src="https://img.shields.io/codecov/c/github/typectrl/ngx-emoji-mart.svg" alt="codecov">
   </a>
-  <a href="https://greenkeeper.io/">
-    <img src="https://badges.greenkeeper.io/typectrl/ngx-emoji-mart.svg" alt="greenkeeper">
-  </a>
+  <br>
+  <br>
 </div>
 
-<br>
-<br>
 
 __DEMO__: https://typectrl.github.io/ngx-emoji-mart/  
 

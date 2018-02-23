@@ -1,6 +1,6 @@
 {
   "name": "@ctrl/ngx-emoji-mart",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -9,6 +9,7 @@
     "publish": "cd dist/packages-dist && npm publish --access public",
     "bundlesize": "npx bundlesize",
     "test": "ng test --single-run --browsers=ChromeCI",
+    "test:watch": "ng test --browsers=ChromeCI",
     "test:ci": "ng test --single-run --code-coverage --no-progress --browsers=ChromeCI",
     "lint": "ng lint --type-check -t stylish",
     "lint:fix": "ng lint --type-check --fix -t stylish",
@@ -53,10 +54,10 @@
     "jasmine-spec-reporter": "4.2.1",
     "karma": "2.0.0",
     "karma-chrome-launcher": "2.2.0",
-    "karma-cli": "1.0.1",
     "karma-coverage-istanbul-reporter": "1.4.1",
     "karma-jasmine": "1.1.1",
     "karma-jasmine-html-reporter": "0.2.2",
+    "karma-mocha-reporter": "2.2.5",
     "ng-packagr": "2.1.0",
     "protractor": "5.3.0",
     "rimraf": "2.6.2",
@@ -64,5 +65,15 @@
     "ts-node": "5.0.0",
     "tslint": "5.9.1",
     "typescript": "2.6.2"
-  }
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/packages-dist/bundles/ctrl-ngx-emoji-mart.umd.min.js",
+      "maxSize": "10 kB"
+    },
+    {
+      "path": "./dist/packages-dist/ngx-emoji/bundles/ctrl-ngx-emoji-mart-ngx-emoji.umd.min.js",
+      "maxSize": "60 kB"
+    }
+  ]
 }

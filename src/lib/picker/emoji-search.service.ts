@@ -49,7 +49,7 @@ export class EmojiSearch {
     include: any[] = [],
     exclude: any[] = [],
     custom: any[] = [],
-  ): EmojiData[] | undefined {
+  ): EmojiData[] {
     this.addCustomToPool(custom, this.originalPool);
 
     let results: EmojiData[] | undefined;
@@ -181,8 +181,7 @@ export class EmojiSearch {
         results = results.slice(0, maxResults);
       }
     }
-
-    return results;
+    return results || [];
   }
   buildSearch(
     short_names: string[],
