@@ -2,7 +2,6 @@ import { async, inject, TestBed } from '@angular/core/testing';
 
 import { EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { EmojiSearch } from './emoji-search.service';
-import { PickerModule } from './picker.module';
 
 describe('EmojiSearch', () => {
   beforeEach(

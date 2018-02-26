@@ -6,6 +6,7 @@
     "url": "git+https://github.com/TypeCtrl/ngx-emoji-mart.git"
   },
   "license": "MIT",
+  "sideEffects": false,
   "ngPackage": {
     "lib": {
       "entryFile": "public_api.ts"
