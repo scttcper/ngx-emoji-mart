@@ -45,7 +45,7 @@
     "@types/node": "9.4.6",
     "@types/rimraf": "2.0.2",
     "@types/stringify-object": "3.2.0",
-    "codelyzer": "4.1.0",
+    "codelyzer": "4.2.1",
     "emoji-datasource": "4.0.3",
     "emojilib": "2.2.12",
     "fs-extra": "5.0.0",
