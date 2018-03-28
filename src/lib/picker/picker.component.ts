@@ -12,29 +12,20 @@ import {
   ViewChildren,
 } from '@angular/core';
 
-import { categories, Emoji, EmojiCategory, EmojiEvent, EmojiData } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import {
+  categories,
+  Emoji,
+  EmojiCategory,
+  EmojiData,
+  EmojiEvent,
+} from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { CategoryComponent } from './category.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 import { PreviewComponent } from './preview.component';
 import { measureScrollbar } from './utils';
 
 
-const RECENT_CATEGORY: EmojiCategory = {
-  id: 'recent',
-  name: 'Recent',
-  emojis: null,
-};
-const SEARCH_CATEGORY: EmojiCategory = {
-  id: 'search',
-  name: 'Search',
-  emojis: null,
-  anchor: false,
-};
-const CUSTOM_CATEGORY: EmojiCategory = {
-  id: 'custom',
-  name: 'Custom',
-  emojis: [],
-};
+
 const I18N = {
   search: 'Search',
   notfound: 'No Emoji Found',
@@ -92,13 +83,27 @@ export class PickerComponent implements OnInit, AfterViewInit {
   selected?: string;
   scrollTop?: number;
   firstRender = true;
-  RECENT_CATEGORY = RECENT_CATEGORY;
-  CUSTOM_CATEGORY = CUSTOM_CATEGORY;
   recent?: string[];
   previewEmoji: any;
   leaveTimeout: any;
   NAMESPACE = 'emoji-mart';
   measureScrollbar = 0;
+  RECENT_CATEGORY: EmojiCategory = {
+    id: 'recent',
+    name: 'Recent',
+    emojis: null,
+  };
+  SEARCH_CATEGORY: EmojiCategory = {
+    id: 'search',
+    name: 'Search',
+    emojis: null,
+    anchor: false,
+  };
+  CUSTOM_CATEGORY: EmojiCategory = {
+    id: 'custom',
+    name: 'Custom',
+    emojis: [],
+  };
 
   @Input()
   backgroundImageFn: Emoji['backgroundImageFn'] = (
@@ -124,7 +129,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
     const allCategories = [...categories];
 
     if (this.custom.length > 0) {
-      CUSTOM_CATEGORY.emojis = this.custom.map(emoji => {
+      this.CUSTOM_CATEGORY.emojis = this.custom.map(emoji => {
         return {
           ...emoji,
           // `<Category />` expects emoji to have an `id`.
@@ -133,7 +138,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
         };
       });
 
-      allCategories.push(CUSTOM_CATEGORY);
+      allCategories.push(this.CUSTOM_CATEGORY);
     }
 
     if (this.include !== undefined) {
@@ -190,22 +195,22 @@ export class PickerComponent implements OnInit, AfterViewInit {
 
     const includeRecent =
       this.include && this.include.length
-        ? this.include.indexOf(RECENT_CATEGORY.id) > -1
+        ? this.include.indexOf(this.RECENT_CATEGORY.id) > -1
         : true;
     const excludeRecent =
       this.exclude && this.exclude.length
-        ? this.exclude.indexOf(RECENT_CATEGORY.id) > -1
+        ? this.exclude.indexOf(this.RECENT_CATEGORY.id) > -1
         : false;
     if (includeRecent && !excludeRecent) {
       this.hideRecent = false;
-      this.categories.unshift(RECENT_CATEGORY);
+      this.categories.unshift(this.RECENT_CATEGORY);
     }
 
     if (this.categories[0]) {
       this.categories[0].first = true;
     }
 
-    this.categories.unshift(SEARCH_CATEGORY);
+    this.categories.unshift(this.SEARCH_CATEGORY);
     this.selected = this.categories.filter(category => category.first)[0].name;
   }
 
@@ -240,7 +245,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
       }
     };
 
-    if (SEARCH_CATEGORY.emojis) {
+    if (this.SEARCH_CATEGORY.emojis) {
       // this.handleSearch(null);
       // this.search.clear();
 
@@ -260,8 +265,8 @@ export class PickerComponent implements OnInit, AfterViewInit {
     let activeCategory = null;
     let scrollTop;
 
-    if (SEARCH_CATEGORY.emojis) {
-      activeCategory = SEARCH_CATEGORY;
+    if (this.SEARCH_CATEGORY.emojis) {
+      activeCategory = this.SEARCH_CATEGORY;
     } else {
       const target = this.scrollRef.nativeElement;
       scrollTop = target.scrollTop;
@@ -308,7 +313,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
     this.scrollTop = scrollTop;
   }
   handleSearch($emojis: any) {
-    SEARCH_CATEGORY.emojis = $emojis;
+    this.SEARCH_CATEGORY.emojis = $emojis;
     for (const component of this.categoryRefs!.toArray()) {
       if (component.name === 'Search') {
         component.emojis = $emojis;
@@ -325,8 +330,8 @@ export class PickerComponent implements OnInit, AfterViewInit {
 
   handleEnterKey($event: Event, emoji?: EmojiData) {
     if (!emoji) {
-      if (SEARCH_CATEGORY.emojis !== null && SEARCH_CATEGORY.emojis.length) {
-        emoji = SEARCH_CATEGORY.emojis[0];
+      if (this.SEARCH_CATEGORY.emojis !== null && this.SEARCH_CATEGORY.emojis.length) {
+        emoji = this.SEARCH_CATEGORY.emojis[0];
         if (emoji) {
           this.emojiSelect.emit({ $event, emoji });
         } else {
@@ -357,7 +362,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
         this.updateCategoriesSize();
         this.handleScroll();
 
-        if (SEARCH_CATEGORY.emojis) {
+        if (this.SEARCH_CATEGORY.emojis) {
           component.updateDisplay('none');
         }
       });
@@ -368,7 +373,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
       return;
     }
 
-    const emojiData = CUSTOM_CATEGORY.emojis!.find(
+    const emojiData = this.CUSTOM_CATEGORY.emojis!.find(
       customEmoji => customEmoji.id === $event.emoji.id,
     );
     if (emojiData) {
