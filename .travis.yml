@@ -1,16 +1,16 @@
 sudo: false
-dist: trusty
 language: node_js
-node_js: 8
+node_js: 9
 addons:
   chrome: stable
 script:
-  - npm run build
   - npm run lint
-  - npm run bundlesize
   - npm run test:ci
+  - npm run build
+  - npm run bundlesize
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - npm run travis-deploy-once "npm run semantic-release"
   - npm run ghpages
 deploy:
   provider: pages
@@ -20,6 +20,4 @@ deploy:
   on:
     branch: master
 notifications:
-  email:
-    on_success: never
-    on_failure: change
+  email: false

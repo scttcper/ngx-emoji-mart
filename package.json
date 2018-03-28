@@ -7,7 +7,6 @@
     "start": "ng serve",
     "build": "ts-node build.ts",
     "publish": "cd dist/packages-dist && npm publish --access public",
-    "bundlesize": "npx bundlesize",
     "test": "ng test --single-run --browsers=ChromeCI",
     "test:watch": "ng test --browsers=ChromeCI",
     "test:ci": "ng test --single-run --code-coverage --no-progress --browsers=ChromeCI",
@@ -15,7 +14,12 @@
     "lint:fix": "ng lint --type-check --fix -t stylish",
     "e2e": "ng e2e",
     "cleanup": "rimraf build dist waste deploy",
-    "ghpages": "ng build --prod --no-progress --baseHref='/ngx-emoji-mart/'"
+    "ghpages": "ng build --prod --no-progress --baseHref='/ngx-emoji-mart/'",
+    "bundlesize": "npx bundlesize",
+    "commitlint": "commitlint -e $GIT_PARAMS",
+    "travis-deploy-once": "travis-deploy-once",
+    "commit": "git-cz",
+    "semantic-release": "cd dist && semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +42,8 @@
     "@angular/cli": "1.7.3",
     "@angular/compiler-cli": "5.2.9",
     "@angular/language-service": "5.2.9",
+    "@commitlint/cli": "6.1.3",
+    "@commitlint/config-conventional": "6.1.3",
     "@types/fs-extra": "5.0.1",
     "@types/inflection": "1.5.28",
     "@types/jasmine": "2.8.6",
@@ -46,9 +52,12 @@
     "@types/rimraf": "2.0.2",
     "@types/stringify-object": "3.2.0",
     "codelyzer": "4.2.1",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0",
     "emoji-datasource": "4.0.3",
     "emojilib": "2.2.12",
     "fs-extra": "5.0.0",
+    "husky": "0.15.0-rc.13",
     "inflection": "1.12.0",
     "jasmine-core": "2.99.1",
     "jasmine-spec-reporter": "4.2.1",
@@ -61,10 +70,30 @@
     "ng-packagr": "2.4.1",
     "protractor": "5.3.0",
     "rimraf": "2.6.2",
+    "semantic-release": "15.1.4",
+    "travis-deploy-once": "4.4.1",
     "stringify-object": "3.2.2",
     "ts-node": "5.0.1",
     "tslint": "5.9.1",
     "typescript": "2.6.2"
+  },
+  "release": {
+    "branch": "master"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "npm run commitlint"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "bundlesize": [
     {
