@@ -1,12 +1,11 @@
 {
   "name": "@ctrl/ngx-emoji-mart",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ts-node build.ts",
-    "publish": "cd dist/packages-dist && npm publish --access public",
     "test": "ng test --single-run --browsers=ChromeCI",
     "test:watch": "ng test --browsers=ChromeCI",
     "test:ci": "ng test --single-run --code-coverage --no-progress --browsers=ChromeCI",
@@ -19,7 +18,7 @@
     "commitlint": "commitlint -e $GIT_PARAMS",
     "travis-deploy-once": "travis-deploy-once",
     "commit": "git-cz",
-    "semantic-release": "cd dist && semantic-release"
+    "semantic-release": "cd dist/packages-dist && semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -48,7 +47,7 @@
     "@types/inflection": "1.5.28",
     "@types/jasmine": "2.8.6",
     "@types/jasminewd2": "2.0.3",
-    "@types/node": "9.6.0",
+    "@types/node": "9.6.1",
     "@types/rimraf": "2.0.2",
     "@types/stringify-object": "3.2.0",
     "codelyzer": "4.2.1",
