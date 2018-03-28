@@ -200,6 +200,7 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   }
   updateDisplay(display: 'none' | 'inherit') {
     this.containerStyles.display = display;
+    this.getEmojis();
     this.ref.detectChanges();
   }
   trackById(index: number, item: any) {

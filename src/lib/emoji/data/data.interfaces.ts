@@ -3,7 +3,8 @@ import { Emoji } from '../emoji.component';
 export interface EmojiCategory {
   id: string;
   name: string;
-  emojis: string[];
+  emojis: any[] | null;
+  anchor?: boolean;
   first?: boolean;
 }
 

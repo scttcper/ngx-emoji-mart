@@ -15,6 +15,7 @@ import { EmojiSearch } from './emoji-search.service';
   template: `
   <div class="emoji-mart-search">
     <input #inputRef type="text"
+      (keyup.enter)="handleEnterKey($event)"
       [placeholder]="i18n.search" [autofocus]="autoFocus"
       [(ngModel)]="query" (ngModelChange)="handleChange()"
     />
@@ -33,6 +34,7 @@ export class SearchComponent implements AfterViewInit {
   @Input() custom: any[] = [];
   @Input() emojisToShowFilter?: (x: any) => boolean;
   @Output() search = new EventEmitter<any>();
+  @Output() enterKey = new EventEmitter<any>();
   @ViewChild('inputRef') private inputRef?: ElementRef;
   query = '';
 
@@ -42,6 +44,10 @@ export class SearchComponent implements AfterViewInit {
     if (this.autoFocus && this.inputRef) {
       this.inputRef.nativeElement.focus();
     }
+  }
+  handleEnterKey($event: Event) {
+    this.enterKey.emit($event);
+    $event.preventDefault();
   }
   handleChange() {
     this.search.emit(

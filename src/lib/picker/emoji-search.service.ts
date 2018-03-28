@@ -83,7 +83,7 @@ export class EmojiSearch {
             return;
           }
 
-          category.emojis.forEach(emojiId =>
+          category.emojis!.forEach(emojiId =>
             pool[emojiId] = this.emojiService.names[emojiId],
           );
         });

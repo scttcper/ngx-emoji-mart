@@ -20,16 +20,16 @@ __DEMO__: https://typectrl.github.io/ngx-emoji-mart/
 
 This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by missive  
 
-  - [Installation](#installation)
-  - [Components](#components)
-    - [Picker](#picker)
-    - [Emoji](#emoji)
-  - [Custom emojis](#custom-emojis)
-  - [Headless search](#headless-search)
-  - [Storage](#storage)
-  - [Features](#features)
-    - [Powerful search](#powerful-search)
-    - [Fully customizable](#fully-customizable)
+- [Installation](#installation)
+- [Components](#components)
+  - [Picker](#picker)
+  - [Emoji](#emoji)
+- [Custom emojis](#custom-emojis)
+- [Headless search](#headless-search)
+- [Storage](#storage)
+- [Features](#features)
+  - [Powerful search](#powerful-search)
+  - [Fully customizable](#fully-customizable)
 
 ## Installation
 
@@ -74,7 +74,8 @@ use component
 | **custom**             |          | `[]`                      | [Custom emojis](#custom-emojis)                                                                                                                                     |
 | **recent**             |          |                           | Pass your own frequently used emojis as array of string IDs                                                                                                         |
 | **emojiSize**          |          | `24`                      | The emoji width and height                                                                                                                                          |
-| **(emojiClick)**         |          |                           | Params: `{ emoji, $event }`                                                                                                                                      |
+| **(emojiClick)**         |          |                           | not triggered on return key in search bar. Params: `{ emoji, $event }`                                                                                                                                     |
+| **(emojiSelect)**         |          |                           | whenever an emoji is selected. returns `{ emoji, $event }`                                                                                                                                      |
 | **perLine**            |          | `9`                       | Number of emojis per line. While there’s no minimum or maximum, this will affect the picker’s width. This will set _Frequently Used_ length as well (`perLine * 4`) |
 | **i18n**               |          | [`{…}`](#i18n)            | [An object](#i18n) containing localized strings                                                                                                                     |
 | **native**             |          | `false`                   | Renders the native unicode emoji                                                                                                                                    |
