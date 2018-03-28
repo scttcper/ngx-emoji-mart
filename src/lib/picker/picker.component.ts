@@ -134,8 +134,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
         if (this.include.indexOf(a.id) > this.include.indexOf(b.id)) {
           return 1;
         }
-
-        return 0;
+        return -1;
       });
     }
 
