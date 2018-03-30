@@ -16,7 +16,7 @@ import SVGs from './svgs';
     <ng-container *ngFor="let category of categories; let idx = index">
       <span
         *ngIf="category.anchor !== false"
-        title="i18n.categories[category.id]"
+        [attr.title]="i18n.categories[category.id]"
         (click)="this.handleClick($event, idx)"
         class="emoji-mart-anchor"
         [class.emoji-mart-anchor-selected]="category.name === selected"
@@ -43,6 +43,7 @@ export class AnchorsComponent {
   @Input() categories: EmojiCategory[] = [];
   @Input() color?: string;
   @Input() selected?: string;
+  @Input() i18n: any;
   @Output() anchorClick = new EventEmitter<{ category: EmojiCategory, index: number }>();
   svgs: any = SVGs;
 

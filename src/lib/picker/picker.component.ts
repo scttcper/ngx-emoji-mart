@@ -26,7 +26,7 @@ import { measureScrollbar } from './utils';
 
 
 
-const I18N = {
+const I18N: any = {
   search: 'Search',
   notfound: 'No Emoji Found',
   categories: {
