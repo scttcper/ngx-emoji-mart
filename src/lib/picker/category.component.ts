@@ -74,7 +74,6 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
 
   </div>
   `,
-  styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
@@ -133,7 +132,6 @@ export class CategoryComponent implements OnInit, AfterViewInit {
     this.parent = this.container!.nativeElement.parentNode.parentNode;
     this.memoizeSize();
   }
-
   memoizeSize() {
     const {
       top,
@@ -150,14 +148,13 @@ export class CategoryComponent implements OnInit, AfterViewInit {
       this.maxMargin = height - labelHeight;
     }
   }
-
-  handleScroll(scrollTop: number) {
+  handleScroll(scrollTop: number): boolean {
     let margin = scrollTop - this.top;
     margin = margin < this.minMargin ? this.minMargin : margin;
     margin = margin > this.maxMargin ? this.maxMargin : margin;
 
     if (margin === this.margin) {
-      return;
+      return false;
     }
 
     if (!this.hasStickyPosition) {

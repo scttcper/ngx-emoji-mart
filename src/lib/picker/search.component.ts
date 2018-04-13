@@ -21,8 +21,6 @@ import { EmojiSearch } from './emoji-search.service';
     />
   </div>
   `,
-  styles: [],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
 export class SearchComponent implements AfterViewInit {
@@ -44,6 +42,9 @@ export class SearchComponent implements AfterViewInit {
     if (this.autoFocus && this.inputRef) {
       this.inputRef.nativeElement.focus();
     }
+  }
+  clear() {
+    this.query = '';
   }
   handleEnterKey($event: Event) {
     this.enterKey.emit($event);

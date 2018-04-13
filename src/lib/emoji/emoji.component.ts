@@ -50,7 +50,6 @@ export interface EmojiEvent {
     </span>
   </span>
   `,
-  styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
@@ -81,9 +80,7 @@ export class EmojiComponent implements OnChanges, Emoji {
       this.set
     }/sheets-256/${this.sheetSize}.png`
 
-  constructor(
-    private emojiService: EmojiService,
-  ) {}
+  constructor(private emojiService: EmojiService) {}
 
   ngOnChanges() {
     if (!this.emoji) {
@@ -93,42 +90,37 @@ export class EmojiComponent implements OnChanges, Emoji {
     if (!data) {
       return this.isVisible = false;
     }
-
-    const { unified, custom, short_names, imageUrl, obsoleted_by, native } = data;
     // const children = this.children;
     this.unified = null;
-    if (custom) {
-      this.custom = custom;
+    if (data.custom) {
+      this.custom = data.custom;
     }
-
-    if (!unified && !custom) {
+    if (!data.unified && !data.custom) {
       return this.isVisible = false;
     }
-
     if (this.tooltip) {
-      this.title = short_names[0];
+      this.title = data.short_names[0];
     }
-
-    if (obsoleted_by && this.hideObsolete) {
+    if (data.obsoleted_by && this.hideObsolete) {
       return this.isVisible = false;
     }
 
-    if (this.native && unified && native) {
+    if (this.native && data.unified && data.native) {
       // hide older emoji before the split into gendered emoji
       this.style = { fontSize: `${this.size}px` };
-      this.unified = native;
+      this.unified = data.native;
 
       if (this.forceSize) {
         this.style.display = 'inline-block';
         this.style.width = `${this.size}px`;
         this.style.height = `${this.size}px`;
       }
-    } else if (custom) {
+    } else if (data.custom) {
       this.style = {
         width: `${this.size}px`,
         height: `${this.size}px`,
         display: 'inline-block',
-        backgroundImage: `url(${imageUrl})`,
+        backgroundImage: `url(${data.imageUrl})`,
         backgroundSize: 'contain',
       };
     } else {

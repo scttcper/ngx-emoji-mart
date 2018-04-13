@@ -13,7 +13,7 @@ import SVGs from './svgs';
   selector: 'emoji-mart-anchors',
   template: `
   <div class="emoji-mart-anchors">
-    <ng-container *ngFor="let category of categories; let idx = index">
+    <ng-template ngFor let-category [ngForOf]="categories" let-idx="index" [ngForTrackBy]="trackByFn">
       <span
         *ngIf="category.anchor !== false"
         [attr.title]="i18n.categories[category.id]"
@@ -32,10 +32,9 @@ import SVGs from './svgs';
           [style.background-color]="color"
         ></span>
       </span>
-    </ng-container>
+    </ng-template>
   </div>
   `,
-  styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
@@ -47,6 +46,9 @@ export class AnchorsComponent {
   @Output() anchorClick = new EventEmitter<{ category: EmojiCategory, index: number }>();
   svgs: any = SVGs;
 
+  trackByFn(idx: number, cat: EmojiCategory) {
+    return cat.id;
+  }
   handleClick($event: Event, index: number) {
     this.anchorClick.emit({
       category: this.categories[index],

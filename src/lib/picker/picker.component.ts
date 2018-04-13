@@ -1,6 +1,7 @@
 import {
   AfterViewInit,
   ChangeDetectionStrategy,
+  ChangeDetectorRef,
   Component,
   ElementRef,
   EventEmitter,
@@ -22,6 +23,7 @@ import {
 import { CategoryComponent } from './category.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 import { PreviewComponent } from './preview.component';
+import { SearchComponent } from './search.component';
 import { measureScrollbar } from './utils';
 
 
@@ -58,7 +60,10 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() emoji = 'department_store';
   @Input() color = '#ae65c5';
   @Input() hideObsolete = true;
-  @Input() categories: any[] = [];
+  /** all categories */
+  @Input() categories: EmojiCategory[] = [];
+  /** used to temporarily draw categories */
+  @Input() activeCategories: EmojiCategory[] = [];
   @Input() set: Emoji['set'] = 'apple';
   @Input() skin: Emoji['skin'] = 1;
   @Input() native: Emoji['native'] = false;
@@ -76,11 +81,13 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Output() emojiSelect = new EventEmitter<any>();
   @ViewChild('scrollRef') private scrollRef?: ElementRef;
   @ViewChild('previewRef') private previewRef?: PreviewComponent;
+  @ViewChild('searchRef') private searchRef?: SearchComponent;
   @ViewChildren('categoryRef')
   private categoryRefs?: QueryList<CategoryComponent>;
   scrollHeight = 0;
   clientHeight = 0;
   selected?: string;
+  nextScroll?: string;
   scrollTop?: number;
   firstRender = true;
   recent?: string[];
@@ -114,7 +121,10 @@ export class PickerComponent implements OnInit, AfterViewInit {
       this.set
     }/sheets-256/${this.sheetSize}.png`
 
-  constructor(private frequently: EmojiFrequentlyService) {}
+  constructor(
+    private ref: ChangeDetectorRef,
+    private frequently: EmojiFrequentlyService,
+  ) {}
 
   ngOnInit() {
     // measure scroll
@@ -150,12 +160,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
       });
     }
 
-    for (
-      let categoryIndex = 0;
-      categoryIndex < allCategories.length;
-      categoryIndex++
-    ) {
-      const category = allCategories[categoryIndex];
+    for (const category of allCategories) {
       const isIncluded =
         this.include && this.include.length
           ? this.include.indexOf(category.id) > -1
@@ -212,12 +217,17 @@ export class PickerComponent implements OnInit, AfterViewInit {
 
     this.categories.unshift(this.SEARCH_CATEGORY);
     this.selected = this.categories.filter(category => category.first)[0].name;
-  }
 
+    this.activeCategories = this.categories.slice(0, 3);
+    setTimeout(() => {
+      this.activeCategories = this.categories;
+      this.ref.markForCheck();
+      this.updateCategoriesSize();
+    });
+  }
   ngAfterViewInit() {
     this.updateCategoriesSize();
   }
-
   updateCategoriesSize() {
     this.categoryRefs!.forEach(component => component.memoizeSize());
 
@@ -227,90 +237,62 @@ export class PickerComponent implements OnInit, AfterViewInit {
       this.clientHeight = target.clientHeight;
     }
   }
-
   handleAnchorClick($event: { category: EmojiCategory; index: number }) {
     const component = this.categoryRefs!.find(n => n.id === $event.category.id);
-    let scrollToComponent = null;
-
-    scrollToComponent = () => {
-      if (component) {
-        let { top } = component;
-
-        if ($event.category.first) {
-          top = 0;
-        } else {
-          top += 1;
-        }
-        this.scrollRef!.nativeElement.scrollTop = top;
-      }
-    };
 
     if (this.SEARCH_CATEGORY.emojis) {
-      // this.handleSearch(null);
-      // this.search.clear();
-
-      window.requestAnimationFrame(scrollToComponent);
-    } else {
-      scrollToComponent();
+      this.handleSearch(null);
+      this.searchRef!.clear();
     }
+    if (component) {
+      let { top } = component;
+
+      if ($event.category.first) {
+        top = 0;
+      } else {
+        top += 1;
+      }
+      this.scrollRef!.nativeElement.scrollTop = top;
+    }
+    this.selected = $event.category.name;
+    this.nextScroll = $event.category.name;
   }
   categoryTrack(index: number, item: any) {
     return item.id;
   }
   handleScroll() {
+    if (this.nextScroll) {
+      this.selected = this.nextScroll;
+      this.nextScroll = undefined;
+      return;
+    }
     if (!this.scrollRef) {
       return;
     }
 
     let activeCategory = null;
-    let scrollTop;
-
     if (this.SEARCH_CATEGORY.emojis) {
       activeCategory = this.SEARCH_CATEGORY;
     } else {
       const target = this.scrollRef.nativeElement;
-      scrollTop = target.scrollTop;
-      const scrollingDown = scrollTop > (this.scrollTop || 0);
-      let minTop = 0;
 
-      for (let i = 0, l = this.categories.length; i < l; i++) {
-        const ii = scrollingDown ? this.categories.length - 1 - i : i;
-        const category = this.categories[ii];
+      for (const category of this.categories) {
         const component = this.categoryRefs!.find(n => n.id === category.id);
 
         if (component) {
-          const active = component.handleScroll(scrollTop);
+          const active = component.handleScroll(target.scrollTop);
 
-          if (!minTop || component.top < minTop) {
-            if (component.top > 0) {
-              minTop = component.top;
-            }
-          }
-
-          if (active && !activeCategory) {
+          if (active) {
             activeCategory = category;
           }
         }
       }
 
-      if (scrollTop < minTop) {
-        activeCategory = this.categories.filter(
-          category => !(category.anchor === false),
-        )[0];
-      } else if (scrollTop + this.clientHeight >= this.scrollHeight) {
-        activeCategory = this.categories[this.categories.length - 1];
-      }
+      this.scrollTop = target.scrollTop;
     }
-
     if (activeCategory) {
-      const { name: categoryName } = activeCategory;
-
-      if (this.selected !== categoryName) {
-        this.selected = categoryName;
-      }
+      this.selected = activeCategory.name;
     }
-
-    this.scrollTop = scrollTop;
   }
   handleSearch($emojis: any) {
     this.SEARCH_CATEGORY.emojis = $emojis;

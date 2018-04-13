@@ -13,6 +13,7 @@
     </emoji-mart-anchors>
   </div>
   <emoji-search
+    #searchRef
     [i18n]="i18n"
     (search)="handleSearch($event)"
     (enterKey)="handleEnterKey($event)"
@@ -29,7 +30,7 @@
     (scroll)="handleScroll()"
   >
     <div emoji-category
-      *ngFor="let category of categories; let idx = index; trackBy: categoryTrack"
+      *ngFor="let category of activeCategories; let idx = index; trackBy: categoryTrack"
       #categoryRef
       [id]="category.id"
       [name]="category.name"
