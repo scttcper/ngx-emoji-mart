@@ -60,7 +60,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() emoji = 'department_store';
   @Input() color = '#ae65c5';
   @Input() hideObsolete = true;
-  /** all categories */
+  /** all categories shown */
   @Input() categories: EmojiCategory[] = [];
   /** used to temporarily draw categories */
   @Input() activeCategories: EmojiCategory[] = [];
@@ -276,7 +276,15 @@ export class PickerComponent implements OnInit, AfterViewInit {
     } else {
       const target = this.scrollRef.nativeElement;
       // check scroll is not at bottom
-      if (target.scrollHeight - target.scrollTop !== this.clientHeight) {
+      console.log(target.scrollTop);
+      if (target.scrollTop === 0) {
+        // hit the TOP
+        activeCategory = this.categories.find(n => n.first === true);
+      } else if (target.scrollHeight - target.scrollTop === this.clientHeight) {
+        // scrolled to bottom activate last category
+        activeCategory = this.categories[this.categories.length - 1];
+      } else {
+        // scrolling
         for (const category of this.categories) {
           const component = this.categoryRefs!.find(n => n.id === category.id);
           const active = component!.handleScroll(target.scrollTop);
@@ -284,14 +292,12 @@ export class PickerComponent implements OnInit, AfterViewInit {
             activeCategory = category;
           }
         }
-      } else {
-        // scrolled to bottom activate last category
-        activeCategory = this.categories[this.categories.length - 1];
       }
 
       this.scrollTop = target.scrollTop;
     }
     if (activeCategory) {
+      console.log(activeCategory.name);
       this.selected = activeCategory.name;
     }
   }
