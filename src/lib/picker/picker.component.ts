@@ -275,17 +275,18 @@ export class PickerComponent implements OnInit, AfterViewInit {
       activeCategory = this.SEARCH_CATEGORY;
     } else {
       const target = this.scrollRef.nativeElement;
-
-      for (const category of this.categories) {
-        const component = this.categoryRefs!.find(n => n.id === category.id);
-
-        if (component) {
-          const active = component.handleScroll(target.scrollTop);
-
+      // check scroll is not at bottom
+      if (target.scrollHeight - target.scrollTop !== this.clientHeight) {
+        for (const category of this.categories) {
+          const component = this.categoryRefs!.find(n => n.id === category.id);
+          const active = component!.handleScroll(target.scrollTop);
           if (active) {
             activeCategory = category;
           }
         }
+      } else {
+        // scrolled to bottom activate last category
+        activeCategory = this.categories[this.categories.length - 1];
       }
 
       this.scrollTop = target.scrollTop;
