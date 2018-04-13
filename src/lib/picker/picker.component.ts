@@ -276,7 +276,6 @@ export class PickerComponent implements OnInit, AfterViewInit {
     } else {
       const target = this.scrollRef.nativeElement;
       // check scroll is not at bottom
-      console.log(target.scrollTop);
       if (target.scrollTop === 0) {
         // hit the TOP
         activeCategory = this.categories.find(n => n.first === true);
@@ -297,7 +296,6 @@ export class PickerComponent implements OnInit, AfterViewInit {
       this.scrollTop = target.scrollTop;
     }
     if (activeCategory) {
-      console.log(activeCategory.name);
       this.selected = activeCategory.name;
     }
   }
