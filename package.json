@@ -47,7 +47,7 @@
     "@types/inflection": "1.5.28",
     "@types/jasmine": "2.8.6",
     "@types/jasminewd2": "2.0.3",
-    "@types/node": "9.6.4",
+    "@types/node": "9.6.5",
     "@types/rimraf": "2.0.2",
     "@types/stringify-object": "3.2.0",
     "codelyzer": "4.2.1",
