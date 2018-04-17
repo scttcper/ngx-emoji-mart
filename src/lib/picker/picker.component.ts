@@ -117,7 +117,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
     set: string,
     sheetSize: number,
   ) =>
-    `https://unpkg.com/emoji-datasource-${this.set}@4.0.3/img/${
+    `https://unpkg.com/emoji-datasource-${this.set}@4.0.4/img/${
       this.set
     }/sheets-256/${this.sheetSize}.png`
 

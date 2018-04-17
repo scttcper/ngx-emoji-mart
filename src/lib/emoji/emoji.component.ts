@@ -76,7 +76,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   // TODO: replace 4.0.3 w/ dynamic get verison from emoji-datasource in package.json
   @Input()
   backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
-    `https://unpkg.com/emoji-datasource-${this.set}@4.0.3/img/${
+    `https://unpkg.com/emoji-datasource-${this.set}@4.0.4/img/${
       this.set
     }/sheets-256/${this.sheetSize}.png`
 

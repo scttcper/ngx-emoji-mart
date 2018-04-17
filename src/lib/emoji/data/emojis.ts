@@ -476,7 +476,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F3F3-FE0F',
     short_name: 'waving_white_flag',
     sheet: [12, 15],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'World Map',
@@ -484,7 +484,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'world_map',
     keywords: ['location', 'direction'],
     sheet: [30, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Lemon',
@@ -526,8 +526,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Rainbow Flag',
     unified: '1F3F3-FE0F-200D-1F308',
     short_name: 'rainbow-flag',
-    sheet: [12, 14],
-    hidden: ['emojione']
+    sheet: [12, 14]
   },
   {
     name: 'Smiling Face with Open Mouth and Smiling Eyes',
@@ -689,7 +688,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F3D4-FE0F',
     short_name: 'snow_capped_mountain',
     sheet: [11, 37],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Smiling Face with Open Mouth and Tightly-Closed Eyes',
@@ -774,7 +773,7 @@ export const emojis: CompressedEmojiData[] = [
       'environment'
     ],
     sheet: [48, 38],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Baby Symbol',
@@ -1004,7 +1003,7 @@ export const emojis: CompressedEmojiData[] = [
       'tent'
     ],
     sheet: [11, 38],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Antigua & Barbuda Flag',
@@ -1091,7 +1090,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F3D6-FE0F',
     short_name: 'beach_with_umbrella',
     sheet: [11, 39],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Cherries',
@@ -1172,7 +1171,7 @@ export const emojis: CompressedEmojiData[] = [
       'saharah'
     ],
     sheet: [11, 45],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Studio Microphone',
@@ -1185,7 +1184,7 @@ export const emojis: CompressedEmojiData[] = [
       'talkshow'
     ],
     sheet: [8, 41],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Albania Flag',
@@ -1230,7 +1229,7 @@ export const emojis: CompressedEmojiData[] = [
       'mojito'
     ],
     sheet: [11, 46],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Kiwifruit',
@@ -1279,8 +1278,7 @@ export const emojis: CompressedEmojiData[] = [
       'problem',
       'issue'
     ],
-    sheet: [48, 20],
-    hidden: ['emojione']
+    sheet: [48, 20]
   },
   {
     name: 'Armenia Flag',
@@ -1301,7 +1299,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'level_slider',
     keywords: ['scale'],
     sheet: [8, 42],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Horse Face',
@@ -1350,7 +1348,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature'
     ],
     sheet: [11, 47],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Control Knobs',
@@ -1358,7 +1356,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'control_knobs',
     keywords: ['dial'],
     sheet: [8, 43],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Kissing Face',
@@ -1405,7 +1403,7 @@ export const emojis: CompressedEmojiData[] = [
       'venue'
     ],
     sheet: [11, 48],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Antarctica Flag',
@@ -1464,7 +1462,7 @@ export const emojis: CompressedEmojiData[] = [
       'palm'
     ],
     sheet: [42, 17],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Horse',
@@ -1500,7 +1498,7 @@ export const emojis: CompressedEmojiData[] = [
       'history'
     ],
     sheet: [11, 44],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'No Entry Sign',
@@ -1527,7 +1525,7 @@ export const emojis: CompressedEmojiData[] = [
       'awareness'
     ],
     sheet: [8, 40],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Kissing Face with Closed Eyes',
@@ -1586,15 +1584,14 @@ export const emojis: CompressedEmojiData[] = [
       'massage',
       'happiness'
     ],
-    sheet: [47, 41],
-    hidden: ['emojione']
+    sheet: [47, 41]
   },
   {
     name: 'Zebra Face',
     unified: '1F993',
     short_name: 'zebra_face',
     sheet: [42, 43],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Aubergine',
@@ -1630,7 +1627,7 @@ export const emojis: CompressedEmojiData[] = [
       'progress'
     ],
     sheet: [11, 40],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'American Samoa Flag',
@@ -1643,7 +1640,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F39F-FE0F',
     short_name: 'admission_tickets',
     sheet: [8, 45],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'No Bicycles',
@@ -1723,7 +1720,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F3D8-FE0F',
     short_name: 'house_buildings',
     sheet: [11, 41],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Potato',
@@ -1767,7 +1764,7 @@ export const emojis: CompressedEmojiData[] = [
       'urban'
     ],
     sheet: [11, 42],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Australia Flag',
@@ -1813,7 +1810,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F396-FE0F',
     short_name: 'medal',
     sheet: [8, 39],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Musical Keyboard',
@@ -1842,7 +1839,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F3DA-FE0F',
     short_name: 'derelict_house_building',
     sheet: [11, 43],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Non-Potable Water Symbol',
@@ -1884,7 +1881,7 @@ export const emojis: CompressedEmojiData[] = [
       'grinning_face_with_star_eyes'
     ],
     sheet: [38, 49],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Ox',
@@ -1911,7 +1908,7 @@ export const emojis: CompressedEmojiData[] = [
       'chili'
     ],
     sheet: [6, 44],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Sports Medal',
@@ -2019,7 +2016,7 @@ export const emojis: CompressedEmojiData[] = [
       'face_with_one_eyebrow_raised'
     ],
     sheet: [38, 48],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Cucumber',
@@ -2096,7 +2093,7 @@ export const emojis: CompressedEmojiData[] = [
       'vegetable'
     ],
     sheet: [42, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Office Building',
@@ -2154,7 +2151,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '2622-FE0F',
     short_name: 'radioactive_sign',
     sheet: [47, 33],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Pig',
@@ -2240,7 +2237,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '2623-FE0F',
     short_name: 'biohazard_sign',
     sheet: [47, 34],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Bangladesh Flag',
@@ -2273,8 +2270,7 @@ export const emojis: CompressedEmojiData[] = [
       'dial',
       'telephone'
     ],
-    sheet: [47, 21],
-    hidden: ['emojione']
+    sheet: [47, 21]
   },
   {
     name: 'Pig Nose',
@@ -2300,8 +2296,7 @@ export const emojis: CompressedEmojiData[] = [
       'top',
       'direction'
     ],
-    sheet: [50, 18],
-    hidden: ['emojione']
+    sheet: [50, 18]
   },
   {
     name: 'Hospital',
@@ -2353,8 +2348,7 @@ export const emojis: CompressedEmojiData[] = [
       'diagonal',
       'northeast'
     ],
-    sheet: [46, 36],
-    hidden: ['emojione']
+    sheet: [46, 36]
   },
   {
     name: 'Burkina Faso Flag',
@@ -2461,8 +2455,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '27A1-FE0F',
     short_name: 'arrow_right',
     keywords: ['blue-square', 'next'],
-    sheet: [50, 12],
-    hidden: ['emojione']
+    sheet: [50, 12]
   },
   {
     name: 'Persevering Face',
@@ -2512,8 +2505,7 @@ export const emojis: CompressedEmojiData[] = [
       'diagonal',
       'southeast'
     ],
-    sheet: [46, 37],
-    hidden: ['emojione']
+    sheet: [46, 37]
   },
   {
     name: 'Goat',
@@ -2616,8 +2608,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'bottom'
     ],
-    sheet: [50, 19],
-    hidden: ['emojione']
+    sheet: [50, 19]
   },
   {
     name: 'Battery',
@@ -2647,7 +2638,7 @@ export const emojis: CompressedEmojiData[] = [
       'twisted'
     ],
     sheet: [42, 20],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Face with Open Mouth',
@@ -2754,8 +2745,7 @@ export const emojis: CompressedEmojiData[] = [
       'diagonal',
       'southwest'
     ],
-    sheet: [46, 38],
-    hidden: ['emojione']
+    sheet: [46, 38]
   },
   {
     name: 'Electric Plug',
@@ -2796,7 +2786,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F992',
     short_name: 'giraffe_face',
     sheet: [42, 42],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Billiards',
@@ -2827,8 +2817,7 @@ export const emojis: CompressedEmojiData[] = [
       'previous',
       'back'
     ],
-    sheet: [50, 17],
-    hidden: ['emojione']
+    sheet: [50, 17]
   },
   {
     name: 'Department Store',
@@ -2863,8 +2852,7 @@ export const emojis: CompressedEmojiData[] = [
       'diagonal',
       'northwest'
     ],
-    sheet: [46, 35],
-    hidden: ['emojione']
+    sheet: [46, 35]
   },
   {
     name: 'Bermuda Flag',
@@ -2913,7 +2901,7 @@ export const emojis: CompressedEmojiData[] = [
       'screen'
     ],
     sheet: [29, 51],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Elephant',
@@ -2950,8 +2938,7 @@ export const emojis: CompressedEmojiData[] = [
       'way',
       'vertical'
     ],
-    sheet: [46, 34],
-    hidden: ['emojione']
+    sheet: [46, 34]
   },
   {
     name: 'Cricket Bat and Ball',
@@ -2966,7 +2953,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'printer',
     keywords: ['paper', 'ink'],
     sheet: [30, 0],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Poultry Leg',
@@ -3038,8 +3025,7 @@ export const emojis: CompressedEmojiData[] = [
       'horizontal',
       'sideways'
     ],
-    sheet: [46, 33],
-    hidden: ['emojione']
+    sheet: [46, 33]
   },
   {
     name: 'Keyboard',
@@ -3053,7 +3039,7 @@ export const emojis: CompressedEmojiData[] = [
       'text'
     ],
     sheet: [46, 43],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'European Castle',
@@ -3089,7 +3075,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F969',
     short_name: 'cut_of_meat',
     sheet: [42, 21],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Ice Hockey Stick and Puck',
@@ -3114,7 +3100,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F5B1-FE0F',
     short_name: 'three_button_mouse',
     sheet: [30, 1],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Leftwards Arrow with Hook',
@@ -3127,8 +3113,7 @@ export const emojis: CompressedEmojiData[] = [
       'undo',
       'enter'
     ],
-    sheet: [46, 39],
-    hidden: ['emojione']
+    sheet: [46, 39]
   },
   {
     name: 'Bacon',
@@ -3196,8 +3181,7 @@ export const emojis: CompressedEmojiData[] = [
       'rotate',
       'direction'
     ],
-    sheet: [46, 40],
-    hidden: ['emojione']
+    sheet: [46, 40]
   },
   {
     name: 'Hamburger',
@@ -3246,7 +3230,7 @@ export const emojis: CompressedEmojiData[] = [
       'trackpad'
     ],
     sheet: [30, 2],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Brazil Flag',
@@ -3350,8 +3334,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'top'
     ],
-    sheet: [50, 15],
-    hidden: ['emojione']
+    sheet: [50, 15]
   },
   {
     name: 'Hamster Face',
@@ -3411,8 +3394,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'bottom'
     ],
-    sheet: [50, 16],
-    hidden: ['emojione']
+    sheet: [50, 16]
   },
   {
     name: 'Bhutan Flag',
@@ -3550,7 +3532,7 @@ export const emojis: CompressedEmojiData[] = [
       'bread'
     ],
     sheet: [42, 22],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Chipmunk',
@@ -3563,7 +3545,7 @@ export const emojis: CompressedEmojiData[] = [
       'squirrel'
     ],
     sheet: [13, 41],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Synagogue',
@@ -3623,7 +3605,7 @@ export const emojis: CompressedEmojiData[] = [
       'spiny'
     ],
     sheet: [42, 44],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Direct Hit',
@@ -3673,7 +3655,7 @@ export const emojis: CompressedEmojiData[] = [
       'kyoto'
     ],
     sheet: [48, 36],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Movie Camera',
@@ -3738,7 +3720,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F39E-FE0F',
     short_name: 'film_frames',
     sheet: [8, 44],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Bat',
@@ -3784,7 +3766,7 @@ export const emojis: CompressedEmojiData[] = [
       'movie'
     ],
     sheet: [27, 0],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Bear Face',
@@ -3803,7 +3785,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'ice_skate',
     keywords: ['sports'],
     sheet: [48, 45],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Fountain',
@@ -4133,7 +4115,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '2639-FE0F',
     short_name: 'white_frowning_face',
     sheet: [47, 40],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Congo - Brazzaville Flag',
@@ -4158,7 +4140,7 @@ export const emojis: CompressedEmojiData[] = [
       'toboggan'
     ],
     sheet: [37, 22],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Atom Symbol',
@@ -4170,7 +4152,7 @@ export const emojis: CompressedEmojiData[] = [
       'chemistry'
     ],
     sheet: [48, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Curling Stone',
@@ -4178,7 +4160,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'curling_stone',
     keywords: ['sports'],
     sheet: [41, 47],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Slightly Frowning Face',
@@ -4211,7 +4193,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F549-FE0F',
     short_name: 'om_symbol',
     sheet: [28, 12],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Chicken',
@@ -4237,7 +4219,7 @@ export const emojis: CompressedEmojiData[] = [
       'porridge'
     ],
     sheet: [42, 15],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Switzerland Flag',
@@ -4332,7 +4314,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'star_of_david',
     keywords: ['judaism'],
     sheet: [49, 47],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Côte D’ivoire Flag',
@@ -4411,7 +4393,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'joystick',
     keywords: ['game', 'play'],
     sheet: [29, 20],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Wheel of Dharma',
@@ -4424,7 +4406,7 @@ export const emojis: CompressedEmojiData[] = [
       'jainism'
     ],
     sheet: [47, 39],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Cook Islands Flag',
@@ -4438,7 +4420,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'canned_food',
     keywords: ['food', 'soup'],
     sheet: [42, 23],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Worried Face',
@@ -4500,7 +4482,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'yin_yang',
     keywords: ['balance'],
     sheet: [47, 38],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Bridge at Night',
@@ -4519,8 +4501,7 @@ export const emojis: CompressedEmojiData[] = [
       'suits',
       'magic'
     ],
-    sheet: [48, 4],
-    hidden: ['emojione']
+    sheet: [48, 4]
   },
   {
     name: 'Front-Facing Baby Chick',
@@ -4546,7 +4527,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'latin_cross',
     keywords: ['christianity'],
     sheet: [49, 46],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Face with Look of Triumph',
@@ -4566,8 +4547,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '2668-FE0F',
     short_name: 'hotsprings',
     keywords: ['bath', 'warm', 'relax'],
-    sheet: [48, 8],
-    hidden: ['emojione']
+    sheet: [48, 8]
   },
   {
     name: 'Bento Box',
@@ -4668,8 +4648,7 @@ export const emojis: CompressedEmojiData[] = [
       'magic',
       'suits'
     ],
-    sheet: [48, 6],
-    hidden: ['emojione']
+    sheet: [48, 6]
   },
   {
     name: 'Orthodox Cross',
@@ -4680,7 +4659,7 @@ export const emojis: CompressedEmojiData[] = [
       'religion'
     ],
     sheet: [47, 35],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Milky Way',
@@ -4744,8 +4723,7 @@ export const emojis: CompressedEmojiData[] = [
       'magic',
       'suits'
     ],
-    sheet: [48, 7],
-    hidden: ['emojione']
+    sheet: [48, 7]
   },
   {
     name: 'Star and Crescent',
@@ -4753,7 +4731,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'star_and_crescent',
     keywords: ['islam'],
     sheet: [47, 36],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Penguin',
@@ -4767,7 +4745,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F54A-FE0F',
     short_name: 'dove_of_peace',
     sheet: [28, 13],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Clipperton Island Flag',
@@ -4797,8 +4775,7 @@ export const emojis: CompressedEmojiData[] = [
       'magic',
       'suits'
     ],
-    sheet: [48, 5],
-    hidden: ['emojione']
+    sheet: [48, 5]
   },
   {
     name: 'Peace Symbol',
@@ -4806,7 +4783,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'peace_symbol',
     keywords: ['hippie'],
     sheet: [47, 37],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Candle',
@@ -4814,7 +4791,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'candle',
     keywords: ['fire', 'wax'],
     sheet: [28, 42],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Frowning Face with Open Mouth',
@@ -5154,7 +5131,7 @@ export const emojis: CompressedEmojiData[] = [
       'blown'
     ],
     sheet: [39, 3],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Taurus',
@@ -5205,7 +5182,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F5BC-FE0F',
     short_name: 'frame_with_picture',
     sheet: [30, 3],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Christmas Island Flag',
@@ -5566,7 +5543,7 @@ export const emojis: CompressedEmojiData[] = [
       'grinning_face_with_one_large_and_one_small_eye'
     ],
     sheet: [38, 50],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Books',
@@ -5609,7 +5586,7 @@ export const emojis: CompressedEmojiData[] = [
       'potsticker'
     ],
     sheet: [42, 11],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Dizzy Face',
@@ -5679,7 +5656,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'fortune_cookie',
     keywords: ['food', 'prophecy'],
     sheet: [42, 12],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Sagittarius',
@@ -5707,7 +5684,7 @@ export const emojis: CompressedEmojiData[] = [
       'extinct'
     ],
     sheet: [42, 45],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Denmark Flag',
@@ -5759,7 +5736,7 @@ export const emojis: CompressedEmojiData[] = [
       'extinct'
     ],
     sheet: [42, 46],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Capricorn',
@@ -5779,7 +5756,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'takeout_box',
     keywords: ['food', 'leftovers'],
     sheet: [42, 13],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Dominica Flag',
@@ -5828,7 +5805,7 @@ export const emojis: CompressedEmojiData[] = [
       'serious_face_with_symbols_covering_mouth'
     ],
     sheet: [39, 0],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Dominican Republic Flag',
@@ -6152,7 +6129,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F5DE-FE0F',
     short_name: 'rolled_up_newspaper',
     sheet: [30, 12],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Nauseated Face',
@@ -6244,7 +6221,7 @@ export const emojis: CompressedEmojiData[] = [
       'face_with_open_mouth_vomiting'
     ],
     sheet: [39, 2],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Black Right-Pointing Triangle',
@@ -6256,8 +6233,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'play'
     ],
-    sheet: [47, 10],
-    hidden: ['emojione']
+    sheet: [47, 10]
   },
   {
     name: 'Bookmark',
@@ -6349,7 +6325,7 @@ export const emojis: CompressedEmojiData[] = [
       'pastry'
     ],
     sheet: [42, 19],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Smiling Face with Halo',
@@ -6381,7 +6357,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'label',
     keywords: ['sale', 'tag'],
     sheet: [12, 21],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Octopus',
@@ -6408,7 +6384,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '23ED-FE0F',
     short_name: 'black_right_pointing_double_triangle_with_vertical_bar',
     sheet: [46, 49],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Chocolate Bar',
@@ -6516,7 +6492,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '23EF-FE0F',
     short_name: 'black_right_pointing_triangle_with_double_vertical_bar',
     sheet: [46, 51],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Trolleybus',
@@ -6562,8 +6538,7 @@ export const emojis: CompressedEmojiData[] = [
       'left',
       'direction'
     ],
-    sheet: [47, 11],
-    hidden: ['emojione']
+    sheet: [47, 11]
   },
   {
     name: 'Banknote with Dollar Sign',
@@ -6676,7 +6651,7 @@ export const emojis: CompressedEmojiData[] = [
       'face_with_finger_covering_closed_lips'
     ],
     sheet: [38, 51],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Black Left-Pointing Double Triangle',
@@ -6690,7 +6665,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '23EE-FE0F',
     short_name: 'black_left_pointing_double_triangle_with_vertical_bar',
     sheet: [46, 50],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Smiling Face with Smiling Eyes and Hand Covering Mouth',
@@ -6700,7 +6675,7 @@ export const emojis: CompressedEmojiData[] = [
       'smiling_face_with_smiling_eyes_and_hand_covering_mouth'
     ],
     sheet: [39, 1],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Fiji Flag',
@@ -6805,7 +6780,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F9D0',
     short_name: 'face_with_monocle',
     sheet: [42, 49],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Police Car',
@@ -7139,7 +7114,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '23F8-FE0F',
     short_name: 'double_vertical_bar',
     sheet: [47, 4],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Bottle with Popping Cork',
@@ -7175,7 +7150,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '23F9-FE0F',
     short_name: 'black_square_for_stop',
     sheet: [47, 5],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Oncoming Automobile',
@@ -7199,8 +7174,7 @@ export const emojis: CompressedEmojiData[] = [
       'inbox',
       'communication'
     ],
-    sheet: [49, 17],
-    hidden: ['emojione']
+    sheet: [49, 17]
   },
   {
     name: 'Cricket',
@@ -7208,7 +7182,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'cricket',
     keywords: ['sports'],
     sheet: [42, 47],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'United Kingdom Flag',
@@ -7222,7 +7196,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '23FA-FE0F',
     short_name: 'black_circle_for_record',
     sheet: [47, 6],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Grenada Flag',
@@ -7236,7 +7210,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'spider',
     keywords: ['animal', 'arachnid'],
     sheet: [29, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Recreational Vehicle',
@@ -7294,7 +7268,7 @@ export const emojis: CompressedEmojiData[] = [
       'silk'
     ],
     sheet: [29, 19],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Cocktail Glass',
@@ -7324,7 +7298,7 @@ export const emojis: CompressedEmojiData[] = [
       'evil'
     ],
     sheet: [47, 32],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Georgia Flag',
@@ -7337,7 +7311,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '23CF-FE0F',
     short_name: 'eject',
     sheet: [46, 44],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Delivery Truck',
@@ -7710,7 +7684,7 @@ export const emojis: CompressedEmojiData[] = [
       'military'
     ],
     sheet: [12, 20],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Tumbler Glass',
@@ -7738,7 +7712,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'cup_with_straw',
     keywords: ['drink', 'soda'],
     sheet: [42, 16],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Gambia Flag',
@@ -7814,7 +7788,7 @@ export const emojis: CompressedEmojiData[] = [
       'highway'
     ],
     sheet: [37, 11],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Grinning Cat Face with Smiling Eyes',
@@ -7862,18 +7836,14 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'chopsticks',
     keywords: ['food'],
     sheet: [42, 14],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Female Sign',
     unified: '2640-FE0F',
     short_name: 'female_sign',
     sheet: [47, 42],
-    hidden: [
-      'apple',
-      'emojione',
-      'messenger'
-    ]
+    hidden: ['apple', 'messenger']
   },
   {
     name: 'Open Mailbox with Lowered Flag',
@@ -7887,7 +7857,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F37D-FE0F',
     short_name: 'knife_fork_plate',
     sheet: [8, 11],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Hibiscus',
@@ -7917,18 +7887,14 @@ export const emojis: CompressedEmojiData[] = [
       'transportation'
     ],
     sheet: [37, 12],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Male Sign',
     unified: '2642-FE0F',
     short_name: 'male_sign',
     sheet: [47, 43],
-    hidden: [
-      'apple',
-      'emojione',
-      'messenger'
-    ]
+    hidden: ['apple', 'messenger']
   },
   {
     name: 'Cat Face with Tears of Joy',
@@ -8009,11 +7975,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'medical_symbol',
     short_names: ['staff_of_aesculapius'],
     sheet: [48, 14],
-    hidden: [
-      'apple',
-      'emojione',
-      'messenger'
-    ]
+    hidden: ['apple', 'messenger']
   },
   {
     name: 'Black Universal Recycling Symbol',
@@ -8025,8 +7987,7 @@ export const emojis: CompressedEmojiData[] = [
       'garbage',
       'trash'
     ],
-    sheet: [48, 9],
-    hidden: ['emojione']
+    sheet: [48, 9]
   },
   {
     name: 'Spoon',
@@ -8084,7 +8045,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F5F3-FE0F',
     short_name: 'ballot_box_with_ballot',
     sheet: [30, 17],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Greece Flag',
@@ -8115,8 +8076,7 @@ export const emojis: CompressedEmojiData[] = [
       'school',
       'study'
     ],
-    sheet: [49, 42],
-    hidden: ['emojione']
+    sheet: [49, 42]
   },
   {
     name: 'Horizontal Traffic Light',
@@ -8134,7 +8094,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'fleur_de_lis',
     keywords: ['decorative', 'scout'],
     sheet: [48, 19],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Tulip',
@@ -8224,8 +8184,7 @@ export const emojis: CompressedEmojiData[] = [
       'writing',
       'write'
     ],
-    sheet: [49, 43],
-    hidden: ['emojione']
+    sheet: [49, 43]
   },
   {
     name: 'Guatemala Flag',
@@ -8270,7 +8229,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F58B-FE0F',
     short_name: 'lower_left_fountain_pen',
     sheet: [29, 29],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Evergreen Tree',
@@ -8305,7 +8264,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F58A-FE0F',
     short_name: 'lower_left_ballpoint_pen',
     sheet: [29, 28],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Pouting Cat Face',
@@ -8346,7 +8305,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F58C-FE0F',
     short_name: 'lower_left_paintbrush',
     sheet: [29, 30],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Heavy Large Circle',
@@ -8427,7 +8386,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F58D-FE0F',
     short_name: 'lower_left_crayon',
     sheet: [29, 31],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Hear-No-Evil Monkey',
@@ -8490,8 +8449,7 @@ export const emojis: CompressedEmojiData[] = [
       'yes',
       'tick'
     ],
-    sheet: [47, 22],
-    hidden: ['emojione']
+    sheet: [47, 22]
   },
   {
     name: 'Canoe',
@@ -8558,8 +8516,7 @@ export const emojis: CompressedEmojiData[] = [
       'yes',
       'tick'
     ],
-    sheet: [49, 44],
-    hidden: ['emojione']
+    sheet: [49, 44]
   },
   {
     name: 'Briefcase',
@@ -8627,8 +8584,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '2716-FE0F',
     short_name: 'heavy_multiplication_x',
     keywords: ['math', 'calculation'],
-    sheet: [49, 45],
-    hidden: ['emojione']
+    sheet: [49, 45]
   },
   {
     name: 'Child',
@@ -8638,27 +8594,27 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D2-1F3FB',
         sheet: [43, 5],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D2-1F3FC',
         sheet: [43, 6],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D2-1F3FD',
         sheet: [43, 7],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D2-1F3FE',
         sheet: [43, 8],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D2-1F3FF',
         sheet: [43, 9],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     keywords: [
@@ -8666,7 +8622,7 @@ export const emojis: CompressedEmojiData[] = [
       'young'
     ],
     sheet: [43, 4],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Shamrock',
@@ -8680,7 +8636,7 @@ export const emojis: CompressedEmojiData[] = [
       'clover'
     ],
     sheet: [47, 25],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Passenger Ship',
@@ -8692,7 +8648,7 @@ export const emojis: CompressedEmojiData[] = [
       'ferry'
     ],
     sheet: [37, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Croatia Flag',
@@ -8783,7 +8739,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'ferry',
     keywords: ['boat', 'ship', 'yacht'],
     sheet: [48, 42],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Haiti Flag',
@@ -8852,7 +8808,7 @@ export const emojis: CompressedEmojiData[] = [
       'stationery'
     ],
     sheet: [30, 4],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Maple Leaf',
@@ -8873,7 +8829,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'motor_boat',
     keywords: ['ship'],
     sheet: [37, 13],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Canary Islands Flag',
@@ -8901,27 +8857,27 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D1-1F3FB',
         sheet: [42, 51],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D1-1F3FC',
         sheet: [43, 0],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D1-1F3FD',
         sheet: [43, 1],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D1-1F3FE',
         sheet: [43, 2],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D1-1F3FF',
         sheet: [43, 3],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     keywords: [
@@ -8929,7 +8885,7 @@ export const emojis: CompressedEmojiData[] = [
       'person'
     ],
     sheet: [42, 50],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Ship',
@@ -9053,15 +9009,14 @@ export const emojis: CompressedEmojiData[] = [
       'flight',
       'fly'
     ],
-    sheet: [49, 16],
-    hidden: ['emojione']
+    sheet: [49, 16]
   },
   {
     name: 'Spiral Note Pad',
     unified: '1F5D2-FE0F',
     short_name: 'spiral_note_pad',
     sheet: [30, 8],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Heavy Division Sign',
@@ -9085,7 +9040,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle'
     ],
     sheet: [37, 14],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman',
@@ -9156,7 +9111,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F5D3-FE0F',
     short_name: 'spiral_calendar_pad',
     sheet: [30, 9],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Older Adult',
@@ -9166,27 +9121,27 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D3-1F3FB',
         sheet: [43, 11],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D3-1F3FC',
         sheet: [43, 12],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D3-1F3FD',
         sheet: [43, 13],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D3-1F3FE',
         sheet: [43, 14],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D3-1F3FF',
         sheet: [43, 15],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     keywords: [
@@ -9196,7 +9151,7 @@ export const emojis: CompressedEmojiData[] = [
       'gender-neutral'
     ],
     sheet: [43, 10],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Airplane Arriving',
@@ -9300,8 +9255,7 @@ export const emojis: CompressedEmojiData[] = [
       'economics',
       'bad'
     ],
-    sheet: [50, 25],
-    hidden: ['emojione']
+    sheet: [50, 25]
   },
   {
     name: 'Seat',
@@ -9363,8 +9317,7 @@ export const emojis: CompressedEmojiData[] = [
       'sparkle',
       'green-square'
     ],
-    sheet: [49, 49],
-    hidden: ['emojione']
+    sheet: [49, 49]
   },
   {
     name: 'Chart with Downwards Trend',
@@ -9398,51 +9351,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-2695-FE0F',
         sheet: [17, 44],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FC-200D-2695-FE0F',
         sheet: [17, 45],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FD-200D-2695-FE0F',
         sheet: [17, 46],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FE-200D-2695-FE0F',
         sheet: [17, 47],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FF-200D-2695-FE0F',
         sheet: [17, 48],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [17, 43],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Helicopter',
@@ -9463,51 +9396,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-2695-FE0F',
         sheet: [20, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FC-200D-2695-FE0F',
         sheet: [20, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FD-200D-2695-FE0F',
         sheet: [20, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FE-200D-2695-FE0F',
         sheet: [20, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FF-200D-2695-FE0F',
         sheet: [20, 6],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [20, 1],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Suspension Railway',
@@ -9545,8 +9458,7 @@ export const emojis: CompressedEmojiData[] = [
       'shape',
       'polygon'
     ],
-    sheet: [49, 50],
-    hidden: ['emojione']
+    sheet: [49, 50]
   },
   {
     name: 'Mountain Cableway',
@@ -9567,31 +9479,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F393',
         sheet: [16, 15],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F393',
         sheet: [16, 16],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F393',
         sheet: [16, 17],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F393',
         sheet: [16, 18],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F393',
         sheet: [16, 19],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [16, 14],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Clipboard',
@@ -9620,8 +9532,7 @@ export const emojis: CompressedEmojiData[] = [
       'good',
       'fireworks'
     ],
-    sheet: [50, 0],
-    hidden: ['emojione']
+    sheet: [50, 0]
   },
   {
     name: 'Female Student',
@@ -9631,31 +9542,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F393',
         sheet: [18, 30],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F393',
         sheet: [18, 31],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F393',
         sheet: [18, 32],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F393',
         sheet: [18, 33],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F393',
         sheet: [18, 34],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [18, 29],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Pushpin',
@@ -9693,8 +9604,7 @@ export const emojis: CompressedEmojiData[] = [
       'exclamation',
       'surprise'
     ],
-    sheet: [46, 29],
-    hidden: ['emojione']
+    sheet: [46, 29]
   },
   {
     name: 'Exclamation Question Mark',
@@ -9705,8 +9615,7 @@ export const emojis: CompressedEmojiData[] = [
       'punctuation',
       'surprise'
     ],
-    sheet: [46, 30],
-    hidden: ['emojione']
+    sheet: [46, 30]
   },
   {
     name: 'Satellite',
@@ -9719,7 +9628,7 @@ export const emojis: CompressedEmojiData[] = [
       'space'
     ],
     sheet: [37, 17],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Italy Flag',
@@ -9743,31 +9652,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F3EB',
         sheet: [16, 33],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F3EB',
         sheet: [16, 34],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F3EB',
         sheet: [16, 35],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F3EB',
         sheet: [16, 36],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F3EB',
         sheet: [16, 37],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [16, 32],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Round Pushpin',
@@ -9817,31 +9726,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F3EB',
         sheet: [18, 48],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F3EB',
         sheet: [18, 49],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F3EB',
         sheet: [18, 50],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F3EB',
         sheet: [18, 51],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F3EB',
         sheet: [19, 0],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [18, 47],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Paperclip',
@@ -9858,7 +9767,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F587-FE0F',
     short_name: 'linked_paperclips',
     sheet: [29, 27],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Flying Saucer',
@@ -9870,7 +9779,7 @@ export const emojis: CompressedEmojiData[] = [
       'ufo'
     ],
     sheet: [37, 23],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Male Judge',
@@ -9880,51 +9789,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-2696-FE0F',
         sheet: [17, 50],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FC-200D-2696-FE0F',
         sheet: [17, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FD-200D-2696-FE0F',
         sheet: [18, 0],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FE-200D-2696-FE0F',
         sheet: [18, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FF-200D-2696-FE0F',
         sheet: [18, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [17, 49],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'White Question Mark Ornament',
@@ -9950,7 +9839,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'bellhop_bell',
     keywords: ['service'],
     sheet: [37, 3],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Straight Ruler',
@@ -9982,51 +9871,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-2696-FE0F',
         sheet: [20, 8],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FC-200D-2696-FE0F',
         sheet: [20, 9],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FD-200D-2696-FE0F',
         sheet: [20, 10],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FE-200D-2696-FE0F',
         sheet: [20, 11],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FF-200D-2696-FE0F',
         sheet: [20, 12],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [20, 7],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'White Exclamation Mark Ornament',
@@ -10060,31 +9929,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F33E',
         sheet: [16, 3],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F33E',
         sheet: [16, 4],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F33E',
         sheet: [16, 5],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F33E',
         sheet: [16, 6],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F33E',
         sheet: [16, 7],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [16, 2],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Japan Flag',
@@ -10135,7 +10004,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'bed',
     keywords: ['sleep', 'rest'],
     sheet: [37, 4],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Female Farmer',
@@ -10145,39 +10014,38 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F33E',
         sheet: [18, 18],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F33E',
         sheet: [18, 19],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F33E',
         sheet: [18, 20],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F33E',
         sheet: [18, 21],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F33E',
         sheet: [18, 22],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [18, 17],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Black Scissors',
     unified: '2702-FE0F',
     short_name: 'scissors',
     keywords: ['stationery', 'cut'],
-    sheet: [49, 14],
-    hidden: ['emojione']
+    sheet: [49, 14]
   },
   {
     name: 'Wavy Dash',
@@ -10191,8 +10059,7 @@ export const emojis: CompressedEmojiData[] = [
       'squiggle',
       'scribble'
     ],
-    sheet: [50, 24],
-    hidden: ['emojione']
+    sheet: [50, 24]
   },
   {
     name: 'Kenya Flag',
@@ -10212,7 +10079,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'couch_and_lamp',
     keywords: ['read', 'chill'],
     sheet: [36, 47],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Male Cook',
@@ -10222,31 +10089,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F373',
         sheet: [16, 9],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F373',
         sheet: [16, 10],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F373',
         sheet: [16, 11],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F373',
         sheet: [16, 12],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F373',
         sheet: [16, 13],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [16, 8],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Card File Box',
@@ -10257,7 +10124,7 @@ export const emojis: CompressedEmojiData[] = [
       'stationery'
     ],
     sheet: [30, 5],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Copyright Sign',
@@ -10273,7 +10140,6 @@ export const emojis: CompressedEmojiData[] = [
     sheet: [0, 12],
     hidden: [
       'twitter',
-      'emojione',
       'facebook',
       'messenger'
     ]
@@ -10284,7 +10150,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'file_cabinet',
     keywords: ['filing', 'organizing'],
     sheet: [30, 6],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Registered Sign',
@@ -10294,7 +10160,6 @@ export const emojis: CompressedEmojiData[] = [
     sheet: [0, 13],
     hidden: [
       'twitter',
-      'emojione',
       'facebook',
       'messenger'
     ]
@@ -10313,31 +10178,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F373',
         sheet: [18, 24],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F373',
         sheet: [18, 25],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F373',
         sheet: [18, 26],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F373',
         sheet: [18, 27],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F373',
         sheet: [18, 28],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [18, 23],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Toilet',
@@ -10364,7 +10229,7 @@ export const emojis: CompressedEmojiData[] = [
       'toss'
     ],
     sheet: [30, 7],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Kiribati Flag',
@@ -10391,31 +10256,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F527',
         sheet: [17, 20],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F527',
         sheet: [17, 21],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F527',
         sheet: [17, 22],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F527',
         sheet: [17, 23],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F527',
         sheet: [17, 24],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [17, 19],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Trade Mark Sign',
@@ -10427,8 +10292,7 @@ export const emojis: CompressedEmojiData[] = [
       'law',
       'legal'
     ],
-    sheet: [46, 31],
-    hidden: ['emojione']
+    sheet: [46, 31]
   },
   {
     name: 'Hash Key',
@@ -10440,11 +10304,7 @@ export const emojis: CompressedEmojiData[] = [
       'twitter'
     ],
     sheet: [0, 0],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Comoros Flag',
@@ -10471,31 +10331,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F527',
         sheet: [19, 30],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F527',
         sheet: [19, 31],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F527',
         sheet: [19, 32],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F527',
         sheet: [19, 33],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F527',
         sheet: [19, 34],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [19, 29],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Lock',
@@ -10516,31 +10376,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F3ED',
         sheet: [16, 39],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F3ED',
         sheet: [16, 40],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F3ED',
         sheet: [16, 41],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F3ED',
         sheet: [16, 42],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F3ED',
         sheet: [16, 43],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [16, 38],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'St. Kitts & Nevis Flag',
@@ -10568,11 +10428,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '002A-FE0F-20E3',
     short_name: 'keycap_star',
     sheet: [0, 1],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Open Lock',
@@ -10595,31 +10451,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F3ED',
         sheet: [19, 2],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F3ED',
         sheet: [19, 3],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F3ED',
         sheet: [19, 4],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F3ED',
         sheet: [19, 5],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F3ED',
         sheet: [19, 6],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [19, 1],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Keycap 0',
@@ -10632,11 +10488,7 @@ export const emojis: CompressedEmojiData[] = [
       'null'
     ],
     sheet: [0, 2],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Lock with Ink Pen',
@@ -10666,11 +10518,7 @@ export const emojis: CompressedEmojiData[] = [
       '1'
     ],
     sheet: [0, 3],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'South Korea Flag',
@@ -10702,31 +10550,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F4BC',
         sheet: [17, 14],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F4BC',
         sheet: [17, 15],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F4BC',
         sheet: [17, 16],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F4BC',
         sheet: [17, 17],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F4BC',
         sheet: [17, 18],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [17, 13],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Closed Lock with Key',
@@ -10743,31 +10591,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F4BC',
         sheet: [19, 24],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F4BC',
         sheet: [19, 25],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F4BC',
         sheet: [19, 26],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F4BC',
         sheet: [19, 27],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F4BC',
         sheet: [19, 28],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [19, 23],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Keycap 2',
@@ -10780,11 +10628,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-square'
     ],
     sheet: [0, 4],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Alarm Clock',
@@ -10816,7 +10660,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'stopwatch',
     keywords: ['time', 'deadline'],
     sheet: [47, 1],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Male Scientist',
@@ -10826,31 +10670,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F52C',
         sheet: [17, 26],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F52C',
         sheet: [17, 27],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F52C',
         sheet: [17, 28],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F52C',
         sheet: [17, 29],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F52C',
         sheet: [17, 30],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [17, 25],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Keycap 3',
@@ -10863,11 +10707,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-square'
     ],
     sheet: [0, 5],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Cayman Islands Flag',
@@ -10885,7 +10725,7 @@ export const emojis: CompressedEmojiData[] = [
       'password'
     ],
     sheet: [30, 11],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Kazakhstan Flag',
@@ -10912,31 +10752,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F52C',
         sheet: [19, 36],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F52C',
         sheet: [19, 37],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F52C',
         sheet: [19, 38],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F52C',
         sheet: [19, 39],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F52C',
         sheet: [19, 40],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [19, 35],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Timer Clock',
@@ -10944,7 +10784,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'timer_clock',
     keywords: ['alarm'],
     sheet: [47, 2],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Keycap 4',
@@ -10956,11 +10796,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-square'
     ],
     sheet: [0, 6],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Male Technologist',
@@ -10970,31 +10806,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F4BB',
         sheet: [17, 8],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F4BB',
         sheet: [17, 9],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F4BB',
         sheet: [17, 10],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F4BB',
         sheet: [17, 11],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F4BB',
         sheet: [17, 12],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [17, 7],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Mantelpiece Clock',
@@ -11002,7 +10838,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'mantelpiece_clock',
     keywords: ['time'],
     sheet: [28, 43],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Keycap 5',
@@ -11015,11 +10851,7 @@ export const emojis: CompressedEmojiData[] = [
       'prime'
     ],
     sheet: [0, 7],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Laos Flag',
@@ -11033,7 +10865,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'pick',
     keywords: ['tools', 'dig'],
     sheet: [48, 32],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Lebanon Flag',
@@ -11066,7 +10898,7 @@ export const emojis: CompressedEmojiData[] = [
       'create'
     ],
     sheet: [48, 11],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Keycap 6',
@@ -11078,11 +10910,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-square'
     ],
     sheet: [0, 8],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Female Technologist',
@@ -11092,31 +10920,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F4BB',
         sheet: [19, 18],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F4BB',
         sheet: [19, 19],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F4BB',
         sheet: [19, 20],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F4BB',
         sheet: [19, 21],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F4BB',
         sheet: [19, 22],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [19, 17],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Hammer and Wrench',
@@ -11128,7 +10956,7 @@ export const emojis: CompressedEmojiData[] = [
       'create'
     ],
     sheet: [37, 8],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'St. Lucia Flag',
@@ -11159,11 +10987,7 @@ export const emojis: CompressedEmojiData[] = [
       'prime'
     ],
     sheet: [0, 9],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Male Singer',
@@ -11173,31 +10997,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F3A4',
         sheet: [16, 21],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F3A4',
         sheet: [16, 22],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F3A4',
         sheet: [16, 23],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F3A4',
         sheet: [16, 24],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F3A4',
         sheet: [16, 25],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [16, 20],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Keycap 8',
@@ -11209,11 +11033,7 @@ export const emojis: CompressedEmojiData[] = [
       'numbers'
     ],
     sheet: [0, 10],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Liechtenstein Flag',
@@ -11226,7 +11046,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F5E1-FE0F',
     short_name: 'dagger_knife',
     sheet: [30, 13],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Clock Face One Oclock',
@@ -11248,31 +11068,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F3A4',
         sheet: [18, 36],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F3A4',
         sheet: [18, 37],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F3A4',
         sheet: [18, 38],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F3A4',
         sheet: [18, 39],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F3A4',
         sheet: [18, 40],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [18, 35],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Male Artist',
@@ -11282,31 +11102,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F3A8',
         sheet: [16, 27],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F3A8',
         sheet: [16, 28],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F3A8',
         sheet: [16, 29],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F3A8',
         sheet: [16, 30],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F3A8',
         sheet: [16, 31],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [16, 26],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Crossed Swords',
@@ -11314,7 +11134,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'crossed_swords',
     keywords: ['weapon'],
     sheet: [48, 13],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Keycap 9',
@@ -11326,11 +11146,7 @@ export const emojis: CompressedEmojiData[] = [
       '9'
     ],
     sheet: [0, 11],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Sri Lanka Flag',
@@ -11393,31 +11209,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F3A8',
         sheet: [18, 42],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F3A8',
         sheet: [18, 43],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F3A8',
         sheet: [18, 44],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F3A8',
         sheet: [18, 45],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F3A8',
         sheet: [18, 46],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [18, 41],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Liberia Flag',
@@ -11470,51 +11286,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-2708-FE0F',
         sheet: [18, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FC-200D-2708-FE0F',
         sheet: [18, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FD-200D-2708-FE0F',
         sheet: [18, 6],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FE-200D-2708-FE0F',
         sheet: [18, 7],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F468-1F3FF-200D-2708-FE0F',
         sheet: [18, 8],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [18, 3],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Lesotho Flag',
@@ -11547,51 +11343,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-2708-FE0F',
         sheet: [20, 14],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FC-200D-2708-FE0F',
         sheet: [20, 15],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FD-200D-2708-FE0F',
         sheet: [20, 16],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FE-200D-2708-FE0F',
         sheet: [20, 17],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F469-1F3FF-200D-2708-FE0F',
         sheet: [20, 18],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [20, 13],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Clock Face Three Oclock',
@@ -11614,7 +11390,7 @@ export const emojis: CompressedEmojiData[] = [
       'security'
     ],
     sheet: [37, 9],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Male Astronaut',
@@ -11624,31 +11400,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F680',
         sheet: [17, 32],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F680',
         sheet: [17, 33],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F680',
         sheet: [17, 34],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F680',
         sheet: [17, 35],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F680',
         sheet: [17, 36],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [17, 31],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Input Symbol for Latin Small Letters',
@@ -11728,31 +11504,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F680',
         sheet: [19, 42],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F680',
         sheet: [19, 43],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F680',
         sheet: [19, 44],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F680',
         sheet: [19, 45],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F680',
         sheet: [19, 46],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [19, 41],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Latvia Flag',
@@ -11766,7 +11542,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'gear',
     keywords: ['cog'],
     sheet: [48, 17],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Male Firefighter',
@@ -11776,31 +11552,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F468-1F3FB-200D-1F692',
         sheet: [17, 38],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FC-200D-1F692',
         sheet: [17, 39],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FD-200D-1F692',
         sheet: [17, 40],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FE-200D-1F692',
         sheet: [17, 41],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F468-1F3FF-200D-1F692',
         sheet: [17, 42],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [17, 37],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Libya Flag',
@@ -11846,7 +11622,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F5DC-FE0F',
     short_name: 'compression',
     sheet: [30, 10],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Female Firefighter',
@@ -11856,31 +11632,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F469-1F3FB-200D-1F692',
         sheet: [19, 48],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FC-200D-1F692',
         sheet: [19, 49],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FD-200D-1F692',
         sheet: [19, 50],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FE-200D-1F692',
         sheet: [19, 51],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F469-1F3FF-200D-1F692',
         sheet: [20, 0],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [19, 47],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Input Symbol for Latin Letters',
@@ -11925,8 +11701,7 @@ export const emojis: CompressedEmojiData[] = [
       'alphabet',
       'letter'
     ],
-    sheet: [0, 16],
-    hidden: ['emojione']
+    sheet: [0, 16]
   },
   {
     name: 'Alembic',
@@ -11939,7 +11714,7 @@ export const emojis: CompressedEmojiData[] = [
       'chemistry'
     ],
     sheet: [48, 16],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Monaco Flag',
@@ -11987,7 +11762,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '2696-FE0F',
     short_name: 'scales',
     sheet: [48, 15],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Clock Face Six Oclock',
@@ -12027,52 +11802,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F46E-1F3FB-200D-2642-FE0F',
         sheet: [20, 40],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F46E-1F3FC-200D-2642-FE0F',
         sheet: [20, 41],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F46E-1F3FD-200D-2642-FE0F',
         sheet: [20, 42],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F46E-1F3FE-200D-2642-FE0F',
         sheet: [20, 43],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F46E-1F3FF-200D-2642-FE0F',
         sheet: [20, 44],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F46E',
     sheet: [20, 39],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Link Symbol',
@@ -12108,8 +11863,7 @@ export const emojis: CompressedEmojiData[] = [
       'alphabet',
       'letter'
     ],
-    sheet: [0, 17],
-    hidden: ['emojione']
+    sheet: [0, 17]
   },
   {
     name: 'Female Police Officer',
@@ -12119,51 +11873,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F46E-1F3FB-200D-2640-FE0F',
         sheet: [20, 34],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F46E-1F3FC-200D-2640-FE0F',
         sheet: [20, 35],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F46E-1F3FD-200D-2640-FE0F',
         sheet: [20, 36],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F46E-1F3FE-200D-2640-FE0F',
         sheet: [20, 37],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F46E-1F3FF-200D-2640-FE0F',
         sheet: [20, 38],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [20, 33],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Clock Face Seven Oclock',
@@ -12221,11 +11955,7 @@ export const emojis: CompressedEmojiData[] = [
     ],
     obsoleted_by: '1F575-FE0F-200D-2642-FE0F',
     sheet: [29, 11],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'St. Martin Flag',
@@ -12240,7 +11970,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'chains',
     keywords: ['lock', 'arrest'],
     sheet: [48, 34],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Syringe',
@@ -12266,56 +11996,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F575-1F3FB-200D-2642-FE0F',
         sheet: [29, 6],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F575-1F3FC-200D-2642-FE0F',
         sheet: [29, 7],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F575-1F3FD-200D-2642-FE0F',
         sheet: [29, 8],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F575-1F3FE-200D-2642-FE0F',
         sheet: [29, 9],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F575-1F3FF-200D-2642-FE0F',
         sheet: [29, 10],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F575-FE0F',
     sheet: [29, 5],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Squared Cool',
@@ -12388,55 +12094,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F575-1F3FB-200D-2640-FE0F',
         sheet: [29, 0],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F575-1F3FC-200D-2640-FE0F',
         sheet: [29, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F575-1F3FD-200D-2640-FE0F',
         sheet: [29, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F575-1F3FE-200D-2640-FE0F',
         sheet: [29, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F575-1F3FF-200D-2640-FE0F',
         sheet: [29, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [28, 51],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Clock Face Eight-Thirty',
@@ -12502,8 +12184,7 @@ export const emojis: CompressedEmojiData[] = [
       'alphabet',
       'letter'
     ],
-    sheet: [46, 32],
-    hidden: ['emojione']
+    sheet: [46, 32]
   },
   {
     name: 'Macedonia Flag',
@@ -12569,7 +12250,7 @@ export const emojis: CompressedEmojiData[] = [
       'box'
     ],
     sheet: [48, 24],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Male Guard',
@@ -12579,52 +12260,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F482-1F3FB-200D-2642-FE0F',
         sheet: [23, 26],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F482-1F3FC-200D-2642-FE0F',
         sheet: [23, 27],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F482-1F3FD-200D-2642-FE0F',
         sheet: [23, 28],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F482-1F3FE-200D-2642-FE0F',
         sheet: [23, 29],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F482-1F3FF-200D-2642-FE0F',
         sheet: [23, 30],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F482',
     sheet: [23, 25],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Circled Latin Capital Letter M',
@@ -12635,8 +12296,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-circle',
       'letter'
     ],
-    sheet: [47, 7],
-    hidden: ['emojione']
+    sheet: [47, 7]
   },
   {
     name: 'Funeral Urn',
@@ -12650,7 +12310,7 @@ export const emojis: CompressedEmojiData[] = [
       'ashes'
     ],
     sheet: [48, 25],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Female Guard',
@@ -12660,51 +12320,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F482-1F3FB-200D-2640-FE0F',
         sheet: [23, 20],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F482-1F3FC-200D-2640-FE0F',
         sheet: [23, 21],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F482-1F3FD-200D-2640-FE0F',
         sheet: [23, 22],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F482-1F3FE-200D-2640-FE0F',
         sheet: [23, 23],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F482-1F3FF-200D-2640-FE0F',
         sheet: [23, 24],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [23, 19],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Myanmar (burma) Flag',
@@ -12831,52 +12471,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F477-1F3FB-200D-2642-FE0F',
         sheet: [22, 23],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F477-1F3FC-200D-2642-FE0F',
         sheet: [22, 24],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F477-1F3FD-200D-2642-FE0F',
         sheet: [22, 25],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F477-1F3FE-200D-2642-FE0F',
         sheet: [22, 26],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F477-1F3FF-200D-2642-FE0F',
         sheet: [22, 27],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F477',
     sheet: [22, 22],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Macau Sar China Flag',
@@ -12890,7 +12510,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'oil_drum',
     keywords: ['barrell'],
     sheet: [37, 10],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Negative Squared Latin Capital Letter O',
@@ -12901,8 +12521,7 @@ export const emojis: CompressedEmojiData[] = [
       'red-square',
       'letter'
     ],
-    sheet: [0, 18],
-    hidden: ['emojione']
+    sheet: [0, 18]
   },
   {
     name: 'Female Construction Worker',
@@ -12912,51 +12531,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F477-1F3FB-200D-2640-FE0F',
         sheet: [22, 17],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F477-1F3FC-200D-2640-FE0F',
         sheet: [22, 18],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F477-1F3FD-200D-2640-FE0F',
         sheet: [22, 19],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F477-1F3FE-200D-2640-FE0F',
         sheet: [22, 20],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F477-1F3FF-200D-2640-FE0F',
         sheet: [22, 21],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [22, 16],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Clock Face Eleven Oclock',
@@ -13137,8 +12736,7 @@ export const emojis: CompressedEmojiData[] = [
       'alphabet',
       'letter'
     ],
-    sheet: [0, 19],
-    hidden: ['emojione']
+    sheet: [0, 19]
   },
   {
     name: 'Squared Sos',
@@ -13255,52 +12853,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F473-1F3FB-200D-2642-FE0F',
         sheet: [21, 39],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F473-1F3FC-200D-2642-FE0F',
         sheet: [21, 40],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F473-1F3FD-200D-2642-FE0F',
         sheet: [21, 41],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F473-1F3FE-200D-2642-FE0F',
         sheet: [21, 42],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F473-1F3FF-200D-2642-FE0F',
         sheet: [21, 43],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F473',
     sheet: [21, 38],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Waxing Gibbous Moon Symbol',
@@ -13317,51 +12895,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F473-1F3FB-200D-2640-FE0F',
         sheet: [21, 33],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F473-1F3FC-200D-2640-FE0F',
         sheet: [21, 34],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F473-1F3FD-200D-2640-FE0F',
         sheet: [21, 35],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F473-1F3FE-200D-2640-FE0F',
         sheet: [21, 36],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F473-1F3FF-200D-2640-FE0F',
         sheet: [21, 37],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [21, 32],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Squared Vs',
@@ -13455,31 +13013,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D5-1F3FB',
         sheet: [43, 23],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D5-1F3FC',
         sheet: [43, 24],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D5-1F3FD',
         sheet: [43, 25],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D5-1F3FE',
         sheet: [43, 26],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D5-1F3FF',
         sheet: [43, 27],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [43, 22],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Waning Gibbous Moon Symbol',
@@ -13506,8 +13064,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-square',
       'katakana'
     ],
-    sheet: [5, 30],
-    hidden: ['emojione']
+    sheet: [5, 30]
   },
   {
     name: 'Malawi Flag',
@@ -13542,8 +13099,7 @@ export const emojis: CompressedEmojiData[] = [
       'orange-square',
       'kanji'
     ],
-    sheet: [5, 38],
-    hidden: ['emojione']
+    sheet: [5, 38]
   },
   {
     name: 'Bearded Person',
@@ -13553,32 +13109,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D4-1F3FB',
         sheet: [43, 17],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D4-1F3FC',
         sheet: [43, 18],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D4-1F3FD',
         sheet: [43, 19],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D4-1F3FE',
         sheet: [43, 20],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D4-1F3FF',
         sheet: [43, 21],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     keywords: ['person', 'bewhiskered'],
     sheet: [43, 16],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Mexico Flag',
@@ -13674,52 +13230,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F471-1F3FB-200D-2642-FE0F',
         sheet: [21, 15],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F471-1F3FC-200D-2642-FE0F',
         sheet: [21, 16],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F471-1F3FD-200D-2642-FE0F',
         sheet: [21, 17],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F471-1F3FE-200D-2642-FE0F',
         sheet: [21, 18],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F471-1F3FF-200D-2642-FE0F',
         sheet: [21, 19],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F471',
     sheet: [21, 14],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Crescent Moon',
@@ -13769,51 +13305,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F471-1F3FB-200D-2640-FE0F',
         sheet: [21, 9],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F471-1F3FC-200D-2640-FE0F',
         sheet: [21, 10],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F471-1F3FD-200D-2640-FE0F',
         sheet: [21, 11],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F471-1F3FE-200D-2640-FE0F',
         sheet: [21, 12],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F471-1F3FF-200D-2640-FE0F',
         sheet: [21, 13],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [21, 8],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Circled Ideograph Advantage',
@@ -14033,7 +13549,7 @@ export const emojis: CompressedEmojiData[] = [
       'cold'
     ],
     sheet: [6, 25],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Norfolk Island Flag',
@@ -14053,8 +13569,7 @@ export const emojis: CompressedEmojiData[] = [
       'beach',
       'spring'
     ],
-    sheet: [47, 16],
-    hidden: ['emojione']
+    sheet: [47, 16]
   },
   {
     name: 'Circled Ideograph Accept',
@@ -14085,31 +13600,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F931-1F3FB',
         sheet: [39, 11],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F931-1F3FC',
         sheet: [39, 12],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F931-1F3FD',
         sheet: [39, 13],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F931-1F3FE',
         sheet: [39, 14],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F931-1F3FF',
         sheet: [39, 15],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [39, 10],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Full Moon with Face',
@@ -14318,32 +13833,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D9-1F3FB',
         sheet: [44, 43],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D9-1F3FC',
         sheet: [44, 44],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D9-1F3FD',
         sheet: [44, 45],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D9-1F3FE',
         sheet: [44, 46],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D9-1F3FF',
         sheet: [44, 47],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     obsoleted_by: '1F9D9-200D-2640-FE0F',
     sheet: [44, 42],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Glowing Star',
@@ -14374,8 +13889,7 @@ export const emojis: CompressedEmojiData[] = [
       'japanese',
       'red-circle'
     ],
-    sheet: [50, 26],
-    hidden: ['emojione']
+    sheet: [50, 26]
   },
   {
     name: 'Nauru Flag',
@@ -14398,52 +13912,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D9-1F3FB-200D-2640-FE0F',
         sheet: [44, 31],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D9-1F3FC-200D-2640-FE0F',
         sheet: [44, 32],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D9-1F3FD-200D-2640-FE0F',
         sheet: [44, 33],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D9-1F3FE-200D-2640-FE0F',
         sheet: [44, 34],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D9-1F3FF-200D-2640-FE0F',
         sheet: [44, 35],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F9D9',
     sheet: [44, 30],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Circled Ideograph Secret',
@@ -14456,8 +13950,7 @@ export const emojis: CompressedEmojiData[] = [
       'kanji',
       'red-circle'
     ],
-    sheet: [50, 27],
-    hidden: ['emojione']
+    sheet: [50, 27]
   },
   {
     name: 'Niue Flag',
@@ -14484,59 +13977,38 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D9-1F3FB-200D-2642-FE0F',
         sheet: [44, 37],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D9-1F3FC-200D-2642-FE0F',
         sheet: [44, 38],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D9-1F3FD-200D-2642-FE0F',
         sheet: [44, 39],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D9-1F3FE-200D-2642-FE0F',
         sheet: [44, 40],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D9-1F3FF-200D-2642-FE0F',
         sheet: [44, 41],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [44, 36],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Cloud',
     unified: '2601-FE0F',
     short_name: 'cloud',
     keywords: ['weather', 'sky'],
-    sheet: [47, 17],
-    hidden: ['emojione']
+    sheet: [47, 17]
   },
   {
     name: 'New Zealand Flag',
@@ -14566,52 +14038,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DA-1F3FB',
         sheet: [45, 9],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FC',
         sheet: [45, 10],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FD',
         sheet: [45, 11],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FE',
         sheet: [45, 12],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FF',
         sheet: [45, 13],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoleted_by: '1F9DA-200D-2640-FE0F',
     sheet: [45, 8],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Squared Cjk Unified Ideograph-6e80',
@@ -14631,15 +14083,14 @@ export const emojis: CompressedEmojiData[] = [
     unified: '25AA-FE0F',
     short_name: 'black_small_square',
     keywords: ['shape', 'icon'],
-    sheet: [47, 8],
-    hidden: ['emojione']
+    sheet: [47, 8]
   },
   {
     name: 'Thunder Cloud and Rain',
     unified: '26C8-FE0F',
     short_name: 'thunder_cloud_and_rain',
     sheet: [48, 30],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Female Fairy',
@@ -14649,52 +14100,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DA-1F3FB-200D-2640-FE0F',
         sheet: [44, 49],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FC-200D-2640-FE0F',
         sheet: [44, 50],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FD-200D-2640-FE0F',
         sheet: [44, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FE-200D-2640-FE0F',
         sheet: [45, 0],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FF-200D-2640-FE0F',
         sheet: [45, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F9DA',
     sheet: [44, 48],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Oman Flag',
@@ -14707,8 +14138,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '25AB-FE0F',
     short_name: 'white_small_square',
     keywords: ['shape', 'icon'],
-    sheet: [47, 9],
-    hidden: ['emojione']
+    sheet: [47, 9]
   },
   {
     name: 'Panama Flag',
@@ -14722,7 +14152,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'mostly_sunny',
     short_names: ['sun_small_cloud'],
     sheet: [6, 26],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Male Fairy',
@@ -14732,51 +14162,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DA-1F3FB-200D-2642-FE0F',
         sheet: [45, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FC-200D-2642-FE0F',
         sheet: [45, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FD-200D-2642-FE0F',
         sheet: [45, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FE-200D-2642-FE0F',
         sheet: [45, 6],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DA-1F3FF-200D-2642-FE0F',
         sheet: [45, 7],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [45, 2],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Barely Sunny',
@@ -14784,7 +14194,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'barely_sunny',
     short_names: ['sun_behind_cloud'],
     sheet: [6, 27],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'White Medium Square',
@@ -14795,8 +14205,7 @@ export const emojis: CompressedEmojiData[] = [
       'stone',
       'icon'
     ],
-    sheet: [47, 12],
-    hidden: ['emojione']
+    sheet: [47, 12]
   },
   {
     name: 'Peru Flag',
@@ -14812,52 +14221,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DB-1F3FB',
         sheet: [45, 27],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FC',
         sheet: [45, 28],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FD',
         sheet: [45, 29],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FE',
         sheet: [45, 30],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FF',
         sheet: [45, 31],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoleted_by: '1F9DB-200D-2640-FE0F',
     sheet: [45, 26],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Female Vampire',
@@ -14867,52 +14256,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DB-1F3FB-200D-2640-FE0F',
         sheet: [45, 15],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FC-200D-2640-FE0F',
         sheet: [45, 16],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FD-200D-2640-FE0F',
         sheet: [45, 17],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FE-200D-2640-FE0F',
         sheet: [45, 18],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FF-200D-2640-FE0F',
         sheet: [45, 19],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F9DB',
     sheet: [45, 14],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Partly Sunny Rain',
@@ -14920,7 +14289,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'partly_sunny_rain',
     short_names: ['sun_behind_rain_cloud'],
     sheet: [6, 28],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'French Polynesia Flag',
@@ -14937,8 +14306,7 @@ export const emojis: CompressedEmojiData[] = [
       'button',
       'icon'
     ],
-    sheet: [47, 13],
-    hidden: ['emojione']
+    sheet: [47, 13]
   },
   {
     name: 'White Medium Small Square',
@@ -14957,7 +14325,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F327-FE0F',
     short_name: 'rain_cloud',
     sheet: [6, 29],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Papua New Guinea Flag',
@@ -14973,51 +14341,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DB-1F3FB-200D-2642-FE0F',
         sheet: [45, 21],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FC-200D-2642-FE0F',
         sheet: [45, 22],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FD-200D-2642-FE0F',
         sheet: [45, 23],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FE-200D-2642-FE0F',
         sheet: [45, 24],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DB-1F3FF-200D-2642-FE0F',
         sheet: [45, 25],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [45, 20],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Philippines Flag',
@@ -15033,32 +14381,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DC-1F3FB',
         sheet: [45, 45],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9DC-1F3FC',
         sheet: [45, 46],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9DC-1F3FD',
         sheet: [45, 47],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9DC-1F3FE',
         sheet: [45, 48],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9DC-1F3FF',
         sheet: [45, 49],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     obsoleted_by: '1F9DC-200D-2642-FE0F',
     sheet: [45, 44],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Black Medium Small Square',
@@ -15076,7 +14424,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F328-FE0F',
     short_name: 'snow_cloud',
     sheet: [6, 30],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Lightning',
@@ -15084,7 +14432,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'lightning',
     short_names: ['lightning_cloud'],
     sheet: [6, 31],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Black Large Square',
@@ -15105,47 +14453,27 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DC-1F3FB-200D-2640-FE0F',
         sheet: [45, 33],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DC-1F3FC-200D-2640-FE0F',
         sheet: [45, 34],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DC-1F3FD-200D-2640-FE0F',
         sheet: [45, 35],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DC-1F3FE-200D-2640-FE0F',
         sheet: [45, 36],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DC-1F3FF-200D-2640-FE0F',
         sheet: [45, 37],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     keywords: [
@@ -15155,7 +14483,7 @@ export const emojis: CompressedEmojiData[] = [
       'ariel'
     ],
     sheet: [45, 32],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Pakistan Flag',
@@ -15171,53 +14499,33 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DC-1F3FB-200D-2642-FE0F',
         sheet: [45, 39],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DC-1F3FC-200D-2642-FE0F',
         sheet: [45, 40],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DC-1F3FD-200D-2642-FE0F',
         sheet: [45, 41],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DC-1F3FE-200D-2642-FE0F',
         sheet: [45, 42],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DC-1F3FF-200D-2642-FE0F',
         sheet: [45, 43],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F9DC',
     keywords: ['man', 'male', 'triton'],
     sheet: [45, 38],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'White Large Square',
@@ -15242,7 +14550,7 @@ export const emojis: CompressedEmojiData[] = [
       'twister'
     ],
     sheet: [6, 32],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Poland Flag',
@@ -15258,32 +14566,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DD-1F3FB',
         sheet: [46, 11],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9DD-1F3FC',
         sheet: [46, 12],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9DD-1F3FD',
         sheet: [46, 13],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9DD-1F3FE',
         sheet: [46, 14],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9DD-1F3FF',
         sheet: [46, 15],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     obsoleted_by: '1F9DD-200D-2642-FE0F',
     sheet: [46, 10],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Fog',
@@ -15291,7 +14599,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'fog',
     keywords: ['weather'],
     sheet: [6, 33],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Large Orange Diamond',
@@ -15318,7 +14626,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F32C-FE0F',
     short_name: 'wind_blowing_face',
     sheet: [6, 34],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Female Elf',
@@ -15328,51 +14636,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DD-1F3FB-200D-2640-FE0F',
         sheet: [45, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DD-1F3FC-200D-2640-FE0F',
         sheet: [46, 0],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DD-1F3FD-200D-2640-FE0F',
         sheet: [46, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DD-1F3FE-200D-2640-FE0F',
         sheet: [46, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DD-1F3FF-200D-2640-FE0F',
         sheet: [46, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [45, 50],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Large Blue Diamond',
@@ -15389,52 +14677,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9DD-1F3FB-200D-2642-FE0F',
         sheet: [46, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DD-1F3FC-200D-2642-FE0F',
         sheet: [46, 6],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DD-1F3FD-200D-2642-FE0F',
         sheet: [46, 7],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DD-1F3FE-200D-2642-FE0F',
         sheet: [46, 8],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9DD-1F3FF-200D-2642-FE0F',
         sheet: [46, 9],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F9DD',
     sheet: [46, 4],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Small Orange Diamond',
@@ -15495,7 +14763,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'genie',
     obsoleted_by: '1F9DE-200D-2642-FE0F',
     sheet: [46, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Palestinian Territories Flag',
@@ -15531,7 +14799,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F9DE-200D-2640-FE0F',
     short_name: 'female_genie',
     sheet: [46, 16],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Portugal Flag',
@@ -15566,7 +14834,7 @@ export const emojis: CompressedEmojiData[] = [
       'spring'
     ],
     sheet: [47, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Male Genie',
@@ -15574,7 +14842,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'male_genie',
     obsoletes: '1F9DE',
     sheet: [46, 17],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Zombie',
@@ -15582,7 +14850,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'zombie',
     obsoleted_by: '1F9DF-200D-2642-FE0F',
     sheet: [46, 21],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Paraguay Flag',
@@ -15626,7 +14894,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F9DF-200D-2640-FE0F',
     short_name: 'female_zombie',
     sheet: [46, 19],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Qatar Flag',
@@ -15639,7 +14907,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '26F1-FE0F',
     short_name: 'umbrella_on_ground',
     sheet: [48, 39],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Black Square Button',
@@ -15670,7 +14938,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'male_zombie',
     obsoletes: '1F9DF',
     sheet: [46, 20],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Réunion Flag',
@@ -15697,8 +14965,7 @@ export const emojis: CompressedEmojiData[] = [
       'christmas',
       'xmas'
     ],
-    sheet: [49, 51],
-    hidden: ['emojione']
+    sheet: [49, 51]
   },
   {
     name: 'White Square Button',
@@ -15756,51 +15023,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F64D-1F3FB-200D-2642-FE0F',
         sheet: [33, 25],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64D-1F3FC-200D-2642-FE0F',
         sheet: [33, 26],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64D-1F3FD-200D-2642-FE0F',
         sheet: [33, 27],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64D-1F3FE-200D-2642-FE0F',
         sheet: [33, 28],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64D-1F3FF-200D-2642-FE0F',
         sheet: [33, 29],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [33, 24],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Medium White Circle',
@@ -15824,7 +15071,7 @@ export const emojis: CompressedEmojiData[] = [
       'without_snow'
     ],
     sheet: [47, 19],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Snowman Without Snow',
@@ -15866,52 +15113,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F64D-1F3FB-200D-2640-FE0F',
         sheet: [33, 19],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64D-1F3FC-200D-2640-FE0F',
         sheet: [33, 20],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64D-1F3FD-200D-2640-FE0F',
         sheet: [33, 21],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64D-1F3FE-200D-2640-FE0F',
         sheet: [33, 22],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64D-1F3FF-200D-2640-FE0F',
         sheet: [33, 23],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F64D',
     sheet: [33, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Rwanda Flag',
@@ -15925,7 +15152,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'comet',
     keywords: ['space'],
     sheet: [47, 20],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Person with Pouting Face',
@@ -15992,51 +15219,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F64E-1F3FB-200D-2642-FE0F',
         sheet: [33, 43],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64E-1F3FC-200D-2642-FE0F',
         sheet: [33, 44],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64E-1F3FD-200D-2642-FE0F',
         sheet: [33, 45],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64E-1F3FE-200D-2642-FE0F',
         sheet: [33, 46],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64E-1F3FF-200D-2642-FE0F',
         sheet: [33, 47],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [33, 42],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Saudi Arabia Flag',
@@ -16059,52 +15266,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F64E-1F3FB-200D-2640-FE0F',
         sheet: [33, 37],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64E-1F3FC-200D-2640-FE0F',
         sheet: [33, 38],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64E-1F3FD-200D-2640-FE0F',
         sheet: [33, 39],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64E-1F3FE-200D-2640-FE0F',
         sheet: [33, 40],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64E-1F3FF-200D-2640-FE0F',
         sheet: [33, 41],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F64E',
     sheet: [33, 36],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Solomon Islands Flag',
@@ -16187,51 +15374,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F645-1F3FB-200D-2642-FE0F',
         sheet: [31, 48],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F645-1F3FC-200D-2642-FE0F',
         sheet: [31, 49],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F645-1F3FD-200D-2642-FE0F',
         sheet: [31, 50],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F645-1F3FE-200D-2642-FE0F',
         sheet: [31, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F645-1F3FF-200D-2642-FE0F',
         sheet: [32, 0],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [31, 47],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Sudan Flag',
@@ -16247,52 +15414,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F645-1F3FB-200D-2640-FE0F',
         sheet: [31, 42],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F645-1F3FC-200D-2640-FE0F',
         sheet: [31, 43],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F645-1F3FD-200D-2640-FE0F',
         sheet: [31, 44],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F645-1F3FE-200D-2640-FE0F',
         sheet: [31, 45],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F645-1F3FF-200D-2640-FE0F',
         sheet: [31, 46],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F645',
     sheet: [31, 41],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Sweden Flag',
@@ -16363,51 +15510,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F646-1F3FB-200D-2642-FE0F',
         sheet: [32, 14],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F646-1F3FC-200D-2642-FE0F',
         sheet: [32, 15],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F646-1F3FD-200D-2642-FE0F',
         sheet: [32, 16],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F646-1F3FE-200D-2642-FE0F',
         sheet: [32, 17],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F646-1F3FF-200D-2642-FE0F',
         sheet: [32, 18],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [32, 13],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Slovenia Flag',
@@ -16423,52 +15550,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F646-1F3FB-200D-2640-FE0F',
         sheet: [32, 8],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F646-1F3FC-200D-2640-FE0F',
         sheet: [32, 9],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F646-1F3FD-200D-2640-FE0F',
         sheet: [32, 10],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F646-1F3FE-200D-2640-FE0F',
         sheet: [32, 11],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F646-1F3FF-200D-2640-FE0F',
         sheet: [32, 12],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F646',
     sheet: [32, 7],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Information Desk Person',
@@ -16519,51 +15626,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F481-1F3FB-200D-2642-FE0F',
         sheet: [23, 8],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F481-1F3FC-200D-2642-FE0F',
         sheet: [23, 9],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F481-1F3FD-200D-2642-FE0F',
         sheet: [23, 10],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F481-1F3FE-200D-2642-FE0F',
         sheet: [23, 11],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F481-1F3FF-200D-2642-FE0F',
         sheet: [23, 12],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [23, 7],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Slovakia Flag',
@@ -16585,52 +15672,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F481-1F3FB-200D-2640-FE0F',
         sheet: [23, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F481-1F3FC-200D-2640-FE0F',
         sheet: [23, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F481-1F3FD-200D-2640-FE0F',
         sheet: [23, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F481-1F3FE-200D-2640-FE0F',
         sheet: [23, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F481-1F3FF-200D-2640-FE0F',
         sheet: [23, 6],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F481',
     sheet: [23, 1],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'San Marino Flag',
@@ -16687,51 +15754,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F64B-1F3FB-200D-2642-FE0F',
         sheet: [33, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64B-1F3FC-200D-2642-FE0F',
         sheet: [33, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64B-1F3FD-200D-2642-FE0F',
         sheet: [33, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64B-1F3FE-200D-2642-FE0F',
         sheet: [33, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64B-1F3FF-200D-2642-FE0F',
         sheet: [33, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [33, 0],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Somalia Flag',
@@ -16747,52 +15794,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F64B-1F3FB-200D-2640-FE0F',
         sheet: [32, 47],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64B-1F3FC-200D-2640-FE0F',
         sheet: [32, 48],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64B-1F3FD-200D-2640-FE0F',
         sheet: [32, 49],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64B-1F3FE-200D-2640-FE0F',
         sheet: [32, 50],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F64B-1F3FF-200D-2640-FE0F',
         sheet: [32, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F64B',
     sheet: [32, 46],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Suriname Flag',
@@ -16843,52 +15870,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F647-1F3FB-200D-2642-FE0F',
         sheet: [32, 32],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F647-1F3FC-200D-2642-FE0F',
         sheet: [32, 33],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F647-1F3FD-200D-2642-FE0F',
         sheet: [32, 34],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F647-1F3FE-200D-2642-FE0F',
         sheet: [32, 35],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F647-1F3FF-200D-2642-FE0F',
         sheet: [32, 36],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F647',
     sheet: [32, 31],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'South Sudan Flag',
@@ -16904,51 +15911,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F647-1F3FB-200D-2640-FE0F',
         sheet: [32, 26],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F647-1F3FC-200D-2640-FE0F',
         sheet: [32, 27],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F647-1F3FD-200D-2640-FE0F',
         sheet: [32, 28],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F647-1F3FE-200D-2640-FE0F',
         sheet: [32, 29],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F647-1F3FF-200D-2640-FE0F',
         sheet: [32, 30],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [32, 25],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'São Tomé & Príncipe Flag',
@@ -17004,51 +15991,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F926-1F3FB-200D-2642-FE0F',
         sheet: [38, 36],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F926-1F3FC-200D-2642-FE0F',
         sheet: [38, 37],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F926-1F3FD-200D-2642-FE0F',
         sheet: [38, 38],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F926-1F3FE-200D-2642-FE0F',
         sheet: [38, 39],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F926-1F3FF-200D-2642-FE0F',
         sheet: [38, 40],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [38, 35],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Sint Maarten Flag',
@@ -17070,51 +16037,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F926-1F3FB-200D-2640-FE0F',
         sheet: [38, 30],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F926-1F3FC-200D-2640-FE0F',
         sheet: [38, 31],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F926-1F3FD-200D-2640-FE0F',
         sheet: [38, 32],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F926-1F3FE-200D-2640-FE0F',
         sheet: [38, 33],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F926-1F3FF-200D-2640-FE0F',
         sheet: [38, 34],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [38, 29],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Shrug',
@@ -17170,51 +16117,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F937-1F3FB-200D-2642-FE0F',
         sheet: [40, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F937-1F3FC-200D-2642-FE0F',
         sheet: [40, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F937-1F3FD-200D-2642-FE0F',
         sheet: [40, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F937-1F3FE-200D-2642-FE0F',
         sheet: [40, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F937-1F3FF-200D-2642-FE0F',
         sheet: [40, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [40, 0],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Shrugging',
@@ -17224,51 +16151,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F937-1F3FB-200D-2640-FE0F',
         sheet: [39, 47],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F937-1F3FC-200D-2640-FE0F',
         sheet: [39, 48],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F937-1F3FD-200D-2640-FE0F',
         sheet: [39, 49],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F937-1F3FE-200D-2640-FE0F',
         sheet: [39, 50],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F937-1F3FF-200D-2640-FE0F',
         sheet: [39, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [39, 46],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Turks & Caicos Islands Flag',
@@ -17325,51 +16232,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F486-1F3FB-200D-2642-FE0F',
         sheet: [24, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F486-1F3FC-200D-2642-FE0F',
         sheet: [24, 6],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F486-1F3FD-200D-2642-FE0F',
         sheet: [24, 7],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F486-1F3FE-200D-2642-FE0F',
         sheet: [24, 8],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F486-1F3FF-200D-2642-FE0F',
         sheet: [24, 9],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [24, 4],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'French Southern Territories Flag',
@@ -17386,52 +16273,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F486-1F3FB-200D-2640-FE0F',
         sheet: [23, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F486-1F3FC-200D-2640-FE0F',
         sheet: [24, 0],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F486-1F3FD-200D-2640-FE0F',
         sheet: [24, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F486-1F3FE-200D-2640-FE0F',
         sheet: [24, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F486-1F3FF-200D-2640-FE0F',
         sheet: [24, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F486',
     sheet: [23, 50],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Togo Flag',
@@ -17488,51 +16355,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F487-1F3FB-200D-2642-FE0F',
         sheet: [24, 23],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F487-1F3FC-200D-2642-FE0F',
         sheet: [24, 24],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F487-1F3FD-200D-2642-FE0F',
         sheet: [24, 25],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F487-1F3FE-200D-2642-FE0F',
         sheet: [24, 26],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F487-1F3FF-200D-2642-FE0F',
         sheet: [24, 27],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [24, 22],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Tajikistan Flag',
@@ -17554,52 +16401,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F487-1F3FB-200D-2640-FE0F',
         sheet: [24, 17],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F487-1F3FC-200D-2640-FE0F',
         sheet: [24, 18],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F487-1F3FD-200D-2640-FE0F',
         sheet: [24, 19],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F487-1F3FE-200D-2640-FE0F',
         sheet: [24, 20],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F487-1F3FF-200D-2640-FE0F',
         sheet: [24, 21],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F487',
     sheet: [24, 16],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Pedestrian',
@@ -17650,52 +16477,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F6B6-1F3FB-200D-2642-FE0F',
         sheet: [36, 16],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B6-1F3FC-200D-2642-FE0F',
         sheet: [36, 17],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B6-1F3FD-200D-2642-FE0F',
         sheet: [36, 18],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B6-1F3FE-200D-2642-FE0F',
         sheet: [36, 19],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B6-1F3FF-200D-2642-FE0F',
         sheet: [36, 20],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F6B6',
     sheet: [36, 15],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Turkmenistan Flag',
@@ -17711,51 +16518,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F6B6-1F3FB-200D-2640-FE0F',
         sheet: [36, 10],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B6-1F3FC-200D-2640-FE0F',
         sheet: [36, 11],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B6-1F3FD-200D-2640-FE0F',
         sheet: [36, 12],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B6-1F3FE-200D-2640-FE0F',
         sheet: [36, 13],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B6-1F3FF-200D-2640-FE0F',
         sheet: [36, 14],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [36, 9],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Tunisia Flag',
@@ -17813,52 +16600,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F3C3-1F3FB-200D-2642-FE0F',
         sheet: [9, 41],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C3-1F3FC-200D-2642-FE0F',
         sheet: [9, 42],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C3-1F3FD-200D-2642-FE0F',
         sheet: [9, 43],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C3-1F3FE-200D-2642-FE0F',
         sheet: [9, 44],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C3-1F3FF-200D-2642-FE0F',
         sheet: [9, 45],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F3C3',
     sheet: [9, 40],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Turkey Flag',
@@ -17880,51 +16647,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F3C3-1F3FB-200D-2640-FE0F',
         sheet: [9, 35],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C3-1F3FC-200D-2640-FE0F',
         sheet: [9, 36],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C3-1F3FD-200D-2640-FE0F',
         sheet: [9, 37],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C3-1F3FE-200D-2640-FE0F',
         sheet: [9, 38],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C3-1F3FF-200D-2640-FE0F',
         sheet: [9, 39],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [9, 34],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Tuvalu Flag',
@@ -18037,7 +16784,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F46F-200D-2642-FE0F',
     short_name: 'man-with-bunny-ears-partying',
     sheet: [21, 0],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman with Bunny Ears Partying',
@@ -18045,7 +16792,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'woman-with-bunny-ears-partying',
     obsoletes: '1F46F',
     sheet: [20, 51],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Uganda Flag',
@@ -18067,32 +16814,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D6-1F3FB',
         sheet: [43, 41],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D6-1F3FC',
         sheet: [43, 42],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D6-1F3FD',
         sheet: [43, 43],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D6-1F3FE',
         sheet: [43, 44],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D6-1F3FF',
         sheet: [43, 45],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     obsoleted_by: '1F9D6-200D-2642-FE0F',
     sheet: [43, 40],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman in Steamy Room',
@@ -18102,47 +16849,27 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D6-1F3FB-200D-2640-FE0F',
         sheet: [43, 29],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D6-1F3FC-200D-2640-FE0F',
         sheet: [43, 30],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D6-1F3FD-200D-2640-FE0F',
         sheet: [43, 31],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D6-1F3FE-200D-2640-FE0F',
         sheet: [43, 32],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D6-1F3FF-200D-2640-FE0F',
         sheet: [43, 33],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     keywords: [
@@ -18153,18 +16880,14 @@ export const emojis: CompressedEmojiData[] = [
       'sauna'
     ],
     sheet: [43, 28],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'United Nations Flag',
     unified: '1F1FA-1F1F3',
     short_name: 'flag-un',
     sheet: [5, 10],
-    hidden: [
-      'apple',
-      'emojione',
-      'messenger'
-    ]
+    hidden: ['apple', 'messenger']
   },
   {
     name: 'United States Flag',
@@ -18190,47 +16913,27 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D6-1F3FB-200D-2642-FE0F',
         sheet: [43, 35],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D6-1F3FC-200D-2642-FE0F',
         sheet: [43, 36],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D6-1F3FD-200D-2642-FE0F',
         sheet: [43, 37],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D6-1F3FE-200D-2642-FE0F',
         sheet: [43, 38],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D6-1F3FF-200D-2642-FE0F',
         sheet: [43, 39],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F9D6',
@@ -18242,7 +16945,7 @@ export const emojis: CompressedEmojiData[] = [
       'sauna'
     ],
     sheet: [43, 34],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Person Climbing',
@@ -18252,32 +16955,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D7-1F3FB',
         sheet: [44, 7],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D7-1F3FC',
         sheet: [44, 8],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D7-1F3FD',
         sheet: [44, 9],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D7-1F3FE',
         sheet: [44, 10],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D7-1F3FF',
         sheet: [44, 11],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     obsoleted_by: '1F9D7-200D-2640-FE0F',
     sheet: [44, 6],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Uruguay Flag',
@@ -18293,52 +16996,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D7-1F3FB-200D-2640-FE0F',
         sheet: [43, 47],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D7-1F3FC-200D-2640-FE0F',
         sheet: [43, 48],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D7-1F3FD-200D-2640-FE0F',
         sheet: [43, 49],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D7-1F3FE-200D-2640-FE0F',
         sheet: [43, 50],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D7-1F3FF-200D-2640-FE0F',
         sheet: [43, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F9D7',
     sheet: [43, 46],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Uzbekistan Flag',
@@ -18354,51 +17037,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D7-1F3FB-200D-2642-FE0F',
         sheet: [44, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D7-1F3FC-200D-2642-FE0F',
         sheet: [44, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D7-1F3FD-200D-2642-FE0F',
         sheet: [44, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D7-1F3FE-200D-2642-FE0F',
         sheet: [44, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D7-1F3FF-200D-2642-FE0F',
         sheet: [44, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [44, 0],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Vatican City Flag',
@@ -18414,32 +17077,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D8-1F3FB',
         sheet: [44, 25],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D8-1F3FC',
         sheet: [44, 26],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D8-1F3FD',
         sheet: [44, 27],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D8-1F3FE',
         sheet: [44, 28],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F9D8-1F3FF',
         sheet: [44, 29],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     obsoleted_by: '1F9D8-200D-2640-FE0F',
     sheet: [44, 24],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'St. Vincent & Grenadines Flag',
@@ -18461,47 +17124,27 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D8-1F3FB-200D-2640-FE0F',
         sheet: [44, 13],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D8-1F3FC-200D-2640-FE0F',
         sheet: [44, 14],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D8-1F3FD-200D-2640-FE0F',
         sheet: [44, 15],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D8-1F3FE-200D-2640-FE0F',
         sheet: [44, 16],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D8-1F3FF-200D-2640-FE0F',
         sheet: [44, 17],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F9D8',
@@ -18515,7 +17158,7 @@ export const emojis: CompressedEmojiData[] = [
       'mindfulness'
     ],
     sheet: [44, 12],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Man in Lotus Position',
@@ -18525,47 +17168,27 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F9D8-1F3FB-200D-2642-FE0F',
         sheet: [44, 19],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D8-1F3FC-200D-2642-FE0F',
         sheet: [44, 20],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D8-1F3FD-200D-2642-FE0F',
         sheet: [44, 21],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D8-1F3FE-200D-2642-FE0F',
         sheet: [44, 22],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F9D8-1F3FF-200D-2642-FE0F',
         sheet: [44, 23],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     keywords: [
@@ -18578,7 +17201,7 @@ export const emojis: CompressedEmojiData[] = [
       'mindfulness'
     ],
     sheet: [44, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'British Virgin Islands Flag',
@@ -18633,27 +17256,27 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F6CC-1F3FB',
         sheet: [36, 49],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F6CC-1F3FC',
         sheet: [36, 50],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F6CC-1F3FD',
         sheet: [36, 51],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F6CC-1F3FE',
         sheet: [37, 0],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F6CC-1F3FF',
         sheet: [37, 1],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [36, 48],
@@ -18673,31 +17296,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F574-1F3FB',
         sheet: [28, 46],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F574-1F3FC',
         sheet: [28, 47],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F574-1F3FD',
         sheet: [28, 48],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F574-1F3FE',
         sheet: [28, 49],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F574-1F3FF',
         sheet: [28, 50],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [28, 45],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Vanuatu Flag',
@@ -18717,7 +17340,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F5E3-FE0F',
     short_name: 'speaking_head_in_silhouette',
     sheet: [30, 14],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Bust in Silhouette',
@@ -18827,7 +17450,7 @@ export const emojis: CompressedEmojiData[] = [
       'snow'
     ],
     sheet: [48, 44],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Zambia Flag',
@@ -18842,28 +17465,23 @@ export const emojis: CompressedEmojiData[] = [
     skin_variations: [
       {
         unified: '1F3C2-1F3FB',
-        sheet: [9, 29],
-        hidden: ['emojione']
+        sheet: [9, 29]
       },
       {
         unified: '1F3C2-1F3FC',
-        sheet: [9, 30],
-        hidden: ['emojione']
+        sheet: [9, 30]
       },
       {
         unified: '1F3C2-1F3FD',
-        sheet: [9, 31],
-        hidden: ['emojione']
+        sheet: [9, 31]
       },
       {
         unified: '1F3C2-1F3FE',
-        sheet: [9, 32],
-        hidden: ['emojione']
+        sheet: [9, 32]
       },
       {
         unified: '1F3C2-1F3FF',
-        sheet: [9, 33],
-        hidden: ['emojione']
+        sheet: [9, 33]
       }
     ],
     keywords: ['sports', 'winter'],
@@ -18877,56 +17495,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F3CC-1F3FB',
         sheet: [11, 25],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FC',
         sheet: [11, 26],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FD',
         sheet: [11, 27],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FE',
         sheet: [11, 28],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FF',
         sheet: [11, 29],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoleted_by: '1F3CC-FE0F-200D-2642-FE0F',
     sheet: [11, 24],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Zimbabwe Flag',
@@ -18942,63 +17536,39 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F3CC-1F3FB-200D-2642-FE0F',
         sheet: [11, 19],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FC-200D-2642-FE0F',
         sheet: [11, 20],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FD-200D-2642-FE0F',
         sheet: [11, 21],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FE-200D-2642-FE0F',
         sheet: [11, 22],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FF-200D-2642-FE0F',
         sheet: [11, 23],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F3CC-FE0F',
     sheet: [11, 18],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'England Flag',
     unified: '1F3F4-E0067-E0062-E0065-E006E-E0067-E007F',
     short_name: 'flag-england',
     sheet: [12, 16],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Golfing',
@@ -19008,69 +17578,45 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F3CC-1F3FB-200D-2640-FE0F',
         sheet: [11, 13],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FC-200D-2640-FE0F',
         sheet: [11, 14],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FD-200D-2640-FE0F',
         sheet: [11, 15],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FE-200D-2640-FE0F',
         sheet: [11, 16],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CC-1F3FF-200D-2640-FE0F',
         sheet: [11, 17],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [11, 12],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Scotland Flag',
     unified: '1F3F4-E0067-E0062-E0073-E0063-E0074-E007F',
     short_name: 'flag-scotland',
     sheet: [12, 17],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Wales Flag',
     unified: '1F3F4-E0067-E0062-E0077-E006C-E0073-E007F',
     short_name: 'flag-wales',
     sheet: [12, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Surfer',
@@ -19115,52 +17661,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F3C4-1F3FB-200D-2642-FE0F',
         sheet: [10, 7],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C4-1F3FC-200D-2642-FE0F',
         sheet: [10, 8],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C4-1F3FD-200D-2642-FE0F',
         sheet: [10, 9],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C4-1F3FE-200D-2642-FE0F',
         sheet: [10, 10],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C4-1F3FF-200D-2642-FE0F',
         sheet: [10, 11],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F3C4',
     sheet: [10, 6],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Surfing',
@@ -19170,51 +17696,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F3C4-1F3FB-200D-2640-FE0F',
         sheet: [10, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C4-1F3FC-200D-2640-FE0F',
         sheet: [10, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C4-1F3FD-200D-2640-FE0F',
         sheet: [10, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C4-1F3FE-200D-2640-FE0F',
         sheet: [10, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3C4-1F3FF-200D-2640-FE0F',
         sheet: [10, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [10, 0],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Rowboat',
@@ -19259,52 +17765,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F6A3-1F3FB-200D-2642-FE0F',
         sheet: [34, 50],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6A3-1F3FC-200D-2642-FE0F',
         sheet: [34, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6A3-1F3FD-200D-2642-FE0F',
         sheet: [35, 0],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6A3-1F3FE-200D-2642-FE0F',
         sheet: [35, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6A3-1F3FF-200D-2642-FE0F',
         sheet: [35, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F6A3',
     sheet: [34, 49],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Rowing Boat',
@@ -19314,51 +17800,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F6A3-1F3FB-200D-2640-FE0F',
         sheet: [34, 44],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6A3-1F3FC-200D-2640-FE0F',
         sheet: [34, 45],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6A3-1F3FD-200D-2640-FE0F',
         sheet: [34, 46],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6A3-1F3FE-200D-2640-FE0F',
         sheet: [34, 47],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6A3-1F3FF-200D-2640-FE0F',
         sheet: [34, 48],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [34, 43],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Swimmer',
@@ -19403,52 +17869,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F3CA-1F3FB-200D-2642-FE0F',
         sheet: [10, 35],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CA-1F3FC-200D-2642-FE0F',
         sheet: [10, 36],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CA-1F3FD-200D-2642-FE0F',
         sheet: [10, 37],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CA-1F3FE-200D-2642-FE0F',
         sheet: [10, 38],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CA-1F3FF-200D-2642-FE0F',
         sheet: [10, 39],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F3CA',
     sheet: [10, 34],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Swimming',
@@ -19458,51 +17904,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F3CA-1F3FB-200D-2640-FE0F',
         sheet: [10, 29],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CA-1F3FC-200D-2640-FE0F',
         sheet: [10, 30],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CA-1F3FD-200D-2640-FE0F',
         sheet: [10, 31],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CA-1F3FE-200D-2640-FE0F',
         sheet: [10, 32],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CA-1F3FF-200D-2640-FE0F',
         sheet: [10, 33],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [10, 28],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Person with Ball',
@@ -19537,11 +17963,7 @@ export const emojis: CompressedEmojiData[] = [
     ],
     obsoleted_by: '26F9-FE0F-200D-2642-FE0F',
     sheet: [49, 6],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Man Bouncing Ball',
@@ -19551,56 +17973,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '26F9-1F3FB-200D-2642-FE0F',
         sheet: [49, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '26F9-1F3FC-200D-2642-FE0F',
         sheet: [49, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '26F9-1F3FD-200D-2642-FE0F',
         sheet: [49, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '26F9-1F3FE-200D-2642-FE0F',
         sheet: [49, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '26F9-1F3FF-200D-2642-FE0F',
         sheet: [49, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '26F9-FE0F',
     sheet: [49, 0],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Woman Bouncing Ball',
@@ -19610,55 +18008,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '26F9-1F3FB-200D-2640-FE0F',
         sheet: [48, 47],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '26F9-1F3FC-200D-2640-FE0F',
         sheet: [48, 48],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '26F9-1F3FD-200D-2640-FE0F',
         sheet: [48, 49],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '26F9-1F3FE-200D-2640-FE0F',
         sheet: [48, 50],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '26F9-1F3FF-200D-2640-FE0F',
         sheet: [48, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [48, 46],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Weight Lifter',
@@ -19693,11 +18067,7 @@ export const emojis: CompressedEmojiData[] = [
     ],
     obsoleted_by: '1F3CB-FE0F-200D-2642-FE0F',
     sheet: [11, 6],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Man Lifting Weights',
@@ -19707,56 +18077,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F3CB-1F3FB-200D-2642-FE0F',
         sheet: [11, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CB-1F3FC-200D-2642-FE0F',
         sheet: [11, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CB-1F3FD-200D-2642-FE0F',
         sheet: [11, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CB-1F3FE-200D-2642-FE0F',
         sheet: [11, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CB-1F3FF-200D-2642-FE0F',
         sheet: [11, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F3CB-FE0F',
     sheet: [11, 0],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Woman Lifting Weights',
@@ -19766,55 +18112,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F3CB-1F3FB-200D-2640-FE0F',
         sheet: [10, 47],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CB-1F3FC-200D-2640-FE0F',
         sheet: [10, 48],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CB-1F3FD-200D-2640-FE0F',
         sheet: [10, 49],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CB-1F3FE-200D-2640-FE0F',
         sheet: [10, 50],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F3CB-1F3FF-200D-2640-FE0F',
         sheet: [10, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [10, 46],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Bicyclist',
@@ -19859,52 +18181,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F6B4-1F3FB-200D-2642-FE0F',
         sheet: [35, 32],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B4-1F3FC-200D-2642-FE0F',
         sheet: [35, 33],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B4-1F3FD-200D-2642-FE0F',
         sheet: [35, 34],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B4-1F3FE-200D-2642-FE0F',
         sheet: [35, 35],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B4-1F3FF-200D-2642-FE0F',
         sheet: [35, 36],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F6B4',
     sheet: [35, 31],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Biking',
@@ -19914,51 +18216,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F6B4-1F3FB-200D-2640-FE0F',
         sheet: [35, 26],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B4-1F3FC-200D-2640-FE0F',
         sheet: [35, 27],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B4-1F3FD-200D-2640-FE0F',
         sheet: [35, 28],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B4-1F3FE-200D-2640-FE0F',
         sheet: [35, 29],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B4-1F3FF-200D-2640-FE0F',
         sheet: [35, 30],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [35, 25],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Mountain Bicyclist',
@@ -20003,52 +18285,32 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F6B5-1F3FB-200D-2642-FE0F',
         sheet: [35, 50],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B5-1F3FC-200D-2642-FE0F',
         sheet: [35, 51],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B5-1F3FD-200D-2642-FE0F',
         sheet: [36, 0],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B5-1F3FE-200D-2642-FE0F',
         sheet: [36, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B5-1F3FF-200D-2642-FE0F',
         sheet: [36, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     obsoletes: '1F6B5',
     sheet: [35, 49],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Mountain Biking',
@@ -20058,51 +18320,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F6B5-1F3FB-200D-2640-FE0F',
         sheet: [35, 44],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B5-1F3FC-200D-2640-FE0F',
         sheet: [35, 45],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B5-1F3FD-200D-2640-FE0F',
         sheet: [35, 46],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B5-1F3FE-200D-2640-FE0F',
         sheet: [35, 47],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F6B5-1F3FF-200D-2640-FE0F',
         sheet: [35, 48],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [35, 43],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Racing Car',
@@ -20116,14 +18358,14 @@ export const emojis: CompressedEmojiData[] = [
       'f1'
     ],
     sheet: [11, 31],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Racing Motorcycle',
     unified: '1F3CD-FE0F',
     short_name: 'racing_motorcycle',
     sheet: [11, 30],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Person Doing Cartwheel',
@@ -20167,51 +18409,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F938-1F3FB-200D-2642-FE0F',
         sheet: [40, 19],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F938-1F3FC-200D-2642-FE0F',
         sheet: [40, 20],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F938-1F3FD-200D-2642-FE0F',
         sheet: [40, 21],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F938-1F3FE-200D-2642-FE0F',
         sheet: [40, 22],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F938-1F3FF-200D-2642-FE0F',
         sheet: [40, 23],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [40, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Cartwheeling',
@@ -20221,51 +18443,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F938-1F3FB-200D-2640-FE0F',
         sheet: [40, 13],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F938-1F3FC-200D-2640-FE0F',
         sheet: [40, 14],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F938-1F3FD-200D-2640-FE0F',
         sheet: [40, 15],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F938-1F3FE-200D-2640-FE0F',
         sheet: [40, 16],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F938-1F3FF-200D-2640-FE0F',
         sheet: [40, 17],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [40, 12],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Wrestlers',
@@ -20279,14 +18481,14 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F93C-200D-2642-FE0F',
     short_name: 'man-wrestling',
     sheet: [40, 50],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Wrestling',
     unified: '1F93C-200D-2640-FE0F',
     short_name: 'woman-wrestling',
     sheet: [40, 49],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Water Polo',
@@ -20330,51 +18532,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F93D-1F3FB-200D-2642-FE0F',
         sheet: [41, 7],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93D-1F3FC-200D-2642-FE0F',
         sheet: [41, 8],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93D-1F3FD-200D-2642-FE0F',
         sheet: [41, 9],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93D-1F3FE-200D-2642-FE0F',
         sheet: [41, 10],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93D-1F3FF-200D-2642-FE0F',
         sheet: [41, 11],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [41, 6],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Playing Water Polo',
@@ -20384,51 +18566,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F93D-1F3FB-200D-2640-FE0F',
         sheet: [41, 1],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93D-1F3FC-200D-2640-FE0F',
         sheet: [41, 2],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93D-1F3FD-200D-2640-FE0F',
         sheet: [41, 3],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93D-1F3FE-200D-2640-FE0F',
         sheet: [41, 4],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93D-1F3FF-200D-2640-FE0F',
         sheet: [41, 5],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [41, 0],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Handball',
@@ -20472,51 +18634,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F93E-1F3FB-200D-2642-FE0F',
         sheet: [41, 25],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93E-1F3FC-200D-2642-FE0F',
         sheet: [41, 26],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93E-1F3FD-200D-2642-FE0F',
         sheet: [41, 27],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93E-1F3FE-200D-2642-FE0F',
         sheet: [41, 28],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93E-1F3FF-200D-2642-FE0F',
         sheet: [41, 29],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [41, 24],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Playing Handball',
@@ -20526,51 +18668,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F93E-1F3FB-200D-2640-FE0F',
         sheet: [41, 19],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93E-1F3FC-200D-2640-FE0F',
         sheet: [41, 20],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93E-1F3FD-200D-2640-FE0F',
         sheet: [41, 21],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93E-1F3FE-200D-2640-FE0F',
         sheet: [41, 22],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F93E-1F3FF-200D-2640-FE0F',
         sheet: [41, 23],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [41, 18],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Juggling',
@@ -20614,55 +18736,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F939-1F3FB-200D-2642-FE0F',
         sheet: [40, 37],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F939-1F3FC-200D-2642-FE0F',
         sheet: [40, 38],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F939-1F3FD-200D-2642-FE0F',
         sheet: [40, 39],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F939-1F3FE-200D-2642-FE0F',
         sheet: [40, 40],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F939-1F3FF-200D-2642-FE0F',
         sheet: [40, 41],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [40, 36],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Woman Juggling',
@@ -20672,55 +18770,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F939-1F3FB-200D-2640-FE0F',
         sheet: [40, 31],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F939-1F3FC-200D-2640-FE0F',
         sheet: [40, 32],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F939-1F3FD-200D-2640-FE0F',
         sheet: [40, 33],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F939-1F3FE-200D-2640-FE0F',
         sheet: [40, 34],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       },
       {
         unified: '1F939-1F3FF-200D-2640-FE0F',
         sheet: [40, 35],
-        hidden: [
-          'emojione',
-          'facebook',
-          'messenger'
-        ]
+        hidden: ['facebook', 'messenger']
       }
     ],
     sheet: [40, 30],
-    hidden: [
-      'emojione',
-      'facebook',
-      'messenger'
-    ]
+    hidden: ['facebook', 'messenger']
   },
   {
     name: 'Man and Woman Holding Hands',
@@ -20789,21 +18863,19 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'woman-kiss-man',
     obsoletes: '1F48F',
     sheet: [20, 21],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Man Kiss Man',
     unified: '1F468-200D-2764-FE0F-200D-1F48B-200D-1F468',
     short_name: 'man-kiss-man',
-    sheet: [18, 10],
-    hidden: ['emojione']
+    sheet: [18, 10]
   },
   {
     name: 'Woman Kiss Woman',
     unified: '1F469-200D-2764-FE0F-200D-1F48B-200D-1F469',
     short_name: 'woman-kiss-woman',
-    sheet: [20, 22],
-    hidden: ['emojione']
+    sheet: [20, 22]
   },
   {
     name: 'Couple with Heart',
@@ -20819,21 +18891,19 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'woman-heart-man',
     obsoletes: '1F491',
     sheet: [20, 19],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Man Heart Man',
     unified: '1F468-200D-2764-FE0F-200D-1F468',
     short_name: 'man-heart-man',
-    sheet: [18, 9],
-    hidden: ['emojione']
+    sheet: [18, 9]
   },
   {
     name: 'Woman Heart Woman',
     unified: '1F469-200D-2764-FE0F-200D-1F469',
     short_name: 'woman-heart-woman',
-    sheet: [20, 20],
-    hidden: ['emojione']
+    sheet: [20, 20]
   },
   {
     name: 'Family',
@@ -20850,8 +18920,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'man-woman-boy',
     short_names: ['family'],
     obsoletes: '1F46A',
-    sheet: [17, 2],
-    hidden: ['emojione']
+    sheet: [17, 2]
   },
   {
     name: 'Man Woman Girl',
@@ -20942,70 +19011,70 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F468-200D-1F466',
     short_name: 'man-boy',
     sheet: [16, 45],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Man Boy Boy',
     unified: '1F468-200D-1F466-200D-1F466',
     short_name: 'man-boy-boy',
     sheet: [16, 44],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Man Girl',
     unified: '1F468-200D-1F467',
     short_name: 'man-girl',
     sheet: [16, 48],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Man Girl Boy',
     unified: '1F468-200D-1F467-200D-1F466',
     short_name: 'man-girl-boy',
     sheet: [16, 46],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Man Girl Girl',
     unified: '1F468-200D-1F467-200D-1F467',
     short_name: 'man-girl-girl',
     sheet: [16, 47],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Boy',
     unified: '1F469-200D-1F466',
     short_name: 'woman-boy',
     sheet: [19, 8],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Boy Boy',
     unified: '1F469-200D-1F466-200D-1F466',
     short_name: 'woman-boy-boy',
     sheet: [19, 7],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Girl',
     unified: '1F469-200D-1F467',
     short_name: 'woman-girl',
     sheet: [19, 11],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Girl Boy',
     unified: '1F469-200D-1F467-200D-1F466',
     short_name: 'woman-girl-boy',
     sheet: [19, 9],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Woman Girl Girl',
     unified: '1F469-200D-1F467-200D-1F467',
     short_name: 'woman-girl-girl',
     sheet: [19, 10],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Selfie',
@@ -21178,8 +19247,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'up'
     ],
-    sheet: [47, 26],
-    hidden: ['emojione']
+    sheet: [47, 26]
   },
   {
     name: 'White Up Pointing Backhand Index',
@@ -21320,8 +19388,7 @@ export const emojis: CompressedEmojiData[] = [
       'victory',
       'two'
     ],
-    sheet: [49, 30],
-    hidden: ['emojione']
+    sheet: [49, 30]
   },
   {
     name: 'Hand with Index and Middle Fingers Crossed',
@@ -21502,7 +19569,7 @@ export const emojis: CompressedEmojiData[] = [
       'palm'
     ],
     sheet: [29, 32],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Raised Hand',
@@ -21866,31 +19933,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F91F-1F3FB',
         sheet: [38, 18],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F91F-1F3FC',
         sheet: [38, 19],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F91F-1F3FD',
         sheet: [38, 20],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F91F-1F3FE',
         sheet: [38, 21],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F91F-1F3FF',
         sheet: [38, 22],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [38, 17],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Writing Hand',
@@ -21930,7 +19997,7 @@ export const emojis: CompressedEmojiData[] = [
       'compose'
     ],
     sheet: [49, 36],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Clapping Hands Sign',
@@ -22044,31 +20111,31 @@ export const emojis: CompressedEmojiData[] = [
       {
         unified: '1F932-1F3FB',
         sheet: [39, 17],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F932-1F3FC',
         sheet: [39, 18],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F932-1F3FD',
         sheet: [39, 19],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F932-1F3FE',
         sheet: [39, 20],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       },
       {
         unified: '1F932-1F3FF',
         sheet: [39, 21],
-        hidden: ['emojione', 'messenger']
+        hidden: ['messenger']
       }
     ],
     sheet: [39, 16],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Person with Folded Hands',
@@ -22248,7 +20315,7 @@ export const emojis: CompressedEmojiData[] = [
       'stare'
     ],
     sheet: [13, 44],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Eye in Speech Bubble',
@@ -22257,7 +20324,6 @@ export const emojis: CompressedEmojiData[] = [
     sheet: [13, 43],
     hidden: [
       'twitter',
-      'emojione',
       'facebook',
       'messenger'
     ]
@@ -22268,7 +20334,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'brain',
     keywords: ['smart', 'intelligent'],
     sheet: [46, 22],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Tongue',
@@ -22322,8 +20388,7 @@ export const emojis: CompressedEmojiData[] = [
       'like',
       'valentines'
     ],
-    sheet: [50, 8],
-    hidden: ['emojione']
+    sheet: [50, 8]
   },
   {
     name: 'Beating Heart',
@@ -22442,7 +20507,7 @@ export const emojis: CompressedEmojiData[] = [
       'valentines'
     ],
     sheet: [46, 23],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Purple Heart',
@@ -22500,7 +20565,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '2763-FE0F',
     short_name: 'heavy_heart_exclamation_mark_ornament',
     sheet: [50, 7],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Love Letter',
@@ -22617,7 +20682,7 @@ export const emojis: CompressedEmojiData[] = [
       'chatting'
     ],
     sheet: [30, 15],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Right Anger Bubble',
@@ -22630,7 +20695,7 @@ export const emojis: CompressedEmojiData[] = [
       'mad'
     ],
     sheet: [30, 16],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Thought Balloon',
@@ -22651,7 +20716,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'hole',
     keywords: ['embarrassing'],
     sheet: [28, 44],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Eyeglasses',
@@ -22677,7 +20742,7 @@ export const emojis: CompressedEmojiData[] = [
       'accessories'
     ],
     sheet: [29, 17],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Necktie',
@@ -22717,7 +20782,7 @@ export const emojis: CompressedEmojiData[] = [
       'clothes'
     ],
     sheet: [46, 25],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Gloves',
@@ -22729,7 +20794,7 @@ export const emojis: CompressedEmojiData[] = [
       'clothes'
     ],
     sheet: [46, 26],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Coat',
@@ -22737,7 +20802,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'coat',
     keywords: ['jacket'],
     sheet: [46, 27],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Socks',
@@ -22745,7 +20810,7 @@ export const emojis: CompressedEmojiData[] = [
     short_name: 'socks',
     keywords: ['stockings', 'clothes'],
     sheet: [46, 28],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Dress',
@@ -22838,7 +20903,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F6CD-FE0F',
     short_name: 'shopping_bags',
     sheet: [37, 2],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'School Satchel',
@@ -22963,14 +21028,14 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F9E2',
     short_name: 'billed_cap',
     sheet: [46, 24],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Helmet with White Cross',
     unified: '26D1-FE0F',
     short_name: 'helmet_with_white_cross',
     sheet: [48, 33],
-    hidden: ['emojione', 'messenger']
+    hidden: ['messenger']
   },
   {
     name: 'Prayer Beads',
