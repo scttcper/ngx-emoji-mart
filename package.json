@@ -53,7 +53,7 @@
     "codelyzer": "4.2.1",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
-    "emoji-datasource": "4.0.3",
+    "emoji-datasource": "4.0.4",
     "emojilib": "2.2.12",
     "fs-extra": "5.0.0",
     "husky": "0.15.0-rc.13",
