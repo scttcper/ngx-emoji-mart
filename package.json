@@ -51,7 +51,7 @@
     "@types/node": "9.6.7",
     "@types/rimraf": "2.0.2",
     "@types/stringify-object": "3.2.0",
-    "codelyzer": "4.2.1",
+    "codelyzer": "4.3.0",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
     "emoji-datasource": "4.0.4",
