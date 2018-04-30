@@ -71,7 +71,7 @@
     "protractor": "5.3.1",
     "rimraf": "2.6.2",
     "semantic-release": "15.1.8",
-    "travis-deploy-once": "4.4.1",
+    "travis-deploy-once": "5.0.0",
     "stringify-object": "3.2.2",
     "ts-node": "6.0.2",
     "tslint": "5.9.1",
