@@ -70,7 +70,7 @@
     "ng-packagr": "2.4.2",
     "protractor": "5.3.1",
     "rimraf": "2.6.2",
-    "semantic-release": "15.1.7",
+    "semantic-release": "15.1.8",
     "travis-deploy-once": "4.4.1",
     "stringify-object": "3.2.2",
     "ts-node": "6.0.1",
