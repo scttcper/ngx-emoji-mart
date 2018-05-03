@@ -9,8 +9,7 @@
   "description": "Customizable Slack-like emoji picker for Angular",
   "peerDependencies": {
     "@angular/core": ">=5.0.0",
-    "@angular/common": ">=5.0.0",
-    "rxjs": "^5.5.0"
+    "@angular/common": ">=5.0.0"
   },
   "bugs": "https://github.com/TypeCtrl/ngx-emoji-mart/issues",
   "homepage": "https://github.com/TypeCtrl/ngx-emoji-mart",
