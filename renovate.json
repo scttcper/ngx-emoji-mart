@@ -1,11 +1,10 @@
 {
   "extends": [
-    "config:base",
-    ":semanticCommitTypeAll(chore)"
+    "config:js-lib",
+    ":semanticCommitTypeAll(chore)",
+    "schedule:earlyMondays",
+    ":maintainLockFilesMonthly"
   ],
-  "timezone": "America/Los_Angeles",
-  "schedule": ["after 10pm and before 5am on every weekday"],
-  "prHourlyLimit": 4,
   "rebaseStalePrs": true,
   "semanticCommits": true,
   "patch": {
