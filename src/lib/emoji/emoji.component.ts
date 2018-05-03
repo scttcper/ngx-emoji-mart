@@ -34,16 +34,14 @@ export interface EmojiEvent {
 @Component({
   selector: '@ctrl/ngx-emoji-mart/ngx-emoji',
   template: `
-  <span
-    *ngIf="isVisible"
+  <span *ngIf="isVisible"
     (click)="handleClick($event)"
     (mouseenter)="handleOver($event)"
     (mouseleave)="handleLeave($event)"
     [title]="title"
     class="emoji-mart-emoji"
     [class.emoji-mart-emoji-native]="native"
-    [class.emoji-mart-emoji-custom]="custom"
-  >
+    [class.emoji-mart-emoji-custom]="custom">
     <span [ngStyle]="style">
       {{ unified }}
       <ng-content></ng-content>
