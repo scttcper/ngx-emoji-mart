@@ -1,5 +1,4 @@
 import { async, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 
 import { NtkmeButtonModule } from '@ctrl/ngx-github-buttons';
 
@@ -11,7 +10,6 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule,
         PickerModule,
         NtkmeButtonModule,
       ],
