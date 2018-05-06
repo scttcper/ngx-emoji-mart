@@ -13,7 +13,7 @@ import { EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 @Component({
   selector: 'emoji-preview',
   template: `
-  <div class="emoji-mart-preview" *ngIf="emoji">
+  <div class="emoji-mart-preview" *ngIf="emoji && emojiData">
     <div class="emoji-mart-preview-emoji">
       <ngx-emoji [emoji]="emoji" [size]="38"
         [native]="emojiNative"
@@ -77,8 +77,8 @@ export class PreviewComponent implements OnChanges {
   @Input() emojiSheetSize: any;
   @Input() emojiBackgroundImageFn: any;
   @Output() skinChange = new EventEmitter<number>();
-  emojiData: EmojiData;
-  listedEmoticons: string[];
+  emojiData?: EmojiData;
+  listedEmoticons?: string[];
 
   constructor(
     public ref: ChangeDetectorRef,

@@ -28,7 +28,7 @@ import { Emoji } from '@ctrl/ngx-emoji-mart/ngx-emoji';
   preserveWhitespaces: false,
 })
 export class SkinComponent {
-  @Input() skin: Emoji['skin'];
+  @Input() skin?: Emoji['skin'];
   @Output() change = new EventEmitter<number>();
   opened = false;
   skinTones = [1, 2, 3, 4, 5, 6];
