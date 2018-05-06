@@ -17,12 +17,11 @@ import { EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
     <div class="emoji-mart-preview-emoji">
       <ngx-emoji [emoji]="emoji" [size]="38"
         [native]="emojiNative"
-        [size]="emojiSize"
         [skin]="emojiSkin"
+        [size]="emojiSize"
         [set]="emojiSet"
         [sheetSize]="emojiSheetSize"
-        [backgroundImageFn]="emojiBackgroundImageFn"
-      >
+        [backgroundImageFn]="emojiBackgroundImageFn">
       </ngx-emoji>
     </div>
 
@@ -89,7 +88,7 @@ export class PreviewComponent implements OnChanges {
     if (!this.emoji) {
       return;
     }
-    this.emojiData = this.emojiService.getData(this.emoji);
+    this.emojiData = this.emojiService.getData(this.emoji, this.emojiSkin, this.emojiSet);
     const knownEmoticons: string[] = [];
     const listedEmoticons: string[] = [];
     const emoitcons = this.emojiData.emoticons || [];

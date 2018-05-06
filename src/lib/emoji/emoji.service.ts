@@ -25,8 +25,8 @@ export class EmojiService {
   }
 
   uncompress(list: CompressedEmojiData[]) {
-    this.emojis = list.map((emoji) => {
-      const data: any  = { ...emoji };
+    this.emojis = list.map(emoji => {
+      const data: any = { ...emoji };
       if (!data.short_names) {
         data.short_names = [];
       }
@@ -56,12 +56,12 @@ export class EmojiService {
 
       if (data.obsoletes) {
         // get keywords from emoji that it obsoletes since that is shared
-        const f = list.find((x) => x.unified === data.obsoletes);
+        const f = list.find(x => x.unified === data.obsoletes);
         if (f) {
           if (f.keywords) {
-            data.keywords = [ ...data.keywords, ...f.keywords, f.short_name ];
+            data.keywords = [...data.keywords, ...f.keywords, f.short_name];
           } else {
-            data.keywords = [ ...data.keywords, f.short_name ];
+            data.keywords = [...data.keywords, f.short_name];
           }
         }
       }
@@ -100,7 +100,13 @@ export class EmojiService {
       emojiData.custom = true;
     }
 
-    if (emojiData.skin_variations && emojiData.skin_variations.length && skin && skin > 1 && set) {
+    if (
+      emojiData.skin_variations &&
+      emojiData.skin_variations.length &&
+      skin &&
+      skin > 1 &&
+      set
+    ) {
       emojiData = { ...emojiData };
 
       const skinKey = SKINS[skin - 1];
@@ -139,7 +145,11 @@ export class EmojiService {
     emoji.colons = colons;
     return { ...emoji };
   }
-  getSanitizedData(emoji: string | EmojiData, skin?: Emoji['skin'], set?: Emoji['set']) {
+  getSanitizedData(
+    emoji: string | EmojiData,
+    skin?: Emoji['skin'],
+    set?: Emoji['set'],
+  ) {
     return this.sanitize(this.getData(emoji, skin, set));
   }
 }
