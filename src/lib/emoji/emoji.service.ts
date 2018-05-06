@@ -87,15 +87,12 @@ export class EmojiService {
         emoji = matches[1];
 
         if (matches[2]) {
-          skin = (<Emoji['skin']>parseInt(matches[2], 10));
+          skin = <Emoji['skin']>parseInt(matches[2], 10);
         }
       }
       emojiData = this.names[emoji];
     } else if (emoji.id) {
       emojiData = this.names[emoji.id];
-      if (skin) {
-        skin = emoji.skin;
-      }
     }
 
     if (!emojiData) {
