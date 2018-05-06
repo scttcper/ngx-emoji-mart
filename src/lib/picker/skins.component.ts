@@ -11,17 +11,13 @@ import { Emoji } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 @Component({
   selector: 'emoji-skins',
   template: `
-  <div>
-    <div class="emoji-mart-skin-swatches" [class.emoji-mart-skin-swatches-opened]="opened">
-      <span *ngFor="let skinTone of skinTones"
-        class="emoji-mart-skin-swatch"
-        [class.emoji-mart-skin-swatch-selected]="skinTone === skin"
-        >
-          <span (click)="this.handleClick(skinTone)"
-            class="emoji-mart-skin emoji-mart-skin-tone-{{ skinTone }}"
-          ></span>
-        </span>
-    </div>
+  <div class="emoji-mart-skin-swatches" [class.emoji-mart-skin-swatches-opened]="opened">
+    <span *ngFor="let skinTone of skinTones" class="emoji-mart-skin-swatch"
+      [class.emoji-mart-skin-swatch-selected]="skinTone === skin">
+        <span (click)="this.handleClick(skinTone)"
+          class="emoji-mart-skin emoji-mart-skin-tone-{{ skinTone }}"
+        ></span>
+      </span>
   </div>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,

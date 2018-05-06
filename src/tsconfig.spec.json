@@ -11,8 +11,7 @@
       "@ctrl/ngx-emoji-mart/ngx-emoji": ["./lib/emoji/public_api"]
     }
   },
-  "files": ["test.ts"  "polyfills.ts"
-  ,],
+  "files": ["test.ts",  "polyfills.ts"],
   "include": ["**/*.spec.ts", "**/*.d.ts"],
   "angularCompilerOptions": {
     "preserveWhitespaces": false,

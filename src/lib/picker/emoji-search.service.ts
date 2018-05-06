@@ -1,15 +1,19 @@
 import { Injectable } from '@angular/core';
 
-import { categories, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import {
+  categories,
+  EmojiData,
+  EmojiService,
+} from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { intersect } from './utils';
 
 @Injectable()
 export class EmojiSearch {
   originalPool: any = {};
   index: {
-    results?: EmojiData[],
-    pool?: { [key: string]: EmojiData },
-    [key: string]: any,
+    results?: EmojiData[];
+    pool?: { [key: string]: EmojiData };
+    [key: string]: any;
   } = {};
   emojisList: any = {};
   emoticonsList: { [key: string]: string } = {};
@@ -83,8 +87,8 @@ export class EmojiSearch {
             return;
           }
 
-          category.emojis!.forEach(emojiId =>
-            pool[emojiId] = this.emojiService.names[emojiId],
+          category.emojis!.forEach(
+            emojiId => (pool[emojiId] = this.emojiService.names[emojiId]),
           );
         });
 
@@ -114,7 +118,7 @@ export class EmojiSearch {
             aIndex = aIndex[char];
 
             if (!aIndex.results) {
-              const scores: {[key: string]: number} = {};
+              const scores: { [key: string]: number } = {};
 
               aIndex.results = [];
               aIndex.pool = {};
