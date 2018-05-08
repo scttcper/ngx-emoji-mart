@@ -10,6 +10,7 @@
     "test": "ng test ---watch=false --browsers=ChromeCI",
     "test:watch": "ng test --browsers=ChromeCI",
     "test:ci": "ng test --watch=false --code-coverage --no-progress --browsers=ChromeCI",
+    "link": "cd dist/packages-dist && npm link",
     "lint": "ng lint ngx-emoji-mart --type-check --format stylish",
     "lint:fix": "ng lint ngx-emoji-mart --type-check --fix --format stylish",
     "ghpages": "ng build --prod --no-progress --baseHref='/ngx-emoji-mart/'",
