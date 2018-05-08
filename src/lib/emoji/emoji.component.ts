@@ -103,10 +103,10 @@ export class EmojiComponent implements OnChanges, Emoji {
       return this.isVisible = false;
     }
 
+    this.unified = data.native;
     if (this.native && data.unified && data.native) {
       // hide older emoji before the split into gendered emoji
       this.style = { fontSize: `${this.size}px` };
-      this.unified = data.native;
 
       if (this.forceSize) {
         this.style.display = 'inline-block';
