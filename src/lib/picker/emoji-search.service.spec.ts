@@ -39,6 +39,7 @@ describe('EmojiSearch', () => {
         hidden: [],
         text: '',
         colons: ':pineapple:',
+        set: '',
       });
     }),
   );

@@ -18,7 +18,7 @@ export interface CompressedEmojiData {
   hidden?: string[];
   emoticons?: string[];
   text?: string;
-  skin_variations?: EmojiVariaiton[];
+  skin_variations?: EmojiVariation[];
   obsoleted_by?: string;
   obsoletes?: string;
 }
@@ -34,7 +34,9 @@ export interface EmojiData {
   hidden: string[];
   emoticons: string[];
   text: string;
-  skin_variations: EmojiVariaiton[];
+  set?: Emoji['set'];
+  variations?: EmojiVariation[];
+  skin_variations: EmojiVariation[];
   obsoleted_by?: string;
   obsoletes?: string;
   // search: any;
@@ -46,7 +48,7 @@ export interface EmojiData {
   skin?: Emoji['skin'];
 }
 
-export interface EmojiVariaiton {
+export interface EmojiVariation {
   unified: string;
   sheet: [number, number];
   hidden?: string[];

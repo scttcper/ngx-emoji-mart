@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import {
   CompressedEmojiData,
   EmojiData,
-  EmojiVariaiton,
+  EmojiVariation,
 } from './data/data.interfaces';
 import { emojis } from './data/emojis';
 import { Emoji } from './emoji.component';
@@ -73,6 +73,7 @@ export class EmojiService {
       return data;
     });
   }
+
   getData(
     emoji: EmojiData | string,
     skin?: Emoji['skin'],
@@ -87,7 +88,7 @@ export class EmojiService {
         emoji = matches[1];
 
         if (matches[2]) {
-          skin = <Emoji['skin']>parseInt(matches[2], 10);
+          skin = parseInt(matches[2], 10) as Emoji['skin'];
         }
       }
       emojiData = this.names[emoji];
@@ -100,19 +101,14 @@ export class EmojiService {
       emojiData.custom = true;
     }
 
-    if (
-      emojiData.skin_variations &&
-      emojiData.skin_variations.length &&
-      skin &&
-      skin > 1 &&
-      set
-    ) {
+    const hasSkinVariations = emojiData.skin_variations && emojiData.skin_variations.length;
+    if (hasSkinVariations && skin && skin > 1 && set) {
       emojiData = { ...emojiData };
 
       const skinKey = SKINS[skin - 1];
       const variationData = emojiData.skin_variations.find(
-        (n: EmojiVariaiton) => n.unified.indexOf(skinKey) !== -1,
-      );
+        (n: EmojiVariation) => n.unified.indexOf(skinKey) !== -1,
+      ) as any;
 
       if (!variationData.variations && emojiData.variations) {
         delete emojiData.variations;
@@ -127,15 +123,19 @@ export class EmojiService {
 
     if (emojiData.variations && emojiData.variations.length) {
       emojiData = { ...emojiData };
-      emojiData.unified = emojiData.variations.shift();
+      emojiData.unified = emojiData.variations.shift() as string;
     }
 
-    return emojiData;
+    emojiData.set = set || '';
+
+    return emojiData as EmojiData;
   }
+
   unifiedToNative(unified: string) {
     const codePoints = unified.split('-').map(u => parseInt(`0x${u}`, 16));
     return String.fromCodePoint(...codePoints);
   }
+
   sanitize(emoji: EmojiData): EmojiData {
     const id = emoji.id || emoji.short_names[0];
     let colons = `:${id}:`;
@@ -145,6 +145,7 @@ export class EmojiService {
     emoji.colons = colons;
     return { ...emoji };
   }
+
   getSanitizedData(
     emoji: string | EmojiData,
     skin?: Emoji['skin'],
