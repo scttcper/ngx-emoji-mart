@@ -34,6 +34,8 @@ export interface EmojiData {
   hidden: string[];
   emoticons: string[];
   text: string;
+  set?: Emoji['set'];
+  variations?: EmojiVariation[];
   skin_variations: EmojiVariation[];
   obsoleted_by?: string;
   obsoletes?: string;
