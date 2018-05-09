@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import {
   CompressedEmojiData,
   EmojiData,
-  EmojiVariaiton,
+  EmojiVariation,
 } from './data/data.interfaces';
 import { emojis } from './data/emojis';
 import { Emoji } from './emoji.component';
@@ -111,7 +111,7 @@ export class EmojiService {
 
       const skinKey = SKINS[skin - 1];
       const variationData = emojiData.skin_variations.find(
-        (n: EmojiVariaiton) => n.unified.indexOf(skinKey) !== -1,
+        (n: EmojiVariation) => n.unified.indexOf(skinKey) !== -1,
       );
 
       if (!variationData.variations && emojiData.variations) {
