@@ -122,7 +122,7 @@ export class EmojiComponent implements OnChanges, Emoji {
       };
     } else {
       let setHasEmoji = true;
-      if (data.hidden && data.hidden.indexOf(this.set) !== -1) {
+      if (data.hidden && data.hidden.includes(this.set)) {
         setHasEmoji = true;
       }
 

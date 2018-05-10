@@ -1,6 +1,6 @@
 function uniq(arr: any[]) {
-  return arr.reduce((acc: any, item: any) => {
-    if (acc.indexOf(item) === -1) {
+  return arr.reduce((acc: Array<any>, item: any) => {
+    if (!acc.includes(item)) {
       acc.push(item);
     }
     return acc;

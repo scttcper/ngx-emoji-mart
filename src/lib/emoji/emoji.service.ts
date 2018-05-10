@@ -107,14 +107,14 @@ export class EmojiService {
 
       const skinKey = SKINS[skin - 1];
       const variationData = emojiData.skin_variations.find(
-        (n: EmojiVariation) => n.unified.indexOf(skinKey) !== -1,
+        (n: EmojiVariation) => n.unified.includes(skinKey),
       ) as any;
 
       if (!variationData.variations && emojiData.variations) {
         delete emojiData.variations;
       }
 
-      if (!variationData.hidden || variationData.hidden.indexOf(set) === -1) {
+      if (!variationData.hidden || !variationData.hidden.includes(set)) {
         emojiData.skin_tone = skin;
         emojiData = { ...emojiData, ...variationData };
       }
