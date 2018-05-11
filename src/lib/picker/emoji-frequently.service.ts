@@ -72,7 +72,7 @@ export class EmojiFrequentlyService {
 
     const last = localStorage.getItem(`${this.NAMESPACE}.last`);
 
-    if (last && sliced.indexOf(last) === -1) {
+    if (last && !sliced.includes(last)) {
       sliced.pop();
       sliced.push(last);
     }

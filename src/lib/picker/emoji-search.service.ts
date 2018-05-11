@@ -36,6 +36,7 @@ export class EmojiSearch {
       this.originalPool[id] = emojiData;
     }
   }
+
   addCustomToPool(custom: any, pool: any) {
     custom.forEach((emoji: any) => {
       const emojiId = emoji.id || emoji.short_names[0];
@@ -46,6 +47,7 @@ export class EmojiSearch {
       }
     });
   }
+
   search(
     value: string,
     emojisToShowFilter?: (x: any) => boolean,
@@ -187,6 +189,7 @@ export class EmojiSearch {
     }
     return results || null;
   }
+
   buildSearch(
     short_names: string[],
     name: string,
@@ -204,7 +207,7 @@ export class EmojiSearch {
         (split ? string.split(/[-|_|\s]+/) : [string]).forEach(s => {
           s = s.toLowerCase();
 
-          if (search.indexOf(s) === -1) {
+          if (!search.includes(s)) {
             search.push(s);
           }
         });

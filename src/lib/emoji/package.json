@@ -9,7 +9,8 @@
   "sideEffects": false,
   "ngPackage": {
     "lib": {
-      "entryFile": "public_api.ts"
+      "entryFile": "public_api.ts",
+      "languageLevel": ["dom", "es2017"]
     },
     "dest": "../../../dist/emoji"
   }
