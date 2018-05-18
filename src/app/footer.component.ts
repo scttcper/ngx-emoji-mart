@@ -1,4 +1,4 @@
-import { Component, VERSION } from '@angular/core';
+import { ChangeDetectionStrategy, Component, VERSION } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -18,6 +18,7 @@ import { Component, VERSION } from '@angular/core';
     Released under the
     <a href="https://github.com/typectrl/ngx-emoji-mart/blob/master/LICENSE">MIT</a> license.
     <a href="https://github.com/typectrl/ngx-emoji-mart">View source</a>.
+    Listed on <a target="_blank" href="https://angular.parts/package/@ctrl/ngx-emoji-mart">Angular.parts</a>
   </footer>
   `,
   styles: [`
@@ -28,6 +29,7 @@ import { Component, VERSION } from '@angular/core';
     color: #999;
   }
   `],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent {
   version = VERSION.full;
