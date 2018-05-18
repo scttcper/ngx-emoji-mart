@@ -34,7 +34,7 @@ describe('EmojiFrequently', () => {
     inject(
       [EmojiFrequentlyService, EmojiService],
       (ef: EmojiFrequentlyService, es: EmojiService) => {
-        const pineapple = es.getData('pineapple');
+        const pineapple = es.getData('pineapple')!;
         ef.get(8);
         ef.add(pineapple);
         const result = ef.get(8);
