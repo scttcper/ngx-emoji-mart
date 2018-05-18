@@ -151,7 +151,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   }
 
   getPosition() {
-    const [sheet_x, sheet_y] = this.getData().sheet;
+    const [sheet_x, sheet_y] = this.getData()!.sheet;
     const multiply = 100 / (this.SHEET_COLUMNS - 1);
     return `${multiply * sheet_x}% ${multiply * sheet_y}%`;
   }
@@ -165,17 +165,17 @@ export class EmojiComponent implements OnChanges, Emoji {
   }
 
   handleClick($event: Event) {
-    const emoji = this.getSanitizedData();
+    const emoji = this.getSanitizedData()!;
     this.emojiClick.emit({ emoji, $event });
   }
 
   handleOver($event: Event) {
-    const emoji = this.getSanitizedData();
+    const emoji = this.getSanitizedData()!;
     this.emojiOver.emit({ emoji, $event });
   }
 
   handleLeave($event: Event) {
-    const emoji = this.getSanitizedData();
+    const emoji = this.getSanitizedData()!;
     this.emojiLeave.emit({ emoji, $event });
   }
 }

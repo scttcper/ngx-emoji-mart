@@ -211,7 +211,7 @@ Certain sets don’t support all emojis (i.e. Messenger & Facebook don’t suppo
 
 To have the component render `:shrug:` you would need to:
 ```ts
-emojiFallback = emoji => `:${emoji.short_names[0]}:`
+emojiFallback = (emoji: any) => `:${emoji.short_names[0]}:`
 ```
 ```html
 <ngx-emoji

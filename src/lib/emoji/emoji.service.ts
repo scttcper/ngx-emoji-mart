@@ -78,7 +78,7 @@ export class EmojiService {
     emoji: EmojiData | string,
     skin?: Emoji['skin'],
     set?: Emoji['set'],
-  ): EmojiData {
+  ): EmojiData | null {
     let emojiData: any;
 
     if (typeof emoji === 'string') {
@@ -91,7 +91,11 @@ export class EmojiService {
           skin = parseInt(matches[2], 10) as Emoji['skin'];
         }
       }
-      emojiData = this.names[emoji];
+      if (this.names.hasOwnProperty(emoji)) {
+        emojiData = this.names[emoji];
+      } else {
+        return null;
+      }
     } else if (emoji.id) {
       emojiData = this.names[emoji.id];
     }
@@ -136,7 +140,10 @@ export class EmojiService {
     return String.fromCodePoint(...codePoints);
   }
 
-  sanitize(emoji: EmojiData): EmojiData {
+  sanitize(emoji: EmojiData | null): EmojiData | null {
+    if (emoji === null) {
+      return null;
+    }
     const id = emoji.id || emoji.short_names[0];
     let colons = `:${id}:`;
     if (emoji.skin_tone) {

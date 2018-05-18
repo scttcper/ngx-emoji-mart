@@ -88,7 +88,7 @@ export class PreviewComponent implements OnChanges {
     if (!this.emoji) {
       return;
     }
-    this.emojiData = this.emojiService.getData(this.emoji, this.emojiSkin, this.emojiSet);
+    this.emojiData = this.emojiService.getData(this.emoji, this.emojiSkin, this.emojiSet)!;
     const knownEmoticons: string[] = [];
     const listedEmoticons: string[] = [];
     const emoitcons = this.emojiData.emoticons || [];
