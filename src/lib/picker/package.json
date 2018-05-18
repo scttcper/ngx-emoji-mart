@@ -5,11 +5,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "sideEffects": false,
   "description": "Customizable Slack-like emoji picker for Angular",
   "peerDependencies": {
-    "@angular/core": ">=5.0.0",
-    "@angular/common": ">=5.0.0"
+    "@angular/core": "^5.2.0 || ^6.0.0",
+    "@angular/common": "^5.2.0 || ^6.0.0"
   },
   "bugs": "https://github.com/TypeCtrl/ngx-emoji-mart/issues",
   "homepage": "https://github.com/TypeCtrl/ngx-emoji-mart",
