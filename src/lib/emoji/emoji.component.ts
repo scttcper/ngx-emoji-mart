@@ -32,7 +32,7 @@ export interface EmojiEvent {
 }
 
 @Component({
-  selector: '@ctrl/ngx-emoji-mart/ngx-emoji',
+  selector: 'ngx-emoji',
   template: `
   <span *ngIf="isVisible"
     (click)="handleClick($event)"
