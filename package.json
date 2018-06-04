@@ -40,7 +40,7 @@
     "@angular/language-service": "6.0.3",
     "@types/fs-extra": "5.0.2",
     "@types/inflection": "1.5.28",
-    "@types/jasmine": "2.8.7",
+    "@types/jasmine": "2.8.8",
     "@types/jasminewd2": "2.0.3",
     "@types/node": "10.0.10",
     "@types/rimraf": "2.0.2",
