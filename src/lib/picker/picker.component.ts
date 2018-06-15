@@ -75,8 +75,8 @@ export class PickerComponent implements OnInit, AfterViewInit {
   @Input() autoFocus = false;
   @Input() custom: any[] = [];
   @Input() hideRecent = true;
-  @Input() include: string[] = [];
-  @Input() exclude: string[] = [];
+  @Input() include?: string[];
+  @Input() exclude?: string[];
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
   @ViewChild('scrollRef') private scrollRef?: ElementRef;
@@ -153,7 +153,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
 
     if (this.include !== undefined) {
       allCategories.sort((a, b) => {
-        if (this.include.indexOf(a.id) > this.include.indexOf(b.id)) {
+        if (this.include!.indexOf(a.id) > this.include!.indexOf(b.id)) {
           return 1;
         }
         return -1;
