@@ -15,7 +15,7 @@ import { Emoji, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 
 @Component({
-  selector: '[emoji-category]',
+  selector: 'emoji-category',
   template: `
   <div
     #container
@@ -77,7 +77,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
-export class CategoryComponent implements OnInit, AfterViewInit {
+export class CategoryComponent implements OnInit {
   @Input() emojis?: any[] | null;
   @Input() hasStickyPosition = true;
   @Input() name = '';
@@ -103,7 +103,6 @@ export class CategoryComponent implements OnInit, AfterViewInit {
   containerStyles: any = {};
   labelStyles: any = {};
   labelSpanStyles: any = {};
-  parent?: Element;
   margin = 0;
   minMargin = 0;
   maxMargin = 0;
@@ -127,20 +126,16 @@ export class CategoryComponent implements OnInit, AfterViewInit {
       this.labelSpanStyles = { position: 'absolute' };
     }
   }
-
-  ngAfterViewInit() {
-    this.parent = this.container!.nativeElement.parentNode.parentNode;
-    this.memoizeSize();
-  }
   memoizeSize() {
+    const parent = this.container!.nativeElement.parentNode.parentNode;
     const {
       top,
       height,
     } = this.container!.nativeElement.getBoundingClientRect();
-    const parentTop = this.parent!.getBoundingClientRect().top;
+    const parentTop = parent.getBoundingClientRect().top;
     const labelHeight = this.label!.nativeElement.getBoundingClientRect().height;
 
-    this.top = top - parentTop + this.parent!.scrollTop;
+    this.top = top - parentTop + parent.scrollTop;
 
     if (height === 0) {
       this.maxMargin = 0;

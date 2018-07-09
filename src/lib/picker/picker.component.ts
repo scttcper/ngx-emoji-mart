@@ -222,11 +222,8 @@ export class PickerComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       this.activeCategories = this.categories;
       this.ref.markForCheck();
-      this.updateCategoriesSize();
+      setTimeout(() => this.updateCategoriesSize());
     });
-  }
-  ngAfterViewInit() {
-    this.updateCategoriesSize();
   }
   updateCategoriesSize() {
     this.categoryRefs!.forEach(component => component.memoizeSize());
@@ -238,6 +235,7 @@ export class PickerComponent implements OnInit, AfterViewInit {
     }
   }
   handleAnchorClick($event: { category: EmojiCategory; index: number }) {
+    this.updateCategoriesSize();
     const component = this.categoryRefs!.find(n => n.id === $event.category.id);
 
     if (this.SEARCH_CATEGORY.emojis) {

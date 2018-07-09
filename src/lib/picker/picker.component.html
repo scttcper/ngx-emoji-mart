@@ -29,7 +29,7 @@
     class="emoji-mart-scroll"
     (scroll)="handleScroll()"
   >
-    <div emoji-category
+    <emoji-category
       *ngFor="let category of activeCategories; let idx = index; trackBy: categoryTrack"
       #categoryRef
       [id]="category.id"
@@ -53,8 +53,7 @@
       (emojiOver)="handleEmojiOver($event)"
       (emojiLeave)="handleEmojiLeave($event)"
       (emojiClick)="handleEmojiClick($event)"
-    >
-    </div>
+    ></emoji-category>
 
 </div>
 <div class="emoji-mart-bar" *ngIf="showPreview">
