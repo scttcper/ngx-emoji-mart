@@ -1,5 +1,4 @@
 import {
-  AfterViewInit,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
@@ -52,7 +51,7 @@ const I18N: any = {
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
-export class PickerComponent implements OnInit, AfterViewInit {
+export class PickerComponent implements OnInit {
   @Input() perLine = 9;
   @Input() i18n: any = {};
   @Input() style: any = {};
