@@ -43,7 +43,7 @@ export interface EmojiEvent {
     [class.emoji-mart-emoji-native]="native"
     [class.emoji-mart-emoji-custom]="custom">
     <span [ngStyle]="style">
-      {{ unified }}
+      <ng-template [ngIf]="native === true">{{ unified }}</ng-template>
       <ng-content></ng-content>
     </span>
   </span>
