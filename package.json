@@ -42,7 +42,7 @@
     "@types/inflection": "1.5.28",
     "@types/jasmine": "2.8.8",
     "@types/jasminewd2": "2.0.3",
-    "@types/node": "10.0.10",
+    "@types/node": "10.5.2",
     "@types/rimraf": "2.0.2",
     "@types/stringify-object": "3.2.0",
     "codelyzer": "4.3.0",
