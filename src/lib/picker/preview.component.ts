@@ -8,7 +8,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import { Emoji, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 
 @Component({
   selector: 'emoji-preview',
@@ -66,15 +66,15 @@ import { EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
   preserveWhitespaces: false,
 })
 export class PreviewComponent implements OnChanges {
-  @Input() title: any;
+  @Input() title?: string;
   @Input() emoji: any;
   @Input() idleEmoji: any;
-  @Input() emojiNative: any;
-  @Input() emojiSize: any;
-  @Input() emojiSkin: any;
-  @Input() emojiSet: any;
-  @Input() emojiSheetSize: any;
-  @Input() emojiBackgroundImageFn: any;
+  @Input() emojiNative?: Emoji['native'];
+  @Input() emojiSkin?: Emoji['skin'];
+  @Input() emojiSize?: Emoji['size'];
+  @Input() emojiSet?: Emoji['set'];
+  @Input() emojiSheetSize?: Emoji['sheetSize'];
+  @Input() emojiBackgroundImageFn?: Emoji['backgroundImageFn'];
   @Output() skinChange = new EventEmitter<number>();
   emojiData: Partial<EmojiData> = {};
   listedEmoticons?: string[];

@@ -43,12 +43,12 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
         [sheetSize]="emojiSheetSize"
         [forceSize]="emojiForceSize"
         [tooltip]="emojiTooltip"
+        [backgroundImageFn]="emojiBackgroundImageFn"
         [hideObsolete]="hideObsolete"
         (emojiOver)="emojiOver.emit($event)"
         (emojiLeave)="emojiLeave.emit($event)"
         (emojiClick)="emojiClick.emit($event)"
-      >
-      </ngx-emoji>
+      ></ngx-emoji>
     </ng-template>
 
     <div *ngIf="emojis && !emojis.length">
@@ -62,8 +62,8 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
           [sheetSize]="emojiSheetSize"
           [forceSize]="emojiForceSize"
           [tooltip]="emojiTooltip"
-          >
-        </ngx-emoji>
+          [backgroundImageFn]="emojiBackgroundImageFn"
+        ></ngx-emoji>
       </div>
 
       <div className="emoji-mart-no-results-label">
@@ -94,6 +94,7 @@ export class CategoryComponent implements OnInit {
   @Input() emojiSheetSize?: Emoji['sheetSize'];
   @Input() emojiForceSize?: Emoji['forceSize'];
   @Input() emojiTooltip?: Emoji['tooltip'];
+  @Input() emojiBackgroundImageFn?: Emoji['backgroundImageFn'];
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
