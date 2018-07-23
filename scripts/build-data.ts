@@ -1,5 +1,5 @@
 const emojiData = require('emoji-datasource');
-import * as emojiLib from 'emojilib';
+const emojiLib = require('emojilib');
 import * as fs from 'fs';
 import * as inflection from 'inflection';
 import * as stringifyObject from 'stringify-object';

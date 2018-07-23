@@ -3570,7 +3570,11 @@ export const emojis: CompressedEmojiData[] = [
       'bored',
       'straight face',
       'serious',
-      'sarcasm'
+      'sarcasm',
+      'unimpressed',
+      'skeptical',
+      'dubious',
+      'side_eye'
     ],
     sheet: [30, 42]
   },
@@ -7594,7 +7598,10 @@ export const emojis: CompressedEmojiData[] = [
       'party',
       'alcohol',
       'celebrate',
-      'cheers'
+      'cheers',
+      'wine',
+      'champagne',
+      'toast'
     ],
     sheet: [41, 38],
     hidden: ['messenger']
