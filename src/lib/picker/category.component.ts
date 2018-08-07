@@ -16,17 +16,12 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
 @Component({
   selector: 'emoji-category',
   template: `
-  <div
-    #container
-    class="emoji-mart-category"
+  <div #container class="emoji-mart-category"
     [class.emoji-mart-no-results]="emojis && !emojis.length"
-    [ngStyle]="containerStyles"
-  >
-    <div
+    [ngStyle]="containerStyles">
+    <div class="emoji-mart-category-label"
       [ngStyle]="labelStyles"
-      [attr.data-name]="name"
-      class="emoji-mart-category-label"
-    >
+      [attr.data-name]="name">
       <span style="labelSpanStyles" #label>
         {{ i18n.categories[id] }}
       </span>
@@ -66,7 +61,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
         ></ngx-emoji>
       </div>
 
-      <div className="emoji-mart-no-results-label">
+      <div class="emoji-mart-no-results-label">
         {{ i18n.notfound }}
       </div>
     </div>
@@ -190,7 +185,7 @@ export class CategoryComponent implements OnInit {
 
     return this.emojis;
   }
-  updateDisplay(display: 'none' | 'inherit') {
+  updateDisplay(display: 'none' | 'block') {
     this.containerStyles.display = display;
     this.getEmojis();
     this.ref.detectChanges();

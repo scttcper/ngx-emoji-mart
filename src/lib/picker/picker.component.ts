@@ -301,9 +301,9 @@ export class PickerComponent implements OnInit {
     for (const component of this.categoryRefs!.toArray()) {
       if (component.name === 'Search') {
         component.emojis = $emojis;
-        component.updateDisplay($emojis ? 'inherit' : 'none');
+        component.updateDisplay($emojis ? 'block' : 'none');
       } else {
-        component.updateDisplay($emojis ? 'none' : 'inherit');
+        component.updateDisplay($emojis ? 'none' : 'block');
       }
     }
 
