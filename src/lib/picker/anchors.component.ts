@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 
 import { EmojiCategory } from '@ctrl/ngx-emoji-mart/ngx-emoji';
-import SVGs from './svgs';
+import { categories } from './svgs';
 
 @Component({
   selector: 'emoji-mart-anchors',
@@ -44,7 +44,7 @@ export class AnchorsComponent {
   @Input() selected?: string;
   @Input() i18n: any;
   @Output() anchorClick = new EventEmitter<{ category: EmojiCategory, index: number }>();
-  svgs: any = SVGs;
+  svgs = categories;
 
   trackByFn(idx: number, cat: EmojiCategory) {
     return cat.id;

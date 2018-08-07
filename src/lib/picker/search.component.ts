@@ -9,6 +9,8 @@ import {
 } from '@angular/core';
 import { EmojiSearch } from './emoji-search.service';
 
+import { search as icons } from './svgs';
+
 @Component({
   selector: 'emoji-search',
   template: `
@@ -16,8 +18,15 @@ import { EmojiSearch } from './emoji-search.service';
     <input #inputRef type="text"
       (keyup.enter)="handleEnterKey($event)"
       [placeholder]="i18n.search" [autofocus]="autoFocus"
-      [(ngModel)]="query" (ngModelChange)="handleChange()"
-    />
+      [(ngModel)]="query" (ngModelChange)="handleChange()" />
+    <button class="emoji-mart-search-icon"
+      (click)="clear()"
+      (keyup.enter)="clear()"
+      [disabled]="!isSearching">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="13" height="13" opacity="0.5">
+        <path [attr.d]="icon" />
+      </svg>
+    </button>
   </div>
   `,
   preserveWhitespaces: false,
@@ -32,24 +41,34 @@ export class SearchComponent implements AfterViewInit {
   @Input() emojisToShowFilter?: (x: any) => boolean;
   @Output() search = new EventEmitter<any>();
   @Output() enterKey = new EventEmitter<any>();
-  @ViewChild('inputRef') private inputRef?: ElementRef;
+  @ViewChild('inputRef') private inputRef!: ElementRef;
+  isSearching = false;
+  icon = icons.search;
   query = '';
 
   constructor(private emojiSearch: EmojiSearch) {}
 
   ngAfterViewInit() {
-    if (this.autoFocus && this.inputRef) {
+    if (this.autoFocus) {
       this.inputRef.nativeElement.focus();
     }
   }
   clear() {
     this.query = '';
+    this.handleSearch('');
   }
   handleEnterKey($event: Event) {
     this.enterKey.emit($event);
     $event.preventDefault();
   }
-  handleChange() {
+  handleSearch(value: string) {
+    if (value === '') {
+      this.icon = icons.search;
+      this.isSearching = false;
+    } else {
+      this.icon = icons.delete;
+      this.isSearching = true;
+    }
     this.search.emit(
       this.emojiSearch.search(
         this.query,
@@ -60,5 +79,8 @@ export class SearchComponent implements AfterViewInit {
         this.custom,
       ),
     );
+  }
+  handleChange() {
+    this.handleSearch(this.query);
   }
 }
