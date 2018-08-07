@@ -93,8 +93,8 @@ export class CategoryComponent implements OnInit {
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
-  @ViewChild('container') container?: ElementRef;
-  @ViewChild('label') label?: ElementRef;
+  @ViewChild('container') container!: ElementRef;
+  @ViewChild('label') label!: ElementRef;
   containerStyles: any = {};
   labelStyles: any = {};
   labelSpanStyles: any = {};
@@ -122,13 +122,13 @@ export class CategoryComponent implements OnInit {
     }
   }
   memoizeSize() {
-    const parent = this.container!.nativeElement.parentNode.parentNode;
+    const parent = this.container.nativeElement.parentNode.parentNode;
     const {
       top,
       height,
-    } = this.container!.nativeElement.getBoundingClientRect();
+    } = this.container.nativeElement.getBoundingClientRect();
     const parentTop = parent.getBoundingClientRect().top;
-    const labelHeight = this.label!.nativeElement.getBoundingClientRect().height;
+    const labelHeight = this.label.nativeElement.getBoundingClientRect().height;
 
     this.top = top - parentTop + parent.scrollTop;
 
@@ -148,7 +148,7 @@ export class CategoryComponent implements OnInit {
     }
 
     if (!this.hasStickyPosition) {
-      this.label!.nativeElement.style.top = `${margin}px`;
+      this.label.nativeElement.style.top = `${margin}px`;
     }
 
     this.margin = margin;

@@ -78,11 +78,10 @@ export class PickerComponent implements OnInit {
   @Input() exclude?: string[];
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
-  @ViewChild('scrollRef') private scrollRef?: ElementRef;
-  @ViewChild('previewRef') private previewRef?: PreviewComponent;
-  @ViewChild('searchRef') private searchRef?: SearchComponent;
-  @ViewChildren('categoryRef')
-  private categoryRefs?: QueryList<CategoryComponent>;
+  @ViewChild('scrollRef') private scrollRef!: ElementRef;
+  @ViewChild('previewRef') private previewRef!: PreviewComponent;
+  @ViewChild('searchRef') private searchRef!: SearchComponent;
+  @ViewChildren('categoryRef') private categoryRefs!: QueryList<CategoryComponent>;
   scrollHeight = 0;
   clientHeight = 0;
   selected?: string;
@@ -225,7 +224,7 @@ export class PickerComponent implements OnInit {
     });
   }
   updateCategoriesSize() {
-    this.categoryRefs!.forEach(component => component.memoizeSize());
+    this.categoryRefs.forEach(component => component.memoizeSize());
 
     if (this.scrollRef) {
       const target = this.scrollRef.nativeElement;
@@ -235,11 +234,11 @@ export class PickerComponent implements OnInit {
   }
   handleAnchorClick($event: { category: EmojiCategory; index: number }) {
     this.updateCategoriesSize();
-    const component = this.categoryRefs!.find(n => n.id === $event.category.id);
+    const component = this.categoryRefs.find(n => n.id === $event.category.id);
 
     if (this.SEARCH_CATEGORY.emojis) {
       this.handleSearch(null);
-      this.searchRef!.clear();
+      this.searchRef.clear();
     }
     if (component) {
       let { top } = component;
@@ -249,7 +248,7 @@ export class PickerComponent implements OnInit {
       } else {
         top += 1;
       }
-      this.scrollRef!.nativeElement.scrollTop = top;
+      this.scrollRef.nativeElement.scrollTop = top;
     }
     this.selected = $event.category.name;
     this.nextScroll = $event.category.name;
@@ -282,8 +281,8 @@ export class PickerComponent implements OnInit {
       } else {
         // scrolling
         for (const category of this.categories) {
-          const component = this.categoryRefs!.find(n => n.id === category.id);
-          const active = component!.handleScroll(target.scrollTop);
+          const component = this.categoryRefs.find(n => n.id === category.id);
+          const active = component.handleScroll(target.scrollTop);
           if (active) {
             activeCategory = category;
           }
@@ -298,7 +297,7 @@ export class PickerComponent implements OnInit {
   }
   handleSearch($emojis: any) {
     this.SEARCH_CATEGORY.emojis = $emojis;
-    for (const component of this.categoryRefs!.toArray()) {
+    for (const component of this.categoryRefs.toArray()) {
       if (component.name === 'Search') {
         component.emojis = $emojis;
         component.updateDisplay($emojis ? 'block' : 'none');
@@ -308,7 +307,7 @@ export class PickerComponent implements OnInit {
     }
 
     // this.forceUpdate();
-    this.scrollRef!.nativeElement.scrollTop = 0;
+    this.scrollRef.nativeElement.scrollTop = 0;
     this.handleScroll();
   }
 
@@ -328,7 +327,7 @@ export class PickerComponent implements OnInit {
       this.frequently.add((<EmojiData>emoji));
     }
 
-    const component = this.categoryRefs!.toArray()[1];
+    const component = this.categoryRefs.toArray()[1];
     if (component) {
       const maxMargin = component.maxMargin;
       component.emojis = this.frequently.get(maxMargin);
@@ -374,7 +373,7 @@ export class PickerComponent implements OnInit {
 
     this.leaveTimeout = setTimeout(() => {
       this.previewEmoji = null;
-      this.previewRef!.ref.markForCheck();
+      this.previewRef.ref.markForCheck();
     }, 16);
   }
   handleEmojiClick($event: EmojiEvent) {
