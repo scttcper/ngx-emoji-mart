@@ -1,7 +1,6 @@
-<div
+<div class="emoji-mart"
   [style.width.px]="perLine * (emojiSize + 12) + 12 + 2 + measureScrollbar"
-  [ngStyle]="style"
-  class="emoji-mart">
+  [ngStyle]="style">
   <div class="emoji-mart-bar">
     <emoji-mart-anchors
       [categories]="categories"
@@ -22,13 +21,8 @@
     [custom]="custom"
     [autoFocus]="autoFocus"
     [emojisToShowFilter]="emojisToShowFilter"
-  >
-  </emoji-search>
-  <div
-    #scrollRef
-    class="emoji-mart-scroll"
-    (scroll)="handleScroll()"
-  >
+  ></emoji-search>
+  <div #scrollRef class="emoji-mart-scroll" (scroll)="handleScroll()">
     <emoji-category
       *ngFor="let category of activeCategories; let idx = index; trackBy: categoryTrack"
       #categoryRef
@@ -42,7 +36,6 @@
       [hideObsolete]="hideObsolete"
       [custom]="category.id == RECENT_CATEGORY.id ? CUSTOM_CATEGORY.emojis : undefined"
       [recent]="category.id == RECENT_CATEGORY.id ? recent : undefined"
-
       [emojiNative]="native"
       [emojiSkin]="skin"
       [emojiSize]="emojiSize"
@@ -55,21 +48,21 @@
       (emojiLeave)="handleEmojiLeave($event)"
       (emojiClick)="handleEmojiClick($event)"
     ></emoji-category>
+  </div>
+  <div class="emoji-mart-bar" *ngIf="showPreview">
+    <emoji-preview
+      #previewRef
+      [title]="title"
+      [emoji]="previewEmoji"
+      [idleEmoji]="emoji"
 
-</div>
-<div class="emoji-mart-bar" *ngIf="showPreview">
-  <emoji-preview
-    #previewRef
-    [title]="title"
-    [emoji]="previewEmoji"
-    [idleEmoji]="emoji"
-
-    [emojiNative]="native"
-    [emojiSize]="38"
-    [emojiSkin]="skin"
-    [emojiSet]="set"
-    [emojiSheetSize]="sheetSize"
-    [emojiBackgroundImageFn]="backgroundImageFn"
-    (skinChange)="handleSkinChange($event)"
-  ></emoji-preview>
+      [emojiNative]="native"
+      [emojiSize]="38"
+      [emojiSkin]="skin"
+      [emojiSet]="set"
+      [emojiSheetSize]="sheetSize"
+      [emojiBackgroundImageFn]="backgroundImageFn"
+      (skinChange)="handleSkinChange($event)"
+    ></emoji-preview>
+  </div>
 </div>
