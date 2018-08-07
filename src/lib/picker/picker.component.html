@@ -8,6 +8,7 @@
       [color]="color"
       [selected]="selected"
       [i18n]="i18n"
+      [icons]="categoriesIcons"
     ></emoji-mart-anchors>
   </div>
   <emoji-search
@@ -19,6 +20,7 @@
     [exclude]="exclude"
     [custom]="custom"
     [autoFocus]="autoFocus"
+    [icons]="searchIcons"
     [emojisToShowFilter]="emojisToShowFilter"
   ></emoji-search>
   <div #scrollRef class="emoji-mart-scroll" (scroll)="handleScroll()">
@@ -33,6 +35,7 @@
       [hasStickyPosition]="native"
       [i18n]="i18n"
       [hideObsolete]="hideObsolete"
+      [notFoundEmoji]="notFoundEmoji"
       [custom]="category.id == RECENT_CATEGORY.id ? CUSTOM_CATEGORY.emojis : undefined"
       [recent]="category.id == RECENT_CATEGORY.id ? recent : undefined"
       [emojiNative]="native"

@@ -23,13 +23,23 @@ This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by
 - [Installation](#installation)
 - [Components](#components)
   - [Picker](#picker)
+    - [I18n](#i18n)
+    - [Sheet sizes](#sheet-sizes)
+    - [Examples of `emoji` object:](#examples-of-emoji-object)
   - [Emoji](#emoji)
+    - [Unsupported emojis fallback](#unsupported-emojis-fallback)
 - [Custom emojis](#custom-emojis)
 - [Headless search](#headless-search)
 - [Storage](#storage)
 - [Features](#features)
   - [Powerful search](#powerful-search)
+    - [Short name, name and keywords](#short-name-name-and-keywords)
+    - [Emoticons](#emoticons)
   - [Fully customizable](#fully-customizable)
+    - [Anchors color, title and default emoji](#anchors-color-title-and-default-emoji)
+    - [Emojis sizes and length](#emojis-sizes-and-length)
+    - [Default skin color](#default-skin-color)
+    - [Multiple sets supported](#multiple-sets-supported)
 
 ## Installation
 
@@ -89,6 +99,9 @@ use component
 | **style**              |                           | Inline styles applied to the root element. Useful for positioning                                                                                                     |
 | **title**              | `Emoji Mart™`             | The title shown when no emojis are hovered                                                                                                                            |
 | **hideObsolete**       | `true`                    | Hides ex: "cop" emoji in favor of female and male emoji                                                                                                               |
+| **notFoundEmoji**      | `sleuth_or_spy`           | The emoji shown when there are no search results                                                                                                                      |
+| **categoriesIcons**    | `see svgs/index.ts`       | the anchor icons                                                                                                                                                      |
+| **searchIcons**        | `see svgs/index.ts`       | the search/close icon in the search bar                                                                                                                               |
 
 #### I18n
 

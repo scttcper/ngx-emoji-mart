@@ -23,6 +23,7 @@ import { CategoryComponent } from './category.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 import { PreviewComponent } from './preview.component';
 import { SearchComponent } from './search.component';
+import * as icons from './svgs';
 import { measureScrollbar } from './utils';
 
 
@@ -76,6 +77,9 @@ export class PickerComponent implements OnInit {
   @Input() hideRecent = true;
   @Input() include?: string[];
   @Input() exclude?: string[];
+  @Input() notFoundEmoji = 'sleuth_or_spy';
+  @Input() categoriesIcons = icons.categories;
+  @Input() searchIcons = icons.search;
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
   @ViewChild('scrollRef') private scrollRef!: ElementRef;
@@ -194,6 +198,9 @@ export class PickerComponent implements OnInit {
       } else {
         this.categories.push(category);
       }
+
+      this.categoriesIcons = { ...icons.categories, ...this.categoriesIcons };
+      this.searchIcons = { ...icons.search, ...this.searchIcons };
     }
 
     const includeRecent =
@@ -282,7 +289,7 @@ export class PickerComponent implements OnInit {
         // scrolling
         for (const category of this.categories) {
           const component = this.categoryRefs.find(n => n.id === category.id);
-          const active = component.handleScroll(target.scrollTop);
+          const active = component!.handleScroll(target.scrollTop);
           if (active) {
             activeCategory = category;
           }

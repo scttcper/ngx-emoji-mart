@@ -4,12 +4,12 @@ import {
   ElementRef,
   EventEmitter,
   Input,
+  OnInit,
   Output,
   ViewChild,
 } from '@angular/core';
-import { EmojiSearch } from './emoji-search.service';
 
-import { search as icons } from './svgs';
+import { EmojiSearch } from './emoji-search.service';
 
 @Component({
   selector: 'emoji-search',
@@ -31,23 +31,27 @@ import { search as icons } from './svgs';
   `,
   preserveWhitespaces: false,
 })
-export class SearchComponent implements AfterViewInit {
+export class SearchComponent implements AfterViewInit, OnInit {
   @Input() maxResults = 75;
   @Input() autoFocus = false;
   @Input() i18n: any;
   @Input() include: string[] = [];
   @Input() exclude: string[] = [];
   @Input() custom: any[] = [];
+  @Input() icons?: { [key: string]: string };
   @Input() emojisToShowFilter?: (x: any) => boolean;
   @Output() search = new EventEmitter<any>();
   @Output() enterKey = new EventEmitter<any>();
   @ViewChild('inputRef') private inputRef!: ElementRef;
   isSearching = false;
-  icon = icons.search;
+  icon?: string;
   query = '';
 
   constructor(private emojiSearch: EmojiSearch) {}
 
+  ngOnInit() {
+    this.icon = this.icons!.search;
+  }
   ngAfterViewInit() {
     if (this.autoFocus) {
       this.inputRef.nativeElement.focus();
@@ -63,10 +67,10 @@ export class SearchComponent implements AfterViewInit {
   }
   handleSearch(value: string) {
     if (value === '') {
-      this.icon = icons.search;
+      this.icon = this.icons!.search;
       this.isSearching = false;
     } else {
-      this.icon = icons.delete;
+      this.icon = this.icons!.delete;
       this.isSearching = true;
     }
     this.search.emit(

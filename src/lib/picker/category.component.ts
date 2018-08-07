@@ -49,7 +49,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
     <div *ngIf="emojis && !emojis.length">
       <div>
         <ngx-emoji
-          emoji="sleuth_or_spy"
+          [emoji]="notFoundEmoji"
           size="38"
           [skin]="emojiSkin"
           [native]="emojiNative"
@@ -82,6 +82,7 @@ export class CategoryComponent implements OnInit {
   @Input() i18n: any;
   @Input() id: any;
   @Input() hideObsolete = true;
+  @Input() notFoundEmoji?: string;
   @Input() emojiNative?: Emoji['native'];
   @Input() emojiSkin?: Emoji['skin'];
   @Input() emojiSize?: Emoji['size'];
