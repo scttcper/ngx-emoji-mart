@@ -210,7 +210,7 @@ import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji'
 | **(emojiClick)**                             |          |                                                                                                      | Params: `{ emoji, $event }`                                                                                        |
 | **(emojiLeave)**                             |          |                                                                                                      | Params: `{ emoji, $event }`                                                                                        |
 | **(emojiOver)**                              |          |                                                                                                      | Params: `{ emoji, $event }`                                                                                        |
-| [**fallback**](#unsupported-emojis-fallback) |          |                                                                                                      | Params: `(emoji) => {}`                                                                                            |
+| [**fallback**](#unsupported-emojis-fallback) |          |                                                                                                      | Params: `(emoji, props) => {}`                                                                                            |
 | **set**                                      |          | `apple`                                                                                              | The emoji set: `'apple', 'google', 'twitter', 'emojione'`                                                          |
 | **sheetSize**                                |          | `64`                                                                                                 | The emoji [sheet size](#sheet-sizes): `16, 20, 32, 64`                                                             |
 | **backgroundImageFn**                        |          | `` ((set, sheetSize) => `https://unpkg.com/emoji-datasource@3.0.0/sheet_${set}_${sheetSize}.png`) `` | A Fn that returns that image sheet to use for emojis. Useful for avoiding a request if you have the sheet locally. |
@@ -224,7 +224,7 @@ Certain sets don’t support all emojis (i.e. Messenger & Facebook don’t suppo
 
 To have the component render `:shrug:` you would need to:
 ```ts
-emojiFallback = (emoji: any) => `:${emoji.short_names[0]}:`
+emojiFallback = (emoji: any, props: any) => emoji ? `:${emoji.short_names[0]}:` : props.emoji
 ```
 ```html
 <ngx-emoji

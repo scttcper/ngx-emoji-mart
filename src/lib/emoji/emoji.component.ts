@@ -20,7 +20,7 @@ export interface Emoji {
   size: number;
   emoji: string | EmojiData;
   backgroundImageFn: (set: string, sheetSize: Emoji['sheetSize']) => string;
-  fallback?: (data: any) => string;
+  fallback?: (data: any, props: any) => string;
   emojiOver: EventEmitter<EmojiEvent>;
   emojiLeave: EventEmitter<EmojiEvent>;
   emojiClick: EventEmitter<EmojiEvent>;
@@ -129,7 +129,7 @@ export class EmojiComponent implements OnChanges, Emoji {
       if (!setHasEmoji) {
         if (this.fallback) {
           this.style = { fontSize: `${this.size}px` };
-          this.unified = this.fallback(data);
+          this.unified = this.fallback(data, this);
         } else {
           return this.isVisible = false;
         }
