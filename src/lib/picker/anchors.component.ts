@@ -26,10 +26,7 @@ import { EmojiCategory } from '@ctrl/ngx-emoji-mart/ngx-emoji';
             <path [attr.d]="icons[category.id]" />
           </svg>
         </div>
-        <span
-          class="emoji-mart-anchor-bar"
-          [style.background-color]="color"
-        ></span>
+        <span class="emoji-mart-anchor-bar" [style.background-color]="color"></span>
       </span>
     </ng-template>
   </div>
@@ -42,7 +39,7 @@ export class AnchorsComponent {
   @Input() color?: string;
   @Input() selected?: string;
   @Input() i18n: any;
-  @Input() icons?: { [key: string]: string };
+  @Input() icons: { [key: string]: string } = {};
   @Output() anchorClick = new EventEmitter<{ category: EmojiCategory, index: number }>();
 
   trackByFn(idx: number, cat: EmojiCategory) {
