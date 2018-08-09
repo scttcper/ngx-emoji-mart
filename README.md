@@ -22,24 +22,10 @@ This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by
 
 - [Installation](#installation)
 - [Components](#components)
-  - [Picker](#picker)
-    - [I18n](#i18n)
-    - [Sheet sizes](#sheet-sizes)
-    - [Examples of `emoji` object:](#examples-of-emoji-object)
-  - [Emoji](#emoji)
-    - [Unsupported emojis fallback](#unsupported-emojis-fallback)
 - [Custom emojis](#custom-emojis)
 - [Headless search](#headless-search)
 - [Storage](#storage)
 - [Features](#features)
-  - [Powerful search](#powerful-search)
-    - [Short name, name and keywords](#short-name-name-and-keywords)
-    - [Emoticons](#emoticons)
-  - [Fully customizable](#fully-customizable)
-    - [Anchors color, title and default emoji](#anchors-color-title-and-default-emoji)
-    - [Emojis sizes and length](#emojis-sizes-and-length)
-    - [Default skin color](#default-skin-color)
-    - [Multiple sets supported](#multiple-sets-supported)
 
 ## Installation
 
@@ -205,21 +191,21 @@ import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji'
 <ngx-emoji emoji='santa' set='emojione' size="16"></ngx-emoji>
 ```
 
-| Prop                                         | Required | Default                                                                                              | Description                                                                                                        |
-| -------------------------------------------- | :------: | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **emoji**                                    | ✓        |                                                                                                      | Either a string or an `emoji` object                                                                               |
-| **size**                                     | ✓        |                                                                                                      | The emoji width and height.                                                                                        |
-| **native**                                   |          | `false`                                                                                              | Renders the native unicode emoji                                                                                   |
-| **(emojiClick)**                             |          |                                                                                                      | Params: `{ emoji, $event }`                                                                                        |
-| **(emojiLeave)**                             |          |                                                                                                      | Params: `{ emoji, $event }`                                                                                        |
-| **(emojiOver)**                              |          |                                                                                                      | Params: `{ emoji, $event }`                                                                                        |
-| [**fallback**](#unsupported-emojis-fallback) |          |                                                                                                      | Params: `(emoji, props) => {}`                                                                                     |
-| **set**                                      |          | `apple`                                                                                              | The emoji set: `'apple', 'google', 'twitter', 'emojione'`                                                          |
-| **sheetSize**                                |          | `64`                                                                                                 | The emoji [sheet size](#sheet-sizes): `16, 20, 32, 64`                                                             |
-| **backgroundImageFn**                        |          | `` ((set, sheetSize) => `https://unpkg.com/emoji-datasource@3.0.0/sheet_${set}_${sheetSize}.png`) `` | A Fn that returns that image sheet to use for emojis. Useful for avoiding a request if you have the sheet locally. |
-| **skin**                                     |          | `1`                                                                                                  | Skin color: `1, 2, 3, 4, 5, 6`                                                                                     |
-| **tooltip**                                  |          | `false`                                                                                              | Show emoji short name when hovering (title)                                                                        |  |
-| **hideObsolete**                             |          | `false`                                                                                              | Hides ex: "cop" emoji in favor of female and male emoji                                                            |  |
+| Prop                                         | Required | Default                   | Description                                                                                                      |
+| -------------------------------------------- | :------: | ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **emoji**                                    | ✓        |                           | Either a string or an `emoji` object                                                                             |
+| **size**                                     | ✓        |                           | The emoji width and height.                                                                                      |
+| **native**                                   |          | `false`                   | Renders the native unicode emoji                                                                                 |
+| **(emojiClick)**                             |          |                           | Params: `{ emoji, $event }`                                                                                      |
+| **(emojiLeave)**                             |          |                           | Params: `{ emoji, $event }`                                                                                      |
+| **(emojiOver)**                              |          |                           | Params: `{ emoji, $event }`                                                                                      |
+| [**fallback**](#unsupported-emojis-fallback) |          |                           | Params: `(emoji, props) => {}`                                                                                   |
+| **set**                                      |          | `apple`                   | The emoji set: `'apple', 'google', 'twitter', 'emojione'`                                                        |
+| **sheetSize**                                |          | `64`                      | The emoji [sheet size](#sheet-sizes): `16, 20, 32, 64`                                                           |
+| **backgroundImageFn**                        |          | `((set, sheetSize) => …)` | Fn that returns that image sheet to use for emojis. Useful for avoiding a request if you have the sheet locally. |
+| **skin**                                     |          | `1`                       | Skin color: `1, 2, 3, 4, 5, 6`                                                                                   |
+| **tooltip**                                  |          | `false`                   | Show emoji short name when hovering (title)                                                                      |  |
+| **hideObsolete**                             |          | `false`                   | Hides ex: "cop" emoji in favor of female and male emoji                                                          |  |
 
 #### Unsupported emojis fallback
 
