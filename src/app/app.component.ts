@@ -3,19 +3,19 @@ import { Component } from '@angular/core';
 const CUSTOM_EMOJIS = [
   {
     name: 'Party Parrot',
-    short_names: ['parrot'],
+    shortNames: ['parrot'],
     keywords: ['party'],
     imageUrl: './assets/images/parrot.gif',
   },
   {
     name: 'Octocat',
-    short_names: ['octocat'],
+    shortNames: ['octocat'],
     keywords: ['github'],
     imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7',
   },
   {
     name: 'Squirrel',
-    short_names: ['shipit', 'squirrel'],
+    shortNames: ['shipit', 'squirrel'],
     keywords: ['github'],
     imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/shipit.png?v7',
   },

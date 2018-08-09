@@ -21,8 +21,8 @@ export class EmojiSearch {
 
   constructor(private emojiService: EmojiService) {
     for (const emojiData of this.emojiService.emojis) {
-      const { short_names, emoticons } = emojiData;
-      const id = short_names[0];
+      const { shortNames, emoticons } = emojiData;
+      const id = shortNames[0];
 
       emoticons.forEach(emoticon => {
         if (this.emoticonsList[emoticon]) {
@@ -39,7 +39,7 @@ export class EmojiSearch {
 
   addCustomToPool(custom: any, pool: any) {
     custom.forEach((emoji: any) => {
-      const emojiId = emoji.id || emoji.short_names[0];
+      const emojiId = emoji.id || emoji.shortNames[0];
 
       if (emojiId && !pool[emojiId]) {
         pool[emojiId] = this.emojiService.getData(emoji);

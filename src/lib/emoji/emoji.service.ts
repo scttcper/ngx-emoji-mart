@@ -27,15 +27,15 @@ export class EmojiService {
   uncompress(list: CompressedEmojiData[]) {
     this.emojis = list.map(emoji => {
       const data: any = { ...emoji };
-      if (!data.short_names) {
-        data.short_names = [];
+      if (!data.shortNames) {
+        data.shortNames = [];
       }
-      data.short_names.unshift(data.short_name);
+      data.shortNames.unshift(data.short_name);
       data.id = data.short_name;
       data.native = this.unifiedToNative(data.unified);
 
-      if (!data.skin_variations) {
-        data.skin_variations = [];
+      if (!data.skinVariations) {
+        data.skinVariations = [];
       }
 
       if (!data.keywords) {
@@ -59,15 +59,15 @@ export class EmojiService {
         const f = list.find(x => x.unified === data.obsoletes);
         if (f) {
           if (f.keywords) {
-            data.keywords = [...data.keywords, ...f.keywords, f.short_name];
+            data.keywords = [...data.keywords, ...f.keywords, f.shortName];
           } else {
-            data.keywords = [...data.keywords, f.short_name];
+            data.keywords = [...data.keywords, f.shortName];
           }
         }
       }
 
       this.names[data.unified] = data;
-      for (const n of data.short_names) {
+      for (const n of data.shortNames) {
         this.names[n] = data;
       }
       return data;
@@ -105,21 +105,21 @@ export class EmojiService {
       emojiData.custom = true;
     }
 
-    const hasSkinVariations = emojiData.skin_variations && emojiData.skin_variations.length;
+    const hasSkinVariations = emojiData.skinVariations && emojiData.skinVariations.length;
     if (hasSkinVariations && skin && skin > 1 && set) {
       emojiData = { ...emojiData };
 
       const skinKey = SKINS[skin - 1];
-      const variationData = emojiData.skin_variations.find(
+      const variationData = emojiData.skinVariations.find(
         (n: EmojiVariation) => n.unified.includes(skinKey),
-      ) as any;
+      );
 
       if (!variationData.variations && emojiData.variations) {
         delete emojiData.variations;
       }
 
       if (!variationData.hidden || !variationData.hidden.includes(set)) {
-        emojiData.skin_tone = skin;
+        emojiData.skinTone = skin;
         emojiData = { ...emojiData, ...variationData };
       }
       emojiData.native = this.unifiedToNative(emojiData.unified);
@@ -144,10 +144,10 @@ export class EmojiService {
     if (emoji === null) {
       return null;
     }
-    const id = emoji.id || emoji.short_names[0];
+    const id = emoji.id || emoji.shortNames[0];
     let colons = `:${id}:`;
-    if (emoji.skin_tone) {
-      colons += `:skin-tone-${emoji.skin_tone}:`;
+    if (emoji.skinTone) {
+      colons += `:skin-tone-${emoji.skinTone}:`;
     }
     emoji.colons = colons;
     return { ...emoji };

@@ -11,7 +11,8 @@ import { EmojiData } from './data/data.interfaces';
 import { EmojiService } from './emoji.service';
 
 export interface Emoji {
-  native: boolean;
+  /** Renders the native unicode emoji */
+  isNative: boolean;
   forceSize: boolean;
   tooltip: boolean;
   skin: 1 | 2 | 3 | 4 | 5 | 6;
@@ -40,10 +41,10 @@ export interface EmojiEvent {
     (mouseleave)="handleLeave($event)"
     [title]="title"
     class="emoji-mart-emoji"
-    [class.emoji-mart-emoji-native]="native"
+    [class.emoji-mart-emoji-native]="isNative"
     [class.emoji-mart-emoji-custom]="custom">
     <span [ngStyle]="style">
-      <ng-template [ngIf]="native === true">{{ unified }}</ng-template>
+      <ng-template [ngIf]="isNative">{{ unified }}</ng-template>
       <ng-content></ng-content>
     </span>
   </span>
@@ -55,7 +56,8 @@ export class EmojiComponent implements OnChanges, Emoji {
   @Input() skin: Emoji['skin'] = 1;
   @Input() set: Emoji['set'] = 'apple';
   @Input() sheetSize: Emoji['sheetSize'] = 64;
-  @Input() native: Emoji['native'] = false;
+  /** Renders the native unicode emoji */
+  @Input() isNative: Emoji['isNative'] = false;
   @Input() forceSize: Emoji['forceSize'] = false;
   @Input() tooltip: Emoji['tooltip'] = false;
   @Input() size: Emoji['size'] = 24;
@@ -97,13 +99,13 @@ export class EmojiComponent implements OnChanges, Emoji {
       return this.isVisible = false;
     }
     if (this.tooltip) {
-      this.title = data.short_names[0];
+      this.title = data.shortNames[0];
     }
-    if (data.obsoleted_by && this.hideObsolete) {
+    if (data.obsoletedBy && this.hideObsolete) {
       return this.isVisible = false;
     }
 
-    if (this.native && data.unified && data.native) {
+    if (this.isNative && data.unified && data.native) {
       // hide older emoji before the split into gendered emoji
       this.style = { fontSize: `${this.size}px` };
 

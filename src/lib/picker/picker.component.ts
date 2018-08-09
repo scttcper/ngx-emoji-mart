@@ -67,7 +67,8 @@ export class PickerComponent implements OnInit {
   @Input() activeCategories: EmojiCategory[] = [];
   @Input() set: Emoji['set'] = 'apple';
   @Input() skin: Emoji['skin'] = 1;
-  @Input() native: Emoji['native'] = false;
+  /** Renders the native unicode emoji */
+  @Input() isNative: Emoji['isNative'] = false;
   @Input() emojiSize: Emoji['size'] = 24;
   @Input() sheetSize: Emoji['sheetSize'] = 64;
   @Input() emojisToShowFilter?: (x: string) => boolean;

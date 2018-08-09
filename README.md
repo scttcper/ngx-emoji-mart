@@ -79,7 +79,7 @@ use component
 | **perLine**            | `9`                       | Number of emojis per line. While there’s no minimum or maximum, this will affect the picker’s width. This will set _Frequently Used_ length as well (`perLine * totalFrequentLines (4)`) |
 | **totalFrequentLines** | `4`                       | number of lines of frequently used emojis                                                                                                                                                  |
 | **i18n**               | [`{…}`](#i18n)            | [An object](#i18n) containing localized strings                                                                                                                                            |
-| **native**             | `false`                   | Renders the native unicode emoji                                                                                                                                                           |
+| **isNative**             | `false`                   | Renders the native unicode emoji                                                                                                                                                           |
 | **set**                | `apple`                   | The emoji set: `'apple', 'google', 'twitter', 'emojione', 'messenger', 'facebook'`                                                                                                         |
 | **sheetSize**          | `64`                      | The emoji [sheet size](#sheet-sizes): `16, 20, 32, 64`                                                                                                                                     |
 | **backgroundImageFn**  | `((set, sheetSize) => …)` | A Fn that returns that image sheet to use for emojis. Useful for avoiding a request if you have the sheet locally.                                                                         |
@@ -215,7 +215,7 @@ Certain sets don’t support all emojis (i.e. Messenger & Facebook don’t suppo
 
 To have the component render `:shrug:` you would need to:
 ```ts
-emojiFallback = (emoji: any, props: any) => emoji ? `:${emoji.short_names[0]}:` : props.emoji
+emojiFallback = (emoji: any, props: any) => emoji ? `:${emoji.shortNames[0]}:` : props.emoji
 ```
 ```html
 <ngx-emoji
