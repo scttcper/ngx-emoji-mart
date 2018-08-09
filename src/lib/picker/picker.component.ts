@@ -337,7 +337,7 @@ export class PickerComponent implements OnInit {
 
     const component = this.categoryRefs.toArray()[1];
     if (component) {
-      component.emojis = this.frequently.get(this.perLine, this.totalLines);
+      component.emojis = this.frequently.get(this.perLine, this.totalFrequentLines);
       component.ref.markForCheck();
 
       // TODO: decide if this is needed
