@@ -22,6 +22,8 @@ This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by
 
 - [Installation](#installation)
 - [Components](#components)
+  - [Picker](#picker)
+  - [Emoji](#emoji)
 - [Custom emojis](#custom-emojis)
 - [Headless search](#headless-search)
 - [Storage](#storage)
