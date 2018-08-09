@@ -54,6 +54,7 @@ const I18N: any = {
 })
 export class PickerComponent implements OnInit {
   @Input() perLine = 9;
+  @Input() totalFrequentLines = 4;
   @Input() i18n: any = {};
   @Input() style: any = {};
   @Input() title = 'Emoji Mart™';
@@ -336,19 +337,15 @@ export class PickerComponent implements OnInit {
 
     const component = this.categoryRefs.toArray()[1];
     if (component) {
-      const maxMargin = component.maxMargin;
-      component.emojis = this.frequently.get(maxMargin);
+      component.emojis = this.frequently.get(this.perLine, this.totalLines);
       component.ref.markForCheck();
 
-      window.requestAnimationFrame(() => {
+      // TODO: decide if this is needed
+      setTimeout(() => {
         if (!this.scrollRef) {
           return;
         }
         component.memoizeSize();
-        if (maxMargin === component.maxMargin) {
-          return;
-        }
-
         this.updateCategoriesSize();
         this.handleScroll();
 

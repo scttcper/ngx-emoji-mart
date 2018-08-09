@@ -77,6 +77,7 @@ export class CategoryComponent implements OnInit {
   @Input() name = '';
   @Input() native = true;
   @Input() perLine = 9;
+  @Input() totalFrequentLines = 4;
   @Input() recent: string[] = [];
   @Input() custom: any[] = [];
   @Input() i18n: any;
@@ -158,9 +159,9 @@ export class CategoryComponent implements OnInit {
 
   getEmojis() {
     if (this.name === 'Recent') {
-      let frequentlyUsed = this.recent || this.frequently.get(this.perLine);
+      let frequentlyUsed = this.recent || this.frequently.get(this.perLine, this.totalFrequentLines);
       if (!frequentlyUsed || !frequentlyUsed.length) {
-        frequentlyUsed = this.frequently.get(this.perLine);
+        frequentlyUsed = this.frequently.get(this.perLine, this.totalFrequentLines);
       }
       if (frequentlyUsed.length) {
         this.emojis = frequentlyUsed
