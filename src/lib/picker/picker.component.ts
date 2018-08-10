@@ -76,6 +76,7 @@ export class PickerComponent implements OnInit {
   @Input() autoFocus = false;
   @Input() custom: any[] = [];
   @Input() hideRecent = true;
+  @Input() refreshRecentOnLoad = true;
   @Input() include?: string[];
   @Input() exclude?: string[];
   @Input() notFoundEmoji = 'sleuth_or_spy';
@@ -337,7 +338,9 @@ export class PickerComponent implements OnInit {
 
     const component = this.categoryRefs.toArray()[1];
     if (component) {
-      component.emojis = this.frequently.get(this.perLine, this.totalFrequentLines);
+      if (this.refreshRecentOnLoad){
+        component.emojis = this.frequently.get(this.perLine, this.totalFrequentLines);
+      }
       component.ref.markForCheck();
 
       // TODO: decide if this is needed
