@@ -371,7 +371,7 @@ export class PickerComponent implements OnInit {
     this.previewEmoji = $event.emoji;
     clearTimeout(this.leaveTimeout);
   }
-  handleEmojiLeave($event: EmojiEvent) {
+  handleEmojiLeave() {
     if (!this.showPreview || !this.previewRef) {
       return;
     }
