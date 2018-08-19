@@ -7,7 +7,7 @@ import {
 } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { intersect } from './utils';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class EmojiSearch {
   originalPool: any = {};
   index: {
