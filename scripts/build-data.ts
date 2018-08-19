@@ -63,7 +63,6 @@ function setupSheet(datum: any) {
 
 emojiData.forEach((datum: any) => {
   const category = datum.category;
-  const keywords = [];
   let categoryIndex;
 
   if (!datum.category) {
