@@ -147,7 +147,7 @@ export class PickerComponent implements OnInit {
         return {
           ...emoji,
           // `<Category />` expects emoji to have an `id`.
-          id: emoji.short_names[0],
+          id: emoji.shortNames[0],
           custom: true,
         };
       });
@@ -333,27 +333,13 @@ export class PickerComponent implements OnInit {
     }
 
     if (!this.hideRecent && !this.recent) {
-      this.frequently.add((<EmojiData>emoji));
+      this.frequently.add(emoji);
     }
 
     const component = this.categoryRefs.toArray()[1];
     if (component) {
-      component.emojis = this.frequently.get(this.perLine, this.totalFrequentLines);
+      component.getEmojis();
       component.ref.markForCheck();
-
-      // TODO: decide if this is needed
-      setTimeout(() => {
-        if (!this.scrollRef) {
-          return;
-        }
-        component.memoizeSize();
-        this.updateCategoriesSize();
-        this.handleScroll();
-
-        if (this.SEARCH_CATEGORY.emojis) {
-          component.updateDisplay('none');
-        }
-      });
     }
   }
   handleEmojiOver($event: EmojiEvent) {

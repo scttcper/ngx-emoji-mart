@@ -30,8 +30,8 @@ export class EmojiService {
       if (!data.shortNames) {
         data.shortNames = [];
       }
-      data.shortNames.unshift(data.short_name);
-      data.id = data.short_name;
+      data.shortNames.unshift(data.shortName);
+      data.id = data.shortName;
       data.native = this.unifiedToNative(data.unified);
 
       if (!data.skinVariations) {
