@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EmojiEvent } from '../lib/emoji/public_api';
 
 const CUSTOM_EMOJIS = [
   {
@@ -44,7 +45,7 @@ export class AppComponent {
     this.native = set === 'native';
     this.set = set;
   }
-  handleClick($event: any) {
-    console.log($event);
+  handleClick($event: EmojiEvent) {
+    console.log($event.emoji);
   }
 }
