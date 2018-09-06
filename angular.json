@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/lib/picker/picker.css"
             ],
             "scripts": []
           },
@@ -72,7 +73,8 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/lib/picker/picker.css"
             ],
             "scripts": [],
             "assets": [
