@@ -1,19 +1,9 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/preview.png" width="225" alt="ngx-emoji-mart preview">
-  <br>
-  <h1>ngx-emoji-mart</h1>
-  <br>
-  <a href="https://www.npmjs.org/package/@ctrl/ngx-emoji-mart">
-    <img src="https://badge.fury.io/js/%40ctrl%2Fngx-emoji-mart.svg" alt="npm">
-  </a> 
-  <a href="https://travis-ci.org/TypeCtrl/ngx-emoji-mart">
-    <img src="https://travis-ci.org/TypeCtrl/ngx-emoji-mart.svg?branch=master" alt="travis"></a> 
-  <a href="https://codecov.io/github/typectrl/ngx-emoji-mart">
-    <img src="https://img.shields.io/codecov/c/github/typectrl/ngx-emoji-mart.svg" alt="codecov">
-  </a>
-  <br>
-  <br>
-</div>
+# ngx-emoji-mart
+[![npm](https://badge.fury.io/js/%40ctrl%2Fngx-emoji-mart.svg)](https://www.npmjs.org/package/@ctrl/ngx-emoji-mart)
+[![travis](https://travis-ci.org/TypeCtrl/ngx-emoji-mart.svg?branch=master)](https://travis-ci.org/TypeCtrl/ngx-emoji-mart)
+[![codecov](https://img.shields.io/codecov/c/github/typectrl/ngx-emoji-mart.svg)](https://codecov.io/github/typectrl/ngx-emoji-mart)
+
+<img src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/preview.png" width="225" alt="ngx-emoji-mart preview">
 
 
 __DEMO__: https://typectrl.github.io/ngx-emoji-mart/  
@@ -79,7 +69,7 @@ use component
 | **perLine**            | `9`                       | Number of emojis per line. While there’s no minimum or maximum, this will affect the picker’s width. This will set _Frequently Used_ length as well (`perLine * totalFrequentLines (4)`) |
 | **totalFrequentLines** | `4`                       | number of lines of frequently used emojis                                                                                                                                                  |
 | **i18n**               | [`{…}`](#i18n)            | [An object](#i18n) containing localized strings                                                                                                                                            |
-| **isNative**             | `false`                   | Renders the native unicode emoji                                                                                                                                                           |
+| **isNative**           | `false`                   | Renders the native unicode emoji                                                                                                                                                           |
 | **set**                | `apple`                   | The emoji set: `'apple', 'google', 'twitter', 'emojione', 'messenger', 'facebook'`                                                                                                         |
 | **sheetSize**          | `64`                      | The emoji [sheet size](#sheet-sizes): `16, 20, 32, 64`                                                                                                                                     |
 | **backgroundImageFn**  | `((set, sheetSize) => …)` | A Fn that returns that image sheet to use for emojis. Useful for avoiding a request if you have the sheet locally.                                                                         |
@@ -91,8 +81,8 @@ use component
 | **title**              | `Emoji Mart™`             | The title shown when no emojis are hovered                                                                                                                                                 |
 | **hideObsolete**       | `true`                    | Hides ex: "cop" emoji in favor of female and male emoji                                                                                                                                    |
 | **notFoundEmoji**      | `sleuth_or_spy`           | The emoji shown when there are no search results                                                                                                                                           |
-| **categoriesIcons**    | `see svgs/index.ts`       | the anchor icons                                                                                                                                                                           |
-| **searchIcons**        | `see svgs/index.ts`       | the search/close icon in the search bar                                                                                                                                                    |
+| **categoriesIcons**    | see `svgs/index.ts`       | the anchor icons                                                                                                                                                                           |
+| **searchIcons**        | see `svgs/index.ts`       | the search/close icon in the search bar                                                                                                                                                    |
 
 #### I18n
 
