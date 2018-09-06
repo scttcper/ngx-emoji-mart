@@ -152,7 +152,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   }
 
   getSanitizedData() {
-    return this.emojiService.getSanitizedData(this.emoji);
+    return this.emojiService.getSanitizedData(this.emoji, this.skin, this.set);
   }
 
   handleClick($event: Event) {
