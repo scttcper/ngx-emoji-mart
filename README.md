@@ -260,6 +260,15 @@ class ex {
 }
 ```
 
+## Display emoji as custom element
+
+```ts
+const styles = this.emoji.emojiSpriteStyles($event.emoji.sheet, 'twitter');
+const el = document.createElement('div');
+Object.assign(el.style, styles);
+document.body.appendChild(el);
+```
+
 ## Storage
 
 By default EmojiMart will store user chosen skin and frequently used emojis in `localStorage`.
