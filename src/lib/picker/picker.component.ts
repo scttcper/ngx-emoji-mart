@@ -333,7 +333,7 @@ export class PickerComponent implements OnInit {
     }
 
     if (!this.hideRecent && !this.recent) {
-      this.frequently.add(emoji);
+      this.frequently.add(emoji as EmojiData);
     }
 
     const component = this.categoryRefs.toArray()[1];
