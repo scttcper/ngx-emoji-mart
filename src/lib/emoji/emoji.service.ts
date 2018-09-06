@@ -109,8 +109,7 @@ export class EmojiService {
       emojiData.custom = true;
     }
 
-    const hasSkinVariations =
-      emojiData.skinVariations && emojiData.skinVariations.length;
+    const hasSkinVariations = emojiData.skinVariations && emojiData.skinVariations.length;
     if (hasSkinVariations && skin && skin > 1 && set) {
       emojiData = { ...emojiData };
 
@@ -119,10 +118,6 @@ export class EmojiService {
         n.unified.includes(skinKey),
       );
 
-      if (!variationData.variations && emojiData.variations) {
-        delete emojiData.variations;
-      }
-
       if (!variationData.hidden || !variationData.hidden.includes(set)) {
         emojiData.skinTone = skin;
         emojiData = { ...emojiData, ...variationData };
@@ -130,13 +125,7 @@ export class EmojiService {
       emojiData.native = this.unifiedToNative(emojiData.unified);
     }
 
-    if (emojiData.variations && emojiData.variations.length) {
-      emojiData = { ...emojiData };
-      emojiData.unified = emojiData.variations.shift() as string;
-    }
-
     emojiData.set = set || '';
-
     return emojiData as EmojiData;
   }
 
