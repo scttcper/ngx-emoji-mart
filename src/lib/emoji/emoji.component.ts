@@ -151,22 +151,22 @@ export class EmojiComponent implements OnChanges, Emoji {
     return this.emojiService.getData(this.emoji, this.skin, this.set);
   }
 
-  getSanitizedData() {
-    return this.emojiService.getSanitizedData(this.emoji, this.skin, this.set);
+  getSanitizedData(): EmojiData {
+    return this.emojiService.getSanitizedData(this.emoji, this.skin, this.set) as EmojiData;
   }
 
   handleClick($event: Event) {
-    const emoji = this.getSanitizedData()!;
+    const emoji = this.getSanitizedData();
     this.emojiClick.emit({ emoji, $event });
   }
 
   handleOver($event: Event) {
-    const emoji = this.getSanitizedData()!;
+    const emoji = this.getSanitizedData();
     this.emojiOver.emit({ emoji, $event });
   }
 
   handleLeave($event: Event) {
-    const emoji = this.getSanitizedData()!;
+    const emoji = this.getSanitizedData();
     this.emojiLeave.emit({ emoji, $event });
   }
 }
