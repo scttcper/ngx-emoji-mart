@@ -84,6 +84,7 @@ export class PickerComponent implements OnInit {
   @Input() searchIcons = icons.search;
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
+  @Output() skinChange = new EventEmitter<Emoji['skin']>();
   @ViewChild('scrollRef') private scrollRef!: ElementRef;
   @ViewChild('previewRef') private previewRef!: PreviewComponent;
   @ViewChild('searchRef') private searchRef!: SearchComponent;
@@ -375,5 +376,6 @@ export class PickerComponent implements OnInit {
   handleSkinChange(skin: Emoji['skin']) {
     this.skin = skin;
     localStorage.setItem(`${this.NAMESPACE}.skin`, String(skin));
+    this.skinChange.emit(skin);
   }
 }
