@@ -1,6 +1,6 @@
 import { async, inject, TestBed } from '@angular/core/testing';
 
-import { EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import { EmojiData } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { EmojiSearch } from './emoji-search.service';
 
 describe('EmojiSearch', () => {
