@@ -33,7 +33,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
         [emoji]="emoji"
         [size]="emojiSize"
         [skin]="emojiSkin"
-        [native]="emojiNative"
+        [isNative]="emojiIsNative"
         [set]="emojiSet"
         [sheetSize]="emojiSheetSize"
         [forceSize]="emojiForceSize"
@@ -52,7 +52,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
           [emoji]="notFoundEmoji"
           size="38"
           [skin]="emojiSkin"
-          [native]="emojiNative"
+          [isNative]="emojiIsNative"
           [set]="emojiSet"
           [sheetSize]="emojiSheetSize"
           [forceSize]="emojiForceSize"
@@ -75,7 +75,6 @@ export class CategoryComponent implements OnInit {
   @Input() emojis?: any[] | null;
   @Input() hasStickyPosition = true;
   @Input() name = '';
-  @Input() native = true;
   @Input() perLine = 9;
   @Input() totalFrequentLines = 4;
   @Input() recent: string[] = [];
@@ -84,7 +83,7 @@ export class CategoryComponent implements OnInit {
   @Input() id: any;
   @Input() hideObsolete = true;
   @Input() notFoundEmoji?: string;
-  @Input() emojiNative?: Emoji['native'];
+  @Input() emojiIsNative?: Emoji['isNative'];
   @Input() emojiSkin?: Emoji['skin'];
   @Input() emojiSize?: Emoji['size'];
   @Input() emojiSet?: Emoji['set'];

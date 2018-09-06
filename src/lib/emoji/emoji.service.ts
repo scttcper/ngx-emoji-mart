@@ -10,8 +10,12 @@ import { Emoji } from './emoji.component';
 
 const COLONS_REGEX = /^(?:\:([^\:]+)\:)(?:\:skin-tone-(\d)\:)?$/;
 const SKINS = ['1F3FA', '1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF'];
+export const DEFAULT_BACKGROUNDFN = (
+  set: string,
+  sheetSize: number,
+) => `https://unpkg.com/emoji-datasource-${set}@4.0.4/img/${set}/sheets-256/${sheetSize}.png`;
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class EmojiService {
   uncompressed = false;
   names: { [key: string]: EmojiData } = {};
@@ -27,15 +31,15 @@ export class EmojiService {
   uncompress(list: CompressedEmojiData[]) {
     this.emojis = list.map(emoji => {
       const data: any = { ...emoji };
-      if (!data.short_names) {
-        data.short_names = [];
+      if (!data.shortNames) {
+        data.shortNames = [];
       }
-      data.short_names.unshift(data.short_name);
-      data.id = data.short_name;
+      data.shortNames.unshift(data.shortName);
+      data.id = data.shortName;
       data.native = this.unifiedToNative(data.unified);
 
-      if (!data.skin_variations) {
-        data.skin_variations = [];
+      if (!data.skinVariations) {
+        data.skinVariations = [];
       }
 
       if (!data.keywords) {
@@ -59,15 +63,15 @@ export class EmojiService {
         const f = list.find(x => x.unified === data.obsoletes);
         if (f) {
           if (f.keywords) {
-            data.keywords = [...data.keywords, ...f.keywords, f.short_name];
+            data.keywords = [...data.keywords, ...f.keywords, f.shortName];
           } else {
-            data.keywords = [...data.keywords, f.short_name];
+            data.keywords = [...data.keywords, f.shortName];
           }
         }
       }
 
       this.names[data.unified] = data;
-      for (const n of data.short_names) {
+      for (const n of data.shortNames) {
         this.names[n] = data;
       }
       return data;
@@ -105,21 +109,22 @@ export class EmojiService {
       emojiData.custom = true;
     }
 
-    const hasSkinVariations = emojiData.skin_variations && emojiData.skin_variations.length;
+    const hasSkinVariations =
+      emojiData.skinVariations && emojiData.skinVariations.length;
     if (hasSkinVariations && skin && skin > 1 && set) {
       emojiData = { ...emojiData };
 
       const skinKey = SKINS[skin - 1];
-      const variationData = emojiData.skin_variations.find(
-        (n: EmojiVariation) => n.unified.includes(skinKey),
-      ) as any;
+      const variationData = emojiData.skinVariations.find((n: EmojiVariation) =>
+        n.unified.includes(skinKey),
+      );
 
       if (!variationData.variations && emojiData.variations) {
         delete emojiData.variations;
       }
 
       if (!variationData.hidden || !variationData.hidden.includes(set)) {
-        emojiData.skin_tone = skin;
+        emojiData.skinTone = skin;
         emojiData = { ...emojiData, ...variationData };
       }
       emojiData.native = this.unifiedToNative(emojiData.unified);
@@ -140,14 +145,38 @@ export class EmojiService {
     return String.fromCodePoint(...codePoints);
   }
 
+  emojiSpriteStyles(
+    sheet: EmojiData['sheet'],
+    set: Emoji['set'] = 'apple',
+    size: Emoji['size'] = 24,
+    sheetSize: Emoji['sheetSize'] = 64,
+    backgroundImageFn: Emoji['backgroundImageFn'] = DEFAULT_BACKGROUNDFN,
+    sheetColumns = 52,
+    ) {
+    return {
+      width: `${size}px`,
+      height: `${size}px`,
+      display: 'inline-block',
+      'background-image': `url(${backgroundImageFn(set, sheetSize)})`,
+      'background-size': `${100 * sheetColumns}%`,
+      'background-position': this.getSpritePosition(sheet, sheetColumns),
+    };
+  }
+
+  getSpritePosition(sheet: EmojiData['sheet'], sheetColumns: number) {
+    const [sheet_x, sheet_y] = sheet;
+    const multiply = 100 / (sheetColumns - 1);
+    return `${multiply * sheet_x}% ${multiply * sheet_y}%`;
+  }
+
   sanitize(emoji: EmojiData | null): EmojiData | null {
     if (emoji === null) {
       return null;
     }
-    const id = emoji.id || emoji.short_names[0];
+    const id = emoji.id || emoji.shortNames[0];
     let colons = `:${id}:`;
-    if (emoji.skin_tone) {
-      colons += `:skin-tone-${emoji.skin_tone}:`;
+    if (emoji.skinTone) {
+      colons += `:skin-tone-${emoji.skinTone}:`;
     }
     emoji.colons = colons;
     return { ...emoji };

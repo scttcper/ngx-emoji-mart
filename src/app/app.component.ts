@@ -1,21 +1,22 @@
 import { Component } from '@angular/core';
+import { EmojiEvent } from '../lib/emoji/public_api';
 
 const CUSTOM_EMOJIS = [
   {
     name: 'Party Parrot',
-    short_names: ['parrot'],
+    shortNames: ['parrot'],
     keywords: ['party'],
     imageUrl: './assets/images/parrot.gif',
   },
   {
     name: 'Octocat',
-    short_names: ['octocat'],
+    shortNames: ['octocat'],
     keywords: ['github'],
     imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7',
   },
   {
     name: 'Squirrel',
-    short_names: ['shipit', 'squirrel'],
+    shortNames: ['shipit', 'squirrel'],
     keywords: ['github'],
     imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/shipit.png?v7',
   },
@@ -44,7 +45,7 @@ export class AppComponent {
     this.native = set === 'native';
     this.set = set;
   }
-  handleClick($event: any) {
-    console.log($event);
+  handleClick($event: EmojiEvent) {
+    console.log($event.emoji);
   }
 }

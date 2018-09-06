@@ -67,7 +67,8 @@ export class PickerComponent implements OnInit {
   @Input() activeCategories: EmojiCategory[] = [];
   @Input() set: Emoji['set'] = 'apple';
   @Input() skin: Emoji['skin'] = 1;
-  @Input() native: Emoji['native'] = false;
+  /** Renders the native unicode emoji */
+  @Input() isNative: Emoji['isNative'] = false;
   @Input() emojiSize: Emoji['size'] = 24;
   @Input() sheetSize: Emoji['sheetSize'] = 64;
   @Input() emojisToShowFilter?: (x: string) => boolean;
@@ -146,7 +147,7 @@ export class PickerComponent implements OnInit {
         return {
           ...emoji,
           // `<Category />` expects emoji to have an `id`.
-          id: emoji.short_names[0],
+          id: emoji.shortNames[0],
           custom: true,
         };
       });
@@ -332,27 +333,13 @@ export class PickerComponent implements OnInit {
     }
 
     if (!this.hideRecent && !this.recent) {
-      this.frequently.add((<EmojiData>emoji));
+      this.frequently.add(emoji);
     }
 
     const component = this.categoryRefs.toArray()[1];
     if (component) {
-      component.emojis = this.frequently.get(this.perLine, this.totalFrequentLines);
+      component.getEmojis();
       component.ref.markForCheck();
-
-      // TODO: decide if this is needed
-      setTimeout(() => {
-        if (!this.scrollRef) {
-          return;
-        }
-        component.memoizeSize();
-        this.updateCategoriesSize();
-        this.handleScroll();
-
-        if (this.SEARCH_CATEGORY.emojis) {
-          component.updateDisplay('none');
-        }
-      });
     }
   }
   handleEmojiOver($event: EmojiEvent) {
@@ -370,7 +357,7 @@ export class PickerComponent implements OnInit {
     this.previewEmoji = $event.emoji;
     clearTimeout(this.leaveTimeout);
   }
-  handleEmojiLeave($event: EmojiEvent) {
+  handleEmojiLeave() {
     if (!this.showPreview || !this.previewRef) {
       return;
     }

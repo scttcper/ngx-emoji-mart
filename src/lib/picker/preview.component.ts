@@ -15,20 +15,22 @@ import { Emoji, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
   template: `
   <div class="emoji-mart-preview" *ngIf="emoji && emojiData">
     <div class="emoji-mart-preview-emoji">
-      <ngx-emoji [emoji]="emoji" [size]="38"
-        [native]="emojiNative"
+      <ngx-emoji
+        [emoji]="emoji"
+        [size]="38"
+        [isNative]="emojiIsNative"
         [skin]="emojiSkin"
         [size]="emojiSize"
         [set]="emojiSet"
         [sheetSize]="emojiSheetSize"
-        [backgroundImageFn]="emojiBackgroundImageFn">
-      </ngx-emoji>
+        [backgroundImageFn]="emojiBackgroundImageFn"
+      ></ngx-emoji>
     </div>
 
     <div class="emoji-mart-preview-data">
       <div class="emoji-mart-preview-name">{{ emojiData.name }}</div>
       <div class="emoji-mart-preview-shortnames">
-        <span class="emoji-mart-preview-shortname" *ngFor="let short_name of emojiData.short_names">
+        <span class="emoji-mart-preview-shortname" *ngFor="let short_name of emojiData.shortNames">
           :{{ short_name }}:
         </span>
       </div>
@@ -43,13 +45,13 @@ import { Emoji, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
   <div class="emoji-mart-preview" *ngIf="!emoji">
     <div class="emoji-mart-preview-emoji">
       <ngx-emoji *ngIf="idleEmoji && idleEmoji.length"
-        [native]="emojiNative"
+        [isNative]="emojiIsNative"
         [skin]="emojiSkin"
         [set]="emojiSet"
         [emoji]="idleEmoji"
         [backgroundImageFn]="emojiBackgroundImageFn"
-        [size]="38">
-      </ngx-emoji>
+        [size]="38"
+      ></ngx-emoji>
     </div>
 
     <div class="emoji-mart-preview-data">
@@ -69,7 +71,7 @@ export class PreviewComponent implements OnChanges {
   @Input() title?: string;
   @Input() emoji: any;
   @Input() idleEmoji: any;
-  @Input() emojiNative?: Emoji['native'];
+  @Input() emojiIsNative?: Emoji['isNative'];
   @Input() emojiSkin?: Emoji['skin'];
   @Input() emojiSize?: Emoji['size'];
   @Input() emojiSet?: Emoji['set'];
@@ -88,7 +90,7 @@ export class PreviewComponent implements OnChanges {
     if (!this.emoji) {
       return;
     }
-    this.emojiData = this.emojiService.getData(this.emoji, this.emojiSkin, this.emojiSet)!;
+    this.emojiData = this.emojiService.getData(this.emoji, this.emojiSkin, this.emojiSet) as EmojiData;
     const knownEmoticons: string[] = [];
     const listedEmoticons: string[] = [];
     const emoitcons = this.emojiData.emoticons || [];
@@ -96,7 +98,6 @@ export class PreviewComponent implements OnChanges {
       if (knownEmoticons.indexOf(emoticon.toLowerCase()) >= 0) {
         return;
       }
-
       knownEmoticons.push(emoticon.toLowerCase());
       listedEmoticons.push(emoticon);
     });

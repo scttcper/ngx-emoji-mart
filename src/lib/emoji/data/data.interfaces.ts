@@ -11,15 +11,15 @@ export interface EmojiCategory {
 export interface CompressedEmojiData {
   name: string;
   unified: string;
-  short_name: string;
-  short_names?: string[];
+  shortName: string;
+  shortNames?: string[];
   sheet: [number, number];
   keywords?: string[];
   hidden?: string[];
   emoticons?: string[];
   text?: string;
-  skin_variations?: EmojiVariation[];
-  obsoleted_by?: string;
+  skinVariations?: EmojiVariation[];
+  obsoletedBy?: string;
   obsoletes?: string;
 }
 
@@ -27,8 +27,8 @@ export interface EmojiData {
   id: string;
   name: string;
   unified?: string;
-  short_name: string;
-  short_names: string[];
+  shortName: string;
+  shortNames: string[];
   sheet: [number, number];
   keywords: string[];
   hidden: string[];
@@ -36,11 +36,10 @@ export interface EmojiData {
   text: string;
   set?: Emoji['set'];
   variations?: EmojiVariation[];
-  skin_variations: EmojiVariation[];
-  obsoleted_by?: string;
+  skinVariations: EmojiVariation[];
+  obsoletedBy?: string;
   obsoletes?: string;
-  // search: any;
-  skin_tone?: Emoji['skin'];
+  skinTone?: Emoji['skin'];
   custom?: boolean;
   native?: string;
   imageUrl?: string;
@@ -57,7 +56,7 @@ export interface EmojiVariation {
 export interface SkinData {
   name: string;
   unified: string;
-  short_name: string;
+  shortName: string;
   hidden: string[];
   sheet: [number, number];
 }
