@@ -263,9 +263,10 @@ class ex {
 ## Display emoji as custom element
 
 ```ts
-const styles = this.emoji.emojiSpriteStyles($event.emoji.sheet, 'twitter');
+// $event is from (emojiClick)
+const styles = this.emoji.emojiSpriteStyles($event.emoji.sheet, 'twitter'); // pass emoji sheet
 const el = document.createElement('div');
-Object.assign(el.style, styles);
+Object.assign(el.style, styles); // apply styles to new element
 document.body.appendChild(el);
 ```
 
