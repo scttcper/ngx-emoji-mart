@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 
 import { EmojiData } from './data/data.interfaces';
-import { EmojiService } from './emoji.service';
+import { DEFAULT_BACKGROUNDFN, EmojiService } from './emoji.service';
 
 export interface Emoji {
   /** Renders the native unicode emoji */
@@ -17,10 +17,17 @@ export interface Emoji {
   tooltip: boolean;
   skin: 1 | 2 | 3 | 4 | 5 | 6;
   sheetSize: 16 | 20 | 32 | 64;
-  set: 'apple' | 'google' | 'twitter' | 'emojione' | 'messenger' | 'facebook' | '';
+  set:
+    | 'apple'
+    | 'google'
+    | 'twitter'
+    | 'emojione'
+    | 'messenger'
+    | 'facebook'
+    | '';
   size: number;
   emoji: string | EmojiData;
-  backgroundImageFn: (set: string, sheetSize: Emoji['sheetSize']) => string;
+  backgroundImageFn: (set: string, sheetSize: number) => string;
   fallback?: (data: any, props: any) => string;
   emojiOver: EventEmitter<EmojiEvent>;
   emojiLeave: EventEmitter<EmojiEvent>;
@@ -64,6 +71,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   @Input() emoji: Emoji['emoji'] = '';
   @Input() fallback?: Emoji['fallback'];
   @Input() hideObsolete = false;
+  @Input() SHEET_COLUMNS = 52;
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
@@ -71,24 +79,19 @@ export class EmojiComponent implements OnChanges, Emoji {
   title = '';
   unified?: string | null;
   custom = false;
-  SHEET_COLUMNS = 52;
   isVisible = true;
   // TODO: replace 4.0.3 w/ dynamic get verison from emoji-datasource in package.json
-  @Input()
-  backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
-    `https://unpkg.com/emoji-datasource-${this.set}@4.0.4/img/${
-      this.set
-    }/sheets-256/${this.sheetSize}.png`
+  @Input() backgroundImageFn: Emoji['backgroundImageFn'] = DEFAULT_BACKGROUNDFN;
 
   constructor(private emojiService: EmojiService) {}
 
   ngOnChanges() {
     if (!this.emoji) {
-      return this.isVisible = false;
+      return (this.isVisible = false);
     }
     const data = this.getData();
     if (!data) {
-      return this.isVisible = false;
+      return (this.isVisible = false);
     }
     // const children = this.children;
     this.unified = data.native || null;
@@ -96,13 +99,13 @@ export class EmojiComponent implements OnChanges, Emoji {
       this.custom = data.custom;
     }
     if (!data.unified && !data.custom) {
-      return this.isVisible = false;
+      return (this.isVisible = false);
     }
     if (this.tooltip) {
       this.title = data.shortNames[0];
     }
     if (data.obsoletedBy && this.hideObsolete) {
-      return this.isVisible = false;
+      return (this.isVisible = false);
     }
 
     if (this.isNative && data.unified && data.native) {
@@ -123,39 +126,25 @@ export class EmojiComponent implements OnChanges, Emoji {
         backgroundSize: 'contain',
       };
     } else {
-      let setHasEmoji = true;
-      if (data.hidden && data.hidden.includes(this.set)) {
-        setHasEmoji = true;
-      }
-
-      if (!setHasEmoji) {
+      if (data.hidden.length && data.hidden.includes(this.set)) {
         if (this.fallback) {
           this.style = { fontSize: `${this.size}px` };
           this.unified = this.fallback(data, this);
         } else {
-          return this.isVisible = false;
+          return (this.isVisible = false);
         }
       } else {
-        this.style = {
-          width: `${this.size}px`,
-          height: `${this.size}px`,
-          display: 'inline-block',
-          backgroundImage: `url(${this.backgroundImageFn(
-            this.set,
-            this.sheetSize,
-          )})`,
-          backgroundSize: `${100 * this.SHEET_COLUMNS}%`,
-          backgroundPosition: this.getPosition(),
-        };
+        this.style = this.emojiService.emojiSpriteStyles(
+          data.sheet,
+          this.set,
+          this.size,
+          this.sheetSize,
+          this.backgroundImageFn,
+          this.SHEET_COLUMNS,
+        );
       }
     }
-    return this.isVisible = true;
-  }
-
-  getPosition() {
-    const [sheet_x, sheet_y] = this.getData()!.sheet;
-    const multiply = 100 / (this.SHEET_COLUMNS - 1);
-    return `${multiply * sheet_x}% ${multiply * sheet_y}%`;
+    return (this.isVisible = true);
   }
 
   getData() {
@@ -163,7 +152,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   }
 
   getSanitizedData() {
-    return this.emojiService.getSanitizedData(this.emoji, this.skin, this.set);
+    return this.emojiService.getSanitizedData(this.emoji);
   }
 
   handleClick($event: Event) {

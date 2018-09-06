@@ -10,6 +10,10 @@ import { Emoji } from './emoji.component';
 
 const COLONS_REGEX = /^(?:\:([^\:]+)\:)(?:\:skin-tone-(\d)\:)?$/;
 const SKINS = ['1F3FA', '1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF'];
+export const DEFAULT_BACKGROUNDFN = (
+  set: string,
+  sheetSize: number,
+) => `https://unpkg.com/emoji-datasource-${set}@4.0.4/img/${set}/sheets-256/${sheetSize}.png`;
 
 @Injectable({ providedIn: 'root' })
 export class EmojiService {
@@ -105,13 +109,14 @@ export class EmojiService {
       emojiData.custom = true;
     }
 
-    const hasSkinVariations = emojiData.skinVariations && emojiData.skinVariations.length;
+    const hasSkinVariations =
+      emojiData.skinVariations && emojiData.skinVariations.length;
     if (hasSkinVariations && skin && skin > 1 && set) {
       emojiData = { ...emojiData };
 
       const skinKey = SKINS[skin - 1];
-      const variationData = emojiData.skinVariations.find(
-        (n: EmojiVariation) => n.unified.includes(skinKey),
+      const variationData = emojiData.skinVariations.find((n: EmojiVariation) =>
+        n.unified.includes(skinKey),
       );
 
       if (!variationData.variations && emojiData.variations) {
@@ -138,6 +143,30 @@ export class EmojiService {
   unifiedToNative(unified: string) {
     const codePoints = unified.split('-').map(u => parseInt(`0x${u}`, 16));
     return String.fromCodePoint(...codePoints);
+  }
+
+  emojiSpriteStyles(
+    sheet: EmojiData['sheet'],
+    set: Emoji['set'] = 'apple',
+    size: Emoji['size'] = 24,
+    sheetSize: Emoji['sheetSize'] = 64,
+    backgroundImageFn: Emoji['backgroundImageFn'] = DEFAULT_BACKGROUNDFN,
+    sheetColumns = 52,
+    ) {
+    return {
+      width: `${size}px`,
+      height: `${size}px`,
+      display: 'inline-block',
+      'background-image': `url(${backgroundImageFn(set, sheetSize)})`,
+      'background-size': `${100 * sheetColumns}%`,
+      'background-position': this.getSpritePosition(sheet, sheetColumns),
+    };
+  }
+
+  getSpritePosition(sheet: EmojiData['sheet'], sheetColumns: number) {
+    const [sheet_x, sheet_y] = sheet;
+    const multiply = 100 / (sheetColumns - 1);
+    return `${multiply * sheet_x}% ${multiply * sheet_y}%`;
   }
 
   sanitize(emoji: EmojiData | null): EmojiData | null {
