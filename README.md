@@ -1,9 +1,9 @@
+<img align="right" width="200" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/preview.png" />
+
 # ngx-emoji-mart
 [![npm](https://badge.fury.io/js/%40ctrl%2Fngx-emoji-mart.svg)](https://www.npmjs.org/package/@ctrl/ngx-emoji-mart)
 [![travis](https://travis-ci.org/TypeCtrl/ngx-emoji-mart.svg?branch=master)](https://travis-ci.org/TypeCtrl/ngx-emoji-mart)
 [![codecov](https://img.shields.io/codecov/c/github/typectrl/ngx-emoji-mart.svg)](https://codecov.io/github/typectrl/ngx-emoji-mart)
-
-<img src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/preview.png" width="225" alt="ngx-emoji-mart preview">
 
 
 __DEMO__: https://typectrl.github.io/ngx-emoji-mart/  
