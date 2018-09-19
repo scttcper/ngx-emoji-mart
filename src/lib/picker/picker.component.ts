@@ -82,6 +82,7 @@ export class PickerComponent implements OnInit {
   @Input() notFoundEmoji = 'sleuth_or_spy';
   @Input() categoriesIcons = icons.categories;
   @Input() searchIcons = icons.search;
+  @Input() emitOnTouch = false;
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
   @Output() skinChange = new EventEmitter<Emoji['skin']>();
