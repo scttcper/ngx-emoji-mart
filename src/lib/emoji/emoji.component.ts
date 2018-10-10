@@ -44,7 +44,6 @@ export interface EmojiEvent {
   template: `
   <span *ngIf="isVisible"
     (click)="handleClick($event)"
-    (touchend)="handleClick($event, true)"
     (mouseenter)="handleOver($event)"
     (mouseleave)="handleLeave($event)"
     [title]="title"
@@ -72,7 +71,6 @@ export class EmojiComponent implements OnChanges, Emoji {
   @Input() emoji: Emoji['emoji'] = '';
   @Input() fallback?: Emoji['fallback'];
   @Input() hideObsolete = false;
-  @Input() emitOnTouch = false;
   @Input() SHEET_COLUMNS = 52;
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
@@ -157,11 +155,9 @@ export class EmojiComponent implements OnChanges, Emoji {
     return this.emojiService.getSanitizedData(this.emoji, this.skin, this.set) as EmojiData;
   }
 
-  handleClick($event: Event, touch = false) {
+  handleClick($event: Event) {
     const emoji = this.getSanitizedData();
-    if (!touch || this.emitOnTouch) {
-      this.emojiClick.emit({ emoji, $event });
-    }
+    this.emojiClick.emit({ emoji, $event });
   }
 
   handleOver($event: Event) {
