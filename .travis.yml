@@ -2,7 +2,7 @@ sudo: false
 language: node_js
 node_js: 10
 addons:
-  chrome: beta
+  chrome: stable
 script:
   - npm run lint
   - npm run test:ci
