@@ -102,6 +102,8 @@ export class EmojiService {
       }
     } else if (emoji.id) {
       emojiData = this.names[emoji.id];
+    } else if (emoji.unified) {
+      emojiData = this.names[emoji.unified.toUpperCase()];
     }
 
     if (!emojiData) {
