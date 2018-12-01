@@ -58,7 +58,7 @@
     "karma-mocha-reporter": "2.2.5",
     "ng-packagr": "4.4.0",
     "rimraf": "2.6.2",
-    "semantic-release": "15.12.0",
+    "semantic-release": "15.12.3",
     "stringify-object": "3.3.0",
     "travis-deploy-once": "5.0.9",
     "ts-node": "7.0.1",
