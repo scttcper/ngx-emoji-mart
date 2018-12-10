@@ -14,6 +14,7 @@
   "homepage": "https://github.com/TypeCtrl/ngx-emoji-mart",
   "repository": "TypeCtrl/ngx-emoji-mart",
   "license": "MIT",
+  "sideEffects": [ "*.css" ],
   "ngPackage": {
     "lib": {
       "entryFile": "public_api.ts",
