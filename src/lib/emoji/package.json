@@ -3,7 +3,7 @@
   "author": "scttcper",
   "repository": "TypeCtrl/ngx-emoji-mart",
   "license": "MIT",
-  "sideEffects": false,
+  "sideEffects": [ "*.css" ],
   "ngPackage": {
     "lib": {
       "entryFile": "public_api.ts",
