@@ -218,7 +218,7 @@ emojiFallback = (emoji: any, props: any) => emoji ? `:${emoji.shortNames[0]}:` :
 
 ## Custom emojis
 
-You can provide custom emojis which will show up in their own category.
+You can provide custom emojis which will show up in their own category. You can either use a single image as imageUrl or use a spritesheet as shown in the second object.
 
 ```ts
 const customEmojis = [
@@ -229,6 +229,19 @@ const customEmojis = [
     emoticons: [],
     keywords: ['github'],
     imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7'
+  },
+  {
+    name: 'Test Flag',
+    short_names: ['test'],
+    text: '',
+    emoticons: [],
+    keywords: ['test', 'flag'],
+    spriteUrl: 'https://unpkg.com/emoji-datasource-twitter@4.0.4/img/twitter/sheets-256/64.png',
+    sheet_x: 1,
+    sheet_y: 1,
+    size: 64,
+    sheetColumns: 52,
+    sheetRows: 52,
   },
 ]
 ```

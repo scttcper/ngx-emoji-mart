@@ -44,6 +44,8 @@ export interface EmojiData {
   imageUrl?: string;
   colons?: string;
   skin?: Emoji['skin'];
+  spriteUrl?: string;
+  sheetRows?: string;
 }
 
 export interface EmojiVariation {

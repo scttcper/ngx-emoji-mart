@@ -168,7 +168,7 @@ export class EmojiSearch {
         .filter(a => a);
 
       if (allResults.length > 1) {
-        results = intersect.apply(null, allResults);
+        results = intersect.apply(null, allResults as any);
       } else if (allResults.length) {
         results = allResults[0];
       } else {
