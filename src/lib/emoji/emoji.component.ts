@@ -72,8 +72,8 @@ export class EmojiComponent implements OnChanges, Emoji {
   @Input() fallback?: Emoji['fallback'];
   @Input() hideObsolete = false;
   @Input() SHEET_COLUMNS = 52;
-  @Input() sheetRows: number;
-  @Input() sheetColumns: number;
+  @Input() sheetRows?: number;
+  @Input() sheetColumns?: number;
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
@@ -125,20 +125,20 @@ export class EmojiComponent implements OnChanges, Emoji {
         height: `${this.size}px`,
         display: 'inline-block',
       };
-      if (data.spriteUrl) {
+      if (data.spriteUrl && this.sheetRows && this.sheetColumns) {
         this.style = {
           ...this.style,
           backgroundImage: `url(${data.spriteUrl})`,
           backgroundSize: `${100 * this.sheetColumns}% ${100 *
             this.sheetRows}%`,
           backgroundPosition: this.emojiService.getSpritePosition(data.sheet, this.sheetColumns),
-        }
+        };
       } else {
         this.style = {
           ...this.style,
           backgroundImage: `url(${data.imageUrl})`,
           backgroundSize: 'contain',
-        }
+        };
       }
     } else {
       if (data.hidden.length && data.hidden.includes(this.set)) {
