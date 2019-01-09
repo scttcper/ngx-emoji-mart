@@ -224,7 +224,7 @@ You can provide custom emojis which will show up in their own category. You can 
 const customEmojis = [
   {
     name: 'Octocat',
-    short_names: ['octocat'],
+    shortNames: ['octocat'],
     text: '',
     emoticons: [],
     keywords: ['github'],
@@ -232,7 +232,7 @@ const customEmojis = [
   },
   {
     name: 'Test Flag',
-    short_names: ['test'],
+    shortNames: ['test'],
     text: '',
     emoticons: [],
     keywords: ['test', 'flag'],
@@ -246,7 +246,7 @@ const customEmojis = [
 ]
 ```
 ```html
-<ngx-emoji [custom]="customEmojis"></ngx-emoji>
+<ngx-emoji [emoji]="customEmojis"></ngx-emoji>
 ```
 
 ## Headless search
