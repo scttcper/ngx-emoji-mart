@@ -22,7 +22,7 @@ const CUSTOM_EMOJIS = [
   },
   {
     name: 'Test Flag',
-    short_names: ['test'],
+    shortNames: ['test'],
     keywords: ['test', 'flag'],
     spriteUrl:
       'https://unpkg.com/emoji-datasource-twitter@4.0.4/img/twitter/sheets-256/64.png',
