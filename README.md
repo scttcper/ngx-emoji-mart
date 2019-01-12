@@ -246,7 +246,7 @@ const customEmojis = [
 ]
 ```
 ```html
-<ngx-emoji [emoji]="customEmojis"></ngx-emoji>
+<ngx-emoji [custom]="customEmojis"></ngx-emoji>
 ```
 
 ## Headless search
