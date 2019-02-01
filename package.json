@@ -28,7 +28,7 @@
     "@angular/platform-browser-dynamic": "7.2.3",
     "@ctrl/ngx-github-buttons": "2.1.0",
     "bootstrap": "4.2.1",
-    "core-js": "2.6.1",
+    "core-js": "2.6.3",
     "rxjs": "6.3.3",
     "zone.js": "0.8.26"
   },
