@@ -37,7 +37,7 @@
     "@angular/cli": "7.1.4",
     "@angular/compiler-cli": "7.2.7",
     "@angular/language-service": "7.2.7",
-    "@types/fs-extra": "5.0.4",
+    "@types/fs-extra": "5.0.5",
     "@types/inflection": "1.5.28",
     "@types/jasmine": "3.3.8",
     "@types/node": "10.12.19",
