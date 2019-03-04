@@ -82,6 +82,7 @@ export class PickerComponent implements OnInit {
   @Input() notFoundEmoji = 'sleuth_or_spy';
   @Input() categoriesIcons = icons.categories;
   @Input() searchIcons = icons.search;
+  @Input() showSingleCategory = false;
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
   @Output() skinChange = new EventEmitter<Emoji['skin']>();
@@ -226,12 +227,20 @@ export class PickerComponent implements OnInit {
     this.categories.unshift(this.SEARCH_CATEGORY);
     this.selected = this.categories.filter(category => category.first)[0].name;
 
-    this.activeCategories = this.categories.slice(0, 3);
+    this.setActiveCategories(this.activeCategories = this.categories.slice(0, 3));
+
     setTimeout(() => {
-      this.activeCategories = this.categories;
+      this.setActiveCategories(this.categories);
       this.ref.markForCheck();
       setTimeout(() => this.updateCategoriesSize());
     });
+  }
+  setActiveCategories(categoriesToMakeActive: Array<EmojiCategory>) {
+    if (this.showSingleCategory) {
+      this.activeCategories = categoriesToMakeActive.filter(x => x.name === this.selected);
+    } else {
+      this.activeCategories = categoriesToMakeActive;
+    }
   }
   updateCategoriesSize() {
     this.categoryRefs.forEach(component => component.memoizeSize());
@@ -244,6 +253,8 @@ export class PickerComponent implements OnInit {
   }
   handleAnchorClick($event: { category: EmojiCategory; index: number }) {
     this.updateCategoriesSize();
+    this.selected = $event.category.name;
+    this.setActiveCategories(this.categories);
     const component = this.categoryRefs.find(n => n.id === $event.category.id);
 
     if (this.SEARCH_CATEGORY.emojis) {
@@ -273,6 +284,9 @@ export class PickerComponent implements OnInit {
       return;
     }
     if (!this.scrollRef) {
+      return;
+    }
+    if (this.showSingleCategory) {
       return;
     }
 

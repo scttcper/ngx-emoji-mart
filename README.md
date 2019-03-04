@@ -83,6 +83,7 @@ use component
 | **notFoundEmoji**      | `sleuth_or_spy`           | The emoji shown when there are no search results                                                                                                                                         |
 | **categoriesIcons**    | see `svgs/index.ts`       | the anchor icons                                                                                                                                                                         |
 | **searchIcons**        | see `svgs/index.ts`       | the search/close icon in the search bar                                                                                                                                                  |
+| **showSingleCategory** |                           | show only one category at a time to increase rendering performance                                                                                                                        |
 
 #### I18n
 
