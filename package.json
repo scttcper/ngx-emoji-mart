@@ -44,7 +44,7 @@
     "@types/rimraf": "2.0.2",
     "@types/stringify-object": "3.2.0",
     "codelyzer": "4.5.0",
-    "emoji-datasource": "4.1.0",
+    "emoji-datasource": "4.0.4",
     "emojilib": "2.4.0",
     "fs-extra": "7.0.1",
     "inflection": "1.12.0",
