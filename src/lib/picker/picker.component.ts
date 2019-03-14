@@ -392,4 +392,10 @@ export class PickerComponent implements OnInit {
     localStorage.setItem(`${this.NAMESPACE}.skin`, String(skin));
     this.skinChange.emit(skin);
   }
+  getWidth(): string {
+    if (this.style.width) {
+      return this.style.width;
+    }
+    return this.perLine * (this.emojiSize + 12) + 12 + 2 + this.measureScrollbar + 'px';
+  }
 }

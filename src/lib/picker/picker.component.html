@@ -1,5 +1,5 @@
 <div class="emoji-mart"
-  [style.width.px]="perLine * (emojiSize + 12) + 12 + 2 + measureScrollbar"
+  [style.width]="getWidth()"
   [ngStyle]="style">
   <div class="emoji-mart-bar">
     <emoji-mart-anchors
