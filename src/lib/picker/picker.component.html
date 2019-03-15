@@ -23,7 +23,7 @@
     [icons]="searchIcons"
     [emojisToShowFilter]="emojisToShowFilter"
   ></emoji-search>
-  <div #scrollRef class="emoji-mart-scroll" (scroll)="handleScroll()">
+  <section #scrollRef class="emoji-mart-scroll" (scroll)="handleScroll()" [attr.aria-label]="i18n.emojilist">
     <emoji-category
       *ngFor="let category of activeCategories; let idx = index; trackBy: categoryTrack"
       #categoryRef
@@ -50,7 +50,7 @@
       (emojiLeave)="handleEmojiLeave()"
       (emojiClick)="handleEmojiClick($event)"
     ></emoji-category>
-  </div>
+  </section>
   <div class="emoji-mart-bar" *ngIf="showPreview">
     <emoji-preview
       #previewRef

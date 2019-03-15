@@ -30,6 +30,7 @@ import { measureScrollbar } from './utils';
 
 const I18N: any = {
   search: 'Search',
+  emojilist: 'List of emoji',
   notfound: 'No Emoji Found',
   categories: {
     search: 'Search Results',

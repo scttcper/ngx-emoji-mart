@@ -42,11 +42,12 @@ export interface EmojiEvent {
 @Component({
   selector: 'ngx-emoji',
   template: `
-  <span *ngIf="isVisible"
+  <button *ngIf="isVisible"
     (click)="handleClick($event)"
     (mouseenter)="handleOver($event)"
     (mouseleave)="handleLeave($event)"
     [title]="title"
+    [attr.aria-label]="label"
     class="emoji-mart-emoji"
     [class.emoji-mart-emoji-native]="isNative"
     [class.emoji-mart-emoji-custom]="custom">
@@ -54,7 +55,7 @@ export interface EmojiEvent {
       <ng-template [ngIf]="isNative">{{ unified }}</ng-template>
       <ng-content></ng-content>
     </span>
-  </span>
+  </button>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
@@ -79,6 +80,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
   style: any;
   title = '';
+  label = '';
   unified?: string | null;
   custom = false;
   isVisible = true;
@@ -109,6 +111,11 @@ export class EmojiComponent implements OnChanges, Emoji {
     if (data.obsoletedBy && this.hideObsolete) {
       return (this.isVisible = false);
     }
+
+    this.label = [data.native]
+      .concat(data.shortNames)
+      .filter(Boolean)
+      .join(', ');
 
     if (this.isNative && data.unified && data.native) {
       // hide older emoji before the split into gendered emoji
