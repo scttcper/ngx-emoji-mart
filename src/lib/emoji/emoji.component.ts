@@ -125,6 +125,7 @@ export class EmojiComponent implements OnChanges, Emoji {
         this.style.display = 'inline-block';
         this.style.width = `${this.size}px`;
         this.style.height = `${this.size}px`;
+        this.style['word-break'] = 'keep-all';
       }
     } else if (data.custom) {
       this.style = {
