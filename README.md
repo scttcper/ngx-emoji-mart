@@ -89,7 +89,9 @@ use component
 
 ```ts
 search: 'Search',
+emojilist: 'List of emoji',
 notfound: 'No Emoji Found',
+clear: 'Clear',
 categories: {
   search: 'Search Results',
   recent: 'Frequently Used',

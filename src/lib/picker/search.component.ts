@@ -11,23 +11,47 @@ import {
 
 import { EmojiSearch } from './emoji-search.service';
 
+let id = 0;
+
 @Component({
   selector: 'emoji-search',
   template: `
-  <div class="emoji-mart-search">
-    <input #inputRef type="text"
-      (keyup.enter)="handleEnterKey($event)"
-      [placeholder]="i18n.search" [autofocus]="autoFocus"
-      [(ngModel)]="query" (ngModelChange)="handleChange()" />
-    <button class="emoji-mart-search-icon"
-      (click)="clear()"
-      (keyup.enter)="clear()"
-      [disabled]="!isSearching">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="13" height="13" opacity="0.5">
-        <path [attr.d]="icon" />
-      </svg>
-    </button>
-  </div>
+    <div class="emoji-mart-search">
+      <input
+        [id]="inputId"
+        #inputRef
+        type="search"
+        (keyup.enter)="handleEnterKey($event)"
+        [placeholder]="i18n.search"
+        [autofocus]="autoFocus"
+        [(ngModel)]="query"
+        (ngModelChange)="handleChange()"
+      />
+      <!--
+      Use a <label> in addition to the placeholder for accessibility, but place it off-screen
+      http://www.maxability.co.in/2016/01/placeholder-attribute-and-why-it-is-not-accessible/
+      -->
+      <label class="emoji-mart-sr-only" [htmlFor]="inputId">
+        {{ i18n.search }}
+      </label>
+      <button
+        class="emoji-mart-search-icon"
+        (click)="clear()"
+        (keyup.enter)="clear()"
+        [disabled]="!isSearching"
+        [attr.aria-label]="i18n.clear"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          width="13"
+          height="13"
+          opacity="0.5"
+        >
+          <path [attr.d]="icon" />
+        </svg>
+      </button>
+    </div>
   `,
   preserveWhitespaces: false,
 })
@@ -46,6 +70,7 @@ export class SearchComponent implements AfterViewInit, OnInit {
   isSearching = false;
   icon?: string;
   query = '';
+  inputId = `emoji-mart-search-${++id}`;
 
   constructor(private emojiSearch: EmojiSearch) {}
 
@@ -60,6 +85,7 @@ export class SearchComponent implements AfterViewInit, OnInit {
   clear() {
     this.query = '';
     this.handleSearch('');
+    this.inputRef.nativeElement.focus();
   }
   handleEnterKey($event: Event) {
     this.enterKey.emit($event);

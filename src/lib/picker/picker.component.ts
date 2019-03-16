@@ -32,6 +32,7 @@ const I18N: any = {
   search: 'Search',
   emojilist: 'List of emoji',
   notfound: 'No Emoji Found',
+  clear: 'Clear',
   categories: {
     search: 'Search Results',
     recent: 'Frequently Used',
