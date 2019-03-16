@@ -256,12 +256,15 @@ export class PickerComponent implements OnInit {
     this.updateCategoriesSize();
     this.selected = $event.category.name;
     this.setActiveCategories(this.categories);
-    const component = this.categoryRefs.find(n => n.id === $event.category.id);
 
     if (this.SEARCH_CATEGORY.emojis) {
       this.handleSearch(null);
       this.searchRef.clear();
+      this.handleAnchorClick($event);
+      return;
     }
+
+    const component = this.categoryRefs.find(n => n.id === $event.category.id);
     if (component) {
       let { top } = component;
 
@@ -320,7 +323,7 @@ export class PickerComponent implements OnInit {
       this.selected = activeCategory.name;
     }
   }
-  handleSearch($emojis: any) {
+  handleSearch($emojis: any | null) {
     this.SEARCH_CATEGORY.emojis = $emojis;
     for (const component of this.categoryRefs.toArray()) {
       if (component.name === 'Search') {
@@ -331,7 +334,6 @@ export class PickerComponent implements OnInit {
       }
     }
 
-    // this.forceUpdate();
     this.scrollRef.nativeElement.scrollTop = 0;
     this.handleScroll();
   }
