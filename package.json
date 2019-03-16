@@ -64,6 +64,7 @@
     "tslint": "5.14.0",
     "typescript": "3.2.4"
   },
+  "repository": "TypeCtrl/ngx-emoji-mart",
   "engines": {
     "npm": ">= 6",
     "node": ">= 8"
