@@ -59,7 +59,7 @@ import { Emoji, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
     </div>
 
     <div class="emoji-mart-preview-skins">
-      <emoji-skins [skin]="emojiSkin" (change)="skinChange.emit($event)">
+      <emoji-skins [skin]="emojiSkin" (change)="skinChange.emit($event)" [i18n]="i18n">
       </emoji-skins>
     </div>
   </div>
@@ -71,6 +71,7 @@ export class PreviewComponent implements OnChanges {
   @Input() title?: string;
   @Input() emoji: any;
   @Input() idleEmoji: any;
+  @Input() i18n: any;
   @Input() emojiIsNative?: Emoji['isNative'];
   @Input() emojiSkin?: Emoji['skin'];
   @Input() emojiSize?: Emoji['size'];
