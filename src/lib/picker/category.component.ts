@@ -16,13 +16,15 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
 @Component({
   selector: 'emoji-category',
   template: `
-  <div #container class="emoji-mart-category"
+  <section #container class="emoji-mart-category"
+    [attr.aria-label]="i18n.categories[id]"
     [class.emoji-mart-no-results]="emojis && !emojis.length"
     [ngStyle]="containerStyles">
     <div class="emoji-mart-category-label"
       [ngStyle]="labelStyles"
       [attr.data-name]="name">
-      <span style="labelSpanStyles" #label>
+      <!-- already labeled by the section aria-label -->
+      <span #label [ngStyle]="labelSpanStyles" aria-hidden="true">
         {{ i18n.categories[id] }}
       </span>
     </div>
@@ -66,7 +68,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
       </div>
     </div>
 
-  </div>
+  </section>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
