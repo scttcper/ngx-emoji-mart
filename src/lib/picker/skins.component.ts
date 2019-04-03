@@ -69,7 +69,7 @@ export class SkinComponent {
   }
 
   expanded(skinTone: Emoji['skin']) {
-    return this.isSelected(skinTone) ? this.opened : ''
+    return this.isSelected(skinTone) ? this.opened : '';
   }
 
   handleClick(skin: number) {
