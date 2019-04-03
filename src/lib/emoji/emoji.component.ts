@@ -43,6 +43,7 @@ export interface EmojiEvent {
   selector: 'ngx-emoji',
   template: `
   <button *ngIf="isVisible"
+    type="button"
     (click)="handleClick($event)"
     (mouseenter)="handleOver($event)"
     (mouseleave)="handleLeave($event)"

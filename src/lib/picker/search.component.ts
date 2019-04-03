@@ -35,6 +35,7 @@ let id = 0;
         {{ i18n.search }}
       </label>
       <button
+        type="button"
         class="emoji-mart-search-icon"
         (click)="clear()"
         (keyup.enter)="clear()"
