@@ -71,15 +71,5 @@
   },
   "release": {
     "branch": "master"
-  },
-  "bundlesize": [
-    {
-      "path": "./dist/packages-dist/bundles/ctrl-ngx-emoji-mart.umd.min.js",
-      "maxSize": "10 kB"
-    },
-    {
-      "path": "./dist/packages-dist/ngx-emoji/bundles/ctrl-ngx-emoji-mart-ngx-emoji.umd.min.js",
-      "maxSize": "60 kB"
-    }
-  ]
+  }
 }
