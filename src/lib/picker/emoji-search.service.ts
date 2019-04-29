@@ -65,6 +65,9 @@ export class EmojiSearch {
       if (value === '-' || value === '-1') {
         return [this.emojisList['-1']];
       }
+      if (value === '+' || value === '+1') {
+        return [this.emojisList['+1']];
+      }
 
       let values = value.toLowerCase().split(/[\s|,|\-|_]+/);
       let allResults = [];
