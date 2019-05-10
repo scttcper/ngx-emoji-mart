@@ -44,7 +44,7 @@ export class SkinComponent {
   /** currently selected skin */
   @Input() skin?: Emoji['skin'];
   @Input() i18n: any;
-  @Output() change = new EventEmitter<number>();
+  @Output() changeSkin = new EventEmitter<number>();
   opened = false;
   skinTones = [1, 2, 3, 4, 5, 6];
 
@@ -79,7 +79,7 @@ export class SkinComponent {
     }
     this.opened = false;
     if (skin !== this.skin) {
-      this.change.emit(skin);
+      this.changeSkin.emit(skin);
     }
   }
 }
