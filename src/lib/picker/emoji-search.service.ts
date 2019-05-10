@@ -92,7 +92,7 @@ export class EmojiSearch {
             return;
           }
 
-          category.emojis!.forEach(
+          category.emojis.forEach(
             emojiId => (pool[emojiId] = this.emojiService.names[emojiId]),
           );
         });
@@ -114,6 +114,7 @@ export class EmojiSearch {
           let aIndex = this.index;
           let length = 0;
 
+          // tslint:disable-next-line: prefer-for-of
           for (let charIndex = 0; charIndex < v.length; charIndex++) {
             const char = v[charIndex];
             length++;
@@ -194,7 +195,7 @@ export class EmojiSearch {
   }
 
   buildSearch(
-    short_names: string[],
+    shortNames: string[],
     name: string,
     keywords: string[],
     emoticons: string[],
@@ -206,8 +207,8 @@ export class EmojiSearch {
         return;
       }
 
-      (Array.isArray(strings) ? strings : [strings]).forEach(string => {
-        (split ? string.split(/[-|_|\s]+/) : [string]).forEach(s => {
+      (Array.isArray(strings) ? strings : [strings]).forEach(str => {
+        (split ? str.split(/[-|_|\s]+/) : [str]).forEach(s => {
           s = s.toLowerCase();
 
           if (!search.includes(s)) {
@@ -217,7 +218,7 @@ export class EmojiSearch {
       });
     };
 
-    addToSearch(short_names, true);
+    addToSearch(shortNames, true);
     addToSearch(name, true);
     addToSearch(keywords, false);
     addToSearch(emoticons, false);

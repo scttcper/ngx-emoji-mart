@@ -59,7 +59,7 @@ import { Emoji, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
     </div>
 
     <div class="emoji-mart-preview-skins">
-      <emoji-skins [skin]="emojiSkin" (change)="skinChange.emit($event)" [i18n]="i18n">
+      <emoji-skins [skin]="emojiSkin" (changeSkin)="skinChange.emit($event)" [i18n]="i18n">
       </emoji-skins>
     </div>
   </div>

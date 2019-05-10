@@ -76,7 +76,7 @@ export class SearchComponent implements AfterViewInit, OnInit {
   constructor(private emojiSearch: EmojiSearch) {}
 
   ngOnInit() {
-    this.icon = this.icons!.search;
+    this.icon = this.icons.search;
   }
   ngAfterViewInit() {
     if (this.autoFocus) {
@@ -94,10 +94,10 @@ export class SearchComponent implements AfterViewInit, OnInit {
   }
   handleSearch(value: string) {
     if (value === '') {
-      this.icon = this.icons!.search;
+      this.icon = this.icons.search;
       this.isSearching = false;
     } else {
-      this.icon = this.icons!.delete;
+      this.icon = this.icons.delete;
       this.isSearching = true;
     }
     this.search.emit(

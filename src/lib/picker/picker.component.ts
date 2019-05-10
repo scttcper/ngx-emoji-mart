@@ -169,7 +169,7 @@ export class PickerComponent implements OnInit {
 
     if (this.include !== undefined) {
       allCategories.sort((a, b) => {
-        if (this.include!.indexOf(a.id) > this.include!.indexOf(b.id)) {
+        if (this.include.indexOf(a.id) > this.include.indexOf(b.id)) {
           return 1;
         }
         return -1;
@@ -193,8 +193,9 @@ export class PickerComponent implements OnInit {
         const newEmojis = [];
 
         const { emojis } = category;
-        for (let emojiIndex = 0; emojiIndex < emojis!.length; emojiIndex++) {
-          const emoji = emojis![emojiIndex];
+        // tslint:disable-next-line: prefer-for-of
+        for (let emojiIndex = 0; emojiIndex < emojis.length; emojiIndex++) {
+          const emoji = emojis[emojiIndex];
           if (this.emojisToShowFilter(emoji)) {
             newEmojis.push(emoji);
           }
@@ -319,7 +320,7 @@ export class PickerComponent implements OnInit {
         // scrolling
         for (const category of this.categories) {
           const component = this.categoryRefs.find(n => n.id === category.id);
-          const active = component!.handleScroll(target.scrollTop);
+          const active = component.handleScroll(target.scrollTop);
           if (active) {
             activeCategory = category;
           }
@@ -374,7 +375,7 @@ export class PickerComponent implements OnInit {
       return;
     }
 
-    const emojiData = this.CUSTOM_CATEGORY.emojis!.find(
+    const emojiData = this.CUSTOM_CATEGORY.emojis.find(
       customEmoji => customEmoji.id === $event.emoji.id,
     );
     if (emojiData) {

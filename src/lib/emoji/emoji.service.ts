@@ -155,9 +155,9 @@ export class EmojiService {
   }
 
   getSpritePosition(sheet: EmojiData['sheet'], sheetColumns: number) {
-    const [sheet_x, sheet_y] = sheet;
+    const [sheetX, sheetY] = sheet;
     const multiply = 100 / (sheetColumns - 1);
-    return `${multiply * sheet_x}% ${multiply * sheet_y}%`;
+    return `${multiply * sheetX}% ${multiply * sheetY}%`;
   }
 
   sanitize(emoji: EmojiData | null): EmojiData | null {

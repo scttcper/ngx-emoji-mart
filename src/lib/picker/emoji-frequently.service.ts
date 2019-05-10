@@ -65,7 +65,7 @@ export class EmojiFrequentlyService {
     const frequentlyKeys = Object.keys(this.frequently);
 
     const sorted = frequentlyKeys
-      .sort((a, b) => this.frequently![a] - this.frequently![b])
+      .sort((a, b) => this.frequently[a] - this.frequently[b])
       .reverse();
     const sliced = sorted.slice(0, quantity);
 
