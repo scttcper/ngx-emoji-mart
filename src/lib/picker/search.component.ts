@@ -65,7 +65,7 @@ export class SearchComponent implements AfterViewInit, OnInit {
   @Input() custom: any[] = [];
   @Input() icons?: { [key: string]: string };
   @Input() emojisToShowFilter?: (x: any) => boolean;
-  @Output() search = new EventEmitter<any>();
+  @Output() searchResults = new EventEmitter<any[]>();
   @Output() enterKey = new EventEmitter<any>();
   @ViewChild('inputRef') private inputRef!: ElementRef;
   isSearching = false;
@@ -89,6 +89,9 @@ export class SearchComponent implements AfterViewInit, OnInit {
     this.inputRef.nativeElement.focus();
   }
   handleEnterKey($event: Event) {
+    if (!this.query) {
+      return;
+    }
     this.enterKey.emit($event);
     $event.preventDefault();
   }
@@ -100,16 +103,15 @@ export class SearchComponent implements AfterViewInit, OnInit {
       this.icon = this.icons.delete;
       this.isSearching = true;
     }
-    this.search.emit(
-      this.emojiSearch.search(
-        this.query,
-        this.emojisToShowFilter,
-        this.maxResults,
-        this.include,
-        this.exclude,
-        this.custom,
-      ),
+    const emojis = this.emojiSearch.search(
+      this.query,
+      this.emojisToShowFilter,
+      this.maxResults,
+      this.include,
+      this.exclude,
+      this.custom,
     );
+    this.searchResults.emit(emojis);
   }
   handleChange() {
     this.handleSearch(this.query);

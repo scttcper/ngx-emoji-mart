@@ -333,7 +333,7 @@ export class PickerComponent implements OnInit {
       this.selected = activeCategory.name;
     }
   }
-  handleSearch($emojis: any | null) {
+  handleSearch($emojis: any[] | null) {
     this.SEARCH_CATEGORY.emojis = $emojis;
     for (const component of this.categoryRefs.toArray()) {
       if (component.name === 'Search') {
@@ -361,7 +361,7 @@ export class PickerComponent implements OnInit {
     }
 
     if (!this.hideRecent && !this.recent) {
-      this.frequently.add(emoji as EmojiData);
+      this.frequently.add(emoji);
     }
 
     const component = this.categoryRefs.toArray()[1];
