@@ -121,7 +121,7 @@ export class CategoryComponent implements OnInit {
 
     if (!this.hasStickyPosition) {
       this.labelStyles = { height: 28 };
-      this.labelSpanStyles = { position: 'absolute' };
+      // this.labelSpanStyles = { position: 'absolute' };
     }
   }
   memoizeSize() {
