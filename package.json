@@ -59,7 +59,7 @@
     "stringify-object": "3.3.0",
     "ts-node": "8.1.1",
     "tsickle": "0.35.0",
-    "tslint": "5.16.0",
+    "tslint": "5.18.0",
     "typescript": "3.2.4"
   },
   "repository": "TypeCtrl/ngx-emoji-mart",
