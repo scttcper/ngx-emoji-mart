@@ -55,7 +55,7 @@
     "karma-mocha-reporter": "2.2.5",
     "ng-packagr": "5.1.0",
     "rimraf": "2.6.3",
-    "semantic-release": "15.13.18",
+    "semantic-release": "15.13.19",
     "stringify-object": "3.3.0",
     "ts-node": "8.1.1",
     "tsickle": "0.35.0",
