@@ -60,7 +60,7 @@
     "ts-node": "8.1.1",
     "tsickle": "0.35.0",
     "tslint": "5.16.0",
-    "typescript": "3.2.4"
+    "typescript": "3.5.3"
   },
   "repository": "TypeCtrl/ngx-emoji-mart",
   "engines": {
