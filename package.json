@@ -13,7 +13,7 @@
     "link": "cd dist/packages-dist && npm link",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
-    "ghpages": "ng build --prod --no-progress --baseHref='/ngx-emoji-mart/'",
+    "ghpages": "ng build --prod --no-progress",
     "semantic-release": "cd dist/packages-dist && semantic-release"
   },
   "private": true,
