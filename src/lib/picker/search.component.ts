@@ -67,7 +67,7 @@ export class SearchComponent implements AfterViewInit, OnInit {
   @Input() emojisToShowFilter?: (x: any) => boolean;
   @Output() searchResults = new EventEmitter<any[]>();
   @Output() enterKey = new EventEmitter<any>();
-  @ViewChild('inputRef') private inputRef!: ElementRef;
+  @ViewChild('inputRef', { static: true }) private inputRef!: ElementRef;
   isSearching = false;
   icon?: string;
   query = '';

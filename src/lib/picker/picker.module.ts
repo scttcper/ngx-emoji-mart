@@ -10,18 +10,23 @@ import { PreviewComponent } from './preview.component';
 import { SearchComponent } from './search.component';
 import { SkinComponent } from './skins.component';
 
-const components: any[] = [
-  PickerComponent,
-  AnchorsComponent,
-  CategoryComponent,
-  SearchComponent,
-  PreviewComponent,
-  SkinComponent,
-];
-
 @NgModule({
   imports: [CommonModule, FormsModule, EmojiModule],
-  exports: components,
-  declarations: components,
+  exports: [
+    PickerComponent,
+    AnchorsComponent,
+    CategoryComponent,
+    SearchComponent,
+    PreviewComponent,
+    SkinComponent,
+  ],
+  declarations: [
+    PickerComponent,
+    AnchorsComponent,
+    CategoryComponent,
+    SearchComponent,
+    PreviewComponent,
+    SkinComponent,
+  ],
 })
 export class PickerModule {}

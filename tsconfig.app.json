@@ -7,6 +7,10 @@
       "@ctrl/ngx-emoji-mart/ngx-emoji": ["./src/lib/emoji/public_api"]
     }
   },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
   "include": [
     "src/**/*.ts"
   ],

@@ -96,9 +96,9 @@ export class PickerComponent implements OnInit {
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
   @Output() skinChange = new EventEmitter<Emoji['skin']>();
-  @ViewChild('scrollRef') private scrollRef!: ElementRef;
-  @ViewChild('previewRef') private previewRef!: PreviewComponent;
-  @ViewChild('searchRef') private searchRef!: SearchComponent;
+  @ViewChild('scrollRef', { static: true }) private scrollRef!: ElementRef;
+  @ViewChild('previewRef', { static: false }) private previewRef!: PreviewComponent;
+  @ViewChild('searchRef', { static: true }) private searchRef!: SearchComponent;
   @ViewChildren('categoryRef') private categoryRefs!: QueryList<CategoryComponent>;
   scrollHeight = 0;
   clientHeight = 0;

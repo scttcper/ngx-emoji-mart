@@ -96,8 +96,8 @@ export class CategoryComponent implements OnInit {
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
-  @ViewChild('container') container!: ElementRef;
-  @ViewChild('label') label!: ElementRef;
+  @ViewChild('container', { static: true }) container!: ElementRef;
+  @ViewChild('label', { static: true }) label!: ElementRef;
   containerStyles: any = {};
   labelStyles: any = {};
   labelSpanStyles: any = {};

@@ -1,14 +1,14 @@
 <img align="right" width="200" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/preview.png" />
 
 # ngx-emoji-mart
+
 [![npm](https://badge.fury.io/js/%40ctrl%2Fngx-emoji-mart.svg)](https://www.npmjs.org/package/@ctrl/ngx-emoji-mart)
 [![travis](https://travis-ci.org/TypeCtrl/ngx-emoji-mart.svg?branch=master)](https://travis-ci.org/TypeCtrl/ngx-emoji-mart)
 [![codecov](https://img.shields.io/codecov/c/github/typectrl/ngx-emoji-mart.svg)](https://codecov.io/github/typectrl/ngx-emoji-mart)
 
+**DEMO**: https://typectrl.github.io/ngx-emoji-mart/
 
-__DEMO__: https://typectrl.github.io/ngx-emoji-mart/  
-
-This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by missive  
+This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by missive
 
 - [Installation](#installation)
 - [Components](#components)
@@ -25,19 +25,33 @@ This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by
 npm install @ctrl/ngx-emoji-mart
 ```
 
+## Dependencies
+
+Latest version available for each version of Angular
+
+| @ctrl/ngx-emoji-mart | Angular |
+| -------------------- | ------- |
+| 0.17.0               | 6.x 7.x |
+| 1.0.0                | >8      |
+
 ## Components
 
 ### Picker
+
 Import Module in ngModule
+
 ```ts
-import { PickerModule } from '@ctrl/ngx-emoji-mart'
+import { PickerModule } from '@ctrl/ngx-emoji-mart';
 ```
 
 Import styles in styles.scss if using SASS
+
 ```scss
-@import "~@ctrl/ngx-emoji-mart/picker";
+@import '~@ctrl/ngx-emoji-mart/picker';
 ```
+
 Or angular-cli can also include it via angular-cli.json
+
 ```
 "styles": [
   "styles.scss",
@@ -46,12 +60,17 @@ Or angular-cli can also include it via angular-cli.json
 ```
 
 use component
+
 ```html
 <emoji-mart title="Pick your emoji…" emoji="point_up"></emoji-mart>
 <emoji-mart set="emojione"></emoji-mart>
 <emoji-mart (emojiClick)="addEmoji($event)"></emoji-mart>
-<emoji-mart [style]="{ position: 'absolute', bottom: '20px', right: '20px' }"></emoji-mart>
-<emoji-mart [i18n]="{ search: 'Recherche', categories: { search: 'Résultats de recherche', recent: 'Récents' } }"></emoji-mart>
+<emoji-mart
+  [style]="{ position: 'absolute', bottom: '20px', right: '20px' }"
+></emoji-mart>
+<emoji-mart
+  [i18n]="{ search: 'Recherche', categories: { search: 'Résultats de recherche', recent: 'Récents' } }"
+></emoji-mart>
 ```
 
 | Prop                   | Default                   | Description                                                                                                                                                                              |
@@ -83,7 +102,7 @@ use component
 | **notFoundEmoji**      | `sleuth_or_spy`           | The emoji shown when there are no search results                                                                                                                                         |
 | **categoriesIcons**    | see `svgs/index.ts`       | the anchor icons                                                                                                                                                                         |
 | **searchIcons**        | see `svgs/index.ts`       | the search/close icon in the search bar                                                                                                                                                  |
-| **showSingleCategory** |                           | show only one category at a time to increase rendering performance                                                                                                                        |
+| **showSingleCategory** |                           | show only one category at a time to increase rendering performance                                                                                                                       |
 
 #### I18n
 
@@ -184,20 +203,21 @@ Sheets are served from [unpkg](https://unpkg.com), a global CDN that serves file
 ```
 
 ### Emoji
+
 ```ts
-import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji'
+import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 ```
 
 ```html
 <ngx-emoji [emoji]="{ id: 'santa', skin: 3 }" size="16"></ngx-emoji>
-<ngx-emoji emoji=':santa::skin-tone-3:' size="16"></ngx-emoji>
-<ngx-emoji emoji='santa' set='emojione' size="16"></ngx-emoji>
+<ngx-emoji emoji=":santa::skin-tone-3:" size="16"></ngx-emoji>
+<ngx-emoji emoji="santa" set="emojione" size="16"></ngx-emoji>
 ```
 
 | Prop                                         | Required | Default                   | Description                                                                                                      |
 | -------------------------------------------- | :------: | ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **emoji**                                    | ✓        |                           | Either a string or an `emoji` object                                                                             |
-| **size**                                     | ✓        |                           | The emoji width and height.                                                                                      |
+| **emoji**                                    |    ✓     |                           | Either a string or an `emoji` object                                                                             |
+| **size**                                     |    ✓     |                           | The emoji width and height.                                                                                      |
 | **native**                                   |          | `false`                   | Renders the native unicode emoji                                                                                 |
 | **(emojiClick)**                             |          |                           | Params: `{ emoji, $event }`                                                                                      |
 | **(emojiLeave)**                             |          |                           | Params: `{ emoji, $event }`                                                                                      |
@@ -215,9 +235,12 @@ import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji'
 Certain sets don’t support all emojis (i.e. Messenger & Facebook don’t support `:shrug:`). By default the Emoji component will not render anything so that the emojis’ don’t take space in the picker when not available. When using the standalone Emoji component, you can however render anything you want by providing the `fallback` props.
 
 To have the component render `:shrug:` you would need to:
+
 ```ts
-emojiFallback = (emoji: any, props: any) => emoji ? `:${emoji.shortNames[0]}:` : props.emoji
+emojiFallback = (emoji: any, props: any) =>
+  emoji ? `:${emoji.shortNames[0]}:` : props.emoji;
 ```
+
 ```html
 <ngx-emoji
   set="messenger"
@@ -239,7 +262,7 @@ const customEmojis = [
     text: '',
     emoticons: [],
     keywords: ['github'],
-    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7'
+    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7',
   },
   {
     name: 'Test Flag',
@@ -247,15 +270,17 @@ const customEmojis = [
     text: '',
     emoticons: [],
     keywords: ['test', 'flag'],
-    spriteUrl: 'https://unpkg.com/emoji-datasource-twitter@4.0.4/img/twitter/sheets-256/64.png',
+    spriteUrl:
+      'https://unpkg.com/emoji-datasource-twitter@4.0.4/img/twitter/sheets-256/64.png',
     sheet_x: 1,
     sheet_y: 1,
     size: 64,
     sheetColumns: 52,
     sheetRows: 52,
   },
-]
+];
 ```
+
 ```html
 <emoji-mart [custom]="customEmojis"></emoji-mart>
 ```
@@ -288,13 +313,12 @@ document.body.appendChild(el);
 
 By default EmojiMart will store user chosen skin and frequently used emojis in `localStorage`.
 
-
 Possible keys are:
 
-| Key        | Value                            | Description                                                                                                       |
-| ---------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| skin       | `1, 2, 3, 4, 5, 6`               |                                                                                                                   |
-| frequently | `{ 'astonished': 11, '+1': 22 }` | An object where the key is the emoji name and the value is the usage count                                        |
+| Key        | Value                            | Description                                                                                                     |
+| ---------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| skin       | `1, 2, 3, 4, 5, 6`               |                                                                                                                 |
+| frequently | `{ 'astonished': 11, '+1': 22 }` | An object where the key is the emoji name and the value is the usage count                                      |
 | last       | 'astonished'                     | (Optional) Used by `frequently` to be sure the latest clicked emoji will always appear in the “Recent” category |
 
 ## Features
@@ -338,7 +362,6 @@ It can however be overwritten as per user preference.
 Apple / Google / Twitter / EmojiOne / Messenger / Facebook
 
 <img width="214" alt="sets" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/sets.png">
-
 
 ---
 

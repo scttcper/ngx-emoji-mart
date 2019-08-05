@@ -35,14 +35,6 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm run semantic-release
-      - run:
-          name: Install and configure dependencies
-          command: |
-            git config user.email "scttcper@gmail.com"
-            git config user.name "ci-build"
-            ssh-add -D
-      - run: npm run ghpages
-      - run: npx gh-pages -x -d dist -m "update docs [ci skip]" -r https://${GH_TOKEN}@github.com/typectrl/ngx-emoji-mart.git
 
 workflows:
   version: 2

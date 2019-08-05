@@ -1,12 +1,12 @@
 import { copySync } from 'fs-extra';
 import { ngPackagr } from 'ng-packagr';
 import { join } from 'path';
-import * as rimraf from 'rimraf';
+import * as del from 'del';
 
 async function main() {
   // cleanup dist
-  rimraf.sync(join(process.cwd(), '/dist'));
-  rimraf.sync(join(process.cwd(), '/node_modules/@ctrl/ngx-emoji-mart'));
+  del.sync(join(process.cwd(), '/dist'));
+  del.sync(join(process.cwd(), '/node_modules/@ctrl/ngx-emoji-mart'));
 
   // make emoi
   await ngPackagr()
