@@ -41,7 +41,7 @@
     "@types/node": "12.7.8",
     "@types/stringify-object": "3.2.0",
     "codelyzer": "5.1.2",
-    "del": "5.0.0",
+    "del": "5.1.0",
     "emoji-datasource": "4.0.4",
     "emojilib": "2.4.0",
     "fs-extra": "8.1.0",
