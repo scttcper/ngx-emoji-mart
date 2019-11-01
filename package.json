@@ -38,7 +38,7 @@
     "@types/fs-extra": "8.0.1",
     "@types/inflection": "1.5.28",
     "@types/jasmine": "3.4.4",
-    "@types/node": "12.11.1",
+    "@types/node": "12.12.3",
     "@types/stringify-object": "3.2.0",
     "codelyzer": "5.1.2",
     "del": "5.1.0",
