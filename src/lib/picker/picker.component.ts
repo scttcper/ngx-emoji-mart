@@ -414,7 +414,7 @@ export class PickerComponent implements OnInit {
     this.skinChange.emit(skin);
   }
   getWidth(): string {
-    if (this.style.width) {
+    if (this.style && this.style.width) {
       return this.style.width;
     }
     return this.perLine * (this.emojiSize + 12) + 12 + 2 + this.measureScrollbar + 'px';
