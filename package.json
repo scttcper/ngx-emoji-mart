@@ -54,7 +54,7 @@
     "karma-jasmine-html-reporter": "1.4.2",
     "karma-mocha-reporter": "2.2.5",
     "ng-packagr": "5.6.1",
-    "semantic-release": "15.13.24",
+    "semantic-release": "15.13.31",
     "stringify-object": "3.3.0",
     "ts-node": "8.4.1",
     "tsickle": "0.37.0",
