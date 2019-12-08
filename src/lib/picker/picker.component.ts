@@ -256,7 +256,9 @@ export class PickerComponent implements OnInit {
   }
   setActiveCategories(categoriesToMakeActive: Array<EmojiCategory>) {
     if (this.showSingleCategory) {
-      this.activeCategories = categoriesToMakeActive.filter(x => x.name === this.selected);
+      this.activeCategories = categoriesToMakeActive.filter(
+        x => (x.name === this.selected || x === this.SEARCH_CATEGORY)
+      );
     } else {
       this.activeCategories = categoriesToMakeActive;
     }
