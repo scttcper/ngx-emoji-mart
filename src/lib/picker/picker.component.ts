@@ -238,8 +238,10 @@ export class PickerComponent implements OnInit {
     this.categories.unshift(this.SEARCH_CATEGORY);
     this.selected = this.categories.filter(category => category.first)[0].name;
 
-    const categoriesToLoadFirst = 3;
+    // Need to be careful if small number of categories
+    let categoriesToLoadFirst = Math.min(this.categories.length, 3);
     this.setActiveCategories(this.activeCategories = this.categories.slice(0, categoriesToLoadFirst));
+
     // Trim last active category
     const lastActiveCategoryEmojis = this.categories[categoriesToLoadFirst - 1].emojis.slice();
     this.categories[categoriesToLoadFirst - 1].emojis = lastActiveCategoryEmojis.slice(0, 60);
