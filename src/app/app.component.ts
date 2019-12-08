@@ -60,4 +60,11 @@ export class AppComponent {
   handleClick($event: EmojiEvent) {
     console.log($event.emoji);
   }
+  emojiFilter(e: string): boolean {
+    // Can use this to test [emojisToShowFilter]
+    if (e && e.indexOf && e.indexOf('1F4') >= 0) {
+      return true;
+    }
+    return false;
+  }
 }
