@@ -187,9 +187,12 @@ export class EmojiSearch {
 
     if (results) {
       if (emojisToShowFilter) {
-        results = results.filter((result: EmojiData) =>
-          emojisToShowFilter(this.emojiService.names[result.id]),
-        );
+        results = results.filter((result: EmojiData) => {
+          if (result && result.id) {
+            return emojisToShowFilter(this.emojiService.names[result.id].unified);
+          }
+          return false;
+        });
       }
 
       if (results && results.length > maxResults) {
