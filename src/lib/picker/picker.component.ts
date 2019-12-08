@@ -239,7 +239,7 @@ export class PickerComponent implements OnInit {
     this.selected = this.categories.filter(category => category.first)[0].name;
 
     // Need to be careful if small number of categories
-    let categoriesToLoadFirst = Math.min(this.categories.length, 3);
+    const categoriesToLoadFirst = Math.min(this.categories.length, 3);
     this.setActiveCategories(this.activeCategories = this.categories.slice(0, categoriesToLoadFirst));
 
     // Trim last active category

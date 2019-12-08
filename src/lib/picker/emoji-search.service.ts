@@ -96,7 +96,7 @@ export class EmojiSearch {
             emojiId => {
               // Need to make sure that pool gets keyed
               // with the correct id, which is why we call emojiService.getData below
-              let emoji = this.emojiService.getData(emojiId);
+              const emoji = this.emojiService.getData(emojiId);
               pool[emoji.id] = emoji;
             }
           );
