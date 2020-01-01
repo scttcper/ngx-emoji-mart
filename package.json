@@ -57,7 +57,7 @@
     "semantic-release": "15.13.31",
     "stringify-object": "3.3.0",
     "ts-node": "8.5.4",
-    "tsickle": "0.37.0",
+    "tsickle": "0.37.1",
     "tslint": "5.20.0",
     "typescript": "3.5.3"
   },
