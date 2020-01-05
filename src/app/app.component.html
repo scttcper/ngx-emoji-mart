@@ -25,7 +25,7 @@
         type="button"
         class="btn btn-sm btn-light mr-1 mb-2"
         (click)="setDarkmode(undefined)"
-        [class.active]="darkMode === undefined"
+        [class.active]="darkestMode === undefined"
       >
         auto
       </button>
@@ -33,7 +33,7 @@
         type="button"
         class="btn btn-sm btn-light mr-1 mb-2"
         (click)="setDarkmode(true)"
-        [class.active]="darkMode === true"
+        [class.active]="darkestMode === true"
       >
         dark
       </button>
@@ -41,7 +41,7 @@
         type="button"
         class="btn btn-sm btn-light mr-1 mb-2"
         (click)="setDarkmode(false)"
-        [class.active]="darkMode === false"
+        [class.active]="darkestMode === false"
       >
         light
       </button>
