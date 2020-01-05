@@ -189,7 +189,7 @@ export class EmojiSearch {
       if (emojisToShowFilter) {
         results = results.filter((result: EmojiData) => {
           if (result && result.id) {
-            return emojisToShowFilter(this.emojiService.names[result.id].unified);
+            return emojisToShowFilter(this.emojiService.names[result.id]);
           }
           return false;
         });
