@@ -7,12 +7,43 @@
 
   <div class="row mb-1">
     <div class="col-12 text-center">
-      <button type="button"
+      <button
+        type="button"
         class="btn btn-sm btn-light mr-1 mb-2"
         *ngFor="let theme of themes"
         (click)="setTheme(theme)"
-        [class.active]="theme === set">
+        [class.active]="theme === set"
+      >
         {{ theme }}
+      </button>
+    </div>
+  </div>
+
+  <div class="row mb-1">
+    <div class="col-12 text-center">
+      <button
+        type="button"
+        class="btn btn-sm btn-light mr-1 mb-2"
+        (click)="setDarkmode(undefined)"
+        [class.active]="darkMode === undefined"
+      >
+        auto
+      </button>
+      <button
+        type="button"
+        class="btn btn-sm btn-light mr-1 mb-2"
+        (click)="setDarkmode(true)"
+        [class.active]="darkMode === true"
+      >
+        dark
+      </button>
+      <button
+        type="button"
+        class="btn btn-sm btn-light mr-1 mb-2"
+        (click)="setDarkmode(false)"
+        [class.active]="darkMode === false"
+      >
+        light
       </button>
     </div>
   </div>
@@ -22,12 +53,14 @@
       <div class="d-flex justify-content-center">
         <emoji-mart
           [set]="set"
+          [darkMode]="darkMode"
           [isNative]="native"
           [hideRecent]="false"
           [custom]="CUSTOM_EMOJIS"
           (emojiSelect)="handleClick($event)"
           title="Pick your emoji…"
-          emoji='point_up'>
+          emoji="point_up"
+        >
         </emoji-mart>
       </div>
     </div>

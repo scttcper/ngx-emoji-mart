@@ -29,7 +29,7 @@ import { Emoji, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 
     <div class="emoji-mart-preview-data">
       <div class="emoji-mart-preview-name">{{ emojiData.name }}</div>
-      <div class="emoji-mart-preview-shortnames">
+      <div class="emoji-mart-preview-shortname">
         <span class="emoji-mart-preview-shortname" *ngFor="let short_name of emojiData.shortNames">
           :{{ short_name }}:
         </span>

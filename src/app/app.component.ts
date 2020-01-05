@@ -49,6 +49,7 @@ export class AppComponent {
     'messenger',
     'facebook',
   ];
+  darkMode: undefined | boolean;
   set = 'native';
   native = true;
   CUSTOM_EMOJIS = CUSTOM_EMOJIS;
@@ -56,6 +57,9 @@ export class AppComponent {
   setTheme(set: string) {
     this.native = set === 'native';
     this.set = set;
+  }
+  setDarkmode(mode: boolean | undefined) {
+    this.darkMode = mode;
   }
   handleClick($event: EmojiEvent) {
     console.log($event.emoji);
