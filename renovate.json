@@ -4,7 +4,6 @@
     "schedule:monthly"
   ],
   "automerge": "minor",
-  "rebaseStalePrs": true,
   "semanticCommits": true,
   "pinVersions": false
 }
