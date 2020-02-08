@@ -32,7 +32,8 @@ Latest version available for each version of Angular
 | @ctrl/ngx-emoji-mart | Angular |
 | -------------------- | ------- |
 | 0.17.0               | 6.x 7.x |
-| 1.0.0                | >8      |
+| 1.0.6                | 8.x     |
+| current              | >= 9.x  |
 
 ## Components
 
