@@ -6,9 +6,8 @@
   "sideEffects": [ "*.css" ],
   "ngPackage": {
     "lib": {
-      "entryFile": "public_api.ts",
-      "languageLevel": ["dom", "es2017"]
+      "entryFile": "public_api.ts"
     },
-    "dest": "../../../dist/emoji"
+    "dest": "../../../../dist/emoji"
   }
 }

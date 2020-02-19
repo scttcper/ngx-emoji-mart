@@ -18,12 +18,11 @@
   "ngPackage": {
     "lib": {
       "entryFile": "public_api.ts",
-      "languageLevel": ["dom", "es2017"],
       "umdModuleIds": {
         "@ctrl/ngx-emoji-mart/ngx-emoji": "@ctrl/ngx-emoji-mart/ngx-emoji"
       }
     },
-    "dest": "../../../dist/picker"
+    "dest": "../../../dist"
   },
   "keywords": [
     "angular",
