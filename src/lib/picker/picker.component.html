@@ -12,6 +12,7 @@
     ></emoji-mart-anchors>
   </div>
   <emoji-search
+    *ngIf="enableSearch"
     #searchRef
     [i18n]="i18n"
     (searchResults)="handleSearch($event)"
