@@ -1,4 +1,4 @@
-<div class="emoji-mart"
+<section class="emoji-mart {{ darkMode ? 'emoji-mart-dark' : '' }}"
   [style.width]="getWidth()"
   [ngStyle]="style">
   <div class="emoji-mart-bar">
@@ -68,4 +68,4 @@
       (skinChange)="handleSkinChange($event)"
     ></emoji-preview>
   </div>
-</div>
+</section>

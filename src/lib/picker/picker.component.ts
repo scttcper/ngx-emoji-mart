@@ -69,6 +69,10 @@ export class PickerComponent implements OnInit {
   @Input() style: any = {};
   @Input() title = 'Emoji Mart™';
   @Input() emoji = 'department_store';
+  @Input() darkMode = !!(
+    typeof matchMedia === 'function' &&
+    matchMedia('(prefers-color-scheme: dark)').matches
+  );
   @Input() color = '#ae65c5';
   @Input() hideObsolete = true;
   /** all categories shown */

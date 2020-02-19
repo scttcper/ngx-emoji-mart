@@ -13,12 +13,12 @@ import { Emoji } from '@ctrl/ngx-emoji-mart/ngx-emoji';
   template: `
     <section
       class="emoji-mart-skin-swatches"
-      [class.emoji-mart-skin-swatches-opened]="opened"
+      [class.opened]="opened"
     >
       <span
         *ngFor="let skinTone of skinTones"
         class="emoji-mart-skin-swatch"
-        [class.emoji-mart-skin-swatch-selected]="skinTone === skin"
+        [class.selected]="skinTone === skin"
       >
         <span
           (click)="this.handleClick(skinTone)"

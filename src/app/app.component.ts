@@ -49,6 +49,11 @@ export class AppComponent {
     'messenger',
     'facebook',
   ];
+  darkMode: undefined | boolean = !!(
+    typeof matchMedia === 'function' &&
+    matchMedia('(prefers-color-scheme: dark)').matches
+  );
+  darkestMode: undefined | boolean = undefined;
   set = 'native';
   native = true;
   CUSTOM_EMOJIS = CUSTOM_EMOJIS;
@@ -56,6 +61,18 @@ export class AppComponent {
   setTheme(set: string) {
     this.native = set === 'native';
     this.set = set;
+  }
+  setDarkmode(mode: boolean | undefined) {
+    if (mode === undefined) {
+      this.darkestMode = mode;
+      this.darkMode = !!(
+        typeof matchMedia === 'function' &&
+        matchMedia('(prefers-color-scheme: dark)').matches
+      );
+    } else {
+      this.darkMode = mode;
+      this.darkestMode = mode;
+    }
   }
   handleClick($event: EmojiEvent) {
     console.log($event.emoji);
