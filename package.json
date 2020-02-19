@@ -10,11 +10,11 @@
     "test": "ng test --watch=false --browsers=ChromeCI",
     "test:watch": "ng test --browsers=ChromeCI",
     "test:ci": "ng test --watch=false --code-coverage --no-progress --browsers=ChromeCI",
-    "link": "cd dist/packages-dist && npm link",
+    "link": "cd dist && npm link",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
     "ghpages": "ng build --prod --no-progress",
-    "semantic-release": "cd dist/packages-dist && semantic-release"
+    "semantic-release": "cd dist && semantic-release"
   },
   "private": true,
   "dependencies": {
