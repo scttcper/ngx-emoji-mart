@@ -20,7 +20,7 @@
     ]
   },
   "paths": {
-    "@ctrl/ngx-emoji-mart/ngx-emoji": ["./src/lib/emoji/public_api"]
+    "@ctrl/ngx-emoji-mart/ngx-emoji": ["./src/lib/picker/ngx-emoji/public_api"]
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

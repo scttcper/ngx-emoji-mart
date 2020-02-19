@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { EmojiEvent } from '../lib/emoji/public_api';
+import { EmojiEvent } from '../lib/picker/ngx-emoji/public_api';
 
 const CUSTOM_EMOJIS = [
   {
