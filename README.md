@@ -56,7 +56,7 @@ Or angular-cli can also include it via angular-cli.json
 ```
 "styles": [
   "styles.scss",
-  "../node_modules/@ctrl/ngx-emoji-mart/picker.css"
+  "node_modules/@ctrl/ngx-emoji-mart/picker.css"
 ]
 ```
 
