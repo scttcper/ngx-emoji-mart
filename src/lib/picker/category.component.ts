@@ -162,7 +162,6 @@ export class CategoryComponent implements OnInit {
 
   getEmojis() {
     if (this.name === 'Recent') {
-      console.log('fuuuuu')
       let frequentlyUsed = this.recent || this.frequently.get(this.perLine, this.totalFrequentLines);
       if (!frequentlyUsed || !frequentlyUsed.length) {
         frequentlyUsed = this.frequently.get(this.perLine, this.totalFrequentLines);
