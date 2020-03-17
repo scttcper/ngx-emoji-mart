@@ -55,7 +55,6 @@ export interface EmojiEvent {
 
     <span
       *ngIf="!useButton && isVisible"
-      type="button"
       (click)="handleClick($event)"
       (mouseenter)="handleOver($event)"
       (mouseleave)="handleLeave($event)"
