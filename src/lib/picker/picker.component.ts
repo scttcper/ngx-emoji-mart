@@ -97,7 +97,7 @@ export class PickerComponent implements OnInit {
   @Input() categoriesIcons = icons.categories;
   @Input() searchIcons = icons.search;
   @Input() useButton = false;
-  @Input() enableFrequentEmojiSort = true;
+  @Input() enableFrequentEmojiSort = false;
   @Input() enableSearch = true;
   @Input() showSingleCategory = false;
   @Output() emojiClick = new EventEmitter<any>();
