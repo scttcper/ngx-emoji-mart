@@ -97,6 +97,7 @@ export class PickerComponent implements OnInit {
   @Input() categoriesIcons = icons.categories;
   @Input() searchIcons = icons.search;
   @Input() useButton = false;
+  @Input() enableFrequentEmojiSort = true;
   @Input() enableSearch = true;
   @Input() showSingleCategory = false;
   @Output() emojiClick = new EventEmitter<any>();
@@ -383,7 +384,7 @@ export class PickerComponent implements OnInit {
     }
 
     const component = this.categoryRefs.toArray()[1];
-    if (component) {
+    if (component && this.enableFrequentEmojiSort) {
       component.getEmojis();
       component.ref.markForCheck();
     }
