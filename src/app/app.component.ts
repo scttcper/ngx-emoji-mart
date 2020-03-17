@@ -12,25 +12,13 @@ const CUSTOM_EMOJIS = [
     name: 'Octocat',
     shortNames: ['octocat'],
     keywords: ['github'],
-    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7',
+    imageUrl: 'https://github.githubassets.com/images/icons/emoji/octocat.png',
   },
   {
     name: 'Squirrel',
     shortNames: ['shipit', 'squirrel'],
     keywords: ['github'],
-    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/shipit.png?v7',
-  },
-  {
-    name: 'Test Flag',
-    shortNames: ['test'],
-    keywords: ['test', 'flag'],
-    spriteUrl:
-      'https://unpkg.com/emoji-datasource-twitter@4.0.4/img/twitter/sheets-256/64.png',
-    sheet_x: 1,
-    sheet_y: 1,
-    size: 64,
-    sheetColumns: 52,
-    sheetRows: 52,
+    imageUrl: 'https://github.githubassets.com/images/icons/emoji/shipit.png',
   },
 ];
 
@@ -44,9 +32,6 @@ export class AppComponent {
     'native',
     'apple',
     'google',
-    'twitter',
-    'emojione',
-    'messenger',
     'facebook',
   ];
   darkMode: undefined | boolean = !!(

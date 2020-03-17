@@ -4,7 +4,7 @@ import {
   EventEmitter,
   Input,
   OnChanges,
-  Output,
+  Output
 } from '@angular/core';
 
 import { EmojiData } from './data/data.interfaces';
@@ -17,14 +17,7 @@ export interface Emoji {
   tooltip: boolean;
   skin: 1 | 2 | 3 | 4 | 5 | 6;
   sheetSize: 16 | 20 | 32 | 64;
-  set:
-    | 'apple'
-    | 'google'
-    | 'twitter'
-    | 'emojione'
-    | 'messenger'
-    | 'facebook'
-    | '';
+  set: 'apple' | 'google' | 'twitter' | 'facebook' | '';
   size: number;
   emoji: string | EmojiData;
   backgroundImageFn: (set: string, sheetSize: number) => string;
@@ -42,24 +35,44 @@ export interface EmojiEvent {
 @Component({
   selector: 'ngx-emoji',
   template: `
-  <button *ngIf="isVisible"
-    type="button"
-    (click)="handleClick($event)"
-    (mouseenter)="handleOver($event)"
-    (mouseleave)="handleLeave($event)"
-    [title]="title"
-    [attr.aria-label]="label"
-    class="emoji-mart-emoji"
-    [class.emoji-mart-emoji-native]="isNative"
-    [class.emoji-mart-emoji-custom]="custom">
-    <span [ngStyle]="style">
-      <ng-template [ngIf]="isNative">{{ unified }}</ng-template>
-      <ng-content></ng-content>
+    <button
+      *ngIf="useButton && isVisible"
+      type="button"
+      (click)="handleClick($event)"
+      (mouseenter)="handleOver($event)"
+      (mouseleave)="handleLeave($event)"
+      [title]="title"
+      [attr.aria-label]="label"
+      class="emoji-mart-emoji"
+      [class.emoji-mart-emoji-native]="isNative"
+      [class.emoji-mart-emoji-custom]="custom"
+    >
+      <span [ngStyle]="style">
+        <ng-template [ngIf]="isNative">{{ unified }}</ng-template>
+        <ng-content></ng-content>
+      </span>
+    </button>
+
+    <span
+      *ngIf="!useButton && isVisible"
+      type="button"
+      (click)="handleClick($event)"
+      (mouseenter)="handleOver($event)"
+      (mouseleave)="handleLeave($event)"
+      [title]="title"
+      [attr.aria-label]="label"
+      class="emoji-mart-emoji"
+      [class.emoji-mart-emoji-native]="isNative"
+      [class.emoji-mart-emoji-custom]="custom"
+    >
+      <span [ngStyle]="style">
+        <ng-template [ngIf]="isNative">{{ unified }}</ng-template>
+        <ng-content></ng-content>
+      </span>
     </span>
-  </button>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  preserveWhitespaces: false,
+  preserveWhitespaces: false
 })
 export class EmojiComponent implements OnChanges, Emoji {
   @Input() skin: Emoji['skin'] = 1;
@@ -76,6 +89,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   @Input() SHEET_COLUMNS = 52;
   @Input() sheetRows?: number;
   @Input() sheetColumns?: number;
+  @Input() useButton?: boolean;
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
@@ -132,7 +146,7 @@ export class EmojiComponent implements OnChanges, Emoji {
       this.style = {
         width: `${this.size}px`,
         height: `${this.size}px`,
-        display: 'inline-block',
+        display: 'inline-block'
       };
       if (data.spriteUrl && this.sheetRows && this.sheetColumns) {
         this.style = {
@@ -140,13 +154,16 @@ export class EmojiComponent implements OnChanges, Emoji {
           backgroundImage: `url(${data.spriteUrl})`,
           backgroundSize: `${100 * this.sheetColumns}% ${100 *
             this.sheetRows}%`,
-          backgroundPosition: this.emojiService.getSpritePosition(data.sheet, this.sheetColumns),
+          backgroundPosition: this.emojiService.getSpritePosition(
+            data.sheet,
+            this.sheetColumns
+          )
         };
       } else {
         this.style = {
           ...this.style,
           backgroundImage: `url(${data.imageUrl})`,
-          backgroundSize: 'contain',
+          backgroundSize: 'contain'
         };
       }
     } else {
@@ -164,7 +181,7 @@ export class EmojiComponent implements OnChanges, Emoji {
           this.size,
           this.sheetSize,
           this.backgroundImageFn,
-          this.SHEET_COLUMNS,
+          this.SHEET_COLUMNS
         );
       }
     }
@@ -176,7 +193,11 @@ export class EmojiComponent implements OnChanges, Emoji {
   }
 
   getSanitizedData(): EmojiData {
-    return this.emojiService.getSanitizedData(this.emoji, this.skin, this.set) as EmojiData;
+    return this.emojiService.getSanitizedData(
+      this.emoji,
+      this.skin,
+      this.set
+    ) as EmojiData;
   }
 
   handleClick($event: Event) {
