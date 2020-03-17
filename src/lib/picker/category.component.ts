@@ -60,6 +60,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
           [forceSize]="emojiForceSize"
           [tooltip]="emojiTooltip"
           [backgroundImageFn]="emojiBackgroundImageFn"
+          [useButton]="emojiUseButton"
         ></ngx-emoji>
       </div>
 
@@ -93,6 +94,7 @@ export class CategoryComponent implements OnInit {
   @Input() emojiForceSize?: Emoji['forceSize'];
   @Input() emojiTooltip?: Emoji['tooltip'];
   @Input() emojiBackgroundImageFn?: Emoji['backgroundImageFn'];
+  @Input() emojiUseButton: boolean;
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
@@ -160,6 +162,7 @@ export class CategoryComponent implements OnInit {
 
   getEmojis() {
     if (this.name === 'Recent') {
+      console.log('fuuuuu')
       let frequentlyUsed = this.recent || this.frequently.get(this.perLine, this.totalFrequentLines);
       if (!frequentlyUsed || !frequentlyUsed.length) {
         frequentlyUsed = this.frequently.get(this.perLine, this.totalFrequentLines);

@@ -16,22 +16,7 @@ describe('EmojiSearch', () => {
     const res = es.search('pineapple');
     expect(res).toBeDefined();
     expect(res.length).toBe(1);
-    expect(res[0]).toEqual({
-      name: 'Pineapple',
-      unified: '1F34D',
-      shortName: 'pineapple',
-      keywords: ['fruit', 'nature', 'food'],
-      sheet: [7, 15],
-      shortNames: ['pineapple'],
-      id: 'pineapple',
-      native: '🍍',
-      skinVariations: [],
-      emoticons: [],
-      hidden: [],
-      text: '',
-      colons: ':pineapple:',
-      set: '',
-    });
+    expect(res[0].name).toBe('Pineapple');
   }));
 
   it('should filter only emojis we care about, exclude pineapple', inject(

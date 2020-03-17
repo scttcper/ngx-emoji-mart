@@ -74,38 +74,40 @@ use component
 ></emoji-mart>
 ```
 
-| Prop                   | Default                   | Description                                                                                                                                                                              |
-| ---------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **autoFocus**          | `false`                   | Auto focus the search input when mounted                                                                                                                                                 |
-| **color**              | `#ae65c5`                 | The top bar anchors select and hover color                                                                                                                                               |
-| **emoji**              | `department_store`        | emoji shown when no emojis are hovered, set to an empty string to show nothing                                                                                                           |
-| **darkMode**           | `varies`                  | Dark mode (boolean). true by default if the browser reports [prefers-color-scheme: dark.](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)                  |
-| **include**            | `[]`                      | Only load included categories. Accepts [I18n categories keys](#i18n). Order will be respected, except for the `recent` category which will always be the first.                          |
-| **exclude**            | `[]`                      | Don't load excluded categories. Accepts [I18n categories keys](#i18n).                                                                                                                   |
-| **custom**             | `[]`                      | [Custom emojis](#custom-emojis)                                                                                                                                                          |
-| **recent**             |                           | Pass your own frequently used emojis as array of string IDs                                                                                                                              |
-| **emojiSize**          | `24`                      | The emoji width and height                                                                                                                                                               |
-| **(emojiClick)**       |                           | not triggered on return key in search bar. Params: `{ emoji, $event }`                                                                                                                   |
-| **(emojiSelect)**      |                           | whenever an emoji is selected. returns `{ emoji, $event }`                                                                                                                               |
-| **perLine**            | `9`                       | Number of emojis per line. While there’s no minimum or maximum, this will affect the picker’s width. This will set _Frequently Used_ length as well (`perLine * totalFrequentLines (4)`) |
-| **totalFrequentLines** | `4`                       | number of lines of frequently used emojis                                                                                                                                                |
-| **i18n**               | [`{…}`](#i18n)            | [An object](#i18n) containing localized strings                                                                                                                                          |
-| **isNative**           | `false`                   | Renders the native unicode emoji                                                                                                                                                         |
-| **set**                | `apple`                   | The emoji set: `'apple', 'google', 'twitter', 'emojione', 'messenger', 'facebook'`                                                                                                       |
-| **sheetSize**          | `64`                      | The emoji [sheet size](#sheet-sizes): `16, 20, 32, 64`                                                                                                                                   |
-| **backgroundImageFn**  | `((set, sheetSize) => …)` | A Fn that returns that image sheet to use for emojis. Useful for avoiding a request if you have the sheet locally.                                                                       |
-| **emojisToShowFilter** | `((emoji) => true)`       | A Fn to choose whether an emoji should be displayed or not                                                                                                                               |
-| **showPreview**        | `true`                    | Display preview section                                                                                                                                                                  |
-| **enableSearch**       | `true`                    | Display search bar                                                                                                                                                                       |
-| **emojiTooltip**       | `false`                   | Show emojis short name when hovering (title)                                                                                                                                             |
-| **skin**               | `1`                       | Default skin color: `1, 2, 3, 4, 5, 6`                                                                                                                                                   |
-| **style**              |                           | Inline styles applied to the root element. Useful for positioning                                                                                                                        |
-| **title**              | `Emoji Mart™`             | The title shown when no emojis are hovered                                                                                                                                               |
-| **hideObsolete**       | `true`                    | Hides ex: "cop" emoji in favor of female and male emoji                                                                                                                                  |
-| **notFoundEmoji**      | `sleuth_or_spy`           | The emoji shown when there are no search results                                                                                                                                         |
-| **categoriesIcons**    | see `svgs/index.ts`       | the anchor icons                                                                                                                                                                         |
-| **searchIcons**        | see `svgs/index.ts`       | the search/close icon in the search bar                                                                                                                                                  |
-| **showSingleCategory** |                           | show only one category at a time to increase rendering performance                                                                                                                       |
+| Prop                         | Default                   | Description                                                                                                                                                                              |
+| ---------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **autoFocus**                | `false`                   | Auto focus the search input when mounted                                                                                                                                                 |
+| **color**                    | `#ae65c5`                 | The top bar anchors select and hover color                                                                                                                                               |
+| **emoji**                    | `department_store`        | emoji shown when no emojis are hovered, set to an empty string to show nothing                                                                                                           |
+| **darkMode**                 | `varies`                  | Dark mode (boolean). true by default if the browser reports [prefers-color-scheme: dark.](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)                  |
+| **include**                  | `[]`                      | Only load included categories. Accepts [I18n categories keys](#i18n). Order will be respected, except for the `recent` category which will always be the first.                          |
+| **exclude**                  | `[]`                      | Don't load excluded categories. Accepts [I18n categories keys](#i18n).                                                                                                                   |
+| **custom**                   | `[]`                      | [Custom emojis](#custom-emojis)                                                                                                                                                          |
+| **recent**                   |                           | Pass your own frequently used emojis as array of string IDs                                                                                                                              |
+| **emojiSize**                | `24`                      | The emoji width and height                                                                                                                                                               |
+| **(emojiClick)**             |                           | not triggered on return key in search bar. Params: `{ emoji, $event }`                                                                                                                   |
+| **(emojiSelect)**            |                           | whenever an emoji is selected. returns `{ emoji, $event }`                                                                                                                               |
+| **perLine**                  | `9`                       | Number of emojis per line. While there’s no minimum or maximum, this will affect the picker’s width. This will set _Frequently Used_ length as well (`perLine * totalFrequentLines (4)`) |
+| **totalFrequentLines**       | `4`                       | number of lines of frequently used emojis                                                                                                                                                |
+| **i18n**                     | [`{…}`](#i18n)            | [An object](#i18n) containing localized strings                                                                                                                                          |
+| **isNative**                 | `false`                   | Renders the native unicode emoji                                                                                                                                                         |
+| **set**                      | `apple`                   | The emoji set: `'apple', 'google', 'twitter', 'emojione', 'messenger', 'facebook'`                                                                                                       |
+| **sheetSize**                | `64`                      | The emoji [sheet size](#sheet-sizes): `16, 20, 32, 64`                                                                                                                                   |
+| **backgroundImageFn**        | `((set, sheetSize) => …)` | A Fn that returns that image sheet to use for emojis. Useful for avoiding a request if you have the sheet locally.                                                                       |
+| **emojisToShowFilter**       | `((emoji) => true)`       | A Fn to choose whether an emoji should be displayed or not                                                                                                                               |
+| **showPreview**              | `true`                    | Display preview section                                                                                                                                                                  |
+| **enableSearch**             | `true`                    | Display search bar                                                                                                                                                                       |
+| **emojiTooltip**             | `false`                   | Show emojis short name when hovering (title)                                                                                                                                             |
+| **skin**                     | `1`                       | Default skin color: `1, 2, 3, 4, 5, 6`                                                                                                                                                   |
+| **style**                    |                           | Inline styles applied to the root element. Useful for positioning                                                                                                                        |
+| **title**                    | `Emoji Mart™`             | The title shown when no emojis are hovered                                                                                                                                               |
+| **hideObsolete**             | `true`                    | Hides ex: "cop" emoji in favor of female and male emoji                                                                                                                                  |
+| **notFoundEmoji**            | `sleuth_or_spy`           | The emoji shown when there are no search results                                                                                                                                         |
+| **categoriesIcons**          | see `svgs/index.ts`       | the anchor icons                                                                                                                                                                         |
+| **searchIcons**              | see `svgs/index.ts`       | the search/close icon in the search bar                                                                                                                                                  |
+| **showSingleCategory**       |                           | show only one category at a time to increase rendering performance                                                                                                                       |
+| **useButton**                | `false`                   | Uses button elements for emoji instead of spans                                                                                                                                          |
+| **enableFrequentEmojiSort** | `false`                    | Enables re-sorting of emoji on click                                                                                                                                                    |
 
 #### I18n
 
@@ -141,32 +143,24 @@ skintones: {
 
 Sheets are served from [unpkg](https://unpkg.com), a global CDN that serves files published to [npm](https://www.npmjs.com).
 
-| Set       | sheetSize | Size    |
-| --------- | --------- | ------- |
-| apple     | 16        | 334 KB  |
-| apple     | 20        | 459 KB  |
-| apple     | 32        | 1.08 MB |
-| apple     | 64        | 2.94 MB |
-| emojione  | 16        | 315 KB  |
-| emojione  | 20        | 435 KB  |
-| emojione  | 32        | 1020 KB |
-| emojione  | 64        | 2.33 MB |
-| facebook  | 16        | 322 KB  |
-| facebook  | 20        | 439 KB  |
-| facebook  | 32        | 1020 KB |
-| facebook  | 64        | 2.5 MB  |
-| google    | 16        | 301 KB  |
-| google    | 20        | 409 KB  |
-| google    | 32        | 907 KB  |
-| google    | 64        | 2.17 MB |
-| messenger | 16        | 325 KB  |
-| messenger | 20        | 449 MB  |
-| messenger | 32        | 1.05 MB |
-| messenger | 64        | 2.69 MB |
-| twitter   | 16        | 288 KB  |
-| twitter   | 20        | 389 KB  |
-| twitter   | 32        | 839 KB  |
-| twitter   | 64        | 1.82 MB |
+| Set      | sheetSize | Size    |
+| -------- | --------- | ------- |
+| apple    | 16        | 334 KB  |
+| apple    | 20        | 459 KB  |
+| apple    | 32        | 1.08 MB |
+| apple    | 64        | 2.94 MB |
+| facebook | 16        | 322 KB  |
+| facebook | 20        | 439 KB  |
+| facebook | 32        | 1020 KB |
+| facebook | 64        | 2.5 MB  |
+| google   | 16        | 301 KB  |
+| google   | 20        | 409 KB  |
+| google   | 32        | 907 KB  |
+| google   | 64        | 2.17 MB |
+| twitter  | 16        | 288 KB  |
+| twitter  | 20        | 389 KB  |
+| twitter  | 32        | 839 KB  |
+| twitter  | 64        | 1.82 MB |
 
 #### Examples of `emoji` object:
 
@@ -201,7 +195,7 @@ Sheets are served from [unpkg](https://unpkg.com), a global CDN that serves file
   text: '',
   emoticons: [],
   custom: true,
-  imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7'
+  imageUrl: 'https://github.githubassets.com/images/icons/emoji/octocat.png'
 }
 ```
 
@@ -232,10 +226,11 @@ import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 | **skin**                                     |          | `1`                       | Skin color: `1, 2, 3, 4, 5, 6`                                                                                   |
 | **tooltip**                                  |          | `false`                   | Show emoji short name when hovering (title)                                                                      |  |
 | **hideObsolete**                             |          | `false`                   | Hides ex: "cop" emoji in favor of female and male emoji                                                          |  |
+| **useButton**                                |          | `false`                   | Uses button element instead of span                                                                              |  |
 
 #### Unsupported emojis fallback
 
-Certain sets don’t support all emojis (i.e. Messenger & Facebook don’t support `:shrug:`). By default the Emoji component will not render anything so that the emojis’ don’t take space in the picker when not available. When using the standalone Emoji component, you can however render anything you want by providing the `fallback` props.
+Certain sets don’t support all emojis (i.e. Facebook doesn't support `:shrug:`). By default the Emoji component will not render anything so that the emojis’ don’t take space in the picker when not available. When using the standalone Emoji component, you can however render anything you want by providing the `fallback` props.
 
 To have the component render `:shrug:` you would need to:
 
@@ -246,7 +241,7 @@ emojiFallback = (emoji: any, props: any) =>
 
 ```html
 <ngx-emoji
-  set="messenger"
+  set="twitter"
   emoji="shrug"
   size="24"
   [fallback]="emojiFallback"
@@ -265,7 +260,7 @@ const customEmojis = [
     text: '',
     emoticons: [],
     keywords: ['github'],
-    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7',
+    imageUrl: 'https://github.githubassets.com/images/icons/emoji/octocat.png',
   },
   {
     name: 'Test Flag',
@@ -362,7 +357,7 @@ It can however be overwritten as per user preference.
 
 #### Multiple sets supported
 
-Apple / Google / Twitter / EmojiOne / Messenger / Facebook
+Apple / Google / Twitter / Facebook
 
 <img width="214" alt="sets" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/sets.png">
 

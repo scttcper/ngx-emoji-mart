@@ -1,43 +1,44 @@
-const emojiData = require('emoji-datasource');
-const emojiLib = require('emojilib');
-import * as fs from 'fs';
-import * as inflection from 'inflection';
-import * as stringifyObject from 'stringify-object';
+import emojiDataRaw from 'emoji-datasource/emoji.json';
+import fs from 'fs';
+import path from 'path';
+import inflection from 'inflection';
+import stringifyObject from 'stringify-object';
 
+import { EmojiData } from './emoji';
+
+const emojiLib = require('emojilib');
+// cast types to emojiData
+// @ts-ignore
+const emojiData: EmojiData[] = emojiDataRaw;
 const categories: any[] = [];
 const emojis: any[] = [];
 const skins: any[] = [];
 const categoriesIndex: any = {};
 
 const catPairs = [
-  ['Smileys & People', 'people'],
+  ['Smileys & Emotion', 'smileys'],
+  ['People & Body', 'people'],
   ['Animals & Nature', 'nature'],
   ['Food & Drink', 'foods'],
   ['Activities', 'activity'],
   ['Travel & Places', 'places'],
   ['Objects', 'objects'],
   ['Symbols', 'symbols'],
-  ['Flags', 'flags'],
+  ['Flags', 'flags']
 ];
-const sets = [
-  'apple',
-  'google',
-  'twitter',
-  'emojione',
-  'facebook',
-  'messenger',
-];
+const sets = ['apple', 'google', 'twitter', 'facebook'];
 
 catPairs.forEach((category, i) => {
   const [name, id] = category;
-  categories[i] = { id: id, name: name, emojis: [] };
+  categories[i] = { id, name, emojis: [] };
   categoriesIndex[name] = i;
 });
 
-emojiData.sort((a: any, b: any) => {
-  const aTest = a.sort_order || a.short_name,
-    bTest = b.sort_order || b.short_name;
+emojiData.sort((a, b) => {
+  const aTest = a.sort_order || a.short_name;
+  const bTest = b.sort_order || b.short_name;
 
+  // @ts-ignore
   return aTest - bTest;
 });
 
@@ -63,7 +64,7 @@ function setupSheet(datum: any) {
 
 emojiData.forEach((datum: any) => {
   const category = datum.category;
-  let categoryIndex;
+  let categoryIndex: number;
 
   if (!datum.category) {
     throw new Error(`"${datum.short_name}" doesn’t have a category`);
@@ -92,8 +93,6 @@ emojiData.forEach((datum: any) => {
     datum.keywords = emojiLib.lib[datum.short_name].keywords;
   }
 
-
-
   if (datum.category === 'Skin Tones') {
     skins.push(datum);
   } else {
@@ -105,7 +104,7 @@ emojiData.forEach((datum: any) => {
 
   missingSets(datum);
   if (datum.skin_variations) {
-    datum.skinVariations = Object.keys(datum.skin_variations).map((key) => {
+    datum.skinVariations = Object.keys(datum.skin_variations).map(key => {
       const variation = datum.skin_variations[key];
       setupSheet(variation);
       missingSets(variation);
@@ -126,7 +125,9 @@ emojiData.forEach((datum: any) => {
     delete datum.skin_variations;
   }
 
-  datum.shortNames = datum.short_names.filter((i: any) => i !== datum.short_name);
+  datum.shortNames = datum.short_names.filter(
+    (i: any) => i !== datum.short_name
+  );
   delete datum.short_names;
 
   // renaming
@@ -136,7 +137,6 @@ emojiData.forEach((datum: any) => {
     datum.obsoletedBy = datum.obsoleted_by;
   }
   delete datum.obsoleted_by;
-
 
   if (datum.text === '') {
     delete datum.text;
@@ -163,7 +163,7 @@ emojiData.forEach((datum: any) => {
   emojis.push(datum);
 });
 
-const flags = categories[categoriesIndex['Flags']];
+const flags = categories[categoriesIndex.Flags];
 flags.emojis = flags.emojis
   .filter((flag: any) => {
     // Until browsers support Flag UN
@@ -174,35 +174,57 @@ flags.emojis = flags.emojis
   })
   .sort();
 
+// Merge “Smileys & Emotion” and “People & Body” into a single category
+const smileys = categories[0];
+const people = categories[1];
+const smileysAndPeople = {
+  id: 'people',
+  name: 'Smileys & People',
+  emojis: [
+    ...smileys.emojis.slice(0, 114),
+    ...people.emojis,
+    ...smileys.emojis.slice(114)
+  ]
+};
+
+categories.unshift(smileysAndPeople);
+categories.splice(1, 2);
+
 const sEmojis = stringifyObject(emojis, {
   inlineCharacterLimit: 25,
-  indent: '  ',
+  indent: '  '
 });
 let doc = `import { CompressedEmojiData } from './data.interfaces';
 export const emojis: CompressedEmojiData[] = ${sEmojis};
 `;
-fs.writeFileSync('./src/lib/emoji/data/emojis.ts', doc);
-
+fs.writeFileSync(
+  path.join(__dirname, '../src/lib/picker/ngx-emoji/data/emojis.ts'),
+  doc
+);
 
 const sCategories = stringifyObject(categories, {
   inlineCharacterLimit: 25,
-  indent: '  ',
+  indent: '  '
 });
 doc = `import { EmojiCategory } from './data.interfaces';
 export const categories: EmojiCategory[] = ${sCategories};
 `;
-fs.writeFileSync('./src/lib/emoji/data/categories.ts', doc);
-
+fs.writeFileSync(
+  path.join(__dirname, '../src/lib/picker/ngx-emoji/data/categories.ts'),
+  doc
+);
 
 const sSkins = stringifyObject(skins, {
   inlineCharacterLimit: 25,
-  indent: '  ',
+  indent: '  '
 });
 doc = `import { SkinData } from './data.interfaces';
 export const skins: SkinData[] = ${sSkins};
 `;
-fs.writeFileSync('./src/lib/emoji/data/skins.ts', doc);
-
+fs.writeFileSync(
+  path.join(__dirname, '../src/lib/picker/ngx-emoji/data/skins.ts'),
+  doc
+);
 
 // const sShortNames = stringifyObject(short_names, {
 //   inlineCharacterLimit: 25,

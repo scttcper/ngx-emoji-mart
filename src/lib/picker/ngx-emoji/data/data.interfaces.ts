@@ -58,6 +58,5 @@ export interface SkinData {
   name: string;
   unified: string;
   shortName: string;
-  hidden: string[];
   sheet: [number, number];
 }
