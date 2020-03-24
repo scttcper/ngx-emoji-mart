@@ -17,6 +17,7 @@ export interface Emoji {
   tooltip: boolean;
   skin: 1 | 2 | 3 | 4 | 5 | 6;
   sheetSize: 16 | 20 | 32 | 64;
+  sheetRows?: number;
   set: 'apple' | 'google' | 'twitter' | 'facebook' | '';
   size: number;
   emoji: string | EmojiData;
@@ -85,7 +86,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   @Input() emoji: Emoji['emoji'] = '';
   @Input() fallback?: Emoji['fallback'];
   @Input() hideObsolete = false;
-  @Input() SHEET_COLUMNS = 52;
+  @Input() SHEET_COLUMNS = 57;
   @Input() sheetRows?: number;
   @Input() sheetColumns?: number;
   @Input() useButton?: boolean;
@@ -151,8 +152,7 @@ export class EmojiComponent implements OnChanges, Emoji {
         this.style = {
           ...this.style,
           backgroundImage: `url(${data.spriteUrl})`,
-          backgroundSize: `${100 * this.sheetColumns}% ${100 *
-            this.sheetRows}%`,
+          backgroundSize: `${100 * this.sheetColumns}% ${100 * this.sheetRows}%`,
           backgroundPosition: this.emojiService.getSpritePosition(
             data.sheet,
             this.sheetColumns
@@ -179,6 +179,7 @@ export class EmojiComponent implements OnChanges, Emoji {
           this.set,
           this.size,
           this.sheetSize,
+          this.sheetRows,
           this.backgroundImageFn,
           this.SHEET_COLUMNS
         );

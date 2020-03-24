@@ -13,7 +13,7 @@ const SKINS = ['1F3FA', '1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF'];
 export const DEFAULT_BACKGROUNDFN = (
   set: string,
   sheetSize: number,
-) => `https://unpkg.com/emoji-datasource-${set}@4.0.4/img/${set}/sheets-256/${sheetSize}.png`;
+) => `https://unpkg.com/emoji-datasource-${set}@5.0.1/img/${set}/sheets-256/${sheetSize}.png`;
 
 @Injectable({ providedIn: 'root' })
 export class EmojiService {
@@ -141,15 +141,16 @@ export class EmojiService {
     set: Emoji['set'] = 'apple',
     size: Emoji['size'] = 24,
     sheetSize: Emoji['sheetSize'] = 64,
+    sheetRows: Emoji['sheetRows'] = 57,
     backgroundImageFn: Emoji['backgroundImageFn'] = DEFAULT_BACKGROUNDFN,
-    sheetColumns = 52,
-    ) {
+    sheetColumns = 57,
+  ) {
     return {
       width: `${size}px`,
       height: `${size}px`,
       display: 'inline-block',
       'background-image': `url(${backgroundImageFn(set, sheetSize)})`,
-      'background-size': `${100 * sheetColumns}%`,
+      'background-size': `${100 * sheetColumns}% ${100 * sheetRows}%`,
       'background-position': this.getSpritePosition(sheet, sheetColumns),
     };
   }

@@ -269,12 +269,12 @@ const customEmojis = [
     emoticons: [],
     keywords: ['test', 'flag'],
     spriteUrl:
-      'https://unpkg.com/emoji-datasource-twitter@4.0.4/img/twitter/sheets-256/64.png',
+      'https://unpkg.com/emoji-datasource-twitter@5.0.1/img/twitter/sheets-256/64.png',
     sheet_x: 1,
     sheet_y: 1,
     size: 64,
-    sheetColumns: 52,
-    sheetRows: 52,
+    sheetColumns: 57,
+    sheetRows: 57,
   },
 ];
 ```
