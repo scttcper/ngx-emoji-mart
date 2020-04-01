@@ -1,25 +1,21 @@
-import { copySync } from 'fs-extra';
+import { copyFileSync } from 'fs';
 import { ngPackagr } from 'ng-packagr';
 import { join } from 'path';
-import * as del from 'del';
 
 async function main() {
-  // cleanup dist
-  del.sync(join(process.cwd(), '/dist'));
-
   await ngPackagr()
     .forProject(join(process.cwd(), 'src/lib/picker/package.json'))
     .build();
 
-  copySync(
+  copyFileSync(
     join(process.cwd(), 'README.md'),
     join(process.cwd(), 'dist/README.md'),
   );
-  copySync(
+  copyFileSync(
     join(process.cwd(), 'LICENSE'),
     join(process.cwd(), 'dist/LICENSE'),
   );
-  copySync(
+  copyFileSync(
     join(process.cwd(), 'src/lib/picker/picker.css'),
     join(process.cwd(), 'dist/picker.css'),
   );
