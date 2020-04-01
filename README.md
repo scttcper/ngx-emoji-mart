@@ -6,7 +6,7 @@
 [![travis](https://travis-ci.org/TypeCtrl/ngx-emoji-mart.svg?branch=master)](https://travis-ci.org/TypeCtrl/ngx-emoji-mart)
 [![codecov](https://img.shields.io/codecov/c/github/typectrl/ngx-emoji-mart.svg)](https://codecov.io/github/typectrl/ngx-emoji-mart)
 
-**DEMO**: https://ngx-emoji-mart.netlify.com/
+**DEMO**: https://ngx-emoji-mart.netlify.app
 
 This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by missive
 
