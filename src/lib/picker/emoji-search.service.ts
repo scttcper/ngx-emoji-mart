@@ -138,10 +138,11 @@ export class EmojiSearch {
                 const emoji = aPool[id];
                 if (!this.emojiSearch[id]) {
                   this.emojiSearch[id] = this.buildSearch(
+                    emoji.id,
                     emoji.short_names,
                     emoji.name,
                     emoji.keywords,
-                    emoji.emoticons,
+                    emoji.emoticons
                   );
                 }
                 const query = this.emojiSearch[id];
@@ -205,6 +206,7 @@ export class EmojiSearch {
   buildSearch(
     shortNames: string[],
     name: string,
+    id: string,
     keywords: string[],
     emoticons: string[],
   ) {
@@ -228,7 +230,8 @@ export class EmojiSearch {
 
     addToSearch(shortNames, true);
     addToSearch(name, true);
-    addToSearch(keywords, false);
+    addToSearch(id, true);
+    addToSearch(keywords, true);
     addToSearch(emoticons, false);
 
     return search.join(',');
