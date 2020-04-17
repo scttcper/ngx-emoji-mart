@@ -138,9 +138,9 @@ export class EmojiSearch {
                 const emoji = aPool[id];
                 if (!this.emojiSearch[id]) {
                   this.emojiSearch[id] = this.buildSearch(
-                    emoji.id,
                     emoji.short_names,
                     emoji.name,
+                    emoji.id,
                     emoji.keywords,
                     emoji.emoticons
                   );
