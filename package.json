@@ -38,7 +38,7 @@
     "@angular/language-service": "9.1.2",
     "@types/inflection": "1.5.28",
     "@types/jasmine": "3.5.11",
-    "@types/node": "13.13.4",
+    "@types/node": "13.13.12",
     "@types/stringify-object": "3.2.0",
     "codelyzer": "5.2.2",
     "del-cli": "3.0.0",
