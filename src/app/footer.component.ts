@@ -5,19 +5,12 @@ import { ChangeDetectionStrategy, Component, VERSION } from '@angular/core';
   template: `
     <footer class="footer mb-4 mt-5">
       <div class="mb-2">
-        <mdo-github-button
-          [count]="true"
-          user="typectrl"
-          repo="ngx-emoji-mart"
-        >
-        </mdo-github-button>
+        <gh-button [count]="true" user="typectrl" repo="ngx-emoji-mart"></gh-button>
       </div>
       Demo using Angular {{ version }}
       <br />
       Released under the
-      <a href="https://github.com/typectrl/ngx-emoji-mart/blob/master/LICENSE"
-        >MIT</a
-      >
+      <a href="https://github.com/typectrl/ngx-emoji-mart/blob/master/LICENSE">MIT</a>
       license -
       <a href="https://github.com/typectrl/ngx-emoji-mart">View source</a>
     </footer>
