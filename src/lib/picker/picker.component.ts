@@ -174,7 +174,7 @@ export class PickerComponent implements OnInit {
 
     if (this.include !== undefined) {
       allCategories.sort((a, b) => {
-        if (this.include.indexOf(a.id) > this.include.indexOf(b.id)) {
+        if (this.include!.indexOf(a.id) > this.include!.indexOf(b.id)) {
           return 1;
         }
         return -1;
@@ -199,8 +199,8 @@ export class PickerComponent implements OnInit {
 
         const { emojis } = category;
         // tslint:disable-next-line: prefer-for-of
-        for (let emojiIndex = 0; emojiIndex < emojis.length; emojiIndex++) {
-          const emoji = emojis[emojiIndex];
+        for (let emojiIndex = 0; emojiIndex < emojis!.length; emojiIndex++) {
+          const emoji = emojis![emojiIndex];
           if (this.emojisToShowFilter(emoji)) {
             newEmojis.push(emoji);
           }
@@ -248,7 +248,7 @@ export class PickerComponent implements OnInit {
     this.setActiveCategories(this.activeCategories = this.categories.slice(0, categoriesToLoadFirst));
 
     // Trim last active category
-    const lastActiveCategoryEmojis = this.categories[categoriesToLoadFirst - 1].emojis.slice();
+    const lastActiveCategoryEmojis = this.categories[categoriesToLoadFirst - 1].emojis!.slice();
     this.categories[categoriesToLoadFirst - 1].emojis = lastActiveCategoryEmojis.slice(0, 60);
 
     this.ref.markForCheck();
@@ -337,7 +337,7 @@ export class PickerComponent implements OnInit {
         // scrolling
         for (const category of this.categories) {
           const component = this.categoryRefs.find(n => n.id === category.id);
-          const active = component.handleScroll(target.scrollTop);
+          const active = component!.handleScroll(target.scrollTop);
           if (active) {
             activeCategory = category;
           }
@@ -377,7 +377,7 @@ export class PickerComponent implements OnInit {
       }
     }
 
-    if (!this.hideRecent && !this.recent) {
+    if (!this.hideRecent && !this.recent && emoji) {
       this.frequently.add(emoji);
     }
 
@@ -392,8 +392,8 @@ export class PickerComponent implements OnInit {
       return;
     }
 
-    const emojiData = this.CUSTOM_CATEGORY.emojis.find(
-      customEmoji => customEmoji.id === $event.emoji.id,
+    const emojiData = this.CUSTOM_CATEGORY.emojis!.find(
+      (customEmoji: any) => customEmoji.id === $event.emoji.id,
     );
     if (emojiData) {
       $event.emoji = { ...emojiData };

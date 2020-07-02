@@ -6,7 +6,7 @@
   "sideEffects": [ "*.css" ],
   "ngPackage": {
     "lib": {
-      "entryFile": "public_api.ts"
+      "entryFile": "index.ts"
     },
     "dest": "../../../../dist/emoji"
   }

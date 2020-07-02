@@ -92,12 +92,12 @@ export class EmojiSearch {
             return;
           }
 
-          category.emojis.forEach(
+          category.emojis?.forEach(
             emojiId => {
               // Need to make sure that pool gets keyed
               // with the correct id, which is why we call emojiService.getData below
               const emoji = this.emojiService.getData(emojiId);
-              pool[emoji.id] = emoji;
+              pool[emoji?.id ?? ''] = emoji;
             }
           );
         });

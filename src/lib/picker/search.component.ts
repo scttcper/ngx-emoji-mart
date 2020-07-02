@@ -63,7 +63,7 @@ export class SearchComponent implements AfterViewInit, OnInit {
   @Input() include: string[] = [];
   @Input() exclude: string[] = [];
   @Input() custom: any[] = [];
-  @Input() icons?: { [key: string]: string };
+  @Input() icons!: { [key: string]: string };
   @Input() emojisToShowFilter?: (x: any) => boolean;
   @Output() searchResults = new EventEmitter<any[]>();
   @Output() enterKey = new EventEmitter<any>();
@@ -110,7 +110,7 @@ export class SearchComponent implements AfterViewInit, OnInit {
       this.include,
       this.exclude,
       this.custom,
-    );
+    ) as any[];
     this.searchResults.emit(emojis);
   }
   handleChange() {
