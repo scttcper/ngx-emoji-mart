@@ -1,11 +1,9 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "extends": "./tsconfig.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": [],
-    "paths": {
-      "@ctrl/ngx-emoji-mart/ngx-emoji": ["./src/lib/picker/ngx-emoji/public_api"]
-    }
+    "types": []
   },
   "files": [
     "src/main.ts",
@@ -13,9 +11,5 @@
   ],
   "include": [
     "src/**/*.d.ts"
-  ],
-  "exclude": [
-    "src/test.ts",
-    "src/**/*.spec.ts"
   ]
 }
