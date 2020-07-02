@@ -34,7 +34,7 @@
     "@types/node": "14.0.14",
     "@types/stringify-object": "3.3.0",
     "bootstrap": "4.5.0",
-    "codelyzer": "5.2.2",
+    "codelyzer": "6.0.0",
     "core-js": "3.6.5",
     "del-cli": "3.0.1",
     "emoji-datasource": "5.0.1",
