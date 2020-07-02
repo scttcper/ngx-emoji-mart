@@ -34,7 +34,7 @@ describe('EmojiFrequently', () => {
       (ef: EmojiFrequentlyService, es: EmojiService) => {
         const pineapple = es.getData('pineapple');
         ef.get(8, 4);
-        ef.add(pineapple);
+        ef.add(pineapple!);
         const result = ef.get(8, 4);
         expect(result.length).toEqual(9);
       },
