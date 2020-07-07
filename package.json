@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "del dist && ts-node -O '{ \"module\": \"commonjs\" }' build.ts",
+    "build": "del-cli dist && ts-node -O '{ \"module\": \"commonjs\" }' build.ts",
     "build-data": "ts-node --project=scripts/tsconfig.json scripts/build-data.ts",
     "test": "ng test --watch=false --browsers=ChromeCI",
     "test:watch": "ng test --browsers=ChromeCI",
@@ -13,8 +13,7 @@
     "link": "cd dist && npm link",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
-    "ghpages": "ng build --prod --no-progress",
-    "semantic-release": "cd dist && semantic-release"
+    "ghpages": "ng build --prod --no-progress"
   },
   "private": true,
   "devDependencies": {
@@ -34,7 +33,7 @@
     "@types/node": "14.0.18",
     "@types/stringify-object": "3.3.0",
     "bootstrap": "4.5.0",
-    "codelyzer": "5.2.2",
+    "codelyzer": "6.0.0",
     "core-js": "3.6.5",
     "del-cli": "3.0.1",
     "emoji-datasource": "5.0.1",
@@ -49,7 +48,6 @@
     "karma": "5.1.0",
     "ng-packagr": "10.0.0",
     "rxjs": "6.6.0",
-    "semantic-release": "17.1.1",
     "stringify-object": "3.3.0",
     "ts-node": "8.10.2",
     "tslib": "2.0.0",
@@ -57,7 +55,7 @@
     "typescript": "3.9.6",
     "zone.js": "0.10.3"
   },
-  "repository": "TypeCtrl/ngx-emoji-mart",
+  "repository": "scttcper/ngx-emoji-mart",
   "engines": {
     "node": ">= 10"
   },

@@ -10,9 +10,8 @@
     "@angular/core": ">=10.0.0-0",
     "@angular/common": ">=10.0.0-0"
   },
-  "bugs": "https://github.com/TypeCtrl/ngx-emoji-mart/issues",
   "homepage": "https://ngx-emoji-mart.vercel.app",
-  "repository": "TypeCtrl/ngx-emoji-mart",
+  "repository": "scttcper/ngx-emoji-mart",
   "license": "MIT",
   "sideEffects": [ "*.css" ],
   "ngPackage": {

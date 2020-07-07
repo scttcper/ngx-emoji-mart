@@ -1,10 +1,10 @@
-<img align="right" width="200" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/preview.png" />
+<img align="right" width="200" src="https://raw.githubusercontent.com/scttcper/ngx-emoji-mart/master/misc/preview.png" />
 
 # ngx-emoji-mart
 
 [![npm](https://badge.fury.io/js/%40ctrl%2Fngx-emoji-mart.svg)](https://www.npmjs.org/package/@ctrl/ngx-emoji-mart)
-[![travis](https://travis-ci.org/TypeCtrl/ngx-emoji-mart.svg?branch=master)](https://travis-ci.org/TypeCtrl/ngx-emoji-mart)
-[![codecov](https://img.shields.io/codecov/c/github/typectrl/ngx-emoji-mart.svg)](https://codecov.io/github/typectrl/ngx-emoji-mart)
+[![CircleCI](https://badgen.net/circleci/github/scttcper/ngx-emoji-mart)](https://circleci.com/gh/scttcper/ngx-emoji-mart)
+[![codecov](https://img.shields.io/codecov/c/github/scttcper/ngx-emoji-mart.svg)](https://codecov.io/github/scttcper/ngx-emoji-mart)
 
 **DEMO**: https://ngx-emoji-mart.vercel.app  
 
@@ -328,39 +328,39 @@ Possible keys are:
 
 Not only does **Emoji Mart** return more results than most emoji picker, they’re more accurate and sorted by relevance.
 
-<img width="338" alt="summer" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/emoticons.png">
+<img width="338" alt="summer" src="https://raw.githubusercontent.com/scttcper/ngx-emoji-mart/master/misc/emoticons.png">
 
 #### Emoticons
 
 The only emoji picker that returns emojis when searching for emoticons.
 
-<img width="338" alt="emoticons" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/emoticons.png">
+<img width="338" alt="emoticons" src="https://raw.githubusercontent.com/scttcper/ngx-emoji-mart/master/misc/emoticons.png">
 
 ### Fully customizable
 
 #### Anchors color, title and default emoji
 
-<img width="338" alt="customizable-color" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/customizable-color.png"><br><img width="338" alt="pick-your-emoji" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/pick-your-emoji.png">
+<img width="338" alt="customizable-color" src="https://raw.githubusercontent.com/scttcper/ngx-emoji-mart/master/misc/customizable-color.png"><br><img width="338" alt="pick-your-emoji" src="https://raw.githubusercontent.com/scttcper/ngx-emoji-mart/master/misc/pick-your-emoji.png">
 
 #### Emojis sizes and length
 
-<img width="296" alt="size-and-length" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/size-and-length.png">
+<img width="296" alt="size-and-length" src="https://raw.githubusercontent.com/scttcper/ngx-emoji-mart/master/misc/size-and-length.png">
 
 #### Default skin color
 
 As the developer, you have control over which skin color is used by default.
 
-<img width="205" alt="skins" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/skins.png">
+<img width="205" alt="skins" src="https://raw.githubusercontent.com/scttcper/ngx-emoji-mart/master/misc/skins.png">
 
 It can however be overwritten as per user preference.
 
-<img width="98" alt="customizable-skin" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/customizable-skin.png">
+<img width="98" alt="customizable-skin" src="https://raw.githubusercontent.com/scttcper/ngx-emoji-mart/master/misc/customizable-skin.png">
 
 #### Multiple sets supported
 
 Apple / Google / Twitter / Facebook
 
-<img width="214" alt="sets" src="https://raw.githubusercontent.com/typectrl/ngx-emoji-mart/master/misc/sets.png">
+<img width="214" alt="sets" src="https://raw.githubusercontent.com/scttcper/ngx-emoji-mart/master/misc/sets.png">
 
 ---
 
