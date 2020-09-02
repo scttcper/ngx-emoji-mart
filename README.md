@@ -216,7 +216,7 @@ import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 | -------------------------------------------- | :------: | ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | **emoji**                                    |    ✓     |                           | Either a string or an `emoji` object                                                                             |
 | **size**                                     |    ✓     |                           | The emoji width and height.                                                                                      |
-| **native**                                   |          | `false`                   | Renders the native unicode emoji                                                                                 |
+| **isNative**                                   |          | `false`                   | Renders the native unicode emoji                                                                                 |
 | **(emojiClick)**                             |          |                           | Params: `{ emoji, $event }`                                                                                      |
 | **(emojiLeave)**                             |          |                           | Params: `{ emoji, $event }`                                                                                      |
 | **(emojiOver)**                              |          |                           | Params: `{ emoji, $event }`                                                                                      |
