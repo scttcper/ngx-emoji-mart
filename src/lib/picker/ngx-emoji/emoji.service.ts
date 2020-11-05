@@ -143,7 +143,7 @@ export class EmojiService {
     sheetSize: Emoji['sheetSize'] = 64,
     sheetRows: Emoji['sheetRows'] = 57,
     backgroundImageFn: Emoji['backgroundImageFn'] = DEFAULT_BACKGROUNDFN,
-    sheetColumns = 57,
+    sheetColumns = 58,
   ) {
     return {
       width: `${size}px`,
