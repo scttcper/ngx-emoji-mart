@@ -140,7 +140,7 @@ export class PickerComponent implements OnInit {
     set: string,
     sheetSize: number,
   ) =>
-    `https://unpkg.com/emoji-datasource-${this.set}@5.0.1/img/${this.set}/sheets-256/${this.sheetSize}.png`
+    `https://unpkg.com/emoji-datasource-${this.set}@6.0.0/img/${this.set}/sheets-256/${this.sheetSize}.png`
 
   constructor(
     private ref: ChangeDetectorRef,

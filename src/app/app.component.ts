@@ -32,6 +32,7 @@ export class AppComponent {
     'native',
     'apple',
     'google',
+    'twitter',
     'facebook',
   ];
   darkMode: undefined | boolean = !!(

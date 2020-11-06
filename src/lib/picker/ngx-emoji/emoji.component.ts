@@ -86,7 +86,6 @@ export class EmojiComponent implements OnChanges, Emoji {
   @Input() emoji: Emoji['emoji'] = '';
   @Input() fallback?: Emoji['fallback'];
   @Input() hideObsolete = false;
-  @Input() SHEET_COLUMNS = 57;
   @Input() sheetRows?: number;
   @Input() sheetColumns?: number;
   @Input() useButton?: boolean;
@@ -181,7 +180,7 @@ export class EmojiComponent implements OnChanges, Emoji {
           this.sheetSize,
           this.sheetRows,
           this.backgroundImageFn,
-          this.SHEET_COLUMNS
+          this.sheetColumns
         );
       }
     }
