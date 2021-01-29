@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PickerComponent } from './picker.component';
 import { PickerModule } from './picker.module';
@@ -7,7 +7,7 @@ describe('PickerComponent', () => {
   let component: PickerComponent;
   let fixture: ComponentFixture<PickerComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [PickerModule],
     })
