@@ -13,7 +13,6 @@
   </div>
   <emoji-search
     *ngIf="enableSearch"
-    #searchRef
     [i18n]="i18n"
     (searchResults)="handleSearch($event)"
     (enterKey)="handleEnterKey($event)"
@@ -27,7 +26,6 @@
   <section #scrollRef class="emoji-mart-scroll" (scroll)="handleScroll()" [attr.aria-label]="i18n.emojilist">
     <emoji-category
       *ngFor="let category of activeCategories; let idx = index; trackBy: categoryTrack"
-      #categoryRef
       [id]="category.id"
       [name]="category.name"
       [emojis]="category.emojis"
@@ -55,7 +53,6 @@
   </section>
   <div class="emoji-mart-bar" *ngIf="showPreview">
     <emoji-preview
-      #previewRef
       [title]="title"
       [emoji]="previewEmoji"
       [idleEmoji]="emoji"
