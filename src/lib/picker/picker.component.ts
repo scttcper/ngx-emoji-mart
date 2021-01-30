@@ -137,6 +137,7 @@ export class PickerComponent implements OnInit, OnDestroy {
     name: 'Custom',
     emojis: [],
   };
+  private scrollListener!: () => void;
 
   @Input()
   backgroundImageFn: Emoji['backgroundImageFn'] = (
@@ -144,8 +145,6 @@ export class PickerComponent implements OnInit, OnDestroy {
     sheetSize: number,
   ) =>
     `https://unpkg.com/emoji-datasource-${this.set}@6.0.0/img/${this.set}/sheets-256/${this.sheetSize}.png`
-
-  private scrollListener!: () => void;
 
   constructor(
     private ngZone: NgZone,
