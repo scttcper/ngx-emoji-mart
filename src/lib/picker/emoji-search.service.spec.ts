@@ -1,10 +1,10 @@
-import { async, inject, TestBed } from '@angular/core/testing';
+import { inject, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { EmojiData } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { EmojiSearch } from './emoji-search.service';
 
 describe('EmojiSearch', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({}).compileComponents();
   }));
 
