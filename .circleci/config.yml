@@ -64,8 +64,12 @@ workflows:
     # Run the test jobs first, then the release only when all the test jobs are successful
     jobs:
       - install
-      - test
-      - cypress
+      - test:
+          requires:
+            - install
+      - cypress:
+          requires:
+            - install
       - release:
           filters:
             branches:
