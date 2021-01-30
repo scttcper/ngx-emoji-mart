@@ -5,9 +5,6 @@ defaults: &defaults
     - image: circleci/node:lts-browsers
   working_directory: ~/repo
 
-orbs:
-  cypress: cypress-io/cypress@1
-
 npm_cache: &npm_cache
   keys:
     - node_modules-{{ checksum "package-lock.json" }}
