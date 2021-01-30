@@ -1,11 +1,11 @@
-import { async, inject, TestBed } from '@angular/core/testing';
+import { inject, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 
 describe('EmojiFrequently', () => {
   beforeEach(
-    async(() => {
+    waitForAsync(() => {
       localStorage.clear();
       TestBed.configureTestingModule({}).compileComponents();
     }),

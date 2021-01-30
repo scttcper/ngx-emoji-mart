@@ -23,7 +23,7 @@
     [icons]="searchIcons"
     [emojisToShowFilter]="emojisToShowFilter"
   ></emoji-search>
-  <section #scrollRef class="emoji-mart-scroll" (scroll)="handleScroll()" [attr.aria-label]="i18n.emojilist">
+  <section #scrollRef class="emoji-mart-scroll" [attr.aria-label]="i18n.emojilist">
     <emoji-category
       *ngFor="let category of activeCategories; let idx = index; trackBy: categoryTrack"
       [id]="category.id"
