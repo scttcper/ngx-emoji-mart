@@ -107,9 +107,9 @@ export class PickerComponent implements OnInit, OnDestroy {
   @Output() emojiSelect = new EventEmitter<any>();
   @Output() skinChange = new EventEmitter<Emoji['skin']>();
   @ViewChild('scrollRef', { static: true }) private scrollRef!: ElementRef;
-  @ViewChild('previewRef') private previewRef!: PreviewComponent;
-  @ViewChild('searchRef', { static: true }) private searchRef!: SearchComponent;
-  @ViewChildren('categoryRef') private categoryRefs!: QueryList<CategoryComponent>;
+  @ViewChild(PreviewComponent, { static: false }) previewRef?: PreviewComponent;
+  @ViewChild(SearchComponent, { static: false }) searchRef?: SearchComponent;
+  @ViewChildren(CategoryComponent) categoryRefs!: QueryList<CategoryComponent>;
   scrollHeight = 0;
   clientHeight = 0;
   selected?: string;
@@ -257,14 +257,23 @@ export class PickerComponent implements OnInit, OnDestroy {
     const lastActiveCategoryEmojis = this.categories[categoriesToLoadFirst - 1].emojis!.slice();
     this.categories[categoriesToLoadFirst - 1].emojis = lastActiveCategoryEmojis.slice(0, 60);
 
-    this.ref.markForCheck();
-
     setTimeout(() => {
       // Restore last category
       this.categories[categoriesToLoadFirst - 1].emojis = lastActiveCategoryEmojis;
       this.setActiveCategories(this.categories);
-      this.ref.markForCheck();
-      setTimeout(() => this.updateCategoriesSize());
+      // The `setTimeout` will trigger the change detection, but since we're inside
+      // the OnPush component we can change detection locally starting from this one and
+      // down to bottom.
+      this.ref.detectChanges();
+
+      this.ngZone.runOutsideAngular(() => {
+        // The `updateCategoriesSize` doesn't change properties that are used
+        // in templates, thus this is run in the context of the root zone to avoid
+        // running change detection.
+        requestAnimationFrame(() => {
+          this.updateCategoriesSize();
+        });
+      });
     });
 
     this.ngZone.runOutsideAngular(() => {
@@ -307,7 +316,7 @@ export class PickerComponent implements OnInit, OnDestroy {
 
     if (this.SEARCH_CATEGORY.emojis) {
       this.handleSearch(null);
-      this.searchRef.clear();
+      this.searchRef?.clear();
       this.handleAnchorClick($event);
       return;
     }
@@ -433,7 +442,7 @@ export class PickerComponent implements OnInit, OnDestroy {
 
     this.leaveTimeout = setTimeout(() => {
       this.previewEmoji = null;
-      this.previewRef.ref.markForCheck();
+      this.previewRef!.ref.markForCheck();
     }, 16);
   }
   handleEmojiClick($event: EmojiEvent) {
