@@ -23,7 +23,7 @@ jobs:
             - ~/.npm
             - ~/.cache
 
-  test:
+  build:
     <<: *defaults
     steps:
       - checkout
@@ -46,9 +46,7 @@ jobs:
           <<: *npm_cache
       - run:
           name: Run Cypress tests
-          command: |
-            pwd
-            ls
+          command: npm run test:ci:integration
 
   release:
     <<: *defaults
@@ -61,19 +59,18 @@ jobs:
 workflows:
   version: 2
   test_and_release:
-    # Run the test jobs first, then the release only when all the test jobs are successful
     jobs:
       - install
-      - test:
+      - build:
           requires:
             - install
       - cypress:
           requires:
-            - install
+            - build
       - release:
           filters:
             branches:
               only:
                 - master
           requires:
-            - test
+            - build
