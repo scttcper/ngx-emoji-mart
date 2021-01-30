@@ -46,7 +46,9 @@ jobs:
           <<: *npm_cache
       - run:
           name: Run Cypress tests
-          command: npm run test:ci:integration
+          command: |
+            pwd
+            ls
 
   release:
     <<: *defaults
