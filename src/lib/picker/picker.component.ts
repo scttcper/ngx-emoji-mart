@@ -5,9 +5,12 @@ import {
   ElementRef,
   EventEmitter,
   Input,
+  NgZone,
+  OnDestroy,
   OnInit,
   Output,
   QueryList,
+  Renderer2,
   ViewChild,
   ViewChildren,
 } from '@angular/core';
@@ -62,7 +65,7 @@ const I18N: any = {
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
-export class PickerComponent implements OnInit {
+export class PickerComponent implements OnInit, OnDestroy {
   @Input() perLine = 9;
   @Input() totalFrequentLines = 4;
   @Input() i18n: any = {};
@@ -104,9 +107,9 @@ export class PickerComponent implements OnInit {
   @Output() emojiSelect = new EventEmitter<any>();
   @Output() skinChange = new EventEmitter<Emoji['skin']>();
   @ViewChild('scrollRef', { static: true }) private scrollRef!: ElementRef;
-  @ViewChild('previewRef') private previewRef!: PreviewComponent;
-  @ViewChild('searchRef', { static: true }) private searchRef!: SearchComponent;
-  @ViewChildren('categoryRef') private categoryRefs!: QueryList<CategoryComponent>;
+  @ViewChild(PreviewComponent, { static: false }) previewRef?: PreviewComponent;
+  @ViewChild(SearchComponent, { static: false }) searchRef?: SearchComponent;
+  @ViewChildren(CategoryComponent) categoryRefs!: QueryList<CategoryComponent>;
   scrollHeight = 0;
   clientHeight = 0;
   selected?: string;
@@ -134,6 +137,7 @@ export class PickerComponent implements OnInit {
     name: 'Custom',
     emojis: [],
   };
+  private scrollListener!: () => void;
 
   @Input()
   backgroundImageFn: Emoji['backgroundImageFn'] = (
@@ -143,6 +147,8 @@ export class PickerComponent implements OnInit {
     `https://unpkg.com/emoji-datasource-${this.set}@6.0.0/img/${this.set}/sheets-256/${this.sheetSize}.png`
 
   constructor(
+    private ngZone: NgZone,
+    private renderer: Renderer2,
     private ref: ChangeDetectorRef,
     private frequently: EmojiFrequentlyService,
   ) {}
@@ -251,16 +257,40 @@ export class PickerComponent implements OnInit {
     const lastActiveCategoryEmojis = this.categories[categoriesToLoadFirst - 1].emojis!.slice();
     this.categories[categoriesToLoadFirst - 1].emojis = lastActiveCategoryEmojis.slice(0, 60);
 
-    this.ref.markForCheck();
-
     setTimeout(() => {
       // Restore last category
       this.categories[categoriesToLoadFirst - 1].emojis = lastActiveCategoryEmojis;
       this.setActiveCategories(this.categories);
-      this.ref.markForCheck();
-      setTimeout(() => this.updateCategoriesSize());
+      // The `setTimeout` will trigger the change detection, but since we're inside
+      // the OnPush component we can change detection locally starting from this one and
+      // down to bottom.
+      this.ref.detectChanges();
+
+      this.ngZone.runOutsideAngular(() => {
+        // The `updateCategoriesSize` doesn't change properties that are used
+        // in templates, thus this is run in the context of the root zone to avoid
+        // running change detection.
+        requestAnimationFrame(() => {
+          this.updateCategoriesSize();
+        });
+      });
+    });
+
+    this.ngZone.runOutsideAngular(() => {
+      // DOM events that are listened by Angular inside the template trigger change detection
+      // and also wrapped into additional functions that call `markForCheck()`. We listen `scroll`
+      // in the context of the root zone since it will not trigger change detection each time
+      // the `scroll` event is dispatched.
+      this.scrollListener = this.renderer.listen(this.scrollRef.nativeElement, 'scroll', () => {
+        this.handleScroll();
+      });
     });
   }
+
+  ngOnDestroy(): void {
+    this.scrollListener();
+  }
+
   setActiveCategories(categoriesToMakeActive: Array<EmojiCategory>) {
     if (this.showSingleCategory) {
       this.activeCategories = categoriesToMakeActive.filter(
@@ -286,7 +316,7 @@ export class PickerComponent implements OnInit {
 
     if (this.SEARCH_CATEGORY.emojis) {
       this.handleSearch(null);
-      this.searchRef.clear();
+      this.searchRef?.clear();
       this.handleAnchorClick($event);
       return;
     }
@@ -312,6 +342,7 @@ export class PickerComponent implements OnInit {
     if (this.nextScroll) {
       this.selected = this.nextScroll;
       this.nextScroll = undefined;
+      this.ref.detectChanges();
       return;
     }
     if (!this.scrollRef) {
@@ -321,7 +352,7 @@ export class PickerComponent implements OnInit {
       return;
     }
 
-    let activeCategory = null;
+    let activeCategory: EmojiCategory | undefined;
     if (this.SEARCH_CATEGORY.emojis) {
       activeCategory = this.SEARCH_CATEGORY;
     } else {
@@ -336,8 +367,8 @@ export class PickerComponent implements OnInit {
       } else {
         // scrolling
         for (const category of this.categories) {
-          const component = this.categoryRefs.find(n => n.id === category.id);
-          const active = component!.handleScroll(target.scrollTop);
+          const component = this.categoryRefs.find(({ id }) => id === category.id);
+          const active: boolean | undefined = component?.handleScroll(target.scrollTop);
           if (active) {
             activeCategory = category;
           }
@@ -346,8 +377,10 @@ export class PickerComponent implements OnInit {
 
       this.scrollTop = target.scrollTop;
     }
-    if (activeCategory) {
+    // This will allow us to run the change detection only when the category changes.
+    if (activeCategory && activeCategory.name !== this.selected) {
       this.selected = activeCategory.name;
+      this.ref.detectChanges();
     }
   }
   handleSearch($emojis: any[] | null) {
@@ -409,7 +442,7 @@ export class PickerComponent implements OnInit {
 
     this.leaveTimeout = setTimeout(() => {
       this.previewEmoji = null;
-      this.previewRef.ref.markForCheck();
+      this.previewRef!.ref.markForCheck();
     }, 16);
   }
   handleEmojiClick($event: EmojiEvent) {
