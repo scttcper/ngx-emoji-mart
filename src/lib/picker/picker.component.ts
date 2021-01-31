@@ -118,7 +118,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   firstRender = true;
   recent?: string[];
   previewEmoji: any;
-  leaveTimeout: any;
+  animationFrameRequestId: number | null = null;
   NAMESPACE = 'emoji-mart';
   measureScrollbar = 0;
   RECENT_CATEGORY: EmojiCategory = {
@@ -262,8 +262,8 @@ export class PickerComponent implements OnInit, OnDestroy {
       this.categories[categoriesToLoadFirst - 1].emojis = lastActiveCategoryEmojis;
       this.setActiveCategories(this.categories);
       // The `setTimeout` will trigger the change detection, but since we're inside
-      // the OnPush component we can change detection locally starting from this one and
-      // down to bottom.
+      // the OnPush component we can run change detection locally starting from this
+      // component and going down to the children.
       this.ref.detectChanges();
 
       this.ngZone.runOutsideAngular(() => {
@@ -289,6 +289,11 @@ export class PickerComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.scrollListener();
+    // This is called here because the component might be destroyed
+    // but there will still be a `requestAnimationFrame` callback in the queue
+    // that calls `detectChanges()` on the `ViewRef`. This will lead to a runtime
+    // exception if the `detectChanges()` is called after the `ViewRef` is destroyed.
+    this.cancelAnimationFrame();
   }
 
   setActiveCategories(categoriesToMakeActive: Array<EmojiCategory>) {
@@ -433,17 +438,19 @@ export class PickerComponent implements OnInit, OnDestroy {
     }
 
     this.previewEmoji = $event.emoji;
-    clearTimeout(this.leaveTimeout);
+    this.cancelAnimationFrame();
   }
   handleEmojiLeave() {
     if (!this.showPreview || !this.previewRef) {
       return;
     }
 
-    this.leaveTimeout = setTimeout(() => {
-      this.previewEmoji = null;
-      this.previewRef!.ref.markForCheck();
-    }, 16);
+    this.ngZone.runOutsideAngular(() => {
+      this.animationFrameRequestId = requestAnimationFrame(() => {
+        this.previewEmoji = null;
+        this.ref.detectChanges();
+      });
+    });
   }
   handleEmojiClick($event: EmojiEvent) {
     this.emojiClick.emit($event);
@@ -460,5 +467,12 @@ export class PickerComponent implements OnInit, OnDestroy {
       return this.style.width;
     }
     return this.perLine * (this.emojiSize + 12) + 12 + 2 + this.measureScrollbar + 'px';
+  }
+
+  private cancelAnimationFrame(): void {
+    if (this.animationFrameRequestId !== null) {
+      cancelAnimationFrame(this.animationFrameRequestId);
+      this.animationFrameRequestId = null;
+    }
   }
 }
