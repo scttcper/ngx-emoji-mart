@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 
 import { EmojiData } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 
@@ -26,9 +27,13 @@ export class EmojiFrequentlyService {
     'heart',
     'poop',
   ];
-
+  constructor(@Inject(PLATFORM_ID) private platformId: string) {}
   init() {
-    this.frequently = JSON.parse(localStorage.getItem(`${this.NAMESPACE}.frequently`) || 'null');
+    this.frequently = JSON.parse(
+      (isPlatformBrowser(this.platformId) &&
+        localStorage.getItem(`${this.NAMESPACE}.frequently`)) ||
+        'null',
+    );
     this.initialized = true;
   }
   add(emoji: EmojiData) {
@@ -43,8 +48,10 @@ export class EmojiFrequentlyService {
     }
     this.frequently[emoji.id] += 1;
 
-    localStorage.setItem(`${this.NAMESPACE}.last`, emoji.id);
-    localStorage.setItem(`${this.NAMESPACE}.frequently`, JSON.stringify(this.frequently));
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem(`${this.NAMESPACE}.last`, emoji.id);
+      localStorage.setItem(`${this.NAMESPACE}.frequently`, JSON.stringify(this.frequently));
+    }
   }
   get(perLine: number, totalLines: number) {
     if (!this.initialized) {
@@ -69,7 +76,8 @@ export class EmojiFrequentlyService {
       .reverse();
     const sliced = sorted.slice(0, quantity);
 
-    const last = localStorage.getItem(`${this.NAMESPACE}.last`);
+    const last =
+      isPlatformBrowser(this.platformId) && localStorage.getItem(`${this.NAMESPACE}.last`);
 
     if (last && !sliced.includes(last)) {
       sliced.pop();

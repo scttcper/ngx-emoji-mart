@@ -1,14 +1,17 @@
+import { isPlatformBrowser } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
   ElementRef,
   EventEmitter,
+  Inject,
   Input,
   NgZone,
   OnDestroy,
   OnInit,
   Output,
+  PLATFORM_ID,
   QueryList,
   Renderer2,
   ViewChild,
@@ -28,8 +31,6 @@ import { PreviewComponent } from './preview.component';
 import { SearchComponent } from './search.component';
 import * as icons from './svgs';
 import { measureScrollbar } from './utils';
-
-
 
 const I18N: any = {
   search: 'Search',
@@ -151,6 +152,7 @@ export class PickerComponent implements OnInit, OnDestroy {
     private renderer: Renderer2,
     private ref: ChangeDetectorRef,
     private frequently: EmojiFrequentlyService,
+    @Inject(PLATFORM_ID) private platformId: string,
   ) {}
 
   ngOnInit() {
@@ -160,8 +162,10 @@ export class PickerComponent implements OnInit, OnDestroy {
     this.i18n = { ...I18N, ...this.i18n };
     this.i18n.categories = { ...I18N.categories, ...this.i18n.categories };
     this.skin =
-      JSON.parse(localStorage.getItem(`${this.NAMESPACE}.skin`) || 'null') ||
-      this.skin;
+      JSON.parse(
+        (isPlatformBrowser(this.platformId) && localStorage.getItem(`${this.NAMESPACE}.skin`)) ||
+          'null',
+      ) || this.skin;
 
     const allCategories = [...categories];
 
@@ -266,14 +270,16 @@ export class PickerComponent implements OnInit, OnDestroy {
       // component and going down to the children.
       this.ref.detectChanges();
 
-      this.ngZone.runOutsideAngular(() => {
-        // The `updateCategoriesSize` doesn't change properties that are used
-        // in templates, thus this is run in the context of the root zone to avoid
-        // running change detection.
-        requestAnimationFrame(() => {
-          this.updateCategoriesSize();
+      // tslint:disable-next-line: no-unused-expression
+      isPlatformBrowser(this.platformId) &&
+        this.ngZone.runOutsideAngular(() => {
+          // The `updateCategoriesSize` doesn't change properties that are used
+          // in templates, thus this is run in the context of the root zone to avoid
+          // running change detection.
+          requestAnimationFrame(() => {
+            this.updateCategoriesSize();
+          });
         });
-      });
     });
 
     this.ngZone.runOutsideAngular(() => {
