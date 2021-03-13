@@ -132,8 +132,8 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   @ViewChild('container', { static: true }) container!: ElementRef;
   @ViewChild('label', { static: true }) label!: ElementRef;
   containerStyles: any = {};
-  private _filteredEmojis = new Subject<any[] | null | undefined>();
-  filteredEmojis$: Observable<any[] | null | undefined> = this._filteredEmojis.asObservable();
+  private filteredEmojisSubject = new Subject<any[] | null | undefined>();
+  filteredEmojis$: Observable<any[] | null | undefined> = this.filteredEmojisSubject.asObservable();
   labelStyles: any = {};
   labelSpanStyles: any = {};
   margin = 0;
@@ -210,7 +210,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
       const parentHeight = this.container.nativeElement.parentNode.parentNode.clientHeight;
 
       if (parentHeight + 200 >= top && -height - 200 <= top) {
-        this._filteredEmojis.next(this.emojis);
+        this.filteredEmojisSubject.next(this.emojis);
       }
     }
 

@@ -94,6 +94,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   @Input() autoFocus = false;
   @Input() custom: any[] = [];
   @Input() hideRecent = true;
+  @Input() imageUrlFn: Emoji['imageUrlFn'];
   @Input() include?: string[];
   @Input() exclude?: string[];
   @Input() notFoundEmoji = 'sleuth_or_spy';
@@ -143,9 +144,7 @@ export class PickerComponent implements OnInit, OnDestroy {
 
   @Input()
   backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
-    `https://unpkg.com/emoji-datasource-${this.set}@6.0.0/img/${this.set}/sheets-256/${this.sheetSize}.png`;
-
-  @Input() imageUrlFn: Emoji['imageUrlFn'];
+    `https://unpkg.com/emoji-datasource-${this.set}@6.0.0/img/${this.set}/sheets-256/${this.sheetSize}.png`
 
   constructor(
     private ngZone: NgZone,
@@ -346,8 +345,8 @@ export class PickerComponent implements OnInit, OnDestroy {
 
     // handle component scrolling to load emojis
     for (const category of this.categories) {
-      const component = this.categoryRefs.find(({ id }) => id === category.id);
-      component?.handleScroll(this.scrollRef.nativeElement.scrollTop);
+      const componentToScroll = this.categoryRefs.find(({ id }) => id === category.id);
+      componentToScroll?.handleScroll(this.scrollRef.nativeElement.scrollTop);
     }
   }
   categoryTrack(index: number, item: any) {
