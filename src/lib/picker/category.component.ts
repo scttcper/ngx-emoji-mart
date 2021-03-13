@@ -14,6 +14,7 @@ import {
 } from '@angular/core';
 
 import { Emoji, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import { Observable, Subject } from 'rxjs';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 
 @Component({
@@ -33,7 +34,9 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
         </span>
       </div>
 
-      <ng-template [ngIf]="filteredEmojis">
+      <div
+        *ngIf="virtualize && filteredEmojis$ | async as filteredEmojis; else normalRenderTemplate"
+      >
         <ngx-emoji
           *ngFor="let emoji of filteredEmojis; trackBy: trackById"
           [emoji]="emoji"
@@ -51,7 +54,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
           (emojiLeave)="emojiLeave.emit($event)"
           (emojiClick)="emojiClick.emit($event)"
         ></ngx-emoji>
-      </ng-template>
+      </div>
 
       <div *ngIf="emojis && !emojis.length">
         <div>
@@ -74,6 +77,28 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
         </div>
       </div>
     </section>
+
+    <ng-template #normalRenderTemplate>
+      <div *ngIf="!virtualize && emojis">
+        <ngx-emoji
+          *ngFor="let emoji of emojis; trackBy: trackById"
+          [emoji]="emoji"
+          [size]="emojiSize"
+          [skin]="emojiSkin"
+          [isNative]="emojiIsNative"
+          [set]="emojiSet"
+          [sheetSize]="emojiSheetSize"
+          [forceSize]="emojiForceSize"
+          [tooltip]="emojiTooltip"
+          [backgroundImageFn]="emojiBackgroundImageFn"
+          [imageUrlFn]="emojiImageUrlFn"
+          [hideObsolete]="hideObsolete"
+          (emojiOver)="emojiOver.emit($event)"
+          (emojiLeave)="emojiLeave.emit($event)"
+          (emojiClick)="emojiClick.emit($event)"
+        ></ngx-emoji>
+      </div>
+    </ng-template>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
@@ -90,6 +115,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   @Input() id: any;
   @Input() hideObsolete = true;
   @Input() notFoundEmoji?: string;
+  @Input() virtualize = false;
   @Input() emojiIsNative?: Emoji['isNative'];
   @Input() emojiSkin!: Emoji['skin'];
   @Input() emojiSize!: Emoji['size'];
@@ -106,7 +132,8 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   @ViewChild('container', { static: true }) container!: ElementRef;
   @ViewChild('label', { static: true }) label!: ElementRef;
   containerStyles: any = {};
-  filteredEmojis?: any[] | null;
+  private _filteredEmojis = new Subject<any[] | null | undefined>();
+  filteredEmojis$: Observable<any[] | null | undefined> = this._filteredEmojis.asObservable();
   labelStyles: any = {};
   labelSpanStyles: any = {};
   margin = 0;
@@ -140,7 +167,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    if (!this.emojis?.length) {
+    if (!this.virtualize || !this.emojis?.length) {
       return;
     }
 
@@ -178,11 +205,13 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
     margin = margin < this.minMargin ? this.minMargin : margin;
     margin = margin > this.maxMargin ? this.maxMargin : margin;
 
-    const { top, height } = this.container.nativeElement.getBoundingClientRect();
-    const parentHeight = this.container.nativeElement.parentNode.parentNode.clientHeight;
+    if (this.virtualize) {
+      const { top, height } = this.container.nativeElement.getBoundingClientRect();
+      const parentHeight = this.container.nativeElement.parentNode.parentNode.clientHeight;
 
-    if (parentHeight + 200 >= top && -height - 200 <= top) {
-      this.filteredEmojis = this.emojis;
+      if (parentHeight + 200 >= top && -height - 200 <= top) {
+        this._filteredEmojis.next(this.emojis);
+      }
     }
 
     if (margin === this.margin) {
