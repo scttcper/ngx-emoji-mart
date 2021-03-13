@@ -1,12 +1,15 @@
 import {
+  AfterViewInit,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
   ElementRef,
   EventEmitter,
   Input,
+  OnChanges,
   OnInit,
   Output,
+  SimpleChanges,
   ViewChild,
 } from '@angular/core';
 
@@ -16,43 +19,25 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
 @Component({
   selector: 'emoji-category',
   template: `
-  <section #container class="emoji-mart-category"
-    [attr.aria-label]="i18n.categories[id]"
-    [class.emoji-mart-no-results]="emojis && !emojis.length"
-    [ngStyle]="containerStyles">
-    <div class="emoji-mart-category-label"
-      [ngStyle]="labelStyles"
-      [attr.data-name]="name">
-      <!-- already labeled by the section aria-label -->
-      <span #label [ngStyle]="labelSpanStyles" aria-hidden="true">
-        {{ i18n.categories[id] }}
-      </span>
-    </div>
+    <section
+      #container
+      class="emoji-mart-category"
+      [attr.aria-label]="i18n.categories[id]"
+      [class.emoji-mart-no-results]="emojis && !emojis.length"
+      [ngStyle]="containerStyles"
+    >
+      <div class="emoji-mart-category-label" [ngStyle]="labelStyles" [attr.data-name]="name">
+        <!-- already labeled by the section aria-label -->
+        <span #label [ngStyle]="labelSpanStyles" aria-hidden="true">
+          {{ i18n.categories[id] }}
+        </span>
+      </div>
 
-    <ng-template [ngIf]="emojis">
-      <ngx-emoji
-        *ngFor="let emoji of emojis; trackBy: trackById"
-        [emoji]="emoji"
-        [size]="emojiSize"
-        [skin]="emojiSkin"
-        [isNative]="emojiIsNative"
-        [set]="emojiSet"
-        [sheetSize]="emojiSheetSize"
-        [forceSize]="emojiForceSize"
-        [tooltip]="emojiTooltip"
-        [backgroundImageFn]="emojiBackgroundImageFn"
-        [hideObsolete]="hideObsolete"
-        (emojiOver)="emojiOver.emit($event)"
-        (emojiLeave)="emojiLeave.emit($event)"
-        (emojiClick)="emojiClick.emit($event)"
-      ></ngx-emoji>
-    </ng-template>
-
-    <div *ngIf="emojis && !emojis.length">
-      <div>
+      <ng-template [ngIf]="filteredEmojis">
         <ngx-emoji
-          [emoji]="notFoundEmoji"
-          size="38"
+          *ngFor="let emoji of filteredEmojis; trackBy: trackById"
+          [emoji]="emoji"
+          [size]="emojiSize"
           [skin]="emojiSkin"
           [isNative]="emojiIsNative"
           [set]="emojiSet"
@@ -60,21 +45,40 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
           [forceSize]="emojiForceSize"
           [tooltip]="emojiTooltip"
           [backgroundImageFn]="emojiBackgroundImageFn"
-          [useButton]="emojiUseButton"
+          [imageUrlFn]="emojiImageUrlFn"
+          [hideObsolete]="hideObsolete"
+          (emojiOver)="emojiOver.emit($event)"
+          (emojiLeave)="emojiLeave.emit($event)"
+          (emojiClick)="emojiClick.emit($event)"
         ></ngx-emoji>
-      </div>
+      </ng-template>
 
-      <div class="emoji-mart-no-results-label">
-        {{ i18n.notfound }}
-      </div>
-    </div>
+      <div *ngIf="emojis && !emojis.length">
+        <div>
+          <ngx-emoji
+            [emoji]="notFoundEmoji"
+            size="38"
+            [skin]="emojiSkin"
+            [isNative]="emojiIsNative"
+            [set]="emojiSet"
+            [sheetSize]="emojiSheetSize"
+            [forceSize]="emojiForceSize"
+            [tooltip]="emojiTooltip"
+            [backgroundImageFn]="emojiBackgroundImageFn"
+            [useButton]="emojiUseButton"
+          ></ngx-emoji>
+        </div>
 
-  </section>
+        <div class="emoji-mart-no-results-label">
+          {{ i18n.notfound }}
+        </div>
+      </div>
+    </section>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
 })
-export class CategoryComponent implements OnInit {
+export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   @Input() emojis?: any[] | null;
   @Input() hasStickyPosition = true;
   @Input() name = '';
@@ -94,6 +98,7 @@ export class CategoryComponent implements OnInit {
   @Input() emojiForceSize!: Emoji['forceSize'];
   @Input() emojiTooltip!: Emoji['tooltip'];
   @Input() emojiBackgroundImageFn?: Emoji['backgroundImageFn'];
+  @Input() emojiImageUrlFn?: Emoji['imageUrlFn'];
   @Input() emojiUseButton?: boolean;
   @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
@@ -101,6 +106,7 @@ export class CategoryComponent implements OnInit {
   @ViewChild('container', { static: true }) container!: ElementRef;
   @ViewChild('label', { static: true }) label!: ElementRef;
   containerStyles: any = {};
+  filteredEmojis?: any[] | null;
   labelStyles: any = {};
   labelSpanStyles: any = {};
   margin = 0;
@@ -126,12 +132,36 @@ export class CategoryComponent implements OnInit {
       // this.labelSpanStyles = { position: 'absolute' };
     }
   }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes.emojis?.currentValue?.length !== changes.emojis?.previousValue?.length) {
+      this.ngAfterViewInit();
+    }
+  }
+
+  ngAfterViewInit() {
+    if (!this.emojis?.length) {
+      return;
+    }
+
+    const parent = this.container.nativeElement.parentNode.parentNode;
+    const { width } = parent.getBoundingClientRect();
+
+    const rows = Math.ceil((this.emojis.length * (this.emojiSize + 12)) / width);
+
+    this.containerStyles = {
+      ...this.containerStyles,
+      minHeight: `${rows * (this.emojiSize + 12) + 28}px`,
+    };
+
+    this.ref?.detectChanges();
+
+    this.handleScroll(this.container.nativeElement.parentNode.parentNode.scrollTop);
+  }
+
   memoizeSize() {
     const parent = this.container.nativeElement.parentNode.parentNode;
-    const {
-      top,
-      height,
-    } = this.container.nativeElement.getBoundingClientRect();
+    const { top, height } = this.container.nativeElement.getBoundingClientRect();
     const parentTop = parent.getBoundingClientRect().top;
     const labelHeight = this.label.nativeElement.getBoundingClientRect().height;
 
@@ -148,7 +178,15 @@ export class CategoryComponent implements OnInit {
     margin = margin < this.minMargin ? this.minMargin : margin;
     margin = margin > this.maxMargin ? this.maxMargin : margin;
 
+    const { top, height } = this.container.nativeElement.getBoundingClientRect();
+    const parentHeight = this.container.nativeElement.parentNode.parentNode.clientHeight;
+
+    if (parentHeight + 200 >= top && -height - 200 <= top) {
+      this.filteredEmojis = this.emojis;
+    }
+
     if (margin === this.margin) {
+      this.ref.detectChanges();
       return false;
     }
 
@@ -157,12 +195,14 @@ export class CategoryComponent implements OnInit {
     }
 
     this.margin = margin;
+    this.ref.detectChanges();
     return true;
   }
 
   getEmojis() {
     if (this.name === 'Recent') {
-      let frequentlyUsed = this.recent || this.frequently.get(this.perLine, this.totalFrequentLines);
+      let frequentlyUsed =
+        this.recent || this.frequently.get(this.perLine, this.totalFrequentLines);
       if (!frequentlyUsed || !frequentlyUsed.length) {
         frequentlyUsed = this.frequently.get(this.perLine, this.totalFrequentLines);
       }

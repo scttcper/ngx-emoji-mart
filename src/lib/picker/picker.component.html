@@ -1,6 +1,8 @@
-<section class="emoji-mart {{ darkMode ? 'emoji-mart-dark' : '' }}"
+<section
+  class="emoji-mart {{ darkMode ? 'emoji-mart-dark' : '' }}"
   [style.width]="getWidth()"
-  [ngStyle]="style">
+  [ngStyle]="style"
+>
   <div class="emoji-mart-bar">
     <emoji-mart-anchors
       [categories]="categories"
@@ -45,6 +47,7 @@
       [emojiForceSize]="isNative"
       [emojiTooltip]="emojiTooltip"
       [emojiBackgroundImageFn]="backgroundImageFn"
+      [emojiImageUrlFn]="imageUrlFn"
       [emojiUseButton]="false"
       (emojiOver)="handleEmojiOver($event)"
       (emojiLeave)="handleEmojiLeave()"
@@ -63,6 +66,7 @@
       [i18n]="i18n"
       [emojiSheetSize]="sheetSize"
       [emojiBackgroundImageFn]="backgroundImageFn"
+      [emojiImageUrlFn]="imageUrlFn"
       (skinChange)="handleSkinChange($event)"
     ></emoji-preview>
   </div>
