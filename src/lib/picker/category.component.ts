@@ -10,12 +10,12 @@ import {
   OnInit,
   Output,
   SimpleChanges,
-  ViewChild,
+  ViewChild
 } from '@angular/core';
-
 import { Emoji, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { Observable, Subject } from 'rxjs';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
+
 
 @Component({
   selector: 'emoji-category',
@@ -50,6 +50,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
           [backgroundImageFn]="emojiBackgroundImageFn"
           [imageUrlFn]="emojiImageUrlFn"
           [hideObsolete]="hideObsolete"
+          [useButton]="emojiUseButton"
           (emojiOver)="emojiOver.emit($event)"
           (emojiLeave)="emojiLeave.emit($event)"
           (emojiClick)="emojiClick.emit($event)"
