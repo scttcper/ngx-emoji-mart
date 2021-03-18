@@ -109,6 +109,7 @@ use component
 | **useButton**               | `false`                   | Uses button elements for emoji instead of spans                                                                                                                                          |
 | **enableFrequentEmojiSort** | `false`                   | Enables re-sorting of emoji on click                                                                                                                                                     |
 | **virtualize**              | `false`                   | Enables experimental virtualized rendering to render only emoji categories in view                                                                                                       |
+| **virtualizeOffset**        | `0`                       | use with virtualize option to add or subtract the amount of pixels used to determine whether or not render the category          |
 
 #### I18n
 

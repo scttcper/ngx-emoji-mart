@@ -105,6 +105,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   @Input() enableSearch = true;
   @Input() showSingleCategory = false;
   @Input() virtualize = false;
+  @Input() virtualizeOffset = 0;
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
   @Output() skinChange = new EventEmitter<Emoji['skin']>();

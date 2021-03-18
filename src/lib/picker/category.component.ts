@@ -117,6 +117,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   @Input() hideObsolete = true;
   @Input() notFoundEmoji?: string;
   @Input() virtualize = false;
+  @Input() virtualizeOffset = 0;
   @Input() emojiIsNative?: Emoji['isNative'];
   @Input() emojiSkin!: Emoji['skin'];
   @Input() emojiSize!: Emoji['size'];
@@ -210,7 +211,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
       const { top, height } = this.container.nativeElement.getBoundingClientRect();
       const parentHeight = this.container.nativeElement.parentNode.parentNode.clientHeight;
 
-      if (parentHeight + 200 >= top && -height - 200 <= top) {
+      if (parentHeight + (parentHeight + this.virtualizeOffset) >= top && -height - (parentHeight + this.virtualizeOffset) <= top) {
         this.filteredEmojisSubject.next(this.emojis);
       }
     }
