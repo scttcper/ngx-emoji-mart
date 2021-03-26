@@ -5,7 +5,6 @@ import {
   Input,
   OnChanges,
   Output,
-  SimpleChanges,
 } from '@angular/core';
 
 import { EmojiData } from './data/data.interfaces';
