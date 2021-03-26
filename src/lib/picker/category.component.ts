@@ -167,7 +167,6 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes.emojis?.currentValue?.length !== changes.emojis?.previousValue?.length) {
-      this.emojis = this.filterEmojis();
       this.ngAfterViewInit();
     }
   }
@@ -176,6 +175,8 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
     if (!this.virtualize || !this.emojis?.length) {
       return;
     }
+
+    this.emojis = this.filterEmojis();
 
     const { width } = this.container.nativeElement.getBoundingClientRect();
 
@@ -276,11 +277,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
     return item;
   }
 
-  private filterEmojis(): any[] | null | undefined {
-    if (!this.emojis) {
-      return this.emojis;
-    }
-
+  private filterEmojis(): any[] {
     const newEmojis = [];
     for (const emoji of this.emojis || []) {
       if (!emoji) {
