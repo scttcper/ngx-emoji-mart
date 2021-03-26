@@ -1,3 +1,4 @@
+import { Emoji, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -5,11 +6,9 @@ import {
   EventEmitter,
   Input,
   OnChanges,
-  Output,
-  SimpleChanges,
+  Output
 } from '@angular/core';
 
-import { Emoji, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 
 @Component({
   selector: 'emoji-preview',
