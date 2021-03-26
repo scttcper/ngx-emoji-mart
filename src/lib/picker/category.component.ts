@@ -1,3 +1,4 @@
+import { Emoji, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import {
   AfterViewInit,
   ChangeDetectionStrategy,
@@ -12,7 +13,6 @@ import {
   SimpleChanges,
   ViewChild
 } from '@angular/core';
-import { Emoji, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { Observable, Subject } from 'rxjs';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 
@@ -35,26 +35,28 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
       </div>
 
       <div
-        *ngIf="virtualize && filteredEmojis$ | async as filteredEmojis; else normalRenderTemplate"
+        *ngIf="virtualize; else normalRenderTemplate"
       >
-        <ngx-emoji
-          *ngFor="let emoji of filteredEmojis; trackBy: trackById"
-          [emoji]="emoji"
-          [size]="emojiSize"
-          [skin]="emojiSkin"
-          [isNative]="emojiIsNative"
-          [set]="emojiSet"
-          [sheetSize]="emojiSheetSize"
-          [forceSize]="emojiForceSize"
-          [tooltip]="emojiTooltip"
-          [backgroundImageFn]="emojiBackgroundImageFn"
-          [imageUrlFn]="emojiImageUrlFn"
-          [hideObsolete]="hideObsolete"
-          [useButton]="emojiUseButton"
-          (emojiOver)="emojiOver.emit($event)"
-          (emojiLeave)="emojiLeave.emit($event)"
-          (emojiClick)="emojiClick.emit($event)"
-        ></ngx-emoji>
+        <div *ngIf="filteredEmojis$ | async as filteredEmojis">
+          <ngx-emoji
+            *ngFor="let emoji of filteredEmojis; trackBy: trackById"
+            [emoji]="emoji"
+            [size]="emojiSize"
+            [skin]="emojiSkin"
+            [isNative]="emojiIsNative"
+            [set]="emojiSet"
+            [sheetSize]="emojiSheetSize"
+            [forceSize]="emojiForceSize"
+            [tooltip]="emojiTooltip"
+            [backgroundImageFn]="emojiBackgroundImageFn"
+            [imageUrlFn]="emojiImageUrlFn"
+            [hideObsolete]="hideObsolete"
+            [useButton]="emojiUseButton"
+            (emojiOver)="emojiOver.emit($event)"
+            (emojiLeave)="emojiLeave.emit($event)"
+            (emojiClick)="emojiClick.emit($event)"
+          ></ngx-emoji>
+        </div>
       </div>
 
       <div *ngIf="emojis && !emojis.length">
@@ -80,7 +82,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
     </section>
 
     <ng-template #normalRenderTemplate>
-      <div *ngIf="!virtualize && emojis">
+      <div *ngIf="emojis">
         <ngx-emoji
           *ngFor="let emoji of emojis; trackBy: trackById"
           [emoji]="emoji"
@@ -142,6 +144,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   minMargin = 0;
   maxMargin = 0;
   top = 0;
+  rows = 0;
 
   constructor(
     public ref: ChangeDetectorRef,
@@ -164,6 +167,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes.emojis?.currentValue?.length !== changes.emojis?.previousValue?.length) {
+      this.emojis = this.filterEmojis();
       this.ngAfterViewInit();
     }
   }
@@ -173,14 +177,14 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
       return;
     }
 
-    const parent = this.container.nativeElement.parentNode.parentNode;
-    const { width } = parent.getBoundingClientRect();
+    const { width } = this.container.nativeElement.getBoundingClientRect();
 
-    const rows = Math.ceil((this.emojis.length * (this.emojiSize + 12)) / width);
+    const perRow = Math.floor(width / (this.emojiSize + 12));
+    this.rows = Math.ceil(this.emojis.length / perRow);
 
     this.containerStyles = {
       ...this.containerStyles,
-      minHeight: `${rows * (this.emojiSize + 12) + 28}px`,
+      minHeight: `${this.rows * (this.emojiSize + 12) + 28}px`,
     };
 
     this.ref?.detectChanges();
@@ -213,6 +217,8 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
 
       if (parentHeight + (parentHeight + this.virtualizeOffset) >= top && -height - (parentHeight + this.virtualizeOffset) <= top) {
         this.filteredEmojisSubject.next(this.emojis);
+      } else {
+        this.filteredEmojisSubject.next([]);
       }
     }
 
@@ -268,5 +274,24 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   }
   trackById(index: number, item: any) {
     return item;
+  }
+
+  private filterEmojis(): any[] | null | undefined {
+    if (!this.emojis) {
+      return this.emojis;
+    }
+
+    const newEmojis = [];
+    for (const emoji of this.emojis || []) {
+      if (!emoji) {
+        continue;
+      }
+      const data = this.emojiService.getData(emoji);
+      if (!data || (data.obsoletedBy && this.hideObsolete) || (!data.unified && !data.custom)) {
+        continue;
+      }
+      newEmojis.push(emoji);
+    }
+    return newEmojis;
   }
 }
