@@ -1,19 +1,13 @@
 import { Injectable } from '@angular/core';
 
-import {
-  CompressedEmojiData,
-  EmojiData,
-  EmojiVariation,
-} from './data/data.interfaces';
+import { CompressedEmojiData, EmojiData, EmojiVariation } from './data/data.interfaces';
 import { emojis } from './data/emojis';
 import { Emoji } from './emoji.component';
 
 const COLONS_REGEX = /^(?:\:([^\:]+)\:)(?:\:skin-tone-(\d)\:)?$/;
 const SKINS = ['1F3FA', '1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF'];
-export const DEFAULT_BACKGROUNDFN = (
-  set: string,
-  sheetSize: number,
-) => `https://unpkg.com/emoji-datasource-${set}@6.0.0/img/${set}/sheets-256/${sheetSize}.png`;
+export const DEFAULT_BACKGROUNDFN = (set: string, sheetSize: number) =>
+  `https://unpkg.com/emoji-datasource-${set}@6.0.0/img/${set}/sheets-256/${sheetSize}.png`;
 
 @Injectable({ providedIn: 'root' })
 export class EmojiService {
@@ -78,11 +72,7 @@ export class EmojiService {
     });
   }
 
-  getData(
-    emoji: EmojiData | string,
-    skin?: Emoji['skin'],
-    set?: Emoji['set'],
-  ): EmojiData | null {
+  getData(emoji: EmojiData | string, skin?: Emoji['skin'], set?: Emoji['set']): EmojiData | null {
     let emojiData: any;
 
     if (typeof emoji === 'string') {
@@ -144,14 +134,17 @@ export class EmojiService {
     sheetRows: Emoji['sheetRows'] = 57,
     backgroundImageFn: Emoji['backgroundImageFn'] = DEFAULT_BACKGROUNDFN,
     sheetColumns = 58,
+    url?: string,
   ) {
+    const hasImageUrl = !!url;
+    url = url || backgroundImageFn(set, sheetSize);
     return {
       width: `${size}px`,
       height: `${size}px`,
       display: 'inline-block',
-      'background-image': `url(${backgroundImageFn(set, sheetSize)})`,
-      'background-size': `${100 * sheetColumns}% ${100 * sheetRows}%`,
-      'background-position': this.getSpritePosition(sheet, sheetColumns),
+      'background-image': `url(${url})`,
+      'background-size': hasImageUrl ? '100% 100%' : `${100 * sheetColumns}% ${100 * sheetRows}%`,
+      'background-position': hasImageUrl ? undefined : this.getSpritePosition(sheet, sheetColumns),
     };
   }
 
@@ -174,11 +167,7 @@ export class EmojiService {
     return { ...emoji };
   }
 
-  getSanitizedData(
-    emoji: string | EmojiData,
-    skin?: Emoji['skin'],
-    set?: Emoji['set'],
-  ) {
+  getSanitizedData(emoji: string | EmojiData, skin?: Emoji['skin'], set?: Emoji['set']) {
     return this.sanitize(this.getData(emoji, skin, set));
   }
 }

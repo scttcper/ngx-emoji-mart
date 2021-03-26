@@ -1,10 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import {
-  categories,
-  EmojiData,
-  EmojiService,
-} from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import { categories, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { intersect } from './utils';
 
 @Injectable({ providedIn: 'root' })
@@ -24,13 +20,13 @@ export class EmojiSearch {
       const { shortNames, emoticons } = emojiData;
       const id = shortNames[0];
 
-      emoticons.forEach(emoticon => {
+      for (const emoticon of emoticons) {
         if (this.emoticonsList[emoticon]) {
-          return;
+          continue;
         }
 
         this.emoticonsList[emoticon] = id;
-      });
+      }
 
       this.emojisList[id] = this.emojiService.getSanitizedData(id);
       this.originalPool[id] = emojiData;
@@ -38,14 +34,14 @@ export class EmojiSearch {
   }
 
   addCustomToPool(custom: any, pool: any) {
-    custom.forEach((emoji: any) => {
+    for (const emoji of custom) {
       const emojiId = emoji.id || emoji.shortNames[0];
 
       if (emojiId && !pool[emojiId]) {
         pool[emojiId] = this.emojiService.getData(emoji);
         this.emojisList[emojiId] = this.emojiService.getSanitizedData(emoji);
       }
-    });
+    }
   }
 
   search(
@@ -79,28 +75,21 @@ export class EmojiSearch {
       if (include.length || exclude.length) {
         pool = {};
 
-        categories.forEach(category => {
-          const isIncluded =
-            include && include.length
-              ? include.indexOf(category.id) > -1
-              : true;
-          const isExcluded =
-            exclude && exclude.length
-              ? exclude.indexOf(category.id) > -1
-              : false;
+        for (const category of categories || []) {
+          const isIncluded = include && include.length ? include.indexOf(category.id) > -1 : true;
+          const isExcluded = exclude && exclude.length ? exclude.indexOf(category.id) > -1 : false;
+
           if (!isIncluded || isExcluded) {
-            return;
+            continue;
           }
 
-          category.emojis?.forEach(
-            emojiId => {
-              // Need to make sure that pool gets keyed
-              // with the correct id, which is why we call emojiService.getData below
-              const emoji = this.emojiService.getData(emojiId);
-              pool[emoji?.id ?? ''] = emoji;
-            }
-          );
-        });
+          for (const emojiId of category.emojis || []) {
+            // Need to make sure that pool gets keyed
+            // with the correct id, which is why we call emojiService.getData below
+            const emoji = this.emojiService.getData(emojiId);
+            pool[emoji?.id ?? ''] = emoji;
+          }
+        }
 
         if (custom.length) {
           const customIsIncluded =
@@ -142,7 +131,7 @@ export class EmojiSearch {
                     emoji.name,
                     emoji.id,
                     emoji.keywords,
-                    emoji.emoticons
+                    emoji.emoticons,
                   );
                 }
                 const query = this.emojiSearch[id];
@@ -217,15 +206,19 @@ export class EmojiSearch {
         return;
       }
 
-      (Array.isArray(strings) ? strings : [strings]).forEach(str => {
-        (split ? str.split(/[-|_|\s]+/) : [str]).forEach(s => {
+      const arr = Array.isArray(strings) ? strings : [strings];
+
+      for (const str of arr) {
+        const substrings = split ? str.split(/[-|_|\s]+/) : [str];
+
+        for (let s of substrings) {
           s = s.toLowerCase();
 
           if (!search.includes(s)) {
             search.push(s);
           }
-        });
-      });
+        }
+      }
     };
 
     addToSearch(shortNames, true);

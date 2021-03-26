@@ -4,7 +4,7 @@ import {
   EventEmitter,
   Input,
   OnChanges,
-  Output
+  Output,
 } from '@angular/core';
 
 import { EmojiData } from './data/data.interfaces';
@@ -16,7 +16,7 @@ export interface Emoji {
   forceSize: boolean;
   tooltip: boolean;
   skin: 1 | 2 | 3 | 4 | 5 | 6;
-  sheetSize: 16 | 20 | 32 | 64;
+  sheetSize: 16 | 20 | 32 | 64 | 72;
   sheetRows?: number;
   set: 'apple' | 'google' | 'twitter' | 'facebook' | '';
   size: number;
@@ -26,6 +26,7 @@ export interface Emoji {
   emojiOver: EventEmitter<EmojiEvent>;
   emojiLeave: EventEmitter<EmojiEvent>;
   emojiClick: EventEmitter<EmojiEvent>;
+  imageUrlFn?: (emoji: EmojiData | null) => string;
 }
 
 export interface EmojiEvent {
@@ -72,7 +73,7 @@ export interface EmojiEvent {
     </span>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  preserveWhitespaces: false
+  preserveWhitespaces: false,
 })
 export class EmojiComponent implements OnChanges, Emoji {
   @Input() skin: Emoji['skin'] = 1;
@@ -100,6 +101,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   isVisible = true;
   // TODO: replace 4.0.3 w/ dynamic get verison from emoji-datasource in package.json
   @Input() backgroundImageFn: Emoji['backgroundImageFn'] = DEFAULT_BACKGROUNDFN;
+  @Input() imageUrlFn?: Emoji['imageUrlFn'];
 
   constructor(private emojiService: EmojiService) {}
 
@@ -126,10 +128,7 @@ export class EmojiComponent implements OnChanges, Emoji {
       return (this.isVisible = false);
     }
 
-    this.label = [data.native]
-      .concat(data.shortNames)
-      .filter(Boolean)
-      .join(', ');
+    this.label = [data.native].concat(data.shortNames).filter(Boolean).join(', ');
 
     if (this.isNative && data.unified && data.native) {
       // hide older emoji before the split into gendered emoji
@@ -145,23 +144,20 @@ export class EmojiComponent implements OnChanges, Emoji {
       this.style = {
         width: `${this.size}px`,
         height: `${this.size}px`,
-        display: 'inline-block'
+        display: 'inline-block',
       };
       if (data.spriteUrl && this.sheetRows && this.sheetColumns) {
         this.style = {
           ...this.style,
           backgroundImage: `url(${data.spriteUrl})`,
           backgroundSize: `${100 * this.sheetColumns}% ${100 * this.sheetRows}%`,
-          backgroundPosition: this.emojiService.getSpritePosition(
-            data.sheet,
-            this.sheetColumns
-          )
+          backgroundPosition: this.emojiService.getSpritePosition(data.sheet, this.sheetColumns),
         };
       } else {
         this.style = {
           ...this.style,
           backgroundImage: `url(${data.imageUrl})`,
-          backgroundSize: 'contain'
+          backgroundSize: 'contain',
         };
       }
     } else {
@@ -180,7 +176,8 @@ export class EmojiComponent implements OnChanges, Emoji {
           this.sheetSize,
           this.sheetRows,
           this.backgroundImageFn,
-          this.sheetColumns
+          this.sheetColumns,
+          this.imageUrlFn?.(this.getData()),
         );
       }
     }
@@ -192,11 +189,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   }
 
   getSanitizedData(): EmojiData {
-    return this.emojiService.getSanitizedData(
-      this.emoji,
-      this.skin,
-      this.set
-    ) as EmojiData;
+    return this.emojiService.getSanitizedData(this.emoji, this.skin, this.set) as EmojiData;
   }
 
   handleClick($event: Event) {

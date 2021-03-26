@@ -74,8 +74,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   @Input() title = 'Emoji Mart™';
   @Input() emoji = 'department_store';
   @Input() darkMode = !!(
-    typeof matchMedia === 'function' &&
-    matchMedia('(prefers-color-scheme: dark)').matches
+    typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: dark)').matches
   );
   @Input() color = '#ae65c5';
   @Input() hideObsolete = true;
@@ -95,6 +94,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   @Input() autoFocus = false;
   @Input() custom: any[] = [];
   @Input() hideRecent = true;
+  @Input() imageUrlFn: Emoji['imageUrlFn'];
   @Input() include?: string[];
   @Input() exclude?: string[];
   @Input() notFoundEmoji = 'sleuth_or_spy';
@@ -104,6 +104,8 @@ export class PickerComponent implements OnInit, OnDestroy {
   @Input() enableFrequentEmojiSort = false;
   @Input() enableSearch = true;
   @Input() showSingleCategory = false;
+  @Input() virtualize = false;
+  @Input() virtualizeOffset = 0;
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
   @Output() skinChange = new EventEmitter<Emoji['skin']>();
@@ -113,6 +115,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   @ViewChildren(CategoryComponent) categoryRefs!: QueryList<CategoryComponent>;
   scrollHeight = 0;
   clientHeight = 0;
+  clientWidth = 0;
   selected?: string;
   nextScroll?: string;
   scrollTop?: number;
@@ -141,10 +144,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   private scrollListener!: () => void;
 
   @Input()
-  backgroundImageFn: Emoji['backgroundImageFn'] = (
-    set: string,
-    sheetSize: number,
-  ) =>
+  backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
     `https://unpkg.com/emoji-datasource-${this.set}@6.0.0/img/${this.set}/sheets-256/${this.sheetSize}.png`
 
   constructor(
@@ -193,13 +193,9 @@ export class PickerComponent implements OnInit, OnDestroy {
 
     for (const category of allCategories) {
       const isIncluded =
-        this.include && this.include.length
-          ? this.include.indexOf(category.id) > -1
-          : true;
+        this.include && this.include.length ? this.include.indexOf(category.id) > -1 : true;
       const isExcluded =
-        this.exclude && this.exclude.length
-          ? this.exclude.indexOf(category.id) > -1
-          : false;
+        this.exclude && this.exclude.length ? this.exclude.indexOf(category.id) > -1 : false;
       if (!isIncluded || isExcluded) {
         continue;
       }
@@ -255,7 +251,9 @@ export class PickerComponent implements OnInit, OnDestroy {
 
     // Need to be careful if small number of categories
     const categoriesToLoadFirst = Math.min(this.categories.length, 3);
-    this.setActiveCategories(this.activeCategories = this.categories.slice(0, categoriesToLoadFirst));
+    this.setActiveCategories(
+      (this.activeCategories = this.categories.slice(0, categoriesToLoadFirst)),
+    );
 
     // Trim last active category
     const lastActiveCategoryEmojis = this.categories[categoriesToLoadFirst - 1].emojis!.slice();
@@ -305,7 +303,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   setActiveCategories(categoriesToMakeActive: Array<EmojiCategory>) {
     if (this.showSingleCategory) {
       this.activeCategories = categoriesToMakeActive.filter(
-        x => (x.name === this.selected || x === this.SEARCH_CATEGORY)
+        x => x.name === this.selected || x === this.SEARCH_CATEGORY,
       );
     } else {
       this.activeCategories = categoriesToMakeActive;
@@ -318,6 +316,7 @@ export class PickerComponent implements OnInit, OnDestroy {
       const target = this.scrollRef.nativeElement;
       this.scrollHeight = target.scrollHeight;
       this.clientHeight = target.clientHeight;
+      this.clientWidth = target.clientWidth;
     }
   }
   handleAnchorClick($event: { category: EmojiCategory; index: number }) {
@@ -343,13 +342,18 @@ export class PickerComponent implements OnInit, OnDestroy {
       }
       this.scrollRef.nativeElement.scrollTop = top;
     }
-    this.selected = $event.category.name;
     this.nextScroll = $event.category.name;
+
+    // handle component scrolling to load emojis
+    for (const category of this.categories) {
+      const componentToScroll = this.categoryRefs.find(({ id }) => id === category.id);
+      componentToScroll?.handleScroll(this.scrollRef.nativeElement.scrollTop);
+    }
   }
   categoryTrack(index: number, item: any) {
     return item.id;
   }
-  handleScroll() {
+  handleScroll(noSelectionChange = false) {
     if (this.nextScroll) {
       this.selected = this.nextScroll;
       this.nextScroll = undefined;
@@ -389,8 +393,10 @@ export class PickerComponent implements OnInit, OnDestroy {
       this.scrollTop = target.scrollTop;
     }
     // This will allow us to run the change detection only when the category changes.
-    if (activeCategory && activeCategory.name !== this.selected) {
+    if (!noSelectionChange && activeCategory && activeCategory.name !== this.selected) {
       this.selected = activeCategory.name;
+      this.ref.detectChanges();
+    } else if (noSelectionChange) {
       this.ref.detectChanges();
     }
   }
@@ -445,6 +451,7 @@ export class PickerComponent implements OnInit, OnDestroy {
 
     this.previewEmoji = $event.emoji;
     this.cancelAnimationFrame();
+    this.ref?.detectChanges();
   }
   handleEmojiLeave() {
     if (!this.showPreview || !this.previewRef) {
