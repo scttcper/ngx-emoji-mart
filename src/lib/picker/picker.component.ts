@@ -106,6 +106,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   @Input() showSingleCategory = false;
   @Input() virtualize = false;
   @Input() virtualizeOffset = 0;
+  @Input() recent?: string[];
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
   @Output() skinChange = new EventEmitter<Emoji['skin']>();
@@ -120,7 +121,6 @@ export class PickerComponent implements OnInit, OnDestroy {
   nextScroll?: string;
   scrollTop?: number;
   firstRender = true;
-  recent?: string[];
   previewEmoji: any;
   animationFrameRequestId: number | null = null;
   NAMESPACE = 'emoji-mart';
