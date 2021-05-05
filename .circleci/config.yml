@@ -8,7 +8,7 @@ jobs:
         environment:
           CHROME_BIN: '/usr/bin/google-chrome'
     steps:
-      - browser-tools/install-browser-tools
+      - browser-tools/install-chrome
       - checkout
       - run:
           name: npm-install
