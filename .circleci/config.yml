@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: cimg/node:16-browsers
+      - image: cimg/node:current-browsers
         environment:
           CHROME_BIN: '/usr/bin/google-chrome'
     steps:
@@ -24,7 +24,7 @@ jobs:
           command: bash <(curl -s https://codecov.io/bash)
   release:
     docker:
-      - image: cimg/node:16
+      - image: cimg/node:current
     steps:
       - checkout
       - run: npm ci
