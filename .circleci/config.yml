@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: circleci/node:16-browsers
+      - image: cimg/node:16-browsers
         environment:
           CHROME_BIN: '/usr/bin/google-chrome'
     steps:
@@ -24,7 +24,7 @@ jobs:
           command: bash <(curl -s https://codecov.io/bash)
   release:
     docker:
-      - image: circleci/node:16
+      - image: cimg/node:16
     steps:
       - checkout
       - run: npm ci
