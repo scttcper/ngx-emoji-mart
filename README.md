@@ -264,7 +264,7 @@ const customEmojis = [
     text: '',
     emoticons: [],
     keywords: ['test', 'flag'],
-    spriteUrl: 'https://unpkg.com/emoji-datasource-twitter@6.1.1/img/twitter/sheets-256/64.png',
+    spriteUrl: 'https://unpkg.com/emoji-datasource-twitter@6.0.1/img/twitter/sheets-256/64.png',
     sheet_x: 1,
     sheet_y: 1,
     size: 64,
