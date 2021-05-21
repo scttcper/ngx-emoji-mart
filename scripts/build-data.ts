@@ -1,4 +1,4 @@
-import emojiDataRaw from 'emoji-datasource/emoji.json';
+import * as emojiDataRaw from 'emoji-datasource/emoji.json';
 import fs from 'fs';
 import path from 'path';
 import inflection from 'inflection';
@@ -8,8 +8,8 @@ import { EmojiData } from './emoji';
 
 const emojiLib = require('emojilib');
 // cast types to emojiData
-// @ts-ignore
-const emojiData: EmojiData[] = emojiDataRaw;
+// @ts-expect-error
+const emojiData: EmojiData[] = emojiDataRaw.default;
 const categories: any[] = [];
 const emojis: any[] = [];
 const skins: any[] = [];
@@ -99,7 +99,7 @@ emojiData.forEach((datum: any) => {
     datum.keywords = keywords;
   }
 
-  if (datum.category === 'Skin Tones') {
+  if (datum.category === 'Component') {
     skins.push(datum);
   } else {
     categoryIndex = categoriesIndex[category];
@@ -153,6 +153,7 @@ emojiData.forEach((datum: any) => {
   delete datum.softbank;
   delete datum.google;
   delete datum.image;
+  delete datum.subcategory;
   // delete datum.short_name;
   delete datum.non_qualified;
   delete datum.category;
