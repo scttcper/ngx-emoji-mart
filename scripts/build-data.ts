@@ -28,6 +28,11 @@ const catPairs = [
 ];
 const sets = ['apple', 'google', 'twitter', 'facebook'];
 
+const unifiedToNative = (unified: string) => {
+  const codePoints = unified.split('-').map(u => parseInt(`0x${u}`, 16));
+  return String.fromCodePoint(...codePoints);
+}
+
 catPairs.forEach((category, i) => {
   const [name, id] = category;
   categories[i] = { id, name, emojis: [] };
@@ -89,8 +94,9 @@ emojiData.forEach((datum: any) => {
   datum.text = datum.text || '';
   delete datum.texts;
 
-  if (emojiLib.lib[datum.short_name]) {
-    datum.keywords = emojiLib.lib[datum.short_name].keywords;
+  const keywords = emojiLib[unifiedToNative(datum.unified)];
+  if (keywords) {
+    datum.keywords = keywords;
   }
 
   if (datum.category === 'Skin Tones') {

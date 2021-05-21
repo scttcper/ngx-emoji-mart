@@ -145,7 +145,7 @@ export class PickerComponent implements OnInit, OnDestroy {
 
   @Input()
   backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
-    `https://unpkg.com/emoji-datasource-${this.set}@6.0.0/img/${this.set}/sheets-256/${this.sheetSize}.png`
+    `https://unpkg.com/emoji-datasource-${this.set}@6.1.1/img/${this.set}/sheets-256/${this.sheetSize}.png`
 
   constructor(
     private ngZone: NgZone,
@@ -204,7 +204,7 @@ export class PickerComponent implements OnInit, OnDestroy {
         const newEmojis = [];
 
         const { emojis } = category;
-        // tslint:disable-next-line: prefer-for-of
+        // eslint-disable-next-line @typescript-eslint/prefer-for-of
         for (let emojiIndex = 0; emojiIndex < emojis!.length; emojiIndex++) {
           const emoji = emojis![emojiIndex];
           if (this.emojisToShowFilter(emoji)) {
@@ -268,7 +268,7 @@ export class PickerComponent implements OnInit, OnDestroy {
       // component and going down to the children.
       this.ref.detectChanges();
 
-      // tslint:disable-next-line: no-unused-expression
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       isPlatformBrowser(this.platformId) &&
         this.ngZone.runOutsideAngular(() => {
           // The `updateCategoriesSize` doesn't change properties that are used

@@ -4,6 +4,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Earth Globe Europe-Africa',
     unified: '1F30D',
     keywords: [
+      'globe_showing_europe_africa',
       'globe',
       'world',
       'international'
@@ -14,7 +15,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Grapes',
     unified: '1F347',
-    keywords: ['fruit', 'food', 'wine'],
+    keywords: [
+      'grapes',
+      'fruit',
+      'food',
+      'wine'
+    ],
     sheet: [6, 25],
     shortName: 'grapes'
   },
@@ -22,6 +28,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Jack-O-Lantern',
     unified: '1F383',
     keywords: [
+      'jack_o_lantern',
       'halloween',
       'light',
       'pumpkin',
@@ -35,6 +42,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Chequered Flag',
     unified: '1F3C1',
     keywords: [
+      'chequered_flag',
       'contest',
       'finishline',
       'race',
@@ -47,6 +55,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Automated Teller Machine',
     unified: '1F3E7',
     keywords: [
+      'atm_sign',
       'money',
       'sales',
       'cash',
@@ -68,6 +77,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F435',
     emoticons: [':o)'],
     keywords: [
+      'monkey_face',
       'animal',
       'nature',
       'circus'
@@ -79,6 +89,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Waving Hand Sign',
     unified: '1F44B',
     keywords: [
+      'waving_hand',
       'hands',
       'gesture',
       'goodbye',
@@ -117,6 +128,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Eyeglasses',
     unified: '1F453',
     keywords: [
+      'glasses',
       'fashion',
       'accessories',
       'eyesight',
@@ -132,6 +144,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F600',
     text: ':D',
     keywords: [
+      'grinning_face',
       'face',
       'smile',
       'happy',
@@ -146,6 +159,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Earth Globe Americas',
     unified: '1F30E',
     keywords: [
+      'globe_showing_americas',
       'globe',
       'world',
       'USA',
@@ -158,6 +172,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Melon',
     unified: '1F348',
     keywords: [
+      'melon',
       'fruit',
       'nature',
       'food'
@@ -169,6 +184,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Christmas Tree',
     unified: '1F384',
     keywords: [
+      'christmas_tree',
       'festival',
       'vacation',
       'december',
@@ -188,6 +204,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Monkey',
     unified: '1F412',
     keywords: [
+      'monkey',
       'animal',
       'nature',
       'banana',
@@ -197,9 +214,10 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'monkey'
   },
   {
-    name: 'Dark Sunglasses',
+    name: 'Sunglasses',
     unified: '1F576-FE0F',
     keywords: [
+      'sunglasses',
       'face',
       'cool',
       'accessories'
@@ -213,6 +231,7 @@ export const emojis: CompressedEmojiData[] = [
     text: ':)',
     emoticons: ['=)', '=-)'],
     keywords: [
+      'grinning_face_with_big_eyes',
       'face',
       'happy',
       'joy',
@@ -229,6 +248,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Triangular Flag on Post',
     unified: '1F6A9',
     keywords: [
+      'triangular_flag',
       'mark',
       'milestone',
       'place'
@@ -240,6 +260,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Put Litter in Its Place Symbol',
     unified: '1F6AE',
     keywords: [
+      'litter_in_bin_sign',
       'blue-square',
       'sign',
       'human',
@@ -252,6 +273,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Raised Back of Hand',
     unified: '1F91A',
     keywords: [
+      'raised_back_of_hand',
       'fingers',
       'raised',
       'backhand'
@@ -285,6 +307,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Earth Globe Asia-Australia',
     unified: '1F30F',
     keywords: [
+      'globe_showing_asia_australia',
       'globe',
       'world',
       'east',
@@ -297,6 +320,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Watermelon',
     unified: '1F349',
     keywords: [
+      'watermelon',
       'fruit',
       'food',
       'picnic',
@@ -309,6 +333,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fireworks',
     unified: '1F386',
     keywords: [
+      'fireworks',
       'photo',
       'festival',
       'carnival',
@@ -321,6 +346,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Crossed Flags',
     unified: '1F38C',
     keywords: [
+      'crossed_flags',
       'japanese',
       'nation',
       'country',
@@ -336,9 +362,10 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'skin-tone-4'
   },
   {
-    name: 'Raised Hand with Fingers Splayed',
+    name: 'Hand with Fingers Splayed',
     unified: '1F590-FE0F',
     keywords: [
+      'hand_with_fingers_splayed',
       'hand',
       'fingers',
       'palm'
@@ -374,6 +401,7 @@ export const emojis: CompressedEmojiData[] = [
     text: ':)',
     emoticons: ['C:', 'c:', ':D', ':-D'],
     keywords: [
+      'grinning_face_with_smiling_eyes',
       'face',
       'happy',
       'joy',
@@ -391,6 +419,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Potable Water Symbol',
     unified: '1F6B0',
     keywords: [
+      'potable_water',
       'blue-square',
       'liquid',
       'restroom',
@@ -404,6 +433,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Goggles',
     unified: '1F97D',
     keywords: [
+      'goggles',
       'eyes',
       'protection',
       'safety'
@@ -415,6 +445,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Gorilla',
     unified: '1F98D',
     keywords: [
+      'gorilla',
       'animal',
       'nature',
       'circus'
@@ -426,6 +457,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Globe with Meridians',
     unified: '1F310',
     keywords: [
+      'globe_with_meridians',
       'earth',
       'international',
       'world',
@@ -440,6 +472,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tangerine',
     unified: '1F34A',
     keywords: [
+      'tangerine',
       'food',
       'fruit',
       'nature',
@@ -452,6 +485,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Firework Sparkler',
     unified: '1F387',
     keywords: [
+      'sparkler',
       'stars',
       'night',
       'shine'
@@ -462,6 +496,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Waving Black Flag',
     unified: '1F3F4',
+    keywords: ['black_flag', 'pirate'],
     sheet: [11, 7],
     shortName: 'waving_black_flag'
   },
@@ -475,6 +510,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Grinning Face with Smiling Eyes',
     unified: '1F601',
     keywords: [
+      'beaming_face_with_smiling_eyes',
       'face',
       'happy',
       'smile',
@@ -487,12 +523,20 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Lab Coat',
     unified: '1F97C',
+    keywords: [
+      'lab_coat',
+      'doctor',
+      'experiment',
+      'scientist',
+      'chemist'
+    ],
     sheet: [42, 29],
     shortName: 'lab_coat'
   },
   {
     name: 'Orangutan',
     unified: '1F9A7',
+    keywords: ['orangutan', 'animal'],
     sheet: [43, 14],
     shortName: 'orangutan'
   },
@@ -500,9 +544,9 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Wheelchair Symbol',
     unified: '267F',
     keywords: [
+      'wheelchair_symbol',
       'blue-square',
       'disabled',
-      'a11y',
       'accessibility'
     ],
     sheet: [54, 45],
@@ -511,6 +555,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Raised Hand',
     unified: '270B',
+    keywords: [
+      'raised_hand',
+      'fingers',
+      'stop',
+      'highfive',
+      'palm',
+      'ban'
+    ],
     sheet: [55, 54],
     skinVariations: [
       {
@@ -540,13 +592,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Lemon',
     unified: '1F34B',
-    keywords: ['fruit', 'nature'],
+    keywords: [
+      'lemon',
+      'fruit',
+      'nature'
+    ],
     sheet: [6, 29],
     shortName: 'lemon'
   },
   {
-    name: 'Waving White Flag',
+    name: 'White Flag',
     unified: '1F3F3-FE0F',
+    keywords: [
+      'white_flag',
+      'losing',
+      'loser',
+      'lost',
+      'surrender',
+      'give up',
+      'fail'
+    ],
     sheet: [11, 2],
     shortName: 'waving_white_flag'
   },
@@ -560,6 +625,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dog Face',
     unified: '1F436',
     keywords: [
+      'dog_face',
       'animal',
       'friend',
       'nature',
@@ -574,6 +640,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Raised Hand with Part Between Middle and Ring Fingers',
     unified: '1F596',
+    keywords: [
+      'vulcan_salute',
+      'hand',
+      'fingers',
+      'spock',
+      'star trek'
+    ],
     sheet: [30, 0],
     skinVariations: [
       {
@@ -602,7 +675,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'World Map',
     unified: '1F5FA-FE0F',
-    keywords: ['location', 'direction'],
+    keywords: [
+      'world_map',
+      'location',
+      'direction'
+    ],
     sheet: [30, 26],
     shortName: 'world_map'
   },
@@ -611,6 +688,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F606',
     emoticons: [':>', ':->'],
     keywords: [
+      'grinning_squinting_face',
       'happy',
       'joy',
       'lol',
@@ -629,6 +707,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mens Symbol',
     unified: '1F6B9',
     keywords: [
+      'men_s_room',
       'toilet',
       'restroom',
       'wc',
@@ -642,6 +721,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Safety Vest',
     unified: '1F9BA',
+    keywords: [
+      'safety_vest',
+      'protection'
+    ],
     sheet: [44, 15],
     shortName: 'safety_vest'
   },
@@ -649,6 +732,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Firecracker',
     unified: '1F9E8',
     keywords: [
+      'firecracker',
       'dynamite',
       'boom',
       'explode',
@@ -662,6 +746,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Banana',
     unified: '1F34C',
     keywords: [
+      'banana',
       'fruit',
       'food',
       'monkey'
@@ -672,6 +757,20 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Rainbow Flag',
     unified: '1F3F3-FE0F-200D-1F308',
+    keywords: [
+      'rainbow_flag',
+      'flag',
+      'rainbow',
+      'pride',
+      'gay',
+      'lgbt',
+      'glbt',
+      'queer',
+      'homosexual',
+      'lesbian',
+      'bisexual',
+      'transgender'
+    ],
     sheet: [11, 0],
     shortName: 'rainbow-flag'
   },
@@ -679,6 +778,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dog',
     unified: '1F415',
     keywords: [
+      'dog',
       'animal',
       'nature',
       'friend',
@@ -693,6 +793,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ok Hand Sign',
     unified: '1F44C',
     keywords: [
+      'ok_hand',
       'fingers',
       'limbs',
       'perfect',
@@ -728,6 +829,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Necktie',
     unified: '1F454',
     keywords: [
+      'necktie',
       'shirt',
       'suitup',
       'formal',
@@ -742,6 +844,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Silhouette of Japan',
     unified: '1F5FE',
     keywords: [
+      'map_of_japan',
       'nation',
       'country',
       'japanese',
@@ -754,6 +857,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Smiling Face with Open Mouth and Cold Sweat',
     unified: '1F605',
     keywords: [
+      'grinning_face_with_sweat',
       'face',
       'hot',
       'happy',
@@ -769,6 +873,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Womens Symbol',
     unified: '1F6BA',
     keywords: [
+      'women_s_room',
       'purple-square',
       'woman',
       'female',
@@ -784,6 +889,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sparkles',
     unified: '2728',
     keywords: [
+      'sparkles',
       'stars',
       'shine',
       'shiny',
@@ -799,6 +905,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pineapple',
     unified: '1F34D',
     keywords: [
+      'pineapple',
       'fruit',
       'nature',
       'food'
@@ -810,6 +917,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Balloon',
     unified: '1F388',
     keywords: [
+      'balloon',
       'party',
       'celebration',
       'birthday',
@@ -821,6 +929,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Transgender Flag',
     unified: '1F3F3-FE0F-200D-26A7-FE0F',
+    keywords: [
+      'transgender flag',
+      'lgbtq'
+    ],
     sheet: [11, 1],
     hidden: ['facebook'],
     shortName: 'transgender_flag'
@@ -828,6 +940,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'T-Shirt',
     unified: '1F455',
+    keywords: [
+      't_shirt',
+      'fashion',
+      'cloth',
+      'casual',
+      'shirt',
+      'tee'
+    ],
     sheet: [13, 56],
     shortNames: ['tshirt'],
     shortName: 'shirt'
@@ -836,6 +956,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Restroom',
     unified: '1F6BB',
     keywords: [
+      'restroom',
       'blue-square',
       'toilet',
       'refresh',
@@ -848,6 +969,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pinched Fingers',
     unified: '1F90C',
+    keywords: [
+      'pinched fingers',
+      'size',
+      'tiny',
+      'small'
+    ],
     sheet: [37, 9],
     skinVariations: [
       {
@@ -876,12 +1003,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Rolling on the Floor Laughing',
     unified: '1F923',
+    keywords: [
+      'rolling_on_the_floor_laughing',
+      'face',
+      'rolling',
+      'floor',
+      'laughing',
+      'lol',
+      'haha'
+    ],
     sheet: [38, 19],
     shortName: 'rolling_on_the_floor_laughing'
   },
   {
     name: 'Guide Dog',
     unified: '1F9AE',
+    keywords: [
+      'guide_dog',
+      'animal',
+      'blind'
+    ],
     sheet: [43, 21],
     shortName: 'guide_dog'
   },
@@ -889,6 +1030,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Compass',
     unified: '1F9ED',
     keywords: [
+      'compass',
       'magnetic',
       'navigation',
       'orienteering'
@@ -900,6 +1042,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Party Popper',
     unified: '1F389',
     keywords: [
+      'party_popper',
       'party',
       'congratulations',
       'birthday',
@@ -911,8 +1054,16 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'tada'
   },
   {
-    name: 'Snow Capped Mountain',
+    name: 'Snow-Capped Mountain',
     unified: '1F3D4-FE0F',
+    keywords: [
+      'snow_capped_mountain',
+      'photo',
+      'nature',
+      'environment',
+      'winter',
+      'cold'
+    ],
     sheet: [10, 29],
     shortName: 'snow_capped_mountain'
   },
@@ -920,6 +1071,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pirate Flag',
     unified: '1F3F4-200D-2620-FE0F',
     keywords: [
+      'pirate_flag',
       'skull',
       'crossbones',
       'flag',
@@ -931,13 +1083,22 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Service Dog',
     unified: '1F415-200D-1F9BA',
+    keywords: [
+      'service_dog',
+      'blind',
+      'animal'
+    ],
     sheet: [11, 40],
     shortName: 'service_dog'
   },
   {
     name: 'Jeans',
     unified: '1F456',
-    keywords: ['fashion', 'shopping'],
+    keywords: [
+      'jeans',
+      'fashion',
+      'shopping'
+    ],
     sheet: [13, 57],
     shortName: 'jeans'
   },
@@ -945,6 +1106,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Face with Tears of Joy',
     unified: '1F602',
     keywords: [
+      'face_with_tears_of_joy',
       'face',
       'cry',
       'tears',
@@ -960,6 +1122,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Baby Symbol',
     unified: '1F6BC',
     keywords: [
+      'baby_symbol',
       'orange-square',
       'child'
     ],
@@ -969,6 +1132,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pinching Hand',
     unified: '1F90F',
+    keywords: [
+      'pinching_hand',
+      'tiny',
+      'small',
+      'size'
+    ],
     sheet: [37, 17],
     skinVariations: [
       {
@@ -998,6 +1167,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mango',
     unified: '1F96D',
     keywords: [
+      'mango',
       'fruit',
       'food',
       'tropical'
@@ -1008,6 +1178,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ascension Island Flag',
     unified: '1F1E6-1F1E8',
+    keywords: ['flag_ascension_island'],
     sheet: [0, 31],
     shortName: 'flag-ac'
   },
@@ -1015,6 +1186,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Red Apple',
     unified: '1F34E',
     keywords: [
+      'red_apple',
       'fruit',
       'mac',
       'school'
@@ -1026,6 +1198,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Confetti Ball',
     unified: '1F38A',
     keywords: [
+      'confetti_ball',
       'festival',
       'party',
       'birthday',
@@ -1038,6 +1211,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Poodle',
     unified: '1F429',
     keywords: [
+      'poodle',
       'dog',
       'animal',
       '101',
@@ -1051,7 +1225,11 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Slightly Smiling Face',
     unified: '1F642',
     emoticons: [':)', '(:', ':-)'],
-    keywords: ['face', 'smile'],
+    keywords: [
+      'slightly_smiling_face',
+      'face',
+      'smile'
+    ],
     sheet: [31, 40],
     shortName: 'slightly_smiling_face'
   },
@@ -1059,6 +1237,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Water Closet',
     unified: '1F6BE',
     keywords: [
+      'water_closet',
       'toilet',
       'restroom',
       'blue-square'
@@ -1070,6 +1249,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Scarf',
     unified: '1F9E3',
     keywords: [
+      'scarf',
       'neck',
       'winter',
       'clothes'
@@ -1081,6 +1261,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mountain',
     unified: '26F0-FE0F',
     keywords: [
+      'mountain',
       'photo',
       'nature',
       'environment'
@@ -1092,6 +1273,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Victory Hand',
     unified: '270C-FE0F',
     keywords: [
+      'victory_hand',
       'fingers',
       'ohyeah',
       'hand',
@@ -1127,6 +1309,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Andorra Flag',
     unified: '1F1E6-1F1E9',
+    keywords: [
+      'flag_andorra',
+      'ad',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 32],
     shortName: 'flag-ad'
   },
@@ -1134,6 +1324,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Volcano',
     unified: '1F30B',
     keywords: [
+      'volcano',
       'photo',
       'nature',
       'disaster'
@@ -1144,7 +1335,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Green Apple',
     unified: '1F34F',
-    keywords: ['fruit', 'nature'],
+    keywords: [
+      'green_apple',
+      'fruit',
+      'nature'
+    ],
     sheet: [6, 33],
     shortName: 'green_apple'
   },
@@ -1152,6 +1347,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tanabata Tree',
     unified: '1F38B',
     keywords: [
+      'tanabata_tree',
       'plant',
       'nature',
       'branch',
@@ -1164,6 +1360,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Wolf Face',
     unified: '1F43A',
     keywords: [
+      'wolf',
       'animal',
       'nature',
       'wild'
@@ -1175,6 +1372,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Upside-Down Face',
     unified: '1F643',
     keywords: [
+      'upside_down_face',
       'face',
       'flipped',
       'silly',
@@ -1186,14 +1384,22 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Passport Control',
     unified: '1F6C2',
-    keywords: ['custom', 'blue-square'],
+    keywords: [
+      'passport_control',
+      'custom',
+      'blue-square'
+    ],
     sheet: [36, 15],
     shortName: 'passport_control'
   },
   {
     name: 'Hand with Index and Middle Fingers Crossed',
     unified: '1F91E',
-    keywords: ['good', 'lucky'],
+    keywords: [
+      'crossed_fingers',
+      'good',
+      'lucky'
+    ],
     sheet: [38, 4],
     skinVariations: [
       {
@@ -1226,6 +1432,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Gloves',
     unified: '1F9E4',
     keywords: [
+      'gloves',
       'hands',
       'winter',
       'clothes'
@@ -1236,6 +1443,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'United Arab Emirates Flag',
     unified: '1F1E6-1F1EA',
+    keywords: [
+      'flag_united_arab_emirates',
+      'united',
+      'arab',
+      'emirates',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 33],
     shortName: 'flag-ae'
   },
@@ -1243,6 +1460,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pear',
     unified: '1F350',
     keywords: [
+      'pear',
       'fruit',
       'nature',
       'food'
@@ -1254,6 +1472,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pine Decoration',
     unified: '1F38D',
     keywords: [
+      'pine_decoration',
       'plant',
       'nature',
       'vegetable',
@@ -1267,6 +1486,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mount Fuji',
     unified: '1F5FB',
     keywords: [
+      'mount_fuji',
       'photo',
       'mountain',
       'nature',
@@ -1281,6 +1501,7 @@ export const emojis: CompressedEmojiData[] = [
     text: ';)',
     emoticons: [';)', ';-)'],
     keywords: [
+      'winking_face',
       'face',
       'happy',
       'mischievous',
@@ -1296,6 +1517,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Customs',
     unified: '1F6C3',
     keywords: [
+      'customs',
       'passport',
       'border',
       'blue-square'
@@ -1306,6 +1528,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'I Love You Hand Sign',
     unified: '1F91F',
+    keywords: [
+      'love_you_gesture',
+      'hand',
+      'fingers',
+      'gesture'
+    ],
     sheet: [38, 10],
     skinVariations: [
       {
@@ -1335,6 +1563,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fox Face',
     unified: '1F98A',
     keywords: [
+      'fox',
       'animal',
       'nature',
       'face'
@@ -1345,13 +1574,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Coat',
     unified: '1F9E5',
-    keywords: ['jacket'],
+    keywords: ['coat', 'jacket'],
     sheet: [51, 48],
     shortName: 'coat'
   },
   {
     name: 'Afghanistan Flag',
     unified: '1F1E6-1F1EB',
+    keywords: [
+      'flag_afghanistan',
+      'af',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 34],
     shortName: 'flag-af'
   },
@@ -1359,6 +1596,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Peach',
     unified: '1F351',
     keywords: [
+      'peach',
       'fruit',
       'nature',
       'food'
@@ -1370,6 +1608,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Japanese Dolls',
     unified: '1F38E',
     keywords: [
+      'japanese_dolls',
       'japanese',
       'toy',
       'kimono'
@@ -1381,6 +1620,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Camping',
     unified: '1F3D5-FE0F',
     keywords: [
+      'camping',
       'photo',
       'outdoors',
       'tent'
@@ -1393,6 +1633,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F60A',
     text: ':)',
     keywords: [
+      'smiling_face_with_smiling_eyes',
       'face',
       'smile',
       'happy',
@@ -1409,6 +1650,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Baggage Claim',
     unified: '1F6C4',
     keywords: [
+      'baggage_claim',
       'blue-square',
       'airport',
       'transport'
@@ -1419,6 +1661,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Sign of the Horns',
     unified: '1F918',
+    keywords: [
+      'sign_of_the_horns',
+      'hand',
+      'fingers',
+      'evil_eye',
+      'sign_of_horns',
+      'rock_on'
+    ],
     sheet: [37, 31],
     skinVariations: [
       {
@@ -1448,27 +1698,48 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Raccoon',
     unified: '1F99D',
-    keywords: ['animal', 'nature'],
+    keywords: [
+      'raccoon',
+      'animal',
+      'nature'
+    ],
     sheet: [43, 4],
     shortName: 'raccoon'
   },
   {
     name: 'Socks',
     unified: '1F9E6',
-    keywords: ['stockings', 'clothes'],
+    keywords: [
+      'socks',
+      'stockings',
+      'clothes'
+    ],
     sheet: [51, 49],
     shortName: 'socks'
   },
   {
     name: 'Antigua & Barbuda Flag',
     unified: '1F1E6-1F1EC',
+    keywords: [
+      'flag_antigua_barbuda',
+      'antigua',
+      'barbuda',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 35],
     shortName: 'flag-ag'
   },
   {
     name: 'Cherries',
     unified: '1F352',
-    keywords: ['food', 'fruit'],
+    keywords: [
+      'cherries',
+      'food',
+      'fruit'
+    ],
     sheet: [6, 36],
     shortName: 'cherries'
   },
@@ -1476,6 +1747,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Carp Streamer',
     unified: '1F38F',
     keywords: [
+      'carp_streamer',
       'fish',
       'japanese',
       'koinobori',
@@ -1488,6 +1760,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Beach with Umbrella',
     unified: '1F3D6-FE0F',
+    keywords: [
+      'beach_with_umbrella',
+      'weather',
+      'summer',
+      'sunny',
+      'sand',
+      'mojito'
+    ],
     sheet: [10, 31],
     shortName: 'beach_with_umbrella'
   },
@@ -1495,6 +1775,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cat Face',
     unified: '1F431',
     keywords: [
+      'cat_face',
       'animal',
       'meow',
       'nature',
@@ -1508,6 +1789,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dress',
     unified: '1F457',
     keywords: [
+      'dress',
       'clothes',
       'fashion',
       'shopping'
@@ -1519,6 +1801,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Smiling Face with Halo',
     unified: '1F607',
     keywords: [
+      'smiling_face_with_halo',
       'face',
       'angel',
       'heaven',
@@ -1530,14 +1813,22 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Left Luggage',
     unified: '1F6C5',
-    keywords: ['blue-square', 'travel'],
+    keywords: [
+      'left_luggage',
+      'blue-square',
+      'travel'
+    ],
     sheet: [36, 18],
     shortName: 'left_luggage'
   },
   {
     name: 'Call Me Hand',
     unified: '1F919',
-    keywords: ['hands', 'gesture'],
+    keywords: [
+      'call_me_hand',
+      'hands',
+      'gesture'
+    ],
     sheet: [37, 37],
     skinVariations: [
       {
@@ -1566,6 +1857,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Anguilla Flag',
     unified: '1F1E6-1F1EE',
+    keywords: [
+      'flag_anguilla',
+      'ai',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 36],
     shortName: 'flag-ai'
   },
@@ -1573,6 +1872,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Strawberry',
     unified: '1F353',
     keywords: [
+      'strawberry',
       'fruit',
       'food',
       'nature'
@@ -1584,6 +1884,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Wind Chime',
     unified: '1F390',
     keywords: [
+      'wind_chime',
       'nature',
       'ding',
       'spring',
@@ -1596,6 +1897,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Desert',
     unified: '1F3DC-FE0F',
     keywords: [
+      'desert',
       'photo',
       'warm',
       'saharah'
@@ -1607,6 +1909,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cat',
     unified: '1F408',
     keywords: [
+      'cat',
       'animal',
       'meow',
       'pet',
@@ -1619,6 +1922,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Left Pointing Backhand Index',
     unified: '1F448',
     keywords: [
+      'backhand_index_pointing_left',
       'direction',
       'fingers',
       'hand',
@@ -1653,6 +1957,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Kimono',
     unified: '1F458',
     keywords: [
+      'kimono',
       'dress',
       'fashion',
       'women',
@@ -1665,6 +1970,18 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Smiling Face with Smiling Eyes and Three Hearts',
     unified: '1F970',
+    keywords: [
+      'smiling_face_with_hearts',
+      'face',
+      'love',
+      'like',
+      'affection',
+      'valentines',
+      'infatuation',
+      'crush',
+      'hearts',
+      'adore'
+    ],
     sheet: [42, 13],
     shortName: 'smiling_face_with_3_hearts'
   },
@@ -1672,6 +1989,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Warning Sign',
     unified: '26A0-FE0F',
     keywords: [
+      'warning',
       'exclamation',
       'wip',
       'alert',
@@ -1685,6 +2003,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Albania Flag',
     unified: '1F1E6-1F1F1',
+    keywords: [
+      'flag_albania',
+      'al',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 37],
     shortName: 'flag-al'
   },
@@ -1692,6 +2018,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Moon Viewing Ceremony',
     unified: '1F391',
     keywords: [
+      'moon_viewing_ceremony',
       'photo',
       'japan',
       'asia',
@@ -1704,6 +2031,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Desert Island',
     unified: '1F3DD-FE0F',
     keywords: [
+      'desert_island',
       'photo',
       'tropical',
       'mojito'
@@ -1714,6 +2042,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Black Cat',
     unified: '1F408-200D-2B1B',
+    keywords: [
+      'black cat',
+      'superstition',
+      'luck'
+    ],
     sheet: [11, 26],
     shortName: 'black_cat'
   },
@@ -1721,6 +2054,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Right Pointing Backhand Index',
     unified: '1F449',
     keywords: [
+      'backhand_index_pointing_right',
       'fingers',
       'hand',
       'direction',
@@ -1755,6 +2089,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Smiling Face with Heart-Shaped Eyes',
     unified: '1F60D',
     keywords: [
+      'smiling_face_with_heart_eyes',
       'face',
       'love',
       'like',
@@ -1771,6 +2106,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Children Crossing',
     unified: '1F6B8',
     keywords: [
+      'children_crossing',
       'school',
       'warning',
       'danger',
@@ -1784,18 +2120,28 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Sari',
     unified: '1F97B',
+    keywords: ['sari', 'dress'],
     sheet: [42, 28],
     shortName: 'sari'
   },
   {
     name: 'Blueberries',
     unified: '1FAD0',
+    keywords: ['blueberries', 'fruit'],
     sheet: [53, 9],
     shortName: 'blueberries'
   },
   {
     name: 'Armenia Flag',
     unified: '1F1E6-1F1F2',
+    keywords: [
+      'flag_armenia',
+      'am',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 38],
     shortName: 'flag-am'
   },
@@ -1803,6 +2149,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'National Park',
     unified: '1F3DE-FE0F',
     keywords: [
+      'national_park',
       'photo',
       'environment',
       'nature'
@@ -1814,6 +2161,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Up Pointing Backhand Index',
     unified: '1F446',
     keywords: [
+      'backhand_index_pointing_up',
       'fingers',
       'hand',
       'direction',
@@ -1847,6 +2195,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Grinning Face with Star Eyes',
     unified: '1F929',
+    keywords: [
+      'star_struck',
+      'face',
+      'smile',
+      'starry',
+      'eyes',
+      'grinning'
+    ],
     sheet: [38, 42],
     shortNames: [
       'grinning_face_with_star_eyes'
@@ -1856,25 +2212,39 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Kiwifruit',
     unified: '1F95D',
+    keywords: [
+      'kiwi_fruit',
+      'fruit',
+      'food'
+    ],
     sheet: [41, 52],
     shortName: 'kiwifruit'
   },
   {
     name: 'Lion Face',
     unified: '1F981',
+    keywords: [
+      'lion',
+      'animal',
+      'nature'
+    ],
     sheet: [42, 34],
     shortName: 'lion_face'
   },
   {
     name: 'Red Gift Envelope',
     unified: '1F9E7',
-    keywords: ['gift'],
+    keywords: ['red_envelope', 'gift'],
     sheet: [51, 50],
     shortName: 'red_envelope'
   },
   {
     name: 'One-Piece Swimsuit',
     unified: '1FA71',
+    keywords: [
+      'one_piece_swimsuit',
+      'fashion'
+    ],
     sheet: [52, 18],
     shortName: 'one-piece_swimsuit'
   },
@@ -1882,6 +2252,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'No Entry',
     unified: '26D4',
     keywords: [
+      'no_entry',
       'limit',
       'security',
       'privacy',
@@ -1896,6 +2267,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Angola Flag',
     unified: '1F1E6-1F1F4',
+    keywords: [
+      'flag_angola',
+      'ao',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 39],
     shortName: 'flag-ao'
   },
@@ -1903,6 +2282,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tomato',
     unified: '1F345',
     keywords: [
+      'tomato',
       'fruit',
       'vegetable',
       'nature',
@@ -1915,6 +2295,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ribbon',
     unified: '1F380',
     keywords: [
+      'ribbon',
       'decoration',
       'pink',
       'girl',
@@ -1927,6 +2308,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Stadium',
     unified: '1F3DF-FE0F',
     keywords: [
+      'stadium',
       'photo',
       'place',
       'sports',
@@ -1940,6 +2322,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tiger Face',
     unified: '1F42F',
     keywords: [
+      'tiger_face',
       'animal',
       'cat',
       'danger',
@@ -1953,6 +2336,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Reversed Hand with Middle Finger Extended',
     unified: '1F595',
+    keywords: [
+      'middle_finger',
+      'hand',
+      'fingers',
+      'rude',
+      'middle',
+      'flipping'
+    ],
     sheet: [29, 52],
     skinVariations: [
       {
@@ -1986,6 +2377,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F618',
     emoticons: [':*', ':-*'],
     keywords: [
+      'face_blowing_a_kiss',
       'face',
       'love',
       'like',
@@ -2001,6 +2393,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'No Entry Sign',
     unified: '1F6AB',
     keywords: [
+      'prohibited',
       'forbid',
       'stop',
       'limit',
@@ -2014,12 +2407,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Briefs',
     unified: '1FA72',
+    keywords: ['briefs', 'clothing'],
     sheet: [52, 19],
     shortName: 'briefs'
   },
   {
     name: 'Antarctica Flag',
     unified: '1F1E6-1F1F6',
+    keywords: [
+      'flag_antarctica',
+      'aq',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 40],
     shortName: 'flag-aq'
   },
@@ -2027,6 +2429,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Wrapped Present',
     unified: '1F381',
     keywords: [
+      'wrapped_gift',
       'present',
       'birthday',
       'christmas',
@@ -2039,6 +2442,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Classical Building',
     unified: '1F3DB-FE0F',
     keywords: [
+      'classical_building',
       'art',
       'culture',
       'history'
@@ -2050,6 +2454,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tiger',
     unified: '1F405',
     keywords: [
+      'tiger',
       'animal',
       'nature',
       'roar'
@@ -2061,6 +2466,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Down Pointing Backhand Index',
     unified: '1F447',
     keywords: [
+      'backhand_index_pointing_down',
       'fingers',
       'hand',
       'direction',
@@ -2095,6 +2501,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Kissing Face',
     unified: '1F617',
     keywords: [
+      'kissing_face',
       'love',
       'like',
       'face',
@@ -2110,6 +2517,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'No Bicycles',
     unified: '1F6B3',
     keywords: [
+      'no_bicycles',
       'cyclist',
       'prohibited',
       'circle'
@@ -2120,18 +2528,28 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Shorts',
     unified: '1FA73',
+    keywords: ['shorts', 'clothing'],
     sheet: [52, 20],
     shortName: 'shorts'
   },
   {
     name: 'Olive',
     unified: '1FAD2',
+    keywords: ['olive', 'fruit'],
     sheet: [53, 11],
     shortName: 'olive'
   },
   {
     name: 'Argentina Flag',
     unified: '1F1E6-1F1F7',
+    keywords: [
+      'flag_argentina',
+      'ar',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 41],
     shortName: 'flag-ar'
   },
@@ -2139,6 +2557,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Reminder Ribbon',
     unified: '1F397-FE0F',
     keywords: [
+      'reminder_ribbon',
       'sports',
       'cause',
       'support',
@@ -2151,6 +2570,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Building Construction',
     unified: '1F3D7-FE0F',
     keywords: [
+      'building_construction',
       'wip',
       'working',
       'progress'
@@ -2161,7 +2581,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Leopard',
     unified: '1F406',
-    keywords: ['animal', 'nature'],
+    keywords: [
+      'leopard',
+      'animal',
+      'nature'
+    ],
     sheet: [11, 24],
     shortName: 'leopard'
   },
@@ -2169,6 +2593,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bikini',
     unified: '1F459',
     keywords: [
+      'bikini',
       'swimming',
       'female',
       'woman',
@@ -2184,6 +2609,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'No Smoking Symbol',
     unified: '1F6AD',
     keywords: [
+      'no_smoking',
       'cigarette',
       'blue-square',
       'smell',
@@ -2196,6 +2622,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Coconut',
     unified: '1F965',
     keywords: [
+      'coconut',
       'fruit',
       'nature',
       'food',
@@ -2208,6 +2635,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Up Pointing Index',
     unified: '261D-FE0F',
     keywords: [
+      'index_pointing_up',
       'hand',
       'fingers',
       'direction',
@@ -2242,6 +2670,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Smiling Face',
     unified: '263A-FE0F',
     keywords: [
+      'smiling_face',
       'face',
       'blush',
       'massage',
@@ -2253,12 +2682,27 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'American Samoa Flag',
     unified: '1F1E6-1F1F8',
+    keywords: [
+      'flag_american_samoa',
+      'american',
+      'ws',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 42],
     shortName: 'flag-as'
   },
   {
     name: 'Admission Tickets',
     unified: '1F39F-FE0F',
+    keywords: [
+      'admission_tickets',
+      'sports',
+      'concert',
+      'entrance'
+    ],
     sheet: [7, 55],
     shortName: 'admission_tickets'
   },
@@ -2266,6 +2710,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Horse Face',
     unified: '1F434',
     keywords: [
+      'horse_face',
       'animal',
       'brown',
       'nature'
@@ -2277,6 +2722,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Thumbs Up Sign',
     unified: '1F44D',
     keywords: [
+      'thumbs_up',
       'thumbsup',
       'yes',
       'awesome',
@@ -2317,6 +2763,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Womans Clothes',
     unified: '1F45A',
     keywords: [
+      'woman_s_clothes',
       'fashion',
       'shopping_bags',
       'female'
@@ -2328,6 +2775,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Kissing Face with Closed Eyes',
     unified: '1F61A',
     keywords: [
+      'kissing_face_with_closed_eyes',
       'face',
       'love',
       'like',
@@ -2343,6 +2791,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Do Not Litter Symbol',
     unified: '1F6AF',
     keywords: [
+      'no_littering',
       'trash',
       'bin',
       'garbage',
@@ -2354,19 +2803,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Avocado',
     unified: '1F951',
-    keywords: ['fruit', 'food'],
+    keywords: [
+      'avocado',
+      'fruit',
+      'food'
+    ],
     sheet: [41, 40],
     shortName: 'avocado'
   },
   {
     name: 'Brick',
     unified: '1F9F1',
+    keywords: ['brick', 'bricks'],
     sheet: [52, 2],
     shortName: 'bricks'
   },
   {
     name: 'Austria Flag',
     unified: '1F1E6-1F1F9',
+    keywords: [
+      'flag_austria',
+      'at',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 43],
     shortName: 'flag-at'
   },
@@ -2374,6 +2836,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Aubergine',
     unified: '1F346',
     keywords: [
+      'eggplant',
       'vegetable',
       'nature',
       'food',
@@ -2386,6 +2849,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ticket',
     unified: '1F3AB',
     keywords: [
+      'ticket',
       'event',
       'concert',
       'pass'
@@ -2397,6 +2861,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Horse',
     unified: '1F40E',
     keywords: [
+      'horse',
       'animal',
       'gamble',
       'luck'
@@ -2408,6 +2873,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Thumbs Down Sign',
     unified: '1F44E',
     keywords: [
+      'thumbs_down',
       'thumbsdown',
       'no',
       'dislike',
@@ -2443,6 +2909,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Purse',
     unified: '1F45B',
     keywords: [
+      'purse',
       'fashion',
       'accessories',
       'money',
@@ -2456,6 +2923,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Kissing Face with Smiling Eyes',
     unified: '1F619',
     keywords: [
+      'kissing_face_with_smiling_eyes',
       'face',
       'affection',
       'valentines',
@@ -2469,6 +2937,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Non-Potable Water Symbol',
     unified: '1F6B1',
     keywords: [
+      'non_potable_water',
       'drink',
       'faucet',
       'tap',
@@ -2480,18 +2949,33 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Rock',
     unified: '1FAA8',
+    keywords: ['rock', 'stone'],
     sheet: [52, 56],
     shortName: 'rock'
   },
   {
     name: 'Australia Flag',
     unified: '1F1E6-1F1FA',
+    keywords: [
+      'flag_australia',
+      'au',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 44],
     shortName: 'flag-au'
   },
   {
-    name: 'Medal',
+    name: 'Military Medal',
     unified: '1F396-FE0F',
+    keywords: [
+      'military_medal',
+      'award',
+      'winning',
+      'army'
+    ],
     sheet: [7, 49],
     shortName: 'medal'
   },
@@ -2499,6 +2983,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Handbag',
     unified: '1F45C',
     keywords: [
+      'handbag',
       'fashion',
       'accessory',
       'accessories',
@@ -2511,6 +2996,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'No Pedestrians',
     unified: '1F6B7',
     keywords: [
+      'no_pedestrians',
       'rules',
       'crossing',
       'walking',
@@ -2523,6 +3009,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Potato',
     unified: '1F954',
     keywords: [
+      'potato',
       'food',
       'tuber',
       'vegatable',
@@ -2534,18 +3021,36 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Smiling Face with Tear',
     unified: '1F972',
+    keywords: [
+      'smiling face with tear',
+      'sad',
+      'cry',
+      'pretend'
+    ],
     sheet: [42, 15],
     shortName: 'smiling_face_with_tear'
   },
   {
     name: 'Unicorn Face',
     unified: '1F984',
+    keywords: [
+      'unicorn',
+      'animal',
+      'nature',
+      'mystical'
+    ],
     sheet: [42, 37],
     shortName: 'unicorn_face'
   },
   {
     name: 'Wood',
     unified: '1FAB5',
+    keywords: [
+      'wood',
+      'nature',
+      'timber',
+      'trunk'
+    ],
     sheet: [53, 4],
     shortName: 'wood'
   },
@@ -2553,6 +3058,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Raised Fist',
     unified: '270A',
     keywords: [
+      'raised_fist',
       'fingers',
       'hand',
       'grasp'
@@ -2585,6 +3091,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Aruba Flag',
     unified: '1F1E6-1F1FC',
+    keywords: [
+      'flag_aruba',
+      'aw',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 45],
     shortName: 'flag-aw'
   },
@@ -2592,6 +3106,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Trophy',
     unified: '1F3C6',
     keywords: [
+      'trophy',
       'win',
       'award',
       'contest',
@@ -2606,6 +3121,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fisted Hand Sign',
     unified: '1F44A',
     keywords: [
+      'oncoming_fist',
       'angry',
       'violence',
       'fist',
@@ -2643,6 +3159,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pouch',
     unified: '1F45D',
     keywords: [
+      'clutch_bag',
       'bag',
       'accessories',
       'shopping'
@@ -2654,6 +3171,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'No Mobile Phones',
     unified: '1F4F5',
     keywords: [
+      'no_mobile_phones',
       'iphone',
       'mute',
       'circle'
@@ -2665,6 +3183,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Face Savouring Delicious Food',
     unified: '1F60B',
     keywords: [
+      'face_savoring_food',
       'happy',
       'joy',
       'tongue',
@@ -2682,6 +3201,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Hut',
     unified: '1F6D6',
+    keywords: [
+      'hut',
+      'house',
+      'structure'
+    ],
     sheet: [36, 33],
     shortName: 'hut'
   },
@@ -2689,6 +3213,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Carrot',
     unified: '1F955',
     keywords: [
+      'carrot',
       'vegetable',
       'food',
       'orange'
@@ -2699,12 +3224,28 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Zebra Face',
     unified: '1F993',
+    keywords: [
+      'zebra',
+      'animal',
+      'nature',
+      'stripes',
+      'safari'
+    ],
     sheet: [42, 52],
     shortName: 'zebra_face'
   },
   {
     name: 'Åland Islands Flag',
     unified: '1F1E6-1F1FD',
+    keywords: [
+      'flag_aland_islands',
+      'Åland',
+      'islands',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 46],
     shortName: 'flag-ax'
   },
@@ -2712,6 +3253,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ear of Maize',
     unified: '1F33D',
     keywords: [
+      'ear_of_corn',
       'food',
       'vegetable',
       'plant'
@@ -2722,12 +3264,22 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Sports Medal',
     unified: '1F3C5',
+    keywords: [
+      'sports_medal',
+      'award',
+      'winning'
+    ],
     sheet: [9, 16],
     shortName: 'sports_medal'
   },
   {
-    name: 'House Buildings',
+    name: 'Houses',
     unified: '1F3D8-FE0F',
+    keywords: [
+      'houses',
+      'buildings',
+      'photo'
+    ],
     sheet: [10, 33],
     shortName: 'house_buildings'
   },
@@ -2735,6 +3287,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'No One Under Eighteen Symbol',
     unified: '1F51E',
     keywords: [
+      'no_one_under_eighteen',
       '18',
       'drink',
       'pub',
@@ -2758,6 +3311,7 @@ export const emojis: CompressedEmojiData[] = [
       ':-b'
     ],
     keywords: [
+      'face_with_tongue',
       'face',
       'prank',
       'childish',
@@ -2772,12 +3326,23 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Shopping Bags',
     unified: '1F6CD-FE0F',
+    keywords: [
+      'shopping_bags',
+      'mall',
+      'buy',
+      'purchase'
+    ],
     sheet: [36, 26],
     shortName: 'shopping_bags'
   },
   {
     name: 'Left-Facing Fist',
     unified: '1F91B',
+    keywords: [
+      'left_facing_fist',
+      'hand',
+      'fistbump'
+    ],
     sheet: [37, 49],
     skinVariations: [
       {
@@ -2807,6 +3372,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Deer',
     unified: '1F98C',
     keywords: [
+      'deer',
       'animal',
       'nature',
       'horns',
@@ -2818,6 +3384,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Azerbaijan Flag',
     unified: '1F1E6-1F1FF',
+    keywords: [
+      'flag_azerbaijan',
+      'az',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 47],
     shortName: 'flag-az'
   },
@@ -2825,6 +3399,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hot Pepper',
     unified: '1F336-FE0F',
     keywords: [
+      'hot_pepper',
       'food',
       'spicy',
       'chilli',
@@ -2837,6 +3412,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'School Satchel',
     unified: '1F392',
     keywords: [
+      'backpack',
       'student',
       'education',
       'bag',
@@ -2846,8 +3422,15 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'school_satchel'
   },
   {
-    name: 'Derelict House Building',
+    name: 'Derelict House',
     unified: '1F3DA-FE0F',
+    keywords: [
+      'derelict_house',
+      'abandon',
+      'evict',
+      'broken',
+      'building'
+    ],
     sheet: [10, 35],
     shortName: 'derelict_house_building'
   },
@@ -2864,6 +3447,7 @@ export const emojis: CompressedEmojiData[] = [
       ';-P'
     ],
     keywords: [
+      'winking_face_with_tongue',
       'face',
       'prank',
       'childish',
@@ -2879,6 +3463,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Right-Facing Fist',
     unified: '1F91C',
+    keywords: [
+      'right_facing_fist',
+      'hand',
+      'fistbump'
+    ],
     sheet: [37, 55],
     skinVariations: [
       {
@@ -2907,31 +3496,56 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'First Place Medal',
     unified: '1F947',
+    keywords: [
+      '1st_place_medal',
+      'award',
+      'winning',
+      'first'
+    ],
     sheet: [41, 30],
     shortName: 'first_place_medal'
   },
   {
     name: 'Bison',
     unified: '1F9AC',
+    keywords: ['bison', 'ox'],
     sheet: [43, 19],
     shortName: 'bison'
   },
   {
-    name: 'Radioactive Sign',
+    name: 'Radioactive',
     unified: '2622-FE0F',
+    keywords: [
+      'radioactive',
+      'nuclear',
+      'danger'
+    ],
     sheet: [54, 14],
     shortName: 'radioactive_sign'
   },
   {
     name: 'Bosnia & Herzegovina Flag',
     unified: '1F1E7-1F1E6',
+    keywords: [
+      'flag_bosnia_herzegovina',
+      'bosnia',
+      'herzegovina',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 48],
     shortName: 'flag-ba'
   },
   {
     name: 'House Building',
     unified: '1F3E0',
-    keywords: ['building', 'home'],
+    keywords: [
+      'house',
+      'building',
+      'home'
+    ],
     sheet: [10, 41],
     shortName: 'house'
   },
@@ -2939,6 +3553,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cow Face',
     unified: '1F42E',
     keywords: [
+      'cow_face',
       'beef',
       'ox',
       'animal',
@@ -2953,6 +3568,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clapping Hands Sign',
     unified: '1F44F',
     keywords: [
+      'clapping_hands',
       'hands',
       'praise',
       'applause',
@@ -2987,6 +3603,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Grinning Face with One Large and One Small Eye',
     unified: '1F92A',
+    keywords: [
+      'zany_face',
+      'face',
+      'goofy',
+      'crazy'
+    ],
     sheet: [38, 43],
     shortNames: [
       'grinning_face_with_one_large_and_one_small_eye'
@@ -2996,30 +3618,54 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Second Place Medal',
     unified: '1F948',
+    keywords: [
+      '2nd_place_medal',
+      'award',
+      'second'
+    ],
     sheet: [41, 31],
     shortName: 'second_place_medal'
   },
   {
     name: 'Thong Sandal',
     unified: '1FA74',
+    keywords: [
+      'thong sandal',
+      'footwear',
+      'summer'
+    ],
     sheet: [52, 21],
     shortName: 'thong_sandal'
   },
   {
     name: 'Bell Pepper',
     unified: '1FAD1',
+    keywords: [
+      'bell pepper',
+      'fruit',
+      'plant'
+    ],
     sheet: [53, 10],
     shortName: 'bell_pepper'
   },
   {
-    name: 'Biohazard Sign',
+    name: 'Biohazard',
     unified: '2623-FE0F',
+    keywords: ['biohazard', 'danger'],
     sheet: [54, 15],
     shortName: 'biohazard_sign'
   },
   {
     name: 'Barbados Flag',
     unified: '1F1E7-1F1E7',
+    keywords: [
+      'flag_barbados',
+      'bb',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 49],
     shortName: 'flag-bb'
   },
@@ -3027,6 +3673,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'House with Garden',
     unified: '1F3E1',
     keywords: [
+      'house_with_garden',
       'home',
       'plant',
       'nature'
@@ -3037,14 +3684,23 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ox',
     unified: '1F402',
-    keywords: ['animal', 'cow', 'beef'],
+    keywords: [
+      'ox',
+      'animal',
+      'cow',
+      'beef'
+    ],
     sheet: [11, 20],
     shortName: 'ox'
   },
   {
     name: 'Mans Shoe',
     unified: '1F45E',
-    keywords: ['fashion', 'male'],
+    keywords: [
+      'man_s_shoe',
+      'fashion',
+      'male'
+    ],
     sheet: [14, 7],
     shortNames: ['shoe'],
     shortName: 'mans_shoe'
@@ -3053,6 +3709,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Face with Stuck-out Tongue and Tightly-Closed Eyes',
     unified: '1F61D',
     keywords: [
+      'squinting_face_with_tongue',
       'face',
       'prank',
       'playful',
@@ -3067,6 +3724,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Person Raising Both Hands in Celebration',
     unified: '1F64C',
     keywords: [
+      'raising_hands',
       'gesture',
       'hooray',
       'yea',
@@ -3101,6 +3759,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Third Place Medal',
     unified: '1F949',
+    keywords: [
+      '3rd_place_medal',
+      'award',
+      'third'
+    ],
     sheet: [41, 32],
     shortName: 'third_place_medal'
   },
@@ -3108,6 +3771,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cucumber',
     unified: '1F952',
     keywords: [
+      'cucumber',
       'fruit',
       'food',
       'pickle'
@@ -3119,6 +3783,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Upwards Black Arrow',
     unified: '2B06-FE0F',
     keywords: [
+      'up_arrow',
       'blue-square',
       'continue',
       'top',
@@ -3130,6 +3795,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bangladesh Flag',
     unified: '1F1E7-1F1E9',
+    keywords: [
+      'flag_bangladesh',
+      'bd',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 50],
     shortName: 'flag-bd'
   },
@@ -3137,6 +3810,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Office Building',
     unified: '1F3E2',
     keywords: [
+      'office_building',
       'building',
       'bureau',
       'work'
@@ -3148,6 +3822,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Water Buffalo',
     unified: '1F403',
     keywords: [
+      'water_buffalo',
       'animal',
       'nature',
       'ox',
@@ -3160,6 +3835,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Open Hands Sign',
     unified: '1F450',
     keywords: [
+      'open_hands',
       'fingers',
       'butterfly',
       'hands',
@@ -3194,6 +3870,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Athletic Shoe',
     unified: '1F45F',
     keywords: [
+      'running_shoe',
       'shoes',
       'sports',
       'sneakers'
@@ -3205,6 +3882,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Money-Mouth Face',
     unified: '1F911',
     keywords: [
+      'money_mouth_face',
       'face',
       'rich',
       'dollar',
@@ -3216,6 +3894,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Leafy Green',
     unified: '1F96C',
+    keywords: [
+      'leafy_green',
+      'food',
+      'vegetable',
+      'plant',
+      'bok choy',
+      'cabbage',
+      'kale',
+      'lettuce'
+    ],
     sheet: [42, 9],
     shortName: 'leafy_green'
   },
@@ -3223,6 +3911,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'North East Arrow',
     unified: '2197-FE0F',
     keywords: [
+      'up_right_arrow',
       'blue-square',
       'point',
       'direction',
@@ -3235,13 +3924,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Soccer Ball',
     unified: '26BD',
-    keywords: ['sports', 'football'],
+    keywords: [
+      'soccer_ball',
+      'sports',
+      'football'
+    ],
     sheet: [55, 4],
     shortName: 'soccer'
   },
   {
     name: 'Belgium Flag',
     unified: '1F1E7-1F1EA',
+    keywords: [
+      'flag_belgium',
+      'be',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 51],
     shortName: 'flag-be'
   },
@@ -3249,6 +3950,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Japanese Post Office',
     unified: '1F3E3',
     keywords: [
+      'japanese_post_office',
       'building',
       'envelope',
       'communication'
@@ -3260,6 +3962,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cow',
     unified: '1F404',
     keywords: [
+      'cow',
       'beef',
       'ox',
       'animal',
@@ -3273,12 +3976,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Hugging Face',
     unified: '1F917',
+    keywords: [
+      'hugging_face',
+      'face',
+      'smile',
+      'hug'
+    ],
     sheet: [37, 30],
     shortName: 'hugging_face'
   },
   {
     name: 'Palms Up Together',
     unified: '1F932',
+    keywords: [
+      'palms_up_together',
+      'hands',
+      'gesture',
+      'cupped',
+      'prayer'
+    ],
     sheet: [39, 3],
     skinVariations: [
       {
@@ -3308,6 +4024,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Broccoli',
     unified: '1F966',
     keywords: [
+      'broccoli',
       'fruit',
       'food',
       'vegetable'
@@ -3319,6 +4036,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hiking Boot',
     unified: '1F97E',
     keywords: [
+      'hiking_boot',
       'backpacking',
       'camping',
       'hiking'
@@ -3329,27 +4047,48 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Baseball',
     unified: '26BE',
-    keywords: ['sports', 'balls'],
+    keywords: [
+      'baseball',
+      'sports',
+      'balls'
+    ],
     sheet: [55, 5],
     shortName: 'baseball'
   },
   {
     name: 'Black Rightwards Arrow',
     unified: '27A1-FE0F',
-    keywords: ['blue-square', 'next'],
+    keywords: [
+      'right_arrow',
+      'blue-square',
+      'next'
+    ],
     sheet: [56, 36],
     shortName: 'arrow_right'
   },
   {
     name: 'Burkina Faso Flag',
     unified: '1F1E7-1F1EB',
+    keywords: [
+      'flag_burkina_faso',
+      'burkina',
+      'faso',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 52],
     shortName: 'flag-bf'
   },
   {
     name: 'European Post Office',
     unified: '1F3E4',
-    keywords: ['building', 'email'],
+    keywords: [
+      'post_office',
+      'building',
+      'email'
+    ],
     sheet: [10, 45],
     shortName: 'european_post_office'
   },
@@ -3357,6 +4096,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pig Face',
     unified: '1F437',
     keywords: [
+      'pig_face',
       'animal',
       'oink',
       'nature'
@@ -3367,13 +4107,24 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Handshake',
     unified: '1F91D',
-    keywords: ['agreement', 'shake'],
+    keywords: [
+      'handshake',
+      'agreement',
+      'shake'
+    ],
     sheet: [38, 3],
     shortName: 'handshake'
   },
   {
     name: 'Smiling Face with Smiling Eyes and Hand Covering Mouth',
     unified: '1F92D',
+    keywords: [
+      'face_with_hand_over_mouth',
+      'face',
+      'whoops',
+      'shock',
+      'surprise'
+    ],
     sheet: [38, 46],
     shortNames: [
       'smiling_face_with_smiling_eyes_and_hand_covering_mouth'
@@ -3383,19 +4134,35 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Softball',
     unified: '1F94E',
-    keywords: ['sports', 'balls'],
+    keywords: [
+      'softball',
+      'sports',
+      'balls'
+    ],
     sheet: [41, 37],
     shortName: 'softball'
   },
   {
     name: 'Flat Shoe',
     unified: '1F97F',
+    keywords: [
+      'flat_shoe',
+      'ballet',
+      'slip-on',
+      'slipper'
+    ],
     sheet: [42, 32],
     shortName: 'womans_flat_shoe'
   },
   {
     name: 'Garlic',
     unified: '1F9C4',
+    keywords: [
+      'garlic',
+      'food',
+      'spice',
+      'cook'
+    ],
     sheet: [44, 30],
     shortName: 'garlic'
   },
@@ -3403,6 +4170,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'South East Arrow',
     unified: '2198-FE0F',
     keywords: [
+      'down_right_arrow',
       'blue-square',
       'direction',
       'diagonal',
@@ -3414,6 +4182,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bulgaria Flag',
     unified: '1F1E7-1F1EC',
+    keywords: [
+      'flag_bulgaria',
+      'bg',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 53],
     shortName: 'flag-bg'
   },
@@ -3421,6 +4197,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Basketball and Hoop',
     unified: '1F3C0',
     keywords: [
+      'basketball',
       'sports',
       'balls',
       'NBA'
@@ -3432,6 +4209,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hospital',
     unified: '1F3E5',
     keywords: [
+      'hospital',
       'building',
       'health',
       'surgery',
@@ -3443,7 +4221,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pig',
     unified: '1F416',
-    keywords: ['animal', 'nature'],
+    keywords: [
+      'pig',
+      'animal',
+      'nature'
+    ],
     sheet: [11, 42],
     shortName: 'pig2'
   },
@@ -3451,6 +4233,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'High-Heeled Shoe',
     unified: '1F460',
     keywords: [
+      'high_heeled_shoe',
       'fashion',
       'shoes',
       'female',
@@ -3464,6 +4247,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Person with Folded Hands',
     unified: '1F64F',
     keywords: [
+      'folded_hands',
       'please',
       'hope',
       'wish',
@@ -3498,6 +4282,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Face with Finger Covering Closed Lips',
     unified: '1F92B',
+    keywords: [
+      'shushing_face',
+      'face',
+      'quiet',
+      'shhh'
+    ],
     sheet: [38, 44],
     shortNames: [
       'face_with_finger_covering_closed_lips'
@@ -3507,6 +4297,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Onion',
     unified: '1F9C5',
+    keywords: [
+      'onion',
+      'cook',
+      'food',
+      'spice'
+    ],
     sheet: [44, 31],
     shortName: 'onion'
   },
@@ -3514,6 +4310,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Downwards Black Arrow',
     unified: '2B07-FE0F',
     keywords: [
+      'down_arrow',
       'blue-square',
       'direction',
       'bottom'
@@ -3524,20 +4321,36 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bahrain Flag',
     unified: '1F1E7-1F1ED',
+    keywords: [
+      'flag_bahrain',
+      'bh',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 54],
     shortName: 'flag-bh'
   },
   {
     name: 'Mushroom',
     unified: '1F344',
-    keywords: ['plant', 'vegetable'],
+    keywords: [
+      'mushroom',
+      'plant',
+      'vegetable'
+    ],
     sheet: [6, 22],
     shortName: 'mushroom'
   },
   {
     name: 'Volleyball',
     unified: '1F3D0',
-    keywords: ['sports', 'balls'],
+    keywords: [
+      'volleyball',
+      'sports',
+      'balls'
+    ],
     sheet: [10, 25],
     shortName: 'volleyball'
   },
@@ -3545,6 +4358,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bank',
     unified: '1F3E6',
     keywords: [
+      'bank',
       'building',
       'money',
       'sales',
@@ -3558,7 +4372,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Boar',
     unified: '1F417',
-    keywords: ['animal', 'nature'],
+    keywords: [
+      'boar',
+      'animal',
+      'nature'
+    ],
     sheet: [11, 43],
     shortName: 'boar'
   },
@@ -3566,6 +4384,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Womans Sandal',
     unified: '1F461',
     keywords: [
+      'woman_s_sandal',
       'shoes',
       'fashion',
       'flip flops'
@@ -3576,6 +4395,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Thinking Face',
     unified: '1F914',
+    keywords: [
+      'thinking_face',
+      'face',
+      'hmmm',
+      'think',
+      'consider'
+    ],
     sheet: [37, 27],
     shortName: 'thinking_face'
   },
@@ -3583,6 +4409,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'South West Arrow',
     unified: '2199-FE0F',
     keywords: [
+      'down_left_arrow',
       'blue-square',
       'direction',
       'diagonal',
@@ -3595,6 +4422,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Writing Hand',
     unified: '270D-FE0F',
     keywords: [
+      'writing_hand',
       'lower_left_ballpoint_pen',
       'stationery',
       'write',
@@ -3628,6 +4456,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Burundi Flag',
     unified: '1F1E7-1F1EE',
+    keywords: [
+      'flag_burundi',
+      'bi',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 55],
     shortName: 'flag-bi'
   },
@@ -3635,6 +4471,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'American Football',
     unified: '1F3C8',
     keywords: [
+      'american_football',
       'sports',
       'balls',
       'NFL'
@@ -3646,6 +4483,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hotel',
     unified: '1F3E8',
     keywords: [
+      'hotel',
       'building',
       'accomodation',
       'checkin'
@@ -3656,7 +4494,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pig Nose',
     unified: '1F43D',
-    keywords: ['animal', 'oink'],
+    keywords: [
+      'pig_nose',
+      'animal',
+      'oink'
+    ],
     sheet: [12, 24],
     shortName: 'pig_nose'
   },
@@ -3664,6 +4506,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Nail Polish',
     unified: '1F485',
     keywords: [
+      'nail_polish',
       'beauty',
       'manicure',
       'finger',
@@ -3699,6 +4542,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Zipper-Mouth Face',
     unified: '1F910',
     keywords: [
+      'zipper_mouth_face',
       'face',
       'sealed',
       'zipper',
@@ -3710,13 +4554,18 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Peanuts',
     unified: '1F95C',
-    keywords: ['food', 'nut'],
+    keywords: [
+      'peanuts',
+      'food',
+      'nut'
+    ],
     sheet: [41, 51],
     shortName: 'peanuts'
   },
   {
     name: 'Ballet Shoes',
     unified: '1FA70',
+    keywords: ['ballet_shoes', 'dance'],
     sheet: [52, 17],
     shortName: 'ballet_shoes'
   },
@@ -3724,6 +4573,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Leftwards Black Arrow',
     unified: '2B05-FE0F',
     keywords: [
+      'left_arrow',
       'blue-square',
       'previous',
       'back'
@@ -3734,20 +4584,36 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Benin Flag',
     unified: '1F1E7-1F1EF',
+    keywords: [
+      'flag_benin',
+      'bj',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 56],
     shortName: 'flag-bj'
   },
   {
     name: 'Chestnut',
     unified: '1F330',
-    keywords: ['food', 'squirrel'],
+    keywords: [
+      'chestnut',
+      'food',
+      'squirrel'
+    ],
     sheet: [6, 2],
     shortName: 'chestnut'
   },
   {
     name: 'Rugby Football',
     unified: '1F3C9',
-    keywords: ['sports', 'team'],
+    keywords: [
+      'rugby_football',
+      'sports',
+      'team'
+    ],
     sheet: [9, 25],
     shortName: 'rugby_football'
   },
@@ -3755,6 +4621,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Love Hotel',
     unified: '1F3E9',
     keywords: [
+      'love_hotel',
       'like',
       'affection',
       'dating'
@@ -3766,6 +4633,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ram',
     unified: '1F40F',
     keywords: [
+      'ram',
       'animal',
       'sheep',
       'nature'
@@ -3776,13 +4644,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Womans Boots',
     unified: '1F462',
-    keywords: ['shoes', 'fashion'],
+    keywords: [
+      'woman_s_boot',
+      'shoes',
+      'fashion'
+    ],
     sheet: [14, 11],
     shortName: 'boot'
   },
   {
     name: 'Face with One Eyebrow Raised',
     unified: '1F928',
+    keywords: [
+      'face_with_raised_eyebrow',
+      'face',
+      'distrust',
+      'scepticism',
+      'disapproval',
+      'disbelief',
+      'surprise'
+    ],
     sheet: [38, 41],
     shortNames: [
       'face_with_one_eyebrow_raised'
@@ -3792,7 +4673,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Selfie',
     unified: '1F933',
-    keywords: ['camera', 'phone'],
+    keywords: [
+      'selfie',
+      'camera',
+      'phone'
+    ],
     sheet: [39, 9],
     skinVariations: [
       {
@@ -3822,6 +4707,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'North West Arrow',
     unified: '2196-FE0F',
     keywords: [
+      'up_left_arrow',
       'blue-square',
       'point',
       'direction',
@@ -3834,6 +4720,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'St. Barthélemy Flag',
     unified: '1F1E7-1F1F1',
+    keywords: [
+      'flag_st_barthelemy',
+      'saint',
+      'barthélemy',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [0, 57],
     shortName: 'flag-bl'
   },
@@ -3841,6 +4736,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bread',
     unified: '1F35E',
     keywords: [
+      'bread',
       'food',
       'wheat',
       'breakfast',
@@ -3853,6 +4749,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tennis Racquet and Ball',
     unified: '1F3BE',
     keywords: [
+      'tennis',
       'sports',
       'balls',
       'green'
@@ -3864,6 +4761,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Convenience Store',
     unified: '1F3EA',
     keywords: [
+      'convenience_store',
       'building',
       'shopping',
       'groceries'
@@ -3875,6 +4773,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sheep',
     unified: '1F411',
     keywords: [
+      'ewe',
       'animal',
       'nature',
       'wool',
@@ -3887,6 +4786,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Crown',
     unified: '1F451',
     keywords: [
+      'crown',
       'king',
       'kod',
       'leader',
@@ -3900,6 +4800,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Flexed Biceps',
     unified: '1F4AA',
     keywords: [
+      'flexed_biceps',
       'arm',
       'flex',
       'hand',
@@ -3937,6 +4838,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F610',
     emoticons: [':|', ':-|'],
     keywords: [
+      'neutral_face',
       'indifference',
       'meh',
       ':|',
@@ -3949,6 +4851,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Up Down Arrow',
     unified: '2195-FE0F',
     keywords: [
+      'up_down_arrow',
       'blue-square',
       'direction',
       'way',
@@ -3960,6 +4863,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bermuda Flag',
     unified: '1F1E7-1F1F2',
+    keywords: [
+      'flag_bermuda',
+      'bm',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 0],
     shortName: 'flag-bm'
   },
@@ -3967,6 +4878,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'School',
     unified: '1F3EB',
     keywords: [
+      'school',
       'building',
       'student',
       'education',
@@ -3979,7 +4891,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Goat',
     unified: '1F410',
-    keywords: ['animal', 'nature'],
+    keywords: [
+      'goat',
+      'animal',
+      'nature'
+    ],
     sheet: [11, 35],
     shortName: 'goat'
   },
@@ -3987,6 +4903,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Womans Hat',
     unified: '1F452',
     keywords: [
+      'woman_s_hat',
       'fashion',
       'accessories',
       'female',
@@ -4000,6 +4917,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Expressionless Face',
     unified: '1F611',
     keywords: [
+      'expressionless_face',
       'face',
       'indifferent',
       '-_-',
@@ -4013,6 +4931,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Flying Disc',
     unified: '1F94F',
     keywords: [
+      'flying_disc',
       'sports',
       'frisbee',
       'ultimate'
@@ -4024,6 +4943,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Croissant',
     unified: '1F950',
     keywords: [
+      'croissant',
       'food',
       'bread',
       'french'
@@ -4034,6 +4954,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mechanical Arm',
     unified: '1F9BE',
+    keywords: [
+      'mechanical_arm',
+      'accessibility'
+    ],
     sheet: [44, 24],
     shortName: 'mechanical_arm'
   },
@@ -4041,6 +4965,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Left Right Arrow',
     unified: '2194-FE0F',
     keywords: [
+      'left_right_arrow',
       'shape',
       'direction',
       'horizontal',
@@ -4052,6 +4977,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Brunei Flag',
     unified: '1F1E7-1F1F3',
+    keywords: [
+      'flag_brunei',
+      'bn',
+      'darussalam',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 1],
     shortName: 'flag-bn'
   },
@@ -4059,6 +4993,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Top Hat',
     unified: '1F3A9',
     keywords: [
+      'top_hat',
       'magic',
       'gentleman',
       'classy',
@@ -4070,7 +5005,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bowling',
     unified: '1F3B3',
-    keywords: ['sports', 'fun', 'play'],
+    keywords: [
+      'bowling',
+      'sports',
+      'fun',
+      'play'
+    ],
     sheet: [8, 17],
     shortName: 'bowling'
   },
@@ -4078,6 +5018,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Department Store',
     unified: '1F3EC',
     keywords: [
+      'department_store',
       'building',
       'shopping',
       'mall'
@@ -4089,6 +5030,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dromedary Camel',
     unified: '1F42A',
     keywords: [
+      'camel',
       'animal',
       'hot',
       'desert',
@@ -4100,7 +5042,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Face Without Mouth',
     unified: '1F636',
-    keywords: ['face', 'hellokitty'],
+    keywords: [
+      'face_without_mouth',
+      'face',
+      'hellokitty'
+    ],
     sheet: [31, 28],
     shortName: 'no_mouth'
   },
@@ -4108,6 +5054,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Baguette Bread',
     unified: '1F956',
     keywords: [
+      'baguette_bread',
       'food',
       'bread',
       'french'
@@ -4118,6 +5065,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mechanical Leg',
     unified: '1F9BF',
+    keywords: [
+      'mechanical_leg',
+      'accessibility'
+    ],
     sheet: [44, 25],
     shortName: 'mechanical_leg'
   },
@@ -4125,6 +5076,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Leftwards Arrow with Hook',
     unified: '21A9-FE0F',
     keywords: [
+      'right_arrow_curving_left',
       'back',
       'return',
       'blue-square',
@@ -4137,6 +5089,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bolivia Flag',
     unified: '1F1E7-1F1F4',
+    keywords: [
+      'flag_bolivia',
+      'bo',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 2],
     shortName: 'flag-bo'
   },
@@ -4144,6 +5104,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Graduation Cap',
     unified: '1F393',
     keywords: [
+      'graduation_cap',
       'school',
       'college',
       'degree',
@@ -4161,6 +5122,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cricket Bat and Ball',
     unified: '1F3CF',
+    keywords: [
+      'cricket_game',
+      'sports'
+    ],
     sheet: [10, 24],
     shortName: 'cricket_bat_and_ball'
   },
@@ -4168,6 +5133,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Factory',
     unified: '1F3ED',
     keywords: [
+      'factory',
       'building',
       'industry',
       'pollution',
@@ -4180,6 +5146,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bactrian Camel',
     unified: '1F42B',
     keywords: [
+      'two_hump_camel',
       'animal',
       'nature',
       'hot',
@@ -4193,6 +5160,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Smirking Face',
     unified: '1F60F',
     keywords: [
+      'smirking_face',
       'face',
       'smile',
       'mean',
@@ -4206,7 +5174,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Leg',
     unified: '1F9B5',
-    keywords: ['kick', 'limb'],
+    keywords: ['leg', 'kick', 'limb'],
     sheet: [43, 24],
     skinVariations: [
       {
@@ -4235,6 +5203,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Flatbread',
     unified: '1FAD3',
+    keywords: [
+      'flatbread',
+      'flour',
+      'food'
+    ],
     sheet: [53, 12],
     shortName: 'flatbread'
   },
@@ -4242,6 +5215,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Rightwards Arrow with Hook',
     unified: '21AA-FE0F',
     keywords: [
+      'left_arrow_curving_right',
       'blue-square',
       'return',
       'rotate',
@@ -4253,19 +5227,35 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Caribbean Netherlands Flag',
     unified: '1F1E7-1F1F6',
+    keywords: [
+      'flag_caribbean_netherlands',
+      'bonaire',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 3],
     shortName: 'flag-bq'
   },
   {
     name: 'Field Hockey Stick and Ball',
     unified: '1F3D1',
+    keywords: [
+      'field_hockey',
+      'sports'
+    ],
     sheet: [10, 26],
     shortName: 'field_hockey_stick_and_ball'
   },
   {
     name: 'Japanese Castle',
     unified: '1F3EF',
-    keywords: ['photo', 'building'],
+    keywords: [
+      'japanese_castle',
+      'photo',
+      'building'
+    ],
     sheet: [10, 56],
     shortName: 'japanese_castle'
   },
@@ -4274,6 +5264,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F612',
     text: ':(',
     keywords: [
+      'unamused_face',
       'indifference',
       'bored',
       'straight face',
@@ -4291,6 +5282,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pretzel',
     unified: '1F968',
     keywords: [
+      'pretzel',
       'food',
       'bread',
       'twisted'
@@ -4302,6 +5294,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Llama',
     unified: '1F999',
     keywords: [
+      'llama',
       'animal',
       'nature',
       'alpaca'
@@ -4312,7 +5305,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Foot',
     unified: '1F9B6',
-    keywords: ['kick', 'stomp'],
+    keywords: ['foot', 'kick', 'stomp'],
     sheet: [43, 30],
     skinVariations: [
       {
@@ -4341,6 +5334,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Billed Cap',
     unified: '1F9E2',
+    keywords: [
+      'billed_cap',
+      'cap',
+      'baseball'
+    ],
     sheet: [51, 45],
     shortName: 'billed_cap'
   },
@@ -4348,6 +5346,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Arrow Pointing Rightwards Then Curving Upwards',
     unified: '2934-FE0F',
     keywords: [
+      'right_arrow_curving_up',
       'blue-square',
       'direction',
       'top'
@@ -4358,12 +5357,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Brazil Flag',
     unified: '1F1E7-1F1F7',
+    keywords: [
+      'flag_brazil',
+      'br',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 4],
     shortName: 'flag-br'
   },
   {
     name: 'Ice Hockey Stick and Puck',
     unified: '1F3D2',
+    keywords: ['ice_hockey', 'sports'],
     sheet: [10, 27],
     shortName: 'ice_hockey_stick_and_puck'
   },
@@ -4371,6 +5379,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'European Castle',
     unified: '1F3F0',
     keywords: [
+      'castle',
       'building',
       'royalty',
       'history'
@@ -4382,6 +5391,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ear',
     unified: '1F442',
     keywords: [
+      'ear',
       'face',
       'hear',
       'sound',
@@ -4415,6 +5425,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Face with Rolling Eyes',
     unified: '1F644',
+    keywords: [
+      'face_with_rolling_eyes',
+      'face',
+      'eyeroll',
+      'frustrated'
+    ],
     sheet: [31, 42],
     shortName: 'face_with_rolling_eyes'
   },
@@ -4422,6 +5438,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bagel',
     unified: '1F96F',
     keywords: [
+      'bagel',
       'food',
       'bread',
       'bakery',
@@ -4433,12 +5450,24 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Giraffe Face',
     unified: '1F992',
+    keywords: [
+      'giraffe',
+      'animal',
+      'nature',
+      'spots',
+      'safari'
+    ],
     sheet: [42, 51],
     shortName: 'giraffe_face'
   },
   {
     name: 'Military Helmet',
     unified: '1FA96',
+    keywords: [
+      'military helmet',
+      'army',
+      'protection'
+    ],
     sheet: [52, 38],
     shortName: 'military_helmet'
   },
@@ -4446,6 +5475,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Arrow Pointing Rightwards Then Curving Downwards',
     unified: '2935-FE0F',
     keywords: [
+      'right_arrow_curving_down',
       'blue-square',
       'direction',
       'bottom'
@@ -4456,6 +5486,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bahamas Flag',
     unified: '1F1E7-1F1F8',
+    keywords: [
+      'flag_bahamas',
+      'bs',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 5],
     shortName: 'flag-bs'
   },
@@ -4463,6 +5501,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Elephant',
     unified: '1F418',
     keywords: [
+      'elephant',
       'animal',
       'nature',
       'nose',
@@ -4476,6 +5515,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Wedding',
     unified: '1F492',
     keywords: [
+      'wedding',
       'love',
       'like',
       'affection',
@@ -4491,6 +5531,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clockwise Downwards and Upwards Open Circle Arrows',
     unified: '1F503',
     keywords: [
+      'clockwise_vertical_arrows',
       'sync',
       'cycle',
       'round',
@@ -4503,6 +5544,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Grimacing Face',
     unified: '1F62C',
     keywords: [
+      'grimacing_face',
       'face',
       'grimace',
       'teeth'
@@ -4514,6 +5556,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Lacrosse Stick and Ball',
     unified: '1F94D',
     keywords: [
+      'lacrosse',
       'sports',
       'ball',
       'stick'
@@ -4525,6 +5568,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pancakes',
     unified: '1F95E',
     keywords: [
+      'pancakes',
       'food',
       'breakfast',
       'flapjacks',
@@ -4536,6 +5580,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ear with Hearing Aid',
     unified: '1F9BB',
+    keywords: [
+      'ear_with_hearing_aid',
+      'accessibility'
+    ],
     sheet: [44, 16],
     skinVariations: [
       {
@@ -4562,27 +5610,49 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'ear_with_hearing_aid'
   },
   {
-    name: 'Helmet with White Cross',
+    name: 'Rescue Worker’s Helmet',
     unified: '26D1-FE0F',
+    keywords: [
+      'rescue_worker_s_helmet',
+      'construction',
+      'build'
+    ],
     sheet: [55, 11],
     shortName: 'helmet_with_white_cross'
   },
   {
     name: 'Bhutan Flag',
     unified: '1F1E7-1F1F9',
+    keywords: [
+      'flag_bhutan',
+      'bt',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 6],
     shortName: 'flag-bt'
   },
   {
     name: 'Table Tennis Paddle and Ball',
     unified: '1F3D3',
+    keywords: [
+      'ping_pong',
+      'sports',
+      'pingpong'
+    ],
     sheet: [10, 28],
     shortName: 'table_tennis_paddle_and_ball'
   },
   {
     name: 'Nose',
     unified: '1F443',
-    keywords: ['smell', 'sniff'],
+    keywords: [
+      'nose',
+      'smell',
+      'sniff'
+    ],
     sheet: [12, 36],
     skinVariations: [
       {
@@ -4611,7 +5681,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Prayer Beads',
     unified: '1F4FF',
-    keywords: ['dhikr', 'religious'],
+    keywords: [
+      'prayer_beads',
+      'dhikr',
+      'religious'
+    ],
     sheet: [27, 27],
     shortName: 'prayer_beads'
   },
@@ -4619,6 +5693,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Anticlockwise Downwards and Upwards Open Circle Arrows',
     unified: '1F504',
     keywords: [
+      'counterclockwise_arrows_button',
       'blue-square',
       'sync',
       'cycle'
@@ -4629,7 +5704,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Tokyo Tower',
     unified: '1F5FC',
-    keywords: ['photo', 'japanese'],
+    keywords: [
+      'tokyo_tower',
+      'photo',
+      'japanese'
+    ],
     sheet: [30, 28],
     shortName: 'tokyo_tower'
   },
@@ -4637,6 +5716,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Lying Face',
     unified: '1F925',
     keywords: [
+      'lying_face',
       'face',
       'lie',
       'pinocchio'
@@ -4647,24 +5727,39 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mammoth',
     unified: '1F9A3',
+    keywords: [
+      'mammoth',
+      'elephant',
+      'tusks'
+    ],
     sheet: [43, 10],
     shortName: 'mammoth'
   },
   {
     name: 'Waffle',
     unified: '1F9C7',
+    keywords: [
+      'waffle',
+      'food',
+      'breakfast'
+    ],
     sheet: [44, 33],
     shortName: 'waffle'
   },
   {
     name: 'Bouvet Island Flag',
     unified: '1F1E7-1F1FB',
+    keywords: [
+      'flag_bouvet_island',
+      'norway'
+    ],
     sheet: [1, 7],
     shortName: 'flag-bv'
   },
   {
     name: 'Badminton Racquet and Shuttlecock',
     unified: '1F3F8',
+    keywords: ['badminton', 'sports'],
     sheet: [11, 10],
     shortName: 'badminton_racquet_and_shuttlecock'
   },
@@ -4672,6 +5767,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Lipstick',
     unified: '1F484',
     keywords: [
+      'lipstick',
       'female',
       'girl',
       'fashion',
@@ -4684,6 +5780,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Back with Leftwards Arrow Above',
     unified: '1F519',
     keywords: [
+      'back_arrow',
       'arrow',
       'words',
       'return'
@@ -4694,7 +5791,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Statue of Liberty',
     unified: '1F5FD',
-    keywords: ['american', 'newyork'],
+    keywords: [
+      'statue_of_liberty',
+      'american',
+      'newyork'
+    ],
     sheet: [30, 29],
     shortName: 'statue_of_liberty'
   },
@@ -4702,6 +5803,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Relieved Face',
     unified: '1F60C',
     keywords: [
+      'relieved_face',
       'face',
       'relaxed',
       'phew',
@@ -4715,6 +5817,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Rhinoceros',
     unified: '1F98F',
     keywords: [
+      'rhinoceros',
       'animal',
       'nature',
       'horn'
@@ -4725,19 +5828,36 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cheese Wedge',
     unified: '1F9C0',
+    keywords: [
+      'cheese_wedge',
+      'food',
+      'chadder'
+    ],
     sheet: [44, 26],
     shortName: 'cheese_wedge'
   },
   {
     name: 'Brain',
     unified: '1F9E0',
-    keywords: ['smart', 'intelligent'],
+    keywords: [
+      'brain',
+      'smart',
+      'intelligent'
+    ],
     sheet: [51, 43],
     shortName: 'brain'
   },
   {
     name: 'Botswana Flag',
     unified: '1F1E7-1F1FC',
+    keywords: [
+      'flag_botswana',
+      'bw',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 8],
     shortName: 'flag-bw'
   },
@@ -4745,6 +5865,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Meat on Bone',
     unified: '1F356',
     keywords: [
+      'meat_on_bone',
       'good',
       'food',
       'drumstick'
@@ -4756,6 +5877,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ring',
     unified: '1F48D',
     keywords: [
+      'ring',
       'wedding',
       'propose',
       'marriage',
@@ -4772,7 +5894,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'End with Leftwards Arrow Above',
     unified: '1F51A',
-    keywords: ['words', 'arrow'],
+    keywords: [
+      'end_arrow',
+      'words',
+      'arrow'
+    ],
     sheet: [27, 54],
     shortName: 'end'
   },
@@ -4780,6 +5906,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pensive Face',
     unified: '1F614',
     keywords: [
+      'pensive_face',
       'face',
       'sad',
       'depressed',
@@ -4791,20 +5918,33 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Boxing Glove',
     unified: '1F94A',
-    keywords: ['sports', 'fighting'],
+    keywords: [
+      'boxing_glove',
+      'sports',
+      'fighting'
+    ],
     sheet: [41, 33],
     shortName: 'boxing_glove'
   },
   {
     name: 'Hippopotamus',
     unified: '1F99B',
-    keywords: ['animal', 'nature'],
+    keywords: [
+      'hippopotamus',
+      'animal',
+      'nature'
+    ],
     sheet: [43, 2],
     shortName: 'hippopotamus'
   },
   {
     name: 'Anatomical Heart',
     unified: '1FAC0',
+    keywords: [
+      'anatomical heart',
+      'health',
+      'heartbeat'
+    ],
     sheet: [53, 6],
     shortName: 'anatomical_heart'
   },
@@ -4812,6 +5952,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Church',
     unified: '26EA',
     keywords: [
+      'church',
       'building',
       'religion',
       'christ'
@@ -4822,6 +5963,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Belarus Flag',
     unified: '1F1E7-1F1FE',
+    keywords: [
+      'flag_belarus',
+      'by',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 9],
     shortName: 'flag-by'
   },
@@ -4829,6 +5978,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Poultry Leg',
     unified: '1F357',
     keywords: [
+      'poultry_leg',
       'food',
       'meat',
       'drumstick',
@@ -4843,6 +5993,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mouse Face',
     unified: '1F42D',
     keywords: [
+      'mouse_face',
       'animal',
       'nature',
       'cheese_wedge',
@@ -4855,6 +6006,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Gem Stone',
     unified: '1F48E',
     keywords: [
+      'gem_stone',
       'blue',
       'ruby',
       'diamond',
@@ -4866,7 +6018,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'On with Exclamation Mark with Left Right Arrow Above',
     unified: '1F51B',
-    keywords: ['arrow', 'words'],
+    keywords: [
+      'on_arrow',
+      'arrow',
+      'words'
+    ],
     sheet: [27, 55],
     shortName: 'on'
   },
@@ -4874,6 +6030,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mosque',
     unified: '1F54C',
     keywords: [
+      'mosque',
       'islam',
       'worship',
       'minaret'
@@ -4885,6 +6042,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sleepy Face',
     unified: '1F62A',
     keywords: [
+      'sleepy_face',
       'face',
       'tired',
       'rest',
@@ -4897,6 +6055,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Martial Arts Uniform',
     unified: '1F94B',
     keywords: [
+      'martial_arts_uniform',
       'judo',
       'karate',
       'taekwondo'
@@ -4907,12 +6066,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Lungs',
     unified: '1FAC1',
+    keywords: ['lungs', 'breathe'],
     sheet: [53, 7],
     shortName: 'lungs'
   },
   {
     name: 'Belize Flag',
     unified: '1F1E7-1F1FF',
+    keywords: [
+      'flag_belize',
+      'bz',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 10],
     shortName: 'flag-bz'
   },
@@ -4920,6 +6088,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mouse',
     unified: '1F401',
     keywords: [
+      'mouse',
       'animal',
       'nature',
       'rodent'
@@ -4931,6 +6100,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Speaker with Cancellation Stroke',
     unified: '1F507',
     keywords: [
+      'muted_speaker',
       'sound',
       'volume',
       'silence',
@@ -4942,46 +6112,76 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Soon with Rightwards Arrow Above',
     unified: '1F51C',
-    keywords: ['arrow', 'words'],
+    keywords: [
+      'soon_arrow',
+      'arrow',
+      'words'
+    ],
     sheet: [27, 56],
     shortName: 'soon'
   },
   {
     name: 'Hindu Temple',
     unified: '1F6D5',
+    keywords: [
+      'hindu_temple',
+      'religion'
+    ],
     sheet: [36, 32],
     shortName: 'hindu_temple'
   },
   {
     name: 'Drooling Face',
     unified: '1F924',
-    keywords: ['face'],
+    keywords: ['drooling_face', 'face'],
     sheet: [38, 20],
     shortName: 'drooling_face'
   },
   {
     name: 'Goal Net',
     unified: '1F945',
-    keywords: ['sports'],
+    keywords: ['goal_net', 'sports'],
     sheet: [41, 29],
     shortName: 'goal_net'
   },
   {
     name: 'Cut of Meat',
     unified: '1F969',
+    keywords: [
+      'cut_of_meat',
+      'food',
+      'cow',
+      'meat',
+      'cut',
+      'chop',
+      'lambchop',
+      'porkchop'
+    ],
     sheet: [42, 6],
     shortName: 'cut_of_meat'
   },
   {
     name: 'Tooth',
     unified: '1F9B7',
-    keywords: ['teeth', 'dentist'],
+    keywords: [
+      'tooth',
+      'teeth',
+      'dentist'
+    ],
     sheet: [43, 36],
     shortName: 'tooth'
   },
   {
     name: 'Canada Flag',
     unified: '1F1E8-1F1E6',
+    keywords: [
+      'flag_canada',
+      'ca',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 11],
     shortName: 'flag-ca'
   },
@@ -4989,6 +6189,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Rat',
     unified: '1F400',
     keywords: [
+      'rat',
       'animal',
       'mouse',
       'rodent'
@@ -5000,6 +6201,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Speaker',
     unified: '1F508',
     keywords: [
+      'speaker_low_volume',
       'sound',
       'volume',
       'silence',
@@ -5011,7 +6213,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Top with Upwards Arrow Above',
     unified: '1F51D',
-    keywords: ['words', 'blue-square'],
+    keywords: [
+      'top_arrow',
+      'words',
+      'blue-square'
+    ],
     sheet: [27, 57],
     shortName: 'top'
   },
@@ -5019,6 +6225,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Synagogue',
     unified: '1F54D',
     keywords: [
+      'synagogue',
       'judaism',
       'worship',
       'temple',
@@ -5031,6 +6238,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sleeping Face',
     unified: '1F634',
     keywords: [
+      'sleeping_face',
       'face',
       'tired',
       'sleepy',
@@ -5044,6 +6252,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bacon',
     unified: '1F953',
     keywords: [
+      'bacon',
       'food',
       'breakfast',
       'pork',
@@ -5056,7 +6265,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bone',
     unified: '1F9B4',
-    keywords: ['skeleton'],
+    keywords: ['bone', 'skeleton'],
     sheet: [43, 23],
     shortName: 'bone'
   },
@@ -5064,6 +6273,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Flag in Hole',
     unified: '26F3',
     keywords: [
+      'flag_in_hole',
       'sports',
       'business',
       'flag',
@@ -5076,6 +6286,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cocos (keeling) Islands Flag',
     unified: '1F1E8-1F1E8',
+    keywords: [
+      'flag_cocos_islands',
+      'cocos',
+      'keeling',
+      'islands',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 12],
     shortName: 'flag-cc'
   },
@@ -5083,6 +6303,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hamburger',
     unified: '1F354',
     keywords: [
+      'hamburger',
       'meat',
       'fast food',
       'beef',
@@ -5096,7 +6317,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Hamster Face',
     unified: '1F439',
-    keywords: ['animal', 'nature'],
+    keywords: [
+      'hamster',
+      'animal',
+      'nature'
+    ],
     sheet: [12, 19],
     shortName: 'hamster'
   },
@@ -5104,6 +6329,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Eyes',
     unified: '1F440',
     keywords: [
+      'eyes',
       'look',
       'watch',
       'stalk',
@@ -5117,6 +6343,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Speaker with One Sound Wave',
     unified: '1F509',
     keywords: [
+      'speaker_medium_volume',
       'volume',
       'speaker',
       'broadcast'
@@ -5128,6 +6355,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Face with Medical Mask',
     unified: '1F637',
     keywords: [
+      'face_with_medical_mask',
       'face',
       'sick',
       'ill',
@@ -5140,6 +6368,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Place of Worship',
     unified: '1F6D0',
     keywords: [
+      'place_of_worship',
       'religion',
       'church',
       'temple',
@@ -5152,6 +6381,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Shinto Shrine',
     unified: '26E9-FE0F',
     keywords: [
+      'shinto_shrine',
       'temple',
       'japan',
       'kyoto'
@@ -5162,13 +6392,23 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ice Skate',
     unified: '26F8-FE0F',
-    keywords: ['sports'],
+    keywords: ['ice_skate', 'sports'],
     sheet: [55, 23],
     shortName: 'ice_skate'
   },
   {
     name: 'Congo - Kinshasa Flag',
     unified: '1F1E8-1F1E9',
+    keywords: [
+      'flag_congo_kinshasa',
+      'congo',
+      'democratic',
+      'republic',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 13],
     shortName: 'flag-cd'
   },
@@ -5176,6 +6416,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'French Fries',
     unified: '1F35F',
     keywords: [
+      'french_fries',
       'chips',
       'snack',
       'fast food'
@@ -5187,6 +6428,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fishing Pole and Fish',
     unified: '1F3A3',
     keywords: [
+      'fishing_pole',
       'food',
       'hobby',
       'summer'
@@ -5198,6 +6440,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Rabbit Face',
     unified: '1F430',
     keywords: [
+      'rabbit_face',
       'animal',
       'nature',
       'pet',
@@ -5212,6 +6455,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Eye',
     unified: '1F441-FE0F',
     keywords: [
+      'eye',
       'face',
       'look',
       'see',
@@ -5225,6 +6469,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Speaker with Three Sound Waves',
     unified: '1F50A',
     keywords: [
+      'speaker_high_volume',
       'volume',
       'noise',
       'noisy',
@@ -5238,6 +6483,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Kaaba',
     unified: '1F54B',
     keywords: [
+      'kaaba',
       'mecca',
       'mosque',
       'islam'
@@ -5249,6 +6495,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Face with Thermometer',
     unified: '1F912',
     keywords: [
+      'face_with_thermometer',
       'sick',
       'temperature',
       'thermometer',
@@ -5262,6 +6509,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Atom Symbol',
     unified: '269B-FE0F',
     keywords: [
+      'atom_symbol',
       'science',
       'physics',
       'chemistry'
@@ -5272,13 +6520,27 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Central African Republic Flag',
     unified: '1F1E8-1F1EB',
+    keywords: [
+      'flag_central_african_republic',
+      'central',
+      'african',
+      'republic',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 14],
     shortName: 'flag-cf'
   },
   {
     name: 'Slice of Pizza',
     unified: '1F355',
-    keywords: ['food', 'party'],
+    keywords: [
+      'pizza',
+      'food',
+      'party'
+    ],
     sheet: [6, 39],
     shortName: 'pizza'
   },
@@ -5286,6 +6548,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Rabbit',
     unified: '1F407',
     keywords: [
+      'rabbit',
       'animal',
       'nature',
       'pet',
@@ -5298,20 +6561,35 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Tongue',
     unified: '1F445',
-    keywords: ['mouth', 'playful'],
+    keywords: [
+      'tongue',
+      'mouth',
+      'playful'
+    ],
     sheet: [12, 43],
     shortName: 'tongue'
   },
   {
     name: 'Public Address Loudspeaker',
     unified: '1F4E2',
-    keywords: ['volume', 'sound'],
+    keywords: [
+      'loudspeaker',
+      'volume',
+      'sound'
+    ],
     sheet: [26, 57],
     shortName: 'loudspeaker'
   },
   {
-    name: 'Om Symbol',
+    name: 'Om',
     unified: '1F549-FE0F',
+    keywords: [
+      'om',
+      'hinduism',
+      'buddhism',
+      'sikhism',
+      'jainism'
+    ],
     sheet: [28, 32],
     shortName: 'om_symbol'
   },
@@ -5319,6 +6597,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Face with Head-Bandage',
     unified: '1F915',
     keywords: [
+      'face_with_head_bandage',
       'injured',
       'clumsy',
       'bandage',
@@ -5330,6 +6609,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Diving Mask',
     unified: '1F93F',
+    keywords: [
+      'diving_mask',
+      'sport',
+      'ocean'
+    ],
     sheet: [41, 23],
     shortName: 'diving_mask'
   },
@@ -5337,6 +6621,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fountain',
     unified: '26F2',
     keywords: [
+      'fountain',
       'photo',
       'summer',
       'water',
@@ -5348,20 +6633,36 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Congo - Brazzaville Flag',
     unified: '1F1E8-1F1EC',
+    keywords: [
+      'flag_congo_brazzaville',
+      'congo',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 15],
     shortName: 'flag-cg'
   },
   {
     name: 'Hot Dog',
     unified: '1F32D',
-    keywords: ['food', 'frankfurter'],
+    keywords: [
+      'hot_dog',
+      'food',
+      'frankfurter'
+    ],
     sheet: [5, 57],
     shortName: 'hotdog'
   },
   {
     name: 'Running Shirt with Sash',
     unified: '1F3BD',
-    keywords: ['play', 'pageant'],
+    keywords: [
+      'running_shirt',
+      'play',
+      'pageant'
+    ],
     sheet: [8, 27],
     shortName: 'running_shirt_with_sash'
   },
@@ -5369,6 +6670,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Chipmunk',
     unified: '1F43F-FE0F',
     keywords: [
+      'chipmunk',
       'animal',
       'nature',
       'rodent',
@@ -5380,7 +6682,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mouth',
     unified: '1F444',
-    keywords: ['mouth', 'kiss'],
+    keywords: [
+      'mouth',
+      'mouth',
+      'kiss'
+    ],
     sheet: [12, 42],
     shortName: 'lips'
   },
@@ -5388,6 +6694,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cheering Megaphone',
     unified: '1F4E3',
     keywords: [
+      'megaphone',
       'sound',
       'speaker',
       'volume'
@@ -5399,6 +6706,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Nauseated Face',
     unified: '1F922',
     keywords: [
+      'nauseated_face',
       'face',
       'vomit',
       'gross',
@@ -5414,6 +6722,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tent',
     unified: '26FA',
     keywords: [
+      'tent',
       'photo',
       'camping',
       'outdoors'
@@ -5424,20 +6733,35 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Star of David',
     unified: '2721-FE0F',
-    keywords: ['judaism'],
+    keywords: [
+      'star_of_david',
+      'judaism'
+    ],
     sheet: [56, 19],
     shortName: 'star_of_david'
   },
   {
     name: 'Switzerland Flag',
     unified: '1F1E8-1F1ED',
+    keywords: [
+      'flag_switzerland',
+      'ch',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 16],
     shortName: 'flag-ch'
   },
   {
     name: 'Foggy',
     unified: '1F301',
-    keywords: ['photo', 'mountain'],
+    keywords: [
+      'foggy',
+      'photo',
+      'mountain'
+    ],
     sheet: [5, 15],
     shortName: 'foggy'
   },
@@ -5445,6 +6769,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ski and Ski Boot',
     unified: '1F3BF',
     keywords: [
+      'skis',
       'sports',
       'winter',
       'cold',
@@ -5457,6 +6782,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Baby',
     unified: '1F476',
     keywords: [
+      'baby',
       'child',
       'boy',
       'girl',
@@ -5490,13 +6816,22 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Postal Horn',
     unified: '1F4EF',
-    keywords: ['instrument', 'music'],
+    keywords: [
+      'postal_horn',
+      'instrument',
+      'music'
+    ],
     sheet: [27, 12],
     shortName: 'postal_horn'
   },
   {
     name: 'Face with Open Mouth Vomiting',
     unified: '1F92E',
+    keywords: [
+      'face_vomiting',
+      'face',
+      'sick'
+    ],
     sheet: [38, 47],
     shortNames: [
       'face_with_open_mouth_vomiting'
@@ -5507,6 +6842,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sandwich',
     unified: '1F96A',
     keywords: [
+      'sandwich',
       'food',
       'lunch',
       'bread'
@@ -5517,6 +6853,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Beaver',
     unified: '1F9AB',
+    keywords: [
+      'beaver',
+      'animal',
+      'rodent'
+    ],
     sheet: [43, 18],
     shortName: 'beaver'
   },
@@ -5524,6 +6865,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Wheel of Dharma',
     unified: '2638-FE0F',
     keywords: [
+      'wheel_of_dharma',
       'hinduism',
       'buddhism',
       'sikhism',
@@ -5535,6 +6877,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Côte D’ivoire Flag',
     unified: '1F1E8-1F1EE',
+    keywords: [
+      'flag_cote_d_ivoire',
+      'ivory',
+      'coast',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 17],
     shortName: 'flag-ci'
   },
@@ -5542,6 +6893,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Night with Stars',
     unified: '1F303',
     keywords: [
+      'night_with_stars',
       'evening',
       'city',
       'downtown'
@@ -5552,7 +6904,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Taco',
     unified: '1F32E',
-    keywords: ['food', 'mexican'],
+    keywords: [
+      'taco',
+      'food',
+      'mexican'
+    ],
     sheet: [6, 0],
     shortName: 'taco'
   },
@@ -5560,6 +6916,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bell',
     unified: '1F514',
     keywords: [
+      'bell',
       'sound',
       'notification',
       'christmas',
@@ -5573,6 +6930,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sled',
     unified: '1F6F7',
     keywords: [
+      'sled',
       'sleigh',
       'luge',
       'toboggan'
@@ -5584,6 +6942,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sneezing Face',
     unified: '1F927',
     keywords: [
+      'sneezing_face',
       'face',
       'gesundheit',
       'sneeze',
@@ -5597,6 +6956,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hedgehog',
     unified: '1F994',
     keywords: [
+      'hedgehog',
       'animal',
       'nature',
       'spiny'
@@ -5608,6 +6968,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Child',
     unified: '1F9D2',
     keywords: [
+      'child',
       'gender-neutral',
       'young'
     ],
@@ -5639,20 +7000,33 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Yin Yang',
     unified: '262F-FE0F',
-    keywords: ['balance'],
+    keywords: ['yin_yang', 'balance'],
     sheet: [54, 19],
     shortName: 'yin_yang'
   },
   {
     name: 'Cook Islands Flag',
     unified: '1F1E8-1F1F0',
+    keywords: [
+      'flag_cook_islands',
+      'cook',
+      'islands',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 18],
     shortName: 'flag-ck'
   },
   {
     name: 'Burrito',
     unified: '1F32F',
-    keywords: ['food', 'mexican'],
+    keywords: [
+      'burrito',
+      'food',
+      'mexican'
+    ],
     sheet: [6, 1],
     shortName: 'burrito'
   },
@@ -5660,6 +7034,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cityscape',
     unified: '1F3D9-FE0F',
     keywords: [
+      'cityscape',
       'photo',
       'night life',
       'urban'
@@ -5671,6 +7046,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Boy',
     unified: '1F466',
     keywords: [
+      'boy',
       'man',
       'male',
       'guy',
@@ -5705,6 +7081,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bell with Cancellation Stroke',
     unified: '1F515',
     keywords: [
+      'bell_with_slash',
       'sound',
       'volume',
       'mute',
@@ -5717,13 +7094,24 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Curling Stone',
     unified: '1F94C',
-    keywords: ['sports'],
+    keywords: [
+      'curling_stone',
+      'sports'
+    ],
     sheet: [41, 35],
     shortName: 'curling_stone'
   },
   {
     name: 'Overheated Face',
     unified: '1F975',
+    keywords: [
+      'hot_face',
+      'face',
+      'feverish',
+      'heat',
+      'red',
+      'sweating'
+    ],
     sheet: [42, 18],
     shortName: 'hot_face'
   },
@@ -5731,6 +7119,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bat',
     unified: '1F987',
     keywords: [
+      'bat',
       'animal',
       'nature',
       'blind',
@@ -5742,13 +7131,23 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Latin Cross',
     unified: '271D-FE0F',
-    keywords: ['christianity'],
+    keywords: [
+      'latin_cross',
+      'christianity'
+    ],
     sheet: [56, 18],
     shortName: 'latin_cross'
   },
   {
     name: 'Chile Flag',
     unified: '1F1E8-1F1F1',
+    keywords: [
+      'flag_chile',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 19],
     shortName: 'flag-cl'
   },
@@ -5756,6 +7155,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sunrise over Mountains',
     unified: '1F304',
     keywords: [
+      'sunrise_over_mountains',
       'view',
       'vacation',
       'photo'
@@ -5767,6 +7167,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Direct Hit',
     unified: '1F3AF',
     keywords: [
+      'direct_hit',
       'game',
       'play',
       'bar',
@@ -5780,6 +7181,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Musical Score',
     unified: '1F3BC',
     keywords: [
+      'musical_score',
       'treble',
       'clef',
       'compose'
@@ -5791,6 +7193,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bear Face',
     unified: '1F43B',
     keywords: [
+      'bear',
       'animal',
       'nature',
       'wild'
@@ -5802,6 +7205,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Girl',
     unified: '1F467',
     keywords: [
+      'girl',
       'female',
       'woman',
       'teenager'
@@ -5834,12 +7238,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Freezing Face',
     unified: '1F976',
+    keywords: [
+      'cold_face',
+      'face',
+      'blue',
+      'freezing',
+      'frozen',
+      'frostbite',
+      'icicles'
+    ],
     sheet: [42, 19],
     shortName: 'cold_face'
   },
   {
     name: 'Tamale',
     unified: '1FAD4',
+    keywords: [
+      'tamale',
+      'food',
+      'masa'
+    ],
     sheet: [53, 13],
     shortName: 'tamale'
   },
@@ -5847,6 +7265,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Orthodox Cross',
     unified: '2626-FE0F',
     keywords: [
+      'orthodox_cross',
       'suppedaneum',
       'religion'
     ],
@@ -5856,6 +7275,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cameroon Flag',
     unified: '1F1E8-1F1F2',
+    keywords: [
+      'flag_cameroon',
+      'cm',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 20],
     shortName: 'flag-cm'
   },
@@ -5863,6 +7290,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sunrise',
     unified: '1F305',
     keywords: [
+      'sunrise',
       'morning',
       'view',
       'vacation',
@@ -5875,6 +7303,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Musical Note',
     unified: '1F3B5',
     keywords: [
+      'musical_note',
       'score',
       'tone',
       'sound'
@@ -5885,6 +7314,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Polar Bear',
     unified: '1F43B-200D-2744-FE0F',
+    keywords: [
+      'polar bear',
+      'animal',
+      'arctic'
+    ],
     sheet: [12, 21],
     shortName: 'polar_bear'
   },
@@ -5892,6 +7326,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Stuffed Flatbread',
     unified: '1F959',
     keywords: [
+      'stuffed_flatbread',
       'food',
       'flatbread',
       'stuffed',
@@ -5903,6 +7338,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Face with Uneven Eyes and Wavy Mouth',
     unified: '1F974',
+    keywords: [
+      'woozy_face',
+      'face',
+      'dizzy',
+      'intoxicated',
+      'tipsy',
+      'wavy'
+    ],
     sheet: [42, 17],
     shortName: 'woozy_face'
   },
@@ -5910,6 +7353,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Adult',
     unified: '1F9D1',
     keywords: [
+      'person',
       'gender-neutral',
       'person'
     ],
@@ -5941,13 +7385,17 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Yo-Yo',
     unified: '1FA80',
+    keywords: ['yo_yo', 'toy'],
     sheet: [52, 25],
     shortName: 'yo-yo'
   },
   {
     name: 'Star and Crescent',
     unified: '262A-FE0F',
-    keywords: ['islam'],
+    keywords: [
+      'star_and_crescent',
+      'islam'
+    ],
     sheet: [54, 17],
     shortName: 'star_and_crescent'
   },
@@ -5955,6 +7403,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'China Flag',
     unified: '1F1E8-1F1F3',
     keywords: [
+      'flag_china',
       'china',
       'chinese',
       'prc',
@@ -5971,6 +7420,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cityscape at Dusk',
     unified: '1F306',
     keywords: [
+      'cityscape_at_dusk',
       'photo',
       'evening',
       'sky',
@@ -5982,20 +7432,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Multiple Musical Notes',
     unified: '1F3B6',
-    keywords: ['music', 'score'],
+    keywords: [
+      'musical_notes',
+      'music',
+      'score'
+    ],
     sheet: [8, 20],
     shortName: 'notes'
   },
   {
     name: 'Koala',
     unified: '1F428',
-    keywords: ['animal', 'nature'],
+    keywords: [
+      'koala',
+      'animal',
+      'nature'
+    ],
     sheet: [12, 2],
     shortName: 'koala'
   },
   {
     name: 'Person with Blond Hair',
     unified: '1F471',
+    keywords: [
+      'person_blond_hair',
+      'hairstyle'
+    ],
     sheet: [22, 24],
     skinVariations: [
       {
@@ -6026,6 +7488,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dizzy Face',
     unified: '1F635',
     keywords: [
+      'dizzy_face',
       'spent',
       'unconscious',
       'xox',
@@ -6037,25 +7500,38 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Falafel',
     unified: '1F9C6',
+    keywords: ['falafel', 'food'],
     sheet: [44, 32],
     shortName: 'falafel'
   },
   {
     name: 'Kite',
     unified: '1FA81',
+    keywords: ['kite', 'wind', 'fly'],
     sheet: [52, 26],
     shortName: 'kite'
   },
   {
     name: 'Peace Symbol',
     unified: '262E-FE0F',
-    keywords: ['hippie'],
+    keywords: [
+      'peace_symbol',
+      'hippie'
+    ],
     sheet: [54, 18],
     shortName: 'peace_symbol'
   },
   {
     name: 'Colombia Flag',
     unified: '1F1E8-1F1F4',
+    keywords: [
+      'flag_colombia',
+      'co',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 22],
     shortName: 'flag-co'
   },
@@ -6063,6 +7539,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sunset over Buildings',
     unified: '1F307',
     keywords: [
+      'sunset',
       'photo',
       'good morning',
       'dawn'
@@ -6074,6 +7551,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Studio Microphone',
     unified: '1F399-FE0F',
     keywords: [
+      'studio_microphone',
       'sing',
       'recording',
       'artist',
@@ -6086,6 +7564,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Billiards',
     unified: '1F3B1',
     keywords: [
+      'pool_8_ball',
       'pool',
       'hobby',
       'game',
@@ -6099,6 +7578,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Panda Face',
     unified: '1F43C',
     keywords: [
+      'panda',
       'animal',
       'nature',
       'panda'
@@ -6110,6 +7590,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man',
     unified: '1F468',
     keywords: [
+      'man',
       'mustache',
       'father',
       'dad',
@@ -6146,6 +7627,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Menorah with Nine Branches',
     unified: '1F54E',
+    keywords: [
+      'menorah',
+      'hanukkah',
+      'candles',
+      'jewish'
+    ],
     sheet: [28, 37],
     shortName: 'menorah_with_nine_branches'
   },
@@ -6153,6 +7640,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Shocked Face with Exploding Head',
     unified: '1F92F',
     keywords: [
+      'exploding_head',
       'face',
       'shocked',
       'mind',
@@ -6168,6 +7656,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Egg',
     unified: '1F95A',
     keywords: [
+      'egg',
       'food',
       'chicken',
       'breakfast'
@@ -6178,13 +7667,20 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Clipperton Island Flag',
     unified: '1F1E8-1F1F5',
+    keywords: [
+      'flag_clipperton_island'
+    ],
     sheet: [1, 23],
     shortName: 'flag-cp'
   },
   {
     name: 'Bridge at Night',
     unified: '1F309',
-    keywords: ['photo', 'sanfrancisco'],
+    keywords: [
+      'bridge_at_night',
+      'photo',
+      'sanfrancisco'
+    ],
     sheet: [5, 23],
     shortName: 'bridge_at_night'
   },
@@ -6192,6 +7688,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cooking',
     unified: '1F373',
     keywords: [
+      'cooking',
       'food',
       'breakfast',
       'kitchen',
@@ -6204,7 +7701,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Level Slider',
     unified: '1F39A-FE0F',
-    keywords: ['scale'],
+    keywords: ['level_slider', 'scale'],
     sheet: [7, 52],
     shortName: 'level_slider'
   },
@@ -6212,6 +7709,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Crystal Ball',
     unified: '1F52E',
     keywords: [
+      'crystal_ball',
       'disco',
       'party',
       'magic',
@@ -6225,6 +7723,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Six Pointed Star with Middle Dot',
     unified: '1F52F',
     keywords: [
+      'dotted_six_pointed_star',
       'purple-square',
       'religion',
       'jewish',
@@ -6236,19 +7735,30 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Face with Cowboy Hat',
     unified: '1F920',
+    keywords: [
+      'cowboy_hat_face',
+      'face',
+      'cowgirl',
+      'hat'
+    ],
     sheet: [38, 16],
     shortName: 'face_with_cowboy_hat'
   },
   {
     name: 'Sloth',
     unified: '1F9A5',
+    keywords: ['sloth', 'animal'],
     sheet: [43, 12],
     shortName: 'sloth'
   },
   {
     name: 'Bearded Person',
     unified: '1F9D4',
-    keywords: ['person', 'bewhiskered'],
+    keywords: [
+      'man_beard',
+      'person',
+      'bewhiskered'
+    ],
     sheet: [48, 55],
     skinVariations: [
       {
@@ -6277,19 +7787,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Costa Rica Flag',
     unified: '1F1E8-1F1F7',
+    keywords: [
+      'flag_costa_rica',
+      'costa',
+      'rica',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 24],
     shortName: 'flag-cr'
   },
   {
     name: 'Control Knobs',
     unified: '1F39B-FE0F',
-    keywords: ['dial'],
+    keywords: ['control_knobs', 'dial'],
     sheet: [7, 53],
     shortName: 'control_knobs'
   },
   {
-    name: 'Red Haired Man',
+    name: 'Man: Red Hair',
     unified: '1F468-200D-1F9B0',
+    keywords: [
+      'man_red_hair',
+      'hairstyle'
+    ],
     sheet: [16, 16],
     skinVariations: [
       {
@@ -6319,6 +7842,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Shallow Pan of Food',
     unified: '1F958',
     keywords: [
+      'shallow_pan_of_food',
       'food',
       'cooking',
       'casserole',
@@ -6330,18 +7854,30 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Face with Party Horn and Party Hat',
     unified: '1F973',
+    keywords: [
+      'partying_face',
+      'face',
+      'celebration',
+      'woohoo'
+    ],
     sheet: [42, 16],
     shortName: 'partying_face'
   },
   {
     name: 'Otter',
     unified: '1F9A6',
+    keywords: ['otter', 'animal'],
     sheet: [43, 13],
     shortName: 'otter'
   },
   {
     name: 'Magic Wand',
     unified: '1FA84',
+    keywords: [
+      'magic wand',
+      'supernature',
+      'power'
+    ],
     sheet: [52, 29],
     shortName: 'magic_wand'
   },
@@ -6349,6 +7885,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Aries',
     unified: '2648',
     keywords: [
+      'aries',
       'sign',
       'purple-square',
       'zodiac',
@@ -6360,27 +7897,49 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Hot Springs',
     unified: '2668-FE0F',
-    keywords: ['bath', 'warm', 'relax'],
+    keywords: [
+      'hot_springs',
+      'bath',
+      'warm',
+      'relax'
+    ],
     sheet: [54, 42],
     shortName: 'hotsprings'
   },
   {
     name: 'Cuba Flag',
     unified: '1F1E8-1F1FA',
+    keywords: [
+      'flag_cuba',
+      'cu',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 25],
     shortName: 'flag-cu'
   },
   {
     name: 'Pot of Food',
     unified: '1F372',
-    keywords: ['food', 'meat', 'soup'],
+    keywords: [
+      'pot_of_food',
+      'food',
+      'meat',
+      'soup'
+    ],
     sheet: [7, 10],
     shortName: 'stew'
   },
   {
     name: 'Carousel Horse',
     unified: '1F3A0',
-    keywords: ['photo', 'carnival'],
+    keywords: [
+      'carousel_horse',
+      'photo',
+      'carnival'
+    ],
     sheet: [7, 56],
     shortName: 'carousel_horse'
   },
@@ -6388,6 +7947,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Microphone',
     unified: '1F3A4',
     keywords: [
+      'microphone',
       'sound',
       'music',
       'PA',
@@ -6398,8 +7958,12 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'microphone'
   },
   {
-    name: 'Curly Haired Man',
+    name: 'Man: Curly Hair',
     unified: '1F468-200D-1F9B1',
+    keywords: [
+      'man_curly_hair',
+      'hairstyle'
+    ],
     sheet: [16, 22],
     skinVariations: [
       {
@@ -6428,19 +7992,31 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Disguised Face',
     unified: '1F978',
+    keywords: [
+      'disguised face',
+      'pretent',
+      'brows',
+      'glasses',
+      'moustache'
+    ],
     sheet: [42, 26],
     shortName: 'disguised_face'
   },
   {
     name: 'Skunk',
     unified: '1F9A8',
+    keywords: ['skunk', 'animal'],
     sheet: [43, 15],
     shortName: 'skunk'
   },
   {
     name: 'Nazar Amulet',
     unified: '1F9FF',
-    keywords: ['bead', 'charm'],
+    keywords: [
+      'nazar_amulet',
+      'bead',
+      'charm'
+    ],
     sheet: [52, 16],
     shortName: 'nazar_amulet'
   },
@@ -6448,6 +8024,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Taurus',
     unified: '2649',
     keywords: [
+      'taurus',
       'purple-square',
       'sign',
       'zodiac',
@@ -6459,6 +8036,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cape Verde Flag',
     unified: '1F1E8-1F1FB',
+    keywords: [
+      'flag_cape_verde',
+      'cabo',
+      'verde',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 26],
     shortName: 'flag-cv'
   },
@@ -6466,6 +8052,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ferris Wheel',
     unified: '1F3A1',
     keywords: [
+      'ferris_wheel',
       'photo',
       'carnival',
       'londoneye'
@@ -6477,6 +8064,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Headphone',
     unified: '1F3A7',
     keywords: [
+      'headphone',
       'music',
       'score',
       'gadgets'
@@ -6488,6 +8076,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Video Game',
     unified: '1F3AE',
     keywords: [
+      'video_game',
       'play',
       'console',
       'PS4',
@@ -6497,8 +8086,13 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'video_game'
   },
   {
-    name: 'White Haired Man',
+    name: 'Man: White Hair',
     unified: '1F468-200D-1F9B3',
+    keywords: [
+      'man_white_hair',
+      'old',
+      'elder'
+    ],
     sheet: [16, 34],
     skinVariations: [
       {
@@ -6529,6 +8123,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F60E',
     emoticons: ['8)'],
     keywords: [
+      'smiling_face_with_sunglasses',
       'face',
       'cool',
       'smile',
@@ -6543,6 +8138,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Kangaroo',
     unified: '1F998',
     keywords: [
+      'kangaroo',
       'animal',
       'nature',
       'australia',
@@ -6556,6 +8152,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Fondue',
     unified: '1FAD5',
+    keywords: [
+      'fondue',
+      'cheese',
+      'pot',
+      'food'
+    ],
     sheet: [53, 14],
     shortName: 'fondue'
   },
@@ -6563,6 +8165,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Gemini',
     unified: '264A',
     keywords: [
+      'gemini',
       'sign',
       'zodiac',
       'purple-square',
@@ -6574,6 +8177,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Curaçao Flag',
     unified: '1F1E8-1F1FC',
+    keywords: [
+      'flag_curacao',
+      'curaçao',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 27],
     shortName: 'flag-cw'
   },
@@ -6581,6 +8192,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Roller Coaster',
     unified: '1F3A2',
     keywords: [
+      'roller_coaster',
       'carnival',
       'playground',
       'photo',
@@ -6590,8 +8202,9 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'roller_coaster'
   },
   {
-    name: 'Bald Man',
+    name: 'Man: Bald',
     unified: '1F468-200D-1F9B2',
+    keywords: ['man_bald', 'hairless'],
     sheet: [16, 28],
     skinVariations: [
       {
@@ -6621,6 +8234,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Radio',
     unified: '1F4FB',
     keywords: [
+      'radio',
       'communication',
       'music',
       'podcast',
@@ -6632,7 +8246,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Joystick',
     unified: '1F579-FE0F',
-    keywords: ['game', 'play'],
+    keywords: [
+      'joystick',
+      'game',
+      'play'
+    ],
     sheet: [29, 34],
     shortName: 'joystick'
   },
@@ -6640,6 +8258,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Nerd Face',
     unified: '1F913',
     keywords: [
+      'nerd_face',
       'face',
       'nerdy',
       'geek',
@@ -6652,6 +8271,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bowl with Spoon',
     unified: '1F963',
     keywords: [
+      'bowl_with_spoon',
       'food',
       'breakfast',
       'cereal',
@@ -6665,6 +8285,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Badger',
     unified: '1F9A1',
     keywords: [
+      'badger',
       'animal',
       'nature',
       'honey'
@@ -6676,6 +8297,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cancer',
     unified: '264B',
     keywords: [
+      'cancer',
       'sign',
       'zodiac',
       'purple-square',
@@ -6687,6 +8309,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Christmas Island Flag',
     unified: '1F1E8-1F1FD',
+    keywords: [
+      'flag_christmas_island',
+      'christmas',
+      'island',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 28],
     shortName: 'flag-cx'
   },
@@ -6694,6 +8325,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Slot Machine',
     unified: '1F3B0',
     keywords: [
+      'slot_machine',
       'bet',
       'gamble',
       'vegas',
@@ -6708,6 +8340,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Saxophone',
     unified: '1F3B7',
     keywords: [
+      'saxophone',
       'music',
       'instrument',
       'jazz',
@@ -6719,6 +8352,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Paw Prints',
     unified: '1F43E',
+    keywords: [
+      'paw_prints',
+      'animal',
+      'tracking',
+      'footprints',
+      'dog',
+      'cat',
+      'pet',
+      'feet'
+    ],
     sheet: [12, 25],
     shortNames: ['paw_prints'],
     shortName: 'feet'
@@ -6727,6 +8370,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Woman',
     unified: '1F469',
     keywords: [
+      'woman',
       'female',
       'girls',
       'lady'
@@ -6760,6 +8404,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Barber Pole',
     unified: '1F488',
     keywords: [
+      'barber_pole',
       'hair',
       'salon',
       'style'
@@ -6771,6 +8416,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Green Salad',
     unified: '1F957',
     keywords: [
+      'green_salad',
       'food',
       'healthy',
       'lettuce'
@@ -6781,6 +8427,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Face with Monocle',
     unified: '1F9D0',
+    keywords: [
+      'face_with_monocle',
+      'face',
+      'stuffy',
+      'wealthy'
+    ],
     sheet: [45, 34],
     shortName: 'face_with_monocle'
   },
@@ -6788,6 +8440,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Leo',
     unified: '264C',
     keywords: [
+      'leo',
       'sign',
       'purple-square',
       'zodiac',
@@ -6799,6 +8452,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cyprus Flag',
     unified: '1F1E8-1F1FE',
+    keywords: [
+      'flag_cyprus',
+      'cy',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 29],
     shortName: 'flag-cy'
   },
@@ -6806,6 +8467,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Popcorn',
     unified: '1F37F',
     keywords: [
+      'popcorn',
       'food',
       'movie theater',
       'films',
@@ -6818,6 +8480,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Circus Tent',
     unified: '1F3AA',
     keywords: [
+      'circus_tent',
       'festival',
       'carnival',
       'party'
@@ -6829,6 +8492,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Game Die',
     unified: '1F3B2',
     keywords: [
+      'game_die',
       'dice',
       'random',
       'tabletop',
@@ -6839,8 +8503,12 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'game_die'
   },
   {
-    name: 'Red Haired Woman',
+    name: 'Woman: Red Hair',
     unified: '1F469-200D-1F9B0',
+    keywords: [
+      'woman_red_hair',
+      'hairstyle'
+    ],
     sheet: [19, 4],
     skinVariations: [
       {
@@ -6876,6 +8544,7 @@ export const emojis: CompressedEmojiData[] = [
       ':-/'
     ],
     keywords: [
+      'confused_face',
       'face',
       'indifference',
       'huh',
@@ -6889,13 +8558,18 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Turkey',
     unified: '1F983',
-    keywords: ['animal', 'bird'],
+    keywords: [
+      'turkey',
+      'animal',
+      'bird'
+    ],
     sheet: [42, 36],
     shortName: 'turkey'
   },
   {
     name: 'Accordion',
     unified: '1FA97',
+    keywords: ['accordion', 'music'],
     sheet: [52, 39],
     shortName: 'accordion'
   },
@@ -6903,6 +8577,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Virgo',
     unified: '264D',
     keywords: [
+      'virgo',
       'sign',
       'zodiac',
       'purple-square',
@@ -6914,13 +8589,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Czechia Flag',
     unified: '1F1E8-1F1FF',
+    keywords: [
+      'flag_czechia',
+      'cz',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 30],
     shortName: 'flag-cz'
   },
   {
     name: 'Guitar',
     unified: '1F3B8',
-    keywords: ['music', 'instrument'],
+    keywords: [
+      'guitar',
+      'music',
+      'instrument'
+    ],
     sheet: [8, 22],
     shortName: 'guitar'
   },
@@ -6928,6 +8615,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Chicken',
     unified: '1F414',
     keywords: [
+      'chicken',
       'animal',
       'cluck',
       'nature',
@@ -6940,6 +8628,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Worried Face',
     unified: '1F61F',
     keywords: [
+      'worried_face',
       'face',
       'concern',
       'nervous',
@@ -6952,6 +8641,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Steam Locomotive',
     unified: '1F682',
     keywords: [
+      'locomotive',
       'transportation',
       'vehicle',
       'train'
@@ -6962,12 +8652,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Butter',
     unified: '1F9C8',
+    keywords: [
+      'butter',
+      'food',
+      'cook'
+    ],
     sheet: [44, 34],
     shortName: 'butter'
   },
   {
-    name: 'Red Haired Person',
+    name: 'Person: Red Hair',
     unified: '1F9D1-200D-1F9B0',
+    keywords: [
+      'person_red_hair',
+      'hairstyle'
+    ],
     sheet: [47, 41],
     skinVariations: [
       {
@@ -6997,6 +8696,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Jigsaw Puzzle Piece',
     unified: '1F9E9',
     keywords: [
+      'puzzle_piece',
       'interlocking',
       'puzzle',
       'piece'
@@ -7008,6 +8708,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Libra',
     unified: '264E',
     keywords: [
+      'libra',
       'sign',
       'purple-square',
       'zodiac',
@@ -7020,6 +8721,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Germany Flag',
     unified: '1F1E9-1F1EA',
     keywords: [
+      'flag_germany',
       'german',
       'nation',
       'flag',
@@ -7034,6 +8736,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Musical Keyboard',
     unified: '1F3B9',
     keywords: [
+      'musical_keyboard',
       'piano',
       'instrument',
       'compose'
@@ -7045,6 +8748,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Rooster',
     unified: '1F413',
     keywords: [
+      'rooster',
       'animal',
       'nature',
       'chicken'
@@ -7053,8 +8757,12 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'rooster'
   },
   {
-    name: 'Curly Haired Woman',
+    name: 'Woman: Curly Hair',
     unified: '1F469-200D-1F9B1',
+    keywords: [
+      'woman_curly_hair',
+      'hairstyle'
+    ],
     sheet: [19, 10],
     skinVariations: [
       {
@@ -7084,6 +8792,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Slightly Frowning Face',
     unified: '1F641',
     keywords: [
+      'slightly_frowning_face',
       'face',
       'frowning',
       'disappointed',
@@ -7097,6 +8806,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Railway Car',
     unified: '1F683',
     keywords: [
+      'railway_car',
       'transportation',
       'vehicle'
     ],
@@ -7106,14 +8816,22 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Salt Shaker',
     unified: '1F9C2',
-    keywords: ['condiment', 'shaker'],
+    keywords: [
+      'salt',
+      'condiment',
+      'shaker'
+    ],
     sheet: [44, 28],
     shortName: 'salt'
   },
   {
     name: 'Teddy Bear',
     unified: '1F9F8',
-    keywords: ['plush', 'stuffed'],
+    keywords: [
+      'teddy_bear',
+      'plush',
+      'stuffed'
+    ],
     sheet: [52, 9],
     shortName: 'teddy_bear'
   },
@@ -7121,6 +8839,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Scorpius',
     unified: '264F',
     keywords: [
+      'scorpio',
       'sign',
       'zodiac',
       'purple-square',
@@ -7133,13 +8852,18 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Diego Garcia Flag',
     unified: '1F1E9-1F1EC',
+    keywords: ['flag_diego_garcia'],
     sheet: [1, 32],
     shortName: 'flag-dg'
   },
   {
     name: 'Trumpet',
     unified: '1F3BA',
-    keywords: ['music', 'brass'],
+    keywords: [
+      'trumpet',
+      'music',
+      'brass'
+    ],
     sheet: [8, 24],
     shortName: 'trumpet'
   },
@@ -7147,6 +8871,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hatching Chick',
     unified: '1F423',
     keywords: [
+      'hatching_chick',
       'animal',
       'chicken',
       'egg',
@@ -7161,6 +8886,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'High-Speed Train',
     unified: '1F684',
     keywords: [
+      'high_speed_train',
       'transportation',
       'vehicle'
     ],
@@ -7170,13 +8896,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Canned Food',
     unified: '1F96B',
-    keywords: ['food', 'soup'],
+    keywords: [
+      'canned_food',
+      'food',
+      'soup'
+    ],
     sheet: [42, 8],
     shortName: 'canned_food'
   },
   {
-    name: 'Curly Haired Person',
+    name: 'Person: Curly Hair',
     unified: '1F9D1-200D-1F9B1',
+    keywords: [
+      'person_curly_hair',
+      'hairstyle'
+    ],
     sheet: [47, 47],
     skinVariations: [
       {
@@ -7205,12 +8939,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pinata',
     unified: '1FA85',
+    keywords: [
+      'pinata',
+      'mexico',
+      'candy',
+      'celebration'
+    ],
     sheet: [52, 30],
     shortName: 'pinata'
   },
   {
-    name: 'White Frowning Face',
+    name: 'Frowning Face',
     unified: '2639-FE0F',
+    keywords: [
+      'frowning_face',
+      'face',
+      'sad',
+      'upset',
+      'frown'
+    ],
     sheet: [54, 21],
     shortName: 'white_frowning_face'
   },
@@ -7218,6 +8965,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sagittarius',
     unified: '2650',
     keywords: [
+      'sagittarius',
       'sign',
       'zodiac',
       'purple-square',
@@ -7229,6 +8977,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Djibouti Flag',
     unified: '1F1E9-1F1EF',
+    keywords: [
+      'flag_djibouti',
+      'dj',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 33],
     shortName: 'flag-dj'
   },
@@ -7236,6 +8992,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bento Box',
     unified: '1F371',
     keywords: [
+      'bento_box',
       'food',
       'japanese',
       'box'
@@ -7247,6 +9004,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Violin',
     unified: '1F3BB',
     keywords: [
+      'violin',
       'music',
       'instrument',
       'orchestra',
@@ -7259,6 +9017,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Baby Chick',
     unified: '1F424',
     keywords: [
+      'baby_chick',
       'animal',
       'chicken',
       'bird'
@@ -7267,8 +9026,13 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'baby_chick'
   },
   {
-    name: 'White Haired Woman',
+    name: 'Woman: White Hair',
     unified: '1F469-200D-1F9B3',
+    keywords: [
+      'woman_white_hair',
+      'old',
+      'elder'
+    ],
     sheet: [19, 22],
     skinVariations: [
       {
@@ -7304,6 +9068,7 @@ export const emojis: CompressedEmojiData[] = [
       ':-O'
     ],
     keywords: [
+      'face_with_open_mouth',
       'face',
       'surprise',
       'impressed',
@@ -7318,6 +9083,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'High-Speed Train with Bullet Nose',
     unified: '1F685',
     keywords: [
+      'bullet_train',
       'transportation',
       'vehicle',
       'speed',
@@ -7331,6 +9097,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Nesting Dolls',
     unified: '1FA86',
+    keywords: [
+      'nesting dolls',
+      'matryoshka',
+      'toy'
+    ],
     sheet: [52, 31],
     shortName: 'nesting_dolls'
   },
@@ -7338,6 +9109,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Capricorn',
     unified: '2651',
     keywords: [
+      'capricorn',
       'sign',
       'zodiac',
       'purple-square',
@@ -7349,13 +9121,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Denmark Flag',
     unified: '1F1E9-1F1F0',
+    keywords: [
+      'flag_denmark',
+      'dk',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 34],
     shortName: 'flag-dk'
   },
   {
     name: 'Rice Cracker',
     unified: '1F358',
-    keywords: ['food', 'japanese'],
+    keywords: [
+      'rice_cracker',
+      'food',
+      'japanese'
+    ],
     sheet: [6, 42],
     shortName: 'rice_cracker'
   },
@@ -7363,6 +9147,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Front-Facing Baby Chick',
     unified: '1F425',
     keywords: [
+      'front_facing_baby_chick',
       'animal',
       'chicken',
       'baby',
@@ -7374,7 +9159,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Hushed Face',
     unified: '1F62F',
-    keywords: ['face', 'woo', 'shh'],
+    keywords: [
+      'hushed_face',
+      'face',
+      'woo',
+      'shh'
+    ],
     sheet: [31, 21],
     shortName: 'hushed'
   },
@@ -7382,6 +9172,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Train',
     unified: '1F686',
     keywords: [
+      'train',
       'transportation',
       'vehicle'
     ],
@@ -7389,8 +9180,13 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'train2'
   },
   {
-    name: 'White Haired Person',
+    name: 'Person: White Hair',
     unified: '1F9D1-200D-1F9B3',
+    keywords: [
+      'person_white_hair',
+      'elder',
+      'old'
+    ],
     sheet: [48, 1],
     hidden: ['facebook'],
     skinVariations: [
@@ -7425,6 +9221,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Banjo',
     unified: '1FA95',
+    keywords: [
+      'banjo',
+      'music',
+      'instructment'
+    ],
     sheet: [52, 37],
     shortName: 'banjo'
   },
@@ -7432,6 +9233,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Aquarius',
     unified: '2652',
     keywords: [
+      'aquarius',
       'sign',
       'purple-square',
       'zodiac',
@@ -7444,6 +9246,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Spade Suit',
     unified: '2660-FE0F',
     keywords: [
+      'spade_suit',
       'poker',
       'cards',
       'suits',
@@ -7455,13 +9258,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Dominica Flag',
     unified: '1F1E9-1F1F2',
+    keywords: [
+      'flag_dominica',
+      'dm',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 35],
     shortName: 'flag-dm'
   },
   {
     name: 'Rice Ball',
     unified: '1F359',
-    keywords: ['food', 'japanese'],
+    keywords: [
+      'rice_ball',
+      'food',
+      'japanese'
+    ],
     sheet: [6, 43],
     shortName: 'rice_ball'
   },
@@ -7469,6 +9284,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bird',
     unified: '1F426',
     keywords: [
+      'bird',
       'animal',
       'nature',
       'fly',
@@ -7479,8 +9295,12 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'bird'
   },
   {
-    name: 'Bald Woman',
+    name: 'Woman: Bald',
     unified: '1F469-200D-1F9B2',
+    keywords: [
+      'woman_bald',
+      'hairless'
+    ],
     sheet: [19, 16],
     skinVariations: [
       {
@@ -7510,6 +9330,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Astonished Face',
     unified: '1F632',
     keywords: [
+      'astonished_face',
       'face',
       'xox',
       'surprised',
@@ -7522,6 +9343,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Metro',
     unified: '1F687',
     keywords: [
+      'metro',
       'transportation',
       'blue-square',
       'mrt',
@@ -7534,6 +9356,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Drum with Drumsticks',
     unified: '1F941',
+    keywords: [
+      'drum',
+      'music',
+      'instrument',
+      'drumsticks',
+      'snare'
+    ],
     sheet: [41, 25],
     shortName: 'drum_with_drumsticks'
   },
@@ -7541,6 +9370,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pisces',
     unified: '2653',
     keywords: [
+      'pisces',
       'purple-square',
       'sign',
       'zodiac',
@@ -7553,6 +9383,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Heart Suit',
     unified: '2665-FE0F',
     keywords: [
+      'heart_suit',
       'poker',
       'cards',
       'magic',
@@ -7564,6 +9395,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Dominican Republic Flag',
     unified: '1F1E9-1F1F4',
+    keywords: [
+      'flag_dominican_republic',
+      'dominican',
+      'republic',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 36],
     shortName: 'flag-do'
   },
@@ -7571,6 +9411,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cooked Rice',
     unified: '1F35A',
     keywords: [
+      'cooked_rice',
       'food',
       'china',
       'asian'
@@ -7581,7 +9422,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Penguin',
     unified: '1F427',
-    keywords: ['animal', 'nature'],
+    keywords: [
+      'penguin',
+      'animal',
+      'nature'
+    ],
     sheet: [12, 1],
     shortName: 'penguin'
   },
@@ -7589,6 +9434,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Flushed Face',
     unified: '1F633',
     keywords: [
+      'flushed_face',
       'face',
       'blush',
       'shy',
@@ -7601,6 +9447,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Light Rail',
     unified: '1F688',
     keywords: [
+      'light_rail',
       'transportation',
       'vehicle'
     ],
@@ -7608,8 +9455,12 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'light_rail'
   },
   {
-    name: 'Bald Person',
+    name: 'Person: Bald',
     unified: '1F9D1-200D-1F9B2',
+    keywords: [
+      'person_bald',
+      'hairless'
+    ],
     sheet: [47, 53],
     hidden: ['facebook'],
     skinVariations: [
@@ -7644,6 +9495,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Long Drum',
     unified: '1FA98',
+    keywords: ['long drum', 'music'],
     sheet: [52, 40],
     shortName: 'long_drum'
   },
@@ -7651,6 +9503,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Diamond Suit',
     unified: '2666-FE0F',
     keywords: [
+      'diamond_suit',
       'poker',
       'cards',
       'magic',
@@ -7663,6 +9516,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ophiuchus',
     unified: '26CE',
     keywords: [
+      'ophiuchus',
       'sign',
       'purple-square',
       'constellation',
@@ -7674,6 +9528,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Algeria Flag',
     unified: '1F1E9-1F1FF',
+    keywords: [
+      'flag_algeria',
+      'dz',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 37],
     shortName: 'flag-dz'
   },
@@ -7681,6 +9543,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Curry and Rice',
     unified: '1F35B',
     keywords: [
+      'curry_rice',
       'food',
       'spicy',
       'hot',
@@ -7690,8 +9553,16 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'curry'
   },
   {
-    name: 'Blond Haired Woman',
+    name: 'Woman: Blond Hair',
     unified: '1F471-200D-2640-FE0F',
+    keywords: [
+      'woman_blond_hair',
+      'woman',
+      'female',
+      'girl',
+      'blonde',
+      'person'
+    ],
     sheet: [22, 12],
     skinVariations: [
       {
@@ -7721,6 +9592,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mobile Phone',
     unified: '1F4F1',
     keywords: [
+      'mobile_phone',
       'technology',
       'apple',
       'gadgets',
@@ -7733,6 +9605,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Twisted Rightwards Arrows',
     unified: '1F500',
     keywords: [
+      'shuffle_tracks_button',
       'blue-square',
       'shuffle',
       'music',
@@ -7742,8 +9615,13 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'twisted_rightwards_arrows'
   },
   {
-    name: 'Dove of Peace',
+    name: 'Dove',
     unified: '1F54A-FE0F',
+    keywords: [
+      'dove',
+      'animal',
+      'bird'
+    ],
     sheet: [28, 33],
     shortName: 'dove_of_peace'
   },
@@ -7751,6 +9629,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Station',
     unified: '1F689',
     keywords: [
+      'station',
       'transportation',
       'vehicle',
       'public'
@@ -7761,6 +9640,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Face with Pleading Eyes',
     unified: '1F97A',
+    keywords: [
+      'pleading_face',
+      'face',
+      'begging',
+      'mercy'
+    ],
     sheet: [42, 27],
     shortName: 'pleading_face'
   },
@@ -7768,6 +9653,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Club Suit',
     unified: '2663-FE0F',
     keywords: [
+      'club_suit',
       'poker',
       'cards',
       'magic',
@@ -7779,6 +9665,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ceuta & Melilla Flag',
     unified: '1F1EA-1F1E6',
+    keywords: ['flag_ceuta_melilla'],
     sheet: [1, 38],
     shortName: 'flag-ea'
   },
@@ -7786,6 +9673,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Steaming Bowl',
     unified: '1F35C',
     keywords: [
+      'steaming_bowl',
       'food',
       'japanese',
       'noodle',
@@ -7795,9 +9683,18 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'ramen'
   },
   {
-    name: 'Blond Haired Man',
+    name: 'Man: Blond Hair',
     unified: '1F471-200D-2642-FE0F',
     obsoletes: '1F471',
+    keywords: [
+      'man_blond_hair',
+      'man',
+      'male',
+      'boy',
+      'blonde',
+      'guy',
+      'person'
+    ],
     sheet: [22, 18],
     skinVariations: [
       {
@@ -7826,21 +9723,34 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mobile Phone with Rightwards Arrow at Left',
     unified: '1F4F2',
-    keywords: ['iphone', 'incoming'],
+    keywords: [
+      'mobile_phone_with_arrow',
+      'iphone',
+      'incoming'
+    ],
     sheet: [27, 15],
     shortName: 'calling'
   },
   {
     name: 'Clockwise Rightwards and Leftwards Open Circle Arrows',
     unified: '1F501',
-    keywords: ['loop', 'record'],
+    keywords: [
+      'repeat_button',
+      'loop',
+      'record'
+    ],
     sheet: [27, 29],
     shortName: 'repeat'
   },
   {
     name: 'Frowning Face with Open Mouth',
     unified: '1F626',
-    keywords: ['face', 'aw', 'what'],
+    keywords: [
+      'frowning_face_with_open_mouth',
+      'face',
+      'aw',
+      'what'
+    ],
     sheet: [31, 12],
     shortName: 'frowning'
   },
@@ -7848,6 +9758,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tram',
     unified: '1F68A',
     keywords: [
+      'tram',
       'transportation',
       'vehicle'
     ],
@@ -7858,6 +9769,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Eagle',
     unified: '1F985',
     keywords: [
+      'eagle',
       'animal',
       'nature',
       'bird'
@@ -7868,7 +9780,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Chess Pawn',
     unified: '265F-FE0F',
-    keywords: ['expendable'],
+    keywords: [
+      'chess_pawn',
+      'expendable'
+    ],
     sheet: [54, 37],
     shortName: 'chess_pawn'
   },
@@ -7876,6 +9791,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Playing Card Black Joker',
     unified: '1F0CF',
     keywords: [
+      'joker',
       'poker',
       'cards',
       'game',
@@ -7888,6 +9804,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ecuador Flag',
     unified: '1F1EA-1F1E8',
+    keywords: [
+      'flag_ecuador',
+      'ec',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 39],
     shortName: 'flag-ec'
   },
@@ -7895,6 +9819,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Spaghetti',
     unified: '1F35D',
     keywords: [
+      'spaghetti',
       'food',
       'italian',
       'noodle'
@@ -7905,7 +9830,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Clockwise Rightwards and Leftwards Open Circle Arrows with Circled One Overlay',
     unified: '1F502',
-    keywords: ['blue-square', 'loop'],
+    keywords: [
+      'repeat_single_button',
+      'blue-square',
+      'loop'
+    ],
     sheet: [27, 30],
     shortName: 'repeat_one'
   },
@@ -7914,6 +9843,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F627',
     emoticons: ['D:'],
     keywords: [
+      'anguished_face',
       'face',
       'stunned',
       'nervous'
@@ -7925,6 +9855,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Monorail',
     unified: '1F69D',
     keywords: [
+      'monorail',
       'transportation',
       'vehicle'
     ],
@@ -7935,6 +9866,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Duck',
     unified: '1F986',
     keywords: [
+      'duck',
       'animal',
       'nature',
       'bird',
@@ -7947,6 +9879,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Older Adult',
     unified: '1F9D3',
     keywords: [
+      'older_person',
       'human',
       'elder',
       'senior',
@@ -7981,6 +9914,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Telephone',
     unified: '260E-FE0F',
     keywords: [
+      'telephone',
       'technology',
       'communication',
       'dial',
@@ -7994,6 +9928,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mahjong Tile Red Dragon',
     unified: '1F004',
     keywords: [
+      'mahjong_red_dragon',
       'game',
       'play',
       'chinese',
@@ -8005,13 +9940,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Estonia Flag',
     unified: '1F1EA-1F1EA',
+    keywords: [
+      'flag_estonia',
+      'ee',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 40],
     shortName: 'flag-ee'
   },
   {
     name: 'Roasted Sweet Potato',
     unified: '1F360',
-    keywords: ['food', 'nature'],
+    keywords: [
+      'roasted_sweet_potato',
+      'food',
+      'nature'
+    ],
     sheet: [6, 50],
     shortName: 'sweet_potato'
   },
@@ -8019,6 +9966,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Older Man',
     unified: '1F474',
     keywords: [
+      'old_man',
       'human',
       'male',
       'men',
@@ -8055,6 +10003,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Telephone Receiver',
     unified: '1F4DE',
     keywords: [
+      'telephone_receiver',
       'technology',
       'communication',
       'dial'
@@ -8066,6 +10015,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fearful Face',
     unified: '1F628',
     keywords: [
+      'fearful_face',
       'face',
       'scared',
       'terrified',
@@ -8080,6 +10030,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mountain Railway',
     unified: '1F69E',
     keywords: [
+      'mountain_railway',
       'transportation',
       'vehicle'
     ],
@@ -8090,6 +10041,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Swan',
     unified: '1F9A2',
     keywords: [
+      'swan',
       'animal',
       'nature',
       'bird'
@@ -8101,6 +10053,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Right-Pointing Triangle',
     unified: '25B6-FE0F',
     keywords: [
+      'play_button',
       'blue-square',
       'right',
       'direction',
@@ -8112,20 +10065,37 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Egypt Flag',
     unified: '1F1EA-1F1EC',
+    keywords: [
+      'flag_egypt',
+      'eg',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 41],
     shortName: 'flag-eg'
   },
   {
     name: 'Oden',
     unified: '1F362',
-    keywords: ['food', 'japanese'],
+    keywords: [
+      'oden',
+      'food',
+      'japanese'
+    ],
     sheet: [6, 52],
     shortName: 'oden'
   },
   {
     name: 'Flower Playing Cards',
     unified: '1F3B4',
-    keywords: ['game', 'sunset', 'red'],
+    keywords: [
+      'flower_playing_cards',
+      'game',
+      'sunset',
+      'red'
+    ],
     sheet: [8, 18],
     shortName: 'flower_playing_cards'
   },
@@ -8133,6 +10103,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Older Woman',
     unified: '1F475',
     keywords: [
+      'old_woman',
       'human',
       'female',
       'women',
@@ -8170,6 +10141,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pager',
     unified: '1F4DF',
     keywords: [
+      'pager',
       'bbcall',
       'oldschool',
       '90s'
@@ -8181,6 +10153,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Face with Open Mouth and Cold Sweat',
     unified: '1F630',
     keywords: [
+      'anxious_face_with_sweat',
       'face',
       'nervous',
       'sweat'
@@ -8192,6 +10165,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tram Car',
     unified: '1F68B',
     keywords: [
+      'tram_car',
       'transportation',
       'vehicle',
       'carriage',
@@ -8205,6 +10179,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Owl',
     unified: '1F989',
     keywords: [
+      'owl',
       'animal',
       'nature',
       'bird',
@@ -8217,6 +10192,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Right-Pointing Double Triangle',
     unified: '23E9',
     keywords: [
+      'fast_forward_button',
       'blue-square',
       'play',
       'speed',
@@ -8228,6 +10204,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Western Sahara Flag',
     unified: '1F1EA-1F1ED',
+    keywords: [
+      'flag_western_sahara',
+      'western',
+      'sahara',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 42],
     shortName: 'flag-eh'
   },
@@ -8235,6 +10220,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sushi',
     unified: '1F363',
     keywords: [
+      'sushi',
       'food',
       'fish',
       'japanese',
@@ -8247,6 +10233,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Performing Arts',
     unified: '1F3AD',
     keywords: [
+      'performing_arts',
       'acting',
       'theater',
       'drama'
@@ -8258,6 +10245,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fax Machine',
     unified: '1F4E0',
     keywords: [
+      'fax_machine',
       'communication',
       'technology'
     ],
@@ -8268,6 +10256,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Disappointed but Relieved Face',
     unified: '1F625',
     keywords: [
+      'sad_but_relieved_face',
       'face',
       'phew',
       'sweat',
@@ -8279,6 +10268,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Person Frowning',
     unified: '1F64D',
+    keywords: [
+      'person_frowning',
+      'worried'
+    ],
     sheet: [33, 20],
     skinVariations: [
       {
@@ -8309,6 +10302,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bus',
     unified: '1F68C',
     keywords: [
+      'bus',
       'car',
       'vehicle',
       'transportation'
@@ -8319,18 +10313,37 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Dodo',
     unified: '1F9A4',
+    keywords: [
+      'dodo',
+      'animal',
+      'bird'
+    ],
     sheet: [43, 11],
     shortName: 'dodo'
   },
   {
-    name: 'Black Right Pointing Double Triangle with Vertical Bar',
+    name: 'Next Track Button',
     unified: '23ED-FE0F',
+    keywords: [
+      'next_track_button',
+      'forward',
+      'next',
+      'blue-square'
+    ],
     sheet: [53, 36],
     shortName: 'black_right_pointing_double_triangle_with_vertical_bar'
   },
   {
     name: 'Eritrea Flag',
     unified: '1F1EA-1F1F7',
+    keywords: [
+      'flag_eritrea',
+      'er',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 43],
     shortName: 'flag-er'
   },
@@ -8338,6 +10351,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fried Shrimp',
     unified: '1F364',
     keywords: [
+      'fried_shrimp',
       'food',
       'animal',
       'appetizer',
@@ -8350,6 +10364,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Battery',
     unified: '1F50B',
     keywords: [
+      'battery',
       'power',
       'energy',
       'sustain'
@@ -8358,8 +10373,12 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'battery'
   },
   {
-    name: 'Frame with Picture',
+    name: 'Framed Picture',
     unified: '1F5BC-FE0F',
+    keywords: [
+      'framed_picture',
+      'photography'
+    ],
     sheet: [30, 11],
     shortName: 'frame_with_picture'
   },
@@ -8369,6 +10388,7 @@ export const emojis: CompressedEmojiData[] = [
     text: ':\'(',
     emoticons: [':\'('],
     keywords: [
+      'crying_face',
       'face',
       'tears',
       'sad',
@@ -8382,6 +10402,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Frowning',
     unified: '1F64D-200D-2642-FE0F',
+    keywords: [
+      'man_frowning',
+      'male',
+      'boy',
+      'man',
+      'sad',
+      'depressed',
+      'discouraged',
+      'unhappy'
+    ],
     sheet: [33, 14],
     skinVariations: [
       {
@@ -8411,6 +10441,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Oncoming Bus',
     unified: '1F68D',
     keywords: [
+      'oncoming_bus',
       'vehicle',
       'transportation'
     ],
@@ -8420,12 +10451,23 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Feather',
     unified: '1FAB6',
+    keywords: [
+      'feather',
+      'bird',
+      'fly'
+    ],
     sheet: [53, 5],
     shortName: 'feather'
   },
   {
-    name: 'Black Right Pointing Triangle with Double Vertical Bar',
+    name: 'Play or Pause Button',
     unified: '23EF-FE0F',
+    keywords: [
+      'play_or_pause_button',
+      'blue-square',
+      'play',
+      'pause'
+    ],
     sheet: [53, 38],
     shortName: 'black_right_pointing_triangle_with_double_vertical_bar'
   },
@@ -8433,6 +10475,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Spain Flag',
     unified: '1F1EA-1F1F8',
     keywords: [
+      'flag_spain',
       'spain',
       'flag',
       'nation',
@@ -8447,6 +10490,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fish Cake with Swirl Design',
     unified: '1F365',
     keywords: [
+      'fish_cake_with_swirl',
       'food',
       'japan',
       'sea',
@@ -8465,6 +10509,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Artist Palette',
     unified: '1F3A8',
     keywords: [
+      'artist_palette',
       'design',
       'paint',
       'draw',
@@ -8476,7 +10521,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Electric Plug',
     unified: '1F50C',
-    keywords: ['charger', 'power'],
+    keywords: [
+      'electric_plug',
+      'charger',
+      'power'
+    ],
     sheet: [27, 40],
     shortName: 'electric_plug'
   },
@@ -8485,6 +10534,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F62D',
     text: ':\'(',
     keywords: [
+      'loudly_crying_face',
       'face',
       'cry',
       'tears',
@@ -8499,6 +10549,16 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Woman Frowning',
     unified: '1F64D-200D-2640-FE0F',
     obsoletes: '1F64D',
+    keywords: [
+      'woman_frowning',
+      'female',
+      'girl',
+      'woman',
+      'sad',
+      'depressed',
+      'discouraged',
+      'unhappy'
+    ],
     sheet: [33, 8],
     skinVariations: [
       {
@@ -8528,6 +10588,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Trolleybus',
     unified: '1F68E',
     keywords: [
+      'trolleybus',
       'bart',
       'transportation',
       'vehicle'
@@ -8538,6 +10599,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Flamingo',
     unified: '1F9A9',
+    keywords: ['flamingo', 'animal'],
     sheet: [43, 16],
     shortName: 'flamingo'
   },
@@ -8545,6 +10607,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Left-Pointing Triangle',
     unified: '25C0-FE0F',
     keywords: [
+      'reverse_button',
       'blue-square',
       'left',
       'direction'
@@ -8555,6 +10618,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ethiopia Flag',
     unified: '1F1EA-1F1F9',
+    keywords: [
+      'flag_ethiopia',
+      'et',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 45],
     shortName: 'flag-et'
   },
@@ -8562,6 +10633,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Personal Computer',
     unified: '1F4BB',
     keywords: [
+      'laptop',
       'technology',
       'laptop',
       'screen',
@@ -8575,6 +10647,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Face Screaming in Fear',
     unified: '1F631',
     keywords: [
+      'face_screaming_in_fear',
       'face',
       'munch',
       'scared',
@@ -8586,6 +10659,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Person with Pouting Face',
     unified: '1F64E',
+    keywords: [
+      'person_pouting',
+      'upset'
+    ],
     sheet: [33, 38],
     skinVariations: [
       {
@@ -8616,6 +10693,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Minibus',
     unified: '1F690',
     keywords: [
+      'minibus',
       'vehicle',
       'car',
       'transportation'
@@ -8626,7 +10704,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Moon Cake',
     unified: '1F96E',
-    keywords: ['food', 'autumn'],
+    keywords: [
+      'moon_cake',
+      'food',
+      'autumn'
+    ],
     sheet: [42, 11],
     shortName: 'moon_cake'
   },
@@ -8634,6 +10716,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Peacock',
     unified: '1F99A',
     keywords: [
+      'peacock',
       'animal',
       'nature',
       'peahen',
@@ -8646,6 +10729,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Spool of Thread',
     unified: '1F9F5',
     keywords: [
+      'thread',
       'needle',
       'sewing',
       'spool',
@@ -8657,13 +10741,24 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Black Left-Pointing Double Triangle',
     unified: '23EA',
-    keywords: ['play', 'blue-square'],
+    keywords: [
+      'fast_reverse_button',
+      'play',
+      'blue-square'
+    ],
     sheet: [53, 33],
     shortName: 'rewind'
   },
   {
     name: 'European Union Flag',
     unified: '1F1EA-1F1FA',
+    keywords: [
+      'flag_european_union',
+      'european',
+      'union',
+      'flag',
+      'banner'
+    ],
     sheet: [1, 46],
     shortName: 'flag-eu'
   },
@@ -8671,6 +10766,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dango',
     unified: '1F361',
     keywords: [
+      'dango',
       'food',
       'dessert',
       'sweet',
@@ -8685,6 +10781,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Desktop Computer',
     unified: '1F5A5-FE0F',
     keywords: [
+      'desktop_computer',
       'technology',
       'computing',
       'screen'
@@ -8696,6 +10793,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Confounded Face',
     unified: '1F616',
     keywords: [
+      'confounded_face',
       'face',
       'confused',
       'sick',
@@ -8709,6 +10807,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Pouting',
     unified: '1F64E-200D-2642-FE0F',
+    keywords: [
+      'man_pouting',
+      'male',
+      'boy',
+      'man'
+    ],
     sheet: [33, 32],
     skinVariations: [
       {
@@ -8738,6 +10842,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ambulance',
     unified: '1F691',
     keywords: [
+      'ambulance',
       'health',
       '911',
       'hospital'
@@ -8749,6 +10854,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Parrot',
     unified: '1F99C',
     keywords: [
+      'parrot',
       'animal',
       'nature',
       'bird',
@@ -8761,18 +10867,34 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Sewing Needle',
     unified: '1FAA1',
+    keywords: [
+      'sewing needle',
+      'stitches'
+    ],
     sheet: [52, 49],
     shortName: 'sewing_needle'
   },
   {
-    name: 'Black Left Pointing Double Triangle with Vertical Bar',
+    name: 'Last Track Button',
     unified: '23EE-FE0F',
+    keywords: [
+      'last_track_button',
+      'backward'
+    ],
     sheet: [53, 37],
     shortName: 'black_left_pointing_double_triangle_with_vertical_bar'
   },
   {
     name: 'Finland Flag',
     unified: '1F1EB-1F1EE',
+    keywords: [
+      'flag_finland',
+      'fi',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 47],
     shortName: 'flag-fi'
   },
@@ -8780,6 +10902,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Frog Face',
     unified: '1F438',
     keywords: [
+      'frog',
       'animal',
       'nature',
       'croak',
@@ -8792,6 +10915,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Up-Pointing Small Red Triangle',
     unified: '1F53C',
     keywords: [
+      'upwards_button',
       'blue-square',
       'triangle',
       'direction',
@@ -8805,7 +10929,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Printer',
     unified: '1F5A8-FE0F',
-    keywords: ['paper', 'ink'],
+    keywords: [
+      'printer',
+      'paper',
+      'ink'
+    ],
     sheet: [30, 8],
     shortName: 'printer'
   },
@@ -8813,6 +10941,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Persevering Face',
     unified: '1F623',
     keywords: [
+      'persevering_face',
       'face',
       'sick',
       'no',
@@ -8826,6 +10955,12 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Woman Pouting',
     unified: '1F64E-200D-2640-FE0F',
     obsoletes: '1F64E',
+    keywords: [
+      'woman_pouting',
+      'female',
+      'girl',
+      'woman'
+    ],
     sheet: [33, 26],
     skinVariations: [
       {
@@ -8855,6 +10990,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fire Engine',
     unified: '1F692',
     keywords: [
+      'fire_engine',
       'transportation',
       'cars',
       'vehicle'
@@ -8866,6 +11002,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dumpling',
     unified: '1F95F',
     keywords: [
+      'dumpling',
       'food',
       'empanada',
       'pierogi',
@@ -8878,6 +11015,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ball of Yarn',
     unified: '1F9F6',
     keywords: [
+      'yarn',
       'ball',
       'crochet',
       'knit'
@@ -8888,6 +11026,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Fiji Flag',
     unified: '1F1EB-1F1EF',
+    keywords: [
+      'flag_fiji',
+      'fj',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 48],
     shortName: 'flag-fj'
   },
@@ -8895,6 +11041,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Crocodile',
     unified: '1F40A',
     keywords: [
+      'crocodile',
       'animal',
       'nature',
       'reptile',
@@ -8910,6 +11057,7 @@ export const emojis: CompressedEmojiData[] = [
     text: ':(',
     emoticons: ['):', ':(', ':-('],
     keywords: [
+      'disappointed_face',
       'face',
       'sad',
       'upset',
@@ -8922,6 +11070,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Face with No Good Gesture',
     unified: '1F645',
+    keywords: [
+      'person_gesturing_no',
+      'decline'
+    ],
     sheet: [31, 55],
     skinVariations: [
       {
@@ -8952,6 +11104,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Police Car',
     unified: '1F693',
     keywords: [
+      'police_car',
       'vehicle',
       'cars',
       'transportation',
@@ -8965,13 +11118,18 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Fortune Cookie',
     unified: '1F960',
-    keywords: ['food', 'prophecy'],
+    keywords: [
+      'fortune_cookie',
+      'food',
+      'prophecy'
+    ],
     sheet: [41, 55],
     shortName: 'fortune_cookie'
   },
   {
     name: 'Knot',
     unified: '1FAA2',
+    keywords: ['knot', 'rope', 'scout'],
     sheet: [52, 50],
     shortName: 'knot'
   },
@@ -8979,6 +11137,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keyboard',
     unified: '2328-FE0F',
     keywords: [
+      'keyboard',
       'technology',
       'computer',
       'type',
@@ -8992,6 +11151,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Up-Pointing Double Triangle',
     unified: '23EB',
     keywords: [
+      'fast_up_button',
       'blue-square',
       'direction',
       'top'
@@ -9002,6 +11162,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Falkland Islands Flag',
     unified: '1F1EB-1F1F0',
+    keywords: [
+      'flag_falkland_islands',
+      'falkland',
+      'islands',
+      'malvinas',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 49],
     shortName: 'flag-fk'
   },
@@ -9009,6 +11179,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Turtle',
     unified: '1F422',
     keywords: [
+      'turtle',
       'animal',
       'slow',
       'nature',
@@ -9021,6 +11192,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Down-Pointing Small Red Triangle',
     unified: '1F53D',
     keywords: [
+      'downwards_button',
       'blue-square',
       'direction',
       'bottom'
@@ -9029,8 +11201,12 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'arrow_down_small'
   },
   {
-    name: 'Three Button Mouse',
+    name: 'Computer Mouse',
     unified: '1F5B1-FE0F',
+    keywords: [
+      'computer_mouse',
+      'click'
+    ],
     sheet: [30, 9],
     shortName: 'three_button_mouse'
   },
@@ -9038,6 +11214,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Face with Cold Sweat',
     unified: '1F613',
     keywords: [
+      'downcast_face_with_sweat',
       'face',
       'hot',
       'sad',
@@ -9050,6 +11227,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Gesturing No',
     unified: '1F645-200D-2642-FE0F',
+    keywords: [
+      'man_gesturing_no',
+      'male',
+      'boy',
+      'man',
+      'nope'
+    ],
     sheet: [31, 49],
     skinVariations: [
       {
@@ -9079,6 +11263,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Oncoming Police Car',
     unified: '1F694',
     keywords: [
+      'oncoming_police_car',
       'vehicle',
       'law',
       'legal',
@@ -9091,13 +11276,27 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Takeout Box',
     unified: '1F961',
-    keywords: ['food', 'leftovers'],
+    keywords: [
+      'takeout_box',
+      'food',
+      'leftovers'
+    ],
     sheet: [41, 56],
     shortName: 'takeout_box'
   },
   {
     name: 'Micronesia Flag',
     unified: '1F1EB-1F1F2',
+    keywords: [
+      'flag_micronesia',
+      'micronesia',
+      'federated',
+      'states',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 50],
     shortName: 'flag-fm'
   },
@@ -9105,6 +11304,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Trackball',
     unified: '1F5B2-FE0F',
     keywords: [
+      'trackball',
       'technology',
       'trackpad'
     ],
@@ -9115,6 +11315,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Weary Face',
     unified: '1F629',
     keywords: [
+      'weary_face',
       'face',
       'tired',
       'sleepy',
@@ -9129,6 +11330,13 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Woman Gesturing No',
     unified: '1F645-200D-2640-FE0F',
     obsoletes: '1F645',
+    keywords: [
+      'woman_gesturing_no',
+      'female',
+      'girl',
+      'woman',
+      'nope'
+    ],
     sheet: [31, 43],
     skinVariations: [
       {
@@ -9158,6 +11366,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Taxi',
     unified: '1F695',
     keywords: [
+      'taxi',
       'uber',
       'vehicle',
       'cars',
@@ -9169,7 +11378,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Crab',
     unified: '1F980',
-    keywords: ['animal', 'crustacean'],
+    keywords: [
+      'crab',
+      'animal',
+      'crustacean'
+    ],
     sheet: [42, 33],
     shortName: 'crab'
   },
@@ -9177,6 +11390,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Lizard',
     unified: '1F98E',
     keywords: [
+      'lizard',
       'animal',
       'nature',
       'reptile'
@@ -9188,6 +11402,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Down-Pointing Double Triangle',
     unified: '23EC',
     keywords: [
+      'fast_down_button',
       'blue-square',
       'direction',
       'bottom'
@@ -9198,6 +11413,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Faroe Islands Flag',
     unified: '1F1EB-1F1F4',
+    keywords: [
+      'flag_faroe_islands',
+      'faroe',
+      'islands',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 51],
     shortName: 'flag-fo'
   },
@@ -9205,6 +11429,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Snake',
     unified: '1F40D',
     keywords: [
+      'snake',
       'animal',
       'evil',
       'nature',
@@ -9218,6 +11443,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Minidisc',
     unified: '1F4BD',
     keywords: [
+      'computer_disk',
       'technology',
       'record',
       'data',
@@ -9231,6 +11457,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tired Face',
     unified: '1F62B',
     keywords: [
+      'tired_face',
       'sick',
       'whine',
       'upset',
@@ -9243,12 +11470,8 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Face with Ok Gesture',
     unified: '1F646',
     keywords: [
-      'women',
-      'girl',
-      'female',
-      'pink',
-      'human',
-      'woman'
+      'person_gesturing_ok',
+      'agree'
     ],
     sheet: [32, 15],
     skinVariations: [
@@ -9280,6 +11503,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Oncoming Taxi',
     unified: '1F696',
     keywords: [
+      'oncoming_taxi',
       'vehicle',
       'cars',
       'uber'
@@ -9291,6 +11515,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Lobster',
     unified: '1F99E',
     keywords: [
+      'lobster',
       'animal',
       'nature',
       'bisque',
@@ -9301,8 +11526,13 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'lobster'
   },
   {
-    name: 'Double Vertical Bar',
+    name: 'Pause Button',
     unified: '23F8-FE0F',
+    keywords: [
+      'pause_button',
+      'pause',
+      'blue-square'
+    ],
     sheet: [53, 43],
     shortName: 'double_vertical_bar'
   },
@@ -9310,6 +11540,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'France Flag',
     unified: '1F1EB-1F1F7',
     keywords: [
+      'flag_france',
       'banner',
       'flag',
       'nation',
@@ -9325,6 +11556,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dragon Face',
     unified: '1F432',
     keywords: [
+      'dragon_face',
       'animal',
       'myth',
       'nature',
@@ -9338,6 +11570,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Floppy Disk',
     unified: '1F4BE',
     keywords: [
+      'floppy_disk',
       'oldschool',
       'technology',
       'save',
@@ -9350,6 +11583,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Gesturing Ok',
     unified: '1F646-200D-2642-FE0F',
+    keywords: [
+      'man_gesturing_ok',
+      'men',
+      'boy',
+      'male',
+      'blue',
+      'human',
+      'man'
+    ],
     sheet: [32, 9],
     skinVariations: [
       {
@@ -9378,6 +11620,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Automobile',
     unified: '1F697',
+    keywords: [
+      'automobile',
+      'red',
+      'transportation',
+      'vehicle'
+    ],
     sheet: [34, 15],
     shortNames: ['red_car'],
     shortName: 'car'
@@ -9385,6 +11633,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Yawning Face',
     unified: '1F971',
+    keywords: [
+      'yawning_face',
+      'tired',
+      'sleepy',
+      ''
+    ],
     sheet: [42, 14],
     shortName: 'yawning_face'
   },
@@ -9392,6 +11646,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Shrimp',
     unified: '1F990',
     keywords: [
+      'shrimp',
       'animal',
       'ocean',
       'nature',
@@ -9401,14 +11656,26 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'shrimp'
   },
   {
-    name: 'Black Square for Stop',
+    name: 'Stop Button',
     unified: '23F9-FE0F',
+    keywords: [
+      'stop_button',
+      'blue-square'
+    ],
     sheet: [53, 44],
     shortName: 'black_square_for_stop'
   },
   {
     name: 'Gabon Flag',
     unified: '1F1EC-1F1E6',
+    keywords: [
+      'flag_gabon',
+      'ga',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 53],
     shortName: 'flag-ga'
   },
@@ -9416,6 +11683,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dragon',
     unified: '1F409',
     keywords: [
+      'dragon',
       'animal',
       'myth',
       'nature',
@@ -9429,6 +11697,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Optical Disc',
     unified: '1F4BF',
     keywords: [
+      'optical_disk',
       'technology',
       'dvd',
       'disk',
@@ -9442,6 +11711,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Face with Look of Triumph',
     unified: '1F624',
     keywords: [
+      'face_with_steam_from_nose',
       'face',
       'gas',
       'phew',
@@ -9455,6 +11725,15 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Woman Gesturing Ok',
     unified: '1F646-200D-2640-FE0F',
     obsoletes: '1F646',
+    keywords: [
+      'woman_gesturing_ok',
+      'women',
+      'girl',
+      'female',
+      'pink',
+      'human',
+      'woman'
+    ],
     sheet: [32, 3],
     skinVariations: [
       {
@@ -9484,6 +11763,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Oncoming Automobile',
     unified: '1F698',
     keywords: [
+      'oncoming_automobile',
       'car',
       'vehicle',
       'transportation'
@@ -9495,6 +11775,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squid',
     unified: '1F991',
     keywords: [
+      'squid',
       'animal',
       'nature',
       'ocean',
@@ -9504,14 +11785,36 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'squid'
   },
   {
-    name: 'Black Circle for Record',
+    name: 'Record Button',
     unified: '23FA-FE0F',
+    keywords: [
+      'record_button',
+      'blue-square'
+    ],
     sheet: [53, 45],
     shortName: 'black_circle_for_record'
   },
   {
     name: 'United Kingdom Flag',
     unified: '1F1EC-1F1E7',
+    keywords: [
+      'flag_united_kingdom',
+      'united',
+      'kingdom',
+      'great',
+      'britain',
+      'northern',
+      'ireland',
+      'flag',
+      'nation',
+      'country',
+      'banner',
+      'british',
+      'UK',
+      'english',
+      'england',
+      'union jack'
+    ],
     sheet: [1, 54],
     shortNames: ['uk', 'flag-gb'],
     shortName: 'gb'
@@ -9519,6 +11822,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Information Desk Person',
     unified: '1F481',
+    keywords: [
+      'person_tipping_hand',
+      'information'
+    ],
     sheet: [24, 5],
     skinVariations: [
       {
@@ -9548,7 +11855,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Dvd',
     unified: '1F4C0',
-    keywords: ['cd', 'disk', 'disc'],
+    keywords: [
+      'dvd',
+      'cd',
+      'disk',
+      'disc'
+    ],
     sheet: [26, 23],
     shortName: 'dvd'
   },
@@ -9556,6 +11868,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pouting Face',
     unified: '1F621',
     keywords: [
+      'pouting_face',
       'angry',
       'mad',
       'hate',
@@ -9568,6 +11881,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Recreational Vehicle',
     unified: '1F699',
     keywords: [
+      'sport_utility_vehicle',
       'transportation',
       'vehicle'
     ],
@@ -9578,6 +11892,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sauropod',
     unified: '1F995',
     keywords: [
+      'sauropod',
       'animal',
       'nature',
       'dinosaur',
@@ -9592,18 +11907,31 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Oyster',
     unified: '1F9AA',
+    keywords: ['oyster', 'food'],
     sheet: [43, 17],
     shortName: 'oyster'
   },
   {
-    name: 'Eject',
+    name: 'Eject Button',
     unified: '23CF-FE0F',
+    keywords: [
+      'eject_button',
+      'blue-square'
+    ],
     sheet: [53, 31],
     shortName: 'eject'
   },
   {
     name: 'Grenada Flag',
     unified: '1F1EC-1F1E9',
+    keywords: [
+      'flag_grenada',
+      'gd',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 55],
     shortName: 'flag-gd'
   },
@@ -9611,6 +11939,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Soft Ice Cream',
     unified: '1F366',
     keywords: [
+      'soft_ice_cream',
       'food',
       'hot',
       'dessert',
@@ -9623,6 +11952,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cinema',
     unified: '1F3A6',
     keywords: [
+      'cinema',
       'blue-square',
       'record',
       'film',
@@ -9637,6 +11967,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Tipping Hand',
     unified: '1F481-200D-2642-FE0F',
+    keywords: [
+      'man_tipping_hand',
+      'male',
+      'boy',
+      'man',
+      'human',
+      'information'
+    ],
     sheet: [23, 57],
     skinVariations: [
       {
@@ -9667,6 +12005,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F620',
     emoticons: ['>:(', '>:-('],
     keywords: [
+      'angry_face',
       'mad',
       'face',
       'annoyed',
@@ -9678,6 +12017,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pickup Truck',
     unified: '1F6FB',
+    keywords: [
+      'pickup truck',
+      'car',
+      'transportation'
+    ],
     sheet: [36, 53],
     shortName: 'pickup_truck'
   },
@@ -9685,6 +12029,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'T-Rex',
     unified: '1F996',
     keywords: [
+      't_rex',
       'animal',
       'nature',
       'dinosaur',
@@ -9697,13 +12042,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Abacus',
     unified: '1F9EE',
-    keywords: ['calculation'],
+    keywords: ['abacus', 'calculation'],
     sheet: [51, 57],
     shortName: 'abacus'
   },
   {
     name: 'Georgia Flag',
     unified: '1F1EC-1F1EA',
+    keywords: [
+      'flag_georgia',
+      'ge',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 56],
     shortName: 'flag-ge'
   },
@@ -9711,6 +12064,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Shaved Ice',
     unified: '1F367',
     keywords: [
+      'shaved_ice',
       'hot',
       'dessert',
       'summer'
@@ -9721,7 +12075,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Movie Camera',
     unified: '1F3A5',
-    keywords: ['film', 'record'],
+    keywords: [
+      'movie_camera',
+      'film',
+      'record'
+    ],
     sheet: [8, 3],
     shortName: 'movie_camera'
   },
@@ -9729,6 +12087,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Spouting Whale',
     unified: '1F433',
     keywords: [
+      'spouting_whale',
       'animal',
       'nature',
       'sea',
@@ -9741,6 +12100,14 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Woman Tipping Hand',
     unified: '1F481-200D-2640-FE0F',
     obsoletes: '1F481',
+    keywords: [
+      'woman_tipping_hand',
+      'female',
+      'girl',
+      'woman',
+      'human',
+      'information'
+    ],
     sheet: [23, 51],
     skinVariations: [
       {
@@ -9770,6 +12137,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Low Brightness Symbol',
     unified: '1F505',
     keywords: [
+      'dim_button',
       'sun',
       'afternoon',
       'warm',
@@ -9782,6 +12150,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Delivery Truck',
     unified: '1F69A',
     keywords: [
+      'delivery_truck',
       'cars',
       'transportation'
     ],
@@ -9791,6 +12160,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Serious Face with Symbols Covering Mouth',
     unified: '1F92C',
+    keywords: [
+      'face_with_symbols_on_mouth',
+      'face',
+      'swearing',
+      'cursing',
+      'cussing',
+      'profanity',
+      'expletive'
+    ],
     sheet: [38, 45],
     shortNames: [
       'serious_face_with_symbols_covering_mouth'
@@ -9800,6 +12178,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'French Guiana Flag',
     unified: '1F1EC-1F1EB',
+    keywords: [
+      'flag_french_guiana',
+      'french',
+      'guiana',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [1, 57],
     shortName: 'flag-gf'
   },
@@ -9807,6 +12194,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ice Cream',
     unified: '1F368',
     keywords: [
+      'ice_cream',
       'food',
       'hot',
       'dessert'
@@ -9817,6 +12205,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Film Frames',
     unified: '1F39E-FE0F',
+    keywords: ['film_frames', 'movie'],
     sheet: [7, 54],
     shortName: 'film_frames'
   },
@@ -9824,6 +12213,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Whale',
     unified: '1F40B',
     keywords: [
+      'whale',
       'animal',
       'nature',
       'sea',
@@ -9835,20 +12225,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'High Brightness Symbol',
     unified: '1F506',
-    keywords: ['sun', 'light'],
+    keywords: [
+      'bright_button',
+      'sun',
+      'light'
+    ],
     sheet: [27, 34],
     shortName: 'high_brightness'
   },
   {
     name: 'Smiling Face with Horns',
     unified: '1F608',
-    keywords: ['devil', 'horns'],
+    keywords: [
+      'smiling_face_with_horns',
+      'devil',
+      'horns'
+    ],
     sheet: [30, 40],
     shortName: 'smiling_imp'
   },
   {
     name: 'Happy Person Raising One Hand',
     unified: '1F64B',
+    keywords: [
+      'person_raising_hand',
+      'question'
+    ],
     sheet: [32, 54],
     skinVariations: [
       {
@@ -9879,6 +12281,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Articulated Lorry',
     unified: '1F69B',
     keywords: [
+      'articulated_lorry',
       'vehicle',
       'cars',
       'transportation',
@@ -9890,6 +12293,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Guernsey Flag',
     unified: '1F1EC-1F1EC',
+    keywords: [
+      'flag_guernsey',
+      'gg',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 0],
     shortName: 'flag-gg'
   },
@@ -9897,6 +12308,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Doughnut',
     unified: '1F369',
     keywords: [
+      'doughnut',
       'food',
       'dessert',
       'snack',
@@ -9910,6 +12322,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dolphin',
     unified: '1F42C',
     keywords: [
+      'dolphin',
       'animal',
       'nature',
       'fish',
@@ -9927,6 +12340,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Imp',
     unified: '1F47F',
     keywords: [
+      'angry_face_with_horns',
       'devil',
       'angry',
       'horns'
@@ -9938,6 +12352,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Antenna with Bars',
     unified: '1F4F6',
     keywords: [
+      'antenna_bars',
       'blue-square',
       'reception',
       'phone',
@@ -9954,6 +12369,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Film Projector',
     unified: '1F4FD-FE0F',
     keywords: [
+      'film_projector',
       'video',
       'tape',
       'record',
@@ -9965,6 +12381,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Raising Hand',
     unified: '1F64B-200D-2642-FE0F',
+    keywords: [
+      'man_raising_hand',
+      'male',
+      'boy',
+      'man'
+    ],
     sheet: [32, 48],
     skinVariations: [
       {
@@ -9994,6 +12416,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tractor',
     unified: '1F69C',
     keywords: [
+      'tractor',
       'vehicle',
       'car',
       'farming',
@@ -10005,6 +12428,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ghana Flag',
     unified: '1F1EC-1F1ED',
+    keywords: [
+      'flag_ghana',
+      'gh',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 1],
     shortName: 'flag-gh'
   },
@@ -10012,6 +12443,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cookie',
     unified: '1F36A',
     keywords: [
+      'cookie',
       'food',
       'snack',
       'oreo',
@@ -10026,6 +12458,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clapper Board',
     unified: '1F3AC',
     keywords: [
+      'clapper_board',
       'movie',
       'film',
       'record'
@@ -10037,6 +12470,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Racing Car',
     unified: '1F3CE-FE0F',
     keywords: [
+      'racing_car',
       'sports',
       'race',
       'fast',
@@ -10050,6 +12484,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Skull',
     unified: '1F480',
     keywords: [
+      'skull',
       'dead',
       'skeleton',
       'creepy',
@@ -10062,6 +12497,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Vibration Mode',
     unified: '1F4F3',
     keywords: [
+      'vibration_mode',
       'orange-square',
       'phone'
     ],
@@ -10072,6 +12508,12 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Woman Raising Hand',
     unified: '1F64B-200D-2640-FE0F',
     obsoletes: '1F64B',
+    keywords: [
+      'woman_raising_hand',
+      'female',
+      'girl',
+      'woman'
+    ],
     sheet: [32, 42],
     skinVariations: [
       {
@@ -10100,12 +12542,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Seal',
     unified: '1F9AD',
+    keywords: [
+      'seal',
+      'animal',
+      'creature',
+      'sea'
+    ],
     sheet: [43, 20],
     shortName: 'seal'
   },
   {
     name: 'Gibraltar Flag',
     unified: '1F1EC-1F1EE',
+    keywords: [
+      'flag_gibraltar',
+      'gi',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 2],
     shortName: 'flag-gi'
   },
@@ -10113,6 +12569,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Birthday Cake',
     unified: '1F382',
     keywords: [
+      'birthday_cake',
       'food',
       'dessert',
       'cake'
@@ -10121,8 +12578,14 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'birthday'
   },
   {
-    name: 'Racing Motorcycle',
+    name: 'Motorcycle',
     unified: '1F3CD-FE0F',
+    keywords: [
+      'motorcycle',
+      'race',
+      'sports',
+      'fast'
+    ],
     sheet: [10, 22],
     shortName: 'racing_motorcycle'
   },
@@ -10130,6 +12593,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fish',
     unified: '1F41F',
     keywords: [
+      'fish',
       'animal',
       'food',
       'nature'
@@ -10141,6 +12605,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mobile Phone off',
     unified: '1F4F4',
     keywords: [
+      'mobile_phone_off',
       'mute',
       'orange-square',
       'silence',
@@ -10153,6 +12618,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Television',
     unified: '1F4FA',
     keywords: [
+      'television',
       'technology',
       'program',
       'oldschool',
@@ -10165,6 +12631,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Deaf Person',
     unified: '1F9CF',
+    keywords: [
+      'deaf_person',
+      'accessibility'
+    ],
     sheet: [45, 28],
     skinVariations: [
       {
@@ -10194,6 +12664,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Skull and Crossbones',
     unified: '2620-FE0F',
     keywords: [
+      'skull_and_crossbones',
       'poison',
       'danger',
       'deadly',
@@ -10208,13 +12679,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Greenland Flag',
     unified: '1F1EC-1F1F1',
+    keywords: [
+      'flag_greenland',
+      'gl',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 3],
     shortName: 'flag-gl'
   },
   {
     name: 'Shortcake',
     unified: '1F370',
-    keywords: ['food', 'dessert'],
+    keywords: [
+      'shortcake',
+      'food',
+      'dessert'
+    ],
     sheet: [7, 8],
     shortName: 'cake'
   },
@@ -10222,6 +12705,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tropical Fish',
     unified: '1F420',
     keywords: [
+      'tropical_fish',
       'animal',
       'swim',
       'ocean',
@@ -10234,6 +12718,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pile of Poo',
     unified: '1F4A9',
+    keywords: [
+      'pile_of_poo',
+      'hankey',
+      'shitface',
+      'fail',
+      'turd',
+      'shit'
+    ],
     sheet: [25, 53],
     shortNames: ['poop', 'shit'],
     shortName: 'hankey'
@@ -10242,6 +12734,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Camera',
     unified: '1F4F7',
     keywords: [
+      'camera',
       'gadgets',
       'photography'
     ],
@@ -10252,6 +12745,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Motor Scooter',
     unified: '1F6F5',
     keywords: [
+      'motor_scooter',
       'vehicle',
       'vespa',
       'sasha'
@@ -10262,6 +12756,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Deaf Man',
     unified: '1F9CF-200D-2642-FE0F',
+    keywords: [
+      'deaf_man',
+      'accessibility'
+    ],
     sheet: [45, 22],
     skinVariations: [
       {
@@ -10290,6 +12788,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Female Sign',
     unified: '2640-FE0F',
+    keywords: [
+      'female_sign',
+      'woman',
+      'women',
+      'lady',
+      'girl'
+    ],
     sheet: [54, 23],
     hidden: ['apple'],
     shortName: 'female_sign'
@@ -10297,6 +12802,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Gambia Flag',
     unified: '1F1EC-1F1F2',
+    keywords: [
+      'flag_gambia',
+      'gm',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 4],
     shortName: 'flag-gm'
   },
@@ -10304,6 +12817,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Blowfish',
     unified: '1F421',
     keywords: [
+      'blowfish',
       'animal',
       'nature',
       'food',
@@ -10316,19 +12830,28 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Camera with Flash',
     unified: '1F4F8',
+    keywords: [
+      'camera_with_flash',
+      'photography',
+      'gadgets'
+    ],
     sheet: [27, 21],
     shortName: 'camera_with_flash'
   },
   {
     name: 'Clown Face',
     unified: '1F921',
-    keywords: ['face'],
+    keywords: ['clown_face', 'face'],
     sheet: [38, 17],
     shortName: 'clown_face'
   },
   {
     name: 'Manual Wheelchair',
     unified: '1F9BD',
+    keywords: [
+      'manual_wheelchair',
+      'accessibility'
+    ],
     sheet: [44, 23],
     shortName: 'manual_wheelchair'
   },
@@ -10336,6 +12859,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cupcake',
     unified: '1F9C1',
     keywords: [
+      'cupcake',
       'food',
       'dessert',
       'bakery',
@@ -10347,6 +12871,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Deaf Woman',
     unified: '1F9CF-200D-2640-FE0F',
+    keywords: [
+      'deaf_woman',
+      'accessibility'
+    ],
     sheet: [45, 16],
     skinVariations: [
       {
@@ -10375,6 +12903,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Male Sign',
     unified: '2642-FE0F',
+    keywords: [
+      'male_sign',
+      'man',
+      'boy',
+      'men'
+    ],
     sheet: [54, 24],
     hidden: ['apple'],
     shortName: 'male_sign'
@@ -10382,6 +12916,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Guinea Flag',
     unified: '1F1EC-1F1F3',
+    keywords: [
+      'flag_guinea',
+      'gn',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 5],
     shortName: 'flag-gn'
   },
@@ -10389,6 +12931,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Japanese Ogre',
     unified: '1F479',
     keywords: [
+      'ogre',
       'monster',
       'red',
       'mask',
@@ -10406,13 +12949,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Video Camera',
     unified: '1F4F9',
-    keywords: ['film', 'record'],
+    keywords: [
+      'video_camera',
+      'film',
+      'record'
+    ],
     sheet: [27, 22],
     shortName: 'video_camera'
   },
   {
     name: 'Person Bowing Deeply',
     unified: '1F647',
+    keywords: [
+      'person_bowing',
+      'respectiful'
+    ],
     sheet: [32, 33],
     skinVariations: [
       {
@@ -10443,6 +12994,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pie',
     unified: '1F967',
     keywords: [
+      'pie',
       'food',
       'dessert',
       'pastry'
@@ -10454,6 +13006,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Shark',
     unified: '1F988',
     keywords: [
+      'shark',
       'animal',
       'nature',
       'fish',
@@ -10469,18 +13022,34 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Motorized Wheelchair',
     unified: '1F9BC',
+    keywords: [
+      'motorized_wheelchair',
+      'accessibility'
+    ],
     sheet: [44, 22],
     shortName: 'motorized_wheelchair'
   },
   {
     name: 'Transgender Symbol',
     unified: '26A7-FE0F',
+    keywords: [
+      'transgender symbol',
+      'lgbtq'
+    ],
     sheet: [54, 57],
     shortName: 'transgender_symbol'
   },
   {
     name: 'Guadeloupe Flag',
     unified: '1F1EC-1F1F5',
+    keywords: [
+      'flag_guadeloupe',
+      'gp',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 6],
     shortName: 'flag-gp'
   },
@@ -10488,6 +13057,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Chocolate Bar',
     unified: '1F36B',
     keywords: [
+      'chocolate_bar',
       'food',
       'snack',
       'dessert',
@@ -10500,6 +13070,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Octopus',
     unified: '1F419',
     keywords: [
+      'octopus',
       'animal',
       'creature',
       'ocean',
@@ -10514,6 +13085,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Japanese Goblin',
     unified: '1F47A',
     keywords: [
+      'goblin',
       'red',
       'evil',
       'mask',
@@ -10530,6 +13102,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Videocassette',
     unified: '1F4FC',
     keywords: [
+      'videocassette',
       'record',
       'video',
       'oldschool',
@@ -10543,6 +13116,12 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Bowing',
     unified: '1F647-200D-2642-FE0F',
     obsoletes: '1F647',
+    keywords: [
+      'man_bowing',
+      'man',
+      'male',
+      'boy'
+    ],
     sheet: [32, 27],
     skinVariations: [
       {
@@ -10571,19 +13150,37 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Auto Rickshaw',
     unified: '1F6FA',
+    keywords: [
+      'auto_rickshaw',
+      'move',
+      'transportation'
+    ],
     sheet: [36, 52],
     shortName: 'auto_rickshaw'
   },
   {
     name: 'Heavy Multiplication X',
     unified: '2716-FE0F',
-    keywords: ['math', 'calculation'],
+    keywords: [
+      'multiplication_sign',
+      'math',
+      'calculation'
+    ],
     sheet: [56, 17],
     shortName: 'heavy_multiplication_x'
   },
   {
     name: 'Equatorial Guinea Flag',
     unified: '1F1EC-1F1F6',
+    keywords: [
+      'flag_equatorial_guinea',
+      'equatorial',
+      'gn',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 7],
     shortName: 'flag-gq'
   },
@@ -10591,6 +13188,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Candy',
     unified: '1F36C',
     keywords: [
+      'candy',
       'snack',
       'dessert',
       'sweet',
@@ -10603,6 +13201,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Spiral Shell',
     unified: '1F41A',
     keywords: [
+      'spiral_shell',
       'nature',
       'sea',
       'beach'
@@ -10614,6 +13213,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ghost',
     unified: '1F47B',
     keywords: [
+      'ghost',
       'halloween',
       'spooky',
       'scary'
@@ -10625,6 +13225,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Left-Pointing Magnifying Glass',
     unified: '1F50D',
     keywords: [
+      'magnifying_glass_tilted_left',
       'search',
       'zoom',
       'find',
@@ -10636,6 +13237,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Bowing',
     unified: '1F647-200D-2640-FE0F',
+    keywords: [
+      'woman_bowing',
+      'woman',
+      'female',
+      'girl'
+    ],
     sheet: [32, 21],
     skinVariations: [
       {
@@ -10665,6 +13272,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bicycle',
     unified: '1F6B2',
     keywords: [
+      'bicycle',
       'sports',
       'bicycle',
       'exercise',
@@ -10677,6 +13285,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Heavy Plus Sign',
     unified: '2795',
     keywords: [
+      'plus_sign',
       'math',
       'calculation',
       'addition',
@@ -10689,6 +13298,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Greece Flag',
     unified: '1F1EC-1F1F7',
+    keywords: [
+      'flag_greece',
+      'gr',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 8],
     shortName: 'flag-gr'
   },
@@ -10696,6 +13313,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Lollipop',
     unified: '1F36D',
     keywords: [
+      'lollipop',
       'food',
       'snack',
       'candy',
@@ -10708,6 +13326,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Snail',
     unified: '1F40C',
     keywords: [
+      'snail',
       'slow',
       'animal',
       'shell'
@@ -10719,6 +13338,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Extraterrestrial Alien',
     unified: '1F47D',
     keywords: [
+      'alien',
       'UFO',
       'paul',
       'weird',
@@ -10731,6 +13351,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Right-Pointing Magnifying Glass',
     unified: '1F50E',
     keywords: [
+      'magnifying_glass_tilted_right',
       'search',
       'zoom',
       'find',
@@ -10742,12 +13363,22 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Scooter',
     unified: '1F6F4',
+    keywords: [
+      'kick_scooter',
+      'vehicle',
+      'kick',
+      'razor'
+    ],
     sheet: [36, 46],
     shortName: 'scooter'
   },
   {
     name: 'Face Palm',
     unified: '1F926',
+    keywords: [
+      'person_facepalming',
+      'disappointed'
+    ],
     sheet: [38, 34],
     skinVariations: [
       {
@@ -10777,6 +13408,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Heavy Minus Sign',
     unified: '2796',
     keywords: [
+      'minus_sign',
       'math',
       'calculation',
       'subtract',
@@ -10788,13 +13420,28 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'South Georgia & South Sandwich Islands Flag',
     unified: '1F1EC-1F1F8',
+    keywords: [
+      'flag_south_georgia_south_sandwich_islands',
+      'south',
+      'georgia',
+      'sandwich',
+      'islands',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 9],
     shortName: 'flag-gs'
   },
   {
     name: 'Custard',
     unified: '1F36E',
-    keywords: ['dessert', 'food'],
+    keywords: [
+      'custard',
+      'dessert',
+      'food'
+    ],
     sheet: [7, 6],
     shortName: 'custard'
   },
@@ -10802,6 +13449,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Alien Monster',
     unified: '1F47E',
     keywords: [
+      'alien_monster',
       'game',
       'arcade',
       'play'
@@ -10812,20 +13460,27 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Candle',
     unified: '1F56F-FE0F',
-    keywords: ['fire', 'wax'],
+    keywords: ['candle', 'fire', 'wax'],
     sheet: [29, 4],
     shortName: 'candle'
   },
   {
     name: 'Skateboard',
     unified: '1F6F9',
-    keywords: ['board'],
+    keywords: ['skateboard', 'board'],
     sheet: [36, 51],
     shortName: 'skateboard'
   },
   {
     name: 'Man Facepalming',
     unified: '1F926-200D-2642-FE0F',
+    keywords: [
+      'man_facepalming',
+      'man',
+      'male',
+      'boy',
+      'disbelief'
+    ],
     sheet: [38, 28],
     skinVariations: [
       {
@@ -10855,6 +13510,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Butterfly',
     unified: '1F98B',
     keywords: [
+      'butterfly',
       'animal',
       'insect',
       'nature',
@@ -10867,6 +13523,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Heavy Division Sign',
     unified: '2797',
     keywords: [
+      'division_sign',
       'divide',
       'math',
       'calculation'
@@ -10877,6 +13534,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Guatemala Flag',
     unified: '1F1EC-1F1F9',
+    keywords: [
+      'flag_guatemala',
+      'gt',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 10],
     shortName: 'flag-gt'
   },
@@ -10884,6 +13549,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Honey Pot',
     unified: '1F36F',
     keywords: [
+      'honey_pot',
       'bees',
       'sweet',
       'kitchen'
@@ -10895,6 +13561,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bug',
     unified: '1F41B',
     keywords: [
+      'bug',
       'animal',
       'insect',
       'nature',
@@ -10907,6 +13574,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Electric Light Bulb',
     unified: '1F4A1',
     keywords: [
+      'light_bulb',
       'light',
       'electricity',
       'idea'
@@ -10917,18 +13585,36 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Roller Skate',
     unified: '1F6FC',
+    keywords: [
+      'roller skate',
+      'footwear',
+      'sports'
+    ],
     sheet: [36, 54],
     shortName: 'roller_skate'
   },
   {
     name: 'Robot Face',
     unified: '1F916',
+    keywords: [
+      'robot',
+      'computer',
+      'machine',
+      'bot'
+    ],
     sheet: [37, 29],
     shortName: 'robot_face'
   },
   {
     name: 'Woman Facepalming',
     unified: '1F926-200D-2640-FE0F',
+    keywords: [
+      'woman_facepalming',
+      'woman',
+      'female',
+      'girl',
+      'disbelief'
+    ],
     sheet: [38, 22],
     skinVariations: [
       {
@@ -10957,13 +13643,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Infinity',
     unified: '267E-FE0F',
-    keywords: ['forever'],
+    keywords: ['infinity', 'forever'],
     sheet: [54, 44],
     shortName: 'infinity'
   },
   {
     name: 'Guam Flag',
     unified: '1F1EC-1F1FA',
+    keywords: [
+      'flag_guam',
+      'gu',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 11],
     shortName: 'flag-gu'
   },
@@ -10971,6 +13665,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Baby Bottle',
     unified: '1F37C',
     keywords: [
+      'baby_bottle',
       'food',
       'container',
       'milk'
@@ -10982,6 +13677,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ant',
     unified: '1F41C',
     keywords: [
+      'ant',
       'animal',
       'insect',
       'nature',
@@ -10994,6 +13690,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Electric Torch',
     unified: '1F526',
     keywords: [
+      'flashlight',
       'dark',
       'camping',
       'sight',
@@ -11006,6 +13703,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Smiling Cat Face with Open Mouth',
     unified: '1F63A',
     keywords: [
+      'grinning_cat',
       'animal',
       'cats',
       'happy',
@@ -11018,6 +13716,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bus Stop',
     unified: '1F68F',
     keywords: [
+      'bus_stop',
       'transportation',
       'wait'
     ],
@@ -11027,6 +13726,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Shrug',
     unified: '1F937',
+    keywords: [
+      'person_shrugging',
+      'regardless'
+    ],
     sheet: [39, 57],
     skinVariations: [
       {
@@ -11056,6 +13759,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Double Exclamation Mark',
     unified: '203C-FE0F',
     keywords: [
+      'double_exclamation_mark',
       'exclamation',
       'surprise'
     ],
@@ -11065,6 +13769,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Guinea-Bissau Flag',
     unified: '1F1EC-1F1FC',
+    keywords: [
+      'flag_guinea_bissau',
+      'gw',
+      'bissau',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 12],
     shortName: 'flag-gw'
   },
@@ -11072,6 +13785,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Izakaya Lantern',
     unified: '1F3EE',
     keywords: [
+      'red_paper_lantern',
       'light',
       'paper',
       'halloween',
@@ -11084,6 +13798,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Honeybee',
     unified: '1F41D',
+    keywords: [
+      'honeybee',
+      'animal',
+      'insect',
+      'nature',
+      'bug',
+      'spring',
+      'honey'
+    ],
     sheet: [11, 49],
     shortNames: ['honeybee'],
     shortName: 'bee'
@@ -11092,6 +13815,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Grinning Cat Face with Smiling Eyes',
     unified: '1F638',
     keywords: [
+      'grinning_cat_with_smiling_eyes',
       'animal',
       'cats',
       'smile'
@@ -11103,6 +13827,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Motorway',
     unified: '1F6E3-FE0F',
     keywords: [
+      'motorway',
       'road',
       'cupertino',
       'interstate',
@@ -11114,6 +13839,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Shrugging',
     unified: '1F937-200D-2642-FE0F',
+    keywords: [
+      'man_shrugging',
+      'man',
+      'male',
+      'boy',
+      'confused',
+      'indifferent',
+      'doubt'
+    ],
     sheet: [39, 51],
     skinVariations: [
       {
@@ -11142,6 +13876,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Glass of Milk',
     unified: '1F95B',
+    keywords: [
+      'glass_of_milk',
+      'beverage',
+      'drink',
+      'cow'
+    ],
     sheet: [41, 50],
     shortName: 'glass_of_milk'
   },
@@ -11149,6 +13889,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Exclamation Question Mark',
     unified: '2049-FE0F',
     keywords: [
+      'exclamation_question_mark',
       'wat',
       'punctuation',
       'surprise'
@@ -11159,6 +13900,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Guyana Flag',
     unified: '1F1EC-1F1FE',
+    keywords: [
+      'flag_guyana',
+      'gy',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 13],
     shortName: 'flag-gy'
   },
@@ -11166,6 +13915,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cat Face with Tears of Joy',
     unified: '1F639',
     keywords: [
+      'cat_with_tears_of_joy',
       'animal',
       'cats',
       'haha',
@@ -11179,6 +13929,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Railway Track',
     unified: '1F6E4-FE0F',
     keywords: [
+      'railway_track',
       'train',
       'transportation'
     ],
@@ -11188,6 +13939,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Shrugging',
     unified: '1F937-200D-2640-FE0F',
+    keywords: [
+      'woman_shrugging',
+      'woman',
+      'female',
+      'girl',
+      'confused',
+      'indifferent',
+      'doubt'
+    ],
     sheet: [39, 45],
     skinVariations: [
       {
@@ -11216,13 +13976,22 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Diya Lamp',
     unified: '1FA94',
+    keywords: ['diya_lamp', 'lighting'],
     sheet: [52, 36],
     shortName: 'diya_lamp'
+  },
+  {
+    name: 'Beetle',
+    unified: '1FAB2',
+    keywords: ['beetle', 'insect'],
+    sheet: [53, 1],
+    shortName: 'beetle'
   },
   {
     name: 'Hot Beverage',
     unified: '2615',
     keywords: [
+      'hot_beverage',
       'beverage',
       'caffeine',
       'latte',
@@ -11234,20 +14003,48 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Black Question Mark Ornament',
     unified: '2753',
-    keywords: ['doubt', 'confused'],
+    keywords: [
+      'question_mark',
+      'doubt',
+      'confused'
+    ],
     sheet: [56, 27],
     shortName: 'question'
   },
   {
     name: 'Hong Kong Sar China Flag',
     unified: '1F1ED-1F1F0',
+    keywords: [
+      'flag_hong_kong_sar_china',
+      'hong',
+      'kong',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 14],
     shortName: 'flag-hk'
+  },
+  {
+    name: 'Lady Beetle',
+    unified: '1F41E',
+    keywords: [
+      'lady_beetle',
+      'animal',
+      'insect',
+      'nature',
+      'ladybug'
+    ],
+    sheet: [11, 50],
+    shortNames: ['lady_beetle'],
+    shortName: 'ladybug'
   },
   {
     name: 'Notebook with Decorative Cover',
     unified: '1F4D4',
     keywords: [
+      'notebook_with_decorative_cover',
       'classroom',
       'notes',
       'record',
@@ -11261,6 +14058,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Smiling Cat Face with Heart-Shaped Eyes',
     unified: '1F63B',
     keywords: [
+      'smiling_cat_with_heart_eyes',
       'animal',
       'love',
       'like',
@@ -11275,13 +14073,17 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Oil Drum',
     unified: '1F6E2-FE0F',
-    keywords: ['barrell'],
+    keywords: ['oil_drum', 'barrell'],
     sheet: [36, 37],
     shortName: 'oil_drum'
   },
   {
     name: 'Health Worker',
     unified: '1F9D1-200D-2695-FE0F',
+    keywords: [
+      'health_worker',
+      'hospital'
+    ],
     sheet: [48, 19],
     skinVariations: [
       {
@@ -11308,20 +14110,13 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'health_worker'
   },
   {
-    name: 'Beetle',
-    unified: '1FAB2',
-    keywords: [
-      'animal',
-      'insect',
-      'nature',
-      'ladybug'
-    ],
-    sheet: [53, 1],
-    shortName: 'beetle'
-  },
-  {
     name: 'Teapot',
     unified: '1FAD6',
+    keywords: [
+      'teapot',
+      'drink',
+      'hot'
+    ],
     sheet: [53, 15],
     shortName: 'teapot'
   },
@@ -11329,6 +14124,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Question Mark Ornament',
     unified: '2754',
     keywords: [
+      'white_question_mark',
       'doubts',
       'gray',
       'huh',
@@ -11340,6 +14136,9 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Heard & Mcdonald Islands Flag',
     unified: '1F1ED-1F1F2',
+    keywords: [
+      'flag_heard_mcdonald_islands'
+    ],
     sheet: [2, 15],
     shortName: 'flag-hm'
   },
@@ -11347,6 +14146,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Teacup Without Handle',
     unified: '1F375',
     keywords: [
+      'teacup_without_handle',
       'drink',
       'bowl',
       'breakfast',
@@ -11357,8 +14157,17 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'tea'
   },
   {
-    name: 'Male Doctor',
+    name: 'Man Health Worker',
     unified: '1F468-200D-2695-FE0F',
+    keywords: [
+      'man_health_worker',
+      'doctor',
+      'nurse',
+      'therapist',
+      'healthcare',
+      'man',
+      'human'
+    ],
     sheet: [16, 52],
     skinVariations: [
       {
@@ -11388,6 +14197,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Closed Book',
     unified: '1F4D5',
     keywords: [
+      'closed_book',
       'read',
       'library',
       'knowledge',
@@ -11401,6 +14211,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cat Face with Wry Smile',
     unified: '1F63C',
     keywords: [
+      'cat_with_wry_smile',
       'animal',
       'cats',
       'smirk'
@@ -11411,7 +14222,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cricket',
     unified: '1F997',
-    keywords: ['sports'],
+    keywords: [
+      'cricket',
+      'animal',
+      'cricket',
+      'chirp'
+    ],
     sheet: [42, 56],
     shortName: 'cricket'
   },
@@ -11419,6 +14235,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fuel Pump',
     unified: '26FD',
     keywords: [
+      'fuel_pump',
       'gas station',
       'petroleum'
     ],
@@ -11429,6 +14246,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Exclamation Mark Ornament',
     unified: '2755',
     keywords: [
+      'white_exclamation_mark',
       'surprise',
       'punctuation',
       'gray',
@@ -11441,6 +14259,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Honduras Flag',
     unified: '1F1ED-1F1F3',
+    keywords: [
+      'flag_honduras',
+      'hn',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 16],
     shortName: 'flag-hn'
   },
@@ -11448,6 +14274,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sake Bottle and Cup',
     unified: '1F376',
     keywords: [
+      'sake',
       'wine',
       'drink',
       'drunk',
@@ -11460,8 +14287,17 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'sake'
   },
   {
-    name: 'Female Doctor',
+    name: 'Woman Health Worker',
     unified: '1F469-200D-2695-FE0F',
+    keywords: [
+      'woman_health_worker',
+      'doctor',
+      'nurse',
+      'therapist',
+      'healthcare',
+      'woman',
+      'human'
+    ],
     sheet: [19, 40],
     skinVariations: [
       {
@@ -11490,6 +14326,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Open Book',
     unified: '1F4D6',
+    keywords: [
+      'open_book',
+      'book',
+      'read',
+      'library',
+      'knowledge',
+      'literature',
+      'learn',
+      'study'
+    ],
     sheet: [26, 45],
     shortNames: ['open_book'],
     shortName: 'book'
@@ -11498,6 +14344,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Kissing Cat Face with Closed Eyes',
     unified: '1F63D',
     keywords: [
+      'kissing_cat',
       'animal',
       'cats',
       'kiss'
@@ -11509,6 +14356,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Police Cars Revolving Light',
     unified: '1F6A8',
     keywords: [
+      'police_car_light',
       'police',
       'ambulance',
       '911',
@@ -11525,6 +14373,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cockroach',
     unified: '1FAB3',
+    keywords: [
+      'cockroach',
+      'insect',
+      'pests'
+    ],
     sheet: [53, 2],
     shortName: 'cockroach'
   },
@@ -11532,6 +14385,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Heavy Exclamation Mark Symbol',
     unified: '2757',
     keywords: [
+      'exclamation_mark',
       'heavy_exclamation_mark',
       'danger',
       'surprise',
@@ -11548,6 +14402,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Croatia Flag',
     unified: '1F1ED-1F1F7',
+    keywords: [
+      'flag_croatia',
+      'hr',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 17],
     shortName: 'flag-hr'
   },
@@ -11555,6 +14417,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bottle with Popping Cork',
     unified: '1F37E',
     keywords: [
+      'bottle_with_popping_cork',
       'drink',
       'wine',
       'bottle',
@@ -11567,6 +14430,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Green Book',
     unified: '1F4D7',
     keywords: [
+      'green_book',
       'read',
       'library',
       'knowledge',
@@ -11578,7 +14442,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Spider',
     unified: '1F577-FE0F',
-    keywords: ['animal', 'arachnid'],
+    keywords: [
+      'spider',
+      'animal',
+      'arachnid'
+    ],
     sheet: [29, 32],
     shortName: 'spider'
   },
@@ -11586,6 +14454,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Weary Cat Face',
     unified: '1F640',
     keywords: [
+      'weary_cat',
       'animal',
       'cats',
       'munch',
@@ -11599,6 +14468,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Horizontal Traffic Light',
     unified: '1F6A5',
     keywords: [
+      'horizontal_traffic_light',
       'transportation',
       'signal'
     ],
@@ -11608,6 +14478,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Student',
     unified: '1F9D1-200D-1F393',
+    keywords: ['student', 'learn'],
     sheet: [46, 1],
     skinVariations: [
       {
@@ -11637,6 +14508,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Wavy Dash',
     unified: '3030-FE0F',
     keywords: [
+      'wavy_dash',
       'draw',
       'line',
       'moustache',
@@ -11650,6 +14522,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Haiti Flag',
     unified: '1F1ED-1F1F9',
+    keywords: [
+      'flag_haiti',
+      'ht',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 18],
     shortName: 'flag-ht'
   },
@@ -11657,6 +14537,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Wine Glass',
     unified: '1F377',
     keywords: [
+      'wine_glass',
       'drink',
       'beverage',
       'drunk',
@@ -11667,8 +14548,14 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'wine_glass'
   },
   {
-    name: 'Male Student',
+    name: 'Man Student',
     unified: '1F468-200D-1F393',
+    keywords: [
+      'man_student',
+      'graduate',
+      'man',
+      'human'
+    ],
     sheet: [14, 45],
     skinVariations: [
       {
@@ -11698,6 +14585,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Currency Exchange',
     unified: '1F4B1',
     keywords: [
+      'currency_exchange',
       'money',
       'sales',
       'dollar',
@@ -11710,6 +14598,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Blue Book',
     unified: '1F4D8',
     keywords: [
+      'blue_book',
       'read',
       'library',
       'knowledge',
@@ -11723,6 +14612,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Spider Web',
     unified: '1F578-FE0F',
     keywords: [
+      'spider_web',
       'animal',
       'insect',
       'arachnid',
@@ -11735,6 +14625,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Crying Cat Face',
     unified: '1F63F',
     keywords: [
+      'crying_cat',
       'animal',
       'tears',
       'weep',
@@ -11750,6 +14641,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Vertical Traffic Light',
     unified: '1F6A6',
     keywords: [
+      'vertical_traffic_light',
       'transportation',
       'driving'
     ],
@@ -11759,6 +14651,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Hungary Flag',
     unified: '1F1ED-1F1FA',
+    keywords: [
+      'flag_hungary',
+      'hu',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 19],
     shortName: 'flag-hu'
   },
@@ -11766,6 +14666,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cocktail Glass',
     unified: '1F378',
     keywords: [
+      'cocktail_glass',
       'drink',
       'drunk',
       'alcohol',
@@ -11777,8 +14678,14 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'cocktail'
   },
   {
-    name: 'Female Student',
+    name: 'Woman Student',
     unified: '1F469-200D-1F393',
+    keywords: [
+      'woman_student',
+      'graduate',
+      'woman',
+      'human'
+    ],
     sheet: [17, 38],
     skinVariations: [
       {
@@ -11808,6 +14715,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Heavy Dollar Sign',
     unified: '1F4B2',
     keywords: [
+      'heavy_dollar_sign',
       'money',
       'sales',
       'payment',
@@ -11821,6 +14729,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Orange Book',
     unified: '1F4D9',
     keywords: [
+      'orange_book',
       'read',
       'library',
       'knowledge',
@@ -11833,26 +14742,44 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pouting Cat Face',
     unified: '1F63E',
-    keywords: ['animal', 'cats'],
+    keywords: [
+      'pouting_cat',
+      'animal',
+      'cats'
+    ],
     sheet: [31, 36],
     shortName: 'pouting_cat'
   },
   {
     name: 'Octagonal Sign',
     unified: '1F6D1',
+    keywords: ['stop_sign', 'stop'],
     sheet: [36, 30],
     shortName: 'octagonal_sign'
   },
   {
     name: 'Scorpion',
     unified: '1F982',
-    keywords: ['animal', 'arachnid'],
+    keywords: [
+      'scorpion',
+      'animal',
+      'arachnid'
+    ],
     sheet: [42, 35],
     shortName: 'scorpion'
   },
   {
     name: 'Canary Islands Flag',
     unified: '1F1EE-1F1E8',
+    keywords: [
+      'flag_canary_islands',
+      'canary',
+      'islands',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 20],
     shortName: 'flag-ic'
   },
@@ -11860,6 +14787,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tropical Drink',
     unified: '1F379',
     keywords: [
+      'tropical_drink',
       'beverage',
       'cocktail',
       'summer',
@@ -11875,6 +14803,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Books',
     unified: '1F4DA',
     keywords: [
+      'books',
       'literature',
       'library',
       'study'
@@ -11886,6 +14815,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'See-No-Evil Monkey',
     unified: '1F648',
     keywords: [
+      'see_no_evil_monkey',
       'monkey',
       'animal',
       'nature',
@@ -11898,6 +14828,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Construction Sign',
     unified: '1F6A7',
     keywords: [
+      'construction',
       'wip',
       'progress',
       'caution',
@@ -11910,6 +14841,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mosquito',
     unified: '1F99F',
     keywords: [
+      'mosquito',
       'animal',
       'nature',
       'insect',
@@ -11921,6 +14853,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Teacher',
     unified: '1F9D1-200D-1F3EB',
+    keywords: ['teacher', 'professor'],
     sheet: [46, 19],
     skinVariations: [
       {
@@ -11949,6 +14882,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Medical Symbol',
     unified: '2695-FE0F',
+    keywords: [
+      'medical_symbol',
+      'health',
+      'hospital'
+    ],
     sheet: [54, 49],
     hidden: ['apple'],
     shortNames: ['staff_of_aesculapius'],
@@ -11957,6 +14895,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Indonesia Flag',
     unified: '1F1EE-1F1E9',
+    keywords: [
+      'flag_indonesia',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 21],
     shortName: 'flag-id'
   },
@@ -11964,6 +14909,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Beer Mug',
     unified: '1F37A',
     keywords: [
+      'beer_mug',
       'relax',
       'beverage',
       'drink',
@@ -11978,8 +14924,15 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'beer'
   },
   {
-    name: 'Male Teacher',
+    name: 'Man Teacher',
     unified: '1F468-200D-1F3EB',
+    keywords: [
+      'man_teacher',
+      'instructor',
+      'professor',
+      'man',
+      'human'
+    ],
     sheet: [15, 5],
     skinVariations: [
       {
@@ -12009,6 +14962,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Notebook',
     unified: '1F4D3',
     keywords: [
+      'notebook',
       'stationery',
       'record',
       'notes',
@@ -12022,6 +14976,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hear-No-Evil Monkey',
     unified: '1F649',
     keywords: [
+      'hear_no_evil_monkey',
       'animal',
       'monkey',
       'nature'
@@ -12032,6 +14987,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Fly',
     unified: '1FAB0',
+    keywords: ['fly', 'insect'],
     sheet: [52, 57],
     shortName: 'fly'
   },
@@ -12039,6 +14995,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Universal Recycling Symbol',
     unified: '267B-FE0F',
     keywords: [
+      'recycling_symbol',
       'arrow',
       'environment',
       'garbage',
@@ -12051,6 +15008,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Anchor',
     unified: '2693',
     keywords: [
+      'anchor',
       'ship',
       'ferry',
       'sea',
@@ -12062,6 +15020,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ireland Flag',
     unified: '1F1EE-1F1EA',
+    keywords: [
+      'flag_ireland',
+      'ie',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 22],
     shortName: 'flag-ie'
   },
@@ -12069,6 +15035,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clinking Beer Mugs',
     unified: '1F37B',
     keywords: [
+      'clinking_beer_mugs',
       'relax',
       'beverage',
       'drink',
@@ -12083,8 +15050,15 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'beers'
   },
   {
-    name: 'Female Teacher',
+    name: 'Woman Teacher',
     unified: '1F469-200D-1F3EB',
+    keywords: [
+      'woman_teacher',
+      'instructor',
+      'professor',
+      'woman',
+      'human'
+    ],
     sheet: [17, 56],
     skinVariations: [
       {
@@ -12113,7 +15087,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ledger',
     unified: '1F4D2',
-    keywords: ['notes', 'paper'],
+    keywords: [
+      'ledger',
+      'notes',
+      'paper'
+    ],
     sheet: [26, 41],
     shortName: 'ledger'
   },
@@ -12121,6 +15099,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Speak-No-Evil Monkey',
     unified: '1F64A',
     keywords: [
+      'speak_no_evil_monkey',
       'monkey',
       'animal',
       'nature',
@@ -12132,19 +15111,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Worm',
     unified: '1FAB1',
+    keywords: ['worm', 'animal'],
     sheet: [53, 0],
     shortName: 'worm'
   },
   {
-    name: 'Fleur De Lis',
+    name: 'Fleur-De-Lis',
     unified: '269C-FE0F',
-    keywords: ['decorative', 'scout'],
+    keywords: [
+      'fleur_de_lis',
+      'decorative',
+      'scout'
+    ],
     sheet: [54, 54],
     shortName: 'fleur_de_lis'
   },
   {
     name: 'Sailboat',
     unified: '26F5',
+    keywords: [
+      'sailboat',
+      'ship',
+      'summer',
+      'transportation',
+      'water',
+      'sailing'
+    ],
     sheet: [55, 21],
     shortNames: ['sailboat'],
     shortName: 'boat'
@@ -12152,6 +15144,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Israel Flag',
     unified: '1F1EE-1F1F1',
+    keywords: [
+      'flag_israel',
+      'il',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 23],
     shortName: 'flag-il'
   },
@@ -12159,6 +15159,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Kiss Mark',
     unified: '1F48B',
     keywords: [
+      'kiss_mark',
       'face',
       'lips',
       'love',
@@ -12173,6 +15174,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Page with Curl',
     unified: '1F4C3',
     keywords: [
+      'page_with_curl',
       'documents',
       'office',
       'paper'
@@ -12183,7 +15185,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Trident Emblem',
     unified: '1F531',
-    keywords: ['weapon', 'spear'],
+    keywords: [
+      'trident_emblem',
+      'weapon',
+      'spear'
+    ],
     sheet: [28, 19],
     shortName: 'trident'
   },
@@ -12191,6 +15197,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Canoe',
     unified: '1F6F6',
     keywords: [
+      'canoe',
       'boat',
       'paddle',
       'water',
@@ -12203,6 +15210,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clinking Glasses',
     unified: '1F942',
     keywords: [
+      'clinking_glasses',
       'beverage',
       'drink',
       'party',
@@ -12220,6 +15228,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Microbe',
     unified: '1F9A0',
     keywords: [
+      'microbe',
       'amoeba',
       'bacteria',
       'germs'
@@ -12230,6 +15239,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Judge',
     unified: '1F9D1-200D-2696-FE0F',
+    keywords: ['judge', 'law'],
     sheet: [48, 25],
     skinVariations: [
       {
@@ -12258,12 +15268,28 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Isle of Man Flag',
     unified: '1F1EE-1F1F2',
+    keywords: [
+      'flag_isle_of_man',
+      'isle',
+      'man',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 24],
     shortName: 'flag-im'
   },
   {
-    name: 'Male Judge',
+    name: 'Man Judge',
     unified: '1F468-200D-2696-FE0F',
+    keywords: [
+      'man_judge',
+      'justice',
+      'court',
+      'man',
+      'human'
+    ],
     sheet: [17, 0],
     skinVariations: [
       {
@@ -12293,6 +15319,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Love Letter',
     unified: '1F48C',
     keywords: [
+      'love_letter',
       'email',
       'like',
       'affection',
@@ -12306,6 +15333,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bouquet',
     unified: '1F490',
     keywords: [
+      'bouquet',
       'flowers',
       'nature',
       'spring'
@@ -12316,7 +15344,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Name Badge',
     unified: '1F4DB',
-    keywords: ['fire', 'forbid'],
+    keywords: [
+      'name_badge',
+      'fire',
+      'forbid'
+    ],
     sheet: [26, 50],
     shortName: 'name_badge'
   },
@@ -12324,6 +15356,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Scroll',
     unified: '1F4DC',
     keywords: [
+      'scroll',
       'documents',
       'ancient',
       'history',
@@ -12336,6 +15369,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Speedboat',
     unified: '1F6A4',
     keywords: [
+      'speedboat',
       'ship',
       'transportation',
       'vehicle',
@@ -12348,6 +15382,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tumbler Glass',
     unified: '1F943',
     keywords: [
+      'tumbler_glass',
       'drink',
       'beverage',
       'drunk',
@@ -12366,6 +15401,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'India Flag',
     unified: '1F1EE-1F1F3',
+    keywords: [
+      'flag_india',
+      'in',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 25],
     shortName: 'flag-in'
   },
@@ -12373,6 +15416,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cherry Blossom',
     unified: '1F338',
     keywords: [
+      'cherry_blossom',
       'nature',
       'plant',
       'spring',
@@ -12382,8 +15426,15 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'cherry_blossom'
   },
   {
-    name: 'Female Judge',
+    name: 'Woman Judge',
     unified: '1F469-200D-2696-FE0F',
+    keywords: [
+      'woman_judge',
+      'justice',
+      'court',
+      'woman',
+      'human'
+    ],
     sheet: [19, 46],
     skinVariations: [
       {
@@ -12413,6 +15464,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Heart with Arrow',
     unified: '1F498',
     keywords: [
+      'heart_with_arrow',
       'love',
       'like',
       'heart',
@@ -12426,6 +15478,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Page Facing Up',
     unified: '1F4C4',
     keywords: [
+      'page_facing_up',
       'documents',
       'office',
       'paper',
@@ -12437,7 +15490,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Japanese Symbol for Beginner',
     unified: '1F530',
-    keywords: ['badge', 'shield'],
+    keywords: [
+      'japanese_symbol_for_beginner',
+      'badge',
+      'shield'
+    ],
     sheet: [28, 18],
     shortName: 'beginner'
   },
@@ -12445,6 +15502,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Passenger Ship',
     unified: '1F6F3-FE0F',
     keywords: [
+      'passenger_ship',
       'yacht',
       'cruise',
       'ferry'
@@ -12455,46 +15513,81 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cup with Straw',
     unified: '1F964',
-    keywords: ['drink', 'soda'],
+    keywords: [
+      'cup_with_straw',
+      'drink',
+      'soda'
+    ],
     sheet: [42, 1],
     shortName: 'cup_with_straw'
   },
   {
     name: 'British Indian Ocean Territory Flag',
     unified: '1F1EE-1F1F4',
+    keywords: [
+      'flag_british_indian_ocean_territory',
+      'british',
+      'indian',
+      'ocean',
+      'territory',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 26],
     shortName: 'flag-io'
   },
   {
     name: 'Heart with Ribbon',
     unified: '1F49D',
-    keywords: ['love', 'valentines'],
+    keywords: [
+      'heart_with_ribbon',
+      'love',
+      'valentines'
+    ],
     sheet: [25, 41],
     shortName: 'gift_heart'
   },
   {
     name: 'White Flower',
     unified: '1F4AE',
-    keywords: ['japanese', 'spring'],
+    keywords: [
+      'white_flower',
+      'japanese',
+      'spring'
+    ],
     sheet: [26, 5],
     shortName: 'white_flower'
   },
   {
     name: 'Newspaper',
     unified: '1F4F0',
-    keywords: ['press', 'headline'],
+    keywords: [
+      'newspaper',
+      'press',
+      'headline'
+    ],
     sheet: [27, 13],
     shortName: 'newspaper'
   },
   {
     name: 'Bubble Tea',
     unified: '1F9CB',
+    keywords: [
+      'bubble tea',
+      'taiwan',
+      'boba',
+      'milk tea',
+      'straw'
+    ],
     sheet: [44, 37],
     shortName: 'bubble_tea'
   },
   {
     name: 'Farmer',
     unified: '1F9D1-200D-1F33E',
+    keywords: ['farmer', 'crops'],
     sheet: [45, 35],
     skinVariations: [
       {
@@ -12523,20 +15616,37 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ferry',
     unified: '26F4-FE0F',
-    keywords: ['boat', 'ship', 'yacht'],
+    keywords: [
+      'ferry',
+      'boat',
+      'ship',
+      'yacht'
+    ],
     sheet: [55, 20],
     shortName: 'ferry'
   },
   {
     name: 'Heavy Large Circle',
     unified: '2B55',
-    keywords: ['circle', 'round'],
+    keywords: [
+      'hollow_red_circle',
+      'circle',
+      'round'
+    ],
     sheet: [56, 47],
     shortName: 'o'
   },
   {
     name: 'Iraq Flag',
     unified: '1F1EE-1F1F6',
+    keywords: [
+      'flag_iraq',
+      'iq',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 27],
     shortName: 'flag-iq'
   },
@@ -12544,6 +15654,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Rosette',
     unified: '1F3F5-FE0F',
     keywords: [
+      'rosette',
       'flower',
       'decoration',
       'military'
@@ -12552,8 +15663,15 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'rosette'
   },
   {
-    name: 'Male Farmer',
+    name: 'Man Farmer',
     unified: '1F468-200D-1F33E',
+    keywords: [
+      'man_farmer',
+      'rancher',
+      'gardener',
+      'man',
+      'human'
+    ],
     sheet: [14, 27],
     skinVariations: [
       {
@@ -12583,6 +15701,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sparkling Heart',
     unified: '1F496',
     keywords: [
+      'sparkling_heart',
       'love',
       'like',
       'affection',
@@ -12592,21 +15711,27 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'sparkling_heart'
   },
   {
-    name: 'Rolled Up Newspaper',
+    name: 'Rolled-Up Newspaper',
     unified: '1F5DE-FE0F',
+    keywords: [
+      'rolled_up_newspaper',
+      'press',
+      'headline'
+    ],
     sheet: [30, 20],
     shortName: 'rolled_up_newspaper'
   },
   {
     name: 'Motor Boat',
     unified: '1F6E5-FE0F',
-    keywords: ['ship'],
+    keywords: ['motor_boat', 'ship'],
     sheet: [36, 40],
     shortName: 'motor_boat'
   },
   {
     name: 'Beverage Box',
     unified: '1F9C3',
+    keywords: ['beverage_box', 'drink'],
     sheet: [44, 29],
     shortName: 'beverage_box'
   },
@@ -12614,6 +15739,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Heavy Check Mark',
     unified: '2705',
     keywords: [
+      'check_mark_button',
       'green-square',
       'ok',
       'agree',
@@ -12628,6 +15754,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Iran Flag',
     unified: '1F1EE-1F1F7',
+    keywords: [
+      'flag_iran',
+      'iran',
+      'islamic',
+      'republic',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 28],
     shortName: 'flag-ir'
   },
@@ -12635,6 +15771,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Rose',
     unified: '1F339',
     keywords: [
+      'rose',
       'flowers',
       'valentines',
       'love',
@@ -12644,8 +15781,15 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'rose'
   },
   {
-    name: 'Female Farmer',
+    name: 'Woman Farmer',
     unified: '1F469-200D-1F33E',
+    keywords: [
+      'woman_farmer',
+      'rancher',
+      'gardener',
+      'woman',
+      'human'
+    ],
     sheet: [17, 20],
     skinVariations: [
       {
@@ -12675,6 +15819,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Growing Heart',
     unified: '1F497',
     keywords: [
+      'growing_heart',
       'like',
       'love',
       'affection',
@@ -12688,6 +15833,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bookmark Tabs',
     unified: '1F4D1',
     keywords: [
+      'bookmark_tabs',
       'favorite',
       'save',
       'order',
@@ -12700,6 +15846,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ship',
     unified: '1F6A2',
     keywords: [
+      'ship',
       'transportation',
       'titanic',
       'deploy'
@@ -12710,6 +15857,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mate Drink',
     unified: '1F9C9',
+    keywords: [
+      'mate',
+      'drink',
+      'tea',
+      'beverage'
+    ],
     sheet: [44, 35],
     shortName: 'mate_drink'
   },
@@ -12717,6 +15870,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Ballot Box with Check',
     unified: '2611-FE0F',
     keywords: [
+      'check_box_with_check',
       'ok',
       'agree',
       'confirm',
@@ -12732,6 +15886,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Iceland Flag',
     unified: '1F1EE-1F1F8',
+    keywords: [
+      'flag_iceland',
+      'is',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 29],
     shortName: 'flag-is'
   },
@@ -12739,6 +15901,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Beating Heart',
     unified: '1F493',
     keywords: [
+      'beating_heart',
       'love',
       'like',
       'affection',
@@ -12753,6 +15916,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bookmark',
     unified: '1F516',
     keywords: [
+      'bookmark',
       'favorite',
       'label',
       'save'
@@ -12764,6 +15928,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Wilted Flower',
     unified: '1F940',
     keywords: [
+      'wilted_flower',
       'plant',
       'nature',
       'flower'
@@ -12774,12 +15939,19 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ice Cube',
     unified: '1F9CA',
+    keywords: ['ice', 'water', 'cold'],
     sheet: [44, 36],
     shortName: 'ice_cube'
   },
   {
     name: 'Cook',
     unified: '1F9D1-200D-1F373',
+    keywords: [
+      'cook',
+      'food',
+      'kitchen',
+      'culinary'
+    ],
     sheet: [45, 41],
     skinVariations: [
       {
@@ -12809,6 +15981,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Airplane',
     unified: '2708-FE0F',
     keywords: [
+      'airplane',
       'vehicle',
       'transportation',
       'flight',
@@ -12821,6 +15994,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Heavy Check Mark',
     unified: '2714-FE0F',
     keywords: [
+      'check_mark',
       'ok',
       'nike',
       'answer',
@@ -12834,6 +16008,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Italy Flag',
     unified: '1F1EE-1F1F9',
     keywords: [
+      'flag_italy',
       'italy',
       'flag',
       'nation',
@@ -12848,6 +16023,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hibiscus',
     unified: '1F33A',
     keywords: [
+      'hibiscus',
       'plant',
       'vegetable',
       'flowers',
@@ -12859,13 +16035,19 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Label',
     unified: '1F3F7-FE0F',
-    keywords: ['sale', 'tag'],
+    keywords: ['label', 'sale', 'tag'],
     sheet: [11, 9],
     shortName: 'label'
   },
   {
-    name: 'Male Cook',
+    name: 'Man Cook',
     unified: '1F468-200D-1F373',
+    keywords: [
+      'man_cook',
+      'chef',
+      'man',
+      'human'
+    ],
     sheet: [14, 33],
     skinVariations: [
       {
@@ -12895,6 +16077,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Revolving Hearts',
     unified: '1F49E',
     keywords: [
+      'revolving_hearts',
       'love',
       'like',
       'affection',
@@ -12907,6 +16090,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Small Airplane',
     unified: '1F6E9-FE0F',
     keywords: [
+      'small_airplane',
       'flight',
       'transportation',
       'fly',
@@ -12918,7 +16102,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Chopsticks',
     unified: '1F962',
-    keywords: ['food'],
+    keywords: ['chopsticks', 'food'],
     sheet: [41, 57],
     shortName: 'chopsticks'
   },
@@ -12926,6 +16110,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cross Mark',
     unified: '274C',
     keywords: [
+      'cross_mark',
       'no',
       'delete',
       'remove',
@@ -12938,6 +16123,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Jersey Flag',
     unified: '1F1EF-1F1EA',
+    keywords: [
+      'flag_jersey',
+      'je',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 31],
     shortName: 'flag-je'
   },
@@ -12945,6 +16138,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sunflower',
     unified: '1F33B',
     keywords: [
+      'sunflower',
       'nature',
       'plant',
       'fall'
@@ -12953,14 +16147,29 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'sunflower'
   },
   {
-    name: 'Knife Fork Plate',
+    name: 'Fork and Knife with Plate',
     unified: '1F37D-FE0F',
+    keywords: [
+      'fork_and_knife_with_plate',
+      'food',
+      'eat',
+      'meal',
+      'lunch',
+      'dinner',
+      'restaurant'
+    ],
     sheet: [7, 21],
     shortName: 'knife_fork_plate'
   },
   {
-    name: 'Female Cook',
+    name: 'Woman Cook',
     unified: '1F469-200D-1F373',
+    keywords: [
+      'woman_cook',
+      'chef',
+      'woman',
+      'human'
+    ],
     sheet: [17, 26],
     skinVariations: [
       {
@@ -12990,6 +16199,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Two Hearts',
     unified: '1F495',
     keywords: [
+      'two_hearts',
       'love',
       'like',
       'affection',
@@ -13003,6 +16213,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Money Bag',
     unified: '1F4B0',
     keywords: [
+      'money_bag',
       'dollar',
       'payment',
       'coins',
@@ -13014,6 +16225,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Airplane Departure',
     unified: '1F6EB',
+    keywords: [
+      'airplane_departure',
+      'airport',
+      'flight',
+      'landing'
+    ],
     sheet: [36, 42],
     shortName: 'airplane_departure'
   },
@@ -13021,6 +16238,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Negative Squared Cross Mark',
     unified: '274E',
     keywords: [
+      'cross_mark_button',
       'x',
       'green-square',
       'no',
@@ -13032,6 +16250,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Jamaica Flag',
     unified: '1F1EF-1F1F2',
+    keywords: [
+      'flag_jamaica',
+      'jm',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 32],
     shortName: 'flag-jm'
   },
@@ -13039,6 +16265,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Blossom',
     unified: '1F33C',
     keywords: [
+      'blossom',
       'nature',
       'flowers',
       'yellow'
@@ -13049,7 +16276,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Fork and Knife',
     unified: '1F374',
-    keywords: ['cutlery', 'kitchen'],
+    keywords: [
+      'fork_and_knife',
+      'cutlery',
+      'kitchen'
+    ],
     sheet: [7, 12],
     shortName: 'fork_and_knife'
   },
@@ -13057,6 +16288,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Heart Decoration',
     unified: '1F49F',
     keywords: [
+      'heart_decoration',
       'purple-square',
       'love',
       'like'
@@ -13067,12 +16299,23 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Airplane Arriving',
     unified: '1F6EC',
+    keywords: [
+      'airplane_arrival',
+      'airport',
+      'flight',
+      'boarding'
+    ],
     sheet: [36, 43],
     shortName: 'airplane_arriving'
   },
   {
     name: 'Mechanic',
     unified: '1F9D1-200D-1F527',
+    keywords: [
+      'mechanic',
+      'worker',
+      'technician'
+    ],
     sheet: [46, 43],
     skinVariations: [
       {
@@ -13101,6 +16344,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Coin',
     unified: '1FA99',
+    keywords: [
+      'coin',
+      'money',
+      'currency'
+    ],
     sheet: [52, 41],
     shortName: 'coin'
   },
@@ -13108,6 +16356,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Curly Loop',
     unified: '27B0',
     keywords: [
+      'curly_loop',
       'scribble',
       'draw',
       'shape',
@@ -13119,6 +16368,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Jordan Flag',
     unified: '1F1EF-1F1F4',
+    keywords: [
+      'flag_jordan',
+      'jo',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 33],
     shortName: 'flag-jo'
   },
@@ -13126,6 +16383,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tulip',
     unified: '1F337',
     keywords: [
+      'tulip',
       'flowers',
       'plant',
       'nature',
@@ -13136,8 +16394,15 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'tulip'
   },
   {
-    name: 'Male Mechanic',
+    name: 'Man Mechanic',
     unified: '1F468-200D-1F527',
+    keywords: [
+      'man_mechanic',
+      'plumber',
+      'man',
+      'human',
+      'wrench'
+    ],
     sheet: [15, 44],
     skinVariations: [
       {
@@ -13167,6 +16432,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Banknote with Yen Sign',
     unified: '1F4B4',
     keywords: [
+      'yen_banknote',
       'money',
       'sales',
       'japanese',
@@ -13180,6 +16446,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Spoon',
     unified: '1F944',
     keywords: [
+      'spoon',
       'cutlery',
       'kitchen',
       'tableware'
@@ -13190,19 +16457,33 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Parachute',
     unified: '1FA82',
+    keywords: [
+      'parachute',
+      'fly',
+      'glide'
+    ],
     sheet: [52, 27],
     shortName: 'parachute'
   },
   {
-    name: 'Heavy Heart Exclamation Mark Ornament',
+    name: 'Heart Exclamation',
     unified: '2763-FE0F',
+    keywords: [
+      'heart_exclamation',
+      'decoration',
+      'love'
+    ],
     sheet: [56, 31],
     shortName: 'heavy_heart_exclamation_mark_ornament'
   },
   {
     name: 'Double Curly Loop',
     unified: '27BF',
-    keywords: ['tape', 'cassette'],
+    keywords: [
+      'double_curly_loop',
+      'tape',
+      'cassette'
+    ],
     sheet: [56, 38],
     shortName: 'loop'
   },
@@ -13210,6 +16491,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Japan Flag',
     unified: '1F1EF-1F1F5',
     keywords: [
+      'flag_japan',
       'japanese',
       'nation',
       'flag',
@@ -13224,6 +16506,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Seedling',
     unified: '1F331',
     keywords: [
+      'seedling',
       'plant',
       'nature',
       'grass',
@@ -13234,8 +16517,15 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'seedling'
   },
   {
-    name: 'Female Mechanic',
+    name: 'Woman Mechanic',
     unified: '1F469-200D-1F527',
+    keywords: [
+      'woman_mechanic',
+      'plumber',
+      'woman',
+      'human',
+      'wrench'
+    ],
     sheet: [18, 32],
     skinVariations: [
       {
@@ -13267,6 +16557,7 @@ export const emojis: CompressedEmojiData[] = [
     text: '</3',
     emoticons: ['</3'],
     keywords: [
+      'broken_heart',
       'sad',
       'sorry',
       'break',
@@ -13280,6 +16571,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Banknote with Dollar Sign',
     unified: '1F4B5',
     keywords: [
+      'dollar_banknote',
       'money',
       'sales',
       'bill',
@@ -13292,6 +16584,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Seat',
     unified: '1F4BA',
     keywords: [
+      'seat',
       'sit',
       'airplane',
       'transport',
@@ -13306,6 +16599,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hocho',
     unified: '1F52A',
     keywords: [
+      'kitchen_knife',
       'knife',
       'blade',
       'cutlery',
@@ -13320,6 +16614,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Part Alternation Mark',
     unified: '303D-FE0F',
     keywords: [
+      'part_alternation_mark',
       'graph',
       'presentation',
       'stats',
@@ -13333,13 +16628,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Kenya Flag',
     unified: '1F1F0-1F1EA',
+    keywords: [
+      'flag_kenya',
+      'ke',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 35],
     shortName: 'flag-ke'
   },
   {
     name: 'Amphora',
     unified: '1F3FA',
-    keywords: ['vase', 'jar'],
+    keywords: [
+      'amphora',
+      'vase',
+      'jar'
+    ],
     sheet: [11, 12],
     shortName: 'amphora'
   },
@@ -13347,6 +16654,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Banknote with Euro Sign',
     unified: '1F4B6',
     keywords: [
+      'euro_banknote',
       'money',
       'sales',
       'dollar',
@@ -13359,6 +16667,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Helicopter',
     unified: '1F681',
     keywords: [
+      'helicopter',
       'transportation',
       'vehicle',
       'fly'
@@ -13369,6 +16678,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Factory Worker',
     unified: '1F9D1-200D-1F3ED',
+    keywords: [
+      'factory_worker',
+      'labor'
+    ],
     sheet: [46, 25],
     skinVariations: [
       {
@@ -13397,6 +16710,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Potted Plant',
     unified: '1FAB4',
+    keywords: [
+      'potted plant',
+      'greenery',
+      'house'
+    ],
     sheet: [53, 3],
     shortName: 'potted_plant'
   },
@@ -13404,6 +16722,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Eight Spoked Asterisk',
     unified: '2733-FE0F',
     keywords: [
+      'eight_spoked_asterisk',
       'star',
       'sparkle',
       'green-square'
@@ -13417,6 +16736,7 @@ export const emojis: CompressedEmojiData[] = [
     text: '<3',
     emoticons: ['<3'],
     keywords: [
+      'red_heart',
       'love',
       'like',
       'valentines'
@@ -13427,19 +16747,38 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Kyrgyzstan Flag',
     unified: '1F1F0-1F1EC',
+    keywords: [
+      'flag_kyrgyzstan',
+      'kg',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 36],
     shortName: 'flag-kg'
   },
   {
     name: 'Evergreen Tree',
     unified: '1F332',
-    keywords: ['plant', 'nature'],
+    keywords: [
+      'evergreen_tree',
+      'plant',
+      'nature'
+    ],
     sheet: [6, 4],
     shortName: 'evergreen_tree'
   },
   {
-    name: 'Male Factory Worker',
+    name: 'Man Factory Worker',
     unified: '1F468-200D-1F3ED',
+    keywords: [
+      'man_factory_worker',
+      'assembly',
+      'industrial',
+      'man',
+      'human'
+    ],
     sheet: [15, 11],
     skinVariations: [
       {
@@ -13469,6 +16808,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Banknote with Pound Sign',
     unified: '1F4B7',
     keywords: [
+      'pound_banknote',
       'british',
       'sterling',
       'money',
@@ -13485,6 +16825,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Suspension Railway',
     unified: '1F69F',
     keywords: [
+      'suspension_railway',
       'vehicle',
       'transportation'
     ],
@@ -13495,6 +16836,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Orange Heart',
     unified: '1F9E1',
     keywords: [
+      'orange_heart',
       'love',
       'like',
       'affection',
@@ -13507,6 +16849,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Eight Pointed Black Star',
     unified: '2734-FE0F',
     keywords: [
+      'eight_pointed_star',
       'orange-square',
       'shape',
       'polygon'
@@ -13517,19 +16860,38 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cambodia Flag',
     unified: '1F1F0-1F1ED',
+    keywords: [
+      'flag_cambodia',
+      'kh',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 37],
     shortName: 'flag-kh'
   },
   {
     name: 'Deciduous Tree',
     unified: '1F333',
-    keywords: ['plant', 'nature'],
+    keywords: [
+      'deciduous_tree',
+      'plant',
+      'nature'
+    ],
     sheet: [6, 5],
     shortName: 'deciduous_tree'
   },
   {
-    name: 'Female Factory Worker',
+    name: 'Woman Factory Worker',
     unified: '1F469-200D-1F3ED',
+    keywords: [
+      'woman_factory_worker',
+      'assembly',
+      'industrial',
+      'woman',
+      'human'
+    ],
     sheet: [18, 4],
     skinVariations: [
       {
@@ -13560,6 +16922,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F49B',
     text: '<3',
     keywords: [
+      'yellow_heart',
       'love',
       'like',
       'affection',
@@ -13572,6 +16935,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Money with Wings',
     unified: '1F4B8',
     keywords: [
+      'money_with_wings',
       'dollar',
       'bills',
       'payment',
@@ -13584,6 +16948,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mountain Cableway',
     unified: '1F6A0',
     keywords: [
+      'mountain_cableway',
       'transportation',
       'vehicle',
       'ski'
@@ -13595,6 +16960,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sparkle',
     unified: '2747-FE0F',
     keywords: [
+      'sparkle',
       'stars',
       'green-square',
       'awesome',
@@ -13608,6 +16974,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Copyright Sign',
     unified: '00A9-FE0F',
     keywords: [
+      'copyright',
       'ip',
       'license',
       'circle',
@@ -13621,6 +16988,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Kiribati Flag',
     unified: '1F1F0-1F1EE',
+    keywords: [
+      'flag_kiribati',
+      'ki',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 38],
     shortName: 'flag-ki'
   },
@@ -13628,6 +17003,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Palm Tree',
     unified: '1F334',
     keywords: [
+      'palm_tree',
       'plant',
       'vegetable',
       'nature',
@@ -13644,6 +17020,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F49A',
     text: '<3',
     keywords: [
+      'green_heart',
       'love',
       'like',
       'affection',
@@ -13656,6 +17033,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Credit Card',
     unified: '1F4B3',
     keywords: [
+      'credit_card',
       'money',
       'sales',
       'dollar',
@@ -13670,6 +17048,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Aerial Tramway',
     unified: '1F6A1',
     keywords: [
+      'aerial_tramway',
       'transportation',
       'vehicle',
       'ski'
@@ -13680,6 +17059,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Office Worker',
     unified: '1F9D1-200D-1F4BC',
+    keywords: [
+      'office_worker',
+      'business'
+    ],
     sheet: [46, 37],
     skinVariations: [
       {
@@ -13708,7 +17091,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Registered Sign',
     unified: '00AE-FE0F',
-    keywords: ['alphabet', 'circle'],
+    keywords: [
+      'registered',
+      'alphabet',
+      'circle'
+    ],
     sheet: [0, 13],
     hidden: ['facebook'],
     shortName: 'registered'
@@ -13716,6 +17103,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Comoros Flag',
     unified: '1F1F0-1F1F2',
+    keywords: [
+      'flag_comoros',
+      'km',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 39],
     shortName: 'flag-km'
   },
@@ -13723,6 +17118,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cactus',
     unified: '1F335',
     keywords: [
+      'cactus',
       'vegetable',
       'plant',
       'nature'
@@ -13731,8 +17127,15 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'cactus'
   },
   {
-    name: 'Male Office Worker',
+    name: 'Man Office Worker',
     unified: '1F468-200D-1F4BC',
+    keywords: [
+      'man_office_worker',
+      'business',
+      'manager',
+      'man',
+      'human'
+    ],
     sheet: [15, 38],
     skinVariations: [
       {
@@ -13763,6 +17166,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F499',
     text: '<3',
     keywords: [
+      'blue_heart',
       'love',
       'like',
       'affection',
@@ -13775,10 +17179,13 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Satellite',
     unified: '1F6F0-FE0F',
     keywords: [
+      'satellite',
       'communication',
-      'future',
-      'radio',
-      'space'
+      'gps',
+      'orbit',
+      'spaceflight',
+      'NASA',
+      'ISS'
     ],
     sheet: [36, 44],
     shortName: 'satellite'
@@ -13787,6 +17194,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Receipt',
     unified: '1F9FE',
     keywords: [
+      'receipt',
       'accounting',
       'expenses'
     ],
@@ -13796,19 +17204,40 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'St. Kitts & Nevis Flag',
     unified: '1F1F0-1F1F3',
+    keywords: [
+      'flag_st_kitts_nevis',
+      'saint',
+      'kitts',
+      'nevis',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 40],
     shortName: 'flag-kn'
   },
   {
     name: 'Ear of Rice',
     unified: '1F33E',
-    keywords: ['nature', 'plant'],
+    keywords: [
+      'sheaf_of_rice',
+      'nature',
+      'plant'
+    ],
     sheet: [6, 16],
     shortName: 'ear_of_rice'
   },
   {
-    name: 'Female Office Worker',
+    name: 'Woman Office Worker',
     unified: '1F469-200D-1F4BC',
+    keywords: [
+      'woman_office_worker',
+      'business',
+      'manager',
+      'woman',
+      'human'
+    ],
     sheet: [18, 26],
     skinVariations: [
       {
@@ -13839,6 +17268,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F49C',
     text: '<3',
     keywords: [
+      'purple_heart',
       'love',
       'like',
       'affection',
@@ -13851,6 +17281,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Chart with Upwards Trend and Yen Sign',
     unified: '1F4B9',
     keywords: [
+      'chart_increasing_with_yen',
       'green-square',
       'graph',
       'presentation',
@@ -13863,6 +17294,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Rocket',
     unified: '1F680',
     keywords: [
+      'rocket',
       'launch',
       'ship',
       'staffmode',
@@ -13878,6 +17310,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Trade Mark Sign',
     unified: '2122-FE0F',
     keywords: [
+      'trade_mark',
       'trademark',
       'brand',
       'law',
@@ -13890,6 +17323,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hash Key',
     unified: '0023-FE0F-20E3',
     keywords: [
+      'keycap_',
       'symbol',
       'blue-square',
       'twitter'
@@ -13901,6 +17335,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'North Korea Flag',
     unified: '1F1F0-1F1F5',
+    keywords: [
+      'flag_north_korea',
+      'north',
+      'korea',
+      'nation',
+      'flag',
+      'country',
+      'banner'
+    ],
     sheet: [2, 41],
     shortName: 'flag-kp'
   },
@@ -13908,6 +17351,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Herb',
     unified: '1F33F',
     keywords: [
+      'herb',
       'vegetable',
       'plant',
       'medicine',
@@ -13922,6 +17366,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Flying Saucer',
     unified: '1F6F8',
     keywords: [
+      'flying_saucer',
       'transportation',
       'vehicle',
       'ufo'
@@ -13932,12 +17377,17 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Brown Heart',
     unified: '1F90E',
+    keywords: ['brown_heart', 'coffee'],
     sheet: [37, 16],
     shortName: 'brown_heart'
   },
   {
     name: 'Scientist',
     unified: '1F9D1-200D-1F52C',
+    keywords: [
+      'scientist',
+      'chemistry'
+    ],
     sheet: [46, 49],
     skinVariations: [
       {
@@ -13967,6 +17417,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Envelope',
     unified: '2709-FE0F',
     keywords: [
+      'envelope',
       'letter',
       'postal',
       'inbox',
@@ -13977,8 +17428,13 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'email'
   },
   {
-    name: 'Keycap Star',
+    name: 'Keycap: *',
     unified: '002A-FE0F-20E3',
+    keywords: [
+      'keycap_',
+      'star',
+      'keycap'
+    ],
     sheet: [0, 1],
     hidden: ['facebook'],
     shortName: 'keycap_star'
@@ -13987,6 +17443,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'South Korea Flag',
     unified: '1F1F0-1F1F7',
     keywords: [
+      'flag_south_korea',
       'south',
       'korea',
       'nation',
@@ -13999,8 +17456,17 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'kr'
   },
   {
-    name: 'Male Scientist',
+    name: 'Man Scientist',
     unified: '1F468-200D-1F52C',
+    keywords: [
+      'man_scientist',
+      'biologist',
+      'chemist',
+      'engineer',
+      'physicist',
+      'man',
+      'human'
+    ],
     sheet: [15, 50],
     skinVariations: [
       {
@@ -14030,6 +17496,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'E-Mail Symbol',
     unified: '1F4E7',
     keywords: [
+      'e_mail',
       'communication',
       'inbox'
     ],
@@ -14039,14 +17506,17 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Black Heart',
     unified: '1F5A4',
-    keywords: ['evil'],
+    keywords: ['black_heart', 'evil'],
     sheet: [30, 6],
     shortName: 'black_heart'
   },
   {
     name: 'Bellhop Bell',
     unified: '1F6CE-FE0F',
-    keywords: ['service'],
+    keywords: [
+      'bellhop_bell',
+      'service'
+    ],
     sheet: [36, 27],
     shortName: 'bellhop_bell'
   },
@@ -14054,6 +17524,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Shamrock',
     unified: '2618-FE0F',
     keywords: [
+      'shamrock',
       'vegetable',
       'plant',
       'nature',
@@ -14067,6 +17538,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keycap 0',
     unified: '0030-FE0F-20E3',
     keywords: [
+      'keycap_0',
       '0',
       'numbers',
       'blue-square',
@@ -14079,6 +17551,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Kuwait Flag',
     unified: '1F1F0-1F1FC',
+    keywords: [
+      'flag_kuwait',
+      'kw',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 43],
     shortName: 'flag-kw'
   },
@@ -14086,6 +17566,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Four Leaf Clover',
     unified: '1F340',
     keywords: [
+      'four_leaf_clover',
       'vegetable',
       'plant',
       'nature',
@@ -14096,8 +17577,17 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'four_leaf_clover'
   },
   {
-    name: 'Female Scientist',
+    name: 'Woman Scientist',
     unified: '1F469-200D-1F52C',
+    keywords: [
+      'woman_scientist',
+      'biologist',
+      'chemist',
+      'engineer',
+      'physicist',
+      'woman',
+      'human'
+    ],
     sheet: [18, 38],
     skinVariations: [
       {
@@ -14126,20 +17616,29 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Incoming Envelope',
     unified: '1F4E8',
-    keywords: ['email', 'inbox'],
+    keywords: [
+      'incoming_envelope',
+      'email',
+      'inbox'
+    ],
     sheet: [27, 5],
     shortName: 'incoming_envelope'
   },
   {
     name: 'White Heart',
     unified: '1F90D',
+    keywords: ['white_heart', 'pure'],
     sheet: [37, 15],
     shortName: 'white_heart'
   },
   {
     name: 'Luggage',
     unified: '1F9F3',
-    keywords: ['packing', 'travel'],
+    keywords: [
+      'luggage',
+      'packing',
+      'travel'
+    ],
     sheet: [52, 4],
     shortName: 'luggage'
   },
@@ -14147,6 +17646,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keycap 1',
     unified: '0031-FE0F-20E3',
     keywords: [
+      'keycap_1',
       'blue-square',
       'numbers',
       '1'
@@ -14158,6 +17658,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cayman Islands Flag',
     unified: '1F1F0-1F1FE',
+    keywords: [
+      'flag_cayman_islands',
+      'cayman',
+      'islands',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 44],
     shortName: 'flag-ky'
   },
@@ -14165,6 +17674,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Maple Leaf',
     unified: '1F341',
     keywords: [
+      'maple_leaf',
       'nature',
       'plant',
       'vegetable',
@@ -14178,6 +17688,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hundred Points Symbol',
     unified: '1F4AF',
     keywords: [
+      'hundred_points',
       'score',
       'perfect',
       'numbers',
@@ -14195,6 +17706,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Envelope with Downwards Arrow Above',
     unified: '1F4E9',
     keywords: [
+      'envelope_with_arrow',
       'email',
       'communication'
     ],
@@ -14204,6 +17716,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Technologist',
     unified: '1F9D1-200D-1F4BB',
+    keywords: [
+      'technologist',
+      'computer'
+    ],
     sheet: [46, 31],
     skinVariations: [
       {
@@ -14233,6 +17749,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hourglass',
     unified: '231B',
     keywords: [
+      'hourglass_done',
       'time',
       'clock',
       'oldschool',
@@ -14248,6 +17765,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keycap 2',
     unified: '0032-FE0F-20E3',
     keywords: [
+      'keycap_2',
       'numbers',
       '2',
       'prime',
@@ -14260,6 +17778,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Kazakhstan Flag',
     unified: '1F1F0-1F1FF',
+    keywords: [
+      'flag_kazakhstan',
+      'kz',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 45],
     shortName: 'flag-kz'
   },
@@ -14267,6 +17793,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fallen Leaf',
     unified: '1F342',
     keywords: [
+      'fallen_leaf',
       'nature',
       'plant',
       'vegetable',
@@ -14276,8 +17803,20 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'fallen_leaf'
   },
   {
-    name: 'Male Technologist',
+    name: 'Man Technologist',
     unified: '1F468-200D-1F4BB',
+    keywords: [
+      'man_technologist',
+      'coder',
+      'developer',
+      'engineer',
+      'programmer',
+      'software',
+      'man',
+      'human',
+      'laptop',
+      'computer'
+    ],
     sheet: [15, 32],
     skinVariations: [
       {
@@ -14306,14 +17845,22 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Anger Symbol',
     unified: '1F4A2',
-    keywords: ['angry', 'mad'],
+    keywords: [
+      'anger_symbol',
+      'angry',
+      'mad'
+    ],
     sheet: [25, 46],
     shortName: 'anger'
   },
   {
     name: 'Outbox Tray',
     unified: '1F4E4',
-    keywords: ['inbox', 'email'],
+    keywords: [
+      'outbox_tray',
+      'inbox',
+      'email'
+    ],
     sheet: [27, 1],
     shortName: 'outbox_tray'
   },
@@ -14321,6 +17868,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hourglass with Flowing Sand',
     unified: '23F3',
     keywords: [
+      'hourglass_not_done',
       'oldschool',
       'time',
       'countdown'
@@ -14332,6 +17880,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keycap 3',
     unified: '0033-FE0F-20E3',
     keywords: [
+      'keycap_3',
       '3',
       'numbers',
       'prime',
@@ -14344,6 +17893,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Laos Flag',
     unified: '1F1F1-1F1E6',
+    keywords: [
+      'flag_laos',
+      'lao',
+      'democratic',
+      'republic',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 46],
     shortName: 'flag-la'
   },
@@ -14351,6 +17910,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Leaf Fluttering in Wind',
     unified: '1F343',
     keywords: [
+      'leaf_fluttering_in_wind',
       'nature',
       'plant',
       'tree',
@@ -14363,8 +17923,20 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'leaves'
   },
   {
-    name: 'Female Technologist',
+    name: 'Woman Technologist',
     unified: '1F469-200D-1F4BB',
+    keywords: [
+      'woman_technologist',
+      'coder',
+      'developer',
+      'engineer',
+      'programmer',
+      'software',
+      'woman',
+      'human',
+      'laptop',
+      'computer'
+    ],
     sheet: [18, 20],
     skinVariations: [
       {
@@ -14394,6 +17966,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Collision Symbol',
     unified: '1F4A5',
     keywords: [
+      'collision',
       'bomb',
       'explode',
       'explosion',
@@ -14407,14 +17980,22 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Inbox Tray',
     unified: '1F4E5',
-    keywords: ['email', 'documents'],
+    keywords: [
+      'inbox_tray',
+      'email',
+      'documents'
+    ],
     sheet: [27, 2],
     shortName: 'inbox_tray'
   },
   {
     name: 'Watch',
     unified: '231A',
-    keywords: ['time', 'accessories'],
+    keywords: [
+      'watch',
+      'time',
+      'accessories'
+    ],
     sheet: [53, 28],
     shortName: 'watch'
   },
@@ -14422,6 +18003,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keycap 4',
     unified: '0034-FE0F-20E3',
     keywords: [
+      'keycap_4',
       '4',
       'numbers',
       'blue-square'
@@ -14433,6 +18015,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Lebanon Flag',
     unified: '1F1F1-1F1E7',
+    keywords: [
+      'flag_lebanon',
+      'lb',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 47],
     shortName: 'flag-lb'
   },
@@ -14440,6 +18030,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dizzy Symbol',
     unified: '1F4AB',
     keywords: [
+      'dizzy',
       'star',
       'sparkle',
       'shoot',
@@ -14452,6 +18043,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Package',
     unified: '1F4E6',
     keywords: [
+      'package',
       'mail',
       'gift',
       'cardboard',
@@ -14464,6 +18056,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Singer',
     unified: '1F9D1-200D-1F3A4',
+    keywords: [
+      'singer',
+      'song',
+      'artist',
+      'performer'
+    ],
     sheet: [46, 7],
     skinVariations: [
       {
@@ -14492,7 +18090,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Alarm Clock',
     unified: '23F0',
-    keywords: ['time', 'wake'],
+    keywords: [
+      'alarm_clock',
+      'time',
+      'wake'
+    ],
     sheet: [53, 39],
     shortName: 'alarm_clock'
   },
@@ -14500,6 +18102,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keycap 5',
     unified: '0035-FE0F-20E3',
     keywords: [
+      'keycap_5',
       '5',
       'numbers',
       'blue-square',
@@ -14512,12 +18115,28 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'St. Lucia Flag',
     unified: '1F1F1-1F1E8',
+    keywords: [
+      'flag_st_lucia',
+      'saint',
+      'lucia',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 48],
     shortName: 'flag-lc'
   },
   {
-    name: 'Male Singer',
+    name: 'Man Singer',
     unified: '1F468-200D-1F3A4',
+    keywords: [
+      'man_singer',
+      'rockstar',
+      'entertainer',
+      'man',
+      'human'
+    ],
     sheet: [14, 51],
     skinVariations: [
       {
@@ -14546,7 +18165,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Splashing Sweat Symbol',
     unified: '1F4A6',
-    keywords: ['water', 'drip', 'oops'],
+    keywords: [
+      'sweat_droplets',
+      'water',
+      'drip',
+      'oops'
+    ],
     sheet: [25, 50],
     shortName: 'sweat_drops'
   },
@@ -14554,6 +18178,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Closed Mailbox with Raised Flag',
     unified: '1F4EB',
     keywords: [
+      'closed_mailbox_with_raised_flag',
       'email',
       'inbox',
       'communication'
@@ -14564,7 +18189,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Stopwatch',
     unified: '23F1-FE0F',
-    keywords: ['time', 'deadline'],
+    keywords: [
+      'stopwatch',
+      'time',
+      'deadline'
+    ],
     sheet: [53, 40],
     shortName: 'stopwatch'
   },
@@ -14572,6 +18201,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keycap 6',
     unified: '0036-FE0F-20E3',
     keywords: [
+      'keycap_6',
       '6',
       'numbers',
       'blue-square'
@@ -14583,12 +18213,27 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Liechtenstein Flag',
     unified: '1F1F1-1F1EE',
+    keywords: [
+      'flag_liechtenstein',
+      'li',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 49],
     shortName: 'flag-li'
   },
   {
-    name: 'Female Singer',
+    name: 'Woman Singer',
     unified: '1F469-200D-1F3A4',
+    keywords: [
+      'woman_singer',
+      'rockstar',
+      'entertainer',
+      'woman',
+      'human'
+    ],
     sheet: [17, 44],
     skinVariations: [
       {
@@ -14618,6 +18263,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dash Symbol',
     unified: '1F4A8',
     keywords: [
+      'dashing_away',
       'wind',
       'air',
       'fast',
@@ -14633,6 +18279,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Closed Mailbox with Lowered Flag',
     unified: '1F4EA',
     keywords: [
+      'closed_mailbox_with_lowered_flag',
       'email',
       'communication',
       'inbox'
@@ -14643,7 +18290,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Timer Clock',
     unified: '23F2-FE0F',
-    keywords: ['alarm'],
+    keywords: ['timer_clock', 'alarm'],
     sheet: [53, 41],
     shortName: 'timer_clock'
   },
@@ -14651,6 +18298,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keycap 7',
     unified: '0037-FE0F-20E3',
     keywords: [
+      'keycap_7',
       '7',
       'numbers',
       'blue-square',
@@ -14663,6 +18311,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Sri Lanka Flag',
     unified: '1F1F1-1F1F0',
+    keywords: [
+      'flag_sri_lanka',
+      'sri',
+      'lanka',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 50],
     shortName: 'flag-lk'
   },
@@ -14670,6 +18327,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Open Mailbox with Raised Flag',
     unified: '1F4EC',
     keywords: [
+      'open_mailbox_with_raised_flag',
       'email',
       'inbox',
       'communication'
@@ -14680,20 +18338,29 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mantelpiece Clock',
     unified: '1F570-FE0F',
-    keywords: ['time'],
+    keywords: [
+      'mantelpiece_clock',
+      'time'
+    ],
     sheet: [29, 5],
     shortName: 'mantelpiece_clock'
   },
   {
     name: 'Hole',
     unified: '1F573-FE0F',
-    keywords: ['embarrassing'],
+    keywords: ['hole', 'embarrassing'],
     sheet: [29, 6],
     shortName: 'hole'
   },
   {
     name: 'Artist',
     unified: '1F9D1-200D-1F3A8',
+    keywords: [
+      'artist',
+      'painting',
+      'draw',
+      'creativity'
+    ],
     sheet: [46, 13],
     skinVariations: [
       {
@@ -14723,6 +18390,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keycap 8',
     unified: '0038-FE0F-20E3',
     keywords: [
+      'keycap_8',
       '8',
       'blue-square',
       'numbers'
@@ -14734,12 +18402,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Liberia Flag',
     unified: '1F1F1-1F1F7',
+    keywords: [
+      'flag_liberia',
+      'lr',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 51],
     shortName: 'flag-lr'
   },
   {
-    name: 'Male Artist',
+    name: 'Man Artist',
     unified: '1F468-200D-1F3A8',
+    keywords: [
+      'man_artist',
+      'painter',
+      'man',
+      'human'
+    ],
     sheet: [14, 57],
     skinVariations: [
       {
@@ -14769,6 +18451,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bomb',
     unified: '1F4A3',
     keywords: [
+      'bomb',
       'boom',
       'explode',
       'explosion',
@@ -14780,7 +18463,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Open Mailbox with Lowered Flag',
     unified: '1F4ED',
-    keywords: ['email', 'inbox'],
+    keywords: [
+      'open_mailbox_with_lowered_flag',
+      'email',
+      'inbox'
+    ],
     sheet: [27, 10],
     shortName: 'mailbox_with_no_mail'
   },
@@ -14788,6 +18475,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Twelve Oclock',
     unified: '1F55B',
     keywords: [
+      'twelve_o_clock',
       'time',
       'noon',
       'midnight',
@@ -14803,6 +18491,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keycap 9',
     unified: '0039-FE0F-20E3',
     keywords: [
+      'keycap_9',
       'blue-square',
       'numbers',
       '9'
@@ -14814,12 +18503,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Lesotho Flag',
     unified: '1F1F1-1F1F8',
+    keywords: [
+      'flag_lesotho',
+      'ls',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 52],
     shortName: 'flag-ls'
   },
   {
-    name: 'Female Artist',
+    name: 'Woman Artist',
     unified: '1F469-200D-1F3A8',
+    keywords: [
+      'woman_artist',
+      'painter',
+      'woman',
+      'human'
+    ],
     sheet: [17, 50],
     skinVariations: [
       {
@@ -14849,6 +18552,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Speech Balloon',
     unified: '1F4AC',
     keywords: [
+      'speech_balloon',
       'bubble',
       'words',
       'message',
@@ -14862,6 +18566,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Postbox',
     unified: '1F4EE',
     keywords: [
+      'postbox',
       'email',
       'letter',
       'envelope'
@@ -14873,6 +18578,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Twelve-Thirty',
     unified: '1F567',
     keywords: [
+      'twelve_thirty',
       'time',
       'late',
       'early',
@@ -14884,12 +18590,24 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Lithuania Flag',
     unified: '1F1F1-1F1F9',
+    keywords: [
+      'flag_lithuania',
+      'lt',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 53],
     shortName: 'flag-lt'
   },
   {
     name: 'Eye in Speech Bubble',
     unified: '1F441-FE0F-200D-1F5E8-FE0F',
+    keywords: [
+      'eye_in_speech_bubble',
+      'info'
+    ],
     sheet: [12, 28],
     hidden: ['twitter', 'facebook'],
     shortName: 'eye-in-speech-bubble'
@@ -14898,6 +18616,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Keycap Ten',
     unified: '1F51F',
     keywords: [
+      'keycap_10',
       'numbers',
       '10',
       'blue-square'
@@ -14909,6 +18628,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face One Oclock',
     unified: '1F550',
     keywords: [
+      'one_o_clock',
       'time',
       'late',
       'early',
@@ -14920,12 +18640,23 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ballot Box with Ballot',
     unified: '1F5F3-FE0F',
+    keywords: [
+      'ballot_box_with_ballot',
+      'election',
+      'vote'
+    ],
     sheet: [30, 25],
     shortName: 'ballot_box_with_ballot'
   },
   {
     name: 'Pilot',
     unified: '1F9D1-200D-2708-FE0F',
+    keywords: [
+      'pilot',
+      'fly',
+      'plane',
+      'airplane'
+    ],
     sheet: [48, 31],
     skinVariations: [
       {
@@ -14954,12 +18685,27 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Luxembourg Flag',
     unified: '1F1F1-1F1FA',
+    keywords: [
+      'flag_luxembourg',
+      'lu',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 54],
     shortName: 'flag-lu'
   },
   {
-    name: 'Male Pilot',
+    name: 'Man Pilot',
     unified: '1F468-200D-2708-FE0F',
+    keywords: [
+      'man_pilot',
+      'aviator',
+      'plane',
+      'man',
+      'human'
+    ],
     sheet: [17, 6],
     skinVariations: [
       {
@@ -14989,6 +18735,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Input Symbol for Latin Capital Letters',
     unified: '1F520',
     keywords: [
+      'input_latin_uppercase',
       'alphabet',
       'words',
       'blue-square'
@@ -15000,6 +18747,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face One-Thirty',
     unified: '1F55C',
     keywords: [
+      'one_thirty',
       'time',
       'late',
       'early',
@@ -15012,6 +18760,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Left Speech Bubble',
     unified: '1F5E8-FE0F',
     keywords: [
+      'left_speech_bubble',
       'words',
       'message',
       'talk',
@@ -15024,6 +18773,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pencil',
     unified: '270F-FE0F',
     keywords: [
+      'pencil',
       'stationery',
       'write',
       'paper',
@@ -15037,12 +18787,27 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Latvia Flag',
     unified: '1F1F1-1F1FB',
+    keywords: [
+      'flag_latvia',
+      'lv',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 55],
     shortName: 'flag-lv'
   },
   {
-    name: 'Female Pilot',
+    name: 'Woman Pilot',
     unified: '1F469-200D-2708-FE0F',
+    keywords: [
+      'woman_pilot',
+      'aviator',
+      'plane',
+      'woman',
+      'human'
+    ],
     sheet: [19, 52],
     skinVariations: [
       {
@@ -15072,6 +18837,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Input Symbol for Latin Small Letters',
     unified: '1F521',
     keywords: [
+      'input_latin_lowercase',
       'blue-square',
       'alphabet'
     ],
@@ -15082,6 +18848,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Two Oclock',
     unified: '1F551',
     keywords: [
+      'two_o_clock',
       'time',
       'late',
       'early',
@@ -15094,6 +18861,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Right Anger Bubble',
     unified: '1F5EF-FE0F',
     keywords: [
+      'right_anger_bubble',
       'caption',
       'speech',
       'thinking',
@@ -15106,6 +18874,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Nib',
     unified: '2712-FE0F',
     keywords: [
+      'black_nib',
       'pen',
       'stationery',
       'writing',
@@ -15117,6 +18886,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Libya Flag',
     unified: '1F1F1-1F1FE',
+    keywords: [
+      'flag_libya',
+      'ly',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 56],
     shortName: 'flag-ly'
   },
@@ -15124,6 +18901,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Thought Balloon',
     unified: '1F4AD',
     keywords: [
+      'thought_balloon',
       'bubble',
       'cloud',
       'speech',
@@ -15137,6 +18915,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Input Symbol for Numbers',
     unified: '1F522',
     keywords: [
+      'input_numbers',
       'numbers',
       'blue-square'
     ],
@@ -15147,6 +18926,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Two-Thirty',
     unified: '1F55D',
     keywords: [
+      'two_thirty',
       'time',
       'late',
       'early',
@@ -15156,14 +18936,24 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'clock230'
   },
   {
-    name: 'Lower Left Fountain Pen',
+    name: 'Fountain Pen',
     unified: '1F58B-FE0F',
+    keywords: [
+      'fountain_pen',
+      'stationery',
+      'writing',
+      'write'
+    ],
     sheet: [29, 43],
     shortName: 'lower_left_fountain_pen'
   },
   {
     name: 'Astronaut',
     unified: '1F9D1-200D-1F680',
+    keywords: [
+      'astronaut',
+      'outerspace'
+    ],
     sheet: [46, 55],
     skinVariations: [
       {
@@ -15192,12 +18982,27 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Morocco Flag',
     unified: '1F1F2-1F1E6',
+    keywords: [
+      'flag_morocco',
+      'ma',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [2, 57],
     shortName: 'flag-ma'
   },
   {
-    name: 'Male Astronaut',
+    name: 'Man Astronaut',
     unified: '1F468-200D-1F680',
+    keywords: [
+      'man_astronaut',
+      'space',
+      'rocket',
+      'man',
+      'human'
+    ],
     sheet: [15, 56],
     skinVariations: [
       {
@@ -15227,6 +19032,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sleeping Symbol',
     unified: '1F4A4',
     keywords: [
+      'zzz',
       'sleepy',
       'tired',
       'dream'
@@ -15238,6 +19044,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Input Symbol for Symbols',
     unified: '1F523',
     keywords: [
+      'input_symbols',
       'blue-square',
       'music',
       'note',
@@ -15253,6 +19060,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Three Oclock',
     unified: '1F552',
     keywords: [
+      'three_o_clock',
       'time',
       'late',
       'early',
@@ -15262,20 +19070,41 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'clock3'
   },
   {
-    name: 'Lower Left Ballpoint Pen',
+    name: 'Pen',
     unified: '1F58A-FE0F',
+    keywords: [
+      'pen',
+      'stationery',
+      'writing',
+      'write'
+    ],
     sheet: [29, 42],
     shortName: 'lower_left_ballpoint_pen'
   },
   {
     name: 'Monaco Flag',
     unified: '1F1F2-1F1E8',
+    keywords: [
+      'flag_monaco',
+      'mc',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 0],
     shortName: 'flag-mc'
   },
   {
-    name: 'Female Astronaut',
+    name: 'Woman Astronaut',
     unified: '1F469-200D-1F680',
+    keywords: [
+      'woman_astronaut',
+      'space',
+      'rocket',
+      'woman',
+      'human'
+    ],
     sheet: [18, 44],
     skinVariations: [
       {
@@ -15305,6 +19134,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Input Symbol for Latin Letters',
     unified: '1F524',
     keywords: [
+      'input_latin_letters',
       'blue-square',
       'alphabet'
     ],
@@ -15315,6 +19145,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Three-Thirty',
     unified: '1F55E',
     keywords: [
+      'three_thirty',
       'time',
       'late',
       'early',
@@ -15324,8 +19155,14 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'clock330'
   },
   {
-    name: 'Lower Left Paintbrush',
+    name: 'Paintbrush',
     unified: '1F58C-FE0F',
+    keywords: [
+      'paintbrush',
+      'drawing',
+      'creativity',
+      'art'
+    ],
     sheet: [29, 44],
     shortName: 'lower_left_paintbrush'
   },
@@ -15333,6 +19170,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Negative Squared Latin Capital Letter a',
     unified: '1F170-FE0F',
     keywords: [
+      'a_button',
       'red-square',
       'alphabet',
       'letter'
@@ -15343,6 +19181,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Moldova Flag',
     unified: '1F1F2-1F1E9',
+    keywords: [
+      'flag_moldova',
+      'moldova',
+      'republic',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 1],
     shortName: 'flag-md'
   },
@@ -15350,6 +19197,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Four Oclock',
     unified: '1F553',
     keywords: [
+      'four_o_clock',
       'time',
       'late',
       'early',
@@ -15359,14 +19207,20 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'clock4'
   },
   {
-    name: 'Lower Left Crayon',
+    name: 'Crayon',
     unified: '1F58D-FE0F',
+    keywords: [
+      'crayon',
+      'drawing',
+      'creativity'
+    ],
     sheet: [29, 45],
     shortName: 'lower_left_crayon'
   },
   {
     name: 'Firefighter',
     unified: '1F9D1-200D-1F692',
+    keywords: ['firefighter', 'fire'],
     sheet: [47, 3],
     skinVariations: [
       {
@@ -15396,6 +19250,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Negative Squared Ab',
     unified: '1F18E',
     keywords: [
+      'ab_button',
       'red-square',
       'alphabet'
     ],
@@ -15405,12 +19260,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Montenegro Flag',
     unified: '1F1F2-1F1EA',
+    keywords: [
+      'flag_montenegro',
+      'me',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 2],
     shortName: 'flag-me'
   },
   {
-    name: 'Male Firefighter',
+    name: 'Man Firefighter',
     unified: '1F468-200D-1F692',
+    keywords: [
+      'man_firefighter',
+      'fireman',
+      'man',
+      'human'
+    ],
     sheet: [16, 4],
     skinVariations: [
       {
@@ -15440,6 +19309,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Memo',
     unified: '1F4DD',
     keywords: [
+      'memo',
       'write',
       'documents',
       'stationery',
@@ -15461,6 +19331,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Four-Thirty',
     unified: '1F55F',
     keywords: [
+      'four_thirty',
       'time',
       'late',
       'early',
@@ -15473,6 +19344,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Negative Squared Latin Capital Letter B',
     unified: '1F171-FE0F',
     keywords: [
+      'b_button',
       'red-square',
       'alphabet',
       'letter'
@@ -15483,12 +19355,19 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'St. Martin Flag',
     unified: '1F1F2-1F1EB',
+    keywords: ['flag_st_martin'],
     sheet: [3, 3],
     shortName: 'flag-mf'
   },
   {
-    name: 'Female Firefighter',
+    name: 'Woman Firefighter',
     unified: '1F469-200D-1F692',
+    keywords: [
+      'woman_firefighter',
+      'fireman',
+      'woman',
+      'human'
+    ],
     sheet: [18, 50],
     skinVariations: [
       {
@@ -15518,6 +19397,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Briefcase',
     unified: '1F4BC',
     keywords: [
+      'briefcase',
       'business',
       'documents',
       'work',
@@ -15533,6 +19413,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Five Oclock',
     unified: '1F554',
     keywords: [
+      'five_o_clock',
       'time',
       'late',
       'early',
@@ -15545,6 +19426,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cl',
     unified: '1F191',
     keywords: [
+      'cl_button',
       'alphabet',
       'words',
       'red-square'
@@ -15555,12 +19437,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Madagascar Flag',
     unified: '1F1F2-1F1EC',
+    keywords: [
+      'flag_madagascar',
+      'mg',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 4],
     shortName: 'flag-mg'
   },
   {
     name: 'Police Officer',
     unified: '1F46E',
+    keywords: ['police_officer', 'cop'],
     sheet: [21, 43],
     skinVariations: [
       {
@@ -15591,6 +19482,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'File Folder',
     unified: '1F4C1',
     keywords: [
+      'file_folder',
       'documents',
       'business',
       'office'
@@ -15602,6 +19494,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Five-Thirty',
     unified: '1F560',
     keywords: [
+      'five_thirty',
       'time',
       'late',
       'early',
@@ -15613,20 +19506,43 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Squared Cool',
     unified: '1F192',
-    keywords: ['words', 'blue-square'],
+    keywords: [
+      'cool_button',
+      'words',
+      'blue-square'
+    ],
     sheet: [0, 22],
     shortName: 'cool'
   },
   {
     name: 'Marshall Islands Flag',
     unified: '1F1F2-1F1ED',
+    keywords: [
+      'flag_marshall_islands',
+      'marshall',
+      'islands',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 5],
     shortName: 'flag-mh'
   },
   {
-    name: 'Male Police Officer',
+    name: 'Man Police Officer',
     unified: '1F46E-200D-2642-FE0F',
     obsoletes: '1F46E',
+    keywords: [
+      'man_police_officer',
+      'man',
+      'police',
+      'law',
+      'legal',
+      'enforcement',
+      'arrest',
+      '911'
+    ],
     sheet: [21, 37],
     skinVariations: [
       {
@@ -15655,7 +19571,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Open File Folder',
     unified: '1F4C2',
-    keywords: ['documents', 'load'],
+    keywords: [
+      'open_file_folder',
+      'documents',
+      'load'
+    ],
     sheet: [26, 25],
     shortName: 'open_file_folder'
   },
@@ -15663,6 +19583,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Six Oclock',
     unified: '1F555',
     keywords: [
+      'six_o_clock',
       'time',
       'late',
       'early',
@@ -15676,19 +19597,42 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Squared Free',
     unified: '1F193',
-    keywords: ['blue-square', 'words'],
+    keywords: [
+      'free_button',
+      'blue-square',
+      'words'
+    ],
     sheet: [0, 23],
     shortName: 'free'
   },
   {
     name: 'North Macedonia Flag',
     unified: '1F1F2-1F1F0',
+    keywords: [
+      'flag_north_macedonia',
+      'macedonia',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 6],
     shortName: 'flag-mk'
   },
   {
-    name: 'Female Police Officer',
+    name: 'Woman Police Officer',
     unified: '1F46E-200D-2640-FE0F',
+    keywords: [
+      'woman_police_officer',
+      'woman',
+      'police',
+      'law',
+      'legal',
+      'enforcement',
+      'arrest',
+      '911',
+      'female'
+    ],
     sheet: [21, 31],
     skinVariations: [
       {
@@ -15718,6 +19662,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Six-Thirty',
     unified: '1F561',
     keywords: [
+      'six_thirty',
       'time',
       'late',
       'early',
@@ -15730,6 +19675,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Card Index Dividers',
     unified: '1F5C2-FE0F',
     keywords: [
+      'card_index_dividers',
       'organizing',
       'business',
       'stationery'
@@ -15740,13 +19686,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mali Flag',
     unified: '1F1F2-1F1F1',
+    keywords: [
+      'flag_mali',
+      'ml',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 7],
     shortName: 'flag-ml'
   },
   {
     name: 'Calendar',
     unified: '1F4C5',
-    keywords: ['calendar', 'schedule'],
+    keywords: [
+      'calendar',
+      'calendar',
+      'schedule'
+    ],
     sheet: [26, 28],
     shortName: 'date'
   },
@@ -15754,6 +19712,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Seven Oclock',
     unified: '1F556',
     keywords: [
+      'seven_o_clock',
       'time',
       'late',
       'early',
@@ -15763,8 +19722,14 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'clock7'
   },
   {
-    name: 'Sleuth or Spy',
+    name: 'Detective',
     unified: '1F575-FE0F',
+    keywords: [
+      'detective',
+      'human',
+      'spy',
+      'detective'
+    ],
     sheet: [29, 25],
     skinVariations: [
       {
@@ -15795,6 +19760,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Information Source',
     unified: '2139-FE0F',
     keywords: [
+      'information',
       'blue-square',
       'alphabet',
       'letter'
@@ -15806,6 +19772,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Id',
     unified: '1F194',
     keywords: [
+      'id_button',
       'purple-square',
       'words'
     ],
@@ -15815,6 +19782,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Myanmar (burma) Flag',
     unified: '1F1F2-1F1F2',
+    keywords: [
+      'flag_myanmar',
+      'mm',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 8],
     shortName: 'flag-mm'
   },
@@ -15822,6 +19797,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tear-off Calendar',
     unified: '1F4C6',
     keywords: [
+      'tear_off_calendar',
       'schedule',
       'date',
       'planning'
@@ -15833,6 +19809,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Seven-Thirty',
     unified: '1F562',
     keywords: [
+      'seven_thirty',
       'time',
       'late',
       'early',
@@ -15842,9 +19819,13 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'clock730'
   },
   {
-    name: 'Male Detective',
+    name: 'Man Detective',
     unified: '1F575-FE0F-200D-2642-FE0F',
     obsoletes: '1F575-FE0F',
+    keywords: [
+      'man_detective',
+      'crime'
+    ],
     sheet: [29, 19],
     hidden: ['facebook'],
     skinVariations: [
@@ -15874,6 +19855,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mongolia Flag',
     unified: '1F1F2-1F1F3',
+    keywords: [
+      'flag_mongolia',
+      'mn',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 9],
     shortName: 'flag-mn'
   },
@@ -15881,6 +19870,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Eight Oclock',
     unified: '1F557',
     keywords: [
+      'eight_o_clock',
       'time',
       'late',
       'early',
@@ -15890,8 +19880,16 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'clock8'
   },
   {
-    name: 'Female Detective',
+    name: 'Woman Detective',
     unified: '1F575-FE0F-200D-2640-FE0F',
+    keywords: [
+      'woman_detective',
+      'human',
+      'spy',
+      'detective',
+      'female',
+      'woman'
+    ],
     sheet: [29, 13],
     hidden: ['facebook'],
     skinVariations: [
@@ -15919,8 +19917,13 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'female-detective'
   },
   {
-    name: 'Spiral Note Pad',
+    name: 'Spiral Notepad',
     unified: '1F5D2-FE0F',
+    keywords: [
+      'spiral_notepad',
+      'memo',
+      'stationery'
+    ],
     sheet: [30, 16],
     shortName: 'spiral_note_pad'
   },
@@ -15928,6 +19931,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Circled Latin Capital Letter M',
     unified: '24C2-FE0F',
     keywords: [
+      'circled_m',
       'alphabet',
       'blue-circle',
       'letter'
@@ -15939,6 +19943,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared New',
     unified: '1F195',
     keywords: [
+      'new_button',
       'blue-square',
       'words',
       'start'
@@ -15949,20 +19954,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Macao Sar China Flag',
     unified: '1F1F2-1F1F4',
+    keywords: [
+      'flag_macao_sar_china',
+      'macao',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 10],
     shortName: 'flag-mo'
   },
   {
     name: 'Guardsman',
     unified: '1F482',
-    keywords: [
-      'uk',
-      'gb',
-      'british',
-      'male',
-      'guy',
-      'royal'
-    ],
+    keywords: ['guard', 'protect'],
     sheet: [24, 23],
     skinVariations: [
       {
@@ -15993,6 +19999,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Eight-Thirty',
     unified: '1F563',
     keywords: [
+      'eight_thirty',
       'time',
       'late',
       'early',
@@ -16002,8 +20009,14 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'clock830'
   },
   {
-    name: 'Spiral Calendar Pad',
+    name: 'Spiral Calendar',
     unified: '1F5D3-FE0F',
+    keywords: [
+      'spiral_calendar',
+      'date',
+      'schedule',
+      'planning'
+    ],
     sheet: [30, 17],
     shortName: 'spiral_calendar_pad'
   },
@@ -16011,6 +20024,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Ng',
     unified: '1F196',
     keywords: [
+      'ng_button',
       'blue-square',
       'words',
       'shape',
@@ -16022,13 +20036,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Northern Mariana Islands Flag',
     unified: '1F1F2-1F1F5',
+    keywords: [
+      'flag_northern_mariana_islands',
+      'northern',
+      'mariana',
+      'islands',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 11],
     shortName: 'flag-mp'
   },
   {
-    name: 'Male Guard',
+    name: 'Man Guard',
     unified: '1F482-200D-2642-FE0F',
     obsoletes: '1F482',
+    keywords: [
+      'man_guard',
+      'uk',
+      'gb',
+      'british',
+      'male',
+      'guy',
+      'royal'
+    ],
     sheet: [24, 17],
     skinVariations: [
       {
@@ -16058,6 +20091,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Card Index',
     unified: '1F4C7',
     keywords: [
+      'card_index',
       'business',
       'stationery'
     ],
@@ -16068,6 +20102,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Nine Oclock',
     unified: '1F558',
     keywords: [
+      'nine_o_clock',
       'time',
       'late',
       'early',
@@ -16080,6 +20115,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Negative Squared Latin Capital Letter O',
     unified: '1F17E-FE0F',
     keywords: [
+      'o_button',
       'alphabet',
       'red-square',
       'letter'
@@ -16090,12 +20126,29 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Martinique Flag',
     unified: '1F1F2-1F1F6',
+    keywords: [
+      'flag_martinique',
+      'mq',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 12],
     shortName: 'flag-mq'
   },
   {
-    name: 'Female Guard',
+    name: 'Woman Guard',
     unified: '1F482-200D-2640-FE0F',
+    keywords: [
+      'woman_guard',
+      'uk',
+      'gb',
+      'british',
+      'female',
+      'royal',
+      'woman'
+    ],
     sheet: [24, 11],
     skinVariations: [
       {
@@ -16125,6 +20178,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Chart with Upwards Trend',
     unified: '1F4C8',
     keywords: [
+      'chart_increasing',
       'graph',
       'presentation',
       'stats',
@@ -16143,6 +20197,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Nine-Thirty',
     unified: '1F564',
     keywords: [
+      'nine_thirty',
       'time',
       'late',
       'early',
@@ -16155,6 +20210,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Ok',
     unified: '1F197',
     keywords: [
+      'ok_button',
       'good',
       'agree',
       'yes',
@@ -16166,6 +20222,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mauritania Flag',
     unified: '1F1F2-1F1F7',
+    keywords: [
+      'flag_mauritania',
+      'mr',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 13],
     shortName: 'flag-mr'
   },
@@ -16173,6 +20237,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Chart with Downwards Trend',
     unified: '1F4C9',
     keywords: [
+      'chart_decreasing',
       'graph',
       'presentation',
       'stats',
@@ -16191,6 +20256,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Ten Oclock',
     unified: '1F559',
     keywords: [
+      'ten_o_clock',
       'time',
       'late',
       'early',
@@ -16202,6 +20268,12 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ninja',
     unified: '1F977',
+    keywords: [
+      'ninja',
+      'ninjutsu',
+      'skills',
+      'japanese'
+    ],
     sheet: [42, 20],
     skinVariations: [
       {
@@ -16231,6 +20303,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Negative Squared Latin Capital Letter P',
     unified: '1F17F-FE0F',
     keywords: [
+      'p_button',
       'cars',
       'blue-square',
       'alphabet',
@@ -16242,12 +20315,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Montserrat Flag',
     unified: '1F1F2-1F1F8',
+    keywords: [
+      'flag_montserrat',
+      'ms',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 14],
     shortName: 'flag-ms'
   },
   {
     name: 'Construction Worker',
     unified: '1F477',
+    keywords: [
+      'construction_worker',
+      'labor',
+      'build'
+    ],
     sheet: [23, 26],
     skinVariations: [
       {
@@ -16278,6 +20364,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bar Chart',
     unified: '1F4CA',
     keywords: [
+      'bar_chart',
       'graph',
       'presentation',
       'stats'
@@ -16289,6 +20376,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Ten-Thirty',
     unified: '1F565',
     keywords: [
+      'ten_thirty',
       'time',
       'late',
       'early',
@@ -16301,6 +20389,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Sos',
     unified: '1F198',
     keywords: [
+      'sos_button',
       'help',
       'red-square',
       'words',
@@ -16313,13 +20402,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Malta Flag',
     unified: '1F1F2-1F1F9',
+    keywords: [
+      'flag_malta',
+      'mt',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 15],
     shortName: 'flag-mt'
   },
   {
-    name: 'Male Construction Worker',
+    name: 'Man Construction Worker',
     unified: '1F477-200D-2642-FE0F',
     obsoletes: '1F477',
+    keywords: [
+      'man_construction_worker',
+      'male',
+      'human',
+      'wip',
+      'guy',
+      'build',
+      'construction',
+      'worker',
+      'labor'
+    ],
     sheet: [23, 20],
     skinVariations: [
       {
@@ -16349,6 +20457,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clipboard',
     unified: '1F4CB',
     keywords: [
+      'clipboard',
       'stationery',
       'documents'
     ],
@@ -16359,6 +20468,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Eleven Oclock',
     unified: '1F55A',
     keywords: [
+      'eleven_o_clock',
       'time',
       'late',
       'early',
@@ -16371,6 +20481,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Up with Exclamation Mark',
     unified: '1F199',
     keywords: [
+      'up_button',
       'blue-square',
       'above',
       'high'
@@ -16381,12 +20492,31 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mauritius Flag',
     unified: '1F1F2-1F1FA',
+    keywords: [
+      'flag_mauritius',
+      'mu',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 16],
     shortName: 'flag-mu'
   },
   {
-    name: 'Female Construction Worker',
+    name: 'Woman Construction Worker',
     unified: '1F477-200D-2640-FE0F',
+    keywords: [
+      'woman_construction_worker',
+      'female',
+      'human',
+      'wip',
+      'build',
+      'construction',
+      'worker',
+      'labor',
+      'woman'
+    ],
     sheet: [23, 14],
     skinVariations: [
       {
@@ -16416,6 +20546,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pushpin',
     unified: '1F4CC',
     keywords: [
+      'pushpin',
       'stationery',
       'mark',
       'here'
@@ -16427,6 +20558,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clock Face Eleven-Thirty',
     unified: '1F566',
     keywords: [
+      'eleven_thirty',
       'time',
       'late',
       'early',
@@ -16439,6 +20571,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Vs',
     unified: '1F19A',
     keywords: [
+      'vs_button',
       'words',
       'orange-square'
     ],
@@ -16448,6 +20581,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Maldives Flag',
     unified: '1F1F2-1F1FB',
+    keywords: [
+      'flag_maldives',
+      'mv',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 17],
     shortName: 'flag-mv'
   },
@@ -16455,6 +20596,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'New Moon Symbol',
     unified: '1F311',
     keywords: [
+      'new_moon',
       'nature',
       'twilight',
       'planet',
@@ -16470,6 +20612,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Round Pushpin',
     unified: '1F4CD',
     keywords: [
+      'round_pushpin',
       'stationery',
       'location',
       'map',
@@ -16482,6 +20625,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Prince',
     unified: '1F934',
     keywords: [
+      'prince',
       'boy',
       'man',
       'male',
@@ -16517,6 +20661,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Malawi Flag',
     unified: '1F1F2-1F1FC',
+    keywords: [
+      'flag_malawi',
+      'mw',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 18],
     shortName: 'flag-mw'
   },
@@ -16524,6 +20676,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Katakana Koko',
     unified: '1F201',
     keywords: [
+      'japanese_here_button',
       'blue-square',
       'here',
       'katakana',
@@ -16537,6 +20690,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Waxing Crescent Moon Symbol',
     unified: '1F312',
     keywords: [
+      'waxing_crescent_moon',
       'nature',
       'twilight',
       'planet',
@@ -16552,6 +20706,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Princess',
     unified: '1F478',
     keywords: [
+      'princess',
       'girl',
       'woman',
       'female',
@@ -16589,6 +20744,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Paperclip',
     unified: '1F4CE',
     keywords: [
+      'paperclip',
       'documents',
       'stationery'
     ],
@@ -16598,6 +20754,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mexico Flag',
     unified: '1F1F2-1F1FD',
+    keywords: [
+      'flag_mexico',
+      'mx',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 19],
     shortName: 'flag-mx'
   },
@@ -16605,6 +20769,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Katakana Sa',
     unified: '1F202-FE0F',
     keywords: [
+      'japanese_service_charge_button',
       'japanese',
       'blue-square',
       'katakana'
@@ -16616,6 +20781,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'First Quarter Moon Symbol',
     unified: '1F313',
     keywords: [
+      'first_quarter_moon',
       'nature',
       'twilight',
       'planet',
@@ -16631,10 +20797,8 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man with Turban',
     unified: '1F473',
     keywords: [
-      'male',
-      'indian',
-      'hinduism',
-      'arabs'
+      'person_wearing_turban',
+      'headdress'
     ],
     sheet: [22, 48],
     skinVariations: [
@@ -16665,12 +20829,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Linked Paperclips',
     unified: '1F587-FE0F',
+    keywords: [
+      'linked_paperclips',
+      'documents',
+      'stationery'
+    ],
     sheet: [29, 41],
     shortName: 'linked_paperclips'
   },
   {
     name: 'Malaysia Flag',
     unified: '1F1F2-1F1FE',
+    keywords: [
+      'flag_malaysia',
+      'my',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 20],
     shortName: 'flag-my'
   },
@@ -16678,6 +20855,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cjk Unified Ideograph-6708',
     unified: '1F237-FE0F',
     keywords: [
+      'japanese_monthly_amount_button',
       'chinese',
       'month',
       'moon',
@@ -16691,6 +20869,18 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Waxing Gibbous Moon Symbol',
     unified: '1F314',
+    keywords: [
+      'waxing_gibbous_moon',
+      'nature',
+      'night',
+      'sky',
+      'gray',
+      'twilight',
+      'planet',
+      'space',
+      'evening',
+      'sleep'
+    ],
     sheet: [5, 34],
     shortNames: ['waxing_gibbous_moon'],
     shortName: 'moon'
@@ -16699,6 +20889,13 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Wearing Turban',
     unified: '1F473-200D-2642-FE0F',
     obsoletes: '1F473',
+    keywords: [
+      'man_wearing_turban',
+      'male',
+      'indian',
+      'hinduism',
+      'arabs'
+    ],
     sheet: [22, 42],
     skinVariations: [
       {
@@ -16728,6 +20925,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Straight Ruler',
     unified: '1F4CF',
     keywords: [
+      'straight_ruler',
       'stationery',
       'calculate',
       'length',
@@ -16743,6 +20941,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mozambique Flag',
     unified: '1F1F2-1F1FF',
+    keywords: [
+      'flag_mozambique',
+      'mz',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 21],
     shortName: 'flag-mz'
   },
@@ -16750,6 +20956,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cjk Unified Ideograph-6709',
     unified: '1F236',
     keywords: [
+      'japanese_not_free_of_charge_button',
       'orange-square',
       'chinese',
       'have',
@@ -16762,6 +20969,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Full Moon Symbol',
     unified: '1F315',
     keywords: [
+      'full_moon',
       'nature',
       'yellow',
       'twilight',
@@ -16777,6 +20985,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Wearing Turban',
     unified: '1F473-200D-2640-FE0F',
+    keywords: [
+      'woman_wearing_turban',
+      'female',
+      'indian',
+      'hinduism',
+      'arabs',
+      'woman'
+    ],
     sheet: [22, 36],
     skinVariations: [
       {
@@ -16806,6 +21022,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Triangular Ruler',
     unified: '1F4D0',
     keywords: [
+      'triangular_ruler',
       'stationery',
       'math',
       'architect',
@@ -16817,6 +21034,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Namibia Flag',
     unified: '1F1F3-1F1E6',
+    keywords: [
+      'flag_namibia',
+      'na',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 22],
     shortName: 'flag-na'
   },
@@ -16824,6 +21049,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cjk Unified Ideograph-6307',
     unified: '1F22F',
     keywords: [
+      'japanese_reserved_button',
       'chinese',
       'point',
       'green-square',
@@ -16836,6 +21062,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Waning Gibbous Moon Symbol',
     unified: '1F316',
     keywords: [
+      'waning_gibbous_moon',
       'nature',
       'twilight',
       'planet',
@@ -16852,6 +21079,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man with Gua Pi Mao',
     unified: '1F472',
     keywords: [
+      'man_with_skullcap',
       'male',
       'boy',
       'chinese'
@@ -16884,13 +21112,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Black Scissors',
     unified: '2702-FE0F',
-    keywords: ['stationery', 'cut'],
+    keywords: [
+      'scissors',
+      'stationery',
+      'cut'
+    ],
     sheet: [55, 44],
     shortName: 'scissors'
   },
   {
     name: 'New Caledonia Flag',
     unified: '1F1F3-1F1E8',
+    keywords: [
+      'flag_new_caledonia',
+      'new',
+      'caledonia',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 23],
     shortName: 'flag-nc'
   },
@@ -16898,6 +21139,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Circled Ideograph Advantage',
     unified: '1F250',
     keywords: [
+      'japanese_bargain_button',
       'chinese',
       'kanji',
       'obtain',
@@ -16911,6 +21153,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Last Quarter Moon Symbol',
     unified: '1F317',
     keywords: [
+      'last_quarter_moon',
       'nature',
       'twilight',
       'planet',
@@ -16926,6 +21169,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Card File Box',
     unified: '1F5C3-FE0F',
     keywords: [
+      'card_file_box',
       'business',
       'stationery'
     ],
@@ -16935,6 +21179,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Person with Headscarf',
     unified: '1F9D5',
+    keywords: [
+      'woman_with_headscarf',
+      'female',
+      'hijab',
+      'mantilla',
+      'tichel'
+    ],
     sheet: [49, 3],
     skinVariations: [
       {
@@ -16963,6 +21214,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Niger Flag',
     unified: '1F1F3-1F1EA',
+    keywords: [
+      'flag_niger',
+      'ne',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 24],
     shortName: 'flag-ne'
   },
@@ -16970,6 +21229,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cjk Unified Ideograph-5272',
     unified: '1F239',
     keywords: [
+      'japanese_discount_button',
       'cut',
       'divide',
       'chinese',
@@ -16983,6 +21243,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Waning Crescent Moon Symbol',
     unified: '1F318',
     keywords: [
+      'waning_crescent_moon',
       'nature',
       'twilight',
       'planet',
@@ -16997,13 +21258,61 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'File Cabinet',
     unified: '1F5C4-FE0F',
-    keywords: ['filing', 'organizing'],
+    keywords: [
+      'file_cabinet',
+      'filing',
+      'organizing'
+    ],
     sheet: [30, 14],
     shortName: 'file_cabinet'
   },
   {
+    name: 'Man in Tuxedo',
+    unified: '1F935',
+    keywords: [
+      'man_in_tuxedo',
+      'couple',
+      'marriage',
+      'wedding',
+      'groom'
+    ],
+    sheet: [39, 33],
+    skinVariations: [
+      {
+        unified: '1F935-1F3FB',
+        sheet: [39, 34]
+      },
+      {
+        unified: '1F935-1F3FC',
+        sheet: [39, 35]
+      },
+      {
+        unified: '1F935-1F3FD',
+        sheet: [39, 36]
+      },
+      {
+        unified: '1F935-1F3FE',
+        sheet: [39, 37]
+      },
+      {
+        unified: '1F935-1F3FF',
+        sheet: [39, 38]
+      }
+    ],
+    shortName: 'person_in_tuxedo'
+  },
+  {
     name: 'Norfolk Island Flag',
     unified: '1F1F3-1F1EB',
+    keywords: [
+      'flag_norfolk_island',
+      'norfolk',
+      'island',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 25],
     shortName: 'flag-nf'
   },
@@ -17011,6 +21320,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cjk Unified Ideograph-7121',
     unified: '1F21A',
     keywords: [
+      'japanese_free_of_charge_button',
       'nothing',
       'chinese',
       'kanji',
@@ -17024,6 +21334,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Crescent Moon',
     unified: '1F319',
     keywords: [
+      'crescent_moon',
       'night',
       'sleep',
       'sky',
@@ -17037,6 +21348,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Wastebasket',
     unified: '1F5D1-FE0F',
     keywords: [
+      'wastebasket',
       'bin',
       'trash',
       'rubbish',
@@ -17050,10 +21362,9 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man in Tuxedo',
     unified: '1F935-200D-2642-FE0F',
     keywords: [
-      'couple',
-      'marriage',
-      'wedding',
-      'groom'
+      'man in tuxedo',
+      'formal',
+      'fashion'
     ],
     sheet: [39, 27],
     skinVariations: [
@@ -17083,6 +21394,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Nigeria Flag',
     unified: '1F1F3-1F1EC',
+    keywords: [
+      'flag_nigeria',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 26],
     shortName: 'flag-ng'
   },
@@ -17090,6 +21408,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cjk Unified Ideograph-7981',
     unified: '1F232',
     keywords: [
+      'japanese_prohibited_button',
       'kanji',
       'japanese',
       'chinese',
@@ -17105,6 +21424,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'New Moon with Face',
     unified: '1F31A',
     keywords: [
+      'new_moon_face',
       'nature',
       'twilight',
       'planet',
@@ -17120,6 +21440,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Lock',
     unified: '1F512',
     keywords: [
+      'locked',
       'security',
       'password',
       'padlock'
@@ -17130,6 +21451,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman in Tuxedo',
     unified: '1F935-200D-2640-FE0F',
+    keywords: [
+      'woman in tuxedo',
+      'formal',
+      'fashion'
+    ],
     sheet: [39, 21],
     skinVariations: [
       {
@@ -17158,6 +21484,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Nicaragua Flag',
     unified: '1F1F3-1F1EE',
+    keywords: [
+      'flag_nicaragua',
+      'ni',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 27],
     shortName: 'flag-ni'
   },
@@ -17165,6 +21499,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Circled Ideograph Accept',
     unified: '1F251',
     keywords: [
+      'japanese_acceptable_button',
       'ok',
       'good',
       'chinese',
@@ -17180,6 +21515,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'First Quarter Moon with Face',
     unified: '1F31B',
     keywords: [
+      'first_quarter_moon_face',
       'nature',
       'twilight',
       'planet',
@@ -17195,6 +21531,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bride with Veil',
     unified: '1F470',
     keywords: [
+      'bride_with_veil',
       'couple',
       'marriage',
       'wedding',
@@ -17229,13 +21566,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Open Lock',
     unified: '1F513',
-    keywords: ['privacy', 'security'],
+    keywords: [
+      'unlocked',
+      'privacy',
+      'security'
+    ],
     sheet: [27, 47],
     shortName: 'unlock'
   },
   {
     name: 'Netherlands Flag',
     unified: '1F1F3-1F1F1',
+    keywords: [
+      'flag_netherlands',
+      'nl',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 28],
     shortName: 'flag-nl'
   },
@@ -17243,6 +21592,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cjk Unified Ideograph-7533',
     unified: '1F238',
     keywords: [
+      'japanese_application_button',
       'chinese',
       'japanese',
       'kanji',
@@ -17255,6 +21605,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Last Quarter Moon with Face',
     unified: '1F31C',
     keywords: [
+      'last_quarter_moon_face',
       'nature',
       'twilight',
       'planet',
@@ -17269,6 +21620,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man with Veil',
     unified: '1F470-200D-2642-FE0F',
+    keywords: [
+      'man with veil',
+      'wedding',
+      'marriage'
+    ],
     sheet: [22, 0],
     skinVariations: [
       {
@@ -17297,13 +21653,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Lock with Ink Pen',
     unified: '1F50F',
-    keywords: ['security', 'secret'],
+    keywords: [
+      'locked_with_pen',
+      'security',
+      'secret'
+    ],
     sheet: [27, 43],
     shortName: 'lock_with_ink_pen'
   },
   {
     name: 'Norway Flag',
     unified: '1F1F3-1F1F4',
+    keywords: [
+      'flag_norway',
+      'no',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 29],
     shortName: 'flag-no'
   },
@@ -17311,6 +21679,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cjk Unified Ideograph-5408',
     unified: '1F234',
     keywords: [
+      'japanese_passing_grade_button',
       'japanese',
       'chinese',
       'join',
@@ -17324,6 +21693,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Thermometer',
     unified: '1F321-FE0F',
     keywords: [
+      'thermometer',
       'weather',
       'temperature',
       'hot',
@@ -17335,6 +21705,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman with Veil',
     unified: '1F470-200D-2640-FE0F',
+    keywords: [
+      'woman with veil',
+      'wedding',
+      'marriage'
+    ],
     sheet: [21, 52],
     skinVariations: [
       {
@@ -17363,13 +21738,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Closed Lock with Key',
     unified: '1F510',
-    keywords: ['security', 'privacy'],
+    keywords: [
+      'locked_with_key',
+      'security',
+      'privacy'
+    ],
     sheet: [27, 44],
     shortName: 'closed_lock_with_key'
   },
   {
     name: 'Nepal Flag',
     unified: '1F1F3-1F1F5',
+    keywords: [
+      'flag_nepal',
+      'np',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 30],
     shortName: 'flag-np'
   },
@@ -17377,6 +21764,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cjk Unified Ideograph-7a7a',
     unified: '1F233',
     keywords: [
+      'japanese_vacancy_button',
       'kanji',
       'japanese',
       'chinese',
@@ -17391,6 +21779,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Key',
     unified: '1F511',
     keywords: [
+      'key',
       'lock',
       'door',
       'password'
@@ -17401,7 +21790,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pregnant Woman',
     unified: '1F930',
-    keywords: ['baby'],
+    keywords: [
+      'pregnant_woman',
+      'baby'
+    ],
     sheet: [38, 49],
     skinVariations: [
       {
@@ -17431,6 +21823,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Sun with Rays',
     unified: '2600-FE0F',
     keywords: [
+      'sun',
       'weather',
       'nature',
       'brightness',
@@ -17444,6 +21837,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Nauru Flag',
     unified: '1F1F3-1F1F7',
+    keywords: [
+      'flag_nauru',
+      'nr',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 31],
     shortName: 'flag-nr'
   },
@@ -17451,6 +21852,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Full Moon with Face',
     unified: '1F31D',
     keywords: [
+      'full_moon_face',
       'nature',
       'twilight',
       'planet',
@@ -17466,6 +21868,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Old Key',
     unified: '1F5DD-FE0F',
     keywords: [
+      'old_key',
       'lock',
       'door',
       'password'
@@ -17476,6 +21879,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Breast-Feeding',
     unified: '1F931',
+    keywords: [
+      'breast_feeding',
+      'nursing',
+      'baby'
+    ],
     sheet: [38, 55],
     skinVariations: [
       {
@@ -17505,6 +21913,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Circled Ideograph Congratulation',
     unified: '3297-FE0F',
     keywords: [
+      'japanese_congratulations_button',
       'chinese',
       'kanji',
       'japanese',
@@ -17516,6 +21925,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Niue Flag',
     unified: '1F1F3-1F1FA',
+    keywords: [
+      'flag_niue',
+      'nu',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 32],
     shortName: 'flag-nu'
   },
@@ -17523,6 +21940,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sun with Face',
     unified: '1F31E',
     keywords: [
+      'sun_with_face',
       'nature',
       'morning',
       'sky'
@@ -17533,6 +21951,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Feeding Baby',
     unified: '1F469-200D-1F37C',
+    keywords: [
+      'woman feeding baby',
+      'birth',
+      'food'
+    ],
     sheet: [17, 32],
     skinVariations: [
       {
@@ -17562,6 +21985,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hammer',
     unified: '1F528',
     keywords: [
+      'hammer',
       'tools',
       'build',
       'create'
@@ -17573,6 +21997,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Circled Ideograph Secret',
     unified: '3299-FE0F',
     keywords: [
+      'japanese_secret_button',
       'privacy',
       'chinese',
       'sshh',
@@ -17585,6 +22010,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'New Zealand Flag',
     unified: '1F1F3-1F1FF',
+    keywords: [
+      'flag_new_zealand',
+      'new',
+      'zealand',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 33],
     shortName: 'flag-nz'
   },
@@ -17592,6 +22026,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cjk Unified Ideograph-55b6',
     unified: '1F23A',
     keywords: [
+      'japanese_open_for_business_button',
       'japanese',
       'opening hours',
       'orange-square'
@@ -17602,6 +22037,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Feeding Baby',
     unified: '1F468-200D-1F37C',
+    keywords: [
+      'man feeding baby',
+      'birth',
+      'food'
+    ],
     sheet: [14, 39],
     skinVariations: [
       {
@@ -17630,18 +22070,36 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ringed Planet',
     unified: '1FA90',
+    keywords: [
+      'ringed_planet',
+      'outerspace'
+    ],
     sheet: [52, 32],
     shortName: 'ringed_planet'
   },
   {
     name: 'Axe',
     unified: '1FA93',
+    keywords: [
+      'axe',
+      'tool',
+      'chop',
+      'cut'
+    ],
     sheet: [52, 35],
     shortName: 'axe'
   },
   {
     name: 'Oman Flag',
     unified: '1F1F4-1F1F2',
+    keywords: [
+      'flag_oman',
+      'om_symbol',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 34],
     shortName: 'flag-om'
   },
@@ -17649,6 +22107,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Squared Cjk Unified Ideograph-6e80',
     unified: '1F235',
     keywords: [
+      'japanese_no_vacancy_button',
       'full',
       'chinese',
       'japanese',
@@ -17661,6 +22120,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Person Feeding Baby',
     unified: '1F9D1-200D-1F37C',
+    keywords: [
+      'person feeding baby',
+      'birth',
+      'food'
+    ],
     sheet: [45, 47],
     skinVariations: [
       {
@@ -17689,20 +22153,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pick',
     unified: '26CF-FE0F',
-    keywords: ['tools', 'dig'],
+    keywords: ['pick', 'tools', 'dig'],
     sheet: [55, 10],
     shortName: 'pick'
   },
   {
     name: 'White Medium Star',
     unified: '2B50',
-    keywords: ['night', 'yellow'],
+    keywords: [
+      'star',
+      'night',
+      'yellow'
+    ],
     sheet: [56, 46],
     shortName: 'star'
   },
   {
     name: 'Panama Flag',
     unified: '1F1F5-1F1E6',
+    keywords: [
+      'flag_panama',
+      'pa',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 35],
     shortName: 'flag-pa'
   },
@@ -17710,6 +22186,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Glowing Star',
     unified: '1F31F',
     keywords: [
+      'glowing_star',
       'night',
       'sparkle',
       'awesome',
@@ -17723,6 +22200,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Baby Angel',
     unified: '1F47C',
     keywords: [
+      'baby_angel',
       'heaven',
       'wings',
       'halo'
@@ -17756,6 +22234,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Large Red Circle',
     unified: '1F534',
     keywords: [
+      'red_circle',
       'shape',
       'error',
       'danger'
@@ -17767,6 +22246,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hammer and Pick',
     unified: '2692-FE0F',
     keywords: [
+      'hammer_and_pick',
       'tools',
       'build',
       'create'
@@ -17777,13 +22257,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Peru Flag',
     unified: '1F1F5-1F1EA',
+    keywords: [
+      'flag_peru',
+      'pe',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 36],
     shortName: 'flag-pe'
   },
   {
     name: 'Shooting Star',
     unified: '1F320',
-    keywords: ['night', 'photo'],
+    keywords: [
+      'shooting_star',
+      'night',
+      'photo'
+    ],
     sheet: [5, 46],
     shortName: 'stars'
   },
@@ -17791,6 +22283,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Father Christmas',
     unified: '1F385',
     keywords: [
+      'santa_claus',
       'festival',
       'man',
       'male',
@@ -17826,6 +22319,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Hammer and Wrench',
     unified: '1F6E0-FE0F',
     keywords: [
+      'hammer_and_wrench',
       'tools',
       'build',
       'create'
@@ -17836,12 +22330,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Large Orange Circle',
     unified: '1F7E0',
+    keywords: [
+      'orange_circle',
+      'round'
+    ],
     sheet: [36, 55],
     shortName: 'large_orange_circle'
   },
   {
     name: 'French Polynesia Flag',
     unified: '1F1F5-1F1EB',
+    keywords: [
+      'flag_french_polynesia',
+      'french',
+      'polynesia',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 37],
     shortName: 'flag-pf'
   },
@@ -17849,6 +22356,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Milky Way',
     unified: '1F30C',
     keywords: [
+      'milky_way',
       'photo',
       'space',
       'stars'
@@ -17857,14 +22365,19 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'milky_way'
   },
   {
-    name: 'Dagger Knife',
+    name: 'Dagger',
     unified: '1F5E1-FE0F',
+    keywords: ['dagger', 'weapon'],
     sheet: [30, 21],
     shortName: 'dagger_knife'
   },
   {
     name: 'Large Yellow Circle',
     unified: '1F7E1',
+    keywords: [
+      'yellow_circle',
+      'round'
+    ],
     sheet: [36, 56],
     shortName: 'large_yellow_circle'
   },
@@ -17872,6 +22385,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mother Christmas',
     unified: '1F936',
     keywords: [
+      'mrs_claus',
       'woman',
       'female',
       'xmas',
@@ -17906,18 +22420,30 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Papua New Guinea Flag',
     unified: '1F1F5-1F1EC',
+    keywords: [
+      'flag_papua_new_guinea',
+      'papua',
+      'new',
+      'guinea',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 38],
     shortName: 'flag-pg'
   },
   {
     name: 'Large Green Circle',
     unified: '1F7E2',
+    keywords: ['green_circle', 'round'],
     sheet: [36, 57],
     shortName: 'large_green_circle'
   },
   {
     name: 'Mx Claus',
     unified: '1F9D1-200D-1F384',
+    keywords: ['mx claus', 'christmas'],
     sheet: [45, 53],
     skinVariations: [
       {
@@ -17946,20 +22472,35 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Cloud',
     unified: '2601-FE0F',
-    keywords: ['weather', 'sky'],
+    keywords: [
+      'cloud',
+      'weather',
+      'sky'
+    ],
     sheet: [53, 56],
     shortName: 'cloud'
   },
   {
     name: 'Crossed Swords',
     unified: '2694-FE0F',
-    keywords: ['weapon'],
+    keywords: [
+      'crossed_swords',
+      'weapon'
+    ],
     sheet: [54, 48],
     shortName: 'crossed_swords'
   },
   {
     name: 'Philippines Flag',
     unified: '1F1F5-1F1ED',
+    keywords: [
+      'flag_philippines',
+      'ph',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 39],
     shortName: 'flag-ph'
   },
@@ -17967,6 +22508,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pistol',
     unified: '1F52B',
     keywords: [
+      'pistol',
       'violence',
       'weapon',
       'pistol',
@@ -17979,6 +22521,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Large Blue Circle',
     unified: '1F535',
     keywords: [
+      'blue_circle',
       'shape',
       'icon',
       'button'
@@ -17989,6 +22532,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Superhero',
     unified: '1F9B8',
+    keywords: ['superhero', 'marvel'],
     sheet: [43, 49],
     skinVariations: [
       {
@@ -18018,6 +22562,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sun Behind Cloud',
     unified: '26C5',
     keywords: [
+      'sun_behind_cloud',
       'weather',
       'nature',
       'cloudy',
@@ -18031,18 +22576,38 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pakistan Flag',
     unified: '1F1F5-1F1F0',
+    keywords: [
+      'flag_pakistan',
+      'pk',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 40],
     shortName: 'flag-pk'
   },
   {
     name: 'Large Purple Circle',
     unified: '1F7E3',
+    keywords: [
+      'purple_circle',
+      'round'
+    ],
     sheet: [37, 0],
     shortName: 'large_purple_circle'
   },
   {
-    name: 'Male Superhero',
+    name: 'Man Superhero',
     unified: '1F9B8-200D-2642-FE0F',
+    keywords: [
+      'man_superhero',
+      'man',
+      'male',
+      'good',
+      'hero',
+      'superpowers'
+    ],
     sheet: [43, 43],
     skinVariations: [
       {
@@ -18071,24 +22636,42 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Boomerang',
     unified: '1FA83',
+    keywords: ['boomerang', 'weapon'],
     sheet: [52, 28],
     shortName: 'boomerang'
   },
   {
-    name: 'Thunder Cloud and Rain',
+    name: 'Cloud with Lightning and Rain',
     unified: '26C8-FE0F',
+    keywords: [
+      'cloud_with_lightning_and_rain',
+      'weather',
+      'lightning'
+    ],
     sheet: [55, 8],
     shortName: 'thunder_cloud_and_rain'
   },
   {
     name: 'Poland Flag',
     unified: '1F1F5-1F1F1',
+    keywords: [
+      'flag_poland',
+      'pl',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 41],
     shortName: 'flag-pl'
   },
   {
-    name: 'Mostly Sunny',
+    name: 'Sun Behind Small Cloud',
     unified: '1F324-FE0F',
+    keywords: [
+      'sun_behind_small_cloud',
+      'weather'
+    ],
     sheet: [5, 48],
     shortNames: ['sun_small_cloud'],
     shortName: 'mostly_sunny'
@@ -18096,19 +22679,31 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bow and Arrow',
     unified: '1F3F9',
-    keywords: ['sports'],
+    keywords: [
+      'bow_and_arrow',
+      'sports'
+    ],
     sheet: [11, 11],
     shortName: 'bow_and_arrow'
   },
   {
     name: 'Large Brown Circle',
     unified: '1F7E4',
+    keywords: ['brown_circle', 'round'],
     sheet: [37, 1],
     shortName: 'large_brown_circle'
   },
   {
-    name: 'Female Superhero',
+    name: 'Woman Superhero',
     unified: '1F9B8-200D-2640-FE0F',
+    keywords: [
+      'woman_superhero',
+      'woman',
+      'female',
+      'good',
+      'heroine',
+      'superpowers'
+    ],
     sheet: [43, 37],
     skinVariations: [
       {
@@ -18137,12 +22732,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'St. Pierre & Miquelon Flag',
     unified: '1F1F5-1F1F2',
+    keywords: [
+      'flag_st_pierre_miquelon',
+      'saint',
+      'pierre',
+      'miquelon',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 42],
     shortName: 'flag-pm'
   },
   {
-    name: 'Barely Sunny',
+    name: 'Sun Behind Large Cloud',
     unified: '1F325-FE0F',
+    keywords: [
+      'sun_behind_large_cloud',
+      'weather'
+    ],
     sheet: [5, 49],
     shortNames: ['sun_behind_cloud'],
     shortName: 'barely_sunny'
@@ -18151,6 +22760,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Shield',
     unified: '1F6E1-FE0F',
     keywords: [
+      'shield',
       'protection',
       'security'
     ],
@@ -18160,6 +22770,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Supervillain',
     unified: '1F9B9',
+    keywords: [
+      'supervillain',
+      'marvel'
+    ],
     sheet: [44, 9],
     skinVariations: [
       {
@@ -18189,6 +22803,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Medium Black Circle',
     unified: '26AB',
     keywords: [
+      'black_circle',
       'shape',
       'button',
       'round'
@@ -18199,19 +22814,41 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Pitcairn Islands Flag',
     unified: '1F1F5-1F1F3',
+    keywords: [
+      'flag_pitcairn_islands',
+      'pitcairn',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 43],
     shortName: 'flag-pn'
   },
   {
-    name: 'Partly Sunny Rain',
+    name: 'Sun Behind Rain Cloud',
     unified: '1F326-FE0F',
+    keywords: [
+      'sun_behind_rain_cloud',
+      'weather'
+    ],
     sheet: [5, 50],
     shortNames: ['sun_behind_rain_cloud'],
     shortName: 'partly_sunny_rain'
   },
   {
-    name: 'Male Supervillain',
+    name: 'Man Supervillain',
     unified: '1F9B9-200D-2642-FE0F',
+    keywords: [
+      'man_supervillain',
+      'man',
+      'male',
+      'evil',
+      'bad',
+      'criminal',
+      'hero',
+      'superpowers'
+    ],
     sheet: [44, 3],
     skinVariations: [
       {
@@ -18240,25 +22877,47 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Carpentry Saw',
     unified: '1FA9A',
+    keywords: [
+      'carpentry saw',
+      'cut',
+      'chop'
+    ],
     sheet: [52, 42],
     shortName: 'carpentry_saw'
   },
   {
     name: 'Medium White Circle',
     unified: '26AA',
-    keywords: ['shape', 'round'],
+    keywords: [
+      'white_circle',
+      'shape',
+      'round'
+    ],
     sheet: [55, 0],
     shortName: 'white_circle'
   },
   {
     name: 'Puerto Rico Flag',
     unified: '1F1F5-1F1F7',
+    keywords: [
+      'flag_puerto_rico',
+      'puerto',
+      'rico',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 44],
     shortName: 'flag-pr'
   },
   {
-    name: 'Rain Cloud',
+    name: 'Cloud with Rain',
     unified: '1F327-FE0F',
+    keywords: [
+      'cloud_with_rain',
+      'weather'
+    ],
     sheet: [5, 51],
     shortName: 'rain_cloud'
   },
@@ -18266,6 +22925,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Wrench',
     unified: '1F527',
     keywords: [
+      'wrench',
       'tools',
       'diy',
       'ikea',
@@ -18278,12 +22938,23 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Large Red Square',
     unified: '1F7E5',
+    keywords: ['red_square'],
     sheet: [37, 2],
     shortName: 'large_red_square'
   },
   {
-    name: 'Female Supervillain',
+    name: 'Woman Supervillain',
     unified: '1F9B9-200D-2640-FE0F',
+    keywords: [
+      'woman_supervillain',
+      'woman',
+      'female',
+      'evil',
+      'bad',
+      'criminal',
+      'heroine',
+      'superpowers'
+    ],
     sheet: [43, 55],
     skinVariations: [
       {
@@ -18312,24 +22983,40 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Palestinian Territories Flag',
     unified: '1F1F5-1F1F8',
+    keywords: [
+      'flag_palestinian_territories',
+      'palestine',
+      'palestinian',
+      'territories',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 45],
     shortName: 'flag-ps'
   },
   {
-    name: 'Snow Cloud',
+    name: 'Cloud with Snow',
     unified: '1F328-FE0F',
+    keywords: [
+      'cloud_with_snow',
+      'weather'
+    ],
     sheet: [5, 52],
     shortName: 'snow_cloud'
   },
   {
     name: 'Large Orange Square',
     unified: '1F7E7',
+    keywords: ['orange_square'],
     sheet: [37, 4],
     shortName: 'large_orange_square'
   },
   {
     name: 'Mage',
     unified: '1F9D9',
+    keywords: ['mage', 'magic'],
     sheet: [50, 17],
     skinVariations: [
       {
@@ -18359,18 +23046,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Screwdriver',
     unified: '1FA9B',
+    keywords: ['screwdriver', 'tools'],
     sheet: [52, 43],
     shortName: 'screwdriver'
   },
   {
     name: 'Portugal Flag',
     unified: '1F1F5-1F1F9',
+    keywords: [
+      'flag_portugal',
+      'pt',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 46],
     shortName: 'flag-pt'
   },
   {
-    name: 'Lightning',
+    name: 'Cloud with Lightning',
     unified: '1F329-FE0F',
+    keywords: [
+      'cloud_with_lightning',
+      'weather',
+      'thunder'
+    ],
     sheet: [5, 53],
     shortNames: ['lightning_cloud'],
     shortName: 'lightning'
@@ -18378,19 +23079,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Nut and Bolt',
     unified: '1F529',
-    keywords: ['handy', 'tools', 'fix'],
+    keywords: [
+      'nut_and_bolt',
+      'handy',
+      'tools',
+      'fix'
+    ],
     sheet: [28, 11],
     shortName: 'nut_and_bolt'
   },
   {
     name: 'Large Yellow Square',
     unified: '1F7E8',
+    keywords: ['yellow_square'],
     sheet: [37, 5],
     shortName: 'large_yellow_square'
   },
   {
-    name: 'Male Mage',
+    name: 'Man Mage',
     unified: '1F9D9-200D-2642-FE0F',
+    keywords: [
+      'man_mage',
+      'man',
+      'male',
+      'mage',
+      'sorcerer'
+    ],
     sheet: [50, 11],
     skinVariations: [
       {
@@ -18419,6 +23133,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Palau Flag',
     unified: '1F1F5-1F1FC',
+    keywords: [
+      'flag_palau',
+      'pw',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 47],
     shortName: 'flag-pw'
   },
@@ -18426,6 +23148,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Tornado',
     unified: '1F32A-FE0F',
     keywords: [
+      'tornado',
       'weather',
       'cyclone',
       'twister'
@@ -18437,13 +23160,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Large Green Square',
     unified: '1F7E9',
+    keywords: ['green_square'],
     sheet: [37, 6],
     shortName: 'large_green_square'
   },
   {
-    name: 'Female Mage',
+    name: 'Woman Mage',
     unified: '1F9D9-200D-2640-FE0F',
     obsoletes: '1F9D9',
+    keywords: [
+      'woman_mage',
+      'woman',
+      'female',
+      'mage',
+      'witch'
+    ],
     sheet: [50, 5],
     skinVariations: [
       {
@@ -18472,38 +23203,53 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Gear',
     unified: '2699-FE0F',
-    keywords: ['cog'],
+    keywords: ['gear', 'cog'],
     sheet: [54, 52],
     shortName: 'gear'
   },
   {
     name: 'Paraguay Flag',
     unified: '1F1F5-1F1FE',
+    keywords: [
+      'flag_paraguay',
+      'py',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 48],
     shortName: 'flag-py'
   },
   {
     name: 'Fog',
     unified: '1F32B-FE0F',
-    keywords: ['weather'],
+    keywords: ['fog', 'weather'],
     sheet: [5, 55],
     shortName: 'fog'
   },
   {
-    name: 'Compression',
+    name: 'Clamp',
     unified: '1F5DC-FE0F',
+    keywords: ['clamp', 'tool'],
     sheet: [30, 18],
     shortName: 'compression'
   },
   {
     name: 'Large Blue Square',
     unified: '1F7E6',
+    keywords: ['blue_square'],
     sheet: [37, 3],
     shortName: 'large_blue_square'
   },
   {
     name: 'Fairy',
     unified: '1F9DA',
+    keywords: [
+      'fairy',
+      'wings',
+      'magical'
+    ],
     sheet: [50, 35],
     skinVariations: [
       {
@@ -18533,24 +23279,43 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Qatar Flag',
     unified: '1F1F6-1F1E6',
+    keywords: [
+      'flag_qatar',
+      'qa',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 49],
     shortName: 'flag-qa'
   },
   {
-    name: 'Wind Blowing Face',
+    name: 'Wind Face',
     unified: '1F32C-FE0F',
+    keywords: [
+      'wind_face',
+      'gust',
+      'air'
+    ],
     sheet: [5, 56],
     shortName: 'wind_blowing_face'
   },
   {
     name: 'Large Purple Square',
     unified: '1F7EA',
+    keywords: ['purple_square'],
     sheet: [37, 7],
     shortName: 'large_purple_square'
   },
   {
-    name: 'Male Fairy',
+    name: 'Man Fairy',
     unified: '1F9DA-200D-2642-FE0F',
+    keywords: [
+      'man_fairy',
+      'man',
+      'male'
+    ],
     sheet: [50, 29],
     skinVariations: [
       {
@@ -18577,14 +23342,28 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'male_fairy'
   },
   {
-    name: 'Scales',
+    name: 'Balance Scale',
     unified: '2696-FE0F',
+    keywords: [
+      'balance_scale',
+      'law',
+      'fairness',
+      'weight'
+    ],
     sheet: [54, 50],
     shortName: 'scales'
   },
   {
     name: 'Réunion Flag',
     unified: '1F1F7-1F1EA',
+    keywords: [
+      'flag_reunion',
+      'réunion',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 50],
     shortName: 'flag-re'
   },
@@ -18592,6 +23371,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Cyclone',
     unified: '1F300',
     keywords: [
+      'cyclone',
       'weather',
       'swirl',
       'blue',
@@ -18610,19 +23390,29 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Large Brown Square',
     unified: '1F7EB',
+    keywords: ['brown_square'],
     sheet: [37, 8],
     shortName: 'large_brown_square'
   },
   {
     name: 'Probing Cane',
     unified: '1F9AF',
+    keywords: [
+      'probing_cane',
+      'accessibility'
+    ],
     sheet: [43, 22],
     shortName: 'probing_cane'
   },
   {
-    name: 'Female Fairy',
+    name: 'Woman Fairy',
     unified: '1F9DA-200D-2640-FE0F',
     obsoletes: '1F9DA',
+    keywords: [
+      'woman_fairy',
+      'woman',
+      'female'
+    ],
     sheet: [50, 23],
     skinVariations: [
       {
@@ -18651,6 +23441,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Romania Flag',
     unified: '1F1F7-1F1F4',
+    keywords: [
+      'flag_romania',
+      'ro',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 51],
     shortName: 'flag-ro'
   },
@@ -18658,6 +23456,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Rainbow',
     unified: '1F308',
     keywords: [
+      'rainbow',
       'nature',
       'happy',
       'unicorn_face',
@@ -18671,13 +23470,18 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Link Symbol',
     unified: '1F517',
-    keywords: ['rings', 'url'],
+    keywords: ['link', 'rings', 'url'],
     sheet: [27, 51],
     shortName: 'link'
   },
   {
     name: 'Vampire',
     unified: '1F9DB',
+    keywords: [
+      'vampire',
+      'blood',
+      'twilight'
+    ],
     sheet: [50, 53],
     skinVariations: [
       {
@@ -18708,6 +23512,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Large Square',
     unified: '2B1B',
     keywords: [
+      'black_large_square',
       'shape',
       'icon',
       'button'
@@ -18718,6 +23523,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Serbia Flag',
     unified: '1F1F7-1F1F8',
+    keywords: [
+      'flag_serbia',
+      'rs',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 52],
     shortName: 'flag-rs'
   },
@@ -18725,6 +23538,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Closed Umbrella',
     unified: '1F302',
     keywords: [
+      'closed_umbrella',
       'weather',
       'rain',
       'drizzle'
@@ -18733,8 +23547,14 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'closed_umbrella'
   },
   {
-    name: 'Male Vampire',
+    name: 'Man Vampire',
     unified: '1F9DB-200D-2642-FE0F',
+    keywords: [
+      'man_vampire',
+      'man',
+      'male',
+      'dracula'
+    ],
     sheet: [50, 47],
     skinVariations: [
       {
@@ -18763,7 +23583,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Chains',
     unified: '26D3-FE0F',
-    keywords: ['lock', 'arrest'],
+    keywords: [
+      'chains',
+      'lock',
+      'arrest'
+    ],
     sheet: [55, 12],
     shortName: 'chains'
   },
@@ -18771,6 +23595,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Large Square',
     unified: '2B1C',
     keywords: [
+      'white_large_square',
       'shape',
       'icon',
       'stone',
@@ -18783,6 +23608,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Russia Flag',
     unified: '1F1F7-1F1FA',
     keywords: [
+      'flag_russia',
       'russian',
       'federation',
       'flag',
@@ -18795,9 +23621,14 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'ru'
   },
   {
-    name: 'Female Vampire',
+    name: 'Woman Vampire',
     unified: '1F9DB-200D-2640-FE0F',
     obsoletes: '1F9DB',
+    keywords: [
+      'woman_vampire',
+      'woman',
+      'female'
+    ],
     sheet: [50, 41],
     skinVariations: [
       {
@@ -18826,6 +23657,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Hook',
     unified: '1FA9D',
+    keywords: ['hook', 'tools'],
     sheet: [52, 45],
     shortName: 'hook'
   },
@@ -18833,6 +23665,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Medium Square',
     unified: '25FC-FE0F',
     keywords: [
+      'black_medium_square',
       'shape',
       'button',
       'icon'
@@ -18844,7 +23677,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Umbrella',
     unified: '2602-FE0F',
     keywords: [
-      'rainy',
+      'umbrella',
       'weather',
       'spring'
     ],
@@ -18854,12 +23687,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Rwanda Flag',
     unified: '1F1F7-1F1FC',
+    keywords: [
+      'flag_rwanda',
+      'rw',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 54],
     shortName: 'flag-rw'
   },
   {
     name: 'Merperson',
     unified: '1F9DC',
+    keywords: ['merperson', 'sea'],
     sheet: [51, 13],
     skinVariations: [
       {
@@ -18890,6 +23732,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Toolbox',
     unified: '1F9F0',
     keywords: [
+      'toolbox',
       'tools',
       'diy',
       'fix',
@@ -18903,6 +23746,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Medium Square',
     unified: '25FB-FE0F',
     keywords: [
+      'white_medium_square',
       'shape',
       'stone',
       'icon'
@@ -18913,12 +23757,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Umbrella with Rain Drops',
     unified: '2614',
+    keywords: [
+      'umbrella_with_rain_drops',
+      'rainy',
+      'weather',
+      'spring'
+    ],
     sheet: [54, 4],
     shortName: 'umbrella_with_rain_drops'
   },
   {
     name: 'Saudi Arabia Flag',
     unified: '1F1F8-1F1E6',
+    keywords: [
+      'flag_saudi_arabia',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 55],
     shortName: 'flag-sa'
   },
@@ -18926,7 +23783,12 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Merman',
     unified: '1F9DC-200D-2642-FE0F',
     obsoletes: '1F9DC',
-    keywords: ['man', 'male', 'triton'],
+    keywords: [
+      'merman',
+      'man',
+      'male',
+      'triton'
+    ],
     sheet: [51, 7],
     skinVariations: [
       {
@@ -18956,6 +23818,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Magnet',
     unified: '1F9F2',
     keywords: [
+      'magnet',
       'attraction',
       'magnetic'
     ],
@@ -18966,6 +23829,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Medium Small Square',
     unified: '25FE',
     keywords: [
+      'black_medium_small_square',
       'icon',
       'shape',
       'button'
@@ -18976,12 +23840,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Umbrella on Ground',
     unified: '26F1-FE0F',
+    keywords: [
+      'umbrella_on_ground',
+      'weather',
+      'summer'
+    ],
     sheet: [55, 17],
     shortName: 'umbrella_on_ground'
   },
   {
     name: 'Solomon Islands Flag',
     unified: '1F1F8-1F1E7',
+    keywords: [
+      'flag_solomon_islands',
+      'solomon',
+      'islands',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 56],
     shortName: 'flag-sb'
   },
@@ -18989,6 +23867,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mermaid',
     unified: '1F9DC-200D-2640-FE0F',
     keywords: [
+      'mermaid',
       'woman',
       'female',
       'merwoman',
@@ -19022,6 +23901,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Ladder',
     unified: '1FA9C',
+    keywords: ['ladder', 'tools'],
     sheet: [52, 44],
     shortName: 'ladder'
   },
@@ -19029,6 +23909,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'White Medium Small Square',
     unified: '25FD',
     keywords: [
+      'white_medium_small_square',
       'shape',
       'stone',
       'icon',
@@ -19041,6 +23922,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'High Voltage Sign',
     unified: '26A1',
     keywords: [
+      'high_voltage',
       'thunder',
       'weather',
       'lightning bolt',
@@ -19052,12 +23934,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Seychelles Flag',
     unified: '1F1F8-1F1E8',
+    keywords: [
+      'flag_seychelles',
+      'sc',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [3, 57],
     shortName: 'flag-sc'
   },
   {
     name: 'Elf',
     unified: '1F9DD',
+    keywords: ['elf', 'magical'],
     sheet: [51, 31],
     skinVariations: [
       {
@@ -19087,7 +23978,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Black Small Square',
     unified: '25AA-FE0F',
-    keywords: ['shape', 'icon'],
+    keywords: [
+      'black_small_square',
+      'shape',
+      'icon'
+    ],
     sheet: [53, 47],
     shortName: 'black_small_square'
   },
@@ -19095,6 +23990,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Alembic',
     unified: '2697-FE0F',
     keywords: [
+      'alembic',
       'distilling',
       'science',
       'experiment',
@@ -19107,6 +24003,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Snowflake',
     unified: '2744-FE0F',
     keywords: [
+      'snowflake',
       'winter',
       'season',
       'cold',
@@ -19120,13 +24017,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Sudan Flag',
     unified: '1F1F8-1F1E9',
+    keywords: [
+      'flag_sudan',
+      'sd',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 0],
     shortName: 'flag-sd'
   },
   {
-    name: 'Male Elf',
+    name: 'Man Elf',
     unified: '1F9DD-200D-2642-FE0F',
     obsoletes: '1F9DD',
+    keywords: [
+      'man_elf',
+      'man',
+      'male'
+    ],
     sheet: [51, 25],
     skinVariations: [
       {
@@ -19156,6 +24066,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Test Tube',
     unified: '1F9EA',
     keywords: [
+      'test_tube',
       'chemistry',
       'experiment',
       'lab',
@@ -19167,7 +24078,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'White Small Square',
     unified: '25AB-FE0F',
-    keywords: ['shape', 'icon'],
+    keywords: [
+      'white_small_square',
+      'shape',
+      'icon'
+    ],
     sheet: [53, 48],
     shortName: 'white_small_square'
   },
@@ -19175,14 +24090,14 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Snowman',
     unified: '2603-FE0F',
     keywords: [
+      'snowman',
       'winter',
       'season',
       'cold',
       'weather',
       'christmas',
       'xmas',
-      'frozen',
-      'without_snow'
+      'frozen'
     ],
     sheet: [54, 0],
     shortName: 'snowman'
@@ -19190,19 +24105,37 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Sweden Flag',
     unified: '1F1F8-1F1EA',
+    keywords: [
+      'flag_sweden',
+      'se',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 1],
     shortName: 'flag-se'
   },
   {
     name: 'Large Orange Diamond',
     unified: '1F536',
-    keywords: ['shape', 'jewel', 'gem'],
+    keywords: [
+      'large_orange_diamond',
+      'shape',
+      'jewel',
+      'gem'
+    ],
     sheet: [28, 24],
     shortName: 'large_orange_diamond'
   },
   {
-    name: 'Female Elf',
+    name: 'Woman Elf',
     unified: '1F9DD-200D-2640-FE0F',
+    keywords: [
+      'woman_elf',
+      'woman',
+      'female'
+    ],
     sheet: [51, 19],
     skinVariations: [
       {
@@ -19232,6 +24165,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Petri Dish',
     unified: '1F9EB',
     keywords: [
+      'petri_dish',
       'bacteria',
       'biology',
       'culture',
@@ -19243,25 +24177,54 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Snowman Without Snow',
     unified: '26C4',
+    keywords: [
+      'snowman_without_snow',
+      'winter',
+      'season',
+      'cold',
+      'weather',
+      'christmas',
+      'xmas',
+      'frozen',
+      'without_snow'
+    ],
     sheet: [55, 6],
     shortName: 'snowman_without_snow'
   },
   {
     name: 'Singapore Flag',
     unified: '1F1F8-1F1EC',
+    keywords: [
+      'flag_singapore',
+      'sg',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 2],
     shortName: 'flag-sg'
   },
   {
     name: 'Large Blue Diamond',
     unified: '1F537',
-    keywords: ['shape', 'jewel', 'gem'],
+    keywords: [
+      'large_blue_diamond',
+      'shape',
+      'jewel',
+      'gem'
+    ],
     sheet: [28, 25],
     shortName: 'large_blue_diamond'
   },
   {
     name: 'Genie',
     unified: '1F9DE',
+    keywords: [
+      'genie',
+      'magical',
+      'wishes'
+    ],
     sheet: [51, 39],
     shortName: 'genie',
     obsoletedBy: '1F9DE-200D-2642-FE0F'
@@ -19270,6 +24233,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dna Double Helix',
     unified: '1F9EC',
     keywords: [
+      'dna',
       'biologist',
       'genetics',
       'life'
@@ -19280,20 +24244,37 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Comet',
     unified: '2604-FE0F',
-    keywords: ['space'],
+    keywords: ['comet', 'space'],
     sheet: [54, 1],
     shortName: 'comet'
   },
   {
     name: 'St. Helena Flag',
     unified: '1F1F8-1F1ED',
+    keywords: [
+      'flag_st_helena',
+      'saint',
+      'helena',
+      'ascension',
+      'tristan',
+      'cunha',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 3],
     shortName: 'flag-sh'
   },
   {
     name: 'Fire',
     unified: '1F525',
-    keywords: ['hot', 'cook', 'flame'],
+    keywords: [
+      'fire',
+      'hot',
+      'cook',
+      'flame'
+    ],
     sheet: [28, 7],
     shortName: 'fire'
   },
@@ -19301,6 +24282,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Microscope',
     unified: '1F52C',
     keywords: [
+      'microscope',
       'laboratory',
       'experiment',
       'zoomin',
@@ -19313,20 +24295,38 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Small Orange Diamond',
     unified: '1F538',
-    keywords: ['shape', 'jewel', 'gem'],
+    keywords: [
+      'small_orange_diamond',
+      'shape',
+      'jewel',
+      'gem'
+    ],
     sheet: [28, 26],
     shortName: 'small_orange_diamond'
   },
   {
-    name: 'Male Genie',
+    name: 'Man Genie',
     unified: '1F9DE-200D-2642-FE0F',
     obsoletes: '1F9DE',
+    keywords: [
+      'man_genie',
+      'man',
+      'male'
+    ],
     sheet: [51, 38],
     shortName: 'male_genie'
   },
   {
     name: 'Slovenia Flag',
     unified: '1F1F8-1F1EE',
+    keywords: [
+      'flag_slovenia',
+      'si',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 4],
     shortName: 'flag-si'
   },
@@ -19334,6 +24334,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Droplet',
     unified: '1F4A7',
     keywords: [
+      'droplet',
       'water',
       'drip',
       'faucet',
@@ -19346,6 +24347,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Telescope',
     unified: '1F52D',
     keywords: [
+      'telescope',
       'stars',
       'space',
       'zoom',
@@ -19358,19 +24360,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Small Blue Diamond',
     unified: '1F539',
-    keywords: ['shape', 'jewel', 'gem'],
+    keywords: [
+      'small_blue_diamond',
+      'shape',
+      'jewel',
+      'gem'
+    ],
     sheet: [28, 27],
     shortName: 'small_blue_diamond'
   },
   {
-    name: 'Female Genie',
+    name: 'Woman Genie',
     unified: '1F9DE-200D-2640-FE0F',
+    keywords: [
+      'woman_genie',
+      'woman',
+      'female'
+    ],
     sheet: [51, 37],
     shortName: 'female_genie'
   },
   {
     name: 'Svalbard & Jan Mayen Flag',
     unified: '1F1F8-1F1EF',
+    keywords: [
+      'flag_svalbard_jan_mayen'
+    ],
     sheet: [4, 5],
     shortName: 'flag-sj'
   },
@@ -19378,6 +24393,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Water Wave',
     unified: '1F30A',
     keywords: [
+      'water_wave',
       'sea',
       'water',
       'wave',
@@ -19391,6 +24407,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Satellite Antenna',
     unified: '1F4E1',
+    keywords: [
+      'satellite_antenna',
+      'communication',
+      'future',
+      'radio',
+      'space'
+    ],
     sheet: [26, 56],
     shortName: 'satellite_antenna'
   },
@@ -19398,6 +24421,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Up-Pointing Red Triangle',
     unified: '1F53A',
     keywords: [
+      'red_triangle_pointed_up',
       'shape',
       'direction',
       'up',
@@ -19409,6 +24433,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Zombie',
     unified: '1F9DF',
+    keywords: ['zombie', 'dead'],
     sheet: [51, 42],
     shortName: 'zombie',
     obsoletedBy: '1F9DF-200D-2642-FE0F'
@@ -19416,6 +24441,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Slovakia Flag',
     unified: '1F1F8-1F1F0',
+    keywords: [
+      'flag_slovakia',
+      'sk',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 6],
     shortName: 'flag-sk'
   },
@@ -19423,6 +24456,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Syringe',
     unified: '1F489',
     keywords: [
+      'syringe',
       'health',
       'hospital',
       'drugs',
@@ -19439,6 +24473,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Down-Pointing Red Triangle',
     unified: '1F53B',
     keywords: [
+      'red_triangle_pointed_down',
       'shape',
       'direction',
       'bottom'
@@ -19447,15 +24482,32 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'small_red_triangle_down'
   },
   {
-    name: 'Male Zombie',
+    name: 'Man Zombie',
     unified: '1F9DF-200D-2642-FE0F',
     obsoletes: '1F9DF',
+    keywords: [
+      'man_zombie',
+      'man',
+      'male',
+      'dracula',
+      'undead',
+      'walking dead'
+    ],
     sheet: [51, 41],
     shortName: 'male_zombie'
   },
   {
     name: 'Sierra Leone Flag',
     unified: '1F1F8-1F1F1',
+    keywords: [
+      'flag_sierra_leone',
+      'sierra',
+      'leone',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 7],
     shortName: 'flag-sl'
   },
@@ -19463,6 +24515,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Diamond Shape with a Dot Inside',
     unified: '1F4A0',
     keywords: [
+      'diamond_with_a_dot',
       'jewel',
       'blue',
       'gem',
@@ -19473,26 +24526,53 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'diamond_shape_with_a_dot_inside'
   },
   {
-    name: 'Female Zombie',
+    name: 'Woman Zombie',
     unified: '1F9DF-200D-2640-FE0F',
+    keywords: [
+      'woman_zombie',
+      'woman',
+      'female',
+      'undead',
+      'walking dead'
+    ],
     sheet: [51, 40],
     shortName: 'female_zombie'
   },
   {
     name: 'Drop of Blood',
     unified: '1FA78',
+    keywords: [
+      'drop_of_blood',
+      'period',
+      'hurt',
+      'harm',
+      'wound'
+    ],
     sheet: [52, 22],
     shortName: 'drop_of_blood'
   },
   {
     name: 'San Marino Flag',
     unified: '1F1F8-1F1F2',
+    keywords: [
+      'flag_san_marino',
+      'san',
+      'marino',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 8],
     shortName: 'flag-sm'
   },
   {
     name: 'Face Massage',
     unified: '1F486',
+    keywords: [
+      'person_getting_massage',
+      'relax'
+    ],
     sheet: [24, 54],
     skinVariations: [
       {
@@ -19523,6 +24603,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Pill',
     unified: '1F48A',
     keywords: [
+      'pill',
       'health',
       'medicine',
       'doctor',
@@ -19536,6 +24617,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Radio Button',
     unified: '1F518',
     keywords: [
+      'radio_button',
       'input',
       'old',
       'music',
@@ -19547,12 +24629,27 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Senegal Flag',
     unified: '1F1F8-1F1F3',
+    keywords: [
+      'flag_senegal',
+      'sn',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 9],
     shortName: 'flag-sn'
   },
   {
     name: 'Man Getting Massage',
     unified: '1F486-200D-2642-FE0F',
+    keywords: [
+      'man_getting_massage',
+      'male',
+      'boy',
+      'man',
+      'head'
+    ],
     sheet: [24, 48],
     skinVariations: [
       {
@@ -19581,19 +24678,35 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'White Square Button',
     unified: '1F533',
-    keywords: ['shape', 'input'],
+    keywords: [
+      'white_square_button',
+      'shape',
+      'input'
+    ],
     sheet: [28, 21],
     shortName: 'white_square_button'
   },
   {
     name: 'Adhesive Bandage',
     unified: '1FA79',
+    keywords: [
+      'adhesive_bandage',
+      'heal'
+    ],
     sheet: [52, 23],
     shortName: 'adhesive_bandage'
   },
   {
     name: 'Somalia Flag',
     unified: '1F1F8-1F1F4',
+    keywords: [
+      'flag_somalia',
+      'so',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 10],
     shortName: 'flag-so'
   },
@@ -19601,6 +24714,13 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Woman Getting Massage',
     unified: '1F486-200D-2640-FE0F',
     obsoletes: '1F486',
+    keywords: [
+      'woman_getting_massage',
+      'female',
+      'girl',
+      'woman',
+      'head'
+    ],
     sheet: [24, 42],
     skinVariations: [
       {
@@ -19630,6 +24750,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Black Square Button',
     unified: '1F532',
     keywords: [
+      'black_square_button',
       'shape',
       'input',
       'frame'
@@ -19640,18 +24761,31 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Stethoscope',
     unified: '1FA7A',
+    keywords: ['stethoscope', 'health'],
     sheet: [52, 24],
     shortName: 'stethoscope'
   },
   {
     name: 'Suriname Flag',
     unified: '1F1F8-1F1F7',
+    keywords: [
+      'flag_suriname',
+      'sr',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 11],
     shortName: 'flag-sr'
   },
   {
     name: 'Haircut',
     unified: '1F487',
+    keywords: [
+      'person_getting_haircut',
+      'hairstyle'
+    ],
     sheet: [25, 14],
     skinVariations: [
       {
@@ -19682,6 +24816,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Door',
     unified: '1F6AA',
     keywords: [
+      'door',
       'house',
       'entry',
       'exit'
@@ -19692,12 +24827,27 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'South Sudan Flag',
     unified: '1F1F8-1F1F8',
+    keywords: [
+      'flag_south_sudan',
+      'south',
+      'sd',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 12],
     shortName: 'flag-ss'
   },
   {
     name: 'Man Getting Haircut',
     unified: '1F487-200D-2642-FE0F',
+    keywords: [
+      'man_getting_haircut',
+      'male',
+      'boy',
+      'man'
+    ],
     sheet: [25, 8],
     skinVariations: [
       {
@@ -19726,12 +24876,23 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Elevator',
     unified: '1F6D7',
+    keywords: ['elevator', 'lift'],
     sheet: [36, 34],
     shortName: 'elevator'
   },
   {
     name: 'São Tomé & Príncipe Flag',
     unified: '1F1F8-1F1F9',
+    keywords: [
+      'flag_sao_tome_principe',
+      'sao',
+      'tome',
+      'principe',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 13],
     shortName: 'flag-st'
   },
@@ -19739,6 +24900,12 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Woman Getting Haircut',
     unified: '1F487-200D-2640-FE0F',
     obsoletes: '1F487',
+    keywords: [
+      'woman_getting_haircut',
+      'female',
+      'girl',
+      'woman'
+    ],
     sheet: [25, 2],
     skinVariations: [
       {
@@ -19767,18 +24934,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mirror',
     unified: '1FA9E',
+    keywords: ['mirror', 'reflection'],
     sheet: [52, 46],
     shortName: 'mirror'
   },
   {
     name: 'El Salvador Flag',
     unified: '1F1F8-1F1FB',
+    keywords: [
+      'flag_el_salvador',
+      'el',
+      'salvador',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 14],
     shortName: 'flag-sv'
   },
   {
     name: 'Pedestrian',
     unified: '1F6B6',
+    keywords: [
+      'person_walking',
+      'move'
+    ],
     sheet: [35, 51],
     skinVariations: [
       {
@@ -19808,12 +24989,23 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Window',
     unified: '1FA9F',
+    keywords: ['window', 'scenery'],
     sheet: [52, 47],
     shortName: 'window'
   },
   {
     name: 'Sint Maarten Flag',
     unified: '1F1F8-1F1FD',
+    keywords: [
+      'flag_sint_maarten',
+      'sint',
+      'maarten',
+      'dutch',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 15],
     shortName: 'flag-sx'
   },
@@ -19821,6 +25013,12 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Walking',
     unified: '1F6B6-200D-2642-FE0F',
     obsoletes: '1F6B6',
+    keywords: [
+      'man_walking',
+      'human',
+      'feet',
+      'steps'
+    ],
     sheet: [35, 45],
     skinVariations: [
       {
@@ -19849,19 +25047,37 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bed',
     unified: '1F6CF-FE0F',
-    keywords: ['sleep', 'rest'],
+    keywords: ['bed', 'sleep', 'rest'],
     sheet: [36, 28],
     shortName: 'bed'
   },
   {
     name: 'Syria Flag',
     unified: '1F1F8-1F1FE',
+    keywords: [
+      'flag_syria',
+      'syrian',
+      'arab',
+      'republic',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 16],
     shortName: 'flag-sy'
   },
   {
     name: 'Woman Walking',
     unified: '1F6B6-200D-2640-FE0F',
+    keywords: [
+      'woman_walking',
+      'human',
+      'feet',
+      'steps',
+      'woman',
+      'female'
+    ],
     sheet: [35, 39],
     skinVariations: [
       {
@@ -19890,19 +25106,35 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Couch and Lamp',
     unified: '1F6CB-FE0F',
-    keywords: ['read', 'chill'],
+    keywords: [
+      'couch_and_lamp',
+      'read',
+      'chill'
+    ],
     sheet: [36, 19],
     shortName: 'couch_and_lamp'
   },
   {
     name: 'Eswatini Flag',
     unified: '1F1F8-1F1FF',
+    keywords: [
+      'flag_eswatini',
+      'sz',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 17],
     shortName: 'flag-sz'
   },
   {
     name: 'Standing Person',
     unified: '1F9CD',
+    keywords: [
+      'person_standing',
+      'still'
+    ],
     sheet: [44, 50],
     skinVariations: [
       {
@@ -19931,12 +25163,18 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Chair',
     unified: '1FA91',
+    keywords: [
+      'chair',
+      'sit',
+      'furniture'
+    ],
     sheet: [52, 33],
     shortName: 'chair'
   },
   {
     name: 'Tristan Da Cunha Flag',
     unified: '1F1F9-1F1E6',
+    keywords: ['flag_tristan_da_cunha'],
     sheet: [4, 18],
     shortName: 'flag-ta'
   },
@@ -19944,6 +25182,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Toilet',
     unified: '1F6BD',
     keywords: [
+      'toilet',
       'restroom',
       'wc',
       'washroom',
@@ -19956,6 +25195,7 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Standing',
     unified: '1F9CD-200D-2642-FE0F',
+    keywords: ['man_standing', 'still'],
     sheet: [44, 44],
     skinVariations: [
       {
@@ -19984,12 +25224,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Turks & Caicos Islands Flag',
     unified: '1F1F9-1F1E8',
+    keywords: [
+      'flag_turks_caicos_islands',
+      'turks',
+      'caicos',
+      'islands',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 19],
     shortName: 'flag-tc'
   },
   {
     name: 'Woman Standing',
     unified: '1F9CD-200D-2640-FE0F',
+    keywords: [
+      'woman_standing',
+      'still'
+    ],
     sheet: [44, 38],
     skinVariations: [
       {
@@ -20018,12 +25272,21 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Plunger',
     unified: '1FAA0',
+    keywords: ['plunger', 'toilet'],
     sheet: [52, 48],
     shortName: 'plunger'
   },
   {
     name: 'Chad Flag',
     unified: '1F1F9-1F1E9',
+    keywords: [
+      'flag_chad',
+      'td',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 20],
     shortName: 'flag-td'
   },
@@ -20031,6 +25294,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Shower',
     unified: '1F6BF',
     keywords: [
+      'shower',
       'clean',
       'water',
       'bathroom'
@@ -20041,6 +25305,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Kneeling Person',
     unified: '1F9CE',
+    keywords: [
+      'person_kneeling',
+      'pray',
+      'respectful'
+    ],
     sheet: [45, 10],
     skinVariations: [
       {
@@ -20069,6 +25338,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'French Southern Territories Flag',
     unified: '1F1F9-1F1EB',
+    keywords: [
+      'flag_french_southern_territories',
+      'french',
+      'southern',
+      'territories',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 21],
     shortName: 'flag-tf'
   },
@@ -20076,6 +25355,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bathtub',
     unified: '1F6C1',
     keywords: [
+      'bathtub',
       'clean',
       'shower',
       'bathroom'
@@ -20086,6 +25366,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Kneeling',
     unified: '1F9CE-200D-2642-FE0F',
+    keywords: [
+      'man_kneeling',
+      'pray',
+      'respectful'
+    ],
     sheet: [45, 4],
     skinVariations: [
       {
@@ -20114,12 +25399,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Togo Flag',
     unified: '1F1F9-1F1EC',
+    keywords: [
+      'flag_togo',
+      'tg',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 22],
     shortName: 'flag-tg'
   },
   {
     name: 'Woman Kneeling',
     unified: '1F9CE-200D-2640-FE0F',
+    keywords: [
+      'woman_kneeling',
+      'respectful',
+      'pray'
+    ],
     sheet: [44, 56],
     skinVariations: [
       {
@@ -20148,18 +25446,31 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mouse Trap',
     unified: '1FAA4',
+    keywords: ['mouse trap', 'cheese'],
     sheet: [52, 52],
     shortName: 'mouse_trap'
   },
   {
     name: 'Thailand Flag',
     unified: '1F1F9-1F1ED',
+    keywords: [
+      'flag_thailand',
+      'th',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 23],
     shortName: 'flag-th'
   },
   {
-    name: 'Person with Probing Cane',
+    name: 'Person with White Cane',
     unified: '1F9D1-200D-1F9AF',
+    keywords: [
+      'person_with_probing_cane',
+      'blind'
+    ],
     sheet: [47, 35],
     skinVariations: [
       {
@@ -20188,18 +25499,31 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Razor',
     unified: '1FA92',
+    keywords: ['razor', 'cut'],
     sheet: [52, 34],
     shortName: 'razor'
   },
   {
     name: 'Tajikistan Flag',
     unified: '1F1F9-1F1EF',
+    keywords: [
+      'flag_tajikistan',
+      'tj',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 24],
     shortName: 'flag-tj'
   },
   {
-    name: 'Man with Probing Cane',
+    name: 'Man with White Cane',
     unified: '1F468-200D-1F9AF',
+    keywords: [
+      'man_with_probing_cane',
+      'blind'
+    ],
     sheet: [16, 10],
     skinVariations: [
       {
@@ -20229,6 +25553,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Lotion Bottle',
     unified: '1F9F4',
     keywords: [
+      'lotion_bottle',
       'moisturizer',
       'sunscreen'
     ],
@@ -20238,12 +25563,24 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Tokelau Flag',
     unified: '1F1F9-1F1F0',
+    keywords: [
+      'flag_tokelau',
+      'tk',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 25],
     shortName: 'flag-tk'
   },
   {
-    name: 'Woman with Probing Cane',
+    name: 'Woman with White Cane',
     unified: '1F469-200D-1F9AF',
+    keywords: [
+      'woman_with_probing_cane',
+      'blind'
+    ],
     sheet: [18, 56],
     skinVariations: [
       {
@@ -20272,19 +25609,33 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Safety Pin',
     unified: '1F9F7',
-    keywords: ['diaper'],
+    keywords: ['safety_pin', 'diaper'],
     sheet: [52, 8],
     shortName: 'safety_pin'
   },
   {
     name: 'Timor-Leste Flag',
     unified: '1F1F9-1F1F1',
+    keywords: [
+      'flag_timor_leste',
+      'timor',
+      'leste',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 26],
     shortName: 'flag-tl'
   },
   {
     name: 'Person in Motorized Wheelchair',
     unified: '1F9D1-200D-1F9BC',
+    keywords: [
+      'person_in_motorized_wheelchair',
+      'disability',
+      'accessibility'
+    ],
     sheet: [48, 7],
     skinVariations: [
       {
@@ -20314,6 +25665,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Broom',
     unified: '1F9F9',
     keywords: [
+      'broom',
       'cleaning',
       'sweeping',
       'witch'
@@ -20324,12 +25676,24 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Turkmenistan Flag',
     unified: '1F1F9-1F1F2',
+    keywords: [
+      'flag_turkmenistan',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 27],
     shortName: 'flag-tm'
   },
   {
     name: 'Man in Motorized Wheelchair',
     unified: '1F468-200D-1F9BC',
+    keywords: [
+      'man_in_motorized_wheelchair',
+      'disability',
+      'accessibility'
+    ],
     sheet: [16, 40],
     skinVariations: [
       {
@@ -20358,19 +25722,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Basket',
     unified: '1F9FA',
-    keywords: ['laundry'],
+    keywords: ['basket', 'laundry'],
     sheet: [52, 11],
     shortName: 'basket'
   },
   {
     name: 'Tunisia Flag',
     unified: '1F1F9-1F1F3',
+    keywords: [
+      'flag_tunisia',
+      'tn',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 28],
     shortName: 'flag-tn'
   },
   {
     name: 'Woman in Motorized Wheelchair',
     unified: '1F469-200D-1F9BC',
+    keywords: [
+      'woman_in_motorized_wheelchair',
+      'disability',
+      'accessibility'
+    ],
     sheet: [19, 28],
     skinVariations: [
       {
@@ -20399,18 +25776,32 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Roll of Paper',
     unified: '1F9FB',
+    keywords: ['roll_of_paper', 'roll'],
     sheet: [52, 12],
     shortName: 'roll_of_paper'
   },
   {
     name: 'Tonga Flag',
     unified: '1F1F9-1F1F4',
+    keywords: [
+      'flag_tonga',
+      'to',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 29],
     shortName: 'flag-to'
   },
   {
     name: 'Person in Manual Wheelchair',
     unified: '1F9D1-200D-1F9BD',
+    keywords: [
+      'person_in_manual_wheelchair',
+      'disability',
+      'accessibility'
+    ],
     sheet: [48, 13],
     skinVariations: [
       {
@@ -20439,18 +25830,36 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bucket',
     unified: '1FAA3',
+    keywords: [
+      'bucket',
+      'water',
+      'container'
+    ],
     sheet: [52, 51],
     shortName: 'bucket'
   },
   {
     name: 'Turkey Flag',
     unified: '1F1F9-1F1F7',
+    keywords: [
+      'flag_turkey',
+      'turkey',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 30],
     shortName: 'flag-tr'
   },
   {
     name: 'Man in Manual Wheelchair',
     unified: '1F468-200D-1F9BD',
+    keywords: [
+      'man_in_manual_wheelchair',
+      'disability',
+      'accessibility'
+    ],
     sheet: [16, 46],
     skinVariations: [
       {
@@ -20480,6 +25889,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bar of Soap',
     unified: '1F9FC',
     keywords: [
+      'soap',
       'bar',
       'bathing',
       'cleaning',
@@ -20491,12 +25901,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Trinidad & Tobago Flag',
     unified: '1F1F9-1F1F9',
+    keywords: [
+      'flag_trinidad_tobago',
+      'trinidad',
+      'tobago',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 31],
     shortName: 'flag-tt'
   },
   {
     name: 'Woman in Manual Wheelchair',
     unified: '1F469-200D-1F9BD',
+    keywords: [
+      'woman_in_manual_wheelchair',
+      'disability',
+      'accessibility'
+    ],
     sheet: [19, 34],
     skinVariations: [
       {
@@ -20525,18 +25949,34 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Toothbrush',
     unified: '1FAA5',
+    keywords: [
+      'toothbrush',
+      'hygiene',
+      'dental'
+    ],
     sheet: [52, 53],
     shortName: 'toothbrush'
   },
   {
     name: 'Tuvalu Flag',
     unified: '1F1F9-1F1FB',
+    keywords: [
+      'flag_tuvalu',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 32],
     shortName: 'flag-tv'
   },
   {
     name: 'Runner',
     unified: '1F3C3',
+    keywords: [
+      'person_running',
+      'move'
+    ],
     sheet: [8, 50],
     skinVariations: [
       {
@@ -20568,6 +26008,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Sponge',
     unified: '1F9FD',
     keywords: [
+      'sponge',
       'absorbing',
       'cleaning',
       'porous'
@@ -20578,6 +26019,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Taiwan Flag',
     unified: '1F1F9-1F1FC',
+    keywords: [
+      'flag_taiwan',
+      'tw',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 33],
     shortName: 'flag-tw'
   },
@@ -20585,6 +26034,14 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Running',
     unified: '1F3C3-200D-2642-FE0F',
     obsoletes: '1F3C3',
+    keywords: [
+      'man_running',
+      'man',
+      'walking',
+      'exercise',
+      'race',
+      'running'
+    ],
     sheet: [8, 44],
     skinVariations: [
       {
@@ -20613,19 +26070,41 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Fire Extinguisher',
     unified: '1F9EF',
-    keywords: ['quench'],
+    keywords: [
+      'fire_extinguisher',
+      'quench'
+    ],
     sheet: [52, 0],
     shortName: 'fire_extinguisher'
   },
   {
     name: 'Tanzania Flag',
     unified: '1F1F9-1F1FF',
+    keywords: [
+      'flag_tanzania',
+      'tanzania',
+      'united',
+      'republic',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 34],
     shortName: 'flag-tz'
   },
   {
     name: 'Woman Running',
     unified: '1F3C3-200D-2640-FE0F',
+    keywords: [
+      'woman_running',
+      'woman',
+      'walking',
+      'exercise',
+      'race',
+      'running',
+      'female'
+    ],
     sheet: [8, 38],
     skinVariations: [
       {
@@ -20654,12 +26133,24 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Shopping Trolley',
     unified: '1F6D2',
+    keywords: [
+      'shopping_cart',
+      'trolley'
+    ],
     sheet: [36, 31],
     shortName: 'shopping_trolley'
   },
   {
     name: 'Ukraine Flag',
     unified: '1F1FA-1F1E6',
+    keywords: [
+      'flag_ukraine',
+      'ua',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 35],
     shortName: 'flag-ua'
   },
@@ -20667,6 +26158,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Dancer',
     unified: '1F483',
     keywords: [
+      'woman_dancing',
       'female',
       'girl',
       'woman',
@@ -20701,6 +26193,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Smoking Symbol',
     unified: '1F6AC',
     keywords: [
+      'cigarette',
       'kills',
       'tobacco',
       'cigarette',
@@ -20713,6 +26206,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Uganda Flag',
     unified: '1F1FA-1F1EC',
+    keywords: [
+      'flag_uganda',
+      'ug',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 36],
     shortName: 'flag-ug'
   },
@@ -20720,6 +26221,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Dancing',
     unified: '1F57A',
     keywords: [
+      'man_dancing',
       'male',
       'boy',
       'fun',
@@ -20754,6 +26256,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Coffin',
     unified: '26B0-FE0F',
     keywords: [
+      'coffin',
       'vampire',
       'dead',
       'die',
@@ -20771,12 +26274,23 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'U.s. Outlying Islands Flag',
     unified: '1F1FA-1F1F2',
+    keywords: [
+      'flag_u_s_outlying_islands'
+    ],
     sheet: [4, 37],
     shortName: 'flag-um'
   },
   {
-    name: 'Man in Business Suit Levitating',
+    name: 'Person in Suit Levitating',
     unified: '1F574-FE0F',
+    keywords: [
+      'man_in_suit_levitating',
+      'suit',
+      'business',
+      'levitate',
+      'hover',
+      'jump'
+    ],
     sheet: [29, 7],
     skinVariations: [
       {
@@ -20805,18 +26319,35 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Headstone',
     unified: '1FAA6',
+    keywords: [
+      'headstone',
+      'death',
+      'rip',
+      'grave'
+    ],
     sheet: [52, 54],
     shortName: 'headstone'
   },
   {
     name: 'United Nations Flag',
     unified: '1F1FA-1F1F3',
+    keywords: [
+      'flag_united_nations',
+      'un',
+      'flag',
+      'banner'
+    ],
     sheet: [4, 38],
     shortName: 'flag-un'
   },
   {
     name: 'Woman with Bunny Ears',
     unified: '1F46F',
+    keywords: [
+      'people_with_bunny_ears',
+      'perform',
+      'costume'
+    ],
     sheet: [21, 51],
     shortName: 'dancers',
     obsoletedBy: '1F46F-200D-2640-FE0F'
@@ -20825,6 +26356,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Funeral Urn',
     unified: '26B1-FE0F',
     keywords: [
+      'funeral_urn',
       'dead',
       'die',
       'death',
@@ -20838,6 +26370,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'United States Flag',
     unified: '1F1FA-1F1F8',
     keywords: [
+      'flag_united_states',
       'united',
       'states',
       'america',
@@ -20851,8 +26384,15 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'us'
   },
   {
-    name: 'Man with Bunny Ears Partying',
+    name: 'Men with Bunny Ears',
     unified: '1F46F-200D-2642-FE0F',
+    keywords: [
+      'men_with_bunny_ears',
+      'male',
+      'bunny',
+      'men',
+      'boys'
+    ],
     sheet: [21, 50],
     shortName: 'man-with-bunny-ears-partying'
   },
@@ -20860,6 +26400,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Moyai',
     unified: '1F5FF',
     keywords: [
+      'moai',
       'rock',
       'easter island',
       'moai'
@@ -20870,31 +26411,63 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Uruguay Flag',
     unified: '1F1FA-1F1FE',
+    keywords: [
+      'flag_uruguay',
+      'uy',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 40],
     shortName: 'flag-uy'
   },
   {
-    name: 'Woman with Bunny Ears Partying',
+    name: 'Women with Bunny Ears',
     unified: '1F46F-200D-2640-FE0F',
     obsoletes: '1F46F',
+    keywords: [
+      'women_with_bunny_ears',
+      'female',
+      'bunny',
+      'women',
+      'girls'
+    ],
     sheet: [21, 49],
     shortName: 'woman-with-bunny-ears-partying'
   },
   {
     name: 'Placard',
     unified: '1FAA7',
+    keywords: [
+      'placard',
+      'announcement'
+    ],
     sheet: [52, 55],
     shortName: 'placard'
   },
   {
     name: 'Uzbekistan Flag',
     unified: '1F1FA-1F1FF',
+    keywords: [
+      'flag_uzbekistan',
+      'uz',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 41],
     shortName: 'flag-uz'
   },
   {
     name: 'Person in Steamy Room',
     unified: '1F9D6',
+    keywords: [
+      'person_in_steamy_room',
+      'relax',
+      'spa'
+    ],
     sheet: [49, 21],
     skinVariations: [
       {
@@ -20924,6 +26497,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Vatican City Flag',
     unified: '1F1FB-1F1E6',
+    keywords: [
+      'flag_vatican_city',
+      'vatican',
+      'city',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 42],
     shortName: 'flag-va'
   },
@@ -20932,6 +26514,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F9D6-200D-2642-FE0F',
     obsoletes: '1F9D6',
     keywords: [
+      'man_in_steamy_room',
       'male',
       'man',
       'spa',
@@ -20966,6 +26549,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'St. Vincent & Grenadines Flag',
     unified: '1F1FB-1F1E8',
+    keywords: [
+      'flag_st_vincent_grenadines',
+      'saint',
+      'vincent',
+      'grenadines',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 43],
     shortName: 'flag-vc'
   },
@@ -20973,6 +26566,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Woman in Steamy Room',
     unified: '1F9D6-200D-2640-FE0F',
     keywords: [
+      'woman_in_steamy_room',
       'female',
       'woman',
       'spa',
@@ -21007,12 +26601,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Venezuela Flag',
     unified: '1F1FB-1F1EA',
+    keywords: [
+      'flag_venezuela',
+      've',
+      'bolivarian',
+      'republic',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 44],
     shortName: 'flag-ve'
   },
   {
     name: 'Person Climbing',
     unified: '1F9D7',
+    keywords: [
+      'person_climbing',
+      'sport'
+    ],
     sheet: [49, 39],
     skinVariations: [
       {
@@ -21042,12 +26650,31 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'British Virgin Islands Flag',
     unified: '1F1FB-1F1EC',
+    keywords: [
+      'flag_british_virgin_islands',
+      'british',
+      'virgin',
+      'islands',
+      'bvi',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 45],
     shortName: 'flag-vg'
   },
   {
     name: 'Man Climbing',
     unified: '1F9D7-200D-2642-FE0F',
+    keywords: [
+      'man_climbing',
+      'sports',
+      'hobby',
+      'man',
+      'male',
+      'rock'
+    ],
     sheet: [49, 33],
     skinVariations: [
       {
@@ -21076,6 +26703,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'U.s. Virgin Islands Flag',
     unified: '1F1FB-1F1EE',
+    keywords: [
+      'flag_u_s_virgin_islands',
+      'virgin',
+      'islands',
+      'us',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 46],
     shortName: 'flag-vi'
   },
@@ -21083,6 +26720,14 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Woman Climbing',
     unified: '1F9D7-200D-2640-FE0F',
     obsoletes: '1F9D7',
+    keywords: [
+      'woman_climbing',
+      'sports',
+      'hobby',
+      'woman',
+      'female',
+      'rock'
+    ],
     sheet: [49, 27],
     skinVariations: [
       {
@@ -21111,18 +26756,41 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Vietnam Flag',
     unified: '1F1FB-1F1F3',
+    keywords: [
+      'flag_vietnam',
+      'viet',
+      'nam',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 47],
     shortName: 'flag-vn'
   },
   {
     name: 'Fencer',
     unified: '1F93A',
+    keywords: [
+      'person_fencing',
+      'sports',
+      'fencing',
+      'sword'
+    ],
     sheet: [40, 41],
     shortName: 'fencer'
   },
   {
     name: 'Vanuatu Flag',
     unified: '1F1FB-1F1FA',
+    keywords: [
+      'flag_vanuatu',
+      'vu',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 48],
     shortName: 'flag-vu'
   },
@@ -21130,6 +26798,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Horse Racing',
     unified: '1F3C7',
     keywords: [
+      'horse_racing',
       'animal',
       'betting',
       'competition',
@@ -21164,6 +26833,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Wallis & Futuna Flag',
     unified: '1F1FC-1F1EB',
+    keywords: [
+      'flag_wallis_futuna',
+      'wallis',
+      'futuna',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 49],
     shortName: 'flag-wf'
   },
@@ -21171,6 +26849,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Skier',
     unified: '26F7-FE0F',
     keywords: [
+      'skier',
       'sports',
       'winter',
       'snow'
@@ -21181,13 +26860,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Samoa Flag',
     unified: '1F1FC-1F1F8',
+    keywords: [
+      'flag_samoa',
+      'ws',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 50],
     shortName: 'flag-ws'
   },
   {
     name: 'Snowboarder',
     unified: '1F3C2',
-    keywords: ['sports', 'winter'],
+    keywords: [
+      'snowboarder',
+      'sports',
+      'winter'
+    ],
     sheet: [8, 32],
     skinVariations: [
       {
@@ -21216,12 +26907,25 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Kosovo Flag',
     unified: '1F1FD-1F1F0',
+    keywords: [
+      'flag_kosovo',
+      'xk',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 51],
     shortName: 'flag-xk'
   },
   {
-    name: 'Golfer',
+    name: 'Person Golfing',
     unified: '1F3CC-FE0F',
+    keywords: [
+      'person_golfing',
+      'sports',
+      'business'
+    ],
     sheet: [10, 16],
     skinVariations: [
       {
@@ -21251,6 +26955,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Yemen Flag',
     unified: '1F1FE-1F1EA',
+    keywords: [
+      'flag_yemen',
+      'ye',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 52],
     shortName: 'flag-ye'
   },
@@ -21258,6 +26970,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Golfing',
     unified: '1F3CC-FE0F-200D-2642-FE0F',
     obsoletes: '1F3CC-FE0F',
+    keywords: ['man_golfing', 'sport'],
     sheet: [10, 10],
     hidden: ['facebook'],
     skinVariations: [
@@ -21287,12 +27000,27 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mayotte Flag',
     unified: '1F1FE-1F1F9',
+    keywords: [
+      'flag_mayotte',
+      'yt',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 53],
     shortName: 'flag-yt'
   },
   {
     name: 'Woman Golfing',
     unified: '1F3CC-FE0F-200D-2640-FE0F',
+    keywords: [
+      'woman_golfing',
+      'sports',
+      'business',
+      'woman',
+      'female'
+    ],
     sheet: [10, 4],
     hidden: ['facebook'],
     skinVariations: [
@@ -21322,12 +27050,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'South Africa Flag',
     unified: '1F1FF-1F1E6',
+    keywords: [
+      'flag_south_africa',
+      'south',
+      'africa',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 54],
     shortName: 'flag-za'
   },
   {
     name: 'Surfer',
     unified: '1F3C4',
+    keywords: [
+      'person_surfing',
+      'sport',
+      'sea'
+    ],
     sheet: [9, 10],
     skinVariations: [
       {
@@ -21357,6 +27099,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Zambia Flag',
     unified: '1F1FF-1F1F2',
+    keywords: [
+      'flag_zambia',
+      'zm',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 55],
     shortName: 'flag-zm'
   },
@@ -21364,6 +27114,14 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Surfing',
     unified: '1F3C4-200D-2642-FE0F',
     obsoletes: '1F3C4',
+    keywords: [
+      'man_surfing',
+      'sports',
+      'ocean',
+      'sea',
+      'summer',
+      'beach'
+    ],
     sheet: [9, 4],
     skinVariations: [
       {
@@ -21392,12 +27150,30 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Zimbabwe Flag',
     unified: '1F1FF-1F1FC',
+    keywords: [
+      'flag_zimbabwe',
+      'zw',
+      'flag',
+      'nation',
+      'country',
+      'banner'
+    ],
     sheet: [4, 56],
     shortName: 'flag-zw'
   },
   {
     name: 'Woman Surfing',
     unified: '1F3C4-200D-2640-FE0F',
+    keywords: [
+      'woman_surfing',
+      'sports',
+      'ocean',
+      'sea',
+      'summer',
+      'beach',
+      'woman',
+      'female'
+    ],
     sheet: [8, 56],
     skinVariations: [
       {
@@ -21426,12 +27202,22 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'England Flag',
     unified: '1F3F4-E0067-E0062-E0065-E006E-E0067-E007F',
+    keywords: [
+      'flag_england',
+      'flag',
+      'english'
+    ],
     sheet: [11, 4],
     shortName: 'flag-england'
   },
   {
     name: 'Rowboat',
     unified: '1F6A3',
+    keywords: [
+      'person_rowing_boat',
+      'sport',
+      'move'
+    ],
     sheet: [34, 39],
     skinVariations: [
       {
@@ -21461,6 +27247,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Scotland Flag',
     unified: '1F3F4-E0067-E0062-E0073-E0063-E0074-E007F',
+    keywords: [
+      'flag_scotland',
+      'flag',
+      'scottish'
+    ],
     sheet: [11, 5],
     shortName: 'flag-scotland'
   },
@@ -21468,6 +27259,13 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Rowing Boat',
     unified: '1F6A3-200D-2642-FE0F',
     obsoletes: '1F6A3',
+    keywords: [
+      'man_rowing_boat',
+      'sports',
+      'hobby',
+      'water',
+      'ship'
+    ],
     sheet: [34, 33],
     skinVariations: [
       {
@@ -21496,12 +27294,26 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Wales Flag',
     unified: '1F3F4-E0067-E0062-E0077-E006C-E0073-E007F',
+    keywords: [
+      'flag_wales',
+      'flag',
+      'welsh'
+    ],
     sheet: [11, 6],
     shortName: 'flag-wales'
   },
   {
     name: 'Woman Rowing Boat',
     unified: '1F6A3-200D-2640-FE0F',
+    keywords: [
+      'woman_rowing_boat',
+      'sports',
+      'hobby',
+      'water',
+      'ship',
+      'woman',
+      'female'
+    ],
     sheet: [34, 27],
     skinVariations: [
       {
@@ -21530,6 +27342,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Swimmer',
     unified: '1F3CA',
+    keywords: [
+      'person_swimming',
+      'sport',
+      'pool'
+    ],
     sheet: [9, 38],
     skinVariations: [
       {
@@ -21560,6 +27377,15 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Swimming',
     unified: '1F3CA-200D-2642-FE0F',
     obsoletes: '1F3CA',
+    keywords: [
+      'man_swimming',
+      'sports',
+      'exercise',
+      'human',
+      'athlete',
+      'water',
+      'summer'
+    ],
     sheet: [9, 32],
     skinVariations: [
       {
@@ -21588,6 +27414,17 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Swimming',
     unified: '1F3CA-200D-2640-FE0F',
+    keywords: [
+      'woman_swimming',
+      'sports',
+      'exercise',
+      'human',
+      'athlete',
+      'water',
+      'summer',
+      'woman',
+      'female'
+    ],
     sheet: [9, 26],
     skinVariations: [
       {
@@ -21614,8 +27451,13 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'woman-swimming'
   },
   {
-    name: 'Person with Ball',
+    name: 'Person Bouncing Ball',
     unified: '26F9-FE0F',
+    keywords: [
+      'person_bouncing_ball',
+      'sports',
+      'human'
+    ],
     sheet: [55, 36],
     skinVariations: [
       {
@@ -21646,6 +27488,10 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Bouncing Ball',
     unified: '26F9-FE0F-200D-2642-FE0F',
     obsoletes: '26F9-FE0F',
+    keywords: [
+      'man_bouncing_ball',
+      'sport'
+    ],
     sheet: [55, 30],
     hidden: ['facebook'],
     skinVariations: [
@@ -21675,6 +27521,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Bouncing Ball',
     unified: '26F9-FE0F-200D-2640-FE0F',
+    keywords: [
+      'woman_bouncing_ball',
+      'sports',
+      'human',
+      'woman',
+      'female'
+    ],
     sheet: [55, 24],
     hidden: ['facebook'],
     skinVariations: [
@@ -21702,8 +27555,14 @@ export const emojis: CompressedEmojiData[] = [
     shortName: 'woman-bouncing-ball'
   },
   {
-    name: 'Weight Lifter',
+    name: 'Person Lifting Weights',
     unified: '1F3CB-FE0F',
+    keywords: [
+      'person_lifting_weights',
+      'sports',
+      'training',
+      'exercise'
+    ],
     sheet: [9, 56],
     skinVariations: [
       {
@@ -21734,6 +27593,10 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Lifting Weights',
     unified: '1F3CB-FE0F-200D-2642-FE0F',
     obsoletes: '1F3CB-FE0F',
+    keywords: [
+      'man_lifting_weights',
+      'sport'
+    ],
     sheet: [9, 50],
     hidden: ['facebook'],
     skinVariations: [
@@ -21763,6 +27626,14 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Lifting Weights',
     unified: '1F3CB-FE0F-200D-2640-FE0F',
+    keywords: [
+      'woman_lifting_weights',
+      'sports',
+      'training',
+      'exercise',
+      'woman',
+      'female'
+    ],
     sheet: [9, 44],
     hidden: ['facebook'],
     skinVariations: [
@@ -21792,6 +27663,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Bicyclist',
     unified: '1F6B4',
+    keywords: [
+      'person_biking',
+      'sport',
+      'move'
+    ],
     sheet: [35, 15],
     skinVariations: [
       {
@@ -21822,6 +27698,13 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Biking',
     unified: '1F6B4-200D-2642-FE0F',
     obsoletes: '1F6B4',
+    keywords: [
+      'man_biking',
+      'sports',
+      'bike',
+      'exercise',
+      'hipster'
+    ],
     sheet: [35, 9],
     skinVariations: [
       {
@@ -21850,6 +27733,15 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Biking',
     unified: '1F6B4-200D-2640-FE0F',
+    keywords: [
+      'woman_biking',
+      'sports',
+      'bike',
+      'exercise',
+      'hipster',
+      'woman',
+      'female'
+    ],
     sheet: [35, 3],
     skinVariations: [
       {
@@ -21878,6 +27770,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Mountain Bicyclist',
     unified: '1F6B5',
+    keywords: [
+      'person_mountain_biking',
+      'sport',
+      'move'
+    ],
     sheet: [35, 33],
     skinVariations: [
       {
@@ -21908,6 +27805,14 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Mountain Biking',
     unified: '1F6B5-200D-2642-FE0F',
     obsoletes: '1F6B5',
+    keywords: [
+      'man_mountain_biking',
+      'transportation',
+      'sports',
+      'human',
+      'race',
+      'bike'
+    ],
     sheet: [35, 27],
     skinVariations: [
       {
@@ -21936,6 +27841,16 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Mountain Biking',
     unified: '1F6B5-200D-2640-FE0F',
+    keywords: [
+      'woman_mountain_biking',
+      'transportation',
+      'sports',
+      'human',
+      'race',
+      'bike',
+      'woman',
+      'female'
+    ],
     sheet: [35, 21],
     skinVariations: [
       {
@@ -21964,6 +27879,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Person Doing Cartwheel',
     unified: '1F938',
+    keywords: [
+      'person_cartwheeling',
+      'sport',
+      'gymnastic'
+    ],
     sheet: [40, 17],
     skinVariations: [
       {
@@ -21992,6 +27912,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Cartwheeling',
     unified: '1F938-200D-2642-FE0F',
+    keywords: [
+      'man_cartwheeling',
+      'gymnastics'
+    ],
     sheet: [40, 11],
     skinVariations: [
       {
@@ -22020,6 +27944,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Cartwheeling',
     unified: '1F938-200D-2640-FE0F',
+    keywords: [
+      'woman_cartwheeling',
+      'gymnastics'
+    ],
     sheet: [40, 5],
     skinVariations: [
       {
@@ -22048,24 +27976,42 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Wrestlers',
     unified: '1F93C',
+    keywords: [
+      'people_wrestling',
+      'sport'
+    ],
     sheet: [40, 44],
     shortName: 'wrestlers'
   },
   {
-    name: 'Man Wrestling',
+    name: 'Men Wrestling',
     unified: '1F93C-200D-2642-FE0F',
+    keywords: [
+      'men_wrestling',
+      'sports',
+      'wrestlers'
+    ],
     sheet: [40, 43],
     shortName: 'man-wrestling'
   },
   {
-    name: 'Woman Wrestling',
+    name: 'Women Wrestling',
     unified: '1F93C-200D-2640-FE0F',
+    keywords: [
+      'women_wrestling',
+      'sports',
+      'wrestlers'
+    ],
     sheet: [40, 42],
     shortName: 'woman-wrestling'
   },
   {
     name: 'Water Polo',
     unified: '1F93D',
+    keywords: [
+      'person_playing_water_polo',
+      'sport'
+    ],
     sheet: [40, 57],
     skinVariations: [
       {
@@ -22094,6 +28040,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Playing Water Polo',
     unified: '1F93D-200D-2642-FE0F',
+    keywords: [
+      'man_playing_water_polo',
+      'sports',
+      'pool'
+    ],
     sheet: [40, 51],
     skinVariations: [
       {
@@ -22122,6 +28073,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Playing Water Polo',
     unified: '1F93D-200D-2640-FE0F',
+    keywords: [
+      'woman_playing_water_polo',
+      'sports',
+      'pool'
+    ],
     sheet: [40, 45],
     skinVariations: [
       {
@@ -22150,6 +28106,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Handball',
     unified: '1F93E',
+    keywords: [
+      'person_playing_handball',
+      'sport'
+    ],
     sheet: [41, 17],
     skinVariations: [
       {
@@ -22178,6 +28138,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Playing Handball',
     unified: '1F93E-200D-2642-FE0F',
+    keywords: [
+      'man_playing_handball',
+      'sports'
+    ],
     sheet: [41, 11],
     skinVariations: [
       {
@@ -22206,6 +28170,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Playing Handball',
     unified: '1F93E-200D-2640-FE0F',
+    keywords: [
+      'woman_playing_handball',
+      'sports'
+    ],
     sheet: [41, 5],
     skinVariations: [
       {
@@ -22234,6 +28202,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Juggling',
     unified: '1F939',
+    keywords: [
+      'person_juggling',
+      'performance',
+      'balance'
+    ],
     sheet: [40, 35],
     skinVariations: [
       {
@@ -22262,6 +28235,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Man Juggling',
     unified: '1F939-200D-2642-FE0F',
+    keywords: [
+      'man_juggling',
+      'juggle',
+      'balance',
+      'skill',
+      'multitask'
+    ],
     sheet: [40, 29],
     skinVariations: [
       {
@@ -22290,6 +28270,13 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Woman Juggling',
     unified: '1F939-200D-2640-FE0F',
+    keywords: [
+      'woman_juggling',
+      'juggle',
+      'balance',
+      'skill',
+      'multitask'
+    ],
     sheet: [40, 23],
     skinVariations: [
       {
@@ -22318,6 +28305,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Person in Lotus Position',
     unified: '1F9D8',
+    keywords: [
+      'person_in_lotus_position',
+      'meditate'
+    ],
     sheet: [49, 57],
     skinVariations: [
       {
@@ -22348,6 +28339,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man in Lotus Position',
     unified: '1F9D8-200D-2642-FE0F',
     keywords: [
+      'man_in_lotus_position',
       'man',
       'male',
       'meditation',
@@ -22386,6 +28378,7 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F9D8-200D-2640-FE0F',
     obsoletes: '1F9D8',
     keywords: [
+      'woman_in_lotus_position',
       'woman',
       'female',
       'meditation',
@@ -22423,6 +28416,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bath',
     unified: '1F6C0',
     keywords: [
+      'person_taking_bath',
       'clean',
       'shower',
       'bathroom'
@@ -22455,6 +28449,11 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Sleeping Accommodation',
     unified: '1F6CC',
+    keywords: [
+      'person_in_bed',
+      'bed',
+      'rest'
+    ],
     sheet: [36, 20],
     skinVariations: [
       {
@@ -22483,6 +28482,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'People Holding Hands',
     unified: '1F9D1-200D-1F91D-200D-1F9D1',
+    keywords: [
+      'people_holding_hands',
+      'friendship'
+    ],
     sheet: [47, 9],
     skinVariations: [
       {
@@ -22602,6 +28605,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Two Women Holding Hands',
     unified: '1F46D',
     keywords: [
+      'women_holding_hands',
       'pair',
       'friendship',
       'couple',
@@ -22731,6 +28735,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man and Woman Holding Hands',
     unified: '1F46B',
     keywords: [
+      'woman_and_man_holding_hands',
       'pair',
       'people',
       'human',
@@ -22846,15 +28851,16 @@ export const emojis: CompressedEmojiData[] = [
       }
     ],
     shortNames: [
-      'man_and_woman_holding_hands',
-      'woman_and_man_holding_hands'
+      'woman_and_man_holding_hands',
+      'couple'
     ],
-    shortName: 'couple'
+    shortName: 'man_and_woman_holding_hands'
   },
   {
     name: 'Two Men Holding Hands',
     unified: '1F46C',
     keywords: [
+      'men_holding_hands',
       'pair',
       'couple',
       'love',
@@ -22983,218 +28989,501 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'Kiss',
     unified: '1F48F',
+    keywords: [
+      'kiss',
+      'pair',
+      'valentines',
+      'love',
+      'like',
+      'dating',
+      'marriage'
+    ],
     sheet: [25, 27],
     shortName: 'couplekiss',
     obsoletedBy: '1F469-200D-2764-FE0F-200D-1F48B-200D-1F468'
   },
   {
-    name: 'Woman Kiss Man',
+    name: 'Kiss: Woman, Man',
     unified: '1F469-200D-2764-FE0F-200D-1F48B-200D-1F468',
     obsoletes: '1F48F',
+    keywords: [
+      'kiss_woman_man',
+      'love'
+    ],
     sheet: [20, 2],
     shortName: 'woman-kiss-man'
   },
   {
-    name: 'Man Kiss Man',
+    name: 'Kiss: Man, Man',
     unified: '1F468-200D-2764-FE0F-200D-1F48B-200D-1F468',
+    keywords: [
+      'kiss_man_man',
+      'pair',
+      'valentines',
+      'love',
+      'like',
+      'dating',
+      'marriage'
+    ],
     sheet: [17, 13],
     shortName: 'man-kiss-man'
   },
   {
-    name: 'Woman Kiss Woman',
+    name: 'Kiss: Woman, Woman',
     unified: '1F469-200D-2764-FE0F-200D-1F48B-200D-1F469',
+    keywords: [
+      'kiss_woman_woman',
+      'pair',
+      'valentines',
+      'love',
+      'like',
+      'dating',
+      'marriage'
+    ],
     sheet: [20, 3],
     shortName: 'woman-kiss-woman'
   },
   {
     name: 'Couple with Heart',
     unified: '1F491',
+    keywords: [
+      'couple_with_heart',
+      'pair',
+      'love',
+      'like',
+      'affection',
+      'human',
+      'dating',
+      'valentines',
+      'marriage'
+    ],
     sheet: [25, 29],
     shortName: 'couple_with_heart',
     obsoletedBy: '1F469-200D-2764-FE0F-200D-1F468'
   },
   {
-    name: 'Woman Heart Man',
+    name: 'Couple with Heart: Woman, Man',
     unified: '1F469-200D-2764-FE0F-200D-1F468',
     obsoletes: '1F491',
+    keywords: [
+      'couple_with_heart_woman_man',
+      'love'
+    ],
     sheet: [20, 0],
     shortName: 'woman-heart-man'
   },
   {
-    name: 'Man Heart Man',
+    name: 'Couple with Heart: Man, Man',
     unified: '1F468-200D-2764-FE0F-200D-1F468',
+    keywords: [
+      'couple_with_heart_man_man',
+      'pair',
+      'love',
+      'like',
+      'affection',
+      'human',
+      'dating',
+      'valentines',
+      'marriage'
+    ],
     sheet: [17, 12],
     shortName: 'man-heart-man'
   },
   {
-    name: 'Woman Heart Woman',
+    name: 'Couple with Heart: Woman, Woman',
     unified: '1F469-200D-2764-FE0F-200D-1F469',
+    keywords: [
+      'couple_with_heart_woman_woman',
+      'pair',
+      'love',
+      'like',
+      'affection',
+      'human',
+      'dating',
+      'valentines',
+      'marriage'
+    ],
     sheet: [20, 1],
     shortName: 'woman-heart-woman'
   },
   {
     name: 'Family',
     unified: '1F46A',
+    keywords: [
+      'family',
+      'home',
+      'parents',
+      'child',
+      'mom',
+      'dad',
+      'father',
+      'mother',
+      'people',
+      'human'
+    ],
     sheet: [20, 10],
-    shortNames: ['man-woman-boy'],
     shortName: 'family',
     obsoletedBy: '1F468-200D-1F469-200D-1F466'
   },
   {
-    name: 'Man Woman Boy',
+    name: 'Family: Man, Woman, Boy',
     unified: '1F468-200D-1F469-200D-1F466',
     obsoletes: '1F46A',
+    keywords: [
+      'family_man_woman_boy',
+      'love'
+    ],
     sheet: [15, 27],
-    shortNames: ['family'],
     shortName: 'man-woman-boy'
   },
   {
-    name: 'Man Woman Girl',
+    name: 'Family: Man, Woman, Girl',
     unified: '1F468-200D-1F469-200D-1F467',
+    keywords: [
+      'family_man_woman_girl',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'child'
+    ],
     sheet: [15, 29],
     shortName: 'man-woman-girl'
   },
   {
-    name: 'Man Woman Girl Boy',
+    name: 'Family: Man, Woman, Girl, Boy',
     unified: '1F468-200D-1F469-200D-1F467-200D-1F466',
+    keywords: [
+      'family_man_woman_girl_boy',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [15, 30],
     shortName: 'man-woman-girl-boy'
   },
   {
-    name: 'Man Woman Boy Boy',
+    name: 'Family: Man, Woman, Boy, Boy',
     unified: '1F468-200D-1F469-200D-1F466-200D-1F466',
+    keywords: [
+      'family_man_woman_boy_boy',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [15, 28],
     shortName: 'man-woman-boy-boy'
   },
   {
-    name: 'Man Woman Girl Girl',
+    name: 'Family: Man, Woman, Girl, Girl',
     unified: '1F468-200D-1F469-200D-1F467-200D-1F467',
+    keywords: [
+      'family_man_woman_girl_girl',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [15, 31],
     shortName: 'man-woman-girl-girl'
   },
   {
-    name: 'Man Man Boy',
+    name: 'Family: Man, Man, Boy',
     unified: '1F468-200D-1F468-200D-1F466',
+    keywords: [
+      'family_man_man_boy',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [15, 22],
     shortName: 'man-man-boy'
   },
   {
-    name: 'Man Man Girl',
+    name: 'Family: Man, Man, Girl',
     unified: '1F468-200D-1F468-200D-1F467',
+    keywords: [
+      'family_man_man_girl',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [15, 24],
     shortName: 'man-man-girl'
   },
   {
-    name: 'Man Man Girl Boy',
+    name: 'Family: Man, Man, Girl, Boy',
     unified: '1F468-200D-1F468-200D-1F467-200D-1F466',
+    keywords: [
+      'family_man_man_girl_boy',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [15, 25],
     shortName: 'man-man-girl-boy'
   },
   {
-    name: 'Man Man Boy Boy',
+    name: 'Family: Man, Man, Boy, Boy',
     unified: '1F468-200D-1F468-200D-1F466-200D-1F466',
+    keywords: [
+      'family_man_man_boy_boy',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [15, 23],
     shortName: 'man-man-boy-boy'
   },
   {
-    name: 'Man Man Girl Girl',
+    name: 'Family: Man, Man, Girl, Girl',
     unified: '1F468-200D-1F468-200D-1F467-200D-1F467',
+    keywords: [
+      'family_man_man_girl_girl',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [15, 26],
     shortName: 'man-man-girl-girl'
   },
   {
-    name: 'Woman Woman Boy',
+    name: 'Family: Woman, Woman, Boy',
     unified: '1F469-200D-1F469-200D-1F466',
+    keywords: [
+      'family_woman_woman_boy',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [18, 15],
     shortName: 'woman-woman-boy'
   },
   {
-    name: 'Woman Woman Girl',
+    name: 'Family: Woman, Woman, Girl',
     unified: '1F469-200D-1F469-200D-1F467',
+    keywords: [
+      'family_woman_woman_girl',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [18, 17],
     shortName: 'woman-woman-girl'
   },
   {
-    name: 'Woman Woman Girl Boy',
+    name: 'Family: Woman, Woman, Girl, Boy',
     unified: '1F469-200D-1F469-200D-1F467-200D-1F466',
+    keywords: [
+      'family_woman_woman_girl_boy',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [18, 18],
     shortName: 'woman-woman-girl-boy'
   },
   {
-    name: 'Woman Woman Boy Boy',
+    name: 'Family: Woman, Woman, Boy, Boy',
     unified: '1F469-200D-1F469-200D-1F466-200D-1F466',
+    keywords: [
+      'family_woman_woman_boy_boy',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [18, 16],
     shortName: 'woman-woman-boy-boy'
   },
   {
-    name: 'Woman Woman Girl Girl',
+    name: 'Family: Woman, Woman, Girl, Girl',
     unified: '1F469-200D-1F469-200D-1F467-200D-1F467',
+    keywords: [
+      'family_woman_woman_girl_girl',
+      'home',
+      'parents',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [18, 19],
     shortName: 'woman-woman-girl-girl'
   },
   {
-    name: 'Man Boy',
+    name: 'Family: Man, Boy',
     unified: '1F468-200D-1F466',
+    keywords: [
+      'family_man_boy',
+      'home',
+      'parent',
+      'people',
+      'human',
+      'child'
+    ],
     sheet: [15, 18],
     shortName: 'man-boy'
   },
   {
-    name: 'Man Boy Boy',
+    name: 'Family: Man, Boy, Boy',
     unified: '1F468-200D-1F466-200D-1F466',
+    keywords: [
+      'family_man_boy_boy',
+      'home',
+      'parent',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [15, 17],
     shortName: 'man-boy-boy'
   },
   {
-    name: 'Man Girl',
+    name: 'Family: Man, Girl',
     unified: '1F468-200D-1F467',
+    keywords: [
+      'family_man_girl',
+      'home',
+      'parent',
+      'people',
+      'human',
+      'child'
+    ],
     sheet: [15, 21],
     shortName: 'man-girl'
   },
   {
-    name: 'Man Girl Boy',
+    name: 'Family: Man, Girl, Boy',
     unified: '1F468-200D-1F467-200D-1F466',
+    keywords: [
+      'family_man_girl_boy',
+      'home',
+      'parent',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [15, 19],
     shortName: 'man-girl-boy'
   },
   {
-    name: 'Man Girl Girl',
+    name: 'Family: Man, Girl, Girl',
     unified: '1F468-200D-1F467-200D-1F467',
+    keywords: [
+      'family_man_girl_girl',
+      'home',
+      'parent',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [15, 20],
     shortName: 'man-girl-girl'
   },
   {
-    name: 'Woman Boy',
+    name: 'Family: Woman, Boy',
     unified: '1F469-200D-1F466',
+    keywords: [
+      'family_woman_boy',
+      'home',
+      'parent',
+      'people',
+      'human',
+      'child'
+    ],
     sheet: [18, 11],
     shortName: 'woman-boy'
   },
   {
-    name: 'Woman Boy Boy',
+    name: 'Family: Woman, Boy, Boy',
     unified: '1F469-200D-1F466-200D-1F466',
+    keywords: [
+      'family_woman_boy_boy',
+      'home',
+      'parent',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [18, 10],
     shortName: 'woman-boy-boy'
   },
   {
-    name: 'Woman Girl',
+    name: 'Family: Woman, Girl',
     unified: '1F469-200D-1F467',
+    keywords: [
+      'family_woman_girl',
+      'home',
+      'parent',
+      'people',
+      'human',
+      'child'
+    ],
     sheet: [18, 14],
     shortName: 'woman-girl'
   },
   {
-    name: 'Woman Girl Boy',
+    name: 'Family: Woman, Girl, Boy',
     unified: '1F469-200D-1F467-200D-1F466',
+    keywords: [
+      'family_woman_girl_boy',
+      'home',
+      'parent',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [18, 12],
     shortName: 'woman-girl-boy'
   },
   {
-    name: 'Woman Girl Girl',
+    name: 'Family: Woman, Girl, Girl',
     unified: '1F469-200D-1F467-200D-1F467',
+    keywords: [
+      'family_woman_girl_girl',
+      'home',
+      'parent',
+      'people',
+      'human',
+      'children'
+    ],
     sheet: [18, 13],
     shortName: 'woman-girl-girl'
   },
   {
-    name: 'Speaking Head in Silhouette',
+    name: 'Speaking Head',
     unified: '1F5E3-FE0F',
+    keywords: [
+      'speaking_head',
+      'user',
+      'person',
+      'human',
+      'sing',
+      'say',
+      'talk'
+    ],
     sheet: [30, 22],
     shortName: 'speaking_head_in_silhouette'
   },
@@ -23202,6 +29491,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Bust in Silhouette',
     unified: '1F464',
     keywords: [
+      'bust_in_silhouette',
       'user',
       'person',
       'human'
@@ -23213,6 +29503,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Busts in Silhouette',
     unified: '1F465',
     keywords: [
+      'busts_in_silhouette',
       'user',
       'person',
       'human',
@@ -23225,6 +29516,10 @@ export const emojis: CompressedEmojiData[] = [
   {
     name: 'People Hugging',
     unified: '1FAC2',
+    keywords: [
+      'people hugging',
+      'care'
+    ],
     sheet: [53, 8],
     shortName: 'people_hugging'
   },
@@ -23232,6 +29527,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Footprints',
     unified: '1F463',
     keywords: [
+      'footprints',
       'feet',
       'tracking',
       'walking',
@@ -23239,51 +29535,5 @@ export const emojis: CompressedEmojiData[] = [
     ],
     sheet: [14, 12],
     shortName: 'footprints'
-  },
-  {
-    name: 'Man in Tuxedo',
-    unified: '1F935',
-    keywords: [
-      'couple',
-      'marriage',
-      'wedding',
-      'groom'
-    ],
-    sheet: [39, 33],
-    skinVariations: [
-      {
-        unified: '1F935-1F3FB',
-        sheet: [39, 34]
-      },
-      {
-        unified: '1F935-1F3FC',
-        sheet: [39, 35]
-      },
-      {
-        unified: '1F935-1F3FD',
-        sheet: [39, 36]
-      },
-      {
-        unified: '1F935-1F3FE',
-        sheet: [39, 37]
-      },
-      {
-        unified: '1F935-1F3FF',
-        sheet: [39, 38]
-      }
-    ],
-    shortName: 'man_in_tuxedo'
-  },
-  {
-    name: 'Lady Beetle',
-    unified: '1F41E',
-    keywords: [
-      'animal',
-      'insect',
-      'nature',
-      'ladybug'
-    ],
-    sheet: [11, 50],
-    shortName: 'beetle'
   }
 ];

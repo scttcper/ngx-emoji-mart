@@ -108,7 +108,7 @@ export class EmojiSearch {
           let aIndex = this.index;
           let length = 0;
 
-          // tslint:disable-next-line: prefer-for-of
+          // eslint-disable-next-line @typescript-eslint/prefer-for-of
           for (let charIndex = 0; charIndex < v.length; charIndex++) {
             const char = v[charIndex];
             length++;
