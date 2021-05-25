@@ -96,6 +96,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
           [backgroundImageFn]="emojiBackgroundImageFn"
           [imageUrlFn]="emojiImageUrlFn"
           [hideObsolete]="hideObsolete"
+          [useButton]="emojiUseButton"
           (emojiOver)="emojiOver.emit($event)"
           (emojiLeave)="emojiLeave.emit($event)"
           (emojiClick)="emojiClick.emit($event)"
