@@ -8,7 +8,7 @@
 
 **DEMO**: https://ngx-emoji-mart.vercel.app
 
-This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by missive
+This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by missive.
 
 ## Installation
 
