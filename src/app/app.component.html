@@ -1,68 +1,119 @@
-<div class="container">
-  <div class="row mb-3 mt-3 text-center">
-    <div class="col-12">
-      <h2>Angular Emoji Mart ✨</h2>
-    </div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="max-w-3xl mx-auto text-center my-6">
+    <h2 class="text-3xl font-bold leading-tight">Angular Emoji Mart ✨</h2>
   </div>
 
-  <div class="row mb-1">
-    <div class="col-12 text-center">
-      <button
-        type="button"
-        class="btn btn-sm btn-light mr-1 mb-2"
-        *ngFor="let theme of themes"
-        (click)="setTheme(theme)"
-        [class.active]="theme === set"
-      >
-        {{ theme }}
-      </button>
-    </div>
+  <div class="flex justify-center gap-1 my-3">
+    <button
+      type="button"
+      class="
+        inline-flex
+        items-center
+        px-3
+        py-2
+        border border-gray-300
+        shadow-sm
+        text-sm
+        leading-4
+        font-medium
+        rounded-md
+        text-gray-700
+        focus:outline-none
+        focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500
+      "
+      [ngClass]="{ 'bg-indigo-600 text-white': theme === set, 'bg-white hover:bg-gray-50': theme !== set }"
+      *ngFor="let theme of themes"
+      (click)="setTheme(theme)"
+    >
+      {{ theme }}
+    </button>
   </div>
 
-  <div class="row mb-1">
-    <div class="col-12 text-center">
-      <button
-        type="button"
-        class="btn btn-sm btn-light mr-1 mb-2"
-        (click)="setDarkmode(undefined)"
-        [class.active]="darkestMode === undefined"
-      >
-        auto
-      </button>
-      <button
-        type="button"
-        class="btn btn-sm btn-light mr-1 mb-2"
-        (click)="setDarkmode(true)"
-        [class.active]="darkestMode === true"
-      >
-        dark
-      </button>
-      <button
-        type="button"
-        class="btn btn-sm btn-light mr-1 mb-2"
-        (click)="setDarkmode(false)"
-        [class.active]="darkestMode === false"
-      >
-        light
-      </button>
-    </div>
+  <div class="flex justify-center gap-1 my-2">
+    <button
+      type="button"
+      class="
+          inline-flex
+          items-center
+          px-3
+          py-2
+          border border-gray-300
+          shadow-sm
+          text-sm
+          leading-4
+          font-medium
+          rounded-md
+          text-gray-700
+          hover:bg-gray-50
+          focus:outline-none
+          focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500
+        "
+      [ngClass]="{ 'bg-indigo-600 text-white': darkestMode === undefined, 'bg-white hover:bg-gray-50': darkestMode !== undefined }"
+      (click)="setDarkmode(undefined)"
+    >
+      auto
+    </button>
+    <button
+      type="button"
+      class="
+        inline-flex
+        items-center
+        px-3
+        py-2
+        border border-gray-300
+        shadow-sm
+        text-sm
+        leading-4
+        font-medium
+        rounded-md
+        text-gray-700
+        hover:bg-gray-50
+        focus:outline-none
+        focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500
+      "
+      (click)="setDarkmode(true)"
+      [ngClass]="{ 'bg-indigo-600 text-white': darkestMode === true, 'bg-white hover:bg-gray-50': darkestMode !== true }"
+    >
+      dark
+    </button>
+    <button
+      type="button"
+      class="
+        inline-flex
+        items-center
+        px-3
+        py-2
+        border border-gray-300
+        shadow-sm
+        text-sm
+        leading-4
+        font-medium
+        rounded-md
+        text-gray-700
+        hover:bg-gray-50
+        focus:outline-none
+        focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500
+      "
+      (click)="setDarkmode(false)"
+      [ngClass]="{ 'bg-indigo-600 text-white': darkestMode === false, 'bg-white hover:bg-gray-50': darkestMode !== false }"
+    >
+      light
+    </button>
   </div>
 
-  <div class="row justify-content-center mb-3">
-    <div class="col-12">
-      <div class="d-flex justify-content-center">
-        <emoji-mart
-          [set]="set"
-          [darkMode]="darkMode"
-          [isNative]="native"
-          [hideRecent]="false"
-          [custom]="CUSTOM_EMOJIS"
-          (emojiSelect)="handleClick($event)"
-          title="Pick your emoji…"
-          emoji="point_up"
-        >
-        </emoji-mart>
-      </div>
+  <div class="flex justify-center my-4">
+    <div class="d-flex justify-content-center">
+      <emoji-mart
+        [set]="set"
+        [darkMode]="darkMode"
+        [isNative]="native"
+        [hideRecent]="false"
+        [custom]="CUSTOM_EMOJIS"
+        (emojiSelect)="handleClick($event)"
+        title="Pick your emoji…"
+        emoji="point_up"
+      >
+      </emoji-mart>
     </div>
   </div>
 </div>

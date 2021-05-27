@@ -293,6 +293,7 @@ export const categories: EmojiCategory[] = [
       '1F473-200D-2640-FE0F',
       '1F472',
       '1F9D5',
+      '1F935',
       '1F935-200D-2642-FE0F',
       '1F935-200D-2640-FE0F',
       '1F470',
@@ -464,7 +465,6 @@ export const categories: EmojiCategory[] = [
       '1F465',
       '1FAC2',
       '1F463',
-      '1F935',
       '1F649',
       '1F64A',
       '1F48B',
@@ -615,6 +615,7 @@ export const categories: EmojiCategory[] = [
       '1F41C',
       '1F41D',
       '1FAB2',
+      '1F41E',
       '1F997',
       '1FAB3',
       '1F577-FE0F',
@@ -646,8 +647,7 @@ export const categories: EmojiCategory[] = [
       '1F340',
       '1F341',
       '1F342',
-      '1F343',
-      '1F41E'
+      '1F343'
     ]
   },
   {

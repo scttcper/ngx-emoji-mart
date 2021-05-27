@@ -10,15 +10,6 @@
 
 This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by missive
 
-- [Installation](#installation)
-- [Components](#components)
-  - [Picker](#picker)
-  - [Emoji](#emoji)
-- [Custom emojis](#custom-emojis)
-- [Headless search](#headless-search)
-- [Storage](#storage)
-- [Features](#features)
-
 ## Installation
 
 ```sh
@@ -29,12 +20,13 @@ npm install @ctrl/ngx-emoji-mart
 
 Latest version available for each version of Angular
 
-| @ctrl/ngx-emoji-mart | Angular |
-| -------------------- | ------- |
-| 0.17.0               | 6.x 7.x |
-| 1.0.6                | 8.x     |
-| 3.1.0                | 9.x     |
-| current              | >= 10.x |
+| @ctrl/ngx-emoji-mart | Angular   |
+| -------------------- | --------- |
+| 0.17.0               | 6.x 7.x   |
+| 1.0.6                | 8.x       |
+| 3.1.0                | 9.x       |
+| 5.1.1                | 10.x 11.x |
+| current              | >= 10.x   |
 
 ## Components
 
@@ -109,7 +101,7 @@ use component
 | **useButton**               | `false`                   | Uses button elements for emoji instead of spans                                                                                                                                          |
 | **enableFrequentEmojiSort** | `false`                   | Enables re-sorting of emoji on click                                                                                                                                                     |
 | **virtualize**              | `false`                   | Enables experimental virtualized rendering to render only emoji categories in view                                                                                                       |
-| **virtualizeOffset**        | `0`                       | use with virtualize option to add or subtract the amount of pixels used to determine whether or not render the category          |
+| **virtualizeOffset**        | `0`                       | use with virtualize option to add or subtract the amount of pixels used to determine whether or not render the category                                                                  |
 
 #### I18n
 
@@ -264,7 +256,7 @@ const customEmojis = [
     text: '',
     emoticons: [],
     keywords: ['test', 'flag'],
-    spriteUrl: 'https://unpkg.com/emoji-datasource-twitter@6.0.0/img/twitter/sheets-256/64.png',
+    spriteUrl: 'https://unpkg.com/emoji-datasource-twitter@6.0.1/img/twitter/sheets-256/64.png',
     sheet_x: 1,
     sheet_y: 1,
     size: 64,
