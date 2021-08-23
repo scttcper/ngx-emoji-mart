@@ -153,7 +153,7 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   ) {}
 
   ngOnInit() {
-    this.getEmojis();
+    this.updateRecentEmojis();
     this.emojisToDisplay = this.filterEmojis();
 
     if (this.noEmojiToDisplay) {
@@ -243,37 +243,35 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
     return true;
   }
 
-  getEmojis(): any[] {
-    if (this.name === 'Recent') {
-      let frequentlyUsed =
-        this.recent || this.frequently.get(this.perLine, this.totalFrequentLines);
-      if (!frequentlyUsed || !frequentlyUsed.length) {
-        frequentlyUsed = this.frequently.get(this.perLine, this.totalFrequentLines);
-      }
-      if (frequentlyUsed.length) {
-        this.emojis = frequentlyUsed
-          .map(id => {
-            const emoji = this.custom.filter((e: any) => e.id === id)[0];
-            if (emoji) {
-              return emoji;
-            }
-
-            return id;
-          })
-          .filter(id => !!this.emojiService.getData(id));
-      }
-
-      if ((!this.emojis || this.emojis.length === 0) && frequentlyUsed.length > 0) {
-        return [];
-      }
+  updateRecentEmojis() {
+    if (this.name !== 'Recent') {
+      return;
     }
 
-    return this.emojis || [];
+    let frequentlyUsed =
+      this.recent || this.frequently.get(this.perLine, this.totalFrequentLines);
+    if (!frequentlyUsed || !frequentlyUsed.length) {
+      frequentlyUsed = this.frequently.get(this.perLine, this.totalFrequentLines);
+    }
+    if (!frequentlyUsed.length) {
+      return
+    }
+    this.emojis = frequentlyUsed
+      .map(id => {
+        const emoji = this.custom.filter((e: any) => e.id === id)[0];
+        if (emoji) {
+          return emoji;
+        }
+
+        return id;
+      })
+      .filter(id => !!this.emojiService.getData(id));
+
   }
 
   updateDisplay(display: 'none' | 'block') {
     this.containerStyles.display = display;
-    this.getEmojis();
+    this.updateRecentEmojis();
     this.ref.detectChanges();
   }
 
