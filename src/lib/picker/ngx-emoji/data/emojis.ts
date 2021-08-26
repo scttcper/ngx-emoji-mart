@@ -50,7 +50,8 @@ export const emojis: CompressedEmojiData[] = [
       'laugh',
       'like',
       ':D',
-      ':)'
+      ':)',
+      'smile'
     ],
     sheet: [30, 36],
     shortName: 'smile'
@@ -115,7 +116,8 @@ export const emojis: CompressedEmojiData[] = [
       'floor',
       'laughing',
       'lol',
-      'haha'
+      'haha',
+      'rofl'
     ],
     sheet: [38, 19],
     shortName: 'rolling_on_the_floor_laughing'
@@ -2806,7 +2808,8 @@ export const emojis: CompressedEmojiData[] = [
       'accept',
       'cool',
       'hand',
-      'like'
+      'like',
+      '+1'
     ],
     sheet: [13, 28],
     skinVariations: [
@@ -2842,7 +2845,8 @@ export const emojis: CompressedEmojiData[] = [
       'thumbsdown',
       'no',
       'dislike',
-      'hand'
+      'hand',
+      '-1'
     ],
     sheet: [13, 34],
     skinVariations: [
@@ -19183,7 +19187,8 @@ export const emojis: CompressedEmojiData[] = [
       'birthday',
       'magic',
       'circus',
-      'celebration'
+      'celebration',
+      'tada'
     ],
     sheet: [7, 38],
     shortName: 'tada'
