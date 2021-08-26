@@ -433,7 +433,7 @@ export class PickerComponent implements OnInit, OnDestroy {
 
     const component = this.categoryRefs.toArray()[1];
     if (component && this.enableFrequentEmojiSort) {
-      component.getEmojis();
+      component.updateRecentEmojis();
       component.ref.markForCheck();
     }
   }
