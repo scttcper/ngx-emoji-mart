@@ -1,33 +1,20 @@
 version: 2.1
 orbs:
-  browser-tools: circleci/browser-tools@1
+  node: circleci/node@4
 jobs:
   test:
     docker:
-      - image: cimg/node:current-browsers
-        environment:
-          CHROME_BIN: '/usr/bin/google-chrome'
+      - image: cimg/node:current
     steps:
-      - browser-tools/install-chrome
       - checkout
-      - run:
-          name: npm-install
-          command: npm ci
-      - run:
-          name: test
-          command: npm run test:ci
+      - node/install-packages
       - run:
           name: lint
           command: npm run lint
-      - run:
-          name: ghpages
-          command: npm run ghpages
-      - run:
-          name: codecov
-          command: bash <(curl -s https://codecov.io/bash)
   release:
-    docker:
-      - image: cimg/node:current
+    executor:
+      name: node/default
+      tag: 'current'
     steps:
       - checkout
       - run: npm ci
@@ -45,5 +32,7 @@ workflows:
             branches:
               only:
                 - master
+          context:
+            - npm
           requires:
             - test
