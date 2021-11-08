@@ -21,7 +21,7 @@ import { Emoji } from '@ctrl/ngx-emoji-mart/ngx-emoji';
         [class.selected]="skinTone === skin"
       >
         <span
-          (click)="this.handleClick(skinTone)"
+          (click)="handleClick(skinTone)"
           (keyup.enter)="handleClick(skinTone)"
           (keyup.space)="handleClick(skinTone)"
           class="emoji-mart-skin emoji-mart-skin-tone-{{ skinTone }}"
@@ -44,9 +44,9 @@ export class SkinComponent {
   /** currently selected skin */
   @Input() skin?: Emoji['skin'];
   @Input() i18n: any;
-  @Output() changeSkin = new EventEmitter<number>();
+  @Output() changeSkin = new EventEmitter<Emoji['skin']>();
   opened = false;
-  skinTones = [1, 2, 3, 4, 5, 6];
+  skinTones: Emoji['skin'][] = [1, 2, 3, 4, 5, 6];
 
   toggleOpen() {
     this.opened = !this.opened;
@@ -72,7 +72,7 @@ export class SkinComponent {
     return this.isSelected(skinTone) ? this.opened : '';
   }
 
-  handleClick(skin: number) {
+  handleClick(skin: Emoji['skin']) {
     if (!this.opened) {
       this.opened = true;
       return;

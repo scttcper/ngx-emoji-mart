@@ -63,7 +63,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
         <div>
           <ngx-emoji
             [emoji]="notFoundEmoji"
-            size="38"
+            [size]="38"
             [skin]="emojiSkin"
             [isNative]="emojiIsNative"
             [set]="emojiSet"

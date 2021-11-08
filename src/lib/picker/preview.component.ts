@@ -85,7 +85,7 @@ export class PreviewComponent implements OnChanges {
   @Input() emojiSheetSize?: Emoji['sheetSize'];
   @Input() emojiBackgroundImageFn?: Emoji['backgroundImageFn'];
   @Input() emojiImageUrlFn?: Emoji['imageUrlFn'];
-  @Output() skinChange = new EventEmitter<number>();
+  @Output() skinChange = new EventEmitter<Emoji['skin']>();
   emojiData: Partial<EmojiData> = {};
   listedEmoticons?: string[];
 
