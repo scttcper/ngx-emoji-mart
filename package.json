@@ -68,7 +68,7 @@
   },
   "repository": "scttcper/ngx-emoji-mart",
   "engines": {
-    "node": ">= 10"
+    "node": ">= 14"
   },
   "release": {
     "branch": "master"

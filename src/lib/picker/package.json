@@ -7,7 +7,7 @@
   },
   "description": "Customizable Slack-like emoji picker for Angular",
   "peerDependencies": {
-    "@angular/core": ">=13.0.0"
+    "@angular/core": ">=12.0.0-0"
   },
   "homepage": "https://ngx-emoji-mart.vercel.app",
   "repository": "scttcper/ngx-emoji-mart",
