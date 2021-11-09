@@ -292,7 +292,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.scrollListener();
+    this.scrollListener?.();
     // This is called here because the component might be destroyed
     // but there will still be a `requestAnimationFrame` callback in the queue
     // that calls `detectChanges()` on the `ViewRef`. This will lead to a runtime
