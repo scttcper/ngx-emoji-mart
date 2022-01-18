@@ -2,6 +2,9 @@
   "$schema": "../../../node_modules/ng-packagr/package.schema.json",
   "name": "@ctrl/ngx-emoji-mart",
   "version": "0.0.0",
+  "homepage": "https://ngx-emoji-mart.vercel.app",
+  "repository": "scttcper/ngx-emoji-mart",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
@@ -9,14 +12,19 @@
   "peerDependencies": {
     "@angular/core": ">=12.0.0-0"
   },
-  "homepage": "https://ngx-emoji-mart.vercel.app",
-  "repository": "scttcper/ngx-emoji-mart",
-  "license": "MIT",
+  "exports": {
+    "./picker": {
+      "default": "./picker.css"
+    }
+  },
   "sideEffects": [ "*.css" ],
   "ngPackage": {
     "lib": {
       "entryFile": "public_api.ts"
     },
+    "assets": [
+      "./picker.css"
+    ],
     "dest": "../../../dist"
   },
   "keywords": [

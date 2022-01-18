@@ -7,7 +7,7 @@
     "cpy": "cpy",
     "start": "ng serve",
     "build": "ng-packagr -p src/lib/picker/package.json",
-    "postbuild": "cpy README.md LICENSE src/lib/picker/picker.css dist",
+    "postbuild": "cpy README.md LICENSE dist",
     "build-data": "ts-node --project=scripts/tsconfig.json scripts/build-data.ts",
     "test": "ng test --watch=false",
     "test:watch": "ng test",
