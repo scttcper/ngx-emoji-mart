@@ -13,17 +13,18 @@ import {
   Output,
   PLATFORM_ID,
   QueryList,
-  Renderer2,
   ViewChild,
   ViewChildren,
 } from '@angular/core';
+import { fromEvent, Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 import {
-  categories,
   Emoji,
   EmojiCategory,
   EmojiData,
   EmojiEvent,
+  EmojiLoaderService,
 } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { CategoryComponent } from './category.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
@@ -110,7 +111,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
   @Output() skinChange = new EventEmitter<Emoji['skin']>();
-  @ViewChild('scrollRef', { static: true }) private scrollRef!: ElementRef;
+  @ViewChild('scrollRef', { static: true }) private scrollRef!: ElementRef<HTMLElement>;
   @ViewChild(PreviewComponent, { static: false }) previewRef?: PreviewComponent;
   @ViewChild(SearchComponent, { static: false }) searchRef?: SearchComponent;
   @ViewChildren(CategoryComponent) categoryRefs!: QueryList<CategoryComponent>;
@@ -141,19 +142,22 @@ export class PickerComponent implements OnInit, OnDestroy {
     name: 'Custom',
     emojis: [],
   };
-  private scrollListener!: () => void;
+
+  private destroy$ = new Subject<void>();
 
   @Input()
   backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
-    `https://unpkg.com/emoji-datasource-${this.set}@6.0.1/img/${this.set}/sheets-256/${this.sheetSize}.png`
+    `https://unpkg.com/emoji-datasource-${this.set}@6.0.1/img/${this.set}/sheets-256/${this.sheetSize}.png`;
 
   constructor(
     private ngZone: NgZone,
-    private renderer: Renderer2,
     private ref: ChangeDetectorRef,
     private frequently: EmojiFrequentlyService,
     @Inject(PLATFORM_ID) private platformId: string,
-  ) {}
+    private emojiLoaderService: EmojiLoaderService,
+  ) {
+    emojiLoaderService.requestToLoad();
+  }
 
   ngOnInit() {
     // measure scroll
@@ -167,132 +171,139 @@ export class PickerComponent implements OnInit, OnDestroy {
           'null',
       ) || this.skin;
 
-    const allCategories = [...categories];
+    this.emojiLoaderService
+      .getCategories()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(categories => {
+        const allCategories = [...categories];
 
-    if (this.custom.length > 0) {
-      this.CUSTOM_CATEGORY.emojis = this.custom.map(emoji => {
-        return {
-          ...emoji,
-          // `<Category />` expects emoji to have an `id`.
-          id: emoji.shortNames[0],
-          custom: true,
-        };
-      });
-
-      allCategories.push(this.CUSTOM_CATEGORY);
-    }
-
-    if (this.include !== undefined) {
-      allCategories.sort((a, b) => {
-        if (this.include!.indexOf(a.id) > this.include!.indexOf(b.id)) {
-          return 1;
-        }
-        return -1;
-      });
-    }
-
-    for (const category of allCategories) {
-      const isIncluded =
-        this.include && this.include.length ? this.include.indexOf(category.id) > -1 : true;
-      const isExcluded =
-        this.exclude && this.exclude.length ? this.exclude.indexOf(category.id) > -1 : false;
-      if (!isIncluded || isExcluded) {
-        continue;
-      }
-
-      if (this.emojisToShowFilter) {
-        const newEmojis = [];
-
-        const { emojis } = category;
-        // eslint-disable-next-line @typescript-eslint/prefer-for-of
-        for (let emojiIndex = 0; emojiIndex < emojis!.length; emojiIndex++) {
-          const emoji = emojis![emojiIndex];
-          if (this.emojisToShowFilter(emoji)) {
-            newEmojis.push(emoji);
-          }
-        }
-
-        if (newEmojis.length) {
-          const newCategory = {
-            emojis: newEmojis,
-            name: category.name,
-            id: category.id,
-          };
-
-          this.categories.push(newCategory);
-        }
-      } else {
-        this.categories.push(category);
-      }
-
-      this.categoriesIcons = { ...icons.categories, ...this.categoriesIcons };
-      this.searchIcons = { ...icons.search, ...this.searchIcons };
-    }
-
-    const includeRecent =
-      this.include && this.include.length
-        ? this.include.indexOf(this.RECENT_CATEGORY.id) > -1
-        : true;
-    const excludeRecent =
-      this.exclude && this.exclude.length
-        ? this.exclude.indexOf(this.RECENT_CATEGORY.id) > -1
-        : false;
-    if (includeRecent && !excludeRecent) {
-      this.hideRecent = false;
-      this.categories.unshift(this.RECENT_CATEGORY);
-    }
-
-    if (this.categories[0]) {
-      this.categories[0].first = true;
-    }
-
-    this.categories.unshift(this.SEARCH_CATEGORY);
-    this.selected = this.categories.filter(category => category.first)[0].name;
-
-    // Need to be careful if small number of categories
-    const categoriesToLoadFirst = Math.min(this.categories.length, 3);
-    this.setActiveCategories(
-      (this.activeCategories = this.categories.slice(0, categoriesToLoadFirst)),
-    );
-
-    // Trim last active category
-    const lastActiveCategoryEmojis = this.categories[categoriesToLoadFirst - 1].emojis!.slice();
-    this.categories[categoriesToLoadFirst - 1].emojis = lastActiveCategoryEmojis.slice(0, 60);
-
-    setTimeout(() => {
-      // Restore last category
-      this.categories[categoriesToLoadFirst - 1].emojis = lastActiveCategoryEmojis;
-      this.setActiveCategories(this.categories);
-      // The `setTimeout` will trigger the change detection, but since we're inside
-      // the OnPush component we can run change detection locally starting from this
-      // component and going down to the children.
-      this.ref.detectChanges();
-
-      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-      isPlatformBrowser(this.platformId) &&
-        this.ngZone.runOutsideAngular(() => {
-          // The `updateCategoriesSize` doesn't change properties that are used
-          // in templates, thus this is run in the context of the root zone to avoid
-          // running change detection.
-          requestAnimationFrame(() => {
-            this.updateCategoriesSize();
+        if (this.custom.length > 0) {
+          this.CUSTOM_CATEGORY.emojis = this.custom.map(emoji => {
+            return {
+              ...emoji,
+              // `<Category />` expects emoji to have an `id`.
+              id: emoji.shortNames[0],
+              custom: true,
+            };
           });
-        });
-    });
 
-    this.ngZone.runOutsideAngular(() => {
-      // DOM events that are listened by Angular inside the template trigger change detection
-      // and also wrapped into additional functions that call `markForCheck()`. We listen `scroll`
-      // in the context of the root zone since it will not trigger change detection each time
-      // the `scroll` event is dispatched.
-      this.scrollListener = this.renderer.listen(this.scrollRef.nativeElement, 'scroll', () => {
-        this.handleScroll();
+          allCategories.push(this.CUSTOM_CATEGORY);
+        }
+
+        if (this.include !== undefined) {
+          allCategories.sort((a, b) => {
+            if (this.include!.indexOf(a.id) > this.include!.indexOf(b.id)) {
+              return 1;
+            }
+            return -1;
+          });
+        }
+
+        for (const category of allCategories) {
+          const isIncluded =
+            this.include && this.include.length ? this.include.indexOf(category.id) > -1 : true;
+          const isExcluded =
+            this.exclude && this.exclude.length ? this.exclude.indexOf(category.id) > -1 : false;
+          if (!isIncluded || isExcluded) {
+            continue;
+          }
+
+          if (this.emojisToShowFilter) {
+            const newEmojis = [];
+
+            const { emojis } = category;
+            // eslint-disable-next-line @typescript-eslint/prefer-for-of
+            for (let emojiIndex = 0; emojiIndex < emojis!.length; emojiIndex++) {
+              const emoji = emojis![emojiIndex];
+              if (this.emojisToShowFilter(emoji)) {
+                newEmojis.push(emoji);
+              }
+            }
+
+            if (newEmojis.length) {
+              const newCategory = {
+                emojis: newEmojis,
+                name: category.name,
+                id: category.id,
+              };
+
+              this.categories.push(newCategory);
+            }
+          } else {
+            this.categories.push(category);
+          }
+
+          this.categoriesIcons = { ...icons.categories, ...this.categoriesIcons };
+          this.searchIcons = { ...icons.search, ...this.searchIcons };
+        }
+
+        const includeRecent =
+          this.include && this.include.length
+            ? this.include.indexOf(this.RECENT_CATEGORY.id) > -1
+            : true;
+        const excludeRecent =
+          this.exclude && this.exclude.length
+            ? this.exclude.indexOf(this.RECENT_CATEGORY.id) > -1
+            : false;
+        if (includeRecent && !excludeRecent) {
+          this.hideRecent = false;
+          this.categories.unshift(this.RECENT_CATEGORY);
+        }
+
+        if (this.categories[0]) {
+          this.categories[0].first = true;
+        }
+
+        this.categories.unshift(this.SEARCH_CATEGORY);
+        this.selected = this.categories.filter(category => category.first)[0].name;
+
+        // Need to be careful if small number of categories
+        const categoriesToLoadFirst = Math.min(this.categories.length, 3);
+        this.setActiveCategories(
+          (this.activeCategories = this.categories.slice(0, categoriesToLoadFirst)),
+        );
+
+        // Trim last active category
+        const lastActiveCategoryEmojis = this.categories[categoriesToLoadFirst - 1].emojis!.slice();
+        this.categories[categoriesToLoadFirst - 1].emojis = lastActiveCategoryEmojis.slice(0, 60);
+
+        setTimeout(() => {
+          // Restore last category
+          this.categories[categoriesToLoadFirst - 1].emojis = lastActiveCategoryEmojis;
+          this.setActiveCategories(this.categories);
+          // The `setTimeout` will trigger the change detection, but since we're inside
+          // the OnPush component we can run change detection locally starting from this
+          // component and going down to the children.
+          this.ref.detectChanges();
+
+          // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+          isPlatformBrowser(this.platformId) &&
+            this.ngZone.runOutsideAngular(() => {
+              // The `updateCategoriesSize` doesn't change properties that are used
+              // in templates, thus this is run in the context of the root zone to avoid
+              // running change detection.
+              requestAnimationFrame(() => {
+                this.updateCategoriesSize();
+              });
+            });
+        });
+
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+        isPlatformBrowser(this.platformId) &&
+          // DOM events that are listened by Angular inside the template trigger change detection
+          // and also wrapped into additional functions that call `markForCheck()`. We listen `scroll`
+          // in the context of the root zone since it will not trigger change detection each time
+          // the `scroll` event is dispatched.
+          this.ngZone.runOutsideAngular(() =>
+            fromEvent(this.scrollRef.nativeElement, 'scroll')
+              .pipe(takeUntil(this.destroy$))
+              .subscribe(() => this.handleScroll()),
+          );
       });
-    });
   }
 
   ngOnDestroy(): void {
-    this.scrollListener?.();
+    this.destroy$.next();
     // This is called here because the component might be destroyed
     // but there will still be a `requestAnimationFrame` callback in the queue
     // that calls `detectChanges()` on the `ViewRef`. This will lead to a runtime

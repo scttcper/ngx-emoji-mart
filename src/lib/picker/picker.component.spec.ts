@@ -1,5 +1,8 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { of } from 'rxjs';
 
+import { categories, emojis, skins } from './emojis';
+import { EmojiLoaderModule } from './ngx-emoji';
 import { PickerComponent } from './picker.component';
 import { PickerModule } from './picker.module';
 
@@ -9,9 +12,15 @@ describe('PickerComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [PickerModule],
-    })
-    .compileComponents();
+      imports: [
+        PickerModule,
+        EmojiLoaderModule.forRoot({
+          skins: () => of(skins),
+          emojis: () => of(emojis),
+          categories: () => of(categories),
+        }),
+      ],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

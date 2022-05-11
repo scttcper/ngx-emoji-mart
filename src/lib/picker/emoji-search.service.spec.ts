@@ -1,58 +1,62 @@
-import { inject, TestBed, waitForAsync } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
+import { firstValueFrom, of } from 'rxjs';
 
-import { EmojiData } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import { EmojiData, EmojiLoaderModule } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+
+import { categories, emojis, skins } from './emojis';
 import { EmojiSearch } from './emoji-search.service';
 
 describe('EmojiSearch', () => {
+  let es: EmojiSearch;
+
   beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({}).compileComponents();
+    TestBed.configureTestingModule({
+      imports: [
+        EmojiLoaderModule.forRoot({
+          skins: () => of(skins),
+          emojis: () => of(emojis),
+          categories: () => of(categories),
+        }),
+      ],
+    }).compileComponents();
   }));
 
-  it('should return nothing', inject([EmojiSearch], (es: EmojiSearch) => {
-    expect(es.search('')).toEqual(null);
-  }));
+  beforeEach(() => {
+    es = TestBed.inject(EmojiSearch);
+  });
 
-  it('should search', inject([EmojiSearch], (es: EmojiSearch) => {
-    const res = es.search('pineapple');
+  it('should return nothing', async () => {
+    expect(await firstValueFrom(es.search(''))).toEqual(null);
+  });
+
+  it('should search', async () => {
+    const res = await firstValueFrom(es.search('pineapple'));
     expect(res).toBeDefined();
     expect(res!.length).toBe(1);
     expect(res![0].name).toBe('Pineapple');
-  }));
+  });
 
-  it('should filter only emojis we care about, exclude pineapple', inject(
-    [EmojiSearch],
-    (es: EmojiSearch) => {
-      const emojisToShowFilter = (data: EmojiData) => {
-        return data.unified !== '1F34D';
-      };
-      const apples = es.search('apple', emojisToShowFilter)!.map(obj => obj.id);
-      expect(apples.length).toBe(3);
-      expect(apples).not.toContain('pineapple');
-    },
-  ));
+  it('should filter only emojis we care about, exclude pineapple', async () => {
+    const emojisToShowFilter = (data: EmojiData) => {
+      return data.unified !== '1F34D';
+    };
+    const res = await firstValueFrom(es.search('apple', emojisToShowFilter));
+    const apples = res!.map(obj => obj.id);
+    expect(apples.length).toBe(3);
+    expect(apples).not.toContain('pineapple');
+  });
 
-  it('can include/exclude categories', inject(
-    [EmojiSearch],
-    (es: EmojiSearch) => {
-      expect(es.search('flag', undefined, undefined, ['people'])).toEqual([]);
-    },
-  ));
+  it('can include/exclude categories', async () => {
+    expect(await firstValueFrom(es.search('flag', undefined, undefined, ['people']))).toEqual([]);
+  });
 
-  it('can search for thinking_face', inject(
-    [EmojiSearch],
-    (es: EmojiSearch) => {
-      expect(es.search('thinking_fac')!.map((x: any) => x.id)).toEqual([
-        'thinking_face',
-      ]);
-    },
-  ));
+  it('can search for thinking_face', async () => {
+    const res = await firstValueFrom(es.search('thinking_fac'));
+    expect(res!.map((x: any) => x.id)).toEqual(['thinking_face']);
+  });
 
-  it('can search for woman-facepalming', inject(
-    [EmojiSearch],
-    (es: EmojiSearch) => {
-      expect(es.search('woman-facep')!.map(x => x.id)).toEqual([
-        'woman-facepalming',
-      ]);
-    },
-  ));
+  it('can search for woman-facepalming', async () => {
+    const res = await firstValueFrom(es.search('woman-facep'));
+    expect(res!.map(x => x.id)).toEqual(['woman-facepalming']);
+  });
 });

@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GhButtonModule } from '@ctrl/ngx-github-buttons';
 
-import { EmojiModule } from '../lib/picker/ngx-emoji/emoji.module';
-import { PickerModule } from '../lib/picker/picker.module';
+import { PickerModule } from '@ctrl/ngx-emoji-mart';
+import { EmojiModule, EmojiLoaderModule } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer.component';
+import { from, map } from 'rxjs';
 
 @NgModule({
   declarations: [AppComponent, FooterComponent],
@@ -16,6 +18,11 @@ import { FooterComponent } from './footer.component';
     PickerModule,
     EmojiModule,
     GhButtonModule,
+    EmojiLoaderModule.forRoot({
+      skins: () => from(import('@ctrl/ngx-emoji-mart/emojis')).pipe(map(m => m.skins)),
+      emojis: () => from(import('@ctrl/ngx-emoji-mart/emojis')).pipe(map(m => m.emojis)),
+      categories: () => from(import('@ctrl/ngx-emoji-mart/emojis')).pipe(map(m => m.categories)),
+    }),
   ],
   bootstrap: [AppComponent],
 })

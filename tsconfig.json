@@ -21,6 +21,8 @@
       "dom"
     ],
     "paths": {
+      "@ctrl/ngx-emoji-mart": ["./src/lib/picker/public_api"],
+      "@ctrl/ngx-emoji-mart/emojis": ["./src/lib/picker/emojis/index"],
       "@ctrl/ngx-emoji-mart/ngx-emoji": ["./src/lib/picker/ngx-emoji/index"]
     }
   },

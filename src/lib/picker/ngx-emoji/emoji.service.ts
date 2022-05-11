@@ -1,8 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
-import { CompressedEmojiData, EmojiData, EmojiVariation } from './data/data.interfaces';
-import { emojis } from './data/emojis';
 import { Emoji } from './emoji.component';
+import { EmojiLoaderService } from './loader';
+import { CompressedEmojiData, EmojiData, EmojiVariation } from './data/data.interfaces';
 
 const COLONS_REGEX = /^(?:\:([^\:]+)\:)(?:\:skin-tone-(\d)\:)?$/;
 const SKINS = ['1F3FA', '1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF'];
@@ -10,16 +12,25 @@ export const DEFAULT_BACKGROUNDFN = (set: string, sheetSize: number) =>
   `https://unpkg.com/emoji-datasource-${set}@6.0.1/img/${set}/sheets-256/${sheetSize}.png`;
 
 @Injectable({ providedIn: 'root' })
-export class EmojiService {
+export class EmojiService implements OnDestroy {
   uncompressed = false;
   names: { [key: string]: EmojiData } = {};
   emojis: EmojiData[] = [];
 
-  constructor() {
+  private destroy$ = new Subject<void>();
+
+  constructor(emojiLoaderService: EmojiLoaderService) {
     if (!this.uncompressed) {
-      this.uncompress(emojis);
+      emojiLoaderService
+        .getEmojis()
+        .pipe(takeUntil(this.destroy$))
+        .subscribe(emojis => this.uncompress(emojis));
       this.uncompressed = true;
     }
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
   }
 
   uncompress(list: CompressedEmojiData[]) {
