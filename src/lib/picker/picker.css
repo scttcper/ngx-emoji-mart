@@ -22,6 +22,7 @@
   border: 0 solid #d9d9d9;
 }
 .emoji-mart-bar:first-child {
+  height: 43px;
   border-bottom-width: 1px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
