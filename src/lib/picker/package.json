@@ -1,5 +1,4 @@
 {
-  "$schema": "../../../node_modules/ng-packagr/package.schema.json",
   "name": "@ctrl/ngx-emoji-mart",
   "version": "0.0.0",
   "homepage": "https://ngx-emoji-mart.vercel.app",
@@ -17,16 +16,7 @@
       "default": "./picker.css"
     }
   },
-  "sideEffects": [ "*.css" ],
-  "ngPackage": {
-    "lib": {
-      "entryFile": "public_api.ts"
-    },
-    "assets": [
-      "./picker.css"
-    ],
-    "dest": "../../../dist"
-  },
+  "sideEffects": ["*.css"],
   "keywords": [
     "angular",
     "emoji",

@@ -3,11 +3,5 @@
   "author": "scttcper",
   "repository": "scttcper/ngx-emoji-mart",
   "license": "MIT",
-  "sideEffects": [ "*.css" ],
-  "ngPackage": {
-    "lib": {
-      "entryFile": "index.ts"
-    },
-    "dest": "../../../../dist/emoji"
-  }
+  "sideEffects": ["*.css"]
 }
