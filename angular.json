@@ -123,9 +123,5 @@
         }
       }
     }
-  },
-  "defaultProject": "ngx-emoji-mart",
-  "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
   }
 }

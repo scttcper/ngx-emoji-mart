@@ -22,11 +22,11 @@ Latest version available for each version of Angular
 
 | @ctrl/ngx-emoji-mart | Angular   |
 | -------------------- | --------- |
-| 0.17.0               | 6.x 7.x   |
 | 1.0.6                | 8.x       |
 | 3.1.0                | 9.x       |
 | 5.1.2                | 10.x 11.x |
-| current              | >= 12.x   |
+| 6.2.0                | 12.x 13.x |
+| current              | >= 14.x   |
 
 ## Components
 
