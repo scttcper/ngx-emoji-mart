@@ -1,20 +1,11 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  EventEmitter,
-  Input,
-  Output,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { Emoji } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 
 @Component({
   selector: 'emoji-skins',
   template: `
-    <section
-      class="emoji-mart-skin-swatches"
-      [class.opened]="opened"
-    >
+    <section class="emoji-mart-skin-swatches" [class.opened]="opened">
       <span
         *ngFor="let skinTone of skinTones"
         class="emoji-mart-skin-swatch"
@@ -31,8 +22,8 @@ import { Emoji } from '@ctrl/ngx-emoji-mart/ngx-emoji';
           [attr.aria-pressed]="pressed(skinTone)"
           [attr.aria-haspopup]="!!isSelected(skinTone)"
           [attr.aria-expanded]="expanded(skinTone)"
-          [attr.aria-label]="i18n.skintones[skinTone]"
-          [title]="i18n.skintones[skinTone]"
+          [attr.aria-label]="i18n.skintones?.[skinTone]"
+          [title]="i18n.skintones?.[skinTone]"
         ></span>
       </span>
     </section>

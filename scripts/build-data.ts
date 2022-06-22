@@ -201,11 +201,11 @@ const sEmojis = stringifyObject(emojis, {
   inlineCharacterLimit: 25,
   indent: '  '
 });
-let doc = `import { CompressedEmojiData } from './data.interfaces';
+let doc = `import type { CompressedEmojiData } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 export const emojis: CompressedEmojiData[] = ${sEmojis};
 `;
 fs.writeFileSync(
-  path.join(__dirname, '../src/lib/picker/ngx-emoji/data/emojis.ts'),
+  path.join(__dirname, '../src/lib/picker/emojis/emojis.ts'),
   doc
 );
 
@@ -213,11 +213,11 @@ const sCategories = stringifyObject(categories, {
   inlineCharacterLimit: 25,
   indent: '  '
 });
-doc = `import { EmojiCategory } from './data.interfaces';
+doc = `import type { EmojiCategory } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 export const categories: EmojiCategory[] = ${sCategories};
 `;
 fs.writeFileSync(
-  path.join(__dirname, '../src/lib/picker/ngx-emoji/data/categories.ts'),
+  path.join(__dirname, '../src/lib/picker/emojis/categories.ts'),
   doc
 );
 
@@ -225,11 +225,11 @@ const sSkins = stringifyObject(skins, {
   inlineCharacterLimit: 25,
   indent: '  '
 });
-doc = `import { SkinData } from './data.interfaces';
+doc = `import type { SkinData } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 export const skins: SkinData[] = ${sSkins};
 `;
 fs.writeFileSync(
-  path.join(__dirname, '../src/lib/picker/ngx-emoji/data/skins.ts'),
+  path.join(__dirname, '../src/lib/picker/emojis/skins.ts'),
   doc
 );
 
