@@ -32,7 +32,7 @@ import { Emoji } from '@ctrl/ngx-emoji-mart/ngx-emoji';
           [attr.aria-haspopup]="!!isSelected(skinTone)"
           [attr.aria-expanded]="expanded(skinTone)"
           [attr.aria-label]="i18n.skintones[skinTone]"
-          [title]="i18n.skintones[skinTone]"
+          [attr.title]="i18n.skintones[skinTone]"
         ></span>
       </span>
     </section>

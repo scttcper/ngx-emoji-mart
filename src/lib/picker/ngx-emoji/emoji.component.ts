@@ -43,7 +43,7 @@ export interface EmojiEvent {
       (click)="handleClick($event)"
       (mouseenter)="handleOver($event)"
       (mouseleave)="handleLeave($event)"
-      [title]="title"
+      [attr.title]="title"
       [attr.aria-label]="label"
       class="emoji-mart-emoji"
       [class.emoji-mart-emoji-native]="isNative"
@@ -60,7 +60,7 @@ export interface EmojiEvent {
       (click)="handleClick($event)"
       (mouseenter)="handleOver($event)"
       (mouseleave)="handleLeave($event)"
-      [title]="title"
+      [attr.title]="title"
       [attr.aria-label]="label"
       class="emoji-mart-emoji"
       [class.emoji-mart-emoji-native]="isNative"
@@ -94,7 +94,7 @@ export class EmojiComponent implements OnChanges, Emoji {
   @Output() emojiLeave: Emoji['emojiLeave'] = new EventEmitter();
   @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
   style: any;
-  title = '';
+  title?: string = undefined;
   label = '';
   unified?: string | null;
   custom = false;
