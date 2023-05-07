@@ -14,14 +14,17 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2020",
+    "useDefineForClassFields": false,
+    "target": "es2022",
     "module": "es2020",
     "lib": [
       "es2018",
       "dom"
     ],
     "paths": {
-      "@ctrl/ngx-emoji-mart/ngx-emoji": ["./src/lib/picker/ngx-emoji/index"]
+      "@ctrl/ngx-emoji-mart/ngx-emoji": [
+        "./src/lib/picker/ngx-emoji/index"
+      ]
     }
   },
   "angularCompilerOptions": {
