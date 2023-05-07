@@ -9,7 +9,7 @@
   },
   "description": "Customizable Slack-like emoji picker for Angular",
   "peerDependencies": {
-    "@angular/core": ">=14.0.0-0"
+    "@angular/core": ">=15.0.0-0"
   },
   "exports": {
     "./picker": {

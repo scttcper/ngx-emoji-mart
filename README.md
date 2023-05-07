@@ -26,7 +26,8 @@ Latest version available for each version of Angular
 | 3.1.0                | 9.x       |
 | 5.1.2                | 10.x 11.x |
 | 6.2.0                | 12.x 13.x |
-| current              | >= 14.x   |
+| 7.1.0                | 14.x      |
+| current              | >=15.x    |
 
 ## Components
 
