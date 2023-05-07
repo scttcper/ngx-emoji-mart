@@ -13,7 +13,7 @@ export const emojis: CompressedEmojiData[] = [
       ':D',
       'grin'
     ],
-    sheet: [30, 32],
+    sheet: [32, 20],
     shortName: 'grinning'
   },
   {
@@ -32,7 +32,7 @@ export const emojis: CompressedEmojiData[] = [
       'smile',
       'funny'
     ],
-    sheet: [30, 35],
+    sheet: [32, 23],
     shortName: 'smiley'
   },
   {
@@ -53,7 +53,7 @@ export const emojis: CompressedEmojiData[] = [
       ':)',
       'smile'
     ],
-    sheet: [30, 36],
+    sheet: [32, 24],
     shortName: 'smile'
   },
   {
@@ -67,7 +67,7 @@ export const emojis: CompressedEmojiData[] = [
       'joy',
       'kawaii'
     ],
-    sheet: [30, 33],
+    sheet: [32, 21],
     shortName: 'grin'
   },
   {
@@ -86,7 +86,7 @@ export const emojis: CompressedEmojiData[] = [
       'XD',
       'laugh'
     ],
-    sheet: [30, 38],
+    sheet: [32, 26],
     shortNames: ['satisfied'],
     shortName: 'laughing'
   },
@@ -103,7 +103,7 @@ export const emojis: CompressedEmojiData[] = [
       'smile',
       'relief'
     ],
-    sheet: [30, 37],
+    sheet: [32, 25],
     shortName: 'sweat_smile'
   },
   {
@@ -119,7 +119,7 @@ export const emojis: CompressedEmojiData[] = [
       'haha',
       'rofl'
     ],
-    sheet: [38, 19],
+    sheet: [40, 15],
     shortName: 'rolling_on_the_floor_laughing'
   },
   {
@@ -135,7 +135,7 @@ export const emojis: CompressedEmojiData[] = [
       'happytears',
       'haha'
     ],
-    sheet: [30, 34],
+    sheet: [32, 22],
     shortName: 'joy'
   },
   {
@@ -147,7 +147,7 @@ export const emojis: CompressedEmojiData[] = [
       'face',
       'smile'
     ],
-    sheet: [31, 40],
+    sheet: [33, 28],
     shortName: 'slightly_smiling_face'
   },
   {
@@ -160,8 +160,20 @@ export const emojis: CompressedEmojiData[] = [
       'silly',
       'smile'
     ],
-    sheet: [31, 41],
+    sheet: [33, 29],
     shortName: 'upside_down_face'
+  },
+  {
+    name: 'Melting Face',
+    unified: '1FAE0',
+    keywords: [
+      'melting face',
+      'hot',
+      'heat'
+    ],
+    sheet: [55, 12],
+    hidden: ['facebook'],
+    shortName: 'melting_face'
   },
   {
     name: 'Winking Face',
@@ -178,7 +190,7 @@ export const emojis: CompressedEmojiData[] = [
       'smile',
       'eye'
     ],
-    sheet: [30, 41],
+    sheet: [32, 29],
     shortName: 'wink'
   },
   {
@@ -196,7 +208,7 @@ export const emojis: CompressedEmojiData[] = [
       'shy',
       'joy'
     ],
-    sheet: [30, 42],
+    sheet: [32, 30],
     shortName: 'blush'
   },
   {
@@ -207,9 +219,10 @@ export const emojis: CompressedEmojiData[] = [
       'face',
       'angel',
       'heaven',
-      'halo'
+      'halo',
+      'innocent'
     ],
-    sheet: [30, 39],
+    sheet: [32, 27],
     shortName: 'innocent'
   },
   {
@@ -227,7 +240,7 @@ export const emojis: CompressedEmojiData[] = [
       'hearts',
       'adore'
     ],
-    sheet: [42, 13],
+    sheet: [43, 58],
     shortName: 'smiling_face_with_3_hearts'
   },
   {
@@ -244,7 +257,7 @@ export const emojis: CompressedEmojiData[] = [
       'crush',
       'heart'
     ],
-    sheet: [30, 45],
+    sheet: [32, 33],
     shortName: 'heart_eyes'
   },
   {
@@ -258,7 +271,7 @@ export const emojis: CompressedEmojiData[] = [
       'eyes',
       'grinning'
     ],
-    sheet: [38, 42],
+    sheet: [40, 38],
     shortNames: [
       'grinning_face_with_star_eyes'
     ],
@@ -278,7 +291,7 @@ export const emojis: CompressedEmojiData[] = [
       'infatuation',
       'kiss'
     ],
-    sheet: [30, 56],
+    sheet: [32, 44],
     shortName: 'kissing_heart'
   },
   {
@@ -294,7 +307,7 @@ export const emojis: CompressedEmojiData[] = [
       'infatuation',
       'kiss'
     ],
-    sheet: [30, 55],
+    sheet: [32, 43],
     shortName: 'kissing'
   },
   {
@@ -307,7 +320,7 @@ export const emojis: CompressedEmojiData[] = [
       'massage',
       'happiness'
     ],
-    sheet: [54, 22],
+    sheet: [57, 4],
     shortName: 'relaxed'
   },
   {
@@ -323,7 +336,7 @@ export const emojis: CompressedEmojiData[] = [
       'infatuation',
       'kiss'
     ],
-    sheet: [31, 0],
+    sheet: [32, 46],
     shortName: 'kissing_closed_eyes'
   },
   {
@@ -337,7 +350,7 @@ export const emojis: CompressedEmojiData[] = [
       'infatuation',
       'kiss'
     ],
-    sheet: [30, 57],
+    sheet: [32, 45],
     shortName: 'kissing_smiling_eyes'
   },
   {
@@ -349,7 +362,7 @@ export const emojis: CompressedEmojiData[] = [
       'cry',
       'pretend'
     ],
-    sheet: [42, 15],
+    sheet: [43, 60],
     shortName: 'smiling_face_with_tear'
   },
   {
@@ -368,7 +381,7 @@ export const emojis: CompressedEmojiData[] = [
       'delicious',
       'savouring'
     ],
-    sheet: [30, 43],
+    sheet: [32, 31],
     shortName: 'yum'
   },
   {
@@ -393,7 +406,7 @@ export const emojis: CompressedEmojiData[] = [
       'smile',
       'tongue'
     ],
-    sheet: [31, 1],
+    sheet: [32, 47],
     shortName: 'stuck_out_tongue'
   },
   {
@@ -419,7 +432,7 @@ export const emojis: CompressedEmojiData[] = [
       'wink',
       'tongue'
     ],
-    sheet: [31, 2],
+    sheet: [32, 48],
     shortName: 'stuck_out_tongue_winking_eye'
   },
   {
@@ -431,7 +444,7 @@ export const emojis: CompressedEmojiData[] = [
       'goofy',
       'crazy'
     ],
-    sheet: [38, 43],
+    sheet: [40, 39],
     shortNames: [
       'grinning_face_with_one_large_and_one_small_eye'
     ],
@@ -449,7 +462,7 @@ export const emojis: CompressedEmojiData[] = [
       'smile',
       'tongue'
     ],
-    sheet: [31, 3],
+    sheet: [32, 49],
     shortName: 'stuck_out_tongue_closed_eyes'
   },
   {
@@ -462,7 +475,7 @@ export const emojis: CompressedEmojiData[] = [
       'dollar',
       'money'
     ],
-    sheet: [37, 24],
+    sheet: [38, 59],
     shortName: 'money_mouth_face'
   },
   {
@@ -474,7 +487,7 @@ export const emojis: CompressedEmojiData[] = [
       'smile',
       'hug'
     ],
-    sheet: [37, 30],
+    sheet: [39, 4],
     shortName: 'hugging_face'
   },
   {
@@ -487,11 +500,39 @@ export const emojis: CompressedEmojiData[] = [
       'shock',
       'surprise'
     ],
-    sheet: [38, 46],
+    sheet: [40, 42],
     shortNames: [
       'smiling_face_with_smiling_eyes_and_hand_covering_mouth'
     ],
     shortName: 'face_with_hand_over_mouth'
+  },
+  {
+    name: 'Face with Open Eyes and Hand over Mouth',
+    unified: '1FAE2',
+    keywords: [
+      'face with open eyes and hand over mouth',
+      'silence',
+      'secret',
+      'shock',
+      'surprise'
+    ],
+    sheet: [55, 14],
+    hidden: ['facebook'],
+    shortName: 'face_with_open_eyes_and_hand_over_mouth'
+  },
+  {
+    name: 'Face with Peeking Eye',
+    unified: '1FAE3',
+    keywords: [
+      'face with peeking eye',
+      'scared',
+      'frightening',
+      'embarrassing',
+      'shy'
+    ],
+    sheet: [55, 15],
+    hidden: ['facebook'],
+    shortName: 'face_with_peeking_eye'
   },
   {
     name: 'Face with Finger Covering Closed Lips',
@@ -502,7 +543,7 @@ export const emojis: CompressedEmojiData[] = [
       'quiet',
       'shhh'
     ],
-    sheet: [38, 44],
+    sheet: [40, 40],
     shortNames: [
       'face_with_finger_covering_closed_lips'
     ],
@@ -518,8 +559,20 @@ export const emojis: CompressedEmojiData[] = [
       'think',
       'consider'
     ],
-    sheet: [37, 27],
+    sheet: [39, 1],
     shortName: 'thinking_face'
+  },
+  {
+    name: 'Saluting Face',
+    unified: '1FAE1',
+    keywords: [
+      'saluting face',
+      'respect',
+      'salute'
+    ],
+    sheet: [55, 13],
+    hidden: ['facebook'],
+    shortName: 'saluting_face'
   },
   {
     name: 'Zipper-Mouth Face',
@@ -531,7 +584,7 @@ export const emojis: CompressedEmojiData[] = [
       'zipper',
       'secret'
     ],
-    sheet: [37, 23],
+    sheet: [38, 58],
     shortName: 'zipper_mouth_face'
   },
   {
@@ -546,7 +599,7 @@ export const emojis: CompressedEmojiData[] = [
       'disbelief',
       'surprise'
     ],
-    sheet: [38, 41],
+    sheet: [40, 37],
     shortNames: [
       'face_with_one_eyebrow_raised'
     ],
@@ -563,7 +616,7 @@ export const emojis: CompressedEmojiData[] = [
       ':|',
       'neutral'
     ],
-    sheet: [30, 48],
+    sheet: [32, 36],
     shortName: 'neutral_face'
   },
   {
@@ -577,7 +630,7 @@ export const emojis: CompressedEmojiData[] = [
       'meh',
       'deadpan'
     ],
-    sheet: [30, 49],
+    sheet: [32, 37],
     shortName: 'expressionless'
   },
   {
@@ -588,8 +641,35 @@ export const emojis: CompressedEmojiData[] = [
       'face',
       'hellokitty'
     ],
-    sheet: [31, 28],
+    sheet: [33, 16],
     shortName: 'no_mouth'
+  },
+  {
+    name: 'Dotted Line Face',
+    unified: '1FAE5',
+    keywords: [
+      'dotted line face',
+      'invisible',
+      'lonely',
+      'isolation',
+      'depression'
+    ],
+    sheet: [55, 17],
+    hidden: ['facebook'],
+    shortName: 'dotted_line_face'
+  },
+  {
+    name: 'Face in Clouds',
+    unified: '1F636-200D-1F32B-FE0F',
+    keywords: [
+      'face in clouds',
+      'shower',
+      'steam',
+      'dream'
+    ],
+    sheet: [33, 15],
+    hidden: ['facebook'],
+    shortName: 'face_in_clouds'
   },
   {
     name: 'Smirking Face',
@@ -603,7 +683,7 @@ export const emojis: CompressedEmojiData[] = [
       'smug',
       'sarcasm'
     ],
-    sheet: [30, 47],
+    sheet: [32, 35],
     shortName: 'smirk'
   },
   {
@@ -622,7 +702,7 @@ export const emojis: CompressedEmojiData[] = [
       'dubious',
       'side_eye'
     ],
-    sheet: [30, 50],
+    sheet: [32, 38],
     shortName: 'unamused'
   },
   {
@@ -634,7 +714,7 @@ export const emojis: CompressedEmojiData[] = [
       'eyeroll',
       'frustrated'
     ],
-    sheet: [31, 42],
+    sheet: [33, 30],
     shortName: 'face_with_rolling_eyes'
   },
   {
@@ -646,8 +726,22 @@ export const emojis: CompressedEmojiData[] = [
       'grimace',
       'teeth'
     ],
-    sheet: [31, 18],
+    sheet: [33, 3],
     shortName: 'grimacing'
+  },
+  {
+    name: 'Face Exhaling',
+    unified: '1F62E-200D-1F4A8',
+    keywords: [
+      'face exhaling',
+      'relieve',
+      'relief',
+      'tired',
+      'sigh'
+    ],
+    sheet: [33, 5],
+    hidden: ['facebook'],
+    shortName: 'face_exhaling'
   },
   {
     name: 'Lying Face',
@@ -658,7 +752,7 @@ export const emojis: CompressedEmojiData[] = [
       'lie',
       'pinocchio'
     ],
-    sheet: [38, 21],
+    sheet: [40, 17],
     shortName: 'lying_face'
   },
   {
@@ -672,7 +766,7 @@ export const emojis: CompressedEmojiData[] = [
       'massage',
       'happiness'
     ],
-    sheet: [30, 44],
+    sheet: [32, 32],
     shortName: 'relieved'
   },
   {
@@ -685,7 +779,7 @@ export const emojis: CompressedEmojiData[] = [
       'depressed',
       'upset'
     ],
-    sheet: [30, 52],
+    sheet: [32, 40],
     shortName: 'pensive'
   },
   {
@@ -698,14 +792,14 @@ export const emojis: CompressedEmojiData[] = [
       'rest',
       'nap'
     ],
-    sheet: [31, 16],
+    sheet: [33, 1],
     shortName: 'sleepy'
   },
   {
     name: 'Drooling Face',
     unified: '1F924',
     keywords: ['drooling_face', 'face'],
-    sheet: [38, 20],
+    sheet: [40, 16],
     shortName: 'drooling_face'
   },
   {
@@ -719,7 +813,7 @@ export const emojis: CompressedEmojiData[] = [
       'night',
       'zzz'
     ],
-    sheet: [31, 26],
+    sheet: [33, 12],
     shortName: 'sleeping'
   },
   {
@@ -730,9 +824,10 @@ export const emojis: CompressedEmojiData[] = [
       'face',
       'sick',
       'ill',
-      'disease'
+      'disease',
+      'covid'
     ],
-    sheet: [31, 29],
+    sheet: [33, 17],
     shortName: 'mask'
   },
   {
@@ -744,9 +839,10 @@ export const emojis: CompressedEmojiData[] = [
       'temperature',
       'thermometer',
       'cold',
-      'fever'
+      'fever',
+      'covid'
     ],
-    sheet: [37, 25],
+    sheet: [38, 60],
     shortName: 'face_with_thermometer'
   },
   {
@@ -759,7 +855,7 @@ export const emojis: CompressedEmojiData[] = [
       'bandage',
       'hurt'
     ],
-    sheet: [37, 28],
+    sheet: [39, 2],
     shortName: 'face_with_head_bandage'
   },
   {
@@ -775,7 +871,7 @@ export const emojis: CompressedEmojiData[] = [
       'throw up',
       'ill'
     ],
-    sheet: [38, 18],
+    sheet: [40, 14],
     shortName: 'nauseated_face'
   },
   {
@@ -786,7 +882,7 @@ export const emojis: CompressedEmojiData[] = [
       'face',
       'sick'
     ],
-    sheet: [38, 47],
+    sheet: [40, 43],
     shortNames: [
       'face_with_open_mouth_vomiting'
     ],
@@ -803,7 +899,7 @@ export const emojis: CompressedEmojiData[] = [
       'sick',
       'allergy'
     ],
-    sheet: [38, 40],
+    sheet: [40, 36],
     shortName: 'sneezing_face'
   },
   {
@@ -817,7 +913,7 @@ export const emojis: CompressedEmojiData[] = [
       'red',
       'sweating'
     ],
-    sheet: [42, 18],
+    sheet: [44, 2],
     shortName: 'hot_face'
   },
   {
@@ -832,7 +928,7 @@ export const emojis: CompressedEmojiData[] = [
       'frostbite',
       'icicles'
     ],
-    sheet: [42, 19],
+    sheet: [44, 3],
     shortName: 'cold_face'
   },
   {
@@ -846,7 +942,7 @@ export const emojis: CompressedEmojiData[] = [
       'tipsy',
       'wavy'
     ],
-    sheet: [42, 17],
+    sheet: [44, 1],
     shortName: 'woozy_face'
   },
   {
@@ -859,8 +955,23 @@ export const emojis: CompressedEmojiData[] = [
       'xox',
       'dizzy'
     ],
-    sheet: [31, 27],
+    sheet: [33, 14],
     shortName: 'dizzy_face'
+  },
+  {
+    name: 'Face with Spiral Eyes',
+    unified: '1F635-200D-1F4AB',
+    keywords: [
+      'face with spiral eyes',
+      'sick',
+      'ill',
+      'confused',
+      'nauseous',
+      'nausea'
+    ],
+    sheet: [33, 13],
+    hidden: ['facebook'],
+    shortName: 'face_with_spiral_eyes'
   },
   {
     name: 'Shocked Face with Exploding Head',
@@ -872,7 +983,7 @@ export const emojis: CompressedEmojiData[] = [
       'mind',
       'blown'
     ],
-    sheet: [38, 48],
+    sheet: [40, 44],
     shortNames: [
       'shocked_face_with_exploding_head'
     ],
@@ -887,7 +998,7 @@ export const emojis: CompressedEmojiData[] = [
       'cowgirl',
       'hat'
     ],
-    sheet: [38, 16],
+    sheet: [40, 12],
     shortName: 'face_with_cowboy_hat'
   },
   {
@@ -899,7 +1010,7 @@ export const emojis: CompressedEmojiData[] = [
       'celebration',
       'woohoo'
     ],
-    sheet: [42, 16],
+    sheet: [44, 0],
     shortName: 'partying_face'
   },
   {
@@ -912,7 +1023,7 @@ export const emojis: CompressedEmojiData[] = [
       'glasses',
       'moustache'
     ],
-    sheet: [42, 26],
+    sheet: [44, 10],
     shortName: 'disguised_face'
   },
   {
@@ -928,7 +1039,7 @@ export const emojis: CompressedEmojiData[] = [
       'beach',
       'sunglass'
     ],
-    sheet: [30, 46],
+    sheet: [32, 34],
     shortName: 'sunglasses'
   },
   {
@@ -941,7 +1052,7 @@ export const emojis: CompressedEmojiData[] = [
       'geek',
       'dork'
     ],
-    sheet: [37, 26],
+    sheet: [39, 0],
     shortName: 'nerd_face'
   },
   {
@@ -953,15 +1064,15 @@ export const emojis: CompressedEmojiData[] = [
       'stuffy',
       'wealthy'
     ],
-    sheet: [45, 34],
+    sheet: [47, 11],
     shortName: 'face_with_monocle'
   },
   {
     name: 'Confused Face',
     unified: '1F615',
     emoticons: [
-      ':\\',
-      ':-\\',
+      ':\\\\',
+      ':-\\\\',
       ':/',
       ':-/'
     ],
@@ -974,8 +1085,22 @@ export const emojis: CompressedEmojiData[] = [
       'hmmm',
       ':/'
     ],
-    sheet: [30, 53],
+    sheet: [32, 41],
     shortName: 'confused'
+  },
+  {
+    name: 'Face with Diagonal Mouth',
+    unified: '1FAE4',
+    keywords: [
+      'face with diagonal mouth',
+      'skeptic',
+      'confuse',
+      'frustrated',
+      'indifferent'
+    ],
+    sheet: [55, 16],
+    hidden: ['facebook'],
+    shortName: 'face_with_diagonal_mouth'
   },
   {
     name: 'Worried Face',
@@ -987,7 +1112,7 @@ export const emojis: CompressedEmojiData[] = [
       'nervous',
       ':('
     ],
-    sheet: [31, 5],
+    sheet: [32, 51],
     shortName: 'worried'
   },
   {
@@ -1001,7 +1126,7 @@ export const emojis: CompressedEmojiData[] = [
       'sad',
       'upset'
     ],
-    sheet: [31, 39],
+    sheet: [33, 27],
     shortName: 'slightly_frowning_face'
   },
   {
@@ -1014,7 +1139,7 @@ export const emojis: CompressedEmojiData[] = [
       'upset',
       'frown'
     ],
-    sheet: [54, 21],
+    sheet: [57, 3],
     shortName: 'white_frowning_face'
   },
   {
@@ -1035,7 +1160,7 @@ export const emojis: CompressedEmojiData[] = [
       'whoa',
       ':O'
     ],
-    sheet: [31, 20],
+    sheet: [33, 6],
     shortName: 'open_mouth'
   },
   {
@@ -1047,7 +1172,7 @@ export const emojis: CompressedEmojiData[] = [
       'woo',
       'shh'
     ],
-    sheet: [31, 21],
+    sheet: [33, 7],
     shortName: 'hushed'
   },
   {
@@ -1060,7 +1185,7 @@ export const emojis: CompressedEmojiData[] = [
       'surprised',
       'poisoned'
     ],
-    sheet: [31, 24],
+    sheet: [33, 10],
     shortName: 'astonished'
   },
   {
@@ -1073,7 +1198,7 @@ export const emojis: CompressedEmojiData[] = [
       'shy',
       'flattered'
     ],
-    sheet: [31, 25],
+    sheet: [33, 11],
     shortName: 'flushed'
   },
   {
@@ -1083,10 +1208,27 @@ export const emojis: CompressedEmojiData[] = [
       'pleading_face',
       'face',
       'begging',
-      'mercy'
+      'mercy',
+      'cry',
+      'tears',
+      'sad',
+      'grievance'
     ],
-    sheet: [42, 27],
+    sheet: [44, 12],
     shortName: 'pleading_face'
+  },
+  {
+    name: 'Face Holding Back Tears',
+    unified: '1F979',
+    keywords: [
+      'face holding back tears',
+      'touched',
+      'gratitude',
+      'cry'
+    ],
+    sheet: [44, 11],
+    hidden: ['facebook'],
+    shortName: 'face_holding_back_tears'
   },
   {
     name: 'Frowning Face with Open Mouth',
@@ -1097,7 +1239,7 @@ export const emojis: CompressedEmojiData[] = [
       'aw',
       'what'
     ],
-    sheet: [31, 12],
+    sheet: [32, 58],
     shortName: 'frowning'
   },
   {
@@ -1110,7 +1252,7 @@ export const emojis: CompressedEmojiData[] = [
       'stunned',
       'nervous'
     ],
-    sheet: [31, 13],
+    sheet: [32, 59],
     shortName: 'anguished'
   },
   {
@@ -1121,11 +1263,9 @@ export const emojis: CompressedEmojiData[] = [
       'face',
       'scared',
       'terrified',
-      'nervous',
-      'oops',
-      'huh'
+      'nervous'
     ],
-    sheet: [31, 14],
+    sheet: [32, 60],
     shortName: 'fearful'
   },
   {
@@ -1137,7 +1277,7 @@ export const emojis: CompressedEmojiData[] = [
       'nervous',
       'sweat'
     ],
-    sheet: [31, 22],
+    sheet: [33, 8],
     shortName: 'cold_sweat'
   },
   {
@@ -1150,7 +1290,7 @@ export const emojis: CompressedEmojiData[] = [
       'sweat',
       'nervous'
     ],
-    sheet: [31, 11],
+    sheet: [32, 57],
     shortName: 'disappointed_relieved'
   },
   {
@@ -1167,7 +1307,7 @@ export const emojis: CompressedEmojiData[] = [
       'upset',
       ':\'('
     ],
-    sheet: [31, 8],
+    sheet: [32, 54],
     shortName: 'cry'
   },
   {
@@ -1183,7 +1323,7 @@ export const emojis: CompressedEmojiData[] = [
       'upset',
       'depressed'
     ],
-    sheet: [31, 19],
+    sheet: [33, 4],
     shortName: 'sob'
   },
   {
@@ -1196,7 +1336,7 @@ export const emojis: CompressedEmojiData[] = [
       'scared',
       'omg'
     ],
-    sheet: [31, 23],
+    sheet: [33, 9],
     shortName: 'scream'
   },
   {
@@ -1211,7 +1351,7 @@ export const emojis: CompressedEmojiData[] = [
       'oops',
       ':S'
     ],
-    sheet: [30, 54],
+    sheet: [32, 42],
     shortName: 'confounded'
   },
   {
@@ -1225,7 +1365,7 @@ export const emojis: CompressedEmojiData[] = [
       'upset',
       'oops'
     ],
-    sheet: [31, 9],
+    sheet: [32, 55],
     shortName: 'persevere'
   },
   {
@@ -1241,7 +1381,7 @@ export const emojis: CompressedEmojiData[] = [
       'depressed',
       ':('
     ],
-    sheet: [31, 4],
+    sheet: [32, 50],
     shortName: 'disappointed'
   },
   {
@@ -1255,7 +1395,7 @@ export const emojis: CompressedEmojiData[] = [
       'tired',
       'exercise'
     ],
-    sheet: [30, 51],
+    sheet: [32, 39],
     shortName: 'sweat'
   },
   {
@@ -1270,7 +1410,7 @@ export const emojis: CompressedEmojiData[] = [
       'frustrated',
       'upset'
     ],
-    sheet: [31, 15],
+    sheet: [33, 0],
     shortName: 'weary'
   },
   {
@@ -1283,7 +1423,7 @@ export const emojis: CompressedEmojiData[] = [
       'upset',
       'frustrated'
     ],
-    sheet: [31, 17],
+    sheet: [33, 2],
     shortName: 'tired_face'
   },
   {
@@ -1294,7 +1434,7 @@ export const emojis: CompressedEmojiData[] = [
       'tired',
       'sleepy'
     ],
-    sheet: [42, 14],
+    sheet: [43, 59],
     shortName: 'yawning_face'
   },
   {
@@ -1308,7 +1448,7 @@ export const emojis: CompressedEmojiData[] = [
       'proud',
       'pride'
     ],
-    sheet: [31, 10],
+    sheet: [32, 56],
     shortName: 'triumph'
   },
   {
@@ -1321,7 +1461,7 @@ export const emojis: CompressedEmojiData[] = [
       'hate',
       'despise'
     ],
-    sheet: [31, 7],
+    sheet: [32, 53],
     shortName: 'rage'
   },
   {
@@ -1335,7 +1475,7 @@ export const emojis: CompressedEmojiData[] = [
       'annoyed',
       'frustrated'
     ],
-    sheet: [31, 6],
+    sheet: [32, 52],
     shortName: 'angry'
   },
   {
@@ -1350,7 +1490,7 @@ export const emojis: CompressedEmojiData[] = [
       'profanity',
       'expletive'
     ],
-    sheet: [38, 45],
+    sheet: [40, 41],
     shortNames: [
       'serious_face_with_symbols_covering_mouth'
     ],
@@ -1364,7 +1504,7 @@ export const emojis: CompressedEmojiData[] = [
       'devil',
       'horns'
     ],
-    sheet: [30, 40],
+    sheet: [32, 28],
     shortName: 'smiling_imp'
   },
   {
@@ -1376,7 +1516,7 @@ export const emojis: CompressedEmojiData[] = [
       'angry',
       'horns'
     ],
-    sheet: [23, 49],
+    sheet: [25, 8],
     shortName: 'imp'
   },
   {
@@ -1389,7 +1529,7 @@ export const emojis: CompressedEmojiData[] = [
       'creepy',
       'death'
     ],
-    sheet: [23, 50],
+    sheet: [25, 9],
     shortName: 'skull'
   },
   {
@@ -1405,7 +1545,7 @@ export const emojis: CompressedEmojiData[] = [
       'pirate',
       'evil'
     ],
-    sheet: [54, 13],
+    sheet: [56, 56],
     shortName: 'skull_and_crossbones'
   },
   {
@@ -1419,7 +1559,7 @@ export const emojis: CompressedEmojiData[] = [
       'turd',
       'shit'
     ],
-    sheet: [25, 53],
+    sheet: [27, 56],
     shortNames: ['poop', 'shit'],
     shortName: 'hankey'
   },
@@ -1427,7 +1567,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Clown Face',
     unified: '1F921',
     keywords: ['clown_face', 'face'],
-    sheet: [38, 17],
+    sheet: [40, 13],
     shortName: 'clown_face'
   },
   {
@@ -1446,7 +1586,7 @@ export const emojis: CompressedEmojiData[] = [
       'japanese',
       'ogre'
     ],
-    sheet: [23, 38],
+    sheet: [24, 58],
     shortName: 'japanese_ogre'
   },
   {
@@ -1463,7 +1603,7 @@ export const emojis: CompressedEmojiData[] = [
       'japanese',
       'goblin'
     ],
-    sheet: [23, 39],
+    sheet: [24, 59],
     shortName: 'japanese_goblin'
   },
   {
@@ -1475,7 +1615,7 @@ export const emojis: CompressedEmojiData[] = [
       'spooky',
       'scary'
     ],
-    sheet: [23, 40],
+    sheet: [24, 60],
     shortName: 'ghost'
   },
   {
@@ -1488,7 +1628,7 @@ export const emojis: CompressedEmojiData[] = [
       'weird',
       'outer_space'
     ],
-    sheet: [23, 47],
+    sheet: [25, 6],
     shortName: 'alien'
   },
   {
@@ -1500,7 +1640,7 @@ export const emojis: CompressedEmojiData[] = [
       'arcade',
       'play'
     ],
-    sheet: [23, 48],
+    sheet: [25, 7],
     shortName: 'space_invader'
   },
   {
@@ -1512,7 +1652,7 @@ export const emojis: CompressedEmojiData[] = [
       'machine',
       'bot'
     ],
-    sheet: [37, 29],
+    sheet: [39, 3],
     shortName: 'robot_face'
   },
   {
@@ -1525,7 +1665,7 @@ export const emojis: CompressedEmojiData[] = [
       'happy',
       'smile'
     ],
-    sheet: [31, 32],
+    sheet: [33, 20],
     shortName: 'smiley_cat'
   },
   {
@@ -1537,7 +1677,7 @@ export const emojis: CompressedEmojiData[] = [
       'cats',
       'smile'
     ],
-    sheet: [31, 30],
+    sheet: [33, 18],
     shortName: 'smile_cat'
   },
   {
@@ -1551,7 +1691,7 @@ export const emojis: CompressedEmojiData[] = [
       'happy',
       'tears'
     ],
-    sheet: [31, 31],
+    sheet: [33, 19],
     shortName: 'joy_cat'
   },
   {
@@ -1567,7 +1707,7 @@ export const emojis: CompressedEmojiData[] = [
       'valentines',
       'heart'
     ],
-    sheet: [31, 33],
+    sheet: [33, 21],
     shortName: 'heart_eyes_cat'
   },
   {
@@ -1579,7 +1719,7 @@ export const emojis: CompressedEmojiData[] = [
       'cats',
       'smirk'
     ],
-    sheet: [31, 34],
+    sheet: [33, 22],
     shortName: 'smirk_cat'
   },
   {
@@ -1591,7 +1731,7 @@ export const emojis: CompressedEmojiData[] = [
       'cats',
       'kiss'
     ],
-    sheet: [31, 35],
+    sheet: [33, 23],
     shortName: 'kissing_cat'
   },
   {
@@ -1605,7 +1745,7 @@ export const emojis: CompressedEmojiData[] = [
       'scared',
       'scream'
     ],
-    sheet: [31, 38],
+    sheet: [33, 26],
     shortName: 'scream_cat'
   },
   {
@@ -1621,7 +1761,7 @@ export const emojis: CompressedEmojiData[] = [
       'upset',
       'cry'
     ],
-    sheet: [31, 37],
+    sheet: [33, 25],
     shortName: 'crying_cat_face'
   },
   {
@@ -1632,7 +1772,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'cats'
     ],
-    sheet: [31, 36],
+    sheet: [33, 24],
     shortName: 'pouting_cat'
   },
   {
@@ -1645,7 +1785,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'haha'
     ],
-    sheet: [32, 39],
+    sheet: [34, 24],
     shortName: 'see_no_evil'
   },
   {
@@ -1657,7 +1797,7 @@ export const emojis: CompressedEmojiData[] = [
       'monkey',
       'nature'
     ],
-    sheet: [32, 40],
+    sheet: [34, 25],
     shortName: 'hear_no_evil'
   },
   {
@@ -1670,7 +1810,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'omg'
     ],
-    sheet: [32, 41],
+    sheet: [34, 26],
     shortName: 'speak_no_evil'
   },
   {
@@ -1685,7 +1825,7 @@ export const emojis: CompressedEmojiData[] = [
       'affection',
       'valentines'
     ],
-    sheet: [25, 23],
+    sheet: [26, 37],
     shortName: 'kiss'
   },
   {
@@ -1699,7 +1839,7 @@ export const emojis: CompressedEmojiData[] = [
       'envelope',
       'valentines'
     ],
-    sheet: [25, 24],
+    sheet: [26, 38],
     shortName: 'love_letter'
   },
   {
@@ -1713,7 +1853,7 @@ export const emojis: CompressedEmojiData[] = [
       'affection',
       'valentines'
     ],
-    sheet: [25, 36],
+    sheet: [27, 39],
     shortName: 'cupid'
   },
   {
@@ -1724,7 +1864,7 @@ export const emojis: CompressedEmojiData[] = [
       'love',
       'valentines'
     ],
-    sheet: [25, 41],
+    sheet: [27, 44],
     shortName: 'gift_heart'
   },
   {
@@ -1737,7 +1877,7 @@ export const emojis: CompressedEmojiData[] = [
       'affection',
       'valentines'
     ],
-    sheet: [25, 34],
+    sheet: [27, 37],
     shortName: 'sparkling_heart'
   },
   {
@@ -1751,7 +1891,7 @@ export const emojis: CompressedEmojiData[] = [
       'valentines',
       'pink'
     ],
-    sheet: [25, 35],
+    sheet: [27, 38],
     shortName: 'heartpulse'
   },
   {
@@ -1766,7 +1906,7 @@ export const emojis: CompressedEmojiData[] = [
       'pink',
       'heart'
     ],
-    sheet: [25, 31],
+    sheet: [27, 34],
     shortName: 'heartbeat'
   },
   {
@@ -1779,7 +1919,7 @@ export const emojis: CompressedEmojiData[] = [
       'affection',
       'valentines'
     ],
-    sheet: [25, 42],
+    sheet: [27, 45],
     shortName: 'revolving_hearts'
   },
   {
@@ -1793,7 +1933,7 @@ export const emojis: CompressedEmojiData[] = [
       'valentines',
       'heart'
     ],
-    sheet: [25, 33],
+    sheet: [27, 36],
     shortName: 'two_hearts'
   },
   {
@@ -1805,7 +1945,7 @@ export const emojis: CompressedEmojiData[] = [
       'love',
       'like'
     ],
-    sheet: [25, 43],
+    sheet: [27, 46],
     shortName: 'heart_decoration'
   },
   {
@@ -1816,7 +1956,7 @@ export const emojis: CompressedEmojiData[] = [
       'decoration',
       'love'
     ],
-    sheet: [56, 31],
+    sheet: [59, 7],
     shortName: 'heavy_heart_exclamation_mark_ornament'
   },
   {
@@ -1832,8 +1972,33 @@ export const emojis: CompressedEmojiData[] = [
       'heart',
       'heartbreak'
     ],
-    sheet: [25, 32],
+    sheet: [27, 35],
     shortName: 'broken_heart'
+  },
+  {
+    name: 'Heart on Fire',
+    unified: '2764-FE0F-200D-1F525',
+    keywords: [
+      'heart on fire',
+      'passionate',
+      'enthusiastic'
+    ],
+    sheet: [59, 8],
+    hidden: ['facebook'],
+    shortName: 'heart_on_fire'
+  },
+  {
+    name: 'Mending Heart',
+    unified: '2764-FE0F-200D-1FA79',
+    keywords: [
+      'mending heart',
+      'broken heart',
+      'bandage',
+      'wounded'
+    ],
+    sheet: [59, 9],
+    hidden: ['facebook'],
+    shortName: 'mending_heart'
   },
   {
     name: 'Heavy Black Heart',
@@ -1846,7 +2011,7 @@ export const emojis: CompressedEmojiData[] = [
       'like',
       'valentines'
     ],
-    sheet: [56, 32],
+    sheet: [59, 10],
     shortName: 'heart'
   },
   {
@@ -1859,7 +2024,7 @@ export const emojis: CompressedEmojiData[] = [
       'affection',
       'valentines'
     ],
-    sheet: [51, 44],
+    sheet: [53, 15],
     shortName: 'orange_heart'
   },
   {
@@ -1873,7 +2038,7 @@ export const emojis: CompressedEmojiData[] = [
       'affection',
       'valentines'
     ],
-    sheet: [25, 39],
+    sheet: [27, 42],
     shortName: 'yellow_heart'
   },
   {
@@ -1887,7 +2052,7 @@ export const emojis: CompressedEmojiData[] = [
       'affection',
       'valentines'
     ],
-    sheet: [25, 38],
+    sheet: [27, 41],
     shortName: 'green_heart'
   },
   {
@@ -1901,7 +2066,7 @@ export const emojis: CompressedEmojiData[] = [
       'affection',
       'valentines'
     ],
-    sheet: [25, 37],
+    sheet: [27, 40],
     shortName: 'blue_heart'
   },
   {
@@ -1915,28 +2080,28 @@ export const emojis: CompressedEmojiData[] = [
       'affection',
       'valentines'
     ],
-    sheet: [25, 40],
+    sheet: [27, 43],
     shortName: 'purple_heart'
   },
   {
     name: 'Brown Heart',
     unified: '1F90E',
     keywords: ['brown_heart', 'coffee'],
-    sheet: [37, 16],
+    sheet: [38, 51],
     shortName: 'brown_heart'
   },
   {
     name: 'Black Heart',
     unified: '1F5A4',
     keywords: ['black_heart', 'evil'],
-    sheet: [30, 6],
+    sheet: [31, 55],
     shortName: 'black_heart'
   },
   {
     name: 'White Heart',
     unified: '1F90D',
     keywords: ['white_heart', 'pure'],
-    sheet: [37, 15],
+    sheet: [38, 50],
     shortName: 'white_heart'
   },
   {
@@ -1954,7 +2119,7 @@ export const emojis: CompressedEmojiData[] = [
       'pass',
       'hundred'
     ],
-    sheet: [26, 6],
+    sheet: [28, 6],
     shortName: '100'
   },
   {
@@ -1965,7 +2130,7 @@ export const emojis: CompressedEmojiData[] = [
       'angry',
       'mad'
     ],
-    sheet: [25, 46],
+    sheet: [27, 49],
     shortName: 'anger'
   },
   {
@@ -1979,7 +2144,7 @@ export const emojis: CompressedEmojiData[] = [
       'collision',
       'blown'
     ],
-    sheet: [25, 49],
+    sheet: [27, 52],
     shortNames: ['collision'],
     shortName: 'boom'
   },
@@ -1993,7 +2158,7 @@ export const emojis: CompressedEmojiData[] = [
       'shoot',
       'magic'
     ],
-    sheet: [26, 2],
+    sheet: [28, 2],
     shortName: 'dizzy'
   },
   {
@@ -2005,7 +2170,7 @@ export const emojis: CompressedEmojiData[] = [
       'drip',
       'oops'
     ],
-    sheet: [25, 50],
+    sheet: [27, 53],
     shortName: 'sweat_drops'
   },
   {
@@ -2021,14 +2186,14 @@ export const emojis: CompressedEmojiData[] = [
       'smoke',
       'puff'
     ],
-    sheet: [25, 52],
+    sheet: [27, 55],
     shortName: 'dash'
   },
   {
     name: 'Hole',
     unified: '1F573-FE0F',
     keywords: ['hole', 'embarrassing'],
-    sheet: [29, 6],
+    sheet: [30, 58],
     shortName: 'hole'
   },
   {
@@ -2041,7 +2206,7 @@ export const emojis: CompressedEmojiData[] = [
       'explosion',
       'terrorism'
     ],
-    sheet: [25, 47],
+    sheet: [27, 50],
     shortName: 'bomb'
   },
   {
@@ -2055,7 +2220,7 @@ export const emojis: CompressedEmojiData[] = [
       'talk',
       'chatting'
     ],
-    sheet: [26, 3],
+    sheet: [28, 3],
     shortName: 'speech_balloon'
   },
   {
@@ -2065,8 +2230,8 @@ export const emojis: CompressedEmojiData[] = [
       'eye_in_speech_bubble',
       'info'
     ],
-    sheet: [12, 28],
-    hidden: ['twitter', 'facebook'],
+    sheet: [11, 53],
+    hidden: ['facebook'],
     shortName: 'eye-in-speech-bubble'
   },
   {
@@ -2079,7 +2244,7 @@ export const emojis: CompressedEmojiData[] = [
       'talk',
       'chatting'
     ],
-    sheet: [30, 23],
+    sheet: [32, 11],
     shortName: 'left_speech_bubble'
   },
   {
@@ -2092,7 +2257,7 @@ export const emojis: CompressedEmojiData[] = [
       'thinking',
       'mad'
     ],
-    sheet: [30, 24],
+    sheet: [32, 12],
     shortName: 'right_anger_bubble'
   },
   {
@@ -2106,7 +2271,7 @@ export const emojis: CompressedEmojiData[] = [
       'thinking',
       'dream'
     ],
-    sheet: [26, 4],
+    sheet: [28, 4],
     shortName: 'thought_balloon'
   },
   {
@@ -2118,7 +2283,7 @@ export const emojis: CompressedEmojiData[] = [
       'tired',
       'dream'
     ],
-    sheet: [25, 48],
+    sheet: [27, 51],
     shortName: 'zzz'
   },
   {
@@ -2135,27 +2300,27 @@ export const emojis: CompressedEmojiData[] = [
       'hi',
       'palm'
     ],
-    sheet: [13, 16],
+    sheet: [12, 38],
     skinVariations: [
       {
         unified: '1F44B-1F3FB',
-        sheet: [13, 17]
+        sheet: [12, 39]
       },
       {
         unified: '1F44B-1F3FC',
-        sheet: [13, 18]
+        sheet: [12, 40]
       },
       {
         unified: '1F44B-1F3FD',
-        sheet: [13, 19]
+        sheet: [12, 41]
       },
       {
         unified: '1F44B-1F3FE',
-        sheet: [13, 20]
+        sheet: [12, 42]
       },
       {
         unified: '1F44B-1F3FF',
-        sheet: [13, 21]
+        sheet: [12, 43]
       }
     ],
     shortName: 'wave'
@@ -2169,27 +2334,27 @@ export const emojis: CompressedEmojiData[] = [
       'raised',
       'backhand'
     ],
-    sheet: [37, 43],
+    sheet: [39, 17],
     skinVariations: [
       {
         unified: '1F91A-1F3FB',
-        sheet: [37, 44]
+        sheet: [39, 18]
       },
       {
         unified: '1F91A-1F3FC',
-        sheet: [37, 45]
+        sheet: [39, 19]
       },
       {
         unified: '1F91A-1F3FD',
-        sheet: [37, 46]
+        sheet: [39, 20]
       },
       {
         unified: '1F91A-1F3FE',
-        sheet: [37, 47]
+        sheet: [39, 21]
       },
       {
         unified: '1F91A-1F3FF',
-        sheet: [37, 48]
+        sheet: [39, 22]
       }
     ],
     shortName: 'raised_back_of_hand'
@@ -2203,27 +2368,27 @@ export const emojis: CompressedEmojiData[] = [
       'fingers',
       'palm'
     ],
-    sheet: [29, 46],
+    sheet: [31, 37],
     skinVariations: [
       {
         unified: '1F590-1F3FB',
-        sheet: [29, 47]
+        sheet: [31, 38]
       },
       {
         unified: '1F590-1F3FC',
-        sheet: [29, 48]
+        sheet: [31, 39]
       },
       {
         unified: '1F590-1F3FD',
-        sheet: [29, 49]
+        sheet: [31, 40]
       },
       {
         unified: '1F590-1F3FE',
-        sheet: [29, 50]
+        sheet: [31, 41]
       },
       {
         unified: '1F590-1F3FF',
-        sheet: [29, 51]
+        sheet: [31, 42]
       }
     ],
     shortName: 'raised_hand_with_fingers_splayed'
@@ -2239,27 +2404,27 @@ export const emojis: CompressedEmojiData[] = [
       'palm',
       'ban'
     ],
-    sheet: [55, 54],
+    sheet: [58, 33],
     skinVariations: [
       {
         unified: '270B-1F3FB',
-        sheet: [55, 55]
+        sheet: [58, 34]
       },
       {
         unified: '270B-1F3FC',
-        sheet: [55, 56]
+        sheet: [58, 35]
       },
       {
         unified: '270B-1F3FD',
-        sheet: [55, 57]
+        sheet: [58, 36]
       },
       {
         unified: '270B-1F3FE',
-        sheet: [56, 0]
+        sheet: [58, 37]
       },
       {
         unified: '270B-1F3FF',
-        sheet: [56, 1]
+        sheet: [58, 38]
       }
     ],
     shortNames: ['raised_hand'],
@@ -2275,30 +2440,187 @@ export const emojis: CompressedEmojiData[] = [
       'spock',
       'star trek'
     ],
-    sheet: [30, 0],
+    sheet: [31, 49],
     skinVariations: [
       {
         unified: '1F596-1F3FB',
-        sheet: [30, 1]
+        sheet: [31, 50]
       },
       {
         unified: '1F596-1F3FC',
-        sheet: [30, 2]
+        sheet: [31, 51]
       },
       {
         unified: '1F596-1F3FD',
-        sheet: [30, 3]
+        sheet: [31, 52]
       },
       {
         unified: '1F596-1F3FE',
-        sheet: [30, 4]
+        sheet: [31, 53]
       },
       {
         unified: '1F596-1F3FF',
-        sheet: [30, 5]
+        sheet: [31, 54]
       }
     ],
     shortName: 'spock-hand'
+  },
+  {
+    name: 'Rightwards Hand',
+    unified: '1FAF1',
+    keywords: [
+      'rightwards hand',
+      'palm',
+      'offer'
+    ],
+    sheet: [55, 26],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1FAF1-1F3FB',
+        sheet: [55, 27],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FC',
+        sheet: [55, 28],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FD',
+        sheet: [55, 29],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FE',
+        sheet: [55, 30],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FF',
+        sheet: [55, 31],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'rightwards_hand'
+  },
+  {
+    name: 'Leftwards Hand',
+    unified: '1FAF2',
+    keywords: [
+      'leftwards hand',
+      'palm',
+      'offer'
+    ],
+    sheet: [55, 32],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1FAF2-1F3FB',
+        sheet: [55, 33],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF2-1F3FC',
+        sheet: [55, 34],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF2-1F3FD',
+        sheet: [55, 35],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF2-1F3FE',
+        sheet: [55, 36],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF2-1F3FF',
+        sheet: [55, 37],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'leftwards_hand'
+  },
+  {
+    name: 'Palm Down Hand',
+    unified: '1FAF3',
+    keywords: [
+      'palm down hand',
+      'palm',
+      'drop'
+    ],
+    sheet: [55, 38],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1FAF3-1F3FB',
+        sheet: [55, 39],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF3-1F3FC',
+        sheet: [55, 40],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF3-1F3FD',
+        sheet: [55, 41],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF3-1F3FE',
+        sheet: [55, 42],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF3-1F3FF',
+        sheet: [55, 43],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'palm_down_hand'
+  },
+  {
+    name: 'Palm Up Hand',
+    unified: '1FAF4',
+    keywords: [
+      'palm up hand',
+      'lift',
+      'offer',
+      'demand'
+    ],
+    sheet: [55, 44],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1FAF4-1F3FB',
+        sheet: [55, 45],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF4-1F3FC',
+        sheet: [55, 46],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF4-1F3FD',
+        sheet: [55, 47],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF4-1F3FE',
+        sheet: [55, 48],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF4-1F3FF',
+        sheet: [55, 49],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'palm_up_hand'
   },
   {
     name: 'Ok Hand Sign',
@@ -2311,27 +2633,27 @@ export const emojis: CompressedEmojiData[] = [
       'ok',
       'okay'
     ],
-    sheet: [13, 22],
+    sheet: [12, 44],
     skinVariations: [
       {
         unified: '1F44C-1F3FB',
-        sheet: [13, 23]
+        sheet: [12, 45]
       },
       {
         unified: '1F44C-1F3FC',
-        sheet: [13, 24]
+        sheet: [12, 46]
       },
       {
         unified: '1F44C-1F3FD',
-        sheet: [13, 25]
+        sheet: [12, 47]
       },
       {
         unified: '1F44C-1F3FE',
-        sheet: [13, 26]
+        sheet: [12, 48]
       },
       {
         unified: '1F44C-1F3FF',
-        sheet: [13, 27]
+        sheet: [12, 49]
       }
     ],
     shortName: 'ok_hand'
@@ -2345,27 +2667,27 @@ export const emojis: CompressedEmojiData[] = [
       'tiny',
       'small'
     ],
-    sheet: [37, 9],
+    sheet: [38, 44],
     skinVariations: [
       {
         unified: '1F90C-1F3FB',
-        sheet: [37, 10]
+        sheet: [38, 45]
       },
       {
         unified: '1F90C-1F3FC',
-        sheet: [37, 11]
+        sheet: [38, 46]
       },
       {
         unified: '1F90C-1F3FD',
-        sheet: [37, 12]
+        sheet: [38, 47]
       },
       {
         unified: '1F90C-1F3FE',
-        sheet: [37, 13]
+        sheet: [38, 48]
       },
       {
         unified: '1F90C-1F3FF',
-        sheet: [37, 14]
+        sheet: [38, 49]
       }
     ],
     shortName: 'pinched_fingers'
@@ -2379,27 +2701,27 @@ export const emojis: CompressedEmojiData[] = [
       'small',
       'size'
     ],
-    sheet: [37, 17],
+    sheet: [38, 52],
     skinVariations: [
       {
         unified: '1F90F-1F3FB',
-        sheet: [37, 18]
+        sheet: [38, 53]
       },
       {
         unified: '1F90F-1F3FC',
-        sheet: [37, 19]
+        sheet: [38, 54]
       },
       {
         unified: '1F90F-1F3FD',
-        sheet: [37, 20]
+        sheet: [38, 55]
       },
       {
         unified: '1F90F-1F3FE',
-        sheet: [37, 21]
+        sheet: [38, 56]
       },
       {
         unified: '1F90F-1F3FF',
-        sheet: [37, 22]
+        sheet: [38, 57]
       }
     ],
     shortName: 'pinching_hand'
@@ -2416,27 +2738,27 @@ export const emojis: CompressedEmojiData[] = [
       'victory',
       'two'
     ],
-    sheet: [56, 2],
+    sheet: [58, 39],
     skinVariations: [
       {
         unified: '270C-1F3FB',
-        sheet: [56, 3]
+        sheet: [58, 40]
       },
       {
         unified: '270C-1F3FC',
-        sheet: [56, 4]
+        sheet: [58, 41]
       },
       {
         unified: '270C-1F3FD',
-        sheet: [56, 5]
+        sheet: [58, 42]
       },
       {
         unified: '270C-1F3FE',
-        sheet: [56, 6]
+        sheet: [58, 43]
       },
       {
         unified: '270C-1F3FF',
-        sheet: [56, 7]
+        sheet: [58, 44]
       }
     ],
     shortName: 'v'
@@ -2449,33 +2771,74 @@ export const emojis: CompressedEmojiData[] = [
       'good',
       'lucky'
     ],
-    sheet: [38, 4],
+    sheet: [40, 0],
     skinVariations: [
       {
         unified: '1F91E-1F3FB',
-        sheet: [38, 5]
+        sheet: [40, 1]
       },
       {
         unified: '1F91E-1F3FC',
-        sheet: [38, 6]
+        sheet: [40, 2]
       },
       {
         unified: '1F91E-1F3FD',
-        sheet: [38, 7]
+        sheet: [40, 3]
       },
       {
         unified: '1F91E-1F3FE',
-        sheet: [38, 8]
+        sheet: [40, 4]
       },
       {
         unified: '1F91E-1F3FF',
-        sheet: [38, 9]
+        sheet: [40, 5]
       }
     ],
     shortNames: [
       'hand_with_index_and_middle_fingers_crossed'
     ],
     shortName: 'crossed_fingers'
+  },
+  {
+    name: 'Hand with Index Finger and Thumb Crossed',
+    unified: '1FAF0',
+    keywords: [
+      'hand with index finger and thumb crossed',
+      'heart',
+      'love',
+      'money',
+      'expensive'
+    ],
+    sheet: [55, 20],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1FAF0-1F3FB',
+        sheet: [55, 21],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF0-1F3FC',
+        sheet: [55, 22],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF0-1F3FD',
+        sheet: [55, 23],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF0-1F3FE',
+        sheet: [55, 24],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF0-1F3FF',
+        sheet: [55, 25],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'hand_with_index_finger_and_thumb_crossed'
   },
   {
     name: 'I Love You Hand Sign',
@@ -2486,27 +2849,27 @@ export const emojis: CompressedEmojiData[] = [
       'fingers',
       'gesture'
     ],
-    sheet: [38, 10],
+    sheet: [40, 6],
     skinVariations: [
       {
         unified: '1F91F-1F3FB',
-        sheet: [38, 11]
+        sheet: [40, 7]
       },
       {
         unified: '1F91F-1F3FC',
-        sheet: [38, 12]
+        sheet: [40, 8]
       },
       {
         unified: '1F91F-1F3FD',
-        sheet: [38, 13]
+        sheet: [40, 9]
       },
       {
         unified: '1F91F-1F3FE',
-        sheet: [38, 14]
+        sheet: [40, 10]
       },
       {
         unified: '1F91F-1F3FF',
-        sheet: [38, 15]
+        sheet: [40, 11]
       }
     ],
     shortName: 'i_love_you_hand_sign'
@@ -2522,27 +2885,27 @@ export const emojis: CompressedEmojiData[] = [
       'sign_of_horns',
       'rock_on'
     ],
-    sheet: [37, 31],
+    sheet: [39, 5],
     skinVariations: [
       {
         unified: '1F918-1F3FB',
-        sheet: [37, 32]
+        sheet: [39, 6]
       },
       {
         unified: '1F918-1F3FC',
-        sheet: [37, 33]
+        sheet: [39, 7]
       },
       {
         unified: '1F918-1F3FD',
-        sheet: [37, 34]
+        sheet: [39, 8]
       },
       {
         unified: '1F918-1F3FE',
-        sheet: [37, 35]
+        sheet: [39, 9]
       },
       {
         unified: '1F918-1F3FF',
-        sheet: [37, 36]
+        sheet: [39, 10]
       }
     ],
     shortNames: ['sign_of_the_horns'],
@@ -2554,29 +2917,30 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'call_me_hand',
       'hands',
-      'gesture'
+      'gesture',
+      'shaka'
     ],
-    sheet: [37, 37],
+    sheet: [39, 11],
     skinVariations: [
       {
         unified: '1F919-1F3FB',
-        sheet: [37, 38]
+        sheet: [39, 12]
       },
       {
         unified: '1F919-1F3FC',
-        sheet: [37, 39]
+        sheet: [39, 13]
       },
       {
         unified: '1F919-1F3FD',
-        sheet: [37, 40]
+        sheet: [39, 14]
       },
       {
         unified: '1F919-1F3FE',
-        sheet: [37, 41]
+        sheet: [39, 15]
       },
       {
         unified: '1F919-1F3FF',
-        sheet: [37, 42]
+        sheet: [39, 16]
       }
     ],
     shortName: 'call_me_hand'
@@ -2591,27 +2955,27 @@ export const emojis: CompressedEmojiData[] = [
       'hand',
       'left'
     ],
-    sheet: [12, 56],
+    sheet: [12, 20],
     skinVariations: [
       {
         unified: '1F448-1F3FB',
-        sheet: [12, 57]
+        sheet: [12, 21]
       },
       {
         unified: '1F448-1F3FC',
-        sheet: [13, 0]
+        sheet: [12, 22]
       },
       {
         unified: '1F448-1F3FD',
-        sheet: [13, 1]
+        sheet: [12, 23]
       },
       {
         unified: '1F448-1F3FE',
-        sheet: [13, 2]
+        sheet: [12, 24]
       },
       {
         unified: '1F448-1F3FF',
-        sheet: [13, 3]
+        sheet: [12, 25]
       }
     ],
     shortName: 'point_left'
@@ -2626,27 +2990,27 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'right'
     ],
-    sheet: [13, 4],
+    sheet: [12, 26],
     skinVariations: [
       {
         unified: '1F449-1F3FB',
-        sheet: [13, 5]
+        sheet: [12, 27]
       },
       {
         unified: '1F449-1F3FC',
-        sheet: [13, 6]
+        sheet: [12, 28]
       },
       {
         unified: '1F449-1F3FD',
-        sheet: [13, 7]
+        sheet: [12, 29]
       },
       {
         unified: '1F449-1F3FE',
-        sheet: [13, 8]
+        sheet: [12, 30]
       },
       {
         unified: '1F449-1F3FF',
-        sheet: [13, 9]
+        sheet: [12, 31]
       }
     ],
     shortName: 'point_right'
@@ -2661,27 +3025,27 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'up'
     ],
-    sheet: [12, 44],
+    sheet: [12, 8],
     skinVariations: [
       {
         unified: '1F446-1F3FB',
-        sheet: [12, 45]
+        sheet: [12, 9]
       },
       {
         unified: '1F446-1F3FC',
-        sheet: [12, 46]
+        sheet: [12, 10]
       },
       {
         unified: '1F446-1F3FD',
-        sheet: [12, 47]
+        sheet: [12, 11]
       },
       {
         unified: '1F446-1F3FE',
-        sheet: [12, 48]
+        sheet: [12, 12]
       },
       {
         unified: '1F446-1F3FF',
-        sheet: [12, 49]
+        sheet: [12, 13]
       }
     ],
     shortName: 'point_up_2'
@@ -2697,27 +3061,27 @@ export const emojis: CompressedEmojiData[] = [
       'middle',
       'flipping'
     ],
-    sheet: [29, 52],
+    sheet: [31, 43],
     skinVariations: [
       {
         unified: '1F595-1F3FB',
-        sheet: [29, 53]
+        sheet: [31, 44]
       },
       {
         unified: '1F595-1F3FC',
-        sheet: [29, 54]
+        sheet: [31, 45]
       },
       {
         unified: '1F595-1F3FD',
-        sheet: [29, 55]
+        sheet: [31, 46]
       },
       {
         unified: '1F595-1F3FE',
-        sheet: [29, 56]
+        sheet: [31, 47]
       },
       {
         unified: '1F595-1F3FF',
-        sheet: [29, 57]
+        sheet: [31, 48]
       }
     ],
     shortNames: [
@@ -2735,27 +3099,27 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'down'
     ],
-    sheet: [12, 50],
+    sheet: [12, 14],
     skinVariations: [
       {
         unified: '1F447-1F3FB',
-        sheet: [12, 51]
+        sheet: [12, 15]
       },
       {
         unified: '1F447-1F3FC',
-        sheet: [12, 52]
+        sheet: [12, 16]
       },
       {
         unified: '1F447-1F3FD',
-        sheet: [12, 53]
+        sheet: [12, 17]
       },
       {
         unified: '1F447-1F3FE',
-        sheet: [12, 54]
+        sheet: [12, 18]
       },
       {
         unified: '1F447-1F3FF',
-        sheet: [12, 55]
+        sheet: [12, 19]
       }
     ],
     shortName: 'point_down'
@@ -2770,30 +3134,69 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'up'
     ],
-    sheet: [54, 7],
+    sheet: [56, 50],
     skinVariations: [
       {
         unified: '261D-1F3FB',
-        sheet: [54, 8]
+        sheet: [56, 51]
       },
       {
         unified: '261D-1F3FC',
-        sheet: [54, 9]
+        sheet: [56, 52]
       },
       {
         unified: '261D-1F3FD',
-        sheet: [54, 10]
+        sheet: [56, 53]
       },
       {
         unified: '261D-1F3FE',
-        sheet: [54, 11]
+        sheet: [56, 54]
       },
       {
         unified: '261D-1F3FF',
-        sheet: [54, 12]
+        sheet: [56, 55]
       }
     ],
     shortName: 'point_up'
+  },
+  {
+    name: 'Index Pointing at the Viewer',
+    unified: '1FAF5',
+    keywords: [
+      'index pointing at the viewer',
+      'you',
+      'recruit'
+    ],
+    sheet: [55, 50],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1FAF5-1F3FB',
+        sheet: [55, 51],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF5-1F3FC',
+        sheet: [55, 52],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF5-1F3FD',
+        sheet: [55, 53],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF5-1F3FE',
+        sheet: [55, 54],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF5-1F3FF',
+        sheet: [55, 55],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'index_pointing_at_the_viewer'
   },
   {
     name: 'Thumbs Up Sign',
@@ -2811,27 +3214,27 @@ export const emojis: CompressedEmojiData[] = [
       'like',
       '+1'
     ],
-    sheet: [13, 28],
+    sheet: [12, 50],
     skinVariations: [
       {
         unified: '1F44D-1F3FB',
-        sheet: [13, 29]
+        sheet: [12, 51]
       },
       {
         unified: '1F44D-1F3FC',
-        sheet: [13, 30]
+        sheet: [12, 52]
       },
       {
         unified: '1F44D-1F3FD',
-        sheet: [13, 31]
+        sheet: [12, 53]
       },
       {
         unified: '1F44D-1F3FE',
-        sheet: [13, 32]
+        sheet: [12, 54]
       },
       {
         unified: '1F44D-1F3FF',
-        sheet: [13, 33]
+        sheet: [12, 55]
       }
     ],
     shortNames: ['thumbsup'],
@@ -2848,27 +3251,27 @@ export const emojis: CompressedEmojiData[] = [
       'hand',
       '-1'
     ],
-    sheet: [13, 34],
+    sheet: [12, 56],
     skinVariations: [
       {
         unified: '1F44E-1F3FB',
-        sheet: [13, 35]
+        sheet: [12, 57]
       },
       {
         unified: '1F44E-1F3FC',
-        sheet: [13, 36]
+        sheet: [12, 58]
       },
       {
         unified: '1F44E-1F3FD',
-        sheet: [13, 37]
+        sheet: [12, 59]
       },
       {
         unified: '1F44E-1F3FE',
-        sheet: [13, 38]
+        sheet: [12, 60]
       },
       {
         unified: '1F44E-1F3FF',
-        sheet: [13, 39]
+        sheet: [13, 0]
       }
     ],
     shortNames: ['thumbsdown'],
@@ -2883,27 +3286,27 @@ export const emojis: CompressedEmojiData[] = [
       'hand',
       'grasp'
     ],
-    sheet: [55, 48],
+    sheet: [58, 27],
     skinVariations: [
       {
         unified: '270A-1F3FB',
-        sheet: [55, 49]
+        sheet: [58, 28]
       },
       {
         unified: '270A-1F3FC',
-        sheet: [55, 50]
+        sheet: [58, 29]
       },
       {
         unified: '270A-1F3FD',
-        sheet: [55, 51]
+        sheet: [58, 30]
       },
       {
         unified: '270A-1F3FE',
-        sheet: [55, 52]
+        sheet: [58, 31]
       },
       {
         unified: '270A-1F3FF',
-        sheet: [55, 53]
+        sheet: [58, 32]
       }
     ],
     shortName: 'fist'
@@ -2920,27 +3323,27 @@ export const emojis: CompressedEmojiData[] = [
       'attack',
       'hand'
     ],
-    sheet: [13, 10],
+    sheet: [12, 32],
     skinVariations: [
       {
         unified: '1F44A-1F3FB',
-        sheet: [13, 11]
+        sheet: [12, 33]
       },
       {
         unified: '1F44A-1F3FC',
-        sheet: [13, 12]
+        sheet: [12, 34]
       },
       {
         unified: '1F44A-1F3FD',
-        sheet: [13, 13]
+        sheet: [12, 35]
       },
       {
         unified: '1F44A-1F3FE',
-        sheet: [13, 14]
+        sheet: [12, 36]
       },
       {
         unified: '1F44A-1F3FF',
-        sheet: [13, 15]
+        sheet: [12, 37]
       }
     ],
     shortNames: ['punch'],
@@ -2954,27 +3357,27 @@ export const emojis: CompressedEmojiData[] = [
       'hand',
       'fistbump'
     ],
-    sheet: [37, 49],
+    sheet: [39, 23],
     skinVariations: [
       {
         unified: '1F91B-1F3FB',
-        sheet: [37, 50]
+        sheet: [39, 24]
       },
       {
         unified: '1F91B-1F3FC',
-        sheet: [37, 51]
+        sheet: [39, 25]
       },
       {
         unified: '1F91B-1F3FD',
-        sheet: [37, 52]
+        sheet: [39, 26]
       },
       {
         unified: '1F91B-1F3FE',
-        sheet: [37, 53]
+        sheet: [39, 27]
       },
       {
         unified: '1F91B-1F3FF',
-        sheet: [37, 54]
+        sheet: [39, 28]
       }
     ],
     shortName: 'left-facing_fist'
@@ -2987,27 +3390,27 @@ export const emojis: CompressedEmojiData[] = [
       'hand',
       'fistbump'
     ],
-    sheet: [37, 55],
+    sheet: [39, 29],
     skinVariations: [
       {
         unified: '1F91C-1F3FB',
-        sheet: [37, 56]
+        sheet: [39, 30]
       },
       {
         unified: '1F91C-1F3FC',
-        sheet: [37, 57]
+        sheet: [39, 31]
       },
       {
         unified: '1F91C-1F3FD',
-        sheet: [38, 0]
+        sheet: [39, 32]
       },
       {
         unified: '1F91C-1F3FE',
-        sheet: [38, 1]
+        sheet: [39, 33]
       },
       {
         unified: '1F91C-1F3FF',
-        sheet: [38, 2]
+        sheet: [39, 34]
       }
     ],
     shortName: 'right-facing_fist'
@@ -3023,27 +3426,27 @@ export const emojis: CompressedEmojiData[] = [
       'congrats',
       'yay'
     ],
-    sheet: [13, 40],
+    sheet: [13, 1],
     skinVariations: [
       {
         unified: '1F44F-1F3FB',
-        sheet: [13, 41]
+        sheet: [13, 2]
       },
       {
         unified: '1F44F-1F3FC',
-        sheet: [13, 42]
+        sheet: [13, 3]
       },
       {
         unified: '1F44F-1F3FD',
-        sheet: [13, 43]
+        sheet: [13, 4]
       },
       {
         unified: '1F44F-1F3FE',
-        sheet: [13, 44]
+        sheet: [13, 5]
       },
       {
         unified: '1F44F-1F3FF',
-        sheet: [13, 45]
+        sheet: [13, 6]
       }
     ],
     shortName: 'clap'
@@ -3059,30 +3462,70 @@ export const emojis: CompressedEmojiData[] = [
       'celebration',
       'hands'
     ],
-    sheet: [33, 2],
+    sheet: [34, 45],
     skinVariations: [
       {
         unified: '1F64C-1F3FB',
-        sheet: [33, 3]
+        sheet: [34, 46]
       },
       {
         unified: '1F64C-1F3FC',
-        sheet: [33, 4]
+        sheet: [34, 47]
       },
       {
         unified: '1F64C-1F3FD',
-        sheet: [33, 5]
+        sheet: [34, 48]
       },
       {
         unified: '1F64C-1F3FE',
-        sheet: [33, 6]
+        sheet: [34, 49]
       },
       {
         unified: '1F64C-1F3FF',
-        sheet: [33, 7]
+        sheet: [34, 50]
       }
     ],
     shortName: 'raised_hands'
+  },
+  {
+    name: 'Heart Hands',
+    unified: '1FAF6',
+    keywords: [
+      'heart hands',
+      'love',
+      'appreciation',
+      'support'
+    ],
+    sheet: [55, 56],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1FAF6-1F3FB',
+        sheet: [55, 57],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF6-1F3FC',
+        sheet: [55, 58],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF6-1F3FD',
+        sheet: [55, 59],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF6-1F3FE',
+        sheet: [55, 60],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF6-1F3FF',
+        sheet: [56, 0],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'heart_hands'
   },
   {
     name: 'Open Hands Sign',
@@ -3094,27 +3537,27 @@ export const emojis: CompressedEmojiData[] = [
       'hands',
       'open'
     ],
-    sheet: [13, 46],
+    sheet: [13, 7],
     skinVariations: [
       {
         unified: '1F450-1F3FB',
-        sheet: [13, 47]
+        sheet: [13, 8]
       },
       {
         unified: '1F450-1F3FC',
-        sheet: [13, 48]
+        sheet: [13, 9]
       },
       {
         unified: '1F450-1F3FD',
-        sheet: [13, 49]
+        sheet: [13, 10]
       },
       {
         unified: '1F450-1F3FE',
-        sheet: [13, 50]
+        sheet: [13, 11]
       },
       {
         unified: '1F450-1F3FF',
-        sheet: [13, 51]
+        sheet: [13, 12]
       }
     ],
     shortName: 'open_hands'
@@ -3129,27 +3572,27 @@ export const emojis: CompressedEmojiData[] = [
       'cupped',
       'prayer'
     ],
-    sheet: [39, 3],
+    sheet: [40, 57],
     skinVariations: [
       {
         unified: '1F932-1F3FB',
-        sheet: [39, 4]
+        sheet: [40, 58]
       },
       {
         unified: '1F932-1F3FC',
-        sheet: [39, 5]
+        sheet: [40, 59]
       },
       {
         unified: '1F932-1F3FD',
-        sheet: [39, 6]
+        sheet: [40, 60]
       },
       {
         unified: '1F932-1F3FE',
-        sheet: [39, 7]
+        sheet: [41, 0]
       },
       {
         unified: '1F932-1F3FF',
-        sheet: [39, 8]
+        sheet: [41, 1]
       }
     ],
     shortName: 'palms_up_together'
@@ -3162,7 +3605,129 @@ export const emojis: CompressedEmojiData[] = [
       'agreement',
       'shake'
     ],
-    sheet: [38, 3],
+    sheet: [39, 35],
+    skinVariations: [
+      {
+        unified: '1F91D-1F3FB',
+        sheet: [39, 36]
+      },
+      {
+        unified: '1F91D-1F3FC',
+        sheet: [39, 37]
+      },
+      {
+        unified: '1F91D-1F3FD',
+        sheet: [39, 38]
+      },
+      {
+        unified: '1F91D-1F3FE',
+        sheet: [39, 39]
+      },
+      {
+        unified: '1F91D-1F3FF',
+        sheet: [39, 40]
+      },
+      {
+        unified: '1FAF1-1F3FB-200D-1FAF2-1F3FC',
+        sheet: [39, 41],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FB-200D-1FAF2-1F3FD',
+        sheet: [39, 42],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FB-200D-1FAF2-1F3FE',
+        sheet: [39, 43],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FB-200D-1FAF2-1F3FF',
+        sheet: [39, 44],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FC-200D-1FAF2-1F3FB',
+        sheet: [39, 45],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FC-200D-1FAF2-1F3FD',
+        sheet: [39, 46],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FC-200D-1FAF2-1F3FE',
+        sheet: [39, 47],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FC-200D-1FAF2-1F3FF',
+        sheet: [39, 48],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FD-200D-1FAF2-1F3FB',
+        sheet: [39, 49],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FD-200D-1FAF2-1F3FC',
+        sheet: [39, 50],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FD-200D-1FAF2-1F3FE',
+        sheet: [39, 51],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FD-200D-1FAF2-1F3FF',
+        sheet: [39, 52],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FE-200D-1FAF2-1F3FB',
+        sheet: [39, 53],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FE-200D-1FAF2-1F3FC',
+        sheet: [39, 54],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FE-200D-1FAF2-1F3FD',
+        sheet: [39, 55],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FE-200D-1FAF2-1F3FF',
+        sheet: [39, 56],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FF-200D-1FAF2-1F3FB',
+        sheet: [39, 57],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FF-200D-1FAF2-1F3FC',
+        sheet: [39, 58],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FF-200D-1FAF2-1F3FD',
+        sheet: [39, 59],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAF1-1F3FF-200D-1FAF2-1F3FE',
+        sheet: [39, 60],
+        hidden: ['facebook']
+      }
+    ],
     shortName: 'handshake'
   },
   {
@@ -3174,29 +3739,33 @@ export const emojis: CompressedEmojiData[] = [
       'hope',
       'wish',
       'namaste',
-      'highfive'
+      'highfive',
+      'pray',
+      'thank you',
+      'thanks',
+      'appreciate'
     ],
-    sheet: [33, 44],
+    sheet: [35, 26],
     skinVariations: [
       {
         unified: '1F64F-1F3FB',
-        sheet: [33, 45]
+        sheet: [35, 27]
       },
       {
         unified: '1F64F-1F3FC',
-        sheet: [33, 46]
+        sheet: [35, 28]
       },
       {
         unified: '1F64F-1F3FD',
-        sheet: [33, 47]
+        sheet: [35, 29]
       },
       {
         unified: '1F64F-1F3FE',
-        sheet: [33, 48]
+        sheet: [35, 30]
       },
       {
         unified: '1F64F-1F3FF',
-        sheet: [33, 49]
+        sheet: [35, 31]
       }
     ],
     shortName: 'pray'
@@ -3211,27 +3780,27 @@ export const emojis: CompressedEmojiData[] = [
       'write',
       'compose'
     ],
-    sheet: [56, 8],
+    sheet: [58, 45],
     skinVariations: [
       {
         unified: '270D-1F3FB',
-        sheet: [56, 9]
+        sheet: [58, 46]
       },
       {
         unified: '270D-1F3FC',
-        sheet: [56, 10]
+        sheet: [58, 47]
       },
       {
         unified: '270D-1F3FD',
-        sheet: [56, 11]
+        sheet: [58, 48]
       },
       {
         unified: '270D-1F3FE',
-        sheet: [56, 12]
+        sheet: [58, 49]
       },
       {
         unified: '270D-1F3FF',
-        sheet: [56, 13]
+        sheet: [58, 50]
       }
     ],
     shortName: 'writing_hand'
@@ -3247,27 +3816,27 @@ export const emojis: CompressedEmojiData[] = [
       'fashion',
       'nail'
     ],
-    sheet: [24, 36],
+    sheet: [25, 53],
     skinVariations: [
       {
         unified: '1F485-1F3FB',
-        sheet: [24, 37]
+        sheet: [25, 54]
       },
       {
         unified: '1F485-1F3FC',
-        sheet: [24, 38]
+        sheet: [25, 55]
       },
       {
         unified: '1F485-1F3FD',
-        sheet: [24, 39]
+        sheet: [25, 56]
       },
       {
         unified: '1F485-1F3FE',
-        sheet: [24, 40]
+        sheet: [25, 57]
       },
       {
         unified: '1F485-1F3FF',
-        sheet: [24, 41]
+        sheet: [25, 58]
       }
     ],
     shortName: 'nail_care'
@@ -3280,27 +3849,27 @@ export const emojis: CompressedEmojiData[] = [
       'camera',
       'phone'
     ],
-    sheet: [39, 9],
+    sheet: [41, 2],
     skinVariations: [
       {
         unified: '1F933-1F3FB',
-        sheet: [39, 10]
+        sheet: [41, 3]
       },
       {
         unified: '1F933-1F3FC',
-        sheet: [39, 11]
+        sheet: [41, 4]
       },
       {
         unified: '1F933-1F3FD',
-        sheet: [39, 12]
+        sheet: [41, 5]
       },
       {
         unified: '1F933-1F3FE',
-        sheet: [39, 13]
+        sheet: [41, 6]
       },
       {
         unified: '1F933-1F3FF',
-        sheet: [39, 14]
+        sheet: [41, 7]
       }
     ],
     shortName: 'selfie'
@@ -3317,27 +3886,27 @@ export const emojis: CompressedEmojiData[] = [
       'strong',
       'biceps'
     ],
-    sheet: [25, 54],
+    sheet: [27, 57],
     skinVariations: [
       {
         unified: '1F4AA-1F3FB',
-        sheet: [25, 55]
+        sheet: [27, 58]
       },
       {
         unified: '1F4AA-1F3FC',
-        sheet: [25, 56]
+        sheet: [27, 59]
       },
       {
         unified: '1F4AA-1F3FD',
-        sheet: [25, 57]
+        sheet: [27, 60]
       },
       {
         unified: '1F4AA-1F3FE',
-        sheet: [26, 0]
+        sheet: [28, 0]
       },
       {
         unified: '1F4AA-1F3FF',
-        sheet: [26, 1]
+        sheet: [28, 1]
       }
     ],
     shortName: 'muscle'
@@ -3349,7 +3918,7 @@ export const emojis: CompressedEmojiData[] = [
       'mechanical_arm',
       'accessibility'
     ],
-    sheet: [44, 24],
+    sheet: [46, 3],
     shortName: 'mechanical_arm'
   },
   {
@@ -3359,34 +3928,34 @@ export const emojis: CompressedEmojiData[] = [
       'mechanical_leg',
       'accessibility'
     ],
-    sheet: [44, 25],
+    sheet: [46, 4],
     shortName: 'mechanical_leg'
   },
   {
     name: 'Leg',
     unified: '1F9B5',
     keywords: ['leg', 'kick', 'limb'],
-    sheet: [43, 24],
+    sheet: [45, 6],
     skinVariations: [
       {
         unified: '1F9B5-1F3FB',
-        sheet: [43, 25]
+        sheet: [45, 7]
       },
       {
         unified: '1F9B5-1F3FC',
-        sheet: [43, 26]
+        sheet: [45, 8]
       },
       {
         unified: '1F9B5-1F3FD',
-        sheet: [43, 27]
+        sheet: [45, 9]
       },
       {
         unified: '1F9B5-1F3FE',
-        sheet: [43, 28]
+        sheet: [45, 10]
       },
       {
         unified: '1F9B5-1F3FF',
-        sheet: [43, 29]
+        sheet: [45, 11]
       }
     ],
     shortName: 'leg'
@@ -3395,27 +3964,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Foot',
     unified: '1F9B6',
     keywords: ['foot', 'kick', 'stomp'],
-    sheet: [43, 30],
+    sheet: [45, 12],
     skinVariations: [
       {
         unified: '1F9B6-1F3FB',
-        sheet: [43, 31]
+        sheet: [45, 13]
       },
       {
         unified: '1F9B6-1F3FC',
-        sheet: [43, 32]
+        sheet: [45, 14]
       },
       {
         unified: '1F9B6-1F3FD',
-        sheet: [43, 33]
+        sheet: [45, 15]
       },
       {
         unified: '1F9B6-1F3FE',
-        sheet: [43, 34]
+        sheet: [45, 16]
       },
       {
         unified: '1F9B6-1F3FF',
-        sheet: [43, 35]
+        sheet: [45, 17]
       }
     ],
     shortName: 'foot'
@@ -3430,27 +3999,27 @@ export const emojis: CompressedEmojiData[] = [
       'sound',
       'listen'
     ],
-    sheet: [12, 30],
+    sheet: [11, 55],
     skinVariations: [
       {
         unified: '1F442-1F3FB',
-        sheet: [12, 31]
+        sheet: [11, 56]
       },
       {
         unified: '1F442-1F3FC',
-        sheet: [12, 32]
+        sheet: [11, 57]
       },
       {
         unified: '1F442-1F3FD',
-        sheet: [12, 33]
+        sheet: [11, 58]
       },
       {
         unified: '1F442-1F3FE',
-        sheet: [12, 34]
+        sheet: [11, 59]
       },
       {
         unified: '1F442-1F3FF',
-        sheet: [12, 35]
+        sheet: [11, 60]
       }
     ],
     shortName: 'ear'
@@ -3462,27 +4031,27 @@ export const emojis: CompressedEmojiData[] = [
       'ear_with_hearing_aid',
       'accessibility'
     ],
-    sheet: [44, 16],
+    sheet: [45, 56],
     skinVariations: [
       {
         unified: '1F9BB-1F3FB',
-        sheet: [44, 17]
+        sheet: [45, 57]
       },
       {
         unified: '1F9BB-1F3FC',
-        sheet: [44, 18]
+        sheet: [45, 58]
       },
       {
         unified: '1F9BB-1F3FD',
-        sheet: [44, 19]
+        sheet: [45, 59]
       },
       {
         unified: '1F9BB-1F3FE',
-        sheet: [44, 20]
+        sheet: [45, 60]
       },
       {
         unified: '1F9BB-1F3FF',
-        sheet: [44, 21]
+        sheet: [46, 0]
       }
     ],
     shortName: 'ear_with_hearing_aid'
@@ -3495,27 +4064,27 @@ export const emojis: CompressedEmojiData[] = [
       'smell',
       'sniff'
     ],
-    sheet: [12, 36],
+    sheet: [12, 0],
     skinVariations: [
       {
         unified: '1F443-1F3FB',
-        sheet: [12, 37]
+        sheet: [12, 1]
       },
       {
         unified: '1F443-1F3FC',
-        sheet: [12, 38]
+        sheet: [12, 2]
       },
       {
         unified: '1F443-1F3FD',
-        sheet: [12, 39]
+        sheet: [12, 3]
       },
       {
         unified: '1F443-1F3FE',
-        sheet: [12, 40]
+        sheet: [12, 4]
       },
       {
         unified: '1F443-1F3FF',
-        sheet: [12, 41]
+        sheet: [12, 5]
       }
     ],
     shortName: 'nose'
@@ -3528,7 +4097,7 @@ export const emojis: CompressedEmojiData[] = [
       'smart',
       'intelligent'
     ],
-    sheet: [51, 43],
+    sheet: [53, 14],
     shortName: 'brain'
   },
   {
@@ -3539,14 +4108,14 @@ export const emojis: CompressedEmojiData[] = [
       'health',
       'heartbeat'
     ],
-    sheet: [53, 6],
+    sheet: [54, 42],
     shortName: 'anatomical_heart'
   },
   {
     name: 'Lungs',
     unified: '1FAC1',
     keywords: ['lungs', 'breathe'],
-    sheet: [53, 7],
+    sheet: [54, 43],
     shortName: 'lungs'
   },
   {
@@ -3557,14 +4126,14 @@ export const emojis: CompressedEmojiData[] = [
       'teeth',
       'dentist'
     ],
-    sheet: [43, 36],
+    sheet: [45, 18],
     shortName: 'tooth'
   },
   {
     name: 'Bone',
     unified: '1F9B4',
     keywords: ['bone', 'skeleton'],
-    sheet: [43, 23],
+    sheet: [45, 5],
     shortName: 'bone'
   },
   {
@@ -3578,7 +4147,7 @@ export const emojis: CompressedEmojiData[] = [
       'peek',
       'see'
     ],
-    sheet: [12, 27],
+    sheet: [11, 52],
     shortName: 'eyes'
   },
   {
@@ -3592,7 +4161,7 @@ export const emojis: CompressedEmojiData[] = [
       'watch',
       'stare'
     ],
-    sheet: [12, 29],
+    sheet: [11, 54],
     shortName: 'eye'
   },
   {
@@ -3603,7 +4172,7 @@ export const emojis: CompressedEmojiData[] = [
       'mouth',
       'playful'
     ],
-    sheet: [12, 43],
+    sheet: [12, 7],
     shortName: 'tongue'
   },
   {
@@ -3614,8 +4183,22 @@ export const emojis: CompressedEmojiData[] = [
       'mouth',
       'kiss'
     ],
-    sheet: [12, 42],
+    sheet: [12, 6],
     shortName: 'lips'
+  },
+  {
+    name: 'Biting Lip',
+    unified: '1FAE6',
+    keywords: [
+      'biting lip',
+      'flirt',
+      'sexy',
+      'pain',
+      'worry'
+    ],
+    sheet: [55, 18],
+    hidden: ['facebook'],
+    shortName: 'biting_lip'
   },
   {
     name: 'Baby',
@@ -3627,27 +4210,27 @@ export const emojis: CompressedEmojiData[] = [
       'girl',
       'toddler'
     ],
-    sheet: [23, 8],
+    sheet: [24, 28],
     skinVariations: [
       {
         unified: '1F476-1F3FB',
-        sheet: [23, 9]
+        sheet: [24, 29]
       },
       {
         unified: '1F476-1F3FC',
-        sheet: [23, 10]
+        sheet: [24, 30]
       },
       {
         unified: '1F476-1F3FD',
-        sheet: [23, 11]
+        sheet: [24, 31]
       },
       {
         unified: '1F476-1F3FE',
-        sheet: [23, 12]
+        sheet: [24, 32]
       },
       {
         unified: '1F476-1F3FF',
-        sheet: [23, 13]
+        sheet: [24, 33]
       }
     ],
     shortName: 'baby'
@@ -3660,27 +4243,27 @@ export const emojis: CompressedEmojiData[] = [
       'gender-neutral',
       'young'
     ],
-    sheet: [48, 43],
+    sheet: [50, 11],
     skinVariations: [
       {
         unified: '1F9D2-1F3FB',
-        sheet: [48, 44]
+        sheet: [50, 12]
       },
       {
         unified: '1F9D2-1F3FC',
-        sheet: [48, 45]
+        sheet: [50, 13]
       },
       {
         unified: '1F9D2-1F3FD',
-        sheet: [48, 46]
+        sheet: [50, 14]
       },
       {
         unified: '1F9D2-1F3FE',
-        sheet: [48, 47]
+        sheet: [50, 15]
       },
       {
         unified: '1F9D2-1F3FF',
-        sheet: [48, 48]
+        sheet: [50, 16]
       }
     ],
     shortName: 'child'
@@ -3695,27 +4278,27 @@ export const emojis: CompressedEmojiData[] = [
       'guy',
       'teenager'
     ],
-    sheet: [14, 15],
+    sheet: [13, 34],
     skinVariations: [
       {
         unified: '1F466-1F3FB',
-        sheet: [14, 16]
+        sheet: [13, 35]
       },
       {
         unified: '1F466-1F3FC',
-        sheet: [14, 17]
+        sheet: [13, 36]
       },
       {
         unified: '1F466-1F3FD',
-        sheet: [14, 18]
+        sheet: [13, 37]
       },
       {
         unified: '1F466-1F3FE',
-        sheet: [14, 19]
+        sheet: [13, 38]
       },
       {
         unified: '1F466-1F3FF',
-        sheet: [14, 20]
+        sheet: [13, 39]
       }
     ],
     shortName: 'boy'
@@ -3729,27 +4312,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'teenager'
     ],
-    sheet: [14, 21],
+    sheet: [13, 40],
     skinVariations: [
       {
         unified: '1F467-1F3FB',
-        sheet: [14, 22]
+        sheet: [13, 41]
       },
       {
         unified: '1F467-1F3FC',
-        sheet: [14, 23]
+        sheet: [13, 42]
       },
       {
         unified: '1F467-1F3FD',
-        sheet: [14, 24]
+        sheet: [13, 43]
       },
       {
         unified: '1F467-1F3FE',
-        sheet: [14, 25]
+        sheet: [13, 44]
       },
       {
         unified: '1F467-1F3FF',
-        sheet: [14, 26]
+        sheet: [13, 45]
       }
     ],
     shortName: 'girl'
@@ -3762,27 +4345,27 @@ export const emojis: CompressedEmojiData[] = [
       'gender-neutral',
       'person'
     ],
-    sheet: [48, 37],
+    sheet: [50, 5],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB',
-        sheet: [48, 38]
+        sheet: [50, 6]
       },
       {
         unified: '1F9D1-1F3FC',
-        sheet: [48, 39]
+        sheet: [50, 7]
       },
       {
         unified: '1F9D1-1F3FD',
-        sheet: [48, 40]
+        sheet: [50, 8]
       },
       {
         unified: '1F9D1-1F3FE',
-        sheet: [48, 41]
+        sheet: [50, 9]
       },
       {
         unified: '1F9D1-1F3FF',
-        sheet: [48, 42]
+        sheet: [50, 10]
       }
     ],
     shortName: 'adult'
@@ -3794,27 +4377,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_blond_hair',
       'hairstyle'
     ],
-    sheet: [22, 24],
+    sheet: [23, 47],
     skinVariations: [
       {
         unified: '1F471-1F3FB',
-        sheet: [22, 25]
+        sheet: [23, 48]
       },
       {
         unified: '1F471-1F3FC',
-        sheet: [22, 26]
+        sheet: [23, 49]
       },
       {
         unified: '1F471-1F3FD',
-        sheet: [22, 27]
+        sheet: [23, 50]
       },
       {
         unified: '1F471-1F3FE',
-        sheet: [22, 28]
+        sheet: [23, 51]
       },
       {
         unified: '1F471-1F3FF',
-        sheet: [22, 29]
+        sheet: [23, 52]
       }
     ],
     shortName: 'person_with_blond_hair',
@@ -3833,27 +4416,27 @@ export const emojis: CompressedEmojiData[] = [
       'sir',
       'moustache'
     ],
-    sheet: [17, 14],
+    sheet: [17, 13],
     skinVariations: [
       {
         unified: '1F468-1F3FB',
-        sheet: [17, 15]
+        sheet: [17, 14]
       },
       {
         unified: '1F468-1F3FC',
-        sheet: [17, 16]
+        sheet: [17, 15]
       },
       {
         unified: '1F468-1F3FD',
-        sheet: [17, 17]
+        sheet: [17, 16]
       },
       {
         unified: '1F468-1F3FE',
-        sheet: [17, 18]
+        sheet: [17, 17]
       },
       {
         unified: '1F468-1F3FF',
-        sheet: [17, 19]
+        sheet: [17, 18]
       }
     ],
     shortName: 'man'
@@ -3866,30 +4449,106 @@ export const emojis: CompressedEmojiData[] = [
       'person',
       'bewhiskered'
     ],
-    sheet: [48, 55],
+    sheet: [50, 35],
     skinVariations: [
       {
         unified: '1F9D4-1F3FB',
-        sheet: [48, 56]
+        sheet: [50, 36]
       },
       {
         unified: '1F9D4-1F3FC',
-        sheet: [48, 57]
+        sheet: [50, 37]
       },
       {
         unified: '1F9D4-1F3FD',
-        sheet: [49, 0]
+        sheet: [50, 38]
       },
       {
         unified: '1F9D4-1F3FE',
-        sheet: [49, 1]
+        sheet: [50, 39]
       },
       {
         unified: '1F9D4-1F3FF',
-        sheet: [49, 2]
+        sheet: [50, 40]
       }
     ],
     shortName: 'bearded_person'
+  },
+  {
+    name: 'Man: Beard',
+    unified: '1F9D4-200D-2642-FE0F',
+    keywords: [
+      'man beard',
+      'facial hair'
+    ],
+    sheet: [50, 29],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1F9D4-1F3FB-200D-2642-FE0F',
+        sheet: [50, 30],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D4-1F3FC-200D-2642-FE0F',
+        sheet: [50, 31],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D4-1F3FD-200D-2642-FE0F',
+        sheet: [50, 32],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D4-1F3FE-200D-2642-FE0F',
+        sheet: [50, 33],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D4-1F3FF-200D-2642-FE0F',
+        sheet: [50, 34],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'man_with_beard'
+  },
+  {
+    name: 'Woman: Beard',
+    unified: '1F9D4-200D-2640-FE0F',
+    keywords: [
+      'woman beard',
+      'facial hair'
+    ],
+    sheet: [50, 23],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1F9D4-1F3FB-200D-2640-FE0F',
+        sheet: [50, 24],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D4-1F3FC-200D-2640-FE0F',
+        sheet: [50, 25],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D4-1F3FD-200D-2640-FE0F',
+        sheet: [50, 26],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D4-1F3FE-200D-2640-FE0F',
+        sheet: [50, 27],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D4-1F3FF-200D-2640-FE0F',
+        sheet: [50, 28],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'woman_with_beard'
   },
   {
     name: 'Man: Red Hair',
@@ -3898,27 +4557,27 @@ export const emojis: CompressedEmojiData[] = [
       'man_red_hair',
       'hairstyle'
     ],
-    sheet: [16, 16],
+    sheet: [15, 29],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F9B0',
-        sheet: [16, 17]
+        sheet: [15, 30]
       },
       {
         unified: '1F468-1F3FC-200D-1F9B0',
-        sheet: [16, 18]
+        sheet: [15, 31]
       },
       {
         unified: '1F468-1F3FD-200D-1F9B0',
-        sheet: [16, 19]
+        sheet: [15, 32]
       },
       {
         unified: '1F468-1F3FE-200D-1F9B0',
-        sheet: [16, 20]
+        sheet: [15, 33]
       },
       {
         unified: '1F468-1F3FF-200D-1F9B0',
-        sheet: [16, 21]
+        sheet: [15, 34]
       }
     ],
     shortName: 'red_haired_man'
@@ -3930,27 +4589,27 @@ export const emojis: CompressedEmojiData[] = [
       'man_curly_hair',
       'hairstyle'
     ],
-    sheet: [16, 22],
+    sheet: [15, 35],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F9B1',
-        sheet: [16, 23]
+        sheet: [15, 36]
       },
       {
         unified: '1F468-1F3FC-200D-1F9B1',
-        sheet: [16, 24]
+        sheet: [15, 37]
       },
       {
         unified: '1F468-1F3FD-200D-1F9B1',
-        sheet: [16, 25]
+        sheet: [15, 38]
       },
       {
         unified: '1F468-1F3FE-200D-1F9B1',
-        sheet: [16, 26]
+        sheet: [15, 39]
       },
       {
         unified: '1F468-1F3FF-200D-1F9B1',
-        sheet: [16, 27]
+        sheet: [15, 40]
       }
     ],
     shortName: 'curly_haired_man'
@@ -3963,27 +4622,27 @@ export const emojis: CompressedEmojiData[] = [
       'old',
       'elder'
     ],
-    sheet: [16, 34],
+    sheet: [15, 47],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F9B3',
-        sheet: [16, 35]
+        sheet: [15, 48]
       },
       {
         unified: '1F468-1F3FC-200D-1F9B3',
-        sheet: [16, 36]
+        sheet: [15, 49]
       },
       {
         unified: '1F468-1F3FD-200D-1F9B3',
-        sheet: [16, 37]
+        sheet: [15, 50]
       },
       {
         unified: '1F468-1F3FE-200D-1F9B3',
-        sheet: [16, 38]
+        sheet: [15, 51]
       },
       {
         unified: '1F468-1F3FF-200D-1F9B3',
-        sheet: [16, 39]
+        sheet: [15, 52]
       }
     ],
     shortName: 'white_haired_man'
@@ -3992,27 +4651,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man: Bald',
     unified: '1F468-200D-1F9B2',
     keywords: ['man_bald', 'hairless'],
-    sheet: [16, 28],
+    sheet: [15, 41],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F9B2',
-        sheet: [16, 29]
+        sheet: [15, 42]
       },
       {
         unified: '1F468-1F3FC-200D-1F9B2',
-        sheet: [16, 30]
+        sheet: [15, 43]
       },
       {
         unified: '1F468-1F3FD-200D-1F9B2',
-        sheet: [16, 31]
+        sheet: [15, 44]
       },
       {
         unified: '1F468-1F3FE-200D-1F9B2',
-        sheet: [16, 32]
+        sheet: [15, 45]
       },
       {
         unified: '1F468-1F3FF-200D-1F9B2',
-        sheet: [16, 33]
+        sheet: [15, 46]
       }
     ],
     shortName: 'bald_man'
@@ -4026,27 +4685,27 @@ export const emojis: CompressedEmojiData[] = [
       'girls',
       'lady'
     ],
-    sheet: [20, 4],
+    sheet: [21, 33],
     skinVariations: [
       {
         unified: '1F469-1F3FB',
-        sheet: [20, 5]
+        sheet: [21, 34]
       },
       {
         unified: '1F469-1F3FC',
-        sheet: [20, 6]
+        sheet: [21, 35]
       },
       {
         unified: '1F469-1F3FD',
-        sheet: [20, 7]
+        sheet: [21, 36]
       },
       {
         unified: '1F469-1F3FE',
-        sheet: [20, 8]
+        sheet: [21, 37]
       },
       {
         unified: '1F469-1F3FF',
-        sheet: [20, 9]
+        sheet: [21, 38]
       }
     ],
     shortName: 'woman'
@@ -4058,27 +4717,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman_red_hair',
       'hairstyle'
     ],
-    sheet: [19, 4],
+    sheet: [18, 58],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F9B0',
-        sheet: [19, 5]
+        sheet: [18, 59]
       },
       {
         unified: '1F469-1F3FC-200D-1F9B0',
-        sheet: [19, 6]
+        sheet: [18, 60]
       },
       {
         unified: '1F469-1F3FD-200D-1F9B0',
-        sheet: [19, 7]
+        sheet: [19, 0]
       },
       {
         unified: '1F469-1F3FE-200D-1F9B0',
-        sheet: [19, 8]
+        sheet: [19, 1]
       },
       {
         unified: '1F469-1F3FF-200D-1F9B0',
-        sheet: [19, 9]
+        sheet: [19, 2]
       }
     ],
     shortName: 'red_haired_woman'
@@ -4090,27 +4749,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_red_hair',
       'hairstyle'
     ],
-    sheet: [47, 41],
+    sheet: [49, 12],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F9B0',
-        sheet: [47, 42]
+        sheet: [49, 13]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F9B0',
-        sheet: [47, 43]
+        sheet: [49, 14]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F9B0',
-        sheet: [47, 44]
+        sheet: [49, 15]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F9B0',
-        sheet: [47, 45]
+        sheet: [49, 16]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F9B0',
-        sheet: [47, 46]
+        sheet: [49, 17]
       }
     ],
     shortName: 'red_haired_person'
@@ -4122,27 +4781,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman_curly_hair',
       'hairstyle'
     ],
-    sheet: [19, 10],
+    sheet: [19, 3],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F9B1',
-        sheet: [19, 11]
+        sheet: [19, 4]
       },
       {
         unified: '1F469-1F3FC-200D-1F9B1',
-        sheet: [19, 12]
+        sheet: [19, 5]
       },
       {
         unified: '1F469-1F3FD-200D-1F9B1',
-        sheet: [19, 13]
+        sheet: [19, 6]
       },
       {
         unified: '1F469-1F3FE-200D-1F9B1',
-        sheet: [19, 14]
+        sheet: [19, 7]
       },
       {
         unified: '1F469-1F3FF-200D-1F9B1',
-        sheet: [19, 15]
+        sheet: [19, 8]
       }
     ],
     shortName: 'curly_haired_woman'
@@ -4154,27 +4813,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_curly_hair',
       'hairstyle'
     ],
-    sheet: [47, 47],
+    sheet: [49, 18],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F9B1',
-        sheet: [47, 48]
+        sheet: [49, 19]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F9B1',
-        sheet: [47, 49]
+        sheet: [49, 20]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F9B1',
-        sheet: [47, 50]
+        sheet: [49, 21]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F9B1',
-        sheet: [47, 51]
+        sheet: [49, 22]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F9B1',
-        sheet: [47, 52]
+        sheet: [49, 23]
       }
     ],
     shortName: 'curly_haired_person'
@@ -4187,27 +4846,27 @@ export const emojis: CompressedEmojiData[] = [
       'old',
       'elder'
     ],
-    sheet: [19, 22],
+    sheet: [19, 15],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F9B3',
-        sheet: [19, 23]
+        sheet: [19, 16]
       },
       {
         unified: '1F469-1F3FC-200D-1F9B3',
-        sheet: [19, 24]
+        sheet: [19, 17]
       },
       {
         unified: '1F469-1F3FD-200D-1F9B3',
-        sheet: [19, 25]
+        sheet: [19, 18]
       },
       {
         unified: '1F469-1F3FE-200D-1F9B3',
-        sheet: [19, 26]
+        sheet: [19, 19]
       },
       {
         unified: '1F469-1F3FF-200D-1F9B3',
-        sheet: [19, 27]
+        sheet: [19, 20]
       }
     ],
     shortName: 'white_haired_woman'
@@ -4220,32 +4879,32 @@ export const emojis: CompressedEmojiData[] = [
       'elder',
       'old'
     ],
-    sheet: [48, 1],
+    sheet: [49, 30],
     hidden: ['facebook'],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F9B3',
-        sheet: [48, 2],
+        sheet: [49, 31],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FC-200D-1F9B3',
-        sheet: [48, 3],
+        sheet: [49, 32],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FD-200D-1F9B3',
-        sheet: [48, 4],
+        sheet: [49, 33],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FE-200D-1F9B3',
-        sheet: [48, 5],
+        sheet: [49, 34],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FF-200D-1F9B3',
-        sheet: [48, 6],
+        sheet: [49, 35],
         hidden: ['facebook']
       }
     ],
@@ -4258,27 +4917,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman_bald',
       'hairless'
     ],
-    sheet: [19, 16],
+    sheet: [19, 9],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F9B2',
-        sheet: [19, 17]
+        sheet: [19, 10]
       },
       {
         unified: '1F469-1F3FC-200D-1F9B2',
-        sheet: [19, 18]
+        sheet: [19, 11]
       },
       {
         unified: '1F469-1F3FD-200D-1F9B2',
-        sheet: [19, 19]
+        sheet: [19, 12]
       },
       {
         unified: '1F469-1F3FE-200D-1F9B2',
-        sheet: [19, 20]
+        sheet: [19, 13]
       },
       {
         unified: '1F469-1F3FF-200D-1F9B2',
-        sheet: [19, 21]
+        sheet: [19, 14]
       }
     ],
     shortName: 'bald_woman'
@@ -4290,32 +4949,32 @@ export const emojis: CompressedEmojiData[] = [
       'person_bald',
       'hairless'
     ],
-    sheet: [47, 53],
+    sheet: [49, 24],
     hidden: ['facebook'],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F9B2',
-        sheet: [47, 54],
+        sheet: [49, 25],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FC-200D-1F9B2',
-        sheet: [47, 55],
+        sheet: [49, 26],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FD-200D-1F9B2',
-        sheet: [47, 56],
+        sheet: [49, 27],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FE-200D-1F9B2',
-        sheet: [47, 57],
+        sheet: [49, 28],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FF-200D-1F9B2',
-        sheet: [48, 0],
+        sheet: [49, 29],
         hidden: ['facebook']
       }
     ],
@@ -4332,27 +4991,27 @@ export const emojis: CompressedEmojiData[] = [
       'blonde',
       'person'
     ],
-    sheet: [22, 12],
+    sheet: [23, 35],
     skinVariations: [
       {
         unified: '1F471-1F3FB-200D-2640-FE0F',
-        sheet: [22, 13]
+        sheet: [23, 36]
       },
       {
         unified: '1F471-1F3FC-200D-2640-FE0F',
-        sheet: [22, 14]
+        sheet: [23, 37]
       },
       {
         unified: '1F471-1F3FD-200D-2640-FE0F',
-        sheet: [22, 15]
+        sheet: [23, 38]
       },
       {
         unified: '1F471-1F3FE-200D-2640-FE0F',
-        sheet: [22, 16]
+        sheet: [23, 39]
       },
       {
         unified: '1F471-1F3FF-200D-2640-FE0F',
-        sheet: [22, 17]
+        sheet: [23, 40]
       }
     ],
     shortName: 'blond-haired-woman'
@@ -4370,27 +5029,27 @@ export const emojis: CompressedEmojiData[] = [
       'guy',
       'person'
     ],
-    sheet: [22, 18],
+    sheet: [23, 41],
     skinVariations: [
       {
         unified: '1F471-1F3FB-200D-2642-FE0F',
-        sheet: [22, 19]
+        sheet: [23, 42]
       },
       {
         unified: '1F471-1F3FC-200D-2642-FE0F',
-        sheet: [22, 20]
+        sheet: [23, 43]
       },
       {
         unified: '1F471-1F3FD-200D-2642-FE0F',
-        sheet: [22, 21]
+        sheet: [23, 44]
       },
       {
         unified: '1F471-1F3FE-200D-2642-FE0F',
-        sheet: [22, 22]
+        sheet: [23, 45]
       },
       {
         unified: '1F471-1F3FF-200D-2642-FE0F',
-        sheet: [22, 23]
+        sheet: [23, 46]
       }
     ],
     shortName: 'blond-haired-man'
@@ -4405,27 +5064,27 @@ export const emojis: CompressedEmojiData[] = [
       'senior',
       'gender-neutral'
     ],
-    sheet: [48, 49],
+    sheet: [50, 17],
     skinVariations: [
       {
         unified: '1F9D3-1F3FB',
-        sheet: [48, 50]
+        sheet: [50, 18]
       },
       {
         unified: '1F9D3-1F3FC',
-        sheet: [48, 51]
+        sheet: [50, 19]
       },
       {
         unified: '1F9D3-1F3FD',
-        sheet: [48, 52]
+        sheet: [50, 20]
       },
       {
         unified: '1F9D3-1F3FE',
-        sheet: [48, 53]
+        sheet: [50, 21]
       },
       {
         unified: '1F9D3-1F3FF',
-        sheet: [48, 54]
+        sheet: [50, 22]
       }
     ],
     shortName: 'older_adult'
@@ -4442,27 +5101,27 @@ export const emojis: CompressedEmojiData[] = [
       'elder',
       'senior'
     ],
-    sheet: [22, 54],
+    sheet: [24, 16],
     skinVariations: [
       {
         unified: '1F474-1F3FB',
-        sheet: [22, 55]
+        sheet: [24, 17]
       },
       {
         unified: '1F474-1F3FC',
-        sheet: [22, 56]
+        sheet: [24, 18]
       },
       {
         unified: '1F474-1F3FD',
-        sheet: [22, 57]
+        sheet: [24, 19]
       },
       {
         unified: '1F474-1F3FE',
-        sheet: [23, 0]
+        sheet: [24, 20]
       },
       {
         unified: '1F474-1F3FF',
-        sheet: [23, 1]
+        sheet: [24, 21]
       }
     ],
     shortName: 'older_man'
@@ -4480,27 +5139,27 @@ export const emojis: CompressedEmojiData[] = [
       'elder',
       'senior'
     ],
-    sheet: [23, 2],
+    sheet: [24, 22],
     skinVariations: [
       {
         unified: '1F475-1F3FB',
-        sheet: [23, 3]
+        sheet: [24, 23]
       },
       {
         unified: '1F475-1F3FC',
-        sheet: [23, 4]
+        sheet: [24, 24]
       },
       {
         unified: '1F475-1F3FD',
-        sheet: [23, 5]
+        sheet: [24, 25]
       },
       {
         unified: '1F475-1F3FE',
-        sheet: [23, 6]
+        sheet: [24, 26]
       },
       {
         unified: '1F475-1F3FF',
-        sheet: [23, 7]
+        sheet: [24, 27]
       }
     ],
     shortName: 'older_woman'
@@ -4512,27 +5171,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_frowning',
       'worried'
     ],
-    sheet: [33, 20],
+    sheet: [35, 2],
     skinVariations: [
       {
         unified: '1F64D-1F3FB',
-        sheet: [33, 21]
+        sheet: [35, 3]
       },
       {
         unified: '1F64D-1F3FC',
-        sheet: [33, 22]
+        sheet: [35, 4]
       },
       {
         unified: '1F64D-1F3FD',
-        sheet: [33, 23]
+        sheet: [35, 5]
       },
       {
         unified: '1F64D-1F3FE',
-        sheet: [33, 24]
+        sheet: [35, 6]
       },
       {
         unified: '1F64D-1F3FF',
-        sheet: [33, 25]
+        sheet: [35, 7]
       }
     ],
     shortName: 'person_frowning',
@@ -4551,27 +5210,27 @@ export const emojis: CompressedEmojiData[] = [
       'discouraged',
       'unhappy'
     ],
-    sheet: [33, 14],
+    sheet: [34, 57],
     skinVariations: [
       {
         unified: '1F64D-1F3FB-200D-2642-FE0F',
-        sheet: [33, 15]
+        sheet: [34, 58]
       },
       {
         unified: '1F64D-1F3FC-200D-2642-FE0F',
-        sheet: [33, 16]
+        sheet: [34, 59]
       },
       {
         unified: '1F64D-1F3FD-200D-2642-FE0F',
-        sheet: [33, 17]
+        sheet: [34, 60]
       },
       {
         unified: '1F64D-1F3FE-200D-2642-FE0F',
-        sheet: [33, 18]
+        sheet: [35, 0]
       },
       {
         unified: '1F64D-1F3FF-200D-2642-FE0F',
-        sheet: [33, 19]
+        sheet: [35, 1]
       }
     ],
     shortName: 'man-frowning'
@@ -4590,27 +5249,27 @@ export const emojis: CompressedEmojiData[] = [
       'discouraged',
       'unhappy'
     ],
-    sheet: [33, 8],
+    sheet: [34, 51],
     skinVariations: [
       {
         unified: '1F64D-1F3FB-200D-2640-FE0F',
-        sheet: [33, 9]
+        sheet: [34, 52]
       },
       {
         unified: '1F64D-1F3FC-200D-2640-FE0F',
-        sheet: [33, 10]
+        sheet: [34, 53]
       },
       {
         unified: '1F64D-1F3FD-200D-2640-FE0F',
-        sheet: [33, 11]
+        sheet: [34, 54]
       },
       {
         unified: '1F64D-1F3FE-200D-2640-FE0F',
-        sheet: [33, 12]
+        sheet: [34, 55]
       },
       {
         unified: '1F64D-1F3FF-200D-2640-FE0F',
-        sheet: [33, 13]
+        sheet: [34, 56]
       }
     ],
     shortName: 'woman-frowning'
@@ -4622,27 +5281,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_pouting',
       'upset'
     ],
-    sheet: [33, 38],
+    sheet: [35, 20],
     skinVariations: [
       {
         unified: '1F64E-1F3FB',
-        sheet: [33, 39]
+        sheet: [35, 21]
       },
       {
         unified: '1F64E-1F3FC',
-        sheet: [33, 40]
+        sheet: [35, 22]
       },
       {
         unified: '1F64E-1F3FD',
-        sheet: [33, 41]
+        sheet: [35, 23]
       },
       {
         unified: '1F64E-1F3FE',
-        sheet: [33, 42]
+        sheet: [35, 24]
       },
       {
         unified: '1F64E-1F3FF',
-        sheet: [33, 43]
+        sheet: [35, 25]
       }
     ],
     shortName: 'person_with_pouting_face',
@@ -4657,27 +5316,27 @@ export const emojis: CompressedEmojiData[] = [
       'boy',
       'man'
     ],
-    sheet: [33, 32],
+    sheet: [35, 14],
     skinVariations: [
       {
         unified: '1F64E-1F3FB-200D-2642-FE0F',
-        sheet: [33, 33]
+        sheet: [35, 15]
       },
       {
         unified: '1F64E-1F3FC-200D-2642-FE0F',
-        sheet: [33, 34]
+        sheet: [35, 16]
       },
       {
         unified: '1F64E-1F3FD-200D-2642-FE0F',
-        sheet: [33, 35]
+        sheet: [35, 17]
       },
       {
         unified: '1F64E-1F3FE-200D-2642-FE0F',
-        sheet: [33, 36]
+        sheet: [35, 18]
       },
       {
         unified: '1F64E-1F3FF-200D-2642-FE0F',
-        sheet: [33, 37]
+        sheet: [35, 19]
       }
     ],
     shortName: 'man-pouting'
@@ -4692,27 +5351,27 @@ export const emojis: CompressedEmojiData[] = [
       'girl',
       'woman'
     ],
-    sheet: [33, 26],
+    sheet: [35, 8],
     skinVariations: [
       {
         unified: '1F64E-1F3FB-200D-2640-FE0F',
-        sheet: [33, 27]
+        sheet: [35, 9]
       },
       {
         unified: '1F64E-1F3FC-200D-2640-FE0F',
-        sheet: [33, 28]
+        sheet: [35, 10]
       },
       {
         unified: '1F64E-1F3FD-200D-2640-FE0F',
-        sheet: [33, 29]
+        sheet: [35, 11]
       },
       {
         unified: '1F64E-1F3FE-200D-2640-FE0F',
-        sheet: [33, 30]
+        sheet: [35, 12]
       },
       {
         unified: '1F64E-1F3FF-200D-2640-FE0F',
-        sheet: [33, 31]
+        sheet: [35, 13]
       }
     ],
     shortName: 'woman-pouting'
@@ -4724,27 +5383,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_gesturing_no',
       'decline'
     ],
-    sheet: [31, 55],
+    sheet: [33, 43],
     skinVariations: [
       {
         unified: '1F645-1F3FB',
-        sheet: [31, 56]
+        sheet: [33, 44]
       },
       {
         unified: '1F645-1F3FC',
-        sheet: [31, 57]
+        sheet: [33, 45]
       },
       {
         unified: '1F645-1F3FD',
-        sheet: [32, 0]
+        sheet: [33, 46]
       },
       {
         unified: '1F645-1F3FE',
-        sheet: [32, 1]
+        sheet: [33, 47]
       },
       {
         unified: '1F645-1F3FF',
-        sheet: [32, 2]
+        sheet: [33, 48]
       }
     ],
     shortName: 'no_good',
@@ -4760,27 +5419,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'nope'
     ],
-    sheet: [31, 49],
+    sheet: [33, 37],
     skinVariations: [
       {
         unified: '1F645-1F3FB-200D-2642-FE0F',
-        sheet: [31, 50]
+        sheet: [33, 38]
       },
       {
         unified: '1F645-1F3FC-200D-2642-FE0F',
-        sheet: [31, 51]
+        sheet: [33, 39]
       },
       {
         unified: '1F645-1F3FD-200D-2642-FE0F',
-        sheet: [31, 52]
+        sheet: [33, 40]
       },
       {
         unified: '1F645-1F3FE-200D-2642-FE0F',
-        sheet: [31, 53]
+        sheet: [33, 41]
       },
       {
         unified: '1F645-1F3FF-200D-2642-FE0F',
-        sheet: [31, 54]
+        sheet: [33, 42]
       }
     ],
     shortName: 'man-gesturing-no'
@@ -4796,27 +5455,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'nope'
     ],
-    sheet: [31, 43],
+    sheet: [33, 31],
     skinVariations: [
       {
         unified: '1F645-1F3FB-200D-2640-FE0F',
-        sheet: [31, 44]
+        sheet: [33, 32]
       },
       {
         unified: '1F645-1F3FC-200D-2640-FE0F',
-        sheet: [31, 45]
+        sheet: [33, 33]
       },
       {
         unified: '1F645-1F3FD-200D-2640-FE0F',
-        sheet: [31, 46]
+        sheet: [33, 34]
       },
       {
         unified: '1F645-1F3FE-200D-2640-FE0F',
-        sheet: [31, 47]
+        sheet: [33, 35]
       },
       {
         unified: '1F645-1F3FF-200D-2640-FE0F',
-        sheet: [31, 48]
+        sheet: [33, 36]
       }
     ],
     shortName: 'woman-gesturing-no'
@@ -4828,27 +5487,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_gesturing_ok',
       'agree'
     ],
-    sheet: [32, 15],
+    sheet: [34, 0],
     skinVariations: [
       {
         unified: '1F646-1F3FB',
-        sheet: [32, 16]
+        sheet: [34, 1]
       },
       {
         unified: '1F646-1F3FC',
-        sheet: [32, 17]
+        sheet: [34, 2]
       },
       {
         unified: '1F646-1F3FD',
-        sheet: [32, 18]
+        sheet: [34, 3]
       },
       {
         unified: '1F646-1F3FE',
-        sheet: [32, 19]
+        sheet: [34, 4]
       },
       {
         unified: '1F646-1F3FF',
-        sheet: [32, 20]
+        sheet: [34, 5]
       }
     ],
     shortName: 'ok_woman',
@@ -4866,27 +5525,27 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'man'
     ],
-    sheet: [32, 9],
+    sheet: [33, 55],
     skinVariations: [
       {
         unified: '1F646-1F3FB-200D-2642-FE0F',
-        sheet: [32, 10]
+        sheet: [33, 56]
       },
       {
         unified: '1F646-1F3FC-200D-2642-FE0F',
-        sheet: [32, 11]
+        sheet: [33, 57]
       },
       {
         unified: '1F646-1F3FD-200D-2642-FE0F',
-        sheet: [32, 12]
+        sheet: [33, 58]
       },
       {
         unified: '1F646-1F3FE-200D-2642-FE0F',
-        sheet: [32, 13]
+        sheet: [33, 59]
       },
       {
         unified: '1F646-1F3FF-200D-2642-FE0F',
-        sheet: [32, 14]
+        sheet: [33, 60]
       }
     ],
     shortName: 'man-gesturing-ok'
@@ -4904,27 +5563,27 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'woman'
     ],
-    sheet: [32, 3],
+    sheet: [33, 49],
     skinVariations: [
       {
         unified: '1F646-1F3FB-200D-2640-FE0F',
-        sheet: [32, 4]
+        sheet: [33, 50]
       },
       {
         unified: '1F646-1F3FC-200D-2640-FE0F',
-        sheet: [32, 5]
+        sheet: [33, 51]
       },
       {
         unified: '1F646-1F3FD-200D-2640-FE0F',
-        sheet: [32, 6]
+        sheet: [33, 52]
       },
       {
         unified: '1F646-1F3FE-200D-2640-FE0F',
-        sheet: [32, 7]
+        sheet: [33, 53]
       },
       {
         unified: '1F646-1F3FF-200D-2640-FE0F',
-        sheet: [32, 8]
+        sheet: [33, 54]
       }
     ],
     shortName: 'woman-gesturing-ok'
@@ -4936,27 +5595,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_tipping_hand',
       'information'
     ],
-    sheet: [24, 5],
+    sheet: [25, 22],
     skinVariations: [
       {
         unified: '1F481-1F3FB',
-        sheet: [24, 6]
+        sheet: [25, 23]
       },
       {
         unified: '1F481-1F3FC',
-        sheet: [24, 7]
+        sheet: [25, 24]
       },
       {
         unified: '1F481-1F3FD',
-        sheet: [24, 8]
+        sheet: [25, 25]
       },
       {
         unified: '1F481-1F3FE',
-        sheet: [24, 9]
+        sheet: [25, 26]
       },
       {
         unified: '1F481-1F3FF',
-        sheet: [24, 10]
+        sheet: [25, 27]
       }
     ],
     shortName: 'information_desk_person',
@@ -4973,27 +5632,27 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'information'
     ],
-    sheet: [23, 57],
+    sheet: [25, 16],
     skinVariations: [
       {
         unified: '1F481-1F3FB-200D-2642-FE0F',
-        sheet: [24, 0]
+        sheet: [25, 17]
       },
       {
         unified: '1F481-1F3FC-200D-2642-FE0F',
-        sheet: [24, 1]
+        sheet: [25, 18]
       },
       {
         unified: '1F481-1F3FD-200D-2642-FE0F',
-        sheet: [24, 2]
+        sheet: [25, 19]
       },
       {
         unified: '1F481-1F3FE-200D-2642-FE0F',
-        sheet: [24, 3]
+        sheet: [25, 20]
       },
       {
         unified: '1F481-1F3FF-200D-2642-FE0F',
-        sheet: [24, 4]
+        sheet: [25, 21]
       }
     ],
     shortName: 'man-tipping-hand'
@@ -5010,27 +5669,27 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'information'
     ],
-    sheet: [23, 51],
+    sheet: [25, 10],
     skinVariations: [
       {
         unified: '1F481-1F3FB-200D-2640-FE0F',
-        sheet: [23, 52]
+        sheet: [25, 11]
       },
       {
         unified: '1F481-1F3FC-200D-2640-FE0F',
-        sheet: [23, 53]
+        sheet: [25, 12]
       },
       {
         unified: '1F481-1F3FD-200D-2640-FE0F',
-        sheet: [23, 54]
+        sheet: [25, 13]
       },
       {
         unified: '1F481-1F3FE-200D-2640-FE0F',
-        sheet: [23, 55]
+        sheet: [25, 14]
       },
       {
         unified: '1F481-1F3FF-200D-2640-FE0F',
-        sheet: [23, 56]
+        sheet: [25, 15]
       }
     ],
     shortName: 'woman-tipping-hand'
@@ -5042,27 +5701,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_raising_hand',
       'question'
     ],
-    sheet: [32, 54],
+    sheet: [34, 39],
     skinVariations: [
       {
         unified: '1F64B-1F3FB',
-        sheet: [32, 55]
+        sheet: [34, 40]
       },
       {
         unified: '1F64B-1F3FC',
-        sheet: [32, 56]
+        sheet: [34, 41]
       },
       {
         unified: '1F64B-1F3FD',
-        sheet: [32, 57]
+        sheet: [34, 42]
       },
       {
         unified: '1F64B-1F3FE',
-        sheet: [33, 0]
+        sheet: [34, 43]
       },
       {
         unified: '1F64B-1F3FF',
-        sheet: [33, 1]
+        sheet: [34, 44]
       }
     ],
     shortName: 'raising_hand',
@@ -5077,27 +5736,27 @@ export const emojis: CompressedEmojiData[] = [
       'boy',
       'man'
     ],
-    sheet: [32, 48],
+    sheet: [34, 33],
     skinVariations: [
       {
         unified: '1F64B-1F3FB-200D-2642-FE0F',
-        sheet: [32, 49]
+        sheet: [34, 34]
       },
       {
         unified: '1F64B-1F3FC-200D-2642-FE0F',
-        sheet: [32, 50]
+        sheet: [34, 35]
       },
       {
         unified: '1F64B-1F3FD-200D-2642-FE0F',
-        sheet: [32, 51]
+        sheet: [34, 36]
       },
       {
         unified: '1F64B-1F3FE-200D-2642-FE0F',
-        sheet: [32, 52]
+        sheet: [34, 37]
       },
       {
         unified: '1F64B-1F3FF-200D-2642-FE0F',
-        sheet: [32, 53]
+        sheet: [34, 38]
       }
     ],
     shortName: 'man-raising-hand'
@@ -5112,27 +5771,27 @@ export const emojis: CompressedEmojiData[] = [
       'girl',
       'woman'
     ],
-    sheet: [32, 42],
+    sheet: [34, 27],
     skinVariations: [
       {
         unified: '1F64B-1F3FB-200D-2640-FE0F',
-        sheet: [32, 43]
+        sheet: [34, 28]
       },
       {
         unified: '1F64B-1F3FC-200D-2640-FE0F',
-        sheet: [32, 44]
+        sheet: [34, 29]
       },
       {
         unified: '1F64B-1F3FD-200D-2640-FE0F',
-        sheet: [32, 45]
+        sheet: [34, 30]
       },
       {
         unified: '1F64B-1F3FE-200D-2640-FE0F',
-        sheet: [32, 46]
+        sheet: [34, 31]
       },
       {
         unified: '1F64B-1F3FF-200D-2640-FE0F',
-        sheet: [32, 47]
+        sheet: [34, 32]
       }
     ],
     shortName: 'woman-raising-hand'
@@ -5144,27 +5803,27 @@ export const emojis: CompressedEmojiData[] = [
       'deaf_person',
       'accessibility'
     ],
-    sheet: [45, 28],
+    sheet: [47, 5],
     skinVariations: [
       {
         unified: '1F9CF-1F3FB',
-        sheet: [45, 29]
+        sheet: [47, 6]
       },
       {
         unified: '1F9CF-1F3FC',
-        sheet: [45, 30]
+        sheet: [47, 7]
       },
       {
         unified: '1F9CF-1F3FD',
-        sheet: [45, 31]
+        sheet: [47, 8]
       },
       {
         unified: '1F9CF-1F3FE',
-        sheet: [45, 32]
+        sheet: [47, 9]
       },
       {
         unified: '1F9CF-1F3FF',
-        sheet: [45, 33]
+        sheet: [47, 10]
       }
     ],
     shortName: 'deaf_person'
@@ -5176,27 +5835,27 @@ export const emojis: CompressedEmojiData[] = [
       'deaf_man',
       'accessibility'
     ],
-    sheet: [45, 22],
+    sheet: [46, 60],
     skinVariations: [
       {
         unified: '1F9CF-1F3FB-200D-2642-FE0F',
-        sheet: [45, 23]
+        sheet: [47, 0]
       },
       {
         unified: '1F9CF-1F3FC-200D-2642-FE0F',
-        sheet: [45, 24]
+        sheet: [47, 1]
       },
       {
         unified: '1F9CF-1F3FD-200D-2642-FE0F',
-        sheet: [45, 25]
+        sheet: [47, 2]
       },
       {
         unified: '1F9CF-1F3FE-200D-2642-FE0F',
-        sheet: [45, 26]
+        sheet: [47, 3]
       },
       {
         unified: '1F9CF-1F3FF-200D-2642-FE0F',
-        sheet: [45, 27]
+        sheet: [47, 4]
       }
     ],
     shortName: 'deaf_man'
@@ -5208,27 +5867,27 @@ export const emojis: CompressedEmojiData[] = [
       'deaf_woman',
       'accessibility'
     ],
-    sheet: [45, 16],
+    sheet: [46, 54],
     skinVariations: [
       {
         unified: '1F9CF-1F3FB-200D-2640-FE0F',
-        sheet: [45, 17]
+        sheet: [46, 55]
       },
       {
         unified: '1F9CF-1F3FC-200D-2640-FE0F',
-        sheet: [45, 18]
+        sheet: [46, 56]
       },
       {
         unified: '1F9CF-1F3FD-200D-2640-FE0F',
-        sheet: [45, 19]
+        sheet: [46, 57]
       },
       {
         unified: '1F9CF-1F3FE-200D-2640-FE0F',
-        sheet: [45, 20]
+        sheet: [46, 58]
       },
       {
         unified: '1F9CF-1F3FF-200D-2640-FE0F',
-        sheet: [45, 21]
+        sheet: [46, 59]
       }
     ],
     shortName: 'deaf_woman'
@@ -5240,27 +5899,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_bowing',
       'respectiful'
     ],
-    sheet: [32, 33],
+    sheet: [34, 18],
     skinVariations: [
       {
         unified: '1F647-1F3FB',
-        sheet: [32, 34]
+        sheet: [34, 19]
       },
       {
         unified: '1F647-1F3FC',
-        sheet: [32, 35]
+        sheet: [34, 20]
       },
       {
         unified: '1F647-1F3FD',
-        sheet: [32, 36]
+        sheet: [34, 21]
       },
       {
         unified: '1F647-1F3FE',
-        sheet: [32, 37]
+        sheet: [34, 22]
       },
       {
         unified: '1F647-1F3FF',
-        sheet: [32, 38]
+        sheet: [34, 23]
       }
     ],
     shortName: 'bow',
@@ -5276,27 +5935,27 @@ export const emojis: CompressedEmojiData[] = [
       'male',
       'boy'
     ],
-    sheet: [32, 27],
+    sheet: [34, 12],
     skinVariations: [
       {
         unified: '1F647-1F3FB-200D-2642-FE0F',
-        sheet: [32, 28]
+        sheet: [34, 13]
       },
       {
         unified: '1F647-1F3FC-200D-2642-FE0F',
-        sheet: [32, 29]
+        sheet: [34, 14]
       },
       {
         unified: '1F647-1F3FD-200D-2642-FE0F',
-        sheet: [32, 30]
+        sheet: [34, 15]
       },
       {
         unified: '1F647-1F3FE-200D-2642-FE0F',
-        sheet: [32, 31]
+        sheet: [34, 16]
       },
       {
         unified: '1F647-1F3FF-200D-2642-FE0F',
-        sheet: [32, 32]
+        sheet: [34, 17]
       }
     ],
     shortName: 'man-bowing'
@@ -5310,27 +5969,27 @@ export const emojis: CompressedEmojiData[] = [
       'female',
       'girl'
     ],
-    sheet: [32, 21],
+    sheet: [34, 6],
     skinVariations: [
       {
         unified: '1F647-1F3FB-200D-2640-FE0F',
-        sheet: [32, 22]
+        sheet: [34, 7]
       },
       {
         unified: '1F647-1F3FC-200D-2640-FE0F',
-        sheet: [32, 23]
+        sheet: [34, 8]
       },
       {
         unified: '1F647-1F3FD-200D-2640-FE0F',
-        sheet: [32, 24]
+        sheet: [34, 9]
       },
       {
         unified: '1F647-1F3FE-200D-2640-FE0F',
-        sheet: [32, 25]
+        sheet: [34, 10]
       },
       {
         unified: '1F647-1F3FF-200D-2640-FE0F',
-        sheet: [32, 26]
+        sheet: [34, 11]
       }
     ],
     shortName: 'woman-bowing'
@@ -5342,27 +6001,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_facepalming',
       'disappointed'
     ],
-    sheet: [38, 34],
+    sheet: [40, 30],
     skinVariations: [
       {
         unified: '1F926-1F3FB',
-        sheet: [38, 35]
+        sheet: [40, 31]
       },
       {
         unified: '1F926-1F3FC',
-        sheet: [38, 36]
+        sheet: [40, 32]
       },
       {
         unified: '1F926-1F3FD',
-        sheet: [38, 37]
+        sheet: [40, 33]
       },
       {
         unified: '1F926-1F3FE',
-        sheet: [38, 38]
+        sheet: [40, 34]
       },
       {
         unified: '1F926-1F3FF',
-        sheet: [38, 39]
+        sheet: [40, 35]
       }
     ],
     shortName: 'face_palm'
@@ -5377,27 +6036,27 @@ export const emojis: CompressedEmojiData[] = [
       'boy',
       'disbelief'
     ],
-    sheet: [38, 28],
+    sheet: [40, 24],
     skinVariations: [
       {
         unified: '1F926-1F3FB-200D-2642-FE0F',
-        sheet: [38, 29]
+        sheet: [40, 25]
       },
       {
         unified: '1F926-1F3FC-200D-2642-FE0F',
-        sheet: [38, 30]
+        sheet: [40, 26]
       },
       {
         unified: '1F926-1F3FD-200D-2642-FE0F',
-        sheet: [38, 31]
+        sheet: [40, 27]
       },
       {
         unified: '1F926-1F3FE-200D-2642-FE0F',
-        sheet: [38, 32]
+        sheet: [40, 28]
       },
       {
         unified: '1F926-1F3FF-200D-2642-FE0F',
-        sheet: [38, 33]
+        sheet: [40, 29]
       }
     ],
     shortName: 'man-facepalming'
@@ -5412,27 +6071,27 @@ export const emojis: CompressedEmojiData[] = [
       'girl',
       'disbelief'
     ],
-    sheet: [38, 22],
+    sheet: [40, 18],
     skinVariations: [
       {
         unified: '1F926-1F3FB-200D-2640-FE0F',
-        sheet: [38, 23]
+        sheet: [40, 19]
       },
       {
         unified: '1F926-1F3FC-200D-2640-FE0F',
-        sheet: [38, 24]
+        sheet: [40, 20]
       },
       {
         unified: '1F926-1F3FD-200D-2640-FE0F',
-        sheet: [38, 25]
+        sheet: [40, 21]
       },
       {
         unified: '1F926-1F3FE-200D-2640-FE0F',
-        sheet: [38, 26]
+        sheet: [40, 22]
       },
       {
         unified: '1F926-1F3FF-200D-2640-FE0F',
-        sheet: [38, 27]
+        sheet: [40, 23]
       }
     ],
     shortName: 'woman-facepalming'
@@ -5444,27 +6103,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_shrugging',
       'regardless'
     ],
-    sheet: [39, 57],
+    sheet: [41, 50],
     skinVariations: [
       {
         unified: '1F937-1F3FB',
-        sheet: [40, 0]
+        sheet: [41, 51]
       },
       {
         unified: '1F937-1F3FC',
-        sheet: [40, 1]
+        sheet: [41, 52]
       },
       {
         unified: '1F937-1F3FD',
-        sheet: [40, 2]
+        sheet: [41, 53]
       },
       {
         unified: '1F937-1F3FE',
-        sheet: [40, 3]
+        sheet: [41, 54]
       },
       {
         unified: '1F937-1F3FF',
-        sheet: [40, 4]
+        sheet: [41, 55]
       }
     ],
     shortName: 'shrug'
@@ -5481,27 +6140,27 @@ export const emojis: CompressedEmojiData[] = [
       'indifferent',
       'doubt'
     ],
-    sheet: [39, 51],
+    sheet: [41, 44],
     skinVariations: [
       {
         unified: '1F937-1F3FB-200D-2642-FE0F',
-        sheet: [39, 52]
+        sheet: [41, 45]
       },
       {
         unified: '1F937-1F3FC-200D-2642-FE0F',
-        sheet: [39, 53]
+        sheet: [41, 46]
       },
       {
         unified: '1F937-1F3FD-200D-2642-FE0F',
-        sheet: [39, 54]
+        sheet: [41, 47]
       },
       {
         unified: '1F937-1F3FE-200D-2642-FE0F',
-        sheet: [39, 55]
+        sheet: [41, 48]
       },
       {
         unified: '1F937-1F3FF-200D-2642-FE0F',
-        sheet: [39, 56]
+        sheet: [41, 49]
       }
     ],
     shortName: 'man-shrugging'
@@ -5518,27 +6177,27 @@ export const emojis: CompressedEmojiData[] = [
       'indifferent',
       'doubt'
     ],
-    sheet: [39, 45],
+    sheet: [41, 38],
     skinVariations: [
       {
         unified: '1F937-1F3FB-200D-2640-FE0F',
-        sheet: [39, 46]
+        sheet: [41, 39]
       },
       {
         unified: '1F937-1F3FC-200D-2640-FE0F',
-        sheet: [39, 47]
+        sheet: [41, 40]
       },
       {
         unified: '1F937-1F3FD-200D-2640-FE0F',
-        sheet: [39, 48]
+        sheet: [41, 41]
       },
       {
         unified: '1F937-1F3FE-200D-2640-FE0F',
-        sheet: [39, 49]
+        sheet: [41, 42]
       },
       {
         unified: '1F937-1F3FF-200D-2640-FE0F',
-        sheet: [39, 50]
+        sheet: [41, 43]
       }
     ],
     shortName: 'woman-shrugging'
@@ -5550,27 +6209,27 @@ export const emojis: CompressedEmojiData[] = [
       'health_worker',
       'hospital'
     ],
-    sheet: [48, 19],
+    sheet: [49, 48],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-2695-FE0F',
-        sheet: [48, 20]
+        sheet: [49, 49]
       },
       {
         unified: '1F9D1-1F3FC-200D-2695-FE0F',
-        sheet: [48, 21]
+        sheet: [49, 50]
       },
       {
         unified: '1F9D1-1F3FD-200D-2695-FE0F',
-        sheet: [48, 22]
+        sheet: [49, 51]
       },
       {
         unified: '1F9D1-1F3FE-200D-2695-FE0F',
-        sheet: [48, 23]
+        sheet: [49, 52]
       },
       {
         unified: '1F9D1-1F3FF-200D-2695-FE0F',
-        sheet: [48, 24]
+        sheet: [49, 53]
       }
     ],
     shortName: 'health_worker'
@@ -5587,27 +6246,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [16, 52],
+    sheet: [16, 4],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-2695-FE0F',
-        sheet: [16, 53]
+        sheet: [16, 5]
       },
       {
         unified: '1F468-1F3FC-200D-2695-FE0F',
-        sheet: [16, 54]
+        sheet: [16, 6]
       },
       {
         unified: '1F468-1F3FD-200D-2695-FE0F',
-        sheet: [16, 55]
+        sheet: [16, 7]
       },
       {
         unified: '1F468-1F3FE-200D-2695-FE0F',
-        sheet: [16, 56]
+        sheet: [16, 8]
       },
       {
         unified: '1F468-1F3FF-200D-2695-FE0F',
-        sheet: [16, 57]
+        sheet: [16, 9]
       }
     ],
     shortName: 'male-doctor'
@@ -5624,27 +6283,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [19, 40],
+    sheet: [19, 33],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-2695-FE0F',
-        sheet: [19, 41]
+        sheet: [19, 34]
       },
       {
         unified: '1F469-1F3FC-200D-2695-FE0F',
-        sheet: [19, 42]
+        sheet: [19, 35]
       },
       {
         unified: '1F469-1F3FD-200D-2695-FE0F',
-        sheet: [19, 43]
+        sheet: [19, 36]
       },
       {
         unified: '1F469-1F3FE-200D-2695-FE0F',
-        sheet: [19, 44]
+        sheet: [19, 37]
       },
       {
         unified: '1F469-1F3FF-200D-2695-FE0F',
-        sheet: [19, 45]
+        sheet: [19, 38]
       }
     ],
     shortName: 'female-doctor'
@@ -5653,27 +6312,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Student',
     unified: '1F9D1-200D-1F393',
     keywords: ['student', 'learn'],
-    sheet: [46, 1],
+    sheet: [47, 36],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F393',
-        sheet: [46, 2]
+        sheet: [47, 37]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F393',
-        sheet: [46, 3]
+        sheet: [47, 38]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F393',
-        sheet: [46, 4]
+        sheet: [47, 39]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F393',
-        sheet: [46, 5]
+        sheet: [47, 40]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F393',
-        sheet: [46, 6]
+        sheet: [47, 41]
       }
     ],
     shortName: 'student'
@@ -5687,27 +6346,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [14, 45],
+    sheet: [14, 3],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F393',
-        sheet: [14, 46]
+        sheet: [14, 4]
       },
       {
         unified: '1F468-1F3FC-200D-1F393',
-        sheet: [14, 47]
+        sheet: [14, 5]
       },
       {
         unified: '1F468-1F3FD-200D-1F393',
-        sheet: [14, 48]
+        sheet: [14, 6]
       },
       {
         unified: '1F468-1F3FE-200D-1F393',
-        sheet: [14, 49]
+        sheet: [14, 7]
       },
       {
         unified: '1F468-1F3FF-200D-1F393',
-        sheet: [14, 50]
+        sheet: [14, 8]
       }
     ],
     shortName: 'male-student'
@@ -5721,27 +6380,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [17, 38],
+    sheet: [17, 37],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F393',
-        sheet: [17, 39]
+        sheet: [17, 38]
       },
       {
         unified: '1F469-1F3FC-200D-1F393',
-        sheet: [17, 40]
+        sheet: [17, 39]
       },
       {
         unified: '1F469-1F3FD-200D-1F393',
-        sheet: [17, 41]
+        sheet: [17, 40]
       },
       {
         unified: '1F469-1F3FE-200D-1F393',
-        sheet: [17, 42]
+        sheet: [17, 41]
       },
       {
         unified: '1F469-1F3FF-200D-1F393',
-        sheet: [17, 43]
+        sheet: [17, 42]
       }
     ],
     shortName: 'female-student'
@@ -5750,27 +6409,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Teacher',
     unified: '1F9D1-200D-1F3EB',
     keywords: ['teacher', 'professor'],
-    sheet: [46, 19],
+    sheet: [47, 54],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F3EB',
-        sheet: [46, 20]
+        sheet: [47, 55]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F3EB',
-        sheet: [46, 21]
+        sheet: [47, 56]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F3EB',
-        sheet: [46, 22]
+        sheet: [47, 57]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F3EB',
-        sheet: [46, 23]
+        sheet: [47, 58]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F3EB',
-        sheet: [46, 24]
+        sheet: [47, 59]
       }
     ],
     shortName: 'teacher'
@@ -5785,27 +6444,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [15, 5],
+    sheet: [14, 21],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F3EB',
-        sheet: [15, 6]
+        sheet: [14, 22]
       },
       {
         unified: '1F468-1F3FC-200D-1F3EB',
-        sheet: [15, 7]
+        sheet: [14, 23]
       },
       {
         unified: '1F468-1F3FD-200D-1F3EB',
-        sheet: [15, 8]
+        sheet: [14, 24]
       },
       {
         unified: '1F468-1F3FE-200D-1F3EB',
-        sheet: [15, 9]
+        sheet: [14, 25]
       },
       {
         unified: '1F468-1F3FF-200D-1F3EB',
-        sheet: [15, 10]
+        sheet: [14, 26]
       }
     ],
     shortName: 'male-teacher'
@@ -5820,27 +6479,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [17, 56],
+    sheet: [17, 55],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F3EB',
-        sheet: [17, 57]
+        sheet: [17, 56]
       },
       {
         unified: '1F469-1F3FC-200D-1F3EB',
-        sheet: [18, 0]
+        sheet: [17, 57]
       },
       {
         unified: '1F469-1F3FD-200D-1F3EB',
-        sheet: [18, 1]
+        sheet: [17, 58]
       },
       {
         unified: '1F469-1F3FE-200D-1F3EB',
-        sheet: [18, 2]
+        sheet: [17, 59]
       },
       {
         unified: '1F469-1F3FF-200D-1F3EB',
-        sheet: [18, 3]
+        sheet: [17, 60]
       }
     ],
     shortName: 'female-teacher'
@@ -5849,27 +6508,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Judge',
     unified: '1F9D1-200D-2696-FE0F',
     keywords: ['judge', 'law'],
-    sheet: [48, 25],
+    sheet: [49, 54],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-2696-FE0F',
-        sheet: [48, 26]
+        sheet: [49, 55]
       },
       {
         unified: '1F9D1-1F3FC-200D-2696-FE0F',
-        sheet: [48, 27]
+        sheet: [49, 56]
       },
       {
         unified: '1F9D1-1F3FD-200D-2696-FE0F',
-        sheet: [48, 28]
+        sheet: [49, 57]
       },
       {
         unified: '1F9D1-1F3FE-200D-2696-FE0F',
-        sheet: [48, 29]
+        sheet: [49, 58]
       },
       {
         unified: '1F9D1-1F3FF-200D-2696-FE0F',
-        sheet: [48, 30]
+        sheet: [49, 59]
       }
     ],
     shortName: 'judge'
@@ -5884,27 +6543,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [17, 0],
+    sheet: [16, 10],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-2696-FE0F',
-        sheet: [17, 1]
+        sheet: [16, 11]
       },
       {
         unified: '1F468-1F3FC-200D-2696-FE0F',
-        sheet: [17, 2]
+        sheet: [16, 12]
       },
       {
         unified: '1F468-1F3FD-200D-2696-FE0F',
-        sheet: [17, 3]
+        sheet: [16, 13]
       },
       {
         unified: '1F468-1F3FE-200D-2696-FE0F',
-        sheet: [17, 4]
+        sheet: [16, 14]
       },
       {
         unified: '1F468-1F3FF-200D-2696-FE0F',
-        sheet: [17, 5]
+        sheet: [16, 15]
       }
     ],
     shortName: 'male-judge'
@@ -5919,27 +6578,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [19, 46],
+    sheet: [19, 39],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-2696-FE0F',
-        sheet: [19, 47]
+        sheet: [19, 40]
       },
       {
         unified: '1F469-1F3FC-200D-2696-FE0F',
-        sheet: [19, 48]
+        sheet: [19, 41]
       },
       {
         unified: '1F469-1F3FD-200D-2696-FE0F',
-        sheet: [19, 49]
+        sheet: [19, 42]
       },
       {
         unified: '1F469-1F3FE-200D-2696-FE0F',
-        sheet: [19, 50]
+        sheet: [19, 43]
       },
       {
         unified: '1F469-1F3FF-200D-2696-FE0F',
-        sheet: [19, 51]
+        sheet: [19, 44]
       }
     ],
     shortName: 'female-judge'
@@ -5948,27 +6607,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Farmer',
     unified: '1F9D1-200D-1F33E',
     keywords: ['farmer', 'crops'],
-    sheet: [45, 35],
+    sheet: [47, 12],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F33E',
-        sheet: [45, 36]
+        sheet: [47, 13]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F33E',
-        sheet: [45, 37]
+        sheet: [47, 14]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F33E',
-        sheet: [45, 38]
+        sheet: [47, 15]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F33E',
-        sheet: [45, 39]
+        sheet: [47, 16]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F33E',
-        sheet: [45, 40]
+        sheet: [47, 17]
       }
     ],
     shortName: 'farmer'
@@ -5983,27 +6642,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [14, 27],
+    sheet: [13, 46],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F33E',
-        sheet: [14, 28]
+        sheet: [13, 47]
       },
       {
         unified: '1F468-1F3FC-200D-1F33E',
-        sheet: [14, 29]
+        sheet: [13, 48]
       },
       {
         unified: '1F468-1F3FD-200D-1F33E',
-        sheet: [14, 30]
+        sheet: [13, 49]
       },
       {
         unified: '1F468-1F3FE-200D-1F33E',
-        sheet: [14, 31]
+        sheet: [13, 50]
       },
       {
         unified: '1F468-1F3FF-200D-1F33E',
-        sheet: [14, 32]
+        sheet: [13, 51]
       }
     ],
     shortName: 'male-farmer'
@@ -6018,27 +6677,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [17, 20],
+    sheet: [17, 19],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F33E',
-        sheet: [17, 21]
+        sheet: [17, 20]
       },
       {
         unified: '1F469-1F3FC-200D-1F33E',
-        sheet: [17, 22]
+        sheet: [17, 21]
       },
       {
         unified: '1F469-1F3FD-200D-1F33E',
-        sheet: [17, 23]
+        sheet: [17, 22]
       },
       {
         unified: '1F469-1F3FE-200D-1F33E',
-        sheet: [17, 24]
+        sheet: [17, 23]
       },
       {
         unified: '1F469-1F3FF-200D-1F33E',
-        sheet: [17, 25]
+        sheet: [17, 24]
       }
     ],
     shortName: 'female-farmer'
@@ -6052,27 +6711,27 @@ export const emojis: CompressedEmojiData[] = [
       'kitchen',
       'culinary'
     ],
-    sheet: [45, 41],
+    sheet: [47, 18],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F373',
-        sheet: [45, 42]
+        sheet: [47, 19]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F373',
-        sheet: [45, 43]
+        sheet: [47, 20]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F373',
-        sheet: [45, 44]
+        sheet: [47, 21]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F373',
-        sheet: [45, 45]
+        sheet: [47, 22]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F373',
-        sheet: [45, 46]
+        sheet: [47, 23]
       }
     ],
     shortName: 'cook'
@@ -6086,27 +6745,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [14, 33],
+    sheet: [13, 52],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F373',
-        sheet: [14, 34]
+        sheet: [13, 53]
       },
       {
         unified: '1F468-1F3FC-200D-1F373',
-        sheet: [14, 35]
+        sheet: [13, 54]
       },
       {
         unified: '1F468-1F3FD-200D-1F373',
-        sheet: [14, 36]
+        sheet: [13, 55]
       },
       {
         unified: '1F468-1F3FE-200D-1F373',
-        sheet: [14, 37]
+        sheet: [13, 56]
       },
       {
         unified: '1F468-1F3FF-200D-1F373',
-        sheet: [14, 38]
+        sheet: [13, 57]
       }
     ],
     shortName: 'male-cook'
@@ -6120,27 +6779,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [17, 26],
+    sheet: [17, 25],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F373',
-        sheet: [17, 27]
+        sheet: [17, 26]
       },
       {
         unified: '1F469-1F3FC-200D-1F373',
-        sheet: [17, 28]
+        sheet: [17, 27]
       },
       {
         unified: '1F469-1F3FD-200D-1F373',
-        sheet: [17, 29]
+        sheet: [17, 28]
       },
       {
         unified: '1F469-1F3FE-200D-1F373',
-        sheet: [17, 30]
+        sheet: [17, 29]
       },
       {
         unified: '1F469-1F3FF-200D-1F373',
-        sheet: [17, 31]
+        sheet: [17, 30]
       }
     ],
     shortName: 'female-cook'
@@ -6153,27 +6812,27 @@ export const emojis: CompressedEmojiData[] = [
       'worker',
       'technician'
     ],
-    sheet: [46, 43],
+    sheet: [48, 17],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F527',
-        sheet: [46, 44]
+        sheet: [48, 18]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F527',
-        sheet: [46, 45]
+        sheet: [48, 19]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F527',
-        sheet: [46, 46]
+        sheet: [48, 20]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F527',
-        sheet: [46, 47]
+        sheet: [48, 21]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F527',
-        sheet: [46, 48]
+        sheet: [48, 22]
       }
     ],
     shortName: 'mechanic'
@@ -6188,27 +6847,27 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'wrench'
     ],
-    sheet: [15, 44],
+    sheet: [14, 60],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F527',
-        sheet: [15, 45]
+        sheet: [15, 0]
       },
       {
         unified: '1F468-1F3FC-200D-1F527',
-        sheet: [15, 46]
+        sheet: [15, 1]
       },
       {
         unified: '1F468-1F3FD-200D-1F527',
-        sheet: [15, 47]
+        sheet: [15, 2]
       },
       {
         unified: '1F468-1F3FE-200D-1F527',
-        sheet: [15, 48]
+        sheet: [15, 3]
       },
       {
         unified: '1F468-1F3FF-200D-1F527',
-        sheet: [15, 49]
+        sheet: [15, 4]
       }
     ],
     shortName: 'male-mechanic'
@@ -6223,27 +6882,27 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'wrench'
     ],
-    sheet: [18, 32],
+    sheet: [18, 28],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F527',
-        sheet: [18, 33]
+        sheet: [18, 29]
       },
       {
         unified: '1F469-1F3FC-200D-1F527',
-        sheet: [18, 34]
+        sheet: [18, 30]
       },
       {
         unified: '1F469-1F3FD-200D-1F527',
-        sheet: [18, 35]
+        sheet: [18, 31]
       },
       {
         unified: '1F469-1F3FE-200D-1F527',
-        sheet: [18, 36]
+        sheet: [18, 32]
       },
       {
         unified: '1F469-1F3FF-200D-1F527',
-        sheet: [18, 37]
+        sheet: [18, 33]
       }
     ],
     shortName: 'female-mechanic'
@@ -6255,27 +6914,27 @@ export const emojis: CompressedEmojiData[] = [
       'factory_worker',
       'labor'
     ],
-    sheet: [46, 25],
+    sheet: [47, 60],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F3ED',
-        sheet: [46, 26]
+        sheet: [48, 0]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F3ED',
-        sheet: [46, 27]
+        sheet: [48, 1]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F3ED',
-        sheet: [46, 28]
+        sheet: [48, 2]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F3ED',
-        sheet: [46, 29]
+        sheet: [48, 3]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F3ED',
-        sheet: [46, 30]
+        sheet: [48, 4]
       }
     ],
     shortName: 'factory_worker'
@@ -6290,27 +6949,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [15, 11],
+    sheet: [14, 27],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F3ED',
-        sheet: [15, 12]
+        sheet: [14, 28]
       },
       {
         unified: '1F468-1F3FC-200D-1F3ED',
-        sheet: [15, 13]
+        sheet: [14, 29]
       },
       {
         unified: '1F468-1F3FD-200D-1F3ED',
-        sheet: [15, 14]
+        sheet: [14, 30]
       },
       {
         unified: '1F468-1F3FE-200D-1F3ED',
-        sheet: [15, 15]
+        sheet: [14, 31]
       },
       {
         unified: '1F468-1F3FF-200D-1F3ED',
-        sheet: [15, 16]
+        sheet: [14, 32]
       }
     ],
     shortName: 'male-factory-worker'
@@ -6325,27 +6984,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [18, 4],
+    sheet: [18, 0],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F3ED',
-        sheet: [18, 5]
+        sheet: [18, 1]
       },
       {
         unified: '1F469-1F3FC-200D-1F3ED',
-        sheet: [18, 6]
+        sheet: [18, 2]
       },
       {
         unified: '1F469-1F3FD-200D-1F3ED',
-        sheet: [18, 7]
+        sheet: [18, 3]
       },
       {
         unified: '1F469-1F3FE-200D-1F3ED',
-        sheet: [18, 8]
+        sheet: [18, 4]
       },
       {
         unified: '1F469-1F3FF-200D-1F3ED',
-        sheet: [18, 9]
+        sheet: [18, 5]
       }
     ],
     shortName: 'female-factory-worker'
@@ -6357,27 +7016,27 @@ export const emojis: CompressedEmojiData[] = [
       'office_worker',
       'business'
     ],
-    sheet: [46, 37],
+    sheet: [48, 11],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F4BC',
-        sheet: [46, 38]
+        sheet: [48, 12]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F4BC',
-        sheet: [46, 39]
+        sheet: [48, 13]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F4BC',
-        sheet: [46, 40]
+        sheet: [48, 14]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F4BC',
-        sheet: [46, 41]
+        sheet: [48, 15]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F4BC',
-        sheet: [46, 42]
+        sheet: [48, 16]
       }
     ],
     shortName: 'office_worker'
@@ -6392,27 +7051,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [15, 38],
+    sheet: [14, 54],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F4BC',
-        sheet: [15, 39]
+        sheet: [14, 55]
       },
       {
         unified: '1F468-1F3FC-200D-1F4BC',
-        sheet: [15, 40]
+        sheet: [14, 56]
       },
       {
         unified: '1F468-1F3FD-200D-1F4BC',
-        sheet: [15, 41]
+        sheet: [14, 57]
       },
       {
         unified: '1F468-1F3FE-200D-1F4BC',
-        sheet: [15, 42]
+        sheet: [14, 58]
       },
       {
         unified: '1F468-1F3FF-200D-1F4BC',
-        sheet: [15, 43]
+        sheet: [14, 59]
       }
     ],
     shortName: 'male-office-worker'
@@ -6427,27 +7086,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [18, 26],
+    sheet: [18, 22],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F4BC',
-        sheet: [18, 27]
+        sheet: [18, 23]
       },
       {
         unified: '1F469-1F3FC-200D-1F4BC',
-        sheet: [18, 28]
+        sheet: [18, 24]
       },
       {
         unified: '1F469-1F3FD-200D-1F4BC',
-        sheet: [18, 29]
+        sheet: [18, 25]
       },
       {
         unified: '1F469-1F3FE-200D-1F4BC',
-        sheet: [18, 30]
+        sheet: [18, 26]
       },
       {
         unified: '1F469-1F3FF-200D-1F4BC',
-        sheet: [18, 31]
+        sheet: [18, 27]
       }
     ],
     shortName: 'female-office-worker'
@@ -6459,27 +7118,27 @@ export const emojis: CompressedEmojiData[] = [
       'scientist',
       'chemistry'
     ],
-    sheet: [46, 49],
+    sheet: [48, 23],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F52C',
-        sheet: [46, 50]
+        sheet: [48, 24]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F52C',
-        sheet: [46, 51]
+        sheet: [48, 25]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F52C',
-        sheet: [46, 52]
+        sheet: [48, 26]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F52C',
-        sheet: [46, 53]
+        sheet: [48, 27]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F52C',
-        sheet: [46, 54]
+        sheet: [48, 28]
       }
     ],
     shortName: 'scientist'
@@ -6496,27 +7155,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [15, 50],
+    sheet: [15, 5],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F52C',
-        sheet: [15, 51]
+        sheet: [15, 6]
       },
       {
         unified: '1F468-1F3FC-200D-1F52C',
-        sheet: [15, 52]
+        sheet: [15, 7]
       },
       {
         unified: '1F468-1F3FD-200D-1F52C',
-        sheet: [15, 53]
+        sheet: [15, 8]
       },
       {
         unified: '1F468-1F3FE-200D-1F52C',
-        sheet: [15, 54]
+        sheet: [15, 9]
       },
       {
         unified: '1F468-1F3FF-200D-1F52C',
-        sheet: [15, 55]
+        sheet: [15, 10]
       }
     ],
     shortName: 'male-scientist'
@@ -6533,27 +7192,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [18, 38],
+    sheet: [18, 34],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F52C',
-        sheet: [18, 39]
+        sheet: [18, 35]
       },
       {
         unified: '1F469-1F3FC-200D-1F52C',
-        sheet: [18, 40]
+        sheet: [18, 36]
       },
       {
         unified: '1F469-1F3FD-200D-1F52C',
-        sheet: [18, 41]
+        sheet: [18, 37]
       },
       {
         unified: '1F469-1F3FE-200D-1F52C',
-        sheet: [18, 42]
+        sheet: [18, 38]
       },
       {
         unified: '1F469-1F3FF-200D-1F52C',
-        sheet: [18, 43]
+        sheet: [18, 39]
       }
     ],
     shortName: 'female-scientist'
@@ -6565,27 +7224,27 @@ export const emojis: CompressedEmojiData[] = [
       'technologist',
       'computer'
     ],
-    sheet: [46, 31],
+    sheet: [48, 5],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F4BB',
-        sheet: [46, 32]
+        sheet: [48, 6]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F4BB',
-        sheet: [46, 33]
+        sheet: [48, 7]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F4BB',
-        sheet: [46, 34]
+        sheet: [48, 8]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F4BB',
-        sheet: [46, 35]
+        sheet: [48, 9]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F4BB',
-        sheet: [46, 36]
+        sheet: [48, 10]
       }
     ],
     shortName: 'technologist'
@@ -6605,27 +7264,27 @@ export const emojis: CompressedEmojiData[] = [
       'laptop',
       'computer'
     ],
-    sheet: [15, 32],
+    sheet: [14, 48],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F4BB',
-        sheet: [15, 33]
+        sheet: [14, 49]
       },
       {
         unified: '1F468-1F3FC-200D-1F4BB',
-        sheet: [15, 34]
+        sheet: [14, 50]
       },
       {
         unified: '1F468-1F3FD-200D-1F4BB',
-        sheet: [15, 35]
+        sheet: [14, 51]
       },
       {
         unified: '1F468-1F3FE-200D-1F4BB',
-        sheet: [15, 36]
+        sheet: [14, 52]
       },
       {
         unified: '1F468-1F3FF-200D-1F4BB',
-        sheet: [15, 37]
+        sheet: [14, 53]
       }
     ],
     shortName: 'male-technologist'
@@ -6645,27 +7304,27 @@ export const emojis: CompressedEmojiData[] = [
       'laptop',
       'computer'
     ],
-    sheet: [18, 20],
+    sheet: [18, 16],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F4BB',
-        sheet: [18, 21]
+        sheet: [18, 17]
       },
       {
         unified: '1F469-1F3FC-200D-1F4BB',
-        sheet: [18, 22]
+        sheet: [18, 18]
       },
       {
         unified: '1F469-1F3FD-200D-1F4BB',
-        sheet: [18, 23]
+        sheet: [18, 19]
       },
       {
         unified: '1F469-1F3FE-200D-1F4BB',
-        sheet: [18, 24]
+        sheet: [18, 20]
       },
       {
         unified: '1F469-1F3FF-200D-1F4BB',
-        sheet: [18, 25]
+        sheet: [18, 21]
       }
     ],
     shortName: 'female-technologist'
@@ -6679,27 +7338,27 @@ export const emojis: CompressedEmojiData[] = [
       'artist',
       'performer'
     ],
-    sheet: [46, 7],
+    sheet: [47, 42],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F3A4',
-        sheet: [46, 8]
+        sheet: [47, 43]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F3A4',
-        sheet: [46, 9]
+        sheet: [47, 44]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F3A4',
-        sheet: [46, 10]
+        sheet: [47, 45]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F3A4',
-        sheet: [46, 11]
+        sheet: [47, 46]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F3A4',
-        sheet: [46, 12]
+        sheet: [47, 47]
       }
     ],
     shortName: 'singer'
@@ -6714,27 +7373,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [14, 51],
+    sheet: [14, 9],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F3A4',
-        sheet: [14, 52]
+        sheet: [14, 10]
       },
       {
         unified: '1F468-1F3FC-200D-1F3A4',
-        sheet: [14, 53]
+        sheet: [14, 11]
       },
       {
         unified: '1F468-1F3FD-200D-1F3A4',
-        sheet: [14, 54]
+        sheet: [14, 12]
       },
       {
         unified: '1F468-1F3FE-200D-1F3A4',
-        sheet: [14, 55]
+        sheet: [14, 13]
       },
       {
         unified: '1F468-1F3FF-200D-1F3A4',
-        sheet: [14, 56]
+        sheet: [14, 14]
       }
     ],
     shortName: 'male-singer'
@@ -6749,27 +7408,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [17, 44],
+    sheet: [17, 43],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F3A4',
-        sheet: [17, 45]
+        sheet: [17, 44]
       },
       {
         unified: '1F469-1F3FC-200D-1F3A4',
-        sheet: [17, 46]
+        sheet: [17, 45]
       },
       {
         unified: '1F469-1F3FD-200D-1F3A4',
-        sheet: [17, 47]
+        sheet: [17, 46]
       },
       {
         unified: '1F469-1F3FE-200D-1F3A4',
-        sheet: [17, 48]
+        sheet: [17, 47]
       },
       {
         unified: '1F469-1F3FF-200D-1F3A4',
-        sheet: [17, 49]
+        sheet: [17, 48]
       }
     ],
     shortName: 'female-singer'
@@ -6783,27 +7442,27 @@ export const emojis: CompressedEmojiData[] = [
       'draw',
       'creativity'
     ],
-    sheet: [46, 13],
+    sheet: [47, 48],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F3A8',
-        sheet: [46, 14]
+        sheet: [47, 49]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F3A8',
-        sheet: [46, 15]
+        sheet: [47, 50]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F3A8',
-        sheet: [46, 16]
+        sheet: [47, 51]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F3A8',
-        sheet: [46, 17]
+        sheet: [47, 52]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F3A8',
-        sheet: [46, 18]
+        sheet: [47, 53]
       }
     ],
     shortName: 'artist'
@@ -6817,27 +7476,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [14, 57],
+    sheet: [14, 15],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F3A8',
-        sheet: [15, 0]
+        sheet: [14, 16]
       },
       {
         unified: '1F468-1F3FC-200D-1F3A8',
-        sheet: [15, 1]
+        sheet: [14, 17]
       },
       {
         unified: '1F468-1F3FD-200D-1F3A8',
-        sheet: [15, 2]
+        sheet: [14, 18]
       },
       {
         unified: '1F468-1F3FE-200D-1F3A8',
-        sheet: [15, 3]
+        sheet: [14, 19]
       },
       {
         unified: '1F468-1F3FF-200D-1F3A8',
-        sheet: [15, 4]
+        sheet: [14, 20]
       }
     ],
     shortName: 'male-artist'
@@ -6851,27 +7510,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [17, 50],
+    sheet: [17, 49],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F3A8',
-        sheet: [17, 51]
+        sheet: [17, 50]
       },
       {
         unified: '1F469-1F3FC-200D-1F3A8',
-        sheet: [17, 52]
+        sheet: [17, 51]
       },
       {
         unified: '1F469-1F3FD-200D-1F3A8',
-        sheet: [17, 53]
+        sheet: [17, 52]
       },
       {
         unified: '1F469-1F3FE-200D-1F3A8',
-        sheet: [17, 54]
+        sheet: [17, 53]
       },
       {
         unified: '1F469-1F3FF-200D-1F3A8',
-        sheet: [17, 55]
+        sheet: [17, 54]
       }
     ],
     shortName: 'female-artist'
@@ -6885,27 +7544,27 @@ export const emojis: CompressedEmojiData[] = [
       'plane',
       'airplane'
     ],
-    sheet: [48, 31],
+    sheet: [49, 60],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-2708-FE0F',
-        sheet: [48, 32]
+        sheet: [50, 0]
       },
       {
         unified: '1F9D1-1F3FC-200D-2708-FE0F',
-        sheet: [48, 33]
+        sheet: [50, 1]
       },
       {
         unified: '1F9D1-1F3FD-200D-2708-FE0F',
-        sheet: [48, 34]
+        sheet: [50, 2]
       },
       {
         unified: '1F9D1-1F3FE-200D-2708-FE0F',
-        sheet: [48, 35]
+        sheet: [50, 3]
       },
       {
         unified: '1F9D1-1F3FF-200D-2708-FE0F',
-        sheet: [48, 36]
+        sheet: [50, 4]
       }
     ],
     shortName: 'pilot'
@@ -6920,27 +7579,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [17, 6],
+    sheet: [16, 16],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-2708-FE0F',
-        sheet: [17, 7]
+        sheet: [16, 17]
       },
       {
         unified: '1F468-1F3FC-200D-2708-FE0F',
-        sheet: [17, 8]
+        sheet: [16, 18]
       },
       {
         unified: '1F468-1F3FD-200D-2708-FE0F',
-        sheet: [17, 9]
+        sheet: [16, 19]
       },
       {
         unified: '1F468-1F3FE-200D-2708-FE0F',
-        sheet: [17, 10]
+        sheet: [16, 20]
       },
       {
         unified: '1F468-1F3FF-200D-2708-FE0F',
-        sheet: [17, 11]
+        sheet: [16, 21]
       }
     ],
     shortName: 'male-pilot'
@@ -6955,27 +7614,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [19, 52],
+    sheet: [19, 45],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-2708-FE0F',
-        sheet: [19, 53]
+        sheet: [19, 46]
       },
       {
         unified: '1F469-1F3FC-200D-2708-FE0F',
-        sheet: [19, 54]
+        sheet: [19, 47]
       },
       {
         unified: '1F469-1F3FD-200D-2708-FE0F',
-        sheet: [19, 55]
+        sheet: [19, 48]
       },
       {
         unified: '1F469-1F3FE-200D-2708-FE0F',
-        sheet: [19, 56]
+        sheet: [19, 49]
       },
       {
         unified: '1F469-1F3FF-200D-2708-FE0F',
-        sheet: [19, 57]
+        sheet: [19, 50]
       }
     ],
     shortName: 'female-pilot'
@@ -6987,27 +7646,27 @@ export const emojis: CompressedEmojiData[] = [
       'astronaut',
       'outerspace'
     ],
-    sheet: [46, 55],
+    sheet: [48, 29],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F680',
-        sheet: [46, 56]
+        sheet: [48, 30]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F680',
-        sheet: [46, 57]
+        sheet: [48, 31]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F680',
-        sheet: [47, 0]
+        sheet: [48, 32]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F680',
-        sheet: [47, 1]
+        sheet: [48, 33]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F680',
-        sheet: [47, 2]
+        sheet: [48, 34]
       }
     ],
     shortName: 'astronaut'
@@ -7022,27 +7681,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [15, 56],
+    sheet: [15, 11],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F680',
-        sheet: [15, 57]
+        sheet: [15, 12]
       },
       {
         unified: '1F468-1F3FC-200D-1F680',
-        sheet: [16, 0]
+        sheet: [15, 13]
       },
       {
         unified: '1F468-1F3FD-200D-1F680',
-        sheet: [16, 1]
+        sheet: [15, 14]
       },
       {
         unified: '1F468-1F3FE-200D-1F680',
-        sheet: [16, 2]
+        sheet: [15, 15]
       },
       {
         unified: '1F468-1F3FF-200D-1F680',
-        sheet: [16, 3]
+        sheet: [15, 16]
       }
     ],
     shortName: 'male-astronaut'
@@ -7057,27 +7716,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [18, 44],
+    sheet: [18, 40],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F680',
-        sheet: [18, 45]
+        sheet: [18, 41]
       },
       {
         unified: '1F469-1F3FC-200D-1F680',
-        sheet: [18, 46]
+        sheet: [18, 42]
       },
       {
         unified: '1F469-1F3FD-200D-1F680',
-        sheet: [18, 47]
+        sheet: [18, 43]
       },
       {
         unified: '1F469-1F3FE-200D-1F680',
-        sheet: [18, 48]
+        sheet: [18, 44]
       },
       {
         unified: '1F469-1F3FF-200D-1F680',
-        sheet: [18, 49]
+        sheet: [18, 45]
       }
     ],
     shortName: 'female-astronaut'
@@ -7086,27 +7745,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Firefighter',
     unified: '1F9D1-200D-1F692',
     keywords: ['firefighter', 'fire'],
-    sheet: [47, 3],
+    sheet: [48, 35],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F692',
-        sheet: [47, 4]
+        sheet: [48, 36]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F692',
-        sheet: [47, 5]
+        sheet: [48, 37]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F692',
-        sheet: [47, 6]
+        sheet: [48, 38]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F692',
-        sheet: [47, 7]
+        sheet: [48, 39]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F692',
-        sheet: [47, 8]
+        sheet: [48, 40]
       }
     ],
     shortName: 'firefighter'
@@ -7120,27 +7779,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'human'
     ],
-    sheet: [16, 4],
+    sheet: [15, 17],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F692',
-        sheet: [16, 5]
+        sheet: [15, 18]
       },
       {
         unified: '1F468-1F3FC-200D-1F692',
-        sheet: [16, 6]
+        sheet: [15, 19]
       },
       {
         unified: '1F468-1F3FD-200D-1F692',
-        sheet: [16, 7]
+        sheet: [15, 20]
       },
       {
         unified: '1F468-1F3FE-200D-1F692',
-        sheet: [16, 8]
+        sheet: [15, 21]
       },
       {
         unified: '1F468-1F3FF-200D-1F692',
-        sheet: [16, 9]
+        sheet: [15, 22]
       }
     ],
     shortName: 'male-firefighter'
@@ -7154,27 +7813,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'human'
     ],
-    sheet: [18, 50],
+    sheet: [18, 46],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F692',
-        sheet: [18, 51]
+        sheet: [18, 47]
       },
       {
         unified: '1F469-1F3FC-200D-1F692',
-        sheet: [18, 52]
+        sheet: [18, 48]
       },
       {
         unified: '1F469-1F3FD-200D-1F692',
-        sheet: [18, 53]
+        sheet: [18, 49]
       },
       {
         unified: '1F469-1F3FE-200D-1F692',
-        sheet: [18, 54]
+        sheet: [18, 50]
       },
       {
         unified: '1F469-1F3FF-200D-1F692',
-        sheet: [18, 55]
+        sheet: [18, 51]
       }
     ],
     shortName: 'female-firefighter'
@@ -7183,27 +7842,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Police Officer',
     unified: '1F46E',
     keywords: ['police_officer', 'cop'],
-    sheet: [21, 43],
+    sheet: [23, 8],
     skinVariations: [
       {
         unified: '1F46E-1F3FB',
-        sheet: [21, 44]
+        sheet: [23, 9]
       },
       {
         unified: '1F46E-1F3FC',
-        sheet: [21, 45]
+        sheet: [23, 10]
       },
       {
         unified: '1F46E-1F3FD',
-        sheet: [21, 46]
+        sheet: [23, 11]
       },
       {
         unified: '1F46E-1F3FE',
-        sheet: [21, 47]
+        sheet: [23, 12]
       },
       {
         unified: '1F46E-1F3FF',
-        sheet: [21, 48]
+        sheet: [23, 13]
       }
     ],
     shortName: 'cop',
@@ -7223,27 +7882,27 @@ export const emojis: CompressedEmojiData[] = [
       'arrest',
       '911'
     ],
-    sheet: [21, 37],
+    sheet: [23, 2],
     skinVariations: [
       {
         unified: '1F46E-1F3FB-200D-2642-FE0F',
-        sheet: [21, 38]
+        sheet: [23, 3]
       },
       {
         unified: '1F46E-1F3FC-200D-2642-FE0F',
-        sheet: [21, 39]
+        sheet: [23, 4]
       },
       {
         unified: '1F46E-1F3FD-200D-2642-FE0F',
-        sheet: [21, 40]
+        sheet: [23, 5]
       },
       {
         unified: '1F46E-1F3FE-200D-2642-FE0F',
-        sheet: [21, 41]
+        sheet: [23, 6]
       },
       {
         unified: '1F46E-1F3FF-200D-2642-FE0F',
-        sheet: [21, 42]
+        sheet: [23, 7]
       }
     ],
     shortName: 'male-police-officer'
@@ -7262,27 +7921,27 @@ export const emojis: CompressedEmojiData[] = [
       '911',
       'female'
     ],
-    sheet: [21, 31],
+    sheet: [22, 57],
     skinVariations: [
       {
         unified: '1F46E-1F3FB-200D-2640-FE0F',
-        sheet: [21, 32]
+        sheet: [22, 58]
       },
       {
         unified: '1F46E-1F3FC-200D-2640-FE0F',
-        sheet: [21, 33]
+        sheet: [22, 59]
       },
       {
         unified: '1F46E-1F3FD-200D-2640-FE0F',
-        sheet: [21, 34]
+        sheet: [22, 60]
       },
       {
         unified: '1F46E-1F3FE-200D-2640-FE0F',
-        sheet: [21, 35]
+        sheet: [23, 0]
       },
       {
         unified: '1F46E-1F3FF-200D-2640-FE0F',
-        sheet: [21, 36]
+        sheet: [23, 1]
       }
     ],
     shortName: 'female-police-officer'
@@ -7296,27 +7955,27 @@ export const emojis: CompressedEmojiData[] = [
       'spy',
       'detective'
     ],
-    sheet: [29, 25],
+    sheet: [31, 16],
     skinVariations: [
       {
         unified: '1F575-1F3FB',
-        sheet: [29, 26]
+        sheet: [31, 17]
       },
       {
         unified: '1F575-1F3FC',
-        sheet: [29, 27]
+        sheet: [31, 18]
       },
       {
         unified: '1F575-1F3FD',
-        sheet: [29, 28]
+        sheet: [31, 19]
       },
       {
         unified: '1F575-1F3FE',
-        sheet: [29, 29]
+        sheet: [31, 20]
       },
       {
         unified: '1F575-1F3FF',
-        sheet: [29, 30]
+        sheet: [31, 21]
       }
     ],
     shortName: 'sleuth_or_spy',
@@ -7330,28 +7989,28 @@ export const emojis: CompressedEmojiData[] = [
       'man_detective',
       'crime'
     ],
-    sheet: [29, 19],
+    sheet: [31, 10],
     hidden: ['facebook'],
     skinVariations: [
       {
         unified: '1F575-1F3FB-200D-2642-FE0F',
-        sheet: [29, 20]
+        sheet: [31, 11]
       },
       {
         unified: '1F575-1F3FC-200D-2642-FE0F',
-        sheet: [29, 21]
+        sheet: [31, 12]
       },
       {
         unified: '1F575-1F3FD-200D-2642-FE0F',
-        sheet: [29, 22]
+        sheet: [31, 13]
       },
       {
         unified: '1F575-1F3FE-200D-2642-FE0F',
-        sheet: [29, 23]
+        sheet: [31, 14]
       },
       {
         unified: '1F575-1F3FF-200D-2642-FE0F',
-        sheet: [29, 24]
+        sheet: [31, 15]
       }
     ],
     shortName: 'male-detective'
@@ -7367,28 +8026,28 @@ export const emojis: CompressedEmojiData[] = [
       'female',
       'woman'
     ],
-    sheet: [29, 13],
+    sheet: [31, 4],
     hidden: ['facebook'],
     skinVariations: [
       {
         unified: '1F575-1F3FB-200D-2640-FE0F',
-        sheet: [29, 14]
+        sheet: [31, 5]
       },
       {
         unified: '1F575-1F3FC-200D-2640-FE0F',
-        sheet: [29, 15]
+        sheet: [31, 6]
       },
       {
         unified: '1F575-1F3FD-200D-2640-FE0F',
-        sheet: [29, 16]
+        sheet: [31, 7]
       },
       {
         unified: '1F575-1F3FE-200D-2640-FE0F',
-        sheet: [29, 17]
+        sheet: [31, 8]
       },
       {
         unified: '1F575-1F3FF-200D-2640-FE0F',
-        sheet: [29, 18]
+        sheet: [31, 9]
       }
     ],
     shortName: 'female-detective'
@@ -7397,27 +8056,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Guardsman',
     unified: '1F482',
     keywords: ['guard', 'protect'],
-    sheet: [24, 23],
+    sheet: [25, 40],
     skinVariations: [
       {
         unified: '1F482-1F3FB',
-        sheet: [24, 24]
+        sheet: [25, 41]
       },
       {
         unified: '1F482-1F3FC',
-        sheet: [24, 25]
+        sheet: [25, 42]
       },
       {
         unified: '1F482-1F3FD',
-        sheet: [24, 26]
+        sheet: [25, 43]
       },
       {
         unified: '1F482-1F3FE',
-        sheet: [24, 27]
+        sheet: [25, 44]
       },
       {
         unified: '1F482-1F3FF',
-        sheet: [24, 28]
+        sheet: [25, 45]
       }
     ],
     shortName: 'guardsman',
@@ -7436,27 +8095,27 @@ export const emojis: CompressedEmojiData[] = [
       'guy',
       'royal'
     ],
-    sheet: [24, 17],
+    sheet: [25, 34],
     skinVariations: [
       {
         unified: '1F482-1F3FB-200D-2642-FE0F',
-        sheet: [24, 18]
+        sheet: [25, 35]
       },
       {
         unified: '1F482-1F3FC-200D-2642-FE0F',
-        sheet: [24, 19]
+        sheet: [25, 36]
       },
       {
         unified: '1F482-1F3FD-200D-2642-FE0F',
-        sheet: [24, 20]
+        sheet: [25, 37]
       },
       {
         unified: '1F482-1F3FE-200D-2642-FE0F',
-        sheet: [24, 21]
+        sheet: [25, 38]
       },
       {
         unified: '1F482-1F3FF-200D-2642-FE0F',
-        sheet: [24, 22]
+        sheet: [25, 39]
       }
     ],
     shortName: 'male-guard'
@@ -7473,27 +8132,27 @@ export const emojis: CompressedEmojiData[] = [
       'royal',
       'woman'
     ],
-    sheet: [24, 11],
+    sheet: [25, 28],
     skinVariations: [
       {
         unified: '1F482-1F3FB-200D-2640-FE0F',
-        sheet: [24, 12]
+        sheet: [25, 29]
       },
       {
         unified: '1F482-1F3FC-200D-2640-FE0F',
-        sheet: [24, 13]
+        sheet: [25, 30]
       },
       {
         unified: '1F482-1F3FD-200D-2640-FE0F',
-        sheet: [24, 14]
+        sheet: [25, 31]
       },
       {
         unified: '1F482-1F3FE-200D-2640-FE0F',
-        sheet: [24, 15]
+        sheet: [25, 32]
       },
       {
         unified: '1F482-1F3FF-200D-2640-FE0F',
-        sheet: [24, 16]
+        sheet: [25, 33]
       }
     ],
     shortName: 'female-guard'
@@ -7507,27 +8166,27 @@ export const emojis: CompressedEmojiData[] = [
       'skills',
       'japanese'
     ],
-    sheet: [42, 20],
+    sheet: [44, 4],
     skinVariations: [
       {
         unified: '1F977-1F3FB',
-        sheet: [42, 21]
+        sheet: [44, 5]
       },
       {
         unified: '1F977-1F3FC',
-        sheet: [42, 22]
+        sheet: [44, 6]
       },
       {
         unified: '1F977-1F3FD',
-        sheet: [42, 23]
+        sheet: [44, 7]
       },
       {
         unified: '1F977-1F3FE',
-        sheet: [42, 24]
+        sheet: [44, 8]
       },
       {
         unified: '1F977-1F3FF',
-        sheet: [42, 25]
+        sheet: [44, 9]
       }
     ],
     shortName: 'ninja'
@@ -7540,27 +8199,27 @@ export const emojis: CompressedEmojiData[] = [
       'labor',
       'build'
     ],
-    sheet: [23, 26],
+    sheet: [24, 46],
     skinVariations: [
       {
         unified: '1F477-1F3FB',
-        sheet: [23, 27]
+        sheet: [24, 47]
       },
       {
         unified: '1F477-1F3FC',
-        sheet: [23, 28]
+        sheet: [24, 48]
       },
       {
         unified: '1F477-1F3FD',
-        sheet: [23, 29]
+        sheet: [24, 49]
       },
       {
         unified: '1F477-1F3FE',
-        sheet: [23, 30]
+        sheet: [24, 50]
       },
       {
         unified: '1F477-1F3FF',
-        sheet: [23, 31]
+        sheet: [24, 51]
       }
     ],
     shortName: 'construction_worker',
@@ -7581,27 +8240,27 @@ export const emojis: CompressedEmojiData[] = [
       'worker',
       'labor'
     ],
-    sheet: [23, 20],
+    sheet: [24, 40],
     skinVariations: [
       {
         unified: '1F477-1F3FB-200D-2642-FE0F',
-        sheet: [23, 21]
+        sheet: [24, 41]
       },
       {
         unified: '1F477-1F3FC-200D-2642-FE0F',
-        sheet: [23, 22]
+        sheet: [24, 42]
       },
       {
         unified: '1F477-1F3FD-200D-2642-FE0F',
-        sheet: [23, 23]
+        sheet: [24, 43]
       },
       {
         unified: '1F477-1F3FE-200D-2642-FE0F',
-        sheet: [23, 24]
+        sheet: [24, 44]
       },
       {
         unified: '1F477-1F3FF-200D-2642-FE0F',
-        sheet: [23, 25]
+        sheet: [24, 45]
       }
     ],
     shortName: 'male-construction-worker'
@@ -7620,30 +8279,69 @@ export const emojis: CompressedEmojiData[] = [
       'labor',
       'woman'
     ],
-    sheet: [23, 14],
+    sheet: [24, 34],
     skinVariations: [
       {
         unified: '1F477-1F3FB-200D-2640-FE0F',
-        sheet: [23, 15]
+        sheet: [24, 35]
       },
       {
         unified: '1F477-1F3FC-200D-2640-FE0F',
-        sheet: [23, 16]
+        sheet: [24, 36]
       },
       {
         unified: '1F477-1F3FD-200D-2640-FE0F',
-        sheet: [23, 17]
+        sheet: [24, 37]
       },
       {
         unified: '1F477-1F3FE-200D-2640-FE0F',
-        sheet: [23, 18]
+        sheet: [24, 38]
       },
       {
         unified: '1F477-1F3FF-200D-2640-FE0F',
-        sheet: [23, 19]
+        sheet: [24, 39]
       }
     ],
     shortName: 'female-construction-worker'
+  },
+  {
+    name: 'Person with Crown',
+    unified: '1FAC5',
+    keywords: [
+      'person with crown',
+      'royalty',
+      'power'
+    ],
+    sheet: [54, 57],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1FAC5-1F3FB',
+        sheet: [54, 58],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC5-1F3FC',
+        sheet: [54, 59],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC5-1F3FD',
+        sheet: [54, 60],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC5-1F3FE',
+        sheet: [55, 0],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC5-1F3FF',
+        sheet: [55, 1],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'person_with_crown'
   },
   {
     name: 'Prince',
@@ -7657,27 +8355,27 @@ export const emojis: CompressedEmojiData[] = [
       'royal',
       'king'
     ],
-    sheet: [39, 15],
+    sheet: [41, 8],
     skinVariations: [
       {
         unified: '1F934-1F3FB',
-        sheet: [39, 16]
+        sheet: [41, 9]
       },
       {
         unified: '1F934-1F3FC',
-        sheet: [39, 17]
+        sheet: [41, 10]
       },
       {
         unified: '1F934-1F3FD',
-        sheet: [39, 18]
+        sheet: [41, 11]
       },
       {
         unified: '1F934-1F3FE',
-        sheet: [39, 19]
+        sheet: [41, 12]
       },
       {
         unified: '1F934-1F3FF',
-        sheet: [39, 20]
+        sheet: [41, 13]
       }
     ],
     shortName: 'prince'
@@ -7695,27 +8393,27 @@ export const emojis: CompressedEmojiData[] = [
       'royal',
       'queen'
     ],
-    sheet: [23, 32],
+    sheet: [24, 52],
     skinVariations: [
       {
         unified: '1F478-1F3FB',
-        sheet: [23, 33]
+        sheet: [24, 53]
       },
       {
         unified: '1F478-1F3FC',
-        sheet: [23, 34]
+        sheet: [24, 54]
       },
       {
         unified: '1F478-1F3FD',
-        sheet: [23, 35]
+        sheet: [24, 55]
       },
       {
         unified: '1F478-1F3FE',
-        sheet: [23, 36]
+        sheet: [24, 56]
       },
       {
         unified: '1F478-1F3FF',
-        sheet: [23, 37]
+        sheet: [24, 57]
       }
     ],
     shortName: 'princess'
@@ -7727,27 +8425,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_wearing_turban',
       'headdress'
     ],
-    sheet: [22, 48],
+    sheet: [24, 10],
     skinVariations: [
       {
         unified: '1F473-1F3FB',
-        sheet: [22, 49]
+        sheet: [24, 11]
       },
       {
         unified: '1F473-1F3FC',
-        sheet: [22, 50]
+        sheet: [24, 12]
       },
       {
         unified: '1F473-1F3FD',
-        sheet: [22, 51]
+        sheet: [24, 13]
       },
       {
         unified: '1F473-1F3FE',
-        sheet: [22, 52]
+        sheet: [24, 14]
       },
       {
         unified: '1F473-1F3FF',
-        sheet: [22, 53]
+        sheet: [24, 15]
       }
     ],
     shortName: 'man_with_turban',
@@ -7764,27 +8462,27 @@ export const emojis: CompressedEmojiData[] = [
       'hinduism',
       'arabs'
     ],
-    sheet: [22, 42],
+    sheet: [24, 4],
     skinVariations: [
       {
         unified: '1F473-1F3FB-200D-2642-FE0F',
-        sheet: [22, 43]
+        sheet: [24, 5]
       },
       {
         unified: '1F473-1F3FC-200D-2642-FE0F',
-        sheet: [22, 44]
+        sheet: [24, 6]
       },
       {
         unified: '1F473-1F3FD-200D-2642-FE0F',
-        sheet: [22, 45]
+        sheet: [24, 7]
       },
       {
         unified: '1F473-1F3FE-200D-2642-FE0F',
-        sheet: [22, 46]
+        sheet: [24, 8]
       },
       {
         unified: '1F473-1F3FF-200D-2642-FE0F',
-        sheet: [22, 47]
+        sheet: [24, 9]
       }
     ],
     shortName: 'man-wearing-turban'
@@ -7800,27 +8498,27 @@ export const emojis: CompressedEmojiData[] = [
       'arabs',
       'woman'
     ],
-    sheet: [22, 36],
+    sheet: [23, 59],
     skinVariations: [
       {
         unified: '1F473-1F3FB-200D-2640-FE0F',
-        sheet: [22, 37]
+        sheet: [23, 60]
       },
       {
         unified: '1F473-1F3FC-200D-2640-FE0F',
-        sheet: [22, 38]
+        sheet: [24, 0]
       },
       {
         unified: '1F473-1F3FD-200D-2640-FE0F',
-        sheet: [22, 39]
+        sheet: [24, 1]
       },
       {
         unified: '1F473-1F3FE-200D-2640-FE0F',
-        sheet: [22, 40]
+        sheet: [24, 2]
       },
       {
         unified: '1F473-1F3FF-200D-2640-FE0F',
-        sheet: [22, 41]
+        sheet: [24, 3]
       }
     ],
     shortName: 'woman-wearing-turban'
@@ -7834,27 +8532,27 @@ export const emojis: CompressedEmojiData[] = [
       'boy',
       'chinese'
     ],
-    sheet: [22, 30],
+    sheet: [23, 53],
     skinVariations: [
       {
         unified: '1F472-1F3FB',
-        sheet: [22, 31]
+        sheet: [23, 54]
       },
       {
         unified: '1F472-1F3FC',
-        sheet: [22, 32]
+        sheet: [23, 55]
       },
       {
         unified: '1F472-1F3FD',
-        sheet: [22, 33]
+        sheet: [23, 56]
       },
       {
         unified: '1F472-1F3FE',
-        sheet: [22, 34]
+        sheet: [23, 57]
       },
       {
         unified: '1F472-1F3FF',
-        sheet: [22, 35]
+        sheet: [23, 58]
       }
     ],
     shortName: 'man_with_gua_pi_mao'
@@ -7869,27 +8567,27 @@ export const emojis: CompressedEmojiData[] = [
       'mantilla',
       'tichel'
     ],
-    sheet: [49, 3],
+    sheet: [50, 41],
     skinVariations: [
       {
         unified: '1F9D5-1F3FB',
-        sheet: [49, 4]
+        sheet: [50, 42]
       },
       {
         unified: '1F9D5-1F3FC',
-        sheet: [49, 5]
+        sheet: [50, 43]
       },
       {
         unified: '1F9D5-1F3FD',
-        sheet: [49, 6]
+        sheet: [50, 44]
       },
       {
         unified: '1F9D5-1F3FE',
-        sheet: [49, 7]
+        sheet: [50, 45]
       },
       {
         unified: '1F9D5-1F3FF',
-        sheet: [49, 8]
+        sheet: [50, 46]
       }
     ],
     shortName: 'person_with_headscarf'
@@ -7904,27 +8602,27 @@ export const emojis: CompressedEmojiData[] = [
       'wedding',
       'groom'
     ],
-    sheet: [39, 33],
+    sheet: [41, 26],
     skinVariations: [
       {
         unified: '1F935-1F3FB',
-        sheet: [39, 34]
+        sheet: [41, 27]
       },
       {
         unified: '1F935-1F3FC',
-        sheet: [39, 35]
+        sheet: [41, 28]
       },
       {
         unified: '1F935-1F3FD',
-        sheet: [39, 36]
+        sheet: [41, 29]
       },
       {
         unified: '1F935-1F3FE',
-        sheet: [39, 37]
+        sheet: [41, 30]
       },
       {
         unified: '1F935-1F3FF',
-        sheet: [39, 38]
+        sheet: [41, 31]
       }
     ],
     shortName: 'person_in_tuxedo'
@@ -7937,27 +8635,27 @@ export const emojis: CompressedEmojiData[] = [
       'formal',
       'fashion'
     ],
-    sheet: [39, 27],
+    sheet: [41, 20],
     skinVariations: [
       {
         unified: '1F935-1F3FB-200D-2642-FE0F',
-        sheet: [39, 28]
+        sheet: [41, 21]
       },
       {
         unified: '1F935-1F3FC-200D-2642-FE0F',
-        sheet: [39, 29]
+        sheet: [41, 22]
       },
       {
         unified: '1F935-1F3FD-200D-2642-FE0F',
-        sheet: [39, 30]
+        sheet: [41, 23]
       },
       {
         unified: '1F935-1F3FE-200D-2642-FE0F',
-        sheet: [39, 31]
+        sheet: [41, 24]
       },
       {
         unified: '1F935-1F3FF-200D-2642-FE0F',
-        sheet: [39, 32]
+        sheet: [41, 25]
       }
     ],
     shortName: 'man_in_tuxedo'
@@ -7970,27 +8668,27 @@ export const emojis: CompressedEmojiData[] = [
       'formal',
       'fashion'
     ],
-    sheet: [39, 21],
+    sheet: [41, 14],
     skinVariations: [
       {
         unified: '1F935-1F3FB-200D-2640-FE0F',
-        sheet: [39, 22]
+        sheet: [41, 15]
       },
       {
         unified: '1F935-1F3FC-200D-2640-FE0F',
-        sheet: [39, 23]
+        sheet: [41, 16]
       },
       {
         unified: '1F935-1F3FD-200D-2640-FE0F',
-        sheet: [39, 24]
+        sheet: [41, 17]
       },
       {
         unified: '1F935-1F3FE-200D-2640-FE0F',
-        sheet: [39, 25]
+        sheet: [41, 18]
       },
       {
         unified: '1F935-1F3FF-200D-2640-FE0F',
-        sheet: [39, 26]
+        sheet: [41, 19]
       }
     ],
     shortName: 'woman_in_tuxedo'
@@ -8006,27 +8704,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'bride'
     ],
-    sheet: [22, 6],
+    sheet: [23, 29],
     skinVariations: [
       {
         unified: '1F470-1F3FB',
-        sheet: [22, 7]
+        sheet: [23, 30]
       },
       {
         unified: '1F470-1F3FC',
-        sheet: [22, 8]
+        sheet: [23, 31]
       },
       {
         unified: '1F470-1F3FD',
-        sheet: [22, 9]
+        sheet: [23, 32]
       },
       {
         unified: '1F470-1F3FE',
-        sheet: [22, 10]
+        sheet: [23, 33]
       },
       {
         unified: '1F470-1F3FF',
-        sheet: [22, 11]
+        sheet: [23, 34]
       }
     ],
     shortName: 'bride_with_veil'
@@ -8039,27 +8737,27 @@ export const emojis: CompressedEmojiData[] = [
       'wedding',
       'marriage'
     ],
-    sheet: [22, 0],
+    sheet: [23, 23],
     skinVariations: [
       {
         unified: '1F470-1F3FB-200D-2642-FE0F',
-        sheet: [22, 1]
+        sheet: [23, 24]
       },
       {
         unified: '1F470-1F3FC-200D-2642-FE0F',
-        sheet: [22, 2]
+        sheet: [23, 25]
       },
       {
         unified: '1F470-1F3FD-200D-2642-FE0F',
-        sheet: [22, 3]
+        sheet: [23, 26]
       },
       {
         unified: '1F470-1F3FE-200D-2642-FE0F',
-        sheet: [22, 4]
+        sheet: [23, 27]
       },
       {
         unified: '1F470-1F3FF-200D-2642-FE0F',
-        sheet: [22, 5]
+        sheet: [23, 28]
       }
     ],
     shortName: 'man_with_veil'
@@ -8072,27 +8770,27 @@ export const emojis: CompressedEmojiData[] = [
       'wedding',
       'marriage'
     ],
-    sheet: [21, 52],
+    sheet: [23, 17],
     skinVariations: [
       {
         unified: '1F470-1F3FB-200D-2640-FE0F',
-        sheet: [21, 53]
+        sheet: [23, 18]
       },
       {
         unified: '1F470-1F3FC-200D-2640-FE0F',
-        sheet: [21, 54]
+        sheet: [23, 19]
       },
       {
         unified: '1F470-1F3FD-200D-2640-FE0F',
-        sheet: [21, 55]
+        sheet: [23, 20]
       },
       {
         unified: '1F470-1F3FE-200D-2640-FE0F',
-        sheet: [21, 56]
+        sheet: [23, 21]
       },
       {
         unified: '1F470-1F3FF-200D-2640-FE0F',
-        sheet: [21, 57]
+        sheet: [23, 22]
       }
     ],
     shortName: 'woman_with_veil'
@@ -8104,30 +8802,108 @@ export const emojis: CompressedEmojiData[] = [
       'pregnant_woman',
       'baby'
     ],
-    sheet: [38, 49],
+    sheet: [40, 45],
     skinVariations: [
       {
         unified: '1F930-1F3FB',
-        sheet: [38, 50]
+        sheet: [40, 46]
       },
       {
         unified: '1F930-1F3FC',
-        sheet: [38, 51]
+        sheet: [40, 47]
       },
       {
         unified: '1F930-1F3FD',
-        sheet: [38, 52]
+        sheet: [40, 48]
       },
       {
         unified: '1F930-1F3FE',
-        sheet: [38, 53]
+        sheet: [40, 49]
       },
       {
         unified: '1F930-1F3FF',
-        sheet: [38, 54]
+        sheet: [40, 50]
       }
     ],
     shortName: 'pregnant_woman'
+  },
+  {
+    name: 'Pregnant Man',
+    unified: '1FAC3',
+    keywords: [
+      'pregnant man',
+      'baby',
+      'belly'
+    ],
+    sheet: [54, 45],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1FAC3-1F3FB',
+        sheet: [54, 46],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC3-1F3FC',
+        sheet: [54, 47],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC3-1F3FD',
+        sheet: [54, 48],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC3-1F3FE',
+        sheet: [54, 49],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC3-1F3FF',
+        sheet: [54, 50],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'pregnant_man'
+  },
+  {
+    name: 'Pregnant Person',
+    unified: '1FAC4',
+    keywords: [
+      'pregnant person',
+      'baby',
+      'belly'
+    ],
+    sheet: [54, 51],
+    hidden: ['facebook'],
+    skinVariations: [
+      {
+        unified: '1FAC4-1F3FB',
+        sheet: [54, 52],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC4-1F3FC',
+        sheet: [54, 53],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC4-1F3FD',
+        sheet: [54, 54],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC4-1F3FE',
+        sheet: [54, 55],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1FAC4-1F3FF',
+        sheet: [54, 56],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'pregnant_person'
   },
   {
     name: 'Breast-Feeding',
@@ -8137,27 +8913,27 @@ export const emojis: CompressedEmojiData[] = [
       'nursing',
       'baby'
     ],
-    sheet: [38, 55],
+    sheet: [40, 51],
     skinVariations: [
       {
         unified: '1F931-1F3FB',
-        sheet: [38, 56]
+        sheet: [40, 52]
       },
       {
         unified: '1F931-1F3FC',
-        sheet: [38, 57]
+        sheet: [40, 53]
       },
       {
         unified: '1F931-1F3FD',
-        sheet: [39, 0]
+        sheet: [40, 54]
       },
       {
         unified: '1F931-1F3FE',
-        sheet: [39, 1]
+        sheet: [40, 55]
       },
       {
         unified: '1F931-1F3FF',
-        sheet: [39, 2]
+        sheet: [40, 56]
       }
     ],
     shortName: 'breast-feeding'
@@ -8170,27 +8946,27 @@ export const emojis: CompressedEmojiData[] = [
       'birth',
       'food'
     ],
-    sheet: [17, 32],
+    sheet: [17, 31],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F37C',
-        sheet: [17, 33]
+        sheet: [17, 32]
       },
       {
         unified: '1F469-1F3FC-200D-1F37C',
-        sheet: [17, 34]
+        sheet: [17, 33]
       },
       {
         unified: '1F469-1F3FD-200D-1F37C',
-        sheet: [17, 35]
+        sheet: [17, 34]
       },
       {
         unified: '1F469-1F3FE-200D-1F37C',
-        sheet: [17, 36]
+        sheet: [17, 35]
       },
       {
         unified: '1F469-1F3FF-200D-1F37C',
-        sheet: [17, 37]
+        sheet: [17, 36]
       }
     ],
     shortName: 'woman_feeding_baby'
@@ -8203,27 +8979,27 @@ export const emojis: CompressedEmojiData[] = [
       'birth',
       'food'
     ],
-    sheet: [14, 39],
+    sheet: [13, 58],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F37C',
-        sheet: [14, 40]
+        sheet: [13, 59]
       },
       {
         unified: '1F468-1F3FC-200D-1F37C',
-        sheet: [14, 41]
+        sheet: [13, 60]
       },
       {
         unified: '1F468-1F3FD-200D-1F37C',
-        sheet: [14, 42]
+        sheet: [14, 0]
       },
       {
         unified: '1F468-1F3FE-200D-1F37C',
-        sheet: [14, 43]
+        sheet: [14, 1]
       },
       {
         unified: '1F468-1F3FF-200D-1F37C',
-        sheet: [14, 44]
+        sheet: [14, 2]
       }
     ],
     shortName: 'man_feeding_baby'
@@ -8236,27 +9012,27 @@ export const emojis: CompressedEmojiData[] = [
       'birth',
       'food'
     ],
-    sheet: [45, 47],
+    sheet: [47, 24],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F37C',
-        sheet: [45, 48]
+        sheet: [47, 25]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F37C',
-        sheet: [45, 49]
+        sheet: [47, 26]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F37C',
-        sheet: [45, 50]
+        sheet: [47, 27]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F37C',
-        sheet: [45, 51]
+        sheet: [47, 28]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F37C',
-        sheet: [45, 52]
+        sheet: [47, 29]
       }
     ],
     shortName: 'person_feeding_baby'
@@ -8270,27 +9046,27 @@ export const emojis: CompressedEmojiData[] = [
       'wings',
       'halo'
     ],
-    sheet: [23, 41],
+    sheet: [25, 0],
     skinVariations: [
       {
         unified: '1F47C-1F3FB',
-        sheet: [23, 42]
+        sheet: [25, 1]
       },
       {
         unified: '1F47C-1F3FC',
-        sheet: [23, 43]
+        sheet: [25, 2]
       },
       {
         unified: '1F47C-1F3FD',
-        sheet: [23, 44]
+        sheet: [25, 3]
       },
       {
         unified: '1F47C-1F3FE',
-        sheet: [23, 45]
+        sheet: [25, 4]
       },
       {
         unified: '1F47C-1F3FF',
-        sheet: [23, 46]
+        sheet: [25, 5]
       }
     ],
     shortName: 'angel'
@@ -8306,27 +9082,27 @@ export const emojis: CompressedEmojiData[] = [
       'xmas',
       'father christmas'
     ],
-    sheet: [7, 29],
+    sheet: [7, 8],
     skinVariations: [
       {
         unified: '1F385-1F3FB',
-        sheet: [7, 30]
+        sheet: [7, 9]
       },
       {
         unified: '1F385-1F3FC',
-        sheet: [7, 31]
+        sheet: [7, 10]
       },
       {
         unified: '1F385-1F3FD',
-        sheet: [7, 32]
+        sheet: [7, 11]
       },
       {
         unified: '1F385-1F3FE',
-        sheet: [7, 33]
+        sheet: [7, 12]
       },
       {
         unified: '1F385-1F3FF',
-        sheet: [7, 34]
+        sheet: [7, 13]
       }
     ],
     shortName: 'santa'
@@ -8341,27 +9117,27 @@ export const emojis: CompressedEmojiData[] = [
       'xmas',
       'mother christmas'
     ],
-    sheet: [39, 39],
+    sheet: [41, 32],
     skinVariations: [
       {
         unified: '1F936-1F3FB',
-        sheet: [39, 40]
+        sheet: [41, 33]
       },
       {
         unified: '1F936-1F3FC',
-        sheet: [39, 41]
+        sheet: [41, 34]
       },
       {
         unified: '1F936-1F3FD',
-        sheet: [39, 42]
+        sheet: [41, 35]
       },
       {
         unified: '1F936-1F3FE',
-        sheet: [39, 43]
+        sheet: [41, 36]
       },
       {
         unified: '1F936-1F3FF',
-        sheet: [39, 44]
+        sheet: [41, 37]
       }
     ],
     shortNames: ['mother_christmas'],
@@ -8371,27 +9147,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mx Claus',
     unified: '1F9D1-200D-1F384',
     keywords: ['mx claus', 'christmas'],
-    sheet: [45, 53],
+    sheet: [47, 30],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F384',
-        sheet: [45, 54]
+        sheet: [47, 31]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F384',
-        sheet: [45, 55]
+        sheet: [47, 32]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F384',
-        sheet: [45, 56]
+        sheet: [47, 33]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F384',
-        sheet: [45, 57]
+        sheet: [47, 34]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F384',
-        sheet: [46, 0]
+        sheet: [47, 35]
       }
     ],
     shortName: 'mx_claus'
@@ -8400,27 +9176,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Superhero',
     unified: '1F9B8',
     keywords: ['superhero', 'marvel'],
-    sheet: [43, 49],
+    sheet: [45, 31],
     skinVariations: [
       {
         unified: '1F9B8-1F3FB',
-        sheet: [43, 50]
+        sheet: [45, 32]
       },
       {
         unified: '1F9B8-1F3FC',
-        sheet: [43, 51]
+        sheet: [45, 33]
       },
       {
         unified: '1F9B8-1F3FD',
-        sheet: [43, 52]
+        sheet: [45, 34]
       },
       {
         unified: '1F9B8-1F3FE',
-        sheet: [43, 53]
+        sheet: [45, 35]
       },
       {
         unified: '1F9B8-1F3FF',
-        sheet: [43, 54]
+        sheet: [45, 36]
       }
     ],
     shortName: 'superhero'
@@ -8436,27 +9212,27 @@ export const emojis: CompressedEmojiData[] = [
       'hero',
       'superpowers'
     ],
-    sheet: [43, 43],
+    sheet: [45, 25],
     skinVariations: [
       {
         unified: '1F9B8-1F3FB-200D-2642-FE0F',
-        sheet: [43, 44]
+        sheet: [45, 26]
       },
       {
         unified: '1F9B8-1F3FC-200D-2642-FE0F',
-        sheet: [43, 45]
+        sheet: [45, 27]
       },
       {
         unified: '1F9B8-1F3FD-200D-2642-FE0F',
-        sheet: [43, 46]
+        sheet: [45, 28]
       },
       {
         unified: '1F9B8-1F3FE-200D-2642-FE0F',
-        sheet: [43, 47]
+        sheet: [45, 29]
       },
       {
         unified: '1F9B8-1F3FF-200D-2642-FE0F',
-        sheet: [43, 48]
+        sheet: [45, 30]
       }
     ],
     shortName: 'male_superhero'
@@ -8472,27 +9248,27 @@ export const emojis: CompressedEmojiData[] = [
       'heroine',
       'superpowers'
     ],
-    sheet: [43, 37],
+    sheet: [45, 19],
     skinVariations: [
       {
         unified: '1F9B8-1F3FB-200D-2640-FE0F',
-        sheet: [43, 38]
+        sheet: [45, 20]
       },
       {
         unified: '1F9B8-1F3FC-200D-2640-FE0F',
-        sheet: [43, 39]
+        sheet: [45, 21]
       },
       {
         unified: '1F9B8-1F3FD-200D-2640-FE0F',
-        sheet: [43, 40]
+        sheet: [45, 22]
       },
       {
         unified: '1F9B8-1F3FE-200D-2640-FE0F',
-        sheet: [43, 41]
+        sheet: [45, 23]
       },
       {
         unified: '1F9B8-1F3FF-200D-2640-FE0F',
-        sheet: [43, 42]
+        sheet: [45, 24]
       }
     ],
     shortName: 'female_superhero'
@@ -8504,27 +9280,27 @@ export const emojis: CompressedEmojiData[] = [
       'supervillain',
       'marvel'
     ],
-    sheet: [44, 9],
+    sheet: [45, 49],
     skinVariations: [
       {
         unified: '1F9B9-1F3FB',
-        sheet: [44, 10]
+        sheet: [45, 50]
       },
       {
         unified: '1F9B9-1F3FC',
-        sheet: [44, 11]
+        sheet: [45, 51]
       },
       {
         unified: '1F9B9-1F3FD',
-        sheet: [44, 12]
+        sheet: [45, 52]
       },
       {
         unified: '1F9B9-1F3FE',
-        sheet: [44, 13]
+        sheet: [45, 53]
       },
       {
         unified: '1F9B9-1F3FF',
-        sheet: [44, 14]
+        sheet: [45, 54]
       }
     ],
     shortName: 'supervillain'
@@ -8542,27 +9318,27 @@ export const emojis: CompressedEmojiData[] = [
       'hero',
       'superpowers'
     ],
-    sheet: [44, 3],
+    sheet: [45, 43],
     skinVariations: [
       {
         unified: '1F9B9-1F3FB-200D-2642-FE0F',
-        sheet: [44, 4]
+        sheet: [45, 44]
       },
       {
         unified: '1F9B9-1F3FC-200D-2642-FE0F',
-        sheet: [44, 5]
+        sheet: [45, 45]
       },
       {
         unified: '1F9B9-1F3FD-200D-2642-FE0F',
-        sheet: [44, 6]
+        sheet: [45, 46]
       },
       {
         unified: '1F9B9-1F3FE-200D-2642-FE0F',
-        sheet: [44, 7]
+        sheet: [45, 47]
       },
       {
         unified: '1F9B9-1F3FF-200D-2642-FE0F',
-        sheet: [44, 8]
+        sheet: [45, 48]
       }
     ],
     shortName: 'male_supervillain'
@@ -8580,27 +9356,27 @@ export const emojis: CompressedEmojiData[] = [
       'heroine',
       'superpowers'
     ],
-    sheet: [43, 55],
+    sheet: [45, 37],
     skinVariations: [
       {
         unified: '1F9B9-1F3FB-200D-2640-FE0F',
-        sheet: [43, 56]
+        sheet: [45, 38]
       },
       {
         unified: '1F9B9-1F3FC-200D-2640-FE0F',
-        sheet: [43, 57]
+        sheet: [45, 39]
       },
       {
         unified: '1F9B9-1F3FD-200D-2640-FE0F',
-        sheet: [44, 0]
+        sheet: [45, 40]
       },
       {
         unified: '1F9B9-1F3FE-200D-2640-FE0F',
-        sheet: [44, 1]
+        sheet: [45, 41]
       },
       {
         unified: '1F9B9-1F3FF-200D-2640-FE0F',
-        sheet: [44, 2]
+        sheet: [45, 42]
       }
     ],
     shortName: 'female_supervillain'
@@ -8609,27 +9385,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Mage',
     unified: '1F9D9',
     keywords: ['mage', 'magic'],
-    sheet: [50, 17],
+    sheet: [51, 52],
     skinVariations: [
       {
         unified: '1F9D9-1F3FB',
-        sheet: [50, 18]
+        sheet: [51, 53]
       },
       {
         unified: '1F9D9-1F3FC',
-        sheet: [50, 19]
+        sheet: [51, 54]
       },
       {
         unified: '1F9D9-1F3FD',
-        sheet: [50, 20]
+        sheet: [51, 55]
       },
       {
         unified: '1F9D9-1F3FE',
-        sheet: [50, 21]
+        sheet: [51, 56]
       },
       {
         unified: '1F9D9-1F3FF',
-        sheet: [50, 22]
+        sheet: [51, 57]
       }
     ],
     shortName: 'mage',
@@ -8645,27 +9421,27 @@ export const emojis: CompressedEmojiData[] = [
       'mage',
       'sorcerer'
     ],
-    sheet: [50, 11],
+    sheet: [51, 46],
     skinVariations: [
       {
         unified: '1F9D9-1F3FB-200D-2642-FE0F',
-        sheet: [50, 12]
+        sheet: [51, 47]
       },
       {
         unified: '1F9D9-1F3FC-200D-2642-FE0F',
-        sheet: [50, 13]
+        sheet: [51, 48]
       },
       {
         unified: '1F9D9-1F3FD-200D-2642-FE0F',
-        sheet: [50, 14]
+        sheet: [51, 49]
       },
       {
         unified: '1F9D9-1F3FE-200D-2642-FE0F',
-        sheet: [50, 15]
+        sheet: [51, 50]
       },
       {
         unified: '1F9D9-1F3FF-200D-2642-FE0F',
-        sheet: [50, 16]
+        sheet: [51, 51]
       }
     ],
     shortName: 'male_mage'
@@ -8681,27 +9457,27 @@ export const emojis: CompressedEmojiData[] = [
       'mage',
       'witch'
     ],
-    sheet: [50, 5],
+    sheet: [51, 40],
     skinVariations: [
       {
         unified: '1F9D9-1F3FB-200D-2640-FE0F',
-        sheet: [50, 6]
+        sheet: [51, 41]
       },
       {
         unified: '1F9D9-1F3FC-200D-2640-FE0F',
-        sheet: [50, 7]
+        sheet: [51, 42]
       },
       {
         unified: '1F9D9-1F3FD-200D-2640-FE0F',
-        sheet: [50, 8]
+        sheet: [51, 43]
       },
       {
         unified: '1F9D9-1F3FE-200D-2640-FE0F',
-        sheet: [50, 9]
+        sheet: [51, 44]
       },
       {
         unified: '1F9D9-1F3FF-200D-2640-FE0F',
-        sheet: [50, 10]
+        sheet: [51, 45]
       }
     ],
     shortName: 'female_mage'
@@ -8714,27 +9490,27 @@ export const emojis: CompressedEmojiData[] = [
       'wings',
       'magical'
     ],
-    sheet: [50, 35],
+    sheet: [52, 9],
     skinVariations: [
       {
         unified: '1F9DA-1F3FB',
-        sheet: [50, 36]
+        sheet: [52, 10]
       },
       {
         unified: '1F9DA-1F3FC',
-        sheet: [50, 37]
+        sheet: [52, 11]
       },
       {
         unified: '1F9DA-1F3FD',
-        sheet: [50, 38]
+        sheet: [52, 12]
       },
       {
         unified: '1F9DA-1F3FE',
-        sheet: [50, 39]
+        sheet: [52, 13]
       },
       {
         unified: '1F9DA-1F3FF',
-        sheet: [50, 40]
+        sheet: [52, 14]
       }
     ],
     shortName: 'fairy',
@@ -8748,27 +9524,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'male'
     ],
-    sheet: [50, 29],
+    sheet: [52, 3],
     skinVariations: [
       {
         unified: '1F9DA-1F3FB-200D-2642-FE0F',
-        sheet: [50, 30]
+        sheet: [52, 4]
       },
       {
         unified: '1F9DA-1F3FC-200D-2642-FE0F',
-        sheet: [50, 31]
+        sheet: [52, 5]
       },
       {
         unified: '1F9DA-1F3FD-200D-2642-FE0F',
-        sheet: [50, 32]
+        sheet: [52, 6]
       },
       {
         unified: '1F9DA-1F3FE-200D-2642-FE0F',
-        sheet: [50, 33]
+        sheet: [52, 7]
       },
       {
         unified: '1F9DA-1F3FF-200D-2642-FE0F',
-        sheet: [50, 34]
+        sheet: [52, 8]
       }
     ],
     shortName: 'male_fairy'
@@ -8782,27 +9558,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [50, 23],
+    sheet: [51, 58],
     skinVariations: [
       {
         unified: '1F9DA-1F3FB-200D-2640-FE0F',
-        sheet: [50, 24]
+        sheet: [51, 59]
       },
       {
         unified: '1F9DA-1F3FC-200D-2640-FE0F',
-        sheet: [50, 25]
+        sheet: [51, 60]
       },
       {
         unified: '1F9DA-1F3FD-200D-2640-FE0F',
-        sheet: [50, 26]
+        sheet: [52, 0]
       },
       {
         unified: '1F9DA-1F3FE-200D-2640-FE0F',
-        sheet: [50, 27]
+        sheet: [52, 1]
       },
       {
         unified: '1F9DA-1F3FF-200D-2640-FE0F',
-        sheet: [50, 28]
+        sheet: [52, 2]
       }
     ],
     shortName: 'female_fairy'
@@ -8815,27 +9591,27 @@ export const emojis: CompressedEmojiData[] = [
       'blood',
       'twilight'
     ],
-    sheet: [50, 53],
+    sheet: [52, 27],
     skinVariations: [
       {
         unified: '1F9DB-1F3FB',
-        sheet: [50, 54]
+        sheet: [52, 28]
       },
       {
         unified: '1F9DB-1F3FC',
-        sheet: [50, 55]
+        sheet: [52, 29]
       },
       {
         unified: '1F9DB-1F3FD',
-        sheet: [50, 56]
+        sheet: [52, 30]
       },
       {
         unified: '1F9DB-1F3FE',
-        sheet: [50, 57]
+        sheet: [52, 31]
       },
       {
         unified: '1F9DB-1F3FF',
-        sheet: [51, 0]
+        sheet: [52, 32]
       }
     ],
     shortName: 'vampire',
@@ -8850,27 +9626,27 @@ export const emojis: CompressedEmojiData[] = [
       'male',
       'dracula'
     ],
-    sheet: [50, 47],
+    sheet: [52, 21],
     skinVariations: [
       {
         unified: '1F9DB-1F3FB-200D-2642-FE0F',
-        sheet: [50, 48]
+        sheet: [52, 22]
       },
       {
         unified: '1F9DB-1F3FC-200D-2642-FE0F',
-        sheet: [50, 49]
+        sheet: [52, 23]
       },
       {
         unified: '1F9DB-1F3FD-200D-2642-FE0F',
-        sheet: [50, 50]
+        sheet: [52, 24]
       },
       {
         unified: '1F9DB-1F3FE-200D-2642-FE0F',
-        sheet: [50, 51]
+        sheet: [52, 25]
       },
       {
         unified: '1F9DB-1F3FF-200D-2642-FE0F',
-        sheet: [50, 52]
+        sheet: [52, 26]
       }
     ],
     shortName: 'male_vampire'
@@ -8884,27 +9660,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [50, 41],
+    sheet: [52, 15],
     skinVariations: [
       {
         unified: '1F9DB-1F3FB-200D-2640-FE0F',
-        sheet: [50, 42]
+        sheet: [52, 16]
       },
       {
         unified: '1F9DB-1F3FC-200D-2640-FE0F',
-        sheet: [50, 43]
+        sheet: [52, 17]
       },
       {
         unified: '1F9DB-1F3FD-200D-2640-FE0F',
-        sheet: [50, 44]
+        sheet: [52, 18]
       },
       {
         unified: '1F9DB-1F3FE-200D-2640-FE0F',
-        sheet: [50, 45]
+        sheet: [52, 19]
       },
       {
         unified: '1F9DB-1F3FF-200D-2640-FE0F',
-        sheet: [50, 46]
+        sheet: [52, 20]
       }
     ],
     shortName: 'female_vampire'
@@ -8913,27 +9689,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Merperson',
     unified: '1F9DC',
     keywords: ['merperson', 'sea'],
-    sheet: [51, 13],
+    sheet: [52, 45],
     skinVariations: [
       {
         unified: '1F9DC-1F3FB',
-        sheet: [51, 14]
+        sheet: [52, 46]
       },
       {
         unified: '1F9DC-1F3FC',
-        sheet: [51, 15]
+        sheet: [52, 47]
       },
       {
         unified: '1F9DC-1F3FD',
-        sheet: [51, 16]
+        sheet: [52, 48]
       },
       {
         unified: '1F9DC-1F3FE',
-        sheet: [51, 17]
+        sheet: [52, 49]
       },
       {
         unified: '1F9DC-1F3FF',
-        sheet: [51, 18]
+        sheet: [52, 50]
       }
     ],
     shortName: 'merperson',
@@ -8949,27 +9725,27 @@ export const emojis: CompressedEmojiData[] = [
       'male',
       'triton'
     ],
-    sheet: [51, 7],
+    sheet: [52, 39],
     skinVariations: [
       {
         unified: '1F9DC-1F3FB-200D-2642-FE0F',
-        sheet: [51, 8]
+        sheet: [52, 40]
       },
       {
         unified: '1F9DC-1F3FC-200D-2642-FE0F',
-        sheet: [51, 9]
+        sheet: [52, 41]
       },
       {
         unified: '1F9DC-1F3FD-200D-2642-FE0F',
-        sheet: [51, 10]
+        sheet: [52, 42]
       },
       {
         unified: '1F9DC-1F3FE-200D-2642-FE0F',
-        sheet: [51, 11]
+        sheet: [52, 43]
       },
       {
         unified: '1F9DC-1F3FF-200D-2642-FE0F',
-        sheet: [51, 12]
+        sheet: [52, 44]
       }
     ],
     shortName: 'merman'
@@ -8984,27 +9760,27 @@ export const emojis: CompressedEmojiData[] = [
       'merwoman',
       'ariel'
     ],
-    sheet: [51, 1],
+    sheet: [52, 33],
     skinVariations: [
       {
         unified: '1F9DC-1F3FB-200D-2640-FE0F',
-        sheet: [51, 2]
+        sheet: [52, 34]
       },
       {
         unified: '1F9DC-1F3FC-200D-2640-FE0F',
-        sheet: [51, 3]
+        sheet: [52, 35]
       },
       {
         unified: '1F9DC-1F3FD-200D-2640-FE0F',
-        sheet: [51, 4]
+        sheet: [52, 36]
       },
       {
         unified: '1F9DC-1F3FE-200D-2640-FE0F',
-        sheet: [51, 5]
+        sheet: [52, 37]
       },
       {
         unified: '1F9DC-1F3FF-200D-2640-FE0F',
-        sheet: [51, 6]
+        sheet: [52, 38]
       }
     ],
     shortName: 'mermaid'
@@ -9013,27 +9789,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Elf',
     unified: '1F9DD',
     keywords: ['elf', 'magical'],
-    sheet: [51, 31],
+    sheet: [53, 2],
     skinVariations: [
       {
         unified: '1F9DD-1F3FB',
-        sheet: [51, 32]
+        sheet: [53, 3]
       },
       {
         unified: '1F9DD-1F3FC',
-        sheet: [51, 33]
+        sheet: [53, 4]
       },
       {
         unified: '1F9DD-1F3FD',
-        sheet: [51, 34]
+        sheet: [53, 5]
       },
       {
         unified: '1F9DD-1F3FE',
-        sheet: [51, 35]
+        sheet: [53, 6]
       },
       {
         unified: '1F9DD-1F3FF',
-        sheet: [51, 36]
+        sheet: [53, 7]
       }
     ],
     shortName: 'elf',
@@ -9048,27 +9824,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'male'
     ],
-    sheet: [51, 25],
+    sheet: [52, 57],
     skinVariations: [
       {
         unified: '1F9DD-1F3FB-200D-2642-FE0F',
-        sheet: [51, 26]
+        sheet: [52, 58]
       },
       {
         unified: '1F9DD-1F3FC-200D-2642-FE0F',
-        sheet: [51, 27]
+        sheet: [52, 59]
       },
       {
         unified: '1F9DD-1F3FD-200D-2642-FE0F',
-        sheet: [51, 28]
+        sheet: [52, 60]
       },
       {
         unified: '1F9DD-1F3FE-200D-2642-FE0F',
-        sheet: [51, 29]
+        sheet: [53, 0]
       },
       {
         unified: '1F9DD-1F3FF-200D-2642-FE0F',
-        sheet: [51, 30]
+        sheet: [53, 1]
       }
     ],
     shortName: 'male_elf'
@@ -9081,27 +9857,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [51, 19],
+    sheet: [52, 51],
     skinVariations: [
       {
         unified: '1F9DD-1F3FB-200D-2640-FE0F',
-        sheet: [51, 20]
+        sheet: [52, 52]
       },
       {
         unified: '1F9DD-1F3FC-200D-2640-FE0F',
-        sheet: [51, 21]
+        sheet: [52, 53]
       },
       {
         unified: '1F9DD-1F3FD-200D-2640-FE0F',
-        sheet: [51, 22]
+        sheet: [52, 54]
       },
       {
         unified: '1F9DD-1F3FE-200D-2640-FE0F',
-        sheet: [51, 23]
+        sheet: [52, 55]
       },
       {
         unified: '1F9DD-1F3FF-200D-2640-FE0F',
-        sheet: [51, 24]
+        sheet: [52, 56]
       }
     ],
     shortName: 'female_elf'
@@ -9114,7 +9890,7 @@ export const emojis: CompressedEmojiData[] = [
       'magical',
       'wishes'
     ],
-    sheet: [51, 39],
+    sheet: [53, 10],
     shortName: 'genie',
     obsoletedBy: '1F9DE-200D-2642-FE0F'
   },
@@ -9127,7 +9903,7 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'male'
     ],
-    sheet: [51, 38],
+    sheet: [53, 9],
     shortName: 'male_genie'
   },
   {
@@ -9138,14 +9914,14 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [51, 37],
+    sheet: [53, 8],
     shortName: 'female_genie'
   },
   {
     name: 'Zombie',
     unified: '1F9DF',
     keywords: ['zombie', 'dead'],
-    sheet: [51, 42],
+    sheet: [53, 13],
     shortName: 'zombie',
     obsoletedBy: '1F9DF-200D-2642-FE0F'
   },
@@ -9161,7 +9937,7 @@ export const emojis: CompressedEmojiData[] = [
       'undead',
       'walking dead'
     ],
-    sheet: [51, 41],
+    sheet: [53, 12],
     shortName: 'male_zombie'
   },
   {
@@ -9174,8 +9950,20 @@ export const emojis: CompressedEmojiData[] = [
       'undead',
       'walking dead'
     ],
-    sheet: [51, 40],
+    sheet: [53, 11],
     shortName: 'female_zombie'
+  },
+  {
+    name: 'Troll',
+    unified: '1F9CC',
+    keywords: [
+      'troll',
+      'mystical',
+      'monster'
+    ],
+    sheet: [46, 17],
+    hidden: ['facebook'],
+    shortName: 'troll'
   },
   {
     name: 'Face Massage',
@@ -9184,27 +9972,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_getting_massage',
       'relax'
     ],
-    sheet: [24, 54],
+    sheet: [26, 10],
     skinVariations: [
       {
         unified: '1F486-1F3FB',
-        sheet: [24, 55]
+        sheet: [26, 11]
       },
       {
         unified: '1F486-1F3FC',
-        sheet: [24, 56]
+        sheet: [26, 12]
       },
       {
         unified: '1F486-1F3FD',
-        sheet: [24, 57]
+        sheet: [26, 13]
       },
       {
         unified: '1F486-1F3FE',
-        sheet: [25, 0]
+        sheet: [26, 14]
       },
       {
         unified: '1F486-1F3FF',
-        sheet: [25, 1]
+        sheet: [26, 15]
       }
     ],
     shortName: 'massage',
@@ -9220,27 +10008,27 @@ export const emojis: CompressedEmojiData[] = [
       'man',
       'head'
     ],
-    sheet: [24, 48],
+    sheet: [26, 4],
     skinVariations: [
       {
         unified: '1F486-1F3FB-200D-2642-FE0F',
-        sheet: [24, 49]
+        sheet: [26, 5]
       },
       {
         unified: '1F486-1F3FC-200D-2642-FE0F',
-        sheet: [24, 50]
+        sheet: [26, 6]
       },
       {
         unified: '1F486-1F3FD-200D-2642-FE0F',
-        sheet: [24, 51]
+        sheet: [26, 7]
       },
       {
         unified: '1F486-1F3FE-200D-2642-FE0F',
-        sheet: [24, 52]
+        sheet: [26, 8]
       },
       {
         unified: '1F486-1F3FF-200D-2642-FE0F',
-        sheet: [24, 53]
+        sheet: [26, 9]
       }
     ],
     shortName: 'man-getting-massage'
@@ -9256,27 +10044,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'head'
     ],
-    sheet: [24, 42],
+    sheet: [25, 59],
     skinVariations: [
       {
         unified: '1F486-1F3FB-200D-2640-FE0F',
-        sheet: [24, 43]
+        sheet: [25, 60]
       },
       {
         unified: '1F486-1F3FC-200D-2640-FE0F',
-        sheet: [24, 44]
+        sheet: [26, 0]
       },
       {
         unified: '1F486-1F3FD-200D-2640-FE0F',
-        sheet: [24, 45]
+        sheet: [26, 1]
       },
       {
         unified: '1F486-1F3FE-200D-2640-FE0F',
-        sheet: [24, 46]
+        sheet: [26, 2]
       },
       {
         unified: '1F486-1F3FF-200D-2640-FE0F',
-        sheet: [24, 47]
+        sheet: [26, 3]
       }
     ],
     shortName: 'woman-getting-massage'
@@ -9288,27 +10076,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_getting_haircut',
       'hairstyle'
     ],
-    sheet: [25, 14],
+    sheet: [26, 28],
     skinVariations: [
       {
         unified: '1F487-1F3FB',
-        sheet: [25, 15]
+        sheet: [26, 29]
       },
       {
         unified: '1F487-1F3FC',
-        sheet: [25, 16]
+        sheet: [26, 30]
       },
       {
         unified: '1F487-1F3FD',
-        sheet: [25, 17]
+        sheet: [26, 31]
       },
       {
         unified: '1F487-1F3FE',
-        sheet: [25, 18]
+        sheet: [26, 32]
       },
       {
         unified: '1F487-1F3FF',
-        sheet: [25, 19]
+        sheet: [26, 33]
       }
     ],
     shortName: 'haircut',
@@ -9323,27 +10111,27 @@ export const emojis: CompressedEmojiData[] = [
       'boy',
       'man'
     ],
-    sheet: [25, 8],
+    sheet: [26, 22],
     skinVariations: [
       {
         unified: '1F487-1F3FB-200D-2642-FE0F',
-        sheet: [25, 9]
+        sheet: [26, 23]
       },
       {
         unified: '1F487-1F3FC-200D-2642-FE0F',
-        sheet: [25, 10]
+        sheet: [26, 24]
       },
       {
         unified: '1F487-1F3FD-200D-2642-FE0F',
-        sheet: [25, 11]
+        sheet: [26, 25]
       },
       {
         unified: '1F487-1F3FE-200D-2642-FE0F',
-        sheet: [25, 12]
+        sheet: [26, 26]
       },
       {
         unified: '1F487-1F3FF-200D-2642-FE0F',
-        sheet: [25, 13]
+        sheet: [26, 27]
       }
     ],
     shortName: 'man-getting-haircut'
@@ -9358,27 +10146,27 @@ export const emojis: CompressedEmojiData[] = [
       'girl',
       'woman'
     ],
-    sheet: [25, 2],
+    sheet: [26, 16],
     skinVariations: [
       {
         unified: '1F487-1F3FB-200D-2640-FE0F',
-        sheet: [25, 3]
+        sheet: [26, 17]
       },
       {
         unified: '1F487-1F3FC-200D-2640-FE0F',
-        sheet: [25, 4]
+        sheet: [26, 18]
       },
       {
         unified: '1F487-1F3FD-200D-2640-FE0F',
-        sheet: [25, 5]
+        sheet: [26, 19]
       },
       {
         unified: '1F487-1F3FE-200D-2640-FE0F',
-        sheet: [25, 6]
+        sheet: [26, 20]
       },
       {
         unified: '1F487-1F3FF-200D-2640-FE0F',
-        sheet: [25, 7]
+        sheet: [26, 21]
       }
     ],
     shortName: 'woman-getting-haircut'
@@ -9390,27 +10178,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_walking',
       'move'
     ],
-    sheet: [35, 51],
+    sheet: [37, 27],
     skinVariations: [
       {
         unified: '1F6B6-1F3FB',
-        sheet: [35, 52]
+        sheet: [37, 28]
       },
       {
         unified: '1F6B6-1F3FC',
-        sheet: [35, 53]
+        sheet: [37, 29]
       },
       {
         unified: '1F6B6-1F3FD',
-        sheet: [35, 54]
+        sheet: [37, 30]
       },
       {
         unified: '1F6B6-1F3FE',
-        sheet: [35, 55]
+        sheet: [37, 31]
       },
       {
         unified: '1F6B6-1F3FF',
-        sheet: [35, 56]
+        sheet: [37, 32]
       }
     ],
     shortName: 'walking',
@@ -9426,27 +10214,27 @@ export const emojis: CompressedEmojiData[] = [
       'feet',
       'steps'
     ],
-    sheet: [35, 45],
+    sheet: [37, 21],
     skinVariations: [
       {
         unified: '1F6B6-1F3FB-200D-2642-FE0F',
-        sheet: [35, 46]
+        sheet: [37, 22]
       },
       {
         unified: '1F6B6-1F3FC-200D-2642-FE0F',
-        sheet: [35, 47]
+        sheet: [37, 23]
       },
       {
         unified: '1F6B6-1F3FD-200D-2642-FE0F',
-        sheet: [35, 48]
+        sheet: [37, 24]
       },
       {
         unified: '1F6B6-1F3FE-200D-2642-FE0F',
-        sheet: [35, 49]
+        sheet: [37, 25]
       },
       {
         unified: '1F6B6-1F3FF-200D-2642-FE0F',
-        sheet: [35, 50]
+        sheet: [37, 26]
       }
     ],
     shortName: 'man-walking'
@@ -9462,27 +10250,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [35, 39],
+    sheet: [37, 15],
     skinVariations: [
       {
         unified: '1F6B6-1F3FB-200D-2640-FE0F',
-        sheet: [35, 40]
+        sheet: [37, 16]
       },
       {
         unified: '1F6B6-1F3FC-200D-2640-FE0F',
-        sheet: [35, 41]
+        sheet: [37, 17]
       },
       {
         unified: '1F6B6-1F3FD-200D-2640-FE0F',
-        sheet: [35, 42]
+        sheet: [37, 18]
       },
       {
         unified: '1F6B6-1F3FE-200D-2640-FE0F',
-        sheet: [35, 43]
+        sheet: [37, 19]
       },
       {
         unified: '1F6B6-1F3FF-200D-2640-FE0F',
-        sheet: [35, 44]
+        sheet: [37, 20]
       }
     ],
     shortName: 'woman-walking'
@@ -9494,27 +10282,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_standing',
       'still'
     ],
-    sheet: [44, 50],
+    sheet: [46, 30],
     skinVariations: [
       {
         unified: '1F9CD-1F3FB',
-        sheet: [44, 51]
+        sheet: [46, 31]
       },
       {
         unified: '1F9CD-1F3FC',
-        sheet: [44, 52]
+        sheet: [46, 32]
       },
       {
         unified: '1F9CD-1F3FD',
-        sheet: [44, 53]
+        sheet: [46, 33]
       },
       {
         unified: '1F9CD-1F3FE',
-        sheet: [44, 54]
+        sheet: [46, 34]
       },
       {
         unified: '1F9CD-1F3FF',
-        sheet: [44, 55]
+        sheet: [46, 35]
       }
     ],
     shortName: 'standing_person'
@@ -9523,27 +10311,27 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Man Standing',
     unified: '1F9CD-200D-2642-FE0F',
     keywords: ['man_standing', 'still'],
-    sheet: [44, 44],
+    sheet: [46, 24],
     skinVariations: [
       {
         unified: '1F9CD-1F3FB-200D-2642-FE0F',
-        sheet: [44, 45]
+        sheet: [46, 25]
       },
       {
         unified: '1F9CD-1F3FC-200D-2642-FE0F',
-        sheet: [44, 46]
+        sheet: [46, 26]
       },
       {
         unified: '1F9CD-1F3FD-200D-2642-FE0F',
-        sheet: [44, 47]
+        sheet: [46, 27]
       },
       {
         unified: '1F9CD-1F3FE-200D-2642-FE0F',
-        sheet: [44, 48]
+        sheet: [46, 28]
       },
       {
         unified: '1F9CD-1F3FF-200D-2642-FE0F',
-        sheet: [44, 49]
+        sheet: [46, 29]
       }
     ],
     shortName: 'man_standing'
@@ -9555,27 +10343,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman_standing',
       'still'
     ],
-    sheet: [44, 38],
+    sheet: [46, 18],
     skinVariations: [
       {
         unified: '1F9CD-1F3FB-200D-2640-FE0F',
-        sheet: [44, 39]
+        sheet: [46, 19]
       },
       {
         unified: '1F9CD-1F3FC-200D-2640-FE0F',
-        sheet: [44, 40]
+        sheet: [46, 20]
       },
       {
         unified: '1F9CD-1F3FD-200D-2640-FE0F',
-        sheet: [44, 41]
+        sheet: [46, 21]
       },
       {
         unified: '1F9CD-1F3FE-200D-2640-FE0F',
-        sheet: [44, 42]
+        sheet: [46, 22]
       },
       {
         unified: '1F9CD-1F3FF-200D-2640-FE0F',
-        sheet: [44, 43]
+        sheet: [46, 23]
       }
     ],
     shortName: 'woman_standing'
@@ -9588,27 +10376,27 @@ export const emojis: CompressedEmojiData[] = [
       'pray',
       'respectful'
     ],
-    sheet: [45, 10],
+    sheet: [46, 48],
     skinVariations: [
       {
         unified: '1F9CE-1F3FB',
-        sheet: [45, 11]
+        sheet: [46, 49]
       },
       {
         unified: '1F9CE-1F3FC',
-        sheet: [45, 12]
+        sheet: [46, 50]
       },
       {
         unified: '1F9CE-1F3FD',
-        sheet: [45, 13]
+        sheet: [46, 51]
       },
       {
         unified: '1F9CE-1F3FE',
-        sheet: [45, 14]
+        sheet: [46, 52]
       },
       {
         unified: '1F9CE-1F3FF',
-        sheet: [45, 15]
+        sheet: [46, 53]
       }
     ],
     shortName: 'kneeling_person'
@@ -9621,27 +10409,27 @@ export const emojis: CompressedEmojiData[] = [
       'pray',
       'respectful'
     ],
-    sheet: [45, 4],
+    sheet: [46, 42],
     skinVariations: [
       {
         unified: '1F9CE-1F3FB-200D-2642-FE0F',
-        sheet: [45, 5]
+        sheet: [46, 43]
       },
       {
         unified: '1F9CE-1F3FC-200D-2642-FE0F',
-        sheet: [45, 6]
+        sheet: [46, 44]
       },
       {
         unified: '1F9CE-1F3FD-200D-2642-FE0F',
-        sheet: [45, 7]
+        sheet: [46, 45]
       },
       {
         unified: '1F9CE-1F3FE-200D-2642-FE0F',
-        sheet: [45, 8]
+        sheet: [46, 46]
       },
       {
         unified: '1F9CE-1F3FF-200D-2642-FE0F',
-        sheet: [45, 9]
+        sheet: [46, 47]
       }
     ],
     shortName: 'man_kneeling'
@@ -9654,27 +10442,27 @@ export const emojis: CompressedEmojiData[] = [
       'respectful',
       'pray'
     ],
-    sheet: [44, 56],
+    sheet: [46, 36],
     skinVariations: [
       {
         unified: '1F9CE-1F3FB-200D-2640-FE0F',
-        sheet: [44, 57]
+        sheet: [46, 37]
       },
       {
         unified: '1F9CE-1F3FC-200D-2640-FE0F',
-        sheet: [45, 0]
+        sheet: [46, 38]
       },
       {
         unified: '1F9CE-1F3FD-200D-2640-FE0F',
-        sheet: [45, 1]
+        sheet: [46, 39]
       },
       {
         unified: '1F9CE-1F3FE-200D-2640-FE0F',
-        sheet: [45, 2]
+        sheet: [46, 40]
       },
       {
         unified: '1F9CE-1F3FF-200D-2640-FE0F',
-        sheet: [45, 3]
+        sheet: [46, 41]
       }
     ],
     shortName: 'woman_kneeling'
@@ -9686,27 +10474,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_with_probing_cane',
       'blind'
     ],
-    sheet: [47, 35],
+    sheet: [49, 6],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F9AF',
-        sheet: [47, 36]
+        sheet: [49, 7]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F9AF',
-        sheet: [47, 37]
+        sheet: [49, 8]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F9AF',
-        sheet: [47, 38]
+        sheet: [49, 9]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F9AF',
-        sheet: [47, 39]
+        sheet: [49, 10]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F9AF',
-        sheet: [47, 40]
+        sheet: [49, 11]
       }
     ],
     shortName: 'person_with_probing_cane'
@@ -9718,27 +10506,27 @@ export const emojis: CompressedEmojiData[] = [
       'man_with_probing_cane',
       'blind'
     ],
-    sheet: [16, 10],
+    sheet: [15, 23],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F9AF',
-        sheet: [16, 11]
+        sheet: [15, 24]
       },
       {
         unified: '1F468-1F3FC-200D-1F9AF',
-        sheet: [16, 12]
+        sheet: [15, 25]
       },
       {
         unified: '1F468-1F3FD-200D-1F9AF',
-        sheet: [16, 13]
+        sheet: [15, 26]
       },
       {
         unified: '1F468-1F3FE-200D-1F9AF',
-        sheet: [16, 14]
+        sheet: [15, 27]
       },
       {
         unified: '1F468-1F3FF-200D-1F9AF',
-        sheet: [16, 15]
+        sheet: [15, 28]
       }
     ],
     shortName: 'man_with_probing_cane'
@@ -9750,27 +10538,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman_with_probing_cane',
       'blind'
     ],
-    sheet: [18, 56],
+    sheet: [18, 52],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F9AF',
-        sheet: [18, 57]
+        sheet: [18, 53]
       },
       {
         unified: '1F469-1F3FC-200D-1F9AF',
-        sheet: [19, 0]
+        sheet: [18, 54]
       },
       {
         unified: '1F469-1F3FD-200D-1F9AF',
-        sheet: [19, 1]
+        sheet: [18, 55]
       },
       {
         unified: '1F469-1F3FE-200D-1F9AF',
-        sheet: [19, 2]
+        sheet: [18, 56]
       },
       {
         unified: '1F469-1F3FF-200D-1F9AF',
-        sheet: [19, 3]
+        sheet: [18, 57]
       }
     ],
     shortName: 'woman_with_probing_cane'
@@ -9783,27 +10571,27 @@ export const emojis: CompressedEmojiData[] = [
       'disability',
       'accessibility'
     ],
-    sheet: [48, 7],
+    sheet: [49, 36],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F9BC',
-        sheet: [48, 8]
+        sheet: [49, 37]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F9BC',
-        sheet: [48, 9]
+        sheet: [49, 38]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F9BC',
-        sheet: [48, 10]
+        sheet: [49, 39]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F9BC',
-        sheet: [48, 11]
+        sheet: [49, 40]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F9BC',
-        sheet: [48, 12]
+        sheet: [49, 41]
       }
     ],
     shortName: 'person_in_motorized_wheelchair'
@@ -9816,27 +10604,27 @@ export const emojis: CompressedEmojiData[] = [
       'disability',
       'accessibility'
     ],
-    sheet: [16, 40],
+    sheet: [15, 53],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F9BC',
-        sheet: [16, 41]
+        sheet: [15, 54]
       },
       {
         unified: '1F468-1F3FC-200D-1F9BC',
-        sheet: [16, 42]
+        sheet: [15, 55]
       },
       {
         unified: '1F468-1F3FD-200D-1F9BC',
-        sheet: [16, 43]
+        sheet: [15, 56]
       },
       {
         unified: '1F468-1F3FE-200D-1F9BC',
-        sheet: [16, 44]
+        sheet: [15, 57]
       },
       {
         unified: '1F468-1F3FF-200D-1F9BC',
-        sheet: [16, 45]
+        sheet: [15, 58]
       }
     ],
     shortName: 'man_in_motorized_wheelchair'
@@ -9849,27 +10637,27 @@ export const emojis: CompressedEmojiData[] = [
       'disability',
       'accessibility'
     ],
-    sheet: [19, 28],
+    sheet: [19, 21],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F9BC',
-        sheet: [19, 29]
+        sheet: [19, 22]
       },
       {
         unified: '1F469-1F3FC-200D-1F9BC',
-        sheet: [19, 30]
+        sheet: [19, 23]
       },
       {
         unified: '1F469-1F3FD-200D-1F9BC',
-        sheet: [19, 31]
+        sheet: [19, 24]
       },
       {
         unified: '1F469-1F3FE-200D-1F9BC',
-        sheet: [19, 32]
+        sheet: [19, 25]
       },
       {
         unified: '1F469-1F3FF-200D-1F9BC',
-        sheet: [19, 33]
+        sheet: [19, 26]
       }
     ],
     shortName: 'woman_in_motorized_wheelchair'
@@ -9882,27 +10670,27 @@ export const emojis: CompressedEmojiData[] = [
       'disability',
       'accessibility'
     ],
-    sheet: [48, 13],
+    sheet: [49, 42],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F9BD',
-        sheet: [48, 14]
+        sheet: [49, 43]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F9BD',
-        sheet: [48, 15]
+        sheet: [49, 44]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F9BD',
-        sheet: [48, 16]
+        sheet: [49, 45]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F9BD',
-        sheet: [48, 17]
+        sheet: [49, 46]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F9BD',
-        sheet: [48, 18]
+        sheet: [49, 47]
       }
     ],
     shortName: 'person_in_manual_wheelchair'
@@ -9915,27 +10703,27 @@ export const emojis: CompressedEmojiData[] = [
       'disability',
       'accessibility'
     ],
-    sheet: [16, 46],
+    sheet: [15, 59],
     skinVariations: [
       {
         unified: '1F468-1F3FB-200D-1F9BD',
-        sheet: [16, 47]
+        sheet: [15, 60]
       },
       {
         unified: '1F468-1F3FC-200D-1F9BD',
-        sheet: [16, 48]
+        sheet: [16, 0]
       },
       {
         unified: '1F468-1F3FD-200D-1F9BD',
-        sheet: [16, 49]
+        sheet: [16, 1]
       },
       {
         unified: '1F468-1F3FE-200D-1F9BD',
-        sheet: [16, 50]
+        sheet: [16, 2]
       },
       {
         unified: '1F468-1F3FF-200D-1F9BD',
-        sheet: [16, 51]
+        sheet: [16, 3]
       }
     ],
     shortName: 'man_in_manual_wheelchair'
@@ -9948,27 +10736,27 @@ export const emojis: CompressedEmojiData[] = [
       'disability',
       'accessibility'
     ],
-    sheet: [19, 34],
+    sheet: [19, 27],
     skinVariations: [
       {
         unified: '1F469-1F3FB-200D-1F9BD',
-        sheet: [19, 35]
+        sheet: [19, 28]
       },
       {
         unified: '1F469-1F3FC-200D-1F9BD',
-        sheet: [19, 36]
+        sheet: [19, 29]
       },
       {
         unified: '1F469-1F3FD-200D-1F9BD',
-        sheet: [19, 37]
+        sheet: [19, 30]
       },
       {
         unified: '1F469-1F3FE-200D-1F9BD',
-        sheet: [19, 38]
+        sheet: [19, 31]
       },
       {
         unified: '1F469-1F3FF-200D-1F9BD',
-        sheet: [19, 39]
+        sheet: [19, 32]
       }
     ],
     shortName: 'woman_in_manual_wheelchair'
@@ -9980,27 +10768,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_running',
       'move'
     ],
-    sheet: [8, 50],
+    sheet: [8, 26],
     skinVariations: [
       {
         unified: '1F3C3-1F3FB',
-        sheet: [8, 51]
+        sheet: [8, 27]
       },
       {
         unified: '1F3C3-1F3FC',
-        sheet: [8, 52]
+        sheet: [8, 28]
       },
       {
         unified: '1F3C3-1F3FD',
-        sheet: [8, 53]
+        sheet: [8, 29]
       },
       {
         unified: '1F3C3-1F3FE',
-        sheet: [8, 54]
+        sheet: [8, 30]
       },
       {
         unified: '1F3C3-1F3FF',
-        sheet: [8, 55]
+        sheet: [8, 31]
       }
     ],
     shortNames: ['running'],
@@ -10019,27 +10807,27 @@ export const emojis: CompressedEmojiData[] = [
       'race',
       'running'
     ],
-    sheet: [8, 44],
+    sheet: [8, 20],
     skinVariations: [
       {
         unified: '1F3C3-1F3FB-200D-2642-FE0F',
-        sheet: [8, 45]
+        sheet: [8, 21]
       },
       {
         unified: '1F3C3-1F3FC-200D-2642-FE0F',
-        sheet: [8, 46]
+        sheet: [8, 22]
       },
       {
         unified: '1F3C3-1F3FD-200D-2642-FE0F',
-        sheet: [8, 47]
+        sheet: [8, 23]
       },
       {
         unified: '1F3C3-1F3FE-200D-2642-FE0F',
-        sheet: [8, 48]
+        sheet: [8, 24]
       },
       {
         unified: '1F3C3-1F3FF-200D-2642-FE0F',
-        sheet: [8, 49]
+        sheet: [8, 25]
       }
     ],
     shortName: 'man-running'
@@ -10056,27 +10844,27 @@ export const emojis: CompressedEmojiData[] = [
       'running',
       'female'
     ],
-    sheet: [8, 38],
+    sheet: [8, 14],
     skinVariations: [
       {
         unified: '1F3C3-1F3FB-200D-2640-FE0F',
-        sheet: [8, 39]
+        sheet: [8, 15]
       },
       {
         unified: '1F3C3-1F3FC-200D-2640-FE0F',
-        sheet: [8, 40]
+        sheet: [8, 16]
       },
       {
         unified: '1F3C3-1F3FD-200D-2640-FE0F',
-        sheet: [8, 41]
+        sheet: [8, 17]
       },
       {
         unified: '1F3C3-1F3FE-200D-2640-FE0F',
-        sheet: [8, 42]
+        sheet: [8, 18]
       },
       {
         unified: '1F3C3-1F3FF-200D-2640-FE0F',
-        sheet: [8, 43]
+        sheet: [8, 19]
       }
     ],
     shortName: 'woman-running'
@@ -10091,27 +10879,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'fun'
     ],
-    sheet: [24, 29],
+    sheet: [25, 46],
     skinVariations: [
       {
         unified: '1F483-1F3FB',
-        sheet: [24, 30]
+        sheet: [25, 47]
       },
       {
         unified: '1F483-1F3FC',
-        sheet: [24, 31]
+        sheet: [25, 48]
       },
       {
         unified: '1F483-1F3FD',
-        sheet: [24, 32]
+        sheet: [25, 49]
       },
       {
         unified: '1F483-1F3FE',
-        sheet: [24, 33]
+        sheet: [25, 50]
       },
       {
         unified: '1F483-1F3FF',
-        sheet: [24, 34]
+        sheet: [25, 51]
       }
     ],
     shortName: 'dancer'
@@ -10126,27 +10914,27 @@ export const emojis: CompressedEmojiData[] = [
       'fun',
       'dancer'
     ],
-    sheet: [29, 35],
+    sheet: [31, 26],
     skinVariations: [
       {
         unified: '1F57A-1F3FB',
-        sheet: [29, 36]
+        sheet: [31, 27]
       },
       {
         unified: '1F57A-1F3FC',
-        sheet: [29, 37]
+        sheet: [31, 28]
       },
       {
         unified: '1F57A-1F3FD',
-        sheet: [29, 38]
+        sheet: [31, 29]
       },
       {
         unified: '1F57A-1F3FE',
-        sheet: [29, 39]
+        sheet: [31, 30]
       },
       {
         unified: '1F57A-1F3FF',
-        sheet: [29, 40]
+        sheet: [31, 31]
       }
     ],
     shortName: 'man_dancing'
@@ -10162,27 +10950,27 @@ export const emojis: CompressedEmojiData[] = [
       'hover',
       'jump'
     ],
-    sheet: [29, 7],
+    sheet: [30, 59],
     skinVariations: [
       {
         unified: '1F574-1F3FB',
-        sheet: [29, 8]
+        sheet: [30, 60]
       },
       {
         unified: '1F574-1F3FC',
-        sheet: [29, 9]
+        sheet: [31, 0]
       },
       {
         unified: '1F574-1F3FD',
-        sheet: [29, 10]
+        sheet: [31, 1]
       },
       {
         unified: '1F574-1F3FE',
-        sheet: [29, 11]
+        sheet: [31, 2]
       },
       {
         unified: '1F574-1F3FF',
-        sheet: [29, 12]
+        sheet: [31, 3]
       }
     ],
     shortName: 'man_in_business_suit_levitating'
@@ -10195,7 +10983,7 @@ export const emojis: CompressedEmojiData[] = [
       'perform',
       'costume'
     ],
-    sheet: [21, 51],
+    sheet: [23, 16],
     shortName: 'dancers',
     obsoletedBy: '1F46F-200D-2640-FE0F'
   },
@@ -10209,8 +10997,11 @@ export const emojis: CompressedEmojiData[] = [
       'men',
       'boys'
     ],
-    sheet: [21, 50],
-    shortName: 'man-with-bunny-ears-partying'
+    sheet: [23, 15],
+    shortNames: [
+      'man-with-bunny-ears-partying'
+    ],
+    shortName: 'men-with-bunny-ears-partying'
   },
   {
     name: 'Women with Bunny Ears',
@@ -10223,8 +11014,11 @@ export const emojis: CompressedEmojiData[] = [
       'women',
       'girls'
     ],
-    sheet: [21, 49],
-    shortName: 'woman-with-bunny-ears-partying'
+    sheet: [23, 14],
+    shortNames: [
+      'woman-with-bunny-ears-partying'
+    ],
+    shortName: 'women-with-bunny-ears-partying'
   },
   {
     name: 'Person in Steamy Room',
@@ -10234,27 +11028,27 @@ export const emojis: CompressedEmojiData[] = [
       'relax',
       'spa'
     ],
-    sheet: [49, 21],
+    sheet: [50, 59],
     skinVariations: [
       {
         unified: '1F9D6-1F3FB',
-        sheet: [49, 22]
+        sheet: [50, 60]
       },
       {
         unified: '1F9D6-1F3FC',
-        sheet: [49, 23]
+        sheet: [51, 0]
       },
       {
         unified: '1F9D6-1F3FD',
-        sheet: [49, 24]
+        sheet: [51, 1]
       },
       {
         unified: '1F9D6-1F3FE',
-        sheet: [49, 25]
+        sheet: [51, 2]
       },
       {
         unified: '1F9D6-1F3FF',
-        sheet: [49, 26]
+        sheet: [51, 3]
       }
     ],
     shortName: 'person_in_steamy_room',
@@ -10272,27 +11066,27 @@ export const emojis: CompressedEmojiData[] = [
       'steamroom',
       'sauna'
     ],
-    sheet: [49, 15],
+    sheet: [50, 53],
     skinVariations: [
       {
         unified: '1F9D6-1F3FB-200D-2642-FE0F',
-        sheet: [49, 16]
+        sheet: [50, 54]
       },
       {
         unified: '1F9D6-1F3FC-200D-2642-FE0F',
-        sheet: [49, 17]
+        sheet: [50, 55]
       },
       {
         unified: '1F9D6-1F3FD-200D-2642-FE0F',
-        sheet: [49, 18]
+        sheet: [50, 56]
       },
       {
         unified: '1F9D6-1F3FE-200D-2642-FE0F',
-        sheet: [49, 19]
+        sheet: [50, 57]
       },
       {
         unified: '1F9D6-1F3FF-200D-2642-FE0F',
-        sheet: [49, 20]
+        sheet: [50, 58]
       }
     ],
     shortName: 'man_in_steamy_room'
@@ -10308,27 +11102,27 @@ export const emojis: CompressedEmojiData[] = [
       'steamroom',
       'sauna'
     ],
-    sheet: [49, 9],
+    sheet: [50, 47],
     skinVariations: [
       {
         unified: '1F9D6-1F3FB-200D-2640-FE0F',
-        sheet: [49, 10]
+        sheet: [50, 48]
       },
       {
         unified: '1F9D6-1F3FC-200D-2640-FE0F',
-        sheet: [49, 11]
+        sheet: [50, 49]
       },
       {
         unified: '1F9D6-1F3FD-200D-2640-FE0F',
-        sheet: [49, 12]
+        sheet: [50, 50]
       },
       {
         unified: '1F9D6-1F3FE-200D-2640-FE0F',
-        sheet: [49, 13]
+        sheet: [50, 51]
       },
       {
         unified: '1F9D6-1F3FF-200D-2640-FE0F',
-        sheet: [49, 14]
+        sheet: [50, 52]
       }
     ],
     shortName: 'woman_in_steamy_room'
@@ -10340,27 +11134,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_climbing',
       'sport'
     ],
-    sheet: [49, 39],
+    sheet: [51, 16],
     skinVariations: [
       {
         unified: '1F9D7-1F3FB',
-        sheet: [49, 40]
+        sheet: [51, 17]
       },
       {
         unified: '1F9D7-1F3FC',
-        sheet: [49, 41]
+        sheet: [51, 18]
       },
       {
         unified: '1F9D7-1F3FD',
-        sheet: [49, 42]
+        sheet: [51, 19]
       },
       {
         unified: '1F9D7-1F3FE',
-        sheet: [49, 43]
+        sheet: [51, 20]
       },
       {
         unified: '1F9D7-1F3FF',
-        sheet: [49, 44]
+        sheet: [51, 21]
       }
     ],
     shortName: 'person_climbing',
@@ -10377,27 +11171,27 @@ export const emojis: CompressedEmojiData[] = [
       'male',
       'rock'
     ],
-    sheet: [49, 33],
+    sheet: [51, 10],
     skinVariations: [
       {
         unified: '1F9D7-1F3FB-200D-2642-FE0F',
-        sheet: [49, 34]
+        sheet: [51, 11]
       },
       {
         unified: '1F9D7-1F3FC-200D-2642-FE0F',
-        sheet: [49, 35]
+        sheet: [51, 12]
       },
       {
         unified: '1F9D7-1F3FD-200D-2642-FE0F',
-        sheet: [49, 36]
+        sheet: [51, 13]
       },
       {
         unified: '1F9D7-1F3FE-200D-2642-FE0F',
-        sheet: [49, 37]
+        sheet: [51, 14]
       },
       {
         unified: '1F9D7-1F3FF-200D-2642-FE0F',
-        sheet: [49, 38]
+        sheet: [51, 15]
       }
     ],
     shortName: 'man_climbing'
@@ -10414,27 +11208,27 @@ export const emojis: CompressedEmojiData[] = [
       'female',
       'rock'
     ],
-    sheet: [49, 27],
+    sheet: [51, 4],
     skinVariations: [
       {
         unified: '1F9D7-1F3FB-200D-2640-FE0F',
-        sheet: [49, 28]
+        sheet: [51, 5]
       },
       {
         unified: '1F9D7-1F3FC-200D-2640-FE0F',
-        sheet: [49, 29]
+        sheet: [51, 6]
       },
       {
         unified: '1F9D7-1F3FD-200D-2640-FE0F',
-        sheet: [49, 30]
+        sheet: [51, 7]
       },
       {
         unified: '1F9D7-1F3FE-200D-2640-FE0F',
-        sheet: [49, 31]
+        sheet: [51, 8]
       },
       {
         unified: '1F9D7-1F3FF-200D-2640-FE0F',
-        sheet: [49, 32]
+        sheet: [51, 9]
       }
     ],
     shortName: 'woman_climbing'
@@ -10448,7 +11242,7 @@ export const emojis: CompressedEmojiData[] = [
       'fencing',
       'sword'
     ],
-    sheet: [40, 41],
+    sheet: [42, 31],
     shortName: 'fencer'
   },
   {
@@ -10462,27 +11256,27 @@ export const emojis: CompressedEmojiData[] = [
       'gambling',
       'luck'
     ],
-    sheet: [9, 18],
+    sheet: [8, 52],
     skinVariations: [
       {
         unified: '1F3C7-1F3FB',
-        sheet: [9, 19]
+        sheet: [8, 53]
       },
       {
         unified: '1F3C7-1F3FC',
-        sheet: [9, 20]
+        sheet: [8, 54]
       },
       {
         unified: '1F3C7-1F3FD',
-        sheet: [9, 21]
+        sheet: [8, 55]
       },
       {
         unified: '1F3C7-1F3FE',
-        sheet: [9, 22]
+        sheet: [8, 56]
       },
       {
         unified: '1F3C7-1F3FF',
-        sheet: [9, 23]
+        sheet: [8, 57]
       }
     ],
     shortName: 'horse_racing'
@@ -10496,7 +11290,7 @@ export const emojis: CompressedEmojiData[] = [
       'winter',
       'snow'
     ],
-    sheet: [55, 22],
+    sheet: [58, 1],
     shortName: 'skier'
   },
   {
@@ -10507,27 +11301,27 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'winter'
     ],
-    sheet: [8, 32],
+    sheet: [8, 8],
     skinVariations: [
       {
         unified: '1F3C2-1F3FB',
-        sheet: [8, 33]
+        sheet: [8, 9]
       },
       {
         unified: '1F3C2-1F3FC',
-        sheet: [8, 34]
+        sheet: [8, 10]
       },
       {
         unified: '1F3C2-1F3FD',
-        sheet: [8, 35]
+        sheet: [8, 11]
       },
       {
         unified: '1F3C2-1F3FE',
-        sheet: [8, 36]
+        sheet: [8, 12]
       },
       {
         unified: '1F3C2-1F3FF',
-        sheet: [8, 37]
+        sheet: [8, 13]
       }
     ],
     shortName: 'snowboarder'
@@ -10540,27 +11334,27 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'business'
     ],
-    sheet: [10, 16],
+    sheet: [9, 47],
     skinVariations: [
       {
         unified: '1F3CC-1F3FB',
-        sheet: [10, 17]
+        sheet: [9, 48]
       },
       {
         unified: '1F3CC-1F3FC',
-        sheet: [10, 18]
+        sheet: [9, 49]
       },
       {
         unified: '1F3CC-1F3FD',
-        sheet: [10, 19]
+        sheet: [9, 50]
       },
       {
         unified: '1F3CC-1F3FE',
-        sheet: [10, 20]
+        sheet: [9, 51]
       },
       {
         unified: '1F3CC-1F3FF',
-        sheet: [10, 21]
+        sheet: [9, 52]
       }
     ],
     shortName: 'golfer',
@@ -10571,28 +11365,28 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F3CC-FE0F-200D-2642-FE0F',
     obsoletes: '1F3CC-FE0F',
     keywords: ['man_golfing', 'sport'],
-    sheet: [10, 10],
+    sheet: [9, 41],
     hidden: ['facebook'],
     skinVariations: [
       {
         unified: '1F3CC-1F3FB-200D-2642-FE0F',
-        sheet: [10, 11]
+        sheet: [9, 42]
       },
       {
         unified: '1F3CC-1F3FC-200D-2642-FE0F',
-        sheet: [10, 12]
+        sheet: [9, 43]
       },
       {
         unified: '1F3CC-1F3FD-200D-2642-FE0F',
-        sheet: [10, 13]
+        sheet: [9, 44]
       },
       {
         unified: '1F3CC-1F3FE-200D-2642-FE0F',
-        sheet: [10, 14]
+        sheet: [9, 45]
       },
       {
         unified: '1F3CC-1F3FF-200D-2642-FE0F',
-        sheet: [10, 15]
+        sheet: [9, 46]
       }
     ],
     shortName: 'man-golfing'
@@ -10607,28 +11401,28 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [10, 4],
+    sheet: [9, 35],
     hidden: ['facebook'],
     skinVariations: [
       {
         unified: '1F3CC-1F3FB-200D-2640-FE0F',
-        sheet: [10, 5]
+        sheet: [9, 36]
       },
       {
         unified: '1F3CC-1F3FC-200D-2640-FE0F',
-        sheet: [10, 6]
+        sheet: [9, 37]
       },
       {
         unified: '1F3CC-1F3FD-200D-2640-FE0F',
-        sheet: [10, 7]
+        sheet: [9, 38]
       },
       {
         unified: '1F3CC-1F3FE-200D-2640-FE0F',
-        sheet: [10, 8]
+        sheet: [9, 39]
       },
       {
         unified: '1F3CC-1F3FF-200D-2640-FE0F',
-        sheet: [10, 9]
+        sheet: [9, 40]
       }
     ],
     shortName: 'woman-golfing'
@@ -10641,27 +11435,27 @@ export const emojis: CompressedEmojiData[] = [
       'sport',
       'sea'
     ],
-    sheet: [9, 10],
+    sheet: [8, 44],
     skinVariations: [
       {
         unified: '1F3C4-1F3FB',
-        sheet: [9, 11]
+        sheet: [8, 45]
       },
       {
         unified: '1F3C4-1F3FC',
-        sheet: [9, 12]
+        sheet: [8, 46]
       },
       {
         unified: '1F3C4-1F3FD',
-        sheet: [9, 13]
+        sheet: [8, 47]
       },
       {
         unified: '1F3C4-1F3FE',
-        sheet: [9, 14]
+        sheet: [8, 48]
       },
       {
         unified: '1F3C4-1F3FF',
-        sheet: [9, 15]
+        sheet: [8, 49]
       }
     ],
     shortName: 'surfer',
@@ -10679,27 +11473,27 @@ export const emojis: CompressedEmojiData[] = [
       'summer',
       'beach'
     ],
-    sheet: [9, 4],
+    sheet: [8, 38],
     skinVariations: [
       {
         unified: '1F3C4-1F3FB-200D-2642-FE0F',
-        sheet: [9, 5]
+        sheet: [8, 39]
       },
       {
         unified: '1F3C4-1F3FC-200D-2642-FE0F',
-        sheet: [9, 6]
+        sheet: [8, 40]
       },
       {
         unified: '1F3C4-1F3FD-200D-2642-FE0F',
-        sheet: [9, 7]
+        sheet: [8, 41]
       },
       {
         unified: '1F3C4-1F3FE-200D-2642-FE0F',
-        sheet: [9, 8]
+        sheet: [8, 42]
       },
       {
         unified: '1F3C4-1F3FF-200D-2642-FE0F',
-        sheet: [9, 9]
+        sheet: [8, 43]
       }
     ],
     shortName: 'man-surfing'
@@ -10717,27 +11511,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [8, 56],
+    sheet: [8, 32],
     skinVariations: [
       {
         unified: '1F3C4-1F3FB-200D-2640-FE0F',
-        sheet: [8, 57]
+        sheet: [8, 33]
       },
       {
         unified: '1F3C4-1F3FC-200D-2640-FE0F',
-        sheet: [9, 0]
+        sheet: [8, 34]
       },
       {
         unified: '1F3C4-1F3FD-200D-2640-FE0F',
-        sheet: [9, 1]
+        sheet: [8, 35]
       },
       {
         unified: '1F3C4-1F3FE-200D-2640-FE0F',
-        sheet: [9, 2]
+        sheet: [8, 36]
       },
       {
         unified: '1F3C4-1F3FF-200D-2640-FE0F',
-        sheet: [9, 3]
+        sheet: [8, 37]
       }
     ],
     shortName: 'woman-surfing'
@@ -10750,27 +11544,27 @@ export const emojis: CompressedEmojiData[] = [
       'sport',
       'move'
     ],
-    sheet: [34, 39],
+    sheet: [36, 18],
     skinVariations: [
       {
         unified: '1F6A3-1F3FB',
-        sheet: [34, 40]
+        sheet: [36, 19]
       },
       {
         unified: '1F6A3-1F3FC',
-        sheet: [34, 41]
+        sheet: [36, 20]
       },
       {
         unified: '1F6A3-1F3FD',
-        sheet: [34, 42]
+        sheet: [36, 21]
       },
       {
         unified: '1F6A3-1F3FE',
-        sheet: [34, 43]
+        sheet: [36, 22]
       },
       {
         unified: '1F6A3-1F3FF',
-        sheet: [34, 44]
+        sheet: [36, 23]
       }
     ],
     shortName: 'rowboat',
@@ -10787,27 +11581,27 @@ export const emojis: CompressedEmojiData[] = [
       'water',
       'ship'
     ],
-    sheet: [34, 33],
+    sheet: [36, 12],
     skinVariations: [
       {
         unified: '1F6A3-1F3FB-200D-2642-FE0F',
-        sheet: [34, 34]
+        sheet: [36, 13]
       },
       {
         unified: '1F6A3-1F3FC-200D-2642-FE0F',
-        sheet: [34, 35]
+        sheet: [36, 14]
       },
       {
         unified: '1F6A3-1F3FD-200D-2642-FE0F',
-        sheet: [34, 36]
+        sheet: [36, 15]
       },
       {
         unified: '1F6A3-1F3FE-200D-2642-FE0F',
-        sheet: [34, 37]
+        sheet: [36, 16]
       },
       {
         unified: '1F6A3-1F3FF-200D-2642-FE0F',
-        sheet: [34, 38]
+        sheet: [36, 17]
       }
     ],
     shortName: 'man-rowing-boat'
@@ -10824,27 +11618,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [34, 27],
+    sheet: [36, 6],
     skinVariations: [
       {
         unified: '1F6A3-1F3FB-200D-2640-FE0F',
-        sheet: [34, 28]
+        sheet: [36, 7]
       },
       {
         unified: '1F6A3-1F3FC-200D-2640-FE0F',
-        sheet: [34, 29]
+        sheet: [36, 8]
       },
       {
         unified: '1F6A3-1F3FD-200D-2640-FE0F',
-        sheet: [34, 30]
+        sheet: [36, 9]
       },
       {
         unified: '1F6A3-1F3FE-200D-2640-FE0F',
-        sheet: [34, 31]
+        sheet: [36, 10]
       },
       {
         unified: '1F6A3-1F3FF-200D-2640-FE0F',
-        sheet: [34, 32]
+        sheet: [36, 11]
       }
     ],
     shortName: 'woman-rowing-boat'
@@ -10857,27 +11651,27 @@ export const emojis: CompressedEmojiData[] = [
       'sport',
       'pool'
     ],
-    sheet: [9, 38],
+    sheet: [9, 11],
     skinVariations: [
       {
         unified: '1F3CA-1F3FB',
-        sheet: [9, 39]
+        sheet: [9, 12]
       },
       {
         unified: '1F3CA-1F3FC',
-        sheet: [9, 40]
+        sheet: [9, 13]
       },
       {
         unified: '1F3CA-1F3FD',
-        sheet: [9, 41]
+        sheet: [9, 14]
       },
       {
         unified: '1F3CA-1F3FE',
-        sheet: [9, 42]
+        sheet: [9, 15]
       },
       {
         unified: '1F3CA-1F3FF',
-        sheet: [9, 43]
+        sheet: [9, 16]
       }
     ],
     shortName: 'swimmer',
@@ -10896,27 +11690,27 @@ export const emojis: CompressedEmojiData[] = [
       'water',
       'summer'
     ],
-    sheet: [9, 32],
+    sheet: [9, 5],
     skinVariations: [
       {
         unified: '1F3CA-1F3FB-200D-2642-FE0F',
-        sheet: [9, 33]
+        sheet: [9, 6]
       },
       {
         unified: '1F3CA-1F3FC-200D-2642-FE0F',
-        sheet: [9, 34]
+        sheet: [9, 7]
       },
       {
         unified: '1F3CA-1F3FD-200D-2642-FE0F',
-        sheet: [9, 35]
+        sheet: [9, 8]
       },
       {
         unified: '1F3CA-1F3FE-200D-2642-FE0F',
-        sheet: [9, 36]
+        sheet: [9, 9]
       },
       {
         unified: '1F3CA-1F3FF-200D-2642-FE0F',
-        sheet: [9, 37]
+        sheet: [9, 10]
       }
     ],
     shortName: 'man-swimming'
@@ -10935,27 +11729,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [9, 26],
+    sheet: [8, 60],
     skinVariations: [
       {
         unified: '1F3CA-1F3FB-200D-2640-FE0F',
-        sheet: [9, 27]
+        sheet: [9, 0]
       },
       {
         unified: '1F3CA-1F3FC-200D-2640-FE0F',
-        sheet: [9, 28]
+        sheet: [9, 1]
       },
       {
         unified: '1F3CA-1F3FD-200D-2640-FE0F',
-        sheet: [9, 29]
+        sheet: [9, 2]
       },
       {
         unified: '1F3CA-1F3FE-200D-2640-FE0F',
-        sheet: [9, 30]
+        sheet: [9, 3]
       },
       {
         unified: '1F3CA-1F3FF-200D-2640-FE0F',
-        sheet: [9, 31]
+        sheet: [9, 4]
       }
     ],
     shortName: 'woman-swimming'
@@ -10968,27 +11762,27 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'human'
     ],
-    sheet: [55, 36],
+    sheet: [58, 15],
     skinVariations: [
       {
         unified: '26F9-1F3FB',
-        sheet: [55, 37]
+        sheet: [58, 16]
       },
       {
         unified: '26F9-1F3FC',
-        sheet: [55, 38]
+        sheet: [58, 17]
       },
       {
         unified: '26F9-1F3FD',
-        sheet: [55, 39]
+        sheet: [58, 18]
       },
       {
         unified: '26F9-1F3FE',
-        sheet: [55, 40]
+        sheet: [58, 19]
       },
       {
         unified: '26F9-1F3FF',
-        sheet: [55, 41]
+        sheet: [58, 20]
       }
     ],
     shortName: 'person_with_ball',
@@ -11002,28 +11796,28 @@ export const emojis: CompressedEmojiData[] = [
       'man_bouncing_ball',
       'sport'
     ],
-    sheet: [55, 30],
+    sheet: [58, 9],
     hidden: ['facebook'],
     skinVariations: [
       {
         unified: '26F9-1F3FB-200D-2642-FE0F',
-        sheet: [55, 31]
+        sheet: [58, 10]
       },
       {
         unified: '26F9-1F3FC-200D-2642-FE0F',
-        sheet: [55, 32]
+        sheet: [58, 11]
       },
       {
         unified: '26F9-1F3FD-200D-2642-FE0F',
-        sheet: [55, 33]
+        sheet: [58, 12]
       },
       {
         unified: '26F9-1F3FE-200D-2642-FE0F',
-        sheet: [55, 34]
+        sheet: [58, 13]
       },
       {
         unified: '26F9-1F3FF-200D-2642-FE0F',
-        sheet: [55, 35]
+        sheet: [58, 14]
       }
     ],
     shortName: 'man-bouncing-ball'
@@ -11038,28 +11832,28 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [55, 24],
+    sheet: [58, 3],
     hidden: ['facebook'],
     skinVariations: [
       {
         unified: '26F9-1F3FB-200D-2640-FE0F',
-        sheet: [55, 25]
+        sheet: [58, 4]
       },
       {
         unified: '26F9-1F3FC-200D-2640-FE0F',
-        sheet: [55, 26]
+        sheet: [58, 5]
       },
       {
         unified: '26F9-1F3FD-200D-2640-FE0F',
-        sheet: [55, 27]
+        sheet: [58, 6]
       },
       {
         unified: '26F9-1F3FE-200D-2640-FE0F',
-        sheet: [55, 28]
+        sheet: [58, 7]
       },
       {
         unified: '26F9-1F3FF-200D-2640-FE0F',
-        sheet: [55, 29]
+        sheet: [58, 8]
       }
     ],
     shortName: 'woman-bouncing-ball'
@@ -11073,27 +11867,27 @@ export const emojis: CompressedEmojiData[] = [
       'training',
       'exercise'
     ],
-    sheet: [9, 56],
+    sheet: [9, 29],
     skinVariations: [
       {
         unified: '1F3CB-1F3FB',
-        sheet: [9, 57]
+        sheet: [9, 30]
       },
       {
         unified: '1F3CB-1F3FC',
-        sheet: [10, 0]
+        sheet: [9, 31]
       },
       {
         unified: '1F3CB-1F3FD',
-        sheet: [10, 1]
+        sheet: [9, 32]
       },
       {
         unified: '1F3CB-1F3FE',
-        sheet: [10, 2]
+        sheet: [9, 33]
       },
       {
         unified: '1F3CB-1F3FF',
-        sheet: [10, 3]
+        sheet: [9, 34]
       }
     ],
     shortName: 'weight_lifter',
@@ -11107,28 +11901,28 @@ export const emojis: CompressedEmojiData[] = [
       'man_lifting_weights',
       'sport'
     ],
-    sheet: [9, 50],
+    sheet: [9, 23],
     hidden: ['facebook'],
     skinVariations: [
       {
         unified: '1F3CB-1F3FB-200D-2642-FE0F',
-        sheet: [9, 51]
+        sheet: [9, 24]
       },
       {
         unified: '1F3CB-1F3FC-200D-2642-FE0F',
-        sheet: [9, 52]
+        sheet: [9, 25]
       },
       {
         unified: '1F3CB-1F3FD-200D-2642-FE0F',
-        sheet: [9, 53]
+        sheet: [9, 26]
       },
       {
         unified: '1F3CB-1F3FE-200D-2642-FE0F',
-        sheet: [9, 54]
+        sheet: [9, 27]
       },
       {
         unified: '1F3CB-1F3FF-200D-2642-FE0F',
-        sheet: [9, 55]
+        sheet: [9, 28]
       }
     ],
     shortName: 'man-lifting-weights'
@@ -11144,28 +11938,28 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [9, 44],
+    sheet: [9, 17],
     hidden: ['facebook'],
     skinVariations: [
       {
         unified: '1F3CB-1F3FB-200D-2640-FE0F',
-        sheet: [9, 45]
+        sheet: [9, 18]
       },
       {
         unified: '1F3CB-1F3FC-200D-2640-FE0F',
-        sheet: [9, 46]
+        sheet: [9, 19]
       },
       {
         unified: '1F3CB-1F3FD-200D-2640-FE0F',
-        sheet: [9, 47]
+        sheet: [9, 20]
       },
       {
         unified: '1F3CB-1F3FE-200D-2640-FE0F',
-        sheet: [9, 48]
+        sheet: [9, 21]
       },
       {
         unified: '1F3CB-1F3FF-200D-2640-FE0F',
-        sheet: [9, 49]
+        sheet: [9, 22]
       }
     ],
     shortName: 'woman-lifting-weights'
@@ -11178,27 +11972,27 @@ export const emojis: CompressedEmojiData[] = [
       'sport',
       'move'
     ],
-    sheet: [35, 15],
+    sheet: [36, 52],
     skinVariations: [
       {
         unified: '1F6B4-1F3FB',
-        sheet: [35, 16]
+        sheet: [36, 53]
       },
       {
         unified: '1F6B4-1F3FC',
-        sheet: [35, 17]
+        sheet: [36, 54]
       },
       {
         unified: '1F6B4-1F3FD',
-        sheet: [35, 18]
+        sheet: [36, 55]
       },
       {
         unified: '1F6B4-1F3FE',
-        sheet: [35, 19]
+        sheet: [36, 56]
       },
       {
         unified: '1F6B4-1F3FF',
-        sheet: [35, 20]
+        sheet: [36, 57]
       }
     ],
     shortName: 'bicyclist',
@@ -11215,27 +12009,27 @@ export const emojis: CompressedEmojiData[] = [
       'exercise',
       'hipster'
     ],
-    sheet: [35, 9],
+    sheet: [36, 46],
     skinVariations: [
       {
         unified: '1F6B4-1F3FB-200D-2642-FE0F',
-        sheet: [35, 10]
+        sheet: [36, 47]
       },
       {
         unified: '1F6B4-1F3FC-200D-2642-FE0F',
-        sheet: [35, 11]
+        sheet: [36, 48]
       },
       {
         unified: '1F6B4-1F3FD-200D-2642-FE0F',
-        sheet: [35, 12]
+        sheet: [36, 49]
       },
       {
         unified: '1F6B4-1F3FE-200D-2642-FE0F',
-        sheet: [35, 13]
+        sheet: [36, 50]
       },
       {
         unified: '1F6B4-1F3FF-200D-2642-FE0F',
-        sheet: [35, 14]
+        sheet: [36, 51]
       }
     ],
     shortName: 'man-biking'
@@ -11252,27 +12046,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [35, 3],
+    sheet: [36, 40],
     skinVariations: [
       {
         unified: '1F6B4-1F3FB-200D-2640-FE0F',
-        sheet: [35, 4]
+        sheet: [36, 41]
       },
       {
         unified: '1F6B4-1F3FC-200D-2640-FE0F',
-        sheet: [35, 5]
+        sheet: [36, 42]
       },
       {
         unified: '1F6B4-1F3FD-200D-2640-FE0F',
-        sheet: [35, 6]
+        sheet: [36, 43]
       },
       {
         unified: '1F6B4-1F3FE-200D-2640-FE0F',
-        sheet: [35, 7]
+        sheet: [36, 44]
       },
       {
         unified: '1F6B4-1F3FF-200D-2640-FE0F',
-        sheet: [35, 8]
+        sheet: [36, 45]
       }
     ],
     shortName: 'woman-biking'
@@ -11285,27 +12079,27 @@ export const emojis: CompressedEmojiData[] = [
       'sport',
       'move'
     ],
-    sheet: [35, 33],
+    sheet: [37, 9],
     skinVariations: [
       {
         unified: '1F6B5-1F3FB',
-        sheet: [35, 34]
+        sheet: [37, 10]
       },
       {
         unified: '1F6B5-1F3FC',
-        sheet: [35, 35]
+        sheet: [37, 11]
       },
       {
         unified: '1F6B5-1F3FD',
-        sheet: [35, 36]
+        sheet: [37, 12]
       },
       {
         unified: '1F6B5-1F3FE',
-        sheet: [35, 37]
+        sheet: [37, 13]
       },
       {
         unified: '1F6B5-1F3FF',
-        sheet: [35, 38]
+        sheet: [37, 14]
       }
     ],
     shortName: 'mountain_bicyclist',
@@ -11323,27 +12117,27 @@ export const emojis: CompressedEmojiData[] = [
       'race',
       'bike'
     ],
-    sheet: [35, 27],
+    sheet: [37, 3],
     skinVariations: [
       {
         unified: '1F6B5-1F3FB-200D-2642-FE0F',
-        sheet: [35, 28]
+        sheet: [37, 4]
       },
       {
         unified: '1F6B5-1F3FC-200D-2642-FE0F',
-        sheet: [35, 29]
+        sheet: [37, 5]
       },
       {
         unified: '1F6B5-1F3FD-200D-2642-FE0F',
-        sheet: [35, 30]
+        sheet: [37, 6]
       },
       {
         unified: '1F6B5-1F3FE-200D-2642-FE0F',
-        sheet: [35, 31]
+        sheet: [37, 7]
       },
       {
         unified: '1F6B5-1F3FF-200D-2642-FE0F',
-        sheet: [35, 32]
+        sheet: [37, 8]
       }
     ],
     shortName: 'man-mountain-biking'
@@ -11361,27 +12155,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman',
       'female'
     ],
-    sheet: [35, 21],
+    sheet: [36, 58],
     skinVariations: [
       {
         unified: '1F6B5-1F3FB-200D-2640-FE0F',
-        sheet: [35, 22]
+        sheet: [36, 59]
       },
       {
         unified: '1F6B5-1F3FC-200D-2640-FE0F',
-        sheet: [35, 23]
+        sheet: [36, 60]
       },
       {
         unified: '1F6B5-1F3FD-200D-2640-FE0F',
-        sheet: [35, 24]
+        sheet: [37, 0]
       },
       {
         unified: '1F6B5-1F3FE-200D-2640-FE0F',
-        sheet: [35, 25]
+        sheet: [37, 1]
       },
       {
         unified: '1F6B5-1F3FF-200D-2640-FE0F',
-        sheet: [35, 26]
+        sheet: [37, 2]
       }
     ],
     shortName: 'woman-mountain-biking'
@@ -11394,27 +12188,27 @@ export const emojis: CompressedEmojiData[] = [
       'sport',
       'gymnastic'
     ],
-    sheet: [40, 17],
+    sheet: [42, 7],
     skinVariations: [
       {
         unified: '1F938-1F3FB',
-        sheet: [40, 18]
+        sheet: [42, 8]
       },
       {
         unified: '1F938-1F3FC',
-        sheet: [40, 19]
+        sheet: [42, 9]
       },
       {
         unified: '1F938-1F3FD',
-        sheet: [40, 20]
+        sheet: [42, 10]
       },
       {
         unified: '1F938-1F3FE',
-        sheet: [40, 21]
+        sheet: [42, 11]
       },
       {
         unified: '1F938-1F3FF',
-        sheet: [40, 22]
+        sheet: [42, 12]
       }
     ],
     shortName: 'person_doing_cartwheel'
@@ -11426,27 +12220,27 @@ export const emojis: CompressedEmojiData[] = [
       'man_cartwheeling',
       'gymnastics'
     ],
-    sheet: [40, 11],
+    sheet: [42, 1],
     skinVariations: [
       {
         unified: '1F938-1F3FB-200D-2642-FE0F',
-        sheet: [40, 12]
+        sheet: [42, 2]
       },
       {
         unified: '1F938-1F3FC-200D-2642-FE0F',
-        sheet: [40, 13]
+        sheet: [42, 3]
       },
       {
         unified: '1F938-1F3FD-200D-2642-FE0F',
-        sheet: [40, 14]
+        sheet: [42, 4]
       },
       {
         unified: '1F938-1F3FE-200D-2642-FE0F',
-        sheet: [40, 15]
+        sheet: [42, 5]
       },
       {
         unified: '1F938-1F3FF-200D-2642-FE0F',
-        sheet: [40, 16]
+        sheet: [42, 6]
       }
     ],
     shortName: 'man-cartwheeling'
@@ -11458,27 +12252,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman_cartwheeling',
       'gymnastics'
     ],
-    sheet: [40, 5],
+    sheet: [41, 56],
     skinVariations: [
       {
         unified: '1F938-1F3FB-200D-2640-FE0F',
-        sheet: [40, 6]
+        sheet: [41, 57]
       },
       {
         unified: '1F938-1F3FC-200D-2640-FE0F',
-        sheet: [40, 7]
+        sheet: [41, 58]
       },
       {
         unified: '1F938-1F3FD-200D-2640-FE0F',
-        sheet: [40, 8]
+        sheet: [41, 59]
       },
       {
         unified: '1F938-1F3FE-200D-2640-FE0F',
-        sheet: [40, 9]
+        sheet: [41, 60]
       },
       {
         unified: '1F938-1F3FF-200D-2640-FE0F',
-        sheet: [40, 10]
+        sheet: [42, 0]
       }
     ],
     shortName: 'woman-cartwheeling'
@@ -11490,7 +12284,7 @@ export const emojis: CompressedEmojiData[] = [
       'people_wrestling',
       'sport'
     ],
-    sheet: [40, 44],
+    sheet: [42, 34],
     shortName: 'wrestlers'
   },
   {
@@ -11501,7 +12295,7 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'wrestlers'
     ],
-    sheet: [40, 43],
+    sheet: [42, 33],
     shortName: 'man-wrestling'
   },
   {
@@ -11512,7 +12306,7 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'wrestlers'
     ],
-    sheet: [40, 42],
+    sheet: [42, 32],
     shortName: 'woman-wrestling'
   },
   {
@@ -11522,27 +12316,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_playing_water_polo',
       'sport'
     ],
-    sheet: [40, 57],
+    sheet: [42, 47],
     skinVariations: [
       {
         unified: '1F93D-1F3FB',
-        sheet: [41, 0]
+        sheet: [42, 48]
       },
       {
         unified: '1F93D-1F3FC',
-        sheet: [41, 1]
+        sheet: [42, 49]
       },
       {
         unified: '1F93D-1F3FD',
-        sheet: [41, 2]
+        sheet: [42, 50]
       },
       {
         unified: '1F93D-1F3FE',
-        sheet: [41, 3]
+        sheet: [42, 51]
       },
       {
         unified: '1F93D-1F3FF',
-        sheet: [41, 4]
+        sheet: [42, 52]
       }
     ],
     shortName: 'water_polo'
@@ -11555,27 +12349,27 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'pool'
     ],
-    sheet: [40, 51],
+    sheet: [42, 41],
     skinVariations: [
       {
         unified: '1F93D-1F3FB-200D-2642-FE0F',
-        sheet: [40, 52]
+        sheet: [42, 42]
       },
       {
         unified: '1F93D-1F3FC-200D-2642-FE0F',
-        sheet: [40, 53]
+        sheet: [42, 43]
       },
       {
         unified: '1F93D-1F3FD-200D-2642-FE0F',
-        sheet: [40, 54]
+        sheet: [42, 44]
       },
       {
         unified: '1F93D-1F3FE-200D-2642-FE0F',
-        sheet: [40, 55]
+        sheet: [42, 45]
       },
       {
         unified: '1F93D-1F3FF-200D-2642-FE0F',
-        sheet: [40, 56]
+        sheet: [42, 46]
       }
     ],
     shortName: 'man-playing-water-polo'
@@ -11588,27 +12382,27 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'pool'
     ],
-    sheet: [40, 45],
+    sheet: [42, 35],
     skinVariations: [
       {
         unified: '1F93D-1F3FB-200D-2640-FE0F',
-        sheet: [40, 46]
+        sheet: [42, 36]
       },
       {
         unified: '1F93D-1F3FC-200D-2640-FE0F',
-        sheet: [40, 47]
+        sheet: [42, 37]
       },
       {
         unified: '1F93D-1F3FD-200D-2640-FE0F',
-        sheet: [40, 48]
+        sheet: [42, 38]
       },
       {
         unified: '1F93D-1F3FE-200D-2640-FE0F',
-        sheet: [40, 49]
+        sheet: [42, 39]
       },
       {
         unified: '1F93D-1F3FF-200D-2640-FE0F',
-        sheet: [40, 50]
+        sheet: [42, 40]
       }
     ],
     shortName: 'woman-playing-water-polo'
@@ -11620,27 +12414,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_playing_handball',
       'sport'
     ],
-    sheet: [41, 17],
+    sheet: [43, 4],
     skinVariations: [
       {
         unified: '1F93E-1F3FB',
-        sheet: [41, 18]
+        sheet: [43, 5]
       },
       {
         unified: '1F93E-1F3FC',
-        sheet: [41, 19]
+        sheet: [43, 6]
       },
       {
         unified: '1F93E-1F3FD',
-        sheet: [41, 20]
+        sheet: [43, 7]
       },
       {
         unified: '1F93E-1F3FE',
-        sheet: [41, 21]
+        sheet: [43, 8]
       },
       {
         unified: '1F93E-1F3FF',
-        sheet: [41, 22]
+        sheet: [43, 9]
       }
     ],
     shortName: 'handball'
@@ -11652,27 +12446,27 @@ export const emojis: CompressedEmojiData[] = [
       'man_playing_handball',
       'sports'
     ],
-    sheet: [41, 11],
+    sheet: [42, 59],
     skinVariations: [
       {
         unified: '1F93E-1F3FB-200D-2642-FE0F',
-        sheet: [41, 12]
+        sheet: [42, 60]
       },
       {
         unified: '1F93E-1F3FC-200D-2642-FE0F',
-        sheet: [41, 13]
+        sheet: [43, 0]
       },
       {
         unified: '1F93E-1F3FD-200D-2642-FE0F',
-        sheet: [41, 14]
+        sheet: [43, 1]
       },
       {
         unified: '1F93E-1F3FE-200D-2642-FE0F',
-        sheet: [41, 15]
+        sheet: [43, 2]
       },
       {
         unified: '1F93E-1F3FF-200D-2642-FE0F',
-        sheet: [41, 16]
+        sheet: [43, 3]
       }
     ],
     shortName: 'man-playing-handball'
@@ -11684,27 +12478,27 @@ export const emojis: CompressedEmojiData[] = [
       'woman_playing_handball',
       'sports'
     ],
-    sheet: [41, 5],
+    sheet: [42, 53],
     skinVariations: [
       {
         unified: '1F93E-1F3FB-200D-2640-FE0F',
-        sheet: [41, 6]
+        sheet: [42, 54]
       },
       {
         unified: '1F93E-1F3FC-200D-2640-FE0F',
-        sheet: [41, 7]
+        sheet: [42, 55]
       },
       {
         unified: '1F93E-1F3FD-200D-2640-FE0F',
-        sheet: [41, 8]
+        sheet: [42, 56]
       },
       {
         unified: '1F93E-1F3FE-200D-2640-FE0F',
-        sheet: [41, 9]
+        sheet: [42, 57]
       },
       {
         unified: '1F93E-1F3FF-200D-2640-FE0F',
-        sheet: [41, 10]
+        sheet: [42, 58]
       }
     ],
     shortName: 'woman-playing-handball'
@@ -11717,27 +12511,27 @@ export const emojis: CompressedEmojiData[] = [
       'performance',
       'balance'
     ],
-    sheet: [40, 35],
+    sheet: [42, 25],
     skinVariations: [
       {
         unified: '1F939-1F3FB',
-        sheet: [40, 36]
+        sheet: [42, 26]
       },
       {
         unified: '1F939-1F3FC',
-        sheet: [40, 37]
+        sheet: [42, 27]
       },
       {
         unified: '1F939-1F3FD',
-        sheet: [40, 38]
+        sheet: [42, 28]
       },
       {
         unified: '1F939-1F3FE',
-        sheet: [40, 39]
+        sheet: [42, 29]
       },
       {
         unified: '1F939-1F3FF',
-        sheet: [40, 40]
+        sheet: [42, 30]
       }
     ],
     shortName: 'juggling'
@@ -11752,27 +12546,27 @@ export const emojis: CompressedEmojiData[] = [
       'skill',
       'multitask'
     ],
-    sheet: [40, 29],
+    sheet: [42, 19],
     skinVariations: [
       {
         unified: '1F939-1F3FB-200D-2642-FE0F',
-        sheet: [40, 30]
+        sheet: [42, 20]
       },
       {
         unified: '1F939-1F3FC-200D-2642-FE0F',
-        sheet: [40, 31]
+        sheet: [42, 21]
       },
       {
         unified: '1F939-1F3FD-200D-2642-FE0F',
-        sheet: [40, 32]
+        sheet: [42, 22]
       },
       {
         unified: '1F939-1F3FE-200D-2642-FE0F',
-        sheet: [40, 33]
+        sheet: [42, 23]
       },
       {
         unified: '1F939-1F3FF-200D-2642-FE0F',
-        sheet: [40, 34]
+        sheet: [42, 24]
       }
     ],
     shortName: 'man-juggling'
@@ -11787,27 +12581,27 @@ export const emojis: CompressedEmojiData[] = [
       'skill',
       'multitask'
     ],
-    sheet: [40, 23],
+    sheet: [42, 13],
     skinVariations: [
       {
         unified: '1F939-1F3FB-200D-2640-FE0F',
-        sheet: [40, 24]
+        sheet: [42, 14]
       },
       {
         unified: '1F939-1F3FC-200D-2640-FE0F',
-        sheet: [40, 25]
+        sheet: [42, 15]
       },
       {
         unified: '1F939-1F3FD-200D-2640-FE0F',
-        sheet: [40, 26]
+        sheet: [42, 16]
       },
       {
         unified: '1F939-1F3FE-200D-2640-FE0F',
-        sheet: [40, 27]
+        sheet: [42, 17]
       },
       {
         unified: '1F939-1F3FF-200D-2640-FE0F',
-        sheet: [40, 28]
+        sheet: [42, 18]
       }
     ],
     shortName: 'woman-juggling'
@@ -11819,27 +12613,27 @@ export const emojis: CompressedEmojiData[] = [
       'person_in_lotus_position',
       'meditate'
     ],
-    sheet: [49, 57],
+    sheet: [51, 34],
     skinVariations: [
       {
         unified: '1F9D8-1F3FB',
-        sheet: [50, 0]
+        sheet: [51, 35]
       },
       {
         unified: '1F9D8-1F3FC',
-        sheet: [50, 1]
+        sheet: [51, 36]
       },
       {
         unified: '1F9D8-1F3FD',
-        sheet: [50, 2]
+        sheet: [51, 37]
       },
       {
         unified: '1F9D8-1F3FE',
-        sheet: [50, 3]
+        sheet: [51, 38]
       },
       {
         unified: '1F9D8-1F3FF',
-        sheet: [50, 4]
+        sheet: [51, 39]
       }
     ],
     shortName: 'person_in_lotus_position',
@@ -11858,27 +12652,27 @@ export const emojis: CompressedEmojiData[] = [
       'zen',
       'mindfulness'
     ],
-    sheet: [49, 51],
+    sheet: [51, 28],
     skinVariations: [
       {
         unified: '1F9D8-1F3FB-200D-2642-FE0F',
-        sheet: [49, 52]
+        sheet: [51, 29]
       },
       {
         unified: '1F9D8-1F3FC-200D-2642-FE0F',
-        sheet: [49, 53]
+        sheet: [51, 30]
       },
       {
         unified: '1F9D8-1F3FD-200D-2642-FE0F',
-        sheet: [49, 54]
+        sheet: [51, 31]
       },
       {
         unified: '1F9D8-1F3FE-200D-2642-FE0F',
-        sheet: [49, 55]
+        sheet: [51, 32]
       },
       {
         unified: '1F9D8-1F3FF-200D-2642-FE0F',
-        sheet: [49, 56]
+        sheet: [51, 33]
       }
     ],
     shortName: 'man_in_lotus_position'
@@ -11897,27 +12691,27 @@ export const emojis: CompressedEmojiData[] = [
       'zen',
       'mindfulness'
     ],
-    sheet: [49, 45],
+    sheet: [51, 22],
     skinVariations: [
       {
         unified: '1F9D8-1F3FB-200D-2640-FE0F',
-        sheet: [49, 46]
+        sheet: [51, 23]
       },
       {
         unified: '1F9D8-1F3FC-200D-2640-FE0F',
-        sheet: [49, 47]
+        sheet: [51, 24]
       },
       {
         unified: '1F9D8-1F3FD-200D-2640-FE0F',
-        sheet: [49, 48]
+        sheet: [51, 25]
       },
       {
         unified: '1F9D8-1F3FE-200D-2640-FE0F',
-        sheet: [49, 49]
+        sheet: [51, 26]
       },
       {
         unified: '1F9D8-1F3FF-200D-2640-FE0F',
-        sheet: [49, 50]
+        sheet: [51, 27]
       }
     ],
     shortName: 'woman_in_lotus_position'
@@ -11931,27 +12725,27 @@ export const emojis: CompressedEmojiData[] = [
       'shower',
       'bathroom'
     ],
-    sheet: [36, 8],
+    sheet: [37, 42],
     skinVariations: [
       {
         unified: '1F6C0-1F3FB',
-        sheet: [36, 9]
+        sheet: [37, 43]
       },
       {
         unified: '1F6C0-1F3FC',
-        sheet: [36, 10]
+        sheet: [37, 44]
       },
       {
         unified: '1F6C0-1F3FD',
-        sheet: [36, 11]
+        sheet: [37, 45]
       },
       {
         unified: '1F6C0-1F3FE',
-        sheet: [36, 12]
+        sheet: [37, 46]
       },
       {
         unified: '1F6C0-1F3FF',
-        sheet: [36, 13]
+        sheet: [37, 47]
       }
     ],
     shortName: 'bath'
@@ -11964,27 +12758,27 @@ export const emojis: CompressedEmojiData[] = [
       'bed',
       'rest'
     ],
-    sheet: [36, 20],
+    sheet: [37, 54],
     skinVariations: [
       {
         unified: '1F6CC-1F3FB',
-        sheet: [36, 21]
+        sheet: [37, 55]
       },
       {
         unified: '1F6CC-1F3FC',
-        sheet: [36, 22]
+        sheet: [37, 56]
       },
       {
         unified: '1F6CC-1F3FD',
-        sheet: [36, 23]
+        sheet: [37, 57]
       },
       {
         unified: '1F6CC-1F3FE',
-        sheet: [36, 24]
+        sheet: [37, 58]
       },
       {
         unified: '1F6CC-1F3FF',
-        sheet: [36, 25]
+        sheet: [37, 59]
       }
     ],
     shortName: 'sleeping_accommodation'
@@ -11996,117 +12790,117 @@ export const emojis: CompressedEmojiData[] = [
       'people_holding_hands',
       'friendship'
     ],
-    sheet: [47, 9],
+    sheet: [48, 41],
     skinVariations: [
       {
         unified: '1F9D1-1F3FB-200D-1F91D-200D-1F9D1-1F3FB',
-        sheet: [47, 10]
+        sheet: [48, 42]
       },
       {
         unified: '1F9D1-1F3FB-200D-1F91D-200D-1F9D1-1F3FC',
-        sheet: [47, 11],
+        sheet: [48, 43],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FB-200D-1F91D-200D-1F9D1-1F3FD',
-        sheet: [47, 12],
+        sheet: [48, 44],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FB-200D-1F91D-200D-1F9D1-1F3FE',
-        sheet: [47, 13],
+        sheet: [48, 45],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FB-200D-1F91D-200D-1F9D1-1F3FF',
-        sheet: [47, 14],
+        sheet: [48, 46],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FC-200D-1F91D-200D-1F9D1-1F3FB',
-        sheet: [47, 15]
+        sheet: [48, 47]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F91D-200D-1F9D1-1F3FC',
-        sheet: [47, 16]
+        sheet: [48, 48]
       },
       {
         unified: '1F9D1-1F3FC-200D-1F91D-200D-1F9D1-1F3FD',
-        sheet: [47, 17],
+        sheet: [48, 49],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FC-200D-1F91D-200D-1F9D1-1F3FE',
-        sheet: [47, 18],
+        sheet: [48, 50],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FC-200D-1F91D-200D-1F9D1-1F3FF',
-        sheet: [47, 19],
+        sheet: [48, 51],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FD-200D-1F91D-200D-1F9D1-1F3FB',
-        sheet: [47, 20]
+        sheet: [48, 52]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F91D-200D-1F9D1-1F3FC',
-        sheet: [47, 21]
+        sheet: [48, 53]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F91D-200D-1F9D1-1F3FD',
-        sheet: [47, 22]
+        sheet: [48, 54]
       },
       {
         unified: '1F9D1-1F3FD-200D-1F91D-200D-1F9D1-1F3FE',
-        sheet: [47, 23],
+        sheet: [48, 55],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FD-200D-1F91D-200D-1F9D1-1F3FF',
-        sheet: [47, 24],
+        sheet: [48, 56],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FB',
-        sheet: [47, 25]
+        sheet: [48, 57]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FC',
-        sheet: [47, 26]
+        sheet: [48, 58]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FD',
-        sheet: [47, 27]
+        sheet: [48, 59]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FE',
-        sheet: [47, 28]
+        sheet: [48, 60]
       },
       {
         unified: '1F9D1-1F3FE-200D-1F91D-200D-1F9D1-1F3FF',
-        sheet: [47, 29],
+        sheet: [49, 0],
         hidden: ['facebook']
       },
       {
         unified: '1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FB',
-        sheet: [47, 30]
+        sheet: [49, 1]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FC',
-        sheet: [47, 31]
+        sheet: [49, 2]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FD',
-        sheet: [47, 32]
+        sheet: [49, 3]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FE',
-        sheet: [47, 33]
+        sheet: [49, 4]
       },
       {
         unified: '1F9D1-1F3FF-200D-1F91D-200D-1F9D1-1F3FF',
-        sheet: [47, 34]
+        sheet: [49, 5]
       }
     ],
     shortName: 'people_holding_hands'
@@ -12125,117 +12919,117 @@ export const emojis: CompressedEmojiData[] = [
       'people',
       'human'
     ],
-    sheet: [21, 5],
+    sheet: [22, 31],
     skinVariations: [
       {
         unified: '1F46D-1F3FB',
-        sheet: [21, 6]
+        sheet: [22, 32]
       },
       {
         unified: '1F46D-1F3FC',
-        sheet: [21, 7]
+        sheet: [22, 33]
       },
       {
         unified: '1F46D-1F3FD',
-        sheet: [21, 8]
+        sheet: [22, 34]
       },
       {
         unified: '1F46D-1F3FE',
-        sheet: [21, 9]
+        sheet: [22, 35]
       },
       {
         unified: '1F46D-1F3FF',
-        sheet: [21, 10]
+        sheet: [22, 36]
       },
       {
         unified: '1F469-1F3FB-200D-1F91D-200D-1F469-1F3FC',
-        sheet: [21, 11],
+        sheet: [22, 37],
         hidden: ['facebook']
       },
       {
         unified: '1F469-1F3FB-200D-1F91D-200D-1F469-1F3FD',
-        sheet: [21, 12],
+        sheet: [22, 38],
         hidden: ['facebook']
       },
       {
         unified: '1F469-1F3FB-200D-1F91D-200D-1F469-1F3FE',
-        sheet: [21, 13],
+        sheet: [22, 39],
         hidden: ['facebook']
       },
       {
         unified: '1F469-1F3FB-200D-1F91D-200D-1F469-1F3FF',
-        sheet: [21, 14],
+        sheet: [22, 40],
         hidden: ['facebook']
       },
       {
         unified: '1F469-1F3FC-200D-1F91D-200D-1F469-1F3FB',
-        sheet: [21, 15]
+        sheet: [22, 41]
       },
       {
         unified: '1F469-1F3FC-200D-1F91D-200D-1F469-1F3FD',
-        sheet: [21, 16],
+        sheet: [22, 42],
         hidden: ['facebook']
       },
       {
         unified: '1F469-1F3FC-200D-1F91D-200D-1F469-1F3FE',
-        sheet: [21, 17],
+        sheet: [22, 43],
         hidden: ['facebook']
       },
       {
         unified: '1F469-1F3FC-200D-1F91D-200D-1F469-1F3FF',
-        sheet: [21, 18],
+        sheet: [22, 44],
         hidden: ['facebook']
       },
       {
         unified: '1F469-1F3FD-200D-1F91D-200D-1F469-1F3FB',
-        sheet: [21, 19]
+        sheet: [22, 45]
       },
       {
         unified: '1F469-1F3FD-200D-1F91D-200D-1F469-1F3FC',
-        sheet: [21, 20]
+        sheet: [22, 46]
       },
       {
         unified: '1F469-1F3FD-200D-1F91D-200D-1F469-1F3FE',
-        sheet: [21, 21],
+        sheet: [22, 47],
         hidden: ['facebook']
       },
       {
         unified: '1F469-1F3FD-200D-1F91D-200D-1F469-1F3FF',
-        sheet: [21, 22],
+        sheet: [22, 48],
         hidden: ['facebook']
       },
       {
         unified: '1F469-1F3FE-200D-1F91D-200D-1F469-1F3FB',
-        sheet: [21, 23]
+        sheet: [22, 49]
       },
       {
         unified: '1F469-1F3FE-200D-1F91D-200D-1F469-1F3FC',
-        sheet: [21, 24]
+        sheet: [22, 50]
       },
       {
         unified: '1F469-1F3FE-200D-1F91D-200D-1F469-1F3FD',
-        sheet: [21, 25]
+        sheet: [22, 51]
       },
       {
         unified: '1F469-1F3FE-200D-1F91D-200D-1F469-1F3FF',
-        sheet: [21, 26],
+        sheet: [22, 52],
         hidden: ['facebook']
       },
       {
         unified: '1F469-1F3FF-200D-1F91D-200D-1F469-1F3FB',
-        sheet: [21, 27]
+        sheet: [22, 53]
       },
       {
         unified: '1F469-1F3FF-200D-1F91D-200D-1F469-1F3FC',
-        sheet: [21, 28]
+        sheet: [22, 54]
       },
       {
         unified: '1F469-1F3FF-200D-1F91D-200D-1F469-1F3FD',
-        sheet: [21, 29]
+        sheet: [22, 55]
       },
       {
         unified: '1F469-1F3FF-200D-1F91D-200D-1F469-1F3FE',
-        sheet: [21, 30]
+        sheet: [22, 56]
       }
     ],
     shortNames: ['women_holding_hands'],
@@ -12257,107 +13051,107 @@ export const emojis: CompressedEmojiData[] = [
       'valentines',
       'marriage'
     ],
-    sheet: [20, 11],
+    sheet: [21, 40],
     skinVariations: [
       {
         unified: '1F46B-1F3FB',
-        sheet: [20, 12]
+        sheet: [21, 41]
       },
       {
         unified: '1F46B-1F3FC',
-        sheet: [20, 13]
+        sheet: [21, 42]
       },
       {
         unified: '1F46B-1F3FD',
-        sheet: [20, 14]
+        sheet: [21, 43]
       },
       {
         unified: '1F46B-1F3FE',
-        sheet: [20, 15]
+        sheet: [21, 44]
       },
       {
         unified: '1F46B-1F3FF',
-        sheet: [20, 16]
+        sheet: [21, 45]
       },
       {
         unified: '1F469-1F3FB-200D-1F91D-200D-1F468-1F3FC',
-        sheet: [20, 17]
+        sheet: [21, 46]
       },
       {
         unified: '1F469-1F3FB-200D-1F91D-200D-1F468-1F3FD',
-        sheet: [20, 18]
+        sheet: [21, 47]
       },
       {
         unified: '1F469-1F3FB-200D-1F91D-200D-1F468-1F3FE',
-        sheet: [20, 19]
+        sheet: [21, 48]
       },
       {
         unified: '1F469-1F3FB-200D-1F91D-200D-1F468-1F3FF',
-        sheet: [20, 20]
+        sheet: [21, 49]
       },
       {
         unified: '1F469-1F3FC-200D-1F91D-200D-1F468-1F3FB',
-        sheet: [20, 21]
+        sheet: [21, 50]
       },
       {
         unified: '1F469-1F3FC-200D-1F91D-200D-1F468-1F3FD',
-        sheet: [20, 22]
+        sheet: [21, 51]
       },
       {
         unified: '1F469-1F3FC-200D-1F91D-200D-1F468-1F3FE',
-        sheet: [20, 23]
+        sheet: [21, 52]
       },
       {
         unified: '1F469-1F3FC-200D-1F91D-200D-1F468-1F3FF',
-        sheet: [20, 24]
+        sheet: [21, 53]
       },
       {
         unified: '1F469-1F3FD-200D-1F91D-200D-1F468-1F3FB',
-        sheet: [20, 25]
+        sheet: [21, 54]
       },
       {
         unified: '1F469-1F3FD-200D-1F91D-200D-1F468-1F3FC',
-        sheet: [20, 26]
+        sheet: [21, 55]
       },
       {
         unified: '1F469-1F3FD-200D-1F91D-200D-1F468-1F3FE',
-        sheet: [20, 27]
+        sheet: [21, 56]
       },
       {
         unified: '1F469-1F3FD-200D-1F91D-200D-1F468-1F3FF',
-        sheet: [20, 28]
+        sheet: [21, 57]
       },
       {
         unified: '1F469-1F3FE-200D-1F91D-200D-1F468-1F3FB',
-        sheet: [20, 29]
+        sheet: [21, 58]
       },
       {
         unified: '1F469-1F3FE-200D-1F91D-200D-1F468-1F3FC',
-        sheet: [20, 30]
+        sheet: [21, 59]
       },
       {
         unified: '1F469-1F3FE-200D-1F91D-200D-1F468-1F3FD',
-        sheet: [20, 31]
+        sheet: [21, 60]
       },
       {
         unified: '1F469-1F3FE-200D-1F91D-200D-1F468-1F3FF',
-        sheet: [20, 32]
+        sheet: [22, 0]
       },
       {
         unified: '1F469-1F3FF-200D-1F91D-200D-1F468-1F3FB',
-        sheet: [20, 33]
+        sheet: [22, 1]
       },
       {
         unified: '1F469-1F3FF-200D-1F91D-200D-1F468-1F3FC',
-        sheet: [20, 34]
+        sheet: [22, 2]
       },
       {
         unified: '1F469-1F3FF-200D-1F91D-200D-1F468-1F3FD',
-        sheet: [20, 35]
+        sheet: [22, 3]
       },
       {
         unified: '1F469-1F3FF-200D-1F91D-200D-1F468-1F3FE',
-        sheet: [20, 36]
+        sheet: [22, 4]
       }
     ],
     shortNames: [
@@ -12380,117 +13174,117 @@ export const emojis: CompressedEmojiData[] = [
       'people',
       'human'
     ],
-    sheet: [20, 37],
+    sheet: [22, 5],
     skinVariations: [
       {
         unified: '1F46C-1F3FB',
-        sheet: [20, 38]
+        sheet: [22, 6]
       },
       {
         unified: '1F46C-1F3FC',
-        sheet: [20, 39]
+        sheet: [22, 7]
       },
       {
         unified: '1F46C-1F3FD',
-        sheet: [20, 40]
+        sheet: [22, 8]
       },
       {
         unified: '1F46C-1F3FE',
-        sheet: [20, 41]
+        sheet: [22, 9]
       },
       {
         unified: '1F46C-1F3FF',
-        sheet: [20, 42]
+        sheet: [22, 10]
       },
       {
         unified: '1F468-1F3FB-200D-1F91D-200D-1F468-1F3FC',
-        sheet: [20, 43],
+        sheet: [22, 11],
         hidden: ['facebook']
       },
       {
         unified: '1F468-1F3FB-200D-1F91D-200D-1F468-1F3FD',
-        sheet: [20, 44],
+        sheet: [22, 12],
         hidden: ['facebook']
       },
       {
         unified: '1F468-1F3FB-200D-1F91D-200D-1F468-1F3FE',
-        sheet: [20, 45],
+        sheet: [22, 13],
         hidden: ['facebook']
       },
       {
         unified: '1F468-1F3FB-200D-1F91D-200D-1F468-1F3FF',
-        sheet: [20, 46],
+        sheet: [22, 14],
         hidden: ['facebook']
       },
       {
         unified: '1F468-1F3FC-200D-1F91D-200D-1F468-1F3FB',
-        sheet: [20, 47]
+        sheet: [22, 15]
       },
       {
         unified: '1F468-1F3FC-200D-1F91D-200D-1F468-1F3FD',
-        sheet: [20, 48],
+        sheet: [22, 16],
         hidden: ['facebook']
       },
       {
         unified: '1F468-1F3FC-200D-1F91D-200D-1F468-1F3FE',
-        sheet: [20, 49],
+        sheet: [22, 17],
         hidden: ['facebook']
       },
       {
         unified: '1F468-1F3FC-200D-1F91D-200D-1F468-1F3FF',
-        sheet: [20, 50],
+        sheet: [22, 18],
         hidden: ['facebook']
       },
       {
         unified: '1F468-1F3FD-200D-1F91D-200D-1F468-1F3FB',
-        sheet: [20, 51]
+        sheet: [22, 19]
       },
       {
         unified: '1F468-1F3FD-200D-1F91D-200D-1F468-1F3FC',
-        sheet: [20, 52]
+        sheet: [22, 20]
       },
       {
         unified: '1F468-1F3FD-200D-1F91D-200D-1F468-1F3FE',
-        sheet: [20, 53],
+        sheet: [22, 21],
         hidden: ['facebook']
       },
       {
         unified: '1F468-1F3FD-200D-1F91D-200D-1F468-1F3FF',
-        sheet: [20, 54],
+        sheet: [22, 22],
         hidden: ['facebook']
       },
       {
         unified: '1F468-1F3FE-200D-1F91D-200D-1F468-1F3FB',
-        sheet: [20, 55]
+        sheet: [22, 23]
       },
       {
         unified: '1F468-1F3FE-200D-1F91D-200D-1F468-1F3FC',
-        sheet: [20, 56]
+        sheet: [22, 24]
       },
       {
         unified: '1F468-1F3FE-200D-1F91D-200D-1F468-1F3FD',
-        sheet: [20, 57]
+        sheet: [22, 25]
       },
       {
         unified: '1F468-1F3FE-200D-1F91D-200D-1F468-1F3FF',
-        sheet: [21, 0],
+        sheet: [22, 26],
         hidden: ['facebook']
       },
       {
         unified: '1F468-1F3FF-200D-1F91D-200D-1F468-1F3FB',
-        sheet: [21, 1]
+        sheet: [22, 27]
       },
       {
         unified: '1F468-1F3FF-200D-1F91D-200D-1F468-1F3FC',
-        sheet: [21, 2]
+        sheet: [22, 28]
       },
       {
         unified: '1F468-1F3FF-200D-1F91D-200D-1F468-1F3FD',
-        sheet: [21, 3]
+        sheet: [22, 29]
       },
       {
         unified: '1F468-1F3FF-200D-1F91D-200D-1F468-1F3FE',
-        sheet: [21, 4]
+        sheet: [22, 30]
       }
     ],
     shortNames: ['men_holding_hands'],
@@ -12508,19 +13302,266 @@ export const emojis: CompressedEmojiData[] = [
       'dating',
       'marriage'
     ],
-    sheet: [25, 27],
-    shortName: 'couplekiss',
-    obsoletedBy: '1F469-200D-2764-FE0F-200D-1F48B-200D-1F468'
+    sheet: [26, 41],
+    skinVariations: [
+      {
+        unified: '1F48F-1F3FB',
+        sheet: [26, 42]
+      },
+      {
+        unified: '1F48F-1F3FC',
+        sheet: [26, 43]
+      },
+      {
+        unified: '1F48F-1F3FD',
+        sheet: [26, 44]
+      },
+      {
+        unified: '1F48F-1F3FE',
+        sheet: [26, 45]
+      },
+      {
+        unified: '1F48F-1F3FF',
+        sheet: [26, 46]
+      },
+      {
+        unified: '1F9D1-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FC',
+        sheet: [26, 47],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FD',
+        sheet: [26, 48],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FE',
+        sheet: [26, 49],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FF',
+        sheet: [26, 50],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FB',
+        sheet: [26, 51],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FD',
+        sheet: [26, 52],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FE',
+        sheet: [26, 53],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FF',
+        sheet: [26, 54],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FB',
+        sheet: [26, 55],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FC',
+        sheet: [26, 56],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FE',
+        sheet: [26, 57],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FF',
+        sheet: [26, 58],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FB',
+        sheet: [26, 59],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FC',
+        sheet: [26, 60],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FD',
+        sheet: [27, 0],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FF',
+        sheet: [27, 1],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FB',
+        sheet: [27, 2],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FC',
+        sheet: [27, 3],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FD',
+        sheet: [27, 4],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F9D1-1F3FE',
+        sheet: [27, 5],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'couplekiss'
   },
   {
     name: 'Kiss: Woman, Man',
     unified: '1F469-200D-2764-FE0F-200D-1F48B-200D-1F468',
-    obsoletes: '1F48F',
     keywords: [
       'kiss_woman_man',
       'love'
     ],
-    sheet: [20, 2],
+    sheet: [20, 42],
+    skinVariations: [
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FB',
+        sheet: [20, 43],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FC',
+        sheet: [20, 44],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FD',
+        sheet: [20, 45],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FE',
+        sheet: [20, 46],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF',
+        sheet: [20, 47],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FB',
+        sheet: [20, 48],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FC',
+        sheet: [20, 49],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FD',
+        sheet: [20, 50],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FE',
+        sheet: [20, 51],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF',
+        sheet: [20, 52],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FB',
+        sheet: [20, 53],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FC',
+        sheet: [20, 54],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FD',
+        sheet: [20, 55],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FE',
+        sheet: [20, 56],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF',
+        sheet: [20, 57],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FB',
+        sheet: [20, 58],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FC',
+        sheet: [20, 59],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FD',
+        sheet: [20, 60],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FE',
+        sheet: [21, 0],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF',
+        sheet: [21, 1],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FB',
+        sheet: [21, 2],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FC',
+        sheet: [21, 3],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FD',
+        sheet: [21, 4],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FE',
+        sheet: [21, 5],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF',
+        sheet: [21, 6],
+        hidden: ['facebook']
+      }
+    ],
     shortName: 'woman-kiss-man'
   },
   {
@@ -12535,7 +13576,134 @@ export const emojis: CompressedEmojiData[] = [
       'dating',
       'marriage'
     ],
-    sheet: [17, 13],
+    sheet: [16, 48],
+    skinVariations: [
+      {
+        unified: '1F468-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FB',
+        sheet: [16, 49],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FC',
+        sheet: [16, 50],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FD',
+        sheet: [16, 51],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FE',
+        sheet: [16, 52],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF',
+        sheet: [16, 53],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FB',
+        sheet: [16, 54],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FC',
+        sheet: [16, 55],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FD',
+        sheet: [16, 56],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FE',
+        sheet: [16, 57],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF',
+        sheet: [16, 58],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FB',
+        sheet: [16, 59],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FC',
+        sheet: [16, 60],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FD',
+        sheet: [17, 0],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FE',
+        sheet: [17, 1],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF',
+        sheet: [17, 2],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FB',
+        sheet: [17, 3],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FC',
+        sheet: [17, 4],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FD',
+        sheet: [17, 5],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FE',
+        sheet: [17, 6],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF',
+        sheet: [17, 7],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FB',
+        sheet: [17, 8],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FC',
+        sheet: [17, 9],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FD',
+        sheet: [17, 10],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FE',
+        sheet: [17, 11],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF',
+        sheet: [17, 12],
+        hidden: ['facebook']
+      }
+    ],
     shortName: 'man-kiss-man'
   },
   {
@@ -12550,7 +13718,134 @@ export const emojis: CompressedEmojiData[] = [
       'dating',
       'marriage'
     ],
-    sheet: [20, 3],
+    sheet: [21, 7],
+    skinVariations: [
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FB',
+        sheet: [21, 8],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FC',
+        sheet: [21, 9],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FD',
+        sheet: [21, 10],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FE',
+        sheet: [21, 11],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FF',
+        sheet: [21, 12],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FB',
+        sheet: [21, 13],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FC',
+        sheet: [21, 14],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FD',
+        sheet: [21, 15],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FE',
+        sheet: [21, 16],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FF',
+        sheet: [21, 17],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FB',
+        sheet: [21, 18],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FC',
+        sheet: [21, 19],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FD',
+        sheet: [21, 20],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FE',
+        sheet: [21, 21],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FF',
+        sheet: [21, 22],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FB',
+        sheet: [21, 23],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FC',
+        sheet: [21, 24],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FD',
+        sheet: [21, 25],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FE',
+        sheet: [21, 26],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FF',
+        sheet: [21, 27],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FB',
+        sheet: [21, 28],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FC',
+        sheet: [21, 29],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FD',
+        sheet: [21, 30],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FE',
+        sheet: [21, 31],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F48B-200D-1F469-1F3FF',
+        sheet: [21, 32],
+        hidden: ['facebook']
+      }
+    ],
     shortName: 'woman-kiss-woman'
   },
   {
@@ -12567,19 +13862,266 @@ export const emojis: CompressedEmojiData[] = [
       'valentines',
       'marriage'
     ],
-    sheet: [25, 29],
-    shortName: 'couple_with_heart',
-    obsoletedBy: '1F469-200D-2764-FE0F-200D-1F468'
+    sheet: [27, 7],
+    skinVariations: [
+      {
+        unified: '1F491-1F3FB',
+        sheet: [27, 8]
+      },
+      {
+        unified: '1F491-1F3FC',
+        sheet: [27, 9]
+      },
+      {
+        unified: '1F491-1F3FD',
+        sheet: [27, 10]
+      },
+      {
+        unified: '1F491-1F3FE',
+        sheet: [27, 11]
+      },
+      {
+        unified: '1F491-1F3FF',
+        sheet: [27, 12]
+      },
+      {
+        unified: '1F9D1-1F3FB-200D-2764-FE0F-200D-1F9D1-1F3FC',
+        sheet: [27, 13],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FB-200D-2764-FE0F-200D-1F9D1-1F3FD',
+        sheet: [27, 14],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FB-200D-2764-FE0F-200D-1F9D1-1F3FE',
+        sheet: [27, 15],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FB-200D-2764-FE0F-200D-1F9D1-1F3FF',
+        sheet: [27, 16],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FC-200D-2764-FE0F-200D-1F9D1-1F3FB',
+        sheet: [27, 17],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FC-200D-2764-FE0F-200D-1F9D1-1F3FD',
+        sheet: [27, 18],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FC-200D-2764-FE0F-200D-1F9D1-1F3FE',
+        sheet: [27, 19],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FC-200D-2764-FE0F-200D-1F9D1-1F3FF',
+        sheet: [27, 20],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FD-200D-2764-FE0F-200D-1F9D1-1F3FB',
+        sheet: [27, 21],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FD-200D-2764-FE0F-200D-1F9D1-1F3FC',
+        sheet: [27, 22],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FD-200D-2764-FE0F-200D-1F9D1-1F3FE',
+        sheet: [27, 23],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FD-200D-2764-FE0F-200D-1F9D1-1F3FF',
+        sheet: [27, 24],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FE-200D-2764-FE0F-200D-1F9D1-1F3FB',
+        sheet: [27, 25],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FE-200D-2764-FE0F-200D-1F9D1-1F3FC',
+        sheet: [27, 26],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FE-200D-2764-FE0F-200D-1F9D1-1F3FD',
+        sheet: [27, 27],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FE-200D-2764-FE0F-200D-1F9D1-1F3FF',
+        sheet: [27, 28],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FF-200D-2764-FE0F-200D-1F9D1-1F3FB',
+        sheet: [27, 29],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FF-200D-2764-FE0F-200D-1F9D1-1F3FC',
+        sheet: [27, 30],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FF-200D-2764-FE0F-200D-1F9D1-1F3FD',
+        sheet: [27, 31],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F9D1-1F3FF-200D-2764-FE0F-200D-1F9D1-1F3FE',
+        sheet: [27, 32],
+        hidden: ['facebook']
+      }
+    ],
+    shortName: 'couple_with_heart'
   },
   {
     name: 'Couple with Heart: Woman, Man',
     unified: '1F469-200D-2764-FE0F-200D-1F468',
-    obsoletes: '1F491',
     keywords: [
       'couple_with_heart_woman_man',
       'love'
     ],
-    sheet: [20, 0],
+    sheet: [19, 51],
+    skinVariations: [
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F468-1F3FB',
+        sheet: [19, 52],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F468-1F3FC',
+        sheet: [19, 53],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F468-1F3FD',
+        sheet: [19, 54],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F468-1F3FE',
+        sheet: [19, 55],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F468-1F3FF',
+        sheet: [19, 56],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F468-1F3FB',
+        sheet: [19, 57],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F468-1F3FC',
+        sheet: [19, 58],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F468-1F3FD',
+        sheet: [19, 59],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F468-1F3FE',
+        sheet: [19, 60],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F468-1F3FF',
+        sheet: [20, 0],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F468-1F3FB',
+        sheet: [20, 1],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F468-1F3FC',
+        sheet: [20, 2],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F468-1F3FD',
+        sheet: [20, 3],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F468-1F3FE',
+        sheet: [20, 4],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F468-1F3FF',
+        sheet: [20, 5],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F468-1F3FB',
+        sheet: [20, 6],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F468-1F3FC',
+        sheet: [20, 7],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F468-1F3FD',
+        sheet: [20, 8],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F468-1F3FE',
+        sheet: [20, 9],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F468-1F3FF',
+        sheet: [20, 10],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F468-1F3FB',
+        sheet: [20, 11],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F468-1F3FC',
+        sheet: [20, 12],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F468-1F3FD',
+        sheet: [20, 13],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F468-1F3FE',
+        sheet: [20, 14],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F468-1F3FF',
+        sheet: [20, 15],
+        hidden: ['facebook']
+      }
+    ],
     shortName: 'woman-heart-man'
   },
   {
@@ -12596,7 +14138,134 @@ export const emojis: CompressedEmojiData[] = [
       'valentines',
       'marriage'
     ],
-    sheet: [17, 12],
+    sheet: [16, 22],
+    skinVariations: [
+      {
+        unified: '1F468-1F3FB-200D-2764-FE0F-200D-1F468-1F3FB',
+        sheet: [16, 23],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FB-200D-2764-FE0F-200D-1F468-1F3FC',
+        sheet: [16, 24],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FB-200D-2764-FE0F-200D-1F468-1F3FD',
+        sheet: [16, 25],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FB-200D-2764-FE0F-200D-1F468-1F3FE',
+        sheet: [16, 26],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FB-200D-2764-FE0F-200D-1F468-1F3FF',
+        sheet: [16, 27],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FC-200D-2764-FE0F-200D-1F468-1F3FB',
+        sheet: [16, 28],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FC-200D-2764-FE0F-200D-1F468-1F3FC',
+        sheet: [16, 29],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FC-200D-2764-FE0F-200D-1F468-1F3FD',
+        sheet: [16, 30],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FC-200D-2764-FE0F-200D-1F468-1F3FE',
+        sheet: [16, 31],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FC-200D-2764-FE0F-200D-1F468-1F3FF',
+        sheet: [16, 32],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FD-200D-2764-FE0F-200D-1F468-1F3FB',
+        sheet: [16, 33],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FD-200D-2764-FE0F-200D-1F468-1F3FC',
+        sheet: [16, 34],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FD-200D-2764-FE0F-200D-1F468-1F3FD',
+        sheet: [16, 35],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FD-200D-2764-FE0F-200D-1F468-1F3FE',
+        sheet: [16, 36],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FD-200D-2764-FE0F-200D-1F468-1F3FF',
+        sheet: [16, 37],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FE-200D-2764-FE0F-200D-1F468-1F3FB',
+        sheet: [16, 38],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FE-200D-2764-FE0F-200D-1F468-1F3FC',
+        sheet: [16, 39],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FE-200D-2764-FE0F-200D-1F468-1F3FD',
+        sheet: [16, 40],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FE-200D-2764-FE0F-200D-1F468-1F3FE',
+        sheet: [16, 41],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FE-200D-2764-FE0F-200D-1F468-1F3FF',
+        sheet: [16, 42],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FF-200D-2764-FE0F-200D-1F468-1F3FB',
+        sheet: [16, 43],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FF-200D-2764-FE0F-200D-1F468-1F3FC',
+        sheet: [16, 44],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FF-200D-2764-FE0F-200D-1F468-1F3FD',
+        sheet: [16, 45],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FF-200D-2764-FE0F-200D-1F468-1F3FE',
+        sheet: [16, 46],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F468-1F3FF-200D-2764-FE0F-200D-1F468-1F3FF',
+        sheet: [16, 47],
+        hidden: ['facebook']
+      }
+    ],
     shortName: 'man-heart-man'
   },
   {
@@ -12613,7 +14282,134 @@ export const emojis: CompressedEmojiData[] = [
       'valentines',
       'marriage'
     ],
-    sheet: [20, 1],
+    sheet: [20, 16],
+    skinVariations: [
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F469-1F3FB',
+        sheet: [20, 17],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F469-1F3FC',
+        sheet: [20, 18],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F469-1F3FD',
+        sheet: [20, 19],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F469-1F3FE',
+        sheet: [20, 20],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FB-200D-2764-FE0F-200D-1F469-1F3FF',
+        sheet: [20, 21],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F469-1F3FB',
+        sheet: [20, 22],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F469-1F3FC',
+        sheet: [20, 23],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F469-1F3FD',
+        sheet: [20, 24],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F469-1F3FE',
+        sheet: [20, 25],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FC-200D-2764-FE0F-200D-1F469-1F3FF',
+        sheet: [20, 26],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F469-1F3FB',
+        sheet: [20, 27],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F469-1F3FC',
+        sheet: [20, 28],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F469-1F3FD',
+        sheet: [20, 29],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F469-1F3FE',
+        sheet: [20, 30],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FD-200D-2764-FE0F-200D-1F469-1F3FF',
+        sheet: [20, 31],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F469-1F3FB',
+        sheet: [20, 32],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F469-1F3FC',
+        sheet: [20, 33],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F469-1F3FD',
+        sheet: [20, 34],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F469-1F3FE',
+        sheet: [20, 35],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FE-200D-2764-FE0F-200D-1F469-1F3FF',
+        sheet: [20, 36],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F469-1F3FB',
+        sheet: [20, 37],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F469-1F3FC',
+        sheet: [20, 38],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F469-1F3FD',
+        sheet: [20, 39],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F469-1F3FE',
+        sheet: [20, 40],
+        hidden: ['facebook']
+      },
+      {
+        unified: '1F469-1F3FF-200D-2764-FE0F-200D-1F469-1F3FF',
+        sheet: [20, 41],
+        hidden: ['facebook']
+      }
+    ],
     shortName: 'woman-heart-woman'
   },
   {
@@ -12631,7 +14427,7 @@ export const emojis: CompressedEmojiData[] = [
       'people',
       'human'
     ],
-    sheet: [20, 10],
+    sheet: [21, 39],
     shortName: 'family',
     obsoletedBy: '1F468-200D-1F469-200D-1F466'
   },
@@ -12643,7 +14439,7 @@ export const emojis: CompressedEmojiData[] = [
       'family_man_woman_boy',
       'love'
     ],
-    sheet: [15, 27],
+    sheet: [14, 43],
     shortName: 'man-woman-boy'
   },
   {
@@ -12657,7 +14453,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'child'
     ],
-    sheet: [15, 29],
+    sheet: [14, 45],
     shortName: 'man-woman-girl'
   },
   {
@@ -12671,7 +14467,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [15, 30],
+    sheet: [14, 46],
     shortName: 'man-woman-girl-boy'
   },
   {
@@ -12685,7 +14481,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [15, 28],
+    sheet: [14, 44],
     shortName: 'man-woman-boy-boy'
   },
   {
@@ -12699,7 +14495,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [15, 31],
+    sheet: [14, 47],
     shortName: 'man-woman-girl-girl'
   },
   {
@@ -12713,7 +14509,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [15, 22],
+    sheet: [14, 38],
     shortName: 'man-man-boy'
   },
   {
@@ -12727,7 +14523,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [15, 24],
+    sheet: [14, 40],
     shortName: 'man-man-girl'
   },
   {
@@ -12741,7 +14537,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [15, 25],
+    sheet: [14, 41],
     shortName: 'man-man-girl-boy'
   },
   {
@@ -12755,7 +14551,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [15, 23],
+    sheet: [14, 39],
     shortName: 'man-man-boy-boy'
   },
   {
@@ -12769,7 +14565,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [15, 26],
+    sheet: [14, 42],
     shortName: 'man-man-girl-girl'
   },
   {
@@ -12783,7 +14579,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [18, 15],
+    sheet: [18, 11],
     shortName: 'woman-woman-boy'
   },
   {
@@ -12797,7 +14593,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [18, 17],
+    sheet: [18, 13],
     shortName: 'woman-woman-girl'
   },
   {
@@ -12811,7 +14607,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [18, 18],
+    sheet: [18, 14],
     shortName: 'woman-woman-girl-boy'
   },
   {
@@ -12825,7 +14621,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [18, 16],
+    sheet: [18, 12],
     shortName: 'woman-woman-boy-boy'
   },
   {
@@ -12839,7 +14635,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [18, 19],
+    sheet: [18, 15],
     shortName: 'woman-woman-girl-girl'
   },
   {
@@ -12853,7 +14649,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'child'
     ],
-    sheet: [15, 18],
+    sheet: [14, 34],
     shortName: 'man-boy'
   },
   {
@@ -12867,7 +14663,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [15, 17],
+    sheet: [14, 33],
     shortName: 'man-boy-boy'
   },
   {
@@ -12881,7 +14677,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'child'
     ],
-    sheet: [15, 21],
+    sheet: [14, 37],
     shortName: 'man-girl'
   },
   {
@@ -12895,7 +14691,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [15, 19],
+    sheet: [14, 35],
     shortName: 'man-girl-boy'
   },
   {
@@ -12909,7 +14705,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [15, 20],
+    sheet: [14, 36],
     shortName: 'man-girl-girl'
   },
   {
@@ -12923,7 +14719,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'child'
     ],
-    sheet: [18, 11],
+    sheet: [18, 7],
     shortName: 'woman-boy'
   },
   {
@@ -12937,7 +14733,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [18, 10],
+    sheet: [18, 6],
     shortName: 'woman-boy-boy'
   },
   {
@@ -12951,7 +14747,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'child'
     ],
-    sheet: [18, 14],
+    sheet: [18, 10],
     shortName: 'woman-girl'
   },
   {
@@ -12965,7 +14761,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [18, 12],
+    sheet: [18, 8],
     shortName: 'woman-girl-boy'
   },
   {
@@ -12979,7 +14775,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'children'
     ],
-    sheet: [18, 13],
+    sheet: [18, 9],
     shortName: 'woman-girl-girl'
   },
   {
@@ -12994,7 +14790,7 @@ export const emojis: CompressedEmojiData[] = [
       'say',
       'talk'
     ],
-    sheet: [30, 22],
+    sheet: [32, 10],
     shortName: 'speaking_head_in_silhouette'
   },
   {
@@ -13006,7 +14802,7 @@ export const emojis: CompressedEmojiData[] = [
       'person',
       'human'
     ],
-    sheet: [14, 13],
+    sheet: [13, 32],
     shortName: 'bust_in_silhouette'
   },
   {
@@ -13020,7 +14816,7 @@ export const emojis: CompressedEmojiData[] = [
       'group',
       'team'
     ],
-    sheet: [14, 14],
+    sheet: [13, 33],
     shortName: 'busts_in_silhouette'
   },
   {
@@ -13030,7 +14826,7 @@ export const emojis: CompressedEmojiData[] = [
       'people hugging',
       'care'
     ],
-    sheet: [53, 8],
+    sheet: [54, 44],
     shortName: 'people_hugging'
   },
   {
@@ -13043,37 +14839,37 @@ export const emojis: CompressedEmojiData[] = [
       'walking',
       'beach'
     ],
-    sheet: [14, 12],
+    sheet: [13, 31],
     shortName: 'footprints'
   },
   {
     name: 'Emoji Modifier Fitzpatrick Type-1-2',
     unified: '1F3FB',
-    sheet: [11, 13],
+    sheet: [10, 41],
     shortName: 'skin-tone-2'
   },
   {
     name: 'Emoji Modifier Fitzpatrick Type-3',
     unified: '1F3FC',
-    sheet: [11, 14],
+    sheet: [10, 42],
     shortName: 'skin-tone-3'
   },
   {
     name: 'Emoji Modifier Fitzpatrick Type-4',
     unified: '1F3FD',
-    sheet: [11, 15],
+    sheet: [10, 43],
     shortName: 'skin-tone-4'
   },
   {
     name: 'Emoji Modifier Fitzpatrick Type-5',
     unified: '1F3FE',
-    sheet: [11, 16],
+    sheet: [10, 44],
     shortName: 'skin-tone-5'
   },
   {
     name: 'Emoji Modifier Fitzpatrick Type-6',
     unified: '1F3FF',
-    sheet: [11, 17],
+    sheet: [10, 45],
     shortName: 'skin-tone-6'
   },
   {
@@ -13086,7 +14882,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'circus'
     ],
-    sheet: [12, 15],
+    sheet: [11, 40],
     shortName: 'monkey_face'
   },
   {
@@ -13099,7 +14895,7 @@ export const emojis: CompressedEmojiData[] = [
       'banana',
       'circus'
     ],
-    sheet: [11, 37],
+    sheet: [11, 4],
     shortName: 'monkey'
   },
   {
@@ -13111,14 +14907,14 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'circus'
     ],
-    sheet: [42, 46],
+    sheet: [44, 31],
     shortName: 'gorilla'
   },
   {
     name: 'Orangutan',
     unified: '1F9A7',
     keywords: ['orangutan', 'animal'],
-    sheet: [43, 14],
+    sheet: [44, 57],
     shortName: 'orangutan'
   },
   {
@@ -13134,7 +14930,7 @@ export const emojis: CompressedEmojiData[] = [
       'pet',
       'faithful'
     ],
-    sheet: [12, 16],
+    sheet: [11, 41],
     shortName: 'dog'
   },
   {
@@ -13149,7 +14945,7 @@ export const emojis: CompressedEmojiData[] = [
       'pet',
       'faithful'
     ],
-    sheet: [11, 41],
+    sheet: [11, 8],
     shortName: 'dog2'
   },
   {
@@ -13160,7 +14956,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'blind'
     ],
-    sheet: [43, 21],
+    sheet: [45, 3],
     shortName: 'guide_dog'
   },
   {
@@ -13171,7 +14967,7 @@ export const emojis: CompressedEmojiData[] = [
       'blind',
       'animal'
     ],
-    sheet: [11, 40],
+    sheet: [11, 7],
     shortName: 'service_dog'
   },
   {
@@ -13185,7 +14981,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'pet'
     ],
-    sheet: [12, 3],
+    sheet: [11, 28],
     shortName: 'poodle'
   },
   {
@@ -13197,7 +14993,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'wild'
     ],
-    sheet: [12, 20],
+    sheet: [11, 45],
     shortName: 'wolf'
   },
   {
@@ -13209,7 +15005,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'face'
     ],
-    sheet: [42, 43],
+    sheet: [44, 28],
     shortName: 'fox_face'
   },
   {
@@ -13220,7 +15016,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'nature'
     ],
-    sheet: [43, 4],
+    sheet: [44, 47],
     shortName: 'raccoon'
   },
   {
@@ -13234,7 +15030,7 @@ export const emojis: CompressedEmojiData[] = [
       'pet',
       'kitten'
     ],
-    sheet: [12, 11],
+    sheet: [11, 36],
     shortName: 'cat'
   },
   {
@@ -13247,7 +15043,7 @@ export const emojis: CompressedEmojiData[] = [
       'pet',
       'cats'
     ],
-    sheet: [11, 27],
+    sheet: [10, 55],
     shortName: 'cat2'
   },
   {
@@ -13258,7 +15054,7 @@ export const emojis: CompressedEmojiData[] = [
       'superstition',
       'luck'
     ],
-    sheet: [11, 26],
+    sheet: [10, 54],
     shortName: 'black_cat'
   },
   {
@@ -13269,7 +15065,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'nature'
     ],
-    sheet: [42, 34],
+    sheet: [44, 19],
     shortName: 'lion_face'
   },
   {
@@ -13284,7 +15080,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'roar'
     ],
-    sheet: [12, 9],
+    sheet: [11, 34],
     shortName: 'tiger'
   },
   {
@@ -13296,7 +15092,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'roar'
     ],
-    sheet: [11, 23],
+    sheet: [10, 51],
     shortName: 'tiger2'
   },
   {
@@ -13307,7 +15103,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'nature'
     ],
-    sheet: [11, 24],
+    sheet: [10, 52],
     shortName: 'leopard'
   },
   {
@@ -13319,7 +15115,7 @@ export const emojis: CompressedEmojiData[] = [
       'brown',
       'nature'
     ],
-    sheet: [12, 14],
+    sheet: [11, 39],
     shortName: 'horse'
   },
   {
@@ -13331,7 +15127,7 @@ export const emojis: CompressedEmojiData[] = [
       'gamble',
       'luck'
     ],
-    sheet: [11, 33],
+    sheet: [11, 0],
     shortName: 'racehorse'
   },
   {
@@ -13343,7 +15139,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'mystical'
     ],
-    sheet: [42, 37],
+    sheet: [44, 22],
     shortName: 'unicorn_face'
   },
   {
@@ -13356,7 +15152,7 @@ export const emojis: CompressedEmojiData[] = [
       'stripes',
       'safari'
     ],
-    sheet: [42, 52],
+    sheet: [44, 37],
     shortName: 'zebra_face'
   },
   {
@@ -13369,14 +15165,14 @@ export const emojis: CompressedEmojiData[] = [
       'horns',
       'venison'
     ],
-    sheet: [42, 45],
+    sheet: [44, 30],
     shortName: 'deer'
   },
   {
     name: 'Bison',
     unified: '1F9AC',
     keywords: ['bison', 'ox'],
-    sheet: [43, 19],
+    sheet: [45, 1],
     shortName: 'bison'
   },
   {
@@ -13391,7 +15187,7 @@ export const emojis: CompressedEmojiData[] = [
       'moo',
       'milk'
     ],
-    sheet: [12, 8],
+    sheet: [11, 33],
     shortName: 'cow'
   },
   {
@@ -13403,7 +15199,7 @@ export const emojis: CompressedEmojiData[] = [
       'cow',
       'beef'
     ],
-    sheet: [11, 20],
+    sheet: [10, 48],
     shortName: 'ox'
   },
   {
@@ -13416,7 +15212,7 @@ export const emojis: CompressedEmojiData[] = [
       'ox',
       'cow'
     ],
-    sheet: [11, 21],
+    sheet: [10, 49],
     shortName: 'water_buffalo'
   },
   {
@@ -13431,7 +15227,7 @@ export const emojis: CompressedEmojiData[] = [
       'moo',
       'milk'
     ],
-    sheet: [11, 22],
+    sheet: [10, 50],
     shortName: 'cow2'
   },
   {
@@ -13443,7 +15239,7 @@ export const emojis: CompressedEmojiData[] = [
       'oink',
       'nature'
     ],
-    sheet: [12, 17],
+    sheet: [11, 42],
     shortName: 'pig'
   },
   {
@@ -13454,7 +15250,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'nature'
     ],
-    sheet: [11, 42],
+    sheet: [11, 9],
     shortName: 'pig2'
   },
   {
@@ -13465,7 +15261,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'nature'
     ],
-    sheet: [11, 43],
+    sheet: [11, 10],
     shortName: 'boar'
   },
   {
@@ -13476,7 +15272,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'oink'
     ],
-    sheet: [12, 24],
+    sheet: [11, 49],
     shortName: 'pig_nose'
   },
   {
@@ -13488,7 +15284,7 @@ export const emojis: CompressedEmojiData[] = [
       'sheep',
       'nature'
     ],
-    sheet: [11, 34],
+    sheet: [11, 1],
     shortName: 'ram'
   },
   {
@@ -13501,7 +15297,7 @@ export const emojis: CompressedEmojiData[] = [
       'wool',
       'shipit'
     ],
-    sheet: [11, 36],
+    sheet: [11, 3],
     shortName: 'sheep'
   },
   {
@@ -13512,7 +15308,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'nature'
     ],
-    sheet: [11, 35],
+    sheet: [11, 2],
     shortName: 'goat'
   },
   {
@@ -13525,7 +15321,7 @@ export const emojis: CompressedEmojiData[] = [
       'desert',
       'hump'
     ],
-    sheet: [12, 4],
+    sheet: [11, 29],
     shortName: 'dromedary_camel'
   },
   {
@@ -13539,7 +15335,7 @@ export const emojis: CompressedEmojiData[] = [
       'desert',
       'hump'
     ],
-    sheet: [12, 5],
+    sheet: [11, 30],
     shortName: 'camel'
   },
   {
@@ -13551,7 +15347,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'alpaca'
     ],
-    sheet: [43, 0],
+    sheet: [44, 43],
     shortName: 'llama'
   },
   {
@@ -13564,7 +15360,7 @@ export const emojis: CompressedEmojiData[] = [
       'spots',
       'safari'
     ],
-    sheet: [42, 51],
+    sheet: [44, 36],
     shortName: 'giraffe_face'
   },
   {
@@ -13578,7 +15374,7 @@ export const emojis: CompressedEmojiData[] = [
       'th',
       'circus'
     ],
-    sheet: [11, 44],
+    sheet: [11, 11],
     shortName: 'elephant'
   },
   {
@@ -13589,7 +15385,7 @@ export const emojis: CompressedEmojiData[] = [
       'elephant',
       'tusks'
     ],
-    sheet: [43, 10],
+    sheet: [44, 53],
     shortName: 'mammoth'
   },
   {
@@ -13601,7 +15397,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'horn'
     ],
-    sheet: [42, 48],
+    sheet: [44, 33],
     shortName: 'rhinoceros'
   },
   {
@@ -13612,7 +15408,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'nature'
     ],
-    sheet: [43, 2],
+    sheet: [44, 45],
     shortName: 'hippopotamus'
   },
   {
@@ -13625,7 +15421,7 @@ export const emojis: CompressedEmojiData[] = [
       'cheese_wedge',
       'rodent'
     ],
-    sheet: [12, 7],
+    sheet: [11, 32],
     shortName: 'mouse'
   },
   {
@@ -13637,7 +15433,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'rodent'
     ],
-    sheet: [11, 19],
+    sheet: [10, 47],
     shortName: 'mouse2'
   },
   {
@@ -13649,7 +15445,7 @@ export const emojis: CompressedEmojiData[] = [
       'mouse',
       'rodent'
     ],
-    sheet: [11, 18],
+    sheet: [10, 46],
     shortName: 'rat'
   },
   {
@@ -13660,7 +15456,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'nature'
     ],
-    sheet: [12, 19],
+    sheet: [11, 44],
     shortName: 'hamster'
   },
   {
@@ -13675,7 +15471,7 @@ export const emojis: CompressedEmojiData[] = [
       'magic',
       'bunny'
     ],
-    sheet: [12, 10],
+    sheet: [11, 35],
     shortName: 'rabbit'
   },
   {
@@ -13689,7 +15485,7 @@ export const emojis: CompressedEmojiData[] = [
       'magic',
       'spring'
     ],
-    sheet: [11, 25],
+    sheet: [10, 53],
     shortName: 'rabbit2'
   },
   {
@@ -13702,7 +15498,7 @@ export const emojis: CompressedEmojiData[] = [
       'rodent',
       'squirrel'
     ],
-    sheet: [12, 26],
+    sheet: [11, 51],
     shortName: 'chipmunk'
   },
   {
@@ -13713,7 +15509,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'rodent'
     ],
-    sheet: [43, 18],
+    sheet: [45, 0],
     shortName: 'beaver'
   },
   {
@@ -13725,7 +15521,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'spiny'
     ],
-    sheet: [42, 53],
+    sheet: [44, 38],
     shortName: 'hedgehog'
   },
   {
@@ -13738,7 +15534,7 @@ export const emojis: CompressedEmojiData[] = [
       'blind',
       'vampire'
     ],
-    sheet: [42, 40],
+    sheet: [44, 25],
     shortName: 'bat'
   },
   {
@@ -13750,7 +15546,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'wild'
     ],
-    sheet: [12, 22],
+    sheet: [11, 47],
     shortName: 'bear'
   },
   {
@@ -13761,7 +15557,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'arctic'
     ],
-    sheet: [12, 21],
+    sheet: [11, 46],
     shortName: 'polar_bear'
   },
   {
@@ -13772,7 +15568,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'nature'
     ],
-    sheet: [12, 2],
+    sheet: [11, 27],
     shortName: 'koala'
   },
   {
@@ -13784,28 +15580,28 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'panda'
     ],
-    sheet: [12, 23],
+    sheet: [11, 48],
     shortName: 'panda_face'
   },
   {
     name: 'Sloth',
     unified: '1F9A5',
     keywords: ['sloth', 'animal'],
-    sheet: [43, 12],
+    sheet: [44, 55],
     shortName: 'sloth'
   },
   {
     name: 'Otter',
     unified: '1F9A6',
     keywords: ['otter', 'animal'],
-    sheet: [43, 13],
+    sheet: [44, 56],
     shortName: 'otter'
   },
   {
     name: 'Skunk',
     unified: '1F9A8',
     keywords: ['skunk', 'animal'],
-    sheet: [43, 15],
+    sheet: [44, 58],
     shortName: 'skunk'
   },
   {
@@ -13820,7 +15616,7 @@ export const emojis: CompressedEmojiData[] = [
       'hop',
       'marsupial'
     ],
-    sheet: [42, 57],
+    sheet: [44, 42],
     shortName: 'kangaroo'
   },
   {
@@ -13832,7 +15628,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'honey'
     ],
-    sheet: [43, 8],
+    sheet: [44, 51],
     shortName: 'badger'
   },
   {
@@ -13848,7 +15644,7 @@ export const emojis: CompressedEmojiData[] = [
       'pet',
       'feet'
     ],
-    sheet: [12, 25],
+    sheet: [11, 50],
     shortNames: ['paw_prints'],
     shortName: 'feet'
   },
@@ -13860,7 +15656,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'bird'
     ],
-    sheet: [42, 36],
+    sheet: [44, 21],
     shortName: 'turkey'
   },
   {
@@ -13873,7 +15669,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'bird'
     ],
-    sheet: [11, 39],
+    sheet: [11, 6],
     shortName: 'chicken'
   },
   {
@@ -13885,7 +15681,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'chicken'
     ],
-    sheet: [11, 38],
+    sheet: [11, 5],
     shortName: 'rooster'
   },
   {
@@ -13900,7 +15696,7 @@ export const emojis: CompressedEmojiData[] = [
       'baby',
       'bird'
     ],
-    sheet: [11, 55],
+    sheet: [11, 22],
     shortName: 'hatching_chick'
   },
   {
@@ -13912,7 +15708,7 @@ export const emojis: CompressedEmojiData[] = [
       'chicken',
       'bird'
     ],
-    sheet: [11, 56],
+    sheet: [11, 23],
     shortName: 'baby_chick'
   },
   {
@@ -13925,7 +15721,7 @@ export const emojis: CompressedEmojiData[] = [
       'baby',
       'bird'
     ],
-    sheet: [11, 57],
+    sheet: [11, 24],
     shortName: 'hatched_chick'
   },
   {
@@ -13939,7 +15735,7 @@ export const emojis: CompressedEmojiData[] = [
       'tweet',
       'spring'
     ],
-    sheet: [12, 0],
+    sheet: [11, 25],
     shortName: 'bird'
   },
   {
@@ -13950,7 +15746,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'nature'
     ],
-    sheet: [12, 1],
+    sheet: [11, 26],
     shortName: 'penguin'
   },
   {
@@ -13961,7 +15757,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'bird'
     ],
-    sheet: [28, 33],
+    sheet: [30, 27],
     shortName: 'dove_of_peace'
   },
   {
@@ -13973,7 +15769,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'bird'
     ],
-    sheet: [42, 38],
+    sheet: [44, 23],
     shortName: 'eagle'
   },
   {
@@ -13986,7 +15782,7 @@ export const emojis: CompressedEmojiData[] = [
       'bird',
       'mallard'
     ],
-    sheet: [42, 39],
+    sheet: [44, 24],
     shortName: 'duck'
   },
   {
@@ -13998,7 +15794,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'bird'
     ],
-    sheet: [43, 9],
+    sheet: [44, 52],
     shortName: 'swan'
   },
   {
@@ -14011,7 +15807,7 @@ export const emojis: CompressedEmojiData[] = [
       'bird',
       'hoot'
     ],
-    sheet: [42, 42],
+    sheet: [44, 27],
     shortName: 'owl'
   },
   {
@@ -14022,7 +15818,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'bird'
     ],
-    sheet: [43, 11],
+    sheet: [44, 54],
     shortName: 'dodo'
   },
   {
@@ -14033,14 +15829,14 @@ export const emojis: CompressedEmojiData[] = [
       'bird',
       'fly'
     ],
-    sheet: [53, 5],
+    sheet: [54, 37],
     shortName: 'feather'
   },
   {
     name: 'Flamingo',
     unified: '1F9A9',
     keywords: ['flamingo', 'animal'],
-    sheet: [43, 16],
+    sheet: [44, 59],
     shortName: 'flamingo'
   },
   {
@@ -14053,7 +15849,7 @@ export const emojis: CompressedEmojiData[] = [
       'peahen',
       'bird'
     ],
-    sheet: [43, 1],
+    sheet: [44, 44],
     shortName: 'peacock'
   },
   {
@@ -14067,7 +15863,7 @@ export const emojis: CompressedEmojiData[] = [
       'pirate',
       'talk'
     ],
-    sheet: [43, 3],
+    sheet: [44, 46],
     shortName: 'parrot'
   },
   {
@@ -14080,7 +15876,7 @@ export const emojis: CompressedEmojiData[] = [
       'croak',
       'toad'
     ],
-    sheet: [12, 18],
+    sheet: [11, 43],
     shortName: 'frog'
   },
   {
@@ -14094,7 +15890,7 @@ export const emojis: CompressedEmojiData[] = [
       'lizard',
       'alligator'
     ],
-    sheet: [11, 29],
+    sheet: [10, 57],
     shortName: 'crocodile'
   },
   {
@@ -14107,7 +15903,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'tortoise'
     ],
-    sheet: [11, 54],
+    sheet: [11, 21],
     shortName: 'turtle'
   },
   {
@@ -14119,7 +15915,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'reptile'
     ],
-    sheet: [42, 47],
+    sheet: [44, 32],
     shortName: 'lizard'
   },
   {
@@ -14133,7 +15929,7 @@ export const emojis: CompressedEmojiData[] = [
       'hiss',
       'python'
     ],
-    sheet: [11, 32],
+    sheet: [10, 60],
     shortName: 'snake'
   },
   {
@@ -14147,7 +15943,7 @@ export const emojis: CompressedEmojiData[] = [
       'chinese',
       'green'
     ],
-    sheet: [12, 12],
+    sheet: [11, 37],
     shortName: 'dragon_face'
   },
   {
@@ -14161,7 +15957,7 @@ export const emojis: CompressedEmojiData[] = [
       'chinese',
       'green'
     ],
-    sheet: [11, 28],
+    sheet: [10, 56],
     shortName: 'dragon'
   },
   {
@@ -14177,7 +15973,7 @@ export const emojis: CompressedEmojiData[] = [
       'diplodocus',
       'extinct'
     ],
-    sheet: [42, 54],
+    sheet: [44, 39],
     shortName: 'sauropod'
   },
   {
@@ -14191,7 +15987,7 @@ export const emojis: CompressedEmojiData[] = [
       'tyrannosaurus',
       'extinct'
     ],
-    sheet: [42, 55],
+    sheet: [44, 40],
     shortName: 't-rex'
   },
   {
@@ -14204,7 +16000,7 @@ export const emojis: CompressedEmojiData[] = [
       'sea',
       'ocean'
     ],
-    sheet: [12, 13],
+    sheet: [11, 38],
     shortName: 'whale'
   },
   {
@@ -14217,7 +16013,7 @@ export const emojis: CompressedEmojiData[] = [
       'sea',
       'ocean'
     ],
-    sheet: [11, 30],
+    sheet: [10, 58],
     shortName: 'whale2'
   },
   {
@@ -14234,7 +16030,7 @@ export const emojis: CompressedEmojiData[] = [
       'fins',
       'beach'
     ],
-    sheet: [12, 6],
+    sheet: [11, 31],
     shortNames: ['flipper'],
     shortName: 'dolphin'
   },
@@ -14247,7 +16043,7 @@ export const emojis: CompressedEmojiData[] = [
       'creature',
       'sea'
     ],
-    sheet: [43, 20],
+    sheet: [45, 2],
     shortName: 'seal'
   },
   {
@@ -14259,7 +16055,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'nature'
     ],
-    sheet: [11, 51],
+    sheet: [11, 18],
     shortName: 'fish'
   },
   {
@@ -14273,7 +16069,7 @@ export const emojis: CompressedEmojiData[] = [
       'beach',
       'nemo'
     ],
-    sheet: [11, 52],
+    sheet: [11, 19],
     shortName: 'tropical_fish'
   },
   {
@@ -14287,7 +16083,7 @@ export const emojis: CompressedEmojiData[] = [
       'sea',
       'ocean'
     ],
-    sheet: [11, 53],
+    sheet: [11, 20],
     shortName: 'blowfish'
   },
   {
@@ -14304,7 +16100,7 @@ export const emojis: CompressedEmojiData[] = [
       'fins',
       'beach'
     ],
-    sheet: [42, 41],
+    sheet: [44, 26],
     shortName: 'shark'
   },
   {
@@ -14319,7 +16115,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'beach'
     ],
-    sheet: [11, 45],
+    sheet: [11, 12],
     shortName: 'octopus'
   },
   {
@@ -14331,8 +16127,21 @@ export const emojis: CompressedEmojiData[] = [
       'sea',
       'beach'
     ],
-    sheet: [11, 46],
+    sheet: [11, 13],
     shortName: 'shell'
+  },
+  {
+    name: 'Coral',
+    unified: '1FAB8',
+    keywords: [
+      'coral',
+      'ocean',
+      'sea',
+      'reef'
+    ],
+    sheet: [54, 39],
+    hidden: ['facebook'],
+    shortName: 'coral'
   },
   {
     name: 'Snail',
@@ -14343,7 +16152,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'shell'
     ],
-    sheet: [11, 31],
+    sheet: [10, 59],
     shortName: 'snail'
   },
   {
@@ -14356,7 +16165,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'caterpillar'
     ],
-    sheet: [42, 44],
+    sheet: [44, 29],
     shortName: 'butterfly'
   },
   {
@@ -14369,7 +16178,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'worm'
     ],
-    sheet: [11, 47],
+    sheet: [11, 14],
     shortName: 'bug'
   },
   {
@@ -14382,7 +16191,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'bug'
     ],
-    sheet: [11, 48],
+    sheet: [11, 15],
     shortName: 'ant'
   },
   {
@@ -14397,7 +16206,7 @@ export const emojis: CompressedEmojiData[] = [
       'spring',
       'honey'
     ],
-    sheet: [11, 49],
+    sheet: [11, 16],
     shortNames: ['honeybee'],
     shortName: 'bee'
   },
@@ -14405,7 +16214,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Beetle',
     unified: '1FAB2',
     keywords: ['beetle', 'insect'],
-    sheet: [53, 1],
+    sheet: [54, 33],
     shortName: 'beetle'
   },
   {
@@ -14418,7 +16227,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'ladybug'
     ],
-    sheet: [11, 50],
+    sheet: [11, 17],
     shortNames: ['lady_beetle'],
     shortName: 'ladybug'
   },
@@ -14431,7 +16240,7 @@ export const emojis: CompressedEmojiData[] = [
       'cricket',
       'chirp'
     ],
-    sheet: [42, 56],
+    sheet: [44, 41],
     shortName: 'cricket'
   },
   {
@@ -14442,7 +16251,7 @@ export const emojis: CompressedEmojiData[] = [
       'insect',
       'pests'
     ],
-    sheet: [53, 2],
+    sheet: [54, 34],
     shortName: 'cockroach'
   },
   {
@@ -14453,7 +16262,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'arachnid'
     ],
-    sheet: [29, 32],
+    sheet: [31, 23],
     shortName: 'spider'
   },
   {
@@ -14466,7 +16275,7 @@ export const emojis: CompressedEmojiData[] = [
       'arachnid',
       'silk'
     ],
-    sheet: [29, 33],
+    sheet: [31, 24],
     shortName: 'spider_web'
   },
   {
@@ -14477,7 +16286,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'arachnid'
     ],
-    sheet: [42, 35],
+    sheet: [44, 20],
     shortName: 'scorpion'
   },
   {
@@ -14490,21 +16299,21 @@ export const emojis: CompressedEmojiData[] = [
       'insect',
       'malaria'
     ],
-    sheet: [43, 6],
+    sheet: [44, 49],
     shortName: 'mosquito'
   },
   {
     name: 'Fly',
     unified: '1FAB0',
     keywords: ['fly', 'insect'],
-    sheet: [52, 57],
+    sheet: [54, 31],
     shortName: 'fly'
   },
   {
     name: 'Worm',
     unified: '1FAB1',
     keywords: ['worm', 'animal'],
-    sheet: [53, 0],
+    sheet: [54, 32],
     shortName: 'worm'
   },
   {
@@ -14514,9 +16323,11 @@ export const emojis: CompressedEmojiData[] = [
       'microbe',
       'amoeba',
       'bacteria',
-      'germs'
+      'germs',
+      'virus',
+      'covid'
     ],
-    sheet: [43, 7],
+    sheet: [44, 50],
     shortName: 'microbe'
   },
   {
@@ -14528,7 +16339,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'spring'
     ],
-    sheet: [25, 28],
+    sheet: [27, 6],
     shortName: 'bouquet'
   },
   {
@@ -14541,7 +16352,7 @@ export const emojis: CompressedEmojiData[] = [
       'spring',
       'flower'
     ],
-    sheet: [6, 10],
+    sheet: [5, 53],
     shortName: 'cherry_blossom'
   },
   {
@@ -14552,8 +16363,21 @@ export const emojis: CompressedEmojiData[] = [
       'japanese',
       'spring'
     ],
-    sheet: [26, 5],
+    sheet: [28, 5],
     shortName: 'white_flower'
+  },
+  {
+    name: 'Lotus',
+    unified: '1FAB7',
+    keywords: [
+      'lotus',
+      'flower',
+      'calm',
+      'meditation'
+    ],
+    sheet: [54, 38],
+    hidden: ['facebook'],
+    shortName: 'lotus'
   },
   {
     name: 'Rosette',
@@ -14564,7 +16388,7 @@ export const emojis: CompressedEmojiData[] = [
       'decoration',
       'military'
     ],
-    sheet: [11, 8],
+    sheet: [10, 36],
     shortName: 'rosette'
   },
   {
@@ -14577,7 +16401,7 @@ export const emojis: CompressedEmojiData[] = [
       'love',
       'spring'
     ],
-    sheet: [6, 11],
+    sheet: [5, 54],
     shortName: 'rose'
   },
   {
@@ -14587,9 +16411,10 @@ export const emojis: CompressedEmojiData[] = [
       'wilted_flower',
       'plant',
       'nature',
-      'flower'
+      'flower',
+      'rose'
     ],
-    sheet: [41, 24],
+    sheet: [43, 11],
     shortName: 'wilted_flower'
   },
   {
@@ -14602,7 +16427,7 @@ export const emojis: CompressedEmojiData[] = [
       'flowers',
       'beach'
     ],
-    sheet: [6, 12],
+    sheet: [5, 55],
     shortName: 'hibiscus'
   },
   {
@@ -14614,7 +16439,7 @@ export const emojis: CompressedEmojiData[] = [
       'plant',
       'fall'
     ],
-    sheet: [6, 13],
+    sheet: [5, 56],
     shortName: 'sunflower'
   },
   {
@@ -14626,7 +16451,7 @@ export const emojis: CompressedEmojiData[] = [
       'flowers',
       'yellow'
     ],
-    sheet: [6, 14],
+    sheet: [5, 57],
     shortName: 'blossom'
   },
   {
@@ -14640,7 +16465,7 @@ export const emojis: CompressedEmojiData[] = [
       'summer',
       'spring'
     ],
-    sheet: [6, 9],
+    sheet: [5, 52],
     shortName: 'tulip'
   },
   {
@@ -14654,7 +16479,7 @@ export const emojis: CompressedEmojiData[] = [
       'lawn',
       'spring'
     ],
-    sheet: [6, 3],
+    sheet: [5, 46],
     shortName: 'seedling'
   },
   {
@@ -14665,7 +16490,7 @@ export const emojis: CompressedEmojiData[] = [
       'greenery',
       'house'
     ],
-    sheet: [53, 3],
+    sheet: [54, 35],
     shortName: 'potted_plant'
   },
   {
@@ -14676,7 +16501,7 @@ export const emojis: CompressedEmojiData[] = [
       'plant',
       'nature'
     ],
-    sheet: [6, 4],
+    sheet: [5, 47],
     shortName: 'evergreen_tree'
   },
   {
@@ -14687,7 +16512,7 @@ export const emojis: CompressedEmojiData[] = [
       'plant',
       'nature'
     ],
-    sheet: [6, 5],
+    sheet: [5, 48],
     shortName: 'deciduous_tree'
   },
   {
@@ -14703,7 +16528,7 @@ export const emojis: CompressedEmojiData[] = [
       'mojito',
       'tropical'
     ],
-    sheet: [6, 6],
+    sheet: [5, 49],
     shortName: 'palm_tree'
   },
   {
@@ -14715,7 +16540,7 @@ export const emojis: CompressedEmojiData[] = [
       'plant',
       'nature'
     ],
-    sheet: [6, 7],
+    sheet: [5, 50],
     shortName: 'cactus'
   },
   {
@@ -14726,7 +16551,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'plant'
     ],
-    sheet: [6, 16],
+    sheet: [5, 59],
     shortName: 'ear_of_rice'
   },
   {
@@ -14741,7 +16566,7 @@ export const emojis: CompressedEmojiData[] = [
       'grass',
       'lawn'
     ],
-    sheet: [6, 17],
+    sheet: [5, 60],
     shortName: 'herb'
   },
   {
@@ -14755,7 +16580,7 @@ export const emojis: CompressedEmojiData[] = [
       'irish',
       'clover'
     ],
-    sheet: [54, 6],
+    sheet: [56, 49],
     shortName: 'shamrock'
   },
   {
@@ -14769,7 +16594,7 @@ export const emojis: CompressedEmojiData[] = [
       'lucky',
       'irish'
     ],
-    sheet: [6, 18],
+    sheet: [6, 0],
     shortName: 'four_leaf_clover'
   },
   {
@@ -14783,7 +16608,7 @@ export const emojis: CompressedEmojiData[] = [
       'ca',
       'fall'
     ],
-    sheet: [6, 19],
+    sheet: [6, 1],
     shortName: 'maple_leaf'
   },
   {
@@ -14796,7 +16621,7 @@ export const emojis: CompressedEmojiData[] = [
       'vegetable',
       'leaves'
     ],
-    sheet: [6, 20],
+    sheet: [6, 2],
     shortName: 'fallen_leaf'
   },
   {
@@ -14812,8 +16637,27 @@ export const emojis: CompressedEmojiData[] = [
       'lawn',
       'spring'
     ],
-    sheet: [6, 21],
+    sheet: [6, 3],
     shortName: 'leaves'
+  },
+  {
+    name: 'Empty Nest',
+    unified: '1FAB9',
+    keywords: ['empty nest', 'bird'],
+    sheet: [54, 40],
+    hidden: ['facebook'],
+    shortName: 'empty_nest'
+  },
+  {
+    name: 'Nest with Eggs',
+    unified: '1FABA',
+    keywords: [
+      'nest with eggs',
+      'bird'
+    ],
+    sheet: [54, 41],
+    hidden: ['facebook'],
+    shortName: 'nest_with_eggs'
   },
   {
     name: 'Grapes',
@@ -14824,7 +16668,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'wine'
     ],
-    sheet: [6, 25],
+    sheet: [6, 7],
     shortName: 'grapes'
   },
   {
@@ -14836,7 +16680,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'food'
     ],
-    sheet: [6, 26],
+    sheet: [6, 8],
     shortName: 'melon'
   },
   {
@@ -14849,7 +16693,7 @@ export const emojis: CompressedEmojiData[] = [
       'picnic',
       'summer'
     ],
-    sheet: [6, 27],
+    sheet: [6, 9],
     shortName: 'watermelon'
   },
   {
@@ -14862,7 +16706,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'orange'
     ],
-    sheet: [6, 28],
+    sheet: [6, 10],
     shortName: 'tangerine'
   },
   {
@@ -14873,7 +16717,7 @@ export const emojis: CompressedEmojiData[] = [
       'fruit',
       'nature'
     ],
-    sheet: [6, 29],
+    sheet: [6, 11],
     shortName: 'lemon'
   },
   {
@@ -14885,7 +16729,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'monkey'
     ],
-    sheet: [6, 30],
+    sheet: [6, 12],
     shortName: 'banana'
   },
   {
@@ -14897,7 +16741,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'food'
     ],
-    sheet: [6, 31],
+    sheet: [6, 13],
     shortName: 'pineapple'
   },
   {
@@ -14909,7 +16753,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'tropical'
     ],
-    sheet: [42, 10],
+    sheet: [43, 55],
     shortName: 'mango'
   },
   {
@@ -14921,7 +16765,7 @@ export const emojis: CompressedEmojiData[] = [
       'mac',
       'school'
     ],
-    sheet: [6, 32],
+    sheet: [6, 14],
     shortName: 'apple'
   },
   {
@@ -14932,7 +16776,7 @@ export const emojis: CompressedEmojiData[] = [
       'fruit',
       'nature'
     ],
-    sheet: [6, 33],
+    sheet: [6, 15],
     shortName: 'green_apple'
   },
   {
@@ -14944,7 +16788,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'food'
     ],
-    sheet: [6, 34],
+    sheet: [6, 16],
     shortName: 'pear'
   },
   {
@@ -14956,7 +16800,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'food'
     ],
-    sheet: [6, 35],
+    sheet: [6, 17],
     shortName: 'peach'
   },
   {
@@ -14967,7 +16811,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'fruit'
     ],
-    sheet: [6, 36],
+    sheet: [6, 18],
     shortName: 'cherries'
   },
   {
@@ -14979,14 +16823,14 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'nature'
     ],
-    sheet: [6, 37],
+    sheet: [6, 19],
     shortName: 'strawberry'
   },
   {
     name: 'Blueberries',
     unified: '1FAD0',
     keywords: ['blueberries', 'fruit'],
-    sheet: [53, 9],
+    sheet: [55, 2],
     shortName: 'blueberries'
   },
   {
@@ -14997,7 +16841,7 @@ export const emojis: CompressedEmojiData[] = [
       'fruit',
       'food'
     ],
-    sheet: [41, 52],
+    sheet: [43, 39],
     shortName: 'kiwifruit'
   },
   {
@@ -15010,14 +16854,14 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'food'
     ],
-    sheet: [6, 23],
+    sheet: [6, 5],
     shortName: 'tomato'
   },
   {
     name: 'Olive',
     unified: '1FAD2',
     keywords: ['olive', 'fruit'],
-    sheet: [53, 11],
+    sheet: [55, 4],
     shortName: 'olive'
   },
   {
@@ -15030,7 +16874,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'palm'
     ],
-    sheet: [42, 2],
+    sheet: [43, 47],
     shortName: 'coconut'
   },
   {
@@ -15041,7 +16885,7 @@ export const emojis: CompressedEmojiData[] = [
       'fruit',
       'food'
     ],
-    sheet: [41, 40],
+    sheet: [43, 27],
     shortName: 'avocado'
   },
   {
@@ -15054,7 +16898,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'aubergine'
     ],
-    sheet: [6, 24],
+    sheet: [6, 6],
     shortName: 'eggplant'
   },
   {
@@ -15067,7 +16911,7 @@ export const emojis: CompressedEmojiData[] = [
       'vegatable',
       'starch'
     ],
-    sheet: [41, 43],
+    sheet: [43, 30],
     shortName: 'potato'
   },
   {
@@ -15079,7 +16923,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'orange'
     ],
-    sheet: [41, 44],
+    sheet: [43, 31],
     shortName: 'carrot'
   },
   {
@@ -15091,7 +16935,7 @@ export const emojis: CompressedEmojiData[] = [
       'vegetable',
       'plant'
     ],
-    sheet: [6, 15],
+    sheet: [5, 58],
     shortName: 'corn'
   },
   {
@@ -15104,7 +16948,7 @@ export const emojis: CompressedEmojiData[] = [
       'chilli',
       'chili'
     ],
-    sheet: [6, 8],
+    sheet: [5, 51],
     shortName: 'hot_pepper'
   },
   {
@@ -15115,7 +16959,7 @@ export const emojis: CompressedEmojiData[] = [
       'fruit',
       'plant'
     ],
-    sheet: [53, 10],
+    sheet: [55, 3],
     shortName: 'bell_pepper'
   },
   {
@@ -15127,7 +16971,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'pickle'
     ],
-    sheet: [41, 41],
+    sheet: [43, 28],
     shortName: 'cucumber'
   },
   {
@@ -15143,7 +16987,7 @@ export const emojis: CompressedEmojiData[] = [
       'kale',
       'lettuce'
     ],
-    sheet: [42, 9],
+    sheet: [43, 54],
     shortName: 'leafy_green'
   },
   {
@@ -15155,7 +16999,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'vegetable'
     ],
-    sheet: [42, 3],
+    sheet: [43, 48],
     shortName: 'broccoli'
   },
   {
@@ -15167,7 +17011,7 @@ export const emojis: CompressedEmojiData[] = [
       'spice',
       'cook'
     ],
-    sheet: [44, 30],
+    sheet: [46, 9],
     shortName: 'garlic'
   },
   {
@@ -15179,7 +17023,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'spice'
     ],
-    sheet: [44, 31],
+    sheet: [46, 10],
     shortName: 'onion'
   },
   {
@@ -15190,7 +17034,7 @@ export const emojis: CompressedEmojiData[] = [
       'plant',
       'vegetable'
     ],
-    sheet: [6, 22],
+    sheet: [6, 4],
     shortName: 'mushroom'
   },
   {
@@ -15201,8 +17045,16 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'nut'
     ],
-    sheet: [41, 51],
+    sheet: [43, 38],
     shortName: 'peanuts'
+  },
+  {
+    name: 'Beans',
+    unified: '1FAD8',
+    keywords: ['beans', 'food'],
+    sheet: [55, 10],
+    hidden: ['facebook'],
+    shortName: 'beans'
   },
   {
     name: 'Chestnut',
@@ -15212,7 +17064,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'squirrel'
     ],
-    sheet: [6, 2],
+    sheet: [5, 45],
     shortName: 'chestnut'
   },
   {
@@ -15225,7 +17077,7 @@ export const emojis: CompressedEmojiData[] = [
       'breakfast',
       'toast'
     ],
-    sheet: [6, 48],
+    sheet: [6, 30],
     shortName: 'bread'
   },
   {
@@ -15237,7 +17089,7 @@ export const emojis: CompressedEmojiData[] = [
       'bread',
       'french'
     ],
-    sheet: [41, 39],
+    sheet: [43, 26],
     shortName: 'croissant'
   },
   {
@@ -15247,9 +17099,11 @@ export const emojis: CompressedEmojiData[] = [
       'baguette_bread',
       'food',
       'bread',
-      'french'
+      'french',
+      'france',
+      'bakery'
     ],
-    sheet: [41, 45],
+    sheet: [43, 32],
     shortName: 'baguette_bread'
   },
   {
@@ -15258,9 +17112,10 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'flatbread',
       'flour',
-      'food'
+      'food',
+      'bakery'
     ],
-    sheet: [53, 12],
+    sheet: [55, 5],
     shortName: 'flatbread'
   },
   {
@@ -15270,9 +17125,11 @@ export const emojis: CompressedEmojiData[] = [
       'pretzel',
       'food',
       'bread',
-      'twisted'
+      'twisted',
+      'germany',
+      'bakery'
     ],
-    sheet: [42, 5],
+    sheet: [43, 50],
     shortName: 'pretzel'
   },
   {
@@ -15283,9 +17140,11 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'bread',
       'bakery',
-      'schmear'
+      'schmear',
+      'jewish',
+      'bakery'
     ],
-    sheet: [42, 12],
+    sheet: [43, 57],
     shortName: 'bagel'
   },
   {
@@ -15296,9 +17155,10 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'breakfast',
       'flapjacks',
-      'hotcakes'
+      'hotcakes',
+      'brunch'
     ],
-    sheet: [41, 53],
+    sheet: [43, 40],
     shortName: 'pancakes'
   },
   {
@@ -15307,9 +17167,10 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'waffle',
       'food',
-      'breakfast'
+      'breakfast',
+      'brunch'
     ],
-    sheet: [44, 33],
+    sheet: [46, 12],
     shortName: 'waffle'
   },
   {
@@ -15318,9 +17179,10 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'cheese_wedge',
       'food',
-      'chadder'
+      'chadder',
+      'swiss'
     ],
-    sheet: [44, 26],
+    sheet: [46, 5],
     shortName: 'cheese_wedge'
   },
   {
@@ -15332,7 +17194,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'drumstick'
     ],
-    sheet: [6, 40],
+    sheet: [6, 22],
     shortName: 'meat_on_bone'
   },
   {
@@ -15347,7 +17209,7 @@ export const emojis: CompressedEmojiData[] = [
       'chicken',
       'turkey'
     ],
-    sheet: [6, 41],
+    sheet: [6, 23],
     shortName: 'poultry_leg'
   },
   {
@@ -15363,7 +17225,7 @@ export const emojis: CompressedEmojiData[] = [
       'lambchop',
       'porkchop'
     ],
-    sheet: [42, 6],
+    sheet: [43, 51],
     shortName: 'cut_of_meat'
   },
   {
@@ -15375,9 +17237,10 @@ export const emojis: CompressedEmojiData[] = [
       'breakfast',
       'pork',
       'pig',
-      'meat'
+      'meat',
+      'brunch'
     ],
-    sheet: [41, 42],
+    sheet: [43, 29],
     shortName: 'bacon'
   },
   {
@@ -15392,7 +17255,7 @@ export const emojis: CompressedEmojiData[] = [
       'mcdonalds',
       'burger king'
     ],
-    sheet: [6, 38],
+    sheet: [6, 20],
     shortName: 'hamburger'
   },
   {
@@ -15402,9 +17265,10 @@ export const emojis: CompressedEmojiData[] = [
       'french_fries',
       'chips',
       'snack',
-      'fast food'
+      'fast food',
+      'potato'
     ],
-    sheet: [6, 49],
+    sheet: [6, 31],
     shortName: 'fries'
   },
   {
@@ -15413,9 +17277,10 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'pizza',
       'food',
-      'party'
+      'party',
+      'italy'
     ],
-    sheet: [6, 39],
+    sheet: [6, 21],
     shortName: 'pizza'
   },
   {
@@ -15424,9 +17289,10 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'hot_dog',
       'food',
-      'frankfurter'
+      'frankfurter',
+      'america'
     ],
-    sheet: [5, 57],
+    sheet: [5, 42],
     shortName: 'hotdog'
   },
   {
@@ -15436,9 +17302,11 @@ export const emojis: CompressedEmojiData[] = [
       'sandwich',
       'food',
       'lunch',
-      'bread'
+      'bread',
+      'toast',
+      'bakery'
     ],
-    sheet: [42, 7],
+    sheet: [43, 52],
     shortName: 'sandwich'
   },
   {
@@ -15449,7 +17317,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'mexican'
     ],
-    sheet: [6, 0],
+    sheet: [5, 43],
     shortName: 'taco'
   },
   {
@@ -15460,7 +17328,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'mexican'
     ],
-    sheet: [6, 1],
+    sheet: [5, 44],
     shortName: 'burrito'
   },
   {
@@ -15471,7 +17339,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'masa'
     ],
-    sheet: [53, 13],
+    sheet: [55, 6],
     shortName: 'tamale'
   },
   {
@@ -15482,16 +17350,21 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'flatbread',
       'stuffed',
-      'gyro'
+      'gyro',
+      'mediterranean'
     ],
-    sheet: [41, 48],
+    sheet: [43, 35],
     shortName: 'stuffed_flatbread'
   },
   {
     name: 'Falafel',
     unified: '1F9C6',
-    keywords: ['falafel', 'food'],
-    sheet: [44, 32],
+    keywords: [
+      'falafel',
+      'food',
+      'mediterranean'
+    ],
+    sheet: [46, 11],
     shortName: 'falafel'
   },
   {
@@ -15503,7 +17376,7 @@ export const emojis: CompressedEmojiData[] = [
       'chicken',
       'breakfast'
     ],
-    sheet: [41, 49],
+    sheet: [43, 36],
     shortName: 'egg'
   },
   {
@@ -15514,9 +17387,10 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'breakfast',
       'kitchen',
-      'egg'
+      'egg',
+      'skillet'
     ],
-    sheet: [7, 11],
+    sheet: [6, 51],
     shortNames: ['cooking'],
     shortName: 'fried_egg'
   },
@@ -15528,9 +17402,10 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'cooking',
       'casserole',
-      'paella'
+      'paella',
+      'skillet'
     ],
-    sheet: [41, 47],
+    sheet: [43, 34],
     shortName: 'shallow_pan_of_food'
   },
   {
@@ -15540,9 +17415,10 @@ export const emojis: CompressedEmojiData[] = [
       'pot_of_food',
       'food',
       'meat',
-      'soup'
+      'soup',
+      'hot pot'
     ],
-    sheet: [7, 10],
+    sheet: [6, 50],
     shortName: 'stew'
   },
   {
@@ -15554,7 +17430,7 @@ export const emojis: CompressedEmojiData[] = [
       'pot',
       'food'
     ],
-    sheet: [53, 14],
+    sheet: [55, 7],
     shortName: 'fondue'
   },
   {
@@ -15568,7 +17444,7 @@ export const emojis: CompressedEmojiData[] = [
       'oatmeal',
       'porridge'
     ],
-    sheet: [42, 0],
+    sheet: [43, 45],
     shortName: 'bowl_with_spoon'
   },
   {
@@ -15578,9 +17454,10 @@ export const emojis: CompressedEmojiData[] = [
       'green_salad',
       'food',
       'healthy',
-      'lettuce'
+      'lettuce',
+      'vegetable'
     ],
-    sheet: [41, 46],
+    sheet: [43, 33],
     shortName: 'green_salad'
   },
   {
@@ -15591,9 +17468,10 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'movie theater',
       'films',
-      'snack'
+      'snack',
+      'drama'
     ],
-    sheet: [7, 23],
+    sheet: [7, 2],
     shortName: 'popcorn'
   },
   {
@@ -15604,7 +17482,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'cook'
     ],
-    sheet: [44, 34],
+    sheet: [46, 13],
     shortName: 'butter'
   },
   {
@@ -15615,7 +17493,7 @@ export const emojis: CompressedEmojiData[] = [
       'condiment',
       'shaker'
     ],
-    sheet: [44, 28],
+    sheet: [46, 7],
     shortName: 'salt'
   },
   {
@@ -15624,9 +17502,10 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'canned_food',
       'food',
-      'soup'
+      'soup',
+      'tomatoes'
     ],
-    sheet: [42, 8],
+    sheet: [43, 53],
     shortName: 'canned_food'
   },
   {
@@ -15636,9 +17515,10 @@ export const emojis: CompressedEmojiData[] = [
       'bento_box',
       'food',
       'japanese',
-      'box'
+      'box',
+      'lunch'
     ],
-    sheet: [7, 9],
+    sheet: [6, 49],
     shortName: 'bento'
   },
   {
@@ -15647,9 +17527,10 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'rice_cracker',
       'food',
-      'japanese'
+      'japanese',
+      'snack'
     ],
-    sheet: [6, 42],
+    sheet: [6, 24],
     shortName: 'rice_cracker'
   },
   {
@@ -15660,7 +17541,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'japanese'
     ],
-    sheet: [6, 43],
+    sheet: [6, 25],
     shortName: 'rice_ball'
   },
   {
@@ -15669,10 +17550,9 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'cooked_rice',
       'food',
-      'china',
       'asian'
     ],
-    sheet: [6, 44],
+    sheet: [6, 26],
     shortName: 'rice'
   },
   {
@@ -15685,7 +17565,7 @@ export const emojis: CompressedEmojiData[] = [
       'hot',
       'indian'
     ],
-    sheet: [6, 45],
+    sheet: [6, 27],
     shortName: 'curry'
   },
   {
@@ -15696,9 +17576,10 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'japanese',
       'noodle',
-      'chopsticks'
+      'chopsticks',
+      'ramen'
     ],
-    sheet: [6, 46],
+    sheet: [6, 28],
     shortName: 'ramen'
   },
   {
@@ -15708,9 +17589,10 @@ export const emojis: CompressedEmojiData[] = [
       'spaghetti',
       'food',
       'italian',
+      'pasta',
       'noodle'
     ],
-    sheet: [6, 47],
+    sheet: [6, 29],
     shortName: 'spaghetti'
   },
   {
@@ -15719,9 +17601,10 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'roasted_sweet_potato',
       'food',
-      'nature'
+      'nature',
+      'plant'
     ],
-    sheet: [6, 50],
+    sheet: [6, 32],
     shortName: 'sweet_potato'
   },
   {
@@ -15732,7 +17615,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'japanese'
     ],
-    sheet: [6, 52],
+    sheet: [6, 34],
     shortName: 'oden'
   },
   {
@@ -15745,7 +17628,7 @@ export const emojis: CompressedEmojiData[] = [
       'japanese',
       'rice'
     ],
-    sheet: [6, 53],
+    sheet: [6, 35],
     shortName: 'sushi'
   },
   {
@@ -15758,7 +17641,7 @@ export const emojis: CompressedEmojiData[] = [
       'appetizer',
       'summer'
     ],
-    sheet: [6, 54],
+    sheet: [6, 36],
     shortName: 'fried_shrimp'
   },
   {
@@ -15777,7 +17660,7 @@ export const emojis: CompressedEmojiData[] = [
       'surimi',
       'ramen'
     ],
-    sheet: [6, 55],
+    sheet: [6, 37],
     shortName: 'fish_cake'
   },
   {
@@ -15786,9 +17669,10 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'moon_cake',
       'food',
-      'autumn'
+      'autumn',
+      'dessert'
     ],
-    sheet: [42, 11],
+    sheet: [43, 56],
     shortName: 'moon_cake'
   },
   {
@@ -15803,7 +17687,7 @@ export const emojis: CompressedEmojiData[] = [
       'barbecue',
       'meat'
     ],
-    sheet: [6, 51],
+    sheet: [6, 33],
     shortName: 'dango'
   },
   {
@@ -15814,9 +17698,10 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'empanada',
       'pierogi',
-      'potsticker'
+      'potsticker',
+      'gyoza'
     ],
-    sheet: [41, 54],
+    sheet: [43, 41],
     shortName: 'dumpling'
   },
   {
@@ -15825,9 +17710,10 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'fortune_cookie',
       'food',
-      'prophecy'
+      'prophecy',
+      'dessert'
     ],
-    sheet: [41, 55],
+    sheet: [43, 42],
     shortName: 'fortune_cookie'
   },
   {
@@ -15838,7 +17724,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'leftovers'
     ],
-    sheet: [41, 56],
+    sheet: [43, 43],
     shortName: 'takeout_box'
   },
   {
@@ -15849,7 +17735,7 @@ export const emojis: CompressedEmojiData[] = [
       'animal',
       'crustacean'
     ],
-    sheet: [42, 33],
+    sheet: [44, 18],
     shortName: 'crab'
   },
   {
@@ -15863,7 +17749,7 @@ export const emojis: CompressedEmojiData[] = [
       'claws',
       'seafood'
     ],
-    sheet: [43, 5],
+    sheet: [44, 48],
     shortName: 'lobster'
   },
   {
@@ -15876,7 +17762,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'seafood'
     ],
-    sheet: [42, 49],
+    sheet: [44, 34],
     shortName: 'shrimp'
   },
   {
@@ -15889,14 +17775,14 @@ export const emojis: CompressedEmojiData[] = [
       'ocean',
       'sea'
     ],
-    sheet: [42, 50],
+    sheet: [44, 35],
     shortName: 'squid'
   },
   {
     name: 'Oyster',
     unified: '1F9AA',
     keywords: ['oyster', 'food'],
-    sheet: [43, 17],
+    sheet: [44, 60],
     shortName: 'oyster'
   },
   {
@@ -15909,7 +17795,7 @@ export const emojis: CompressedEmojiData[] = [
       'dessert',
       'summer'
     ],
-    sheet: [6, 56],
+    sheet: [6, 38],
     shortName: 'icecream'
   },
   {
@@ -15921,7 +17807,7 @@ export const emojis: CompressedEmojiData[] = [
       'dessert',
       'summer'
     ],
-    sheet: [6, 57],
+    sheet: [6, 39],
     shortName: 'shaved_ice'
   },
   {
@@ -15933,7 +17819,7 @@ export const emojis: CompressedEmojiData[] = [
       'hot',
       'dessert'
     ],
-    sheet: [7, 0],
+    sheet: [6, 40],
     shortName: 'ice_cream'
   },
   {
@@ -15947,7 +17833,7 @@ export const emojis: CompressedEmojiData[] = [
       'sweet',
       'donut'
     ],
-    sheet: [7, 1],
+    sheet: [6, 41],
     shortName: 'doughnut'
   },
   {
@@ -15962,7 +17848,7 @@ export const emojis: CompressedEmojiData[] = [
       'sweet',
       'dessert'
     ],
-    sheet: [7, 2],
+    sheet: [6, 42],
     shortName: 'cookie'
   },
   {
@@ -15974,7 +17860,7 @@ export const emojis: CompressedEmojiData[] = [
       'dessert',
       'cake'
     ],
-    sheet: [7, 26],
+    sheet: [7, 5],
     shortName: 'birthday'
   },
   {
@@ -15985,7 +17871,7 @@ export const emojis: CompressedEmojiData[] = [
       'food',
       'dessert'
     ],
-    sheet: [7, 8],
+    sheet: [6, 48],
     shortName: 'cake'
   },
   {
@@ -15998,7 +17884,7 @@ export const emojis: CompressedEmojiData[] = [
       'bakery',
       'sweet'
     ],
-    sheet: [44, 27],
+    sheet: [46, 6],
     shortName: 'cupcake'
   },
   {
@@ -16010,7 +17896,7 @@ export const emojis: CompressedEmojiData[] = [
       'dessert',
       'pastry'
     ],
-    sheet: [42, 4],
+    sheet: [43, 49],
     shortName: 'pie'
   },
   {
@@ -16023,7 +17909,7 @@ export const emojis: CompressedEmojiData[] = [
       'dessert',
       'sweet'
     ],
-    sheet: [7, 3],
+    sheet: [6, 43],
     shortName: 'chocolate_bar'
   },
   {
@@ -16036,7 +17922,7 @@ export const emojis: CompressedEmojiData[] = [
       'sweet',
       'lolly'
     ],
-    sheet: [7, 4],
+    sheet: [6, 44],
     shortName: 'candy'
   },
   {
@@ -16049,7 +17935,7 @@ export const emojis: CompressedEmojiData[] = [
       'candy',
       'sweet'
     ],
-    sheet: [7, 5],
+    sheet: [6, 45],
     shortName: 'lollipop'
   },
   {
@@ -16060,7 +17946,7 @@ export const emojis: CompressedEmojiData[] = [
       'dessert',
       'food'
     ],
-    sheet: [7, 6],
+    sheet: [6, 46],
     shortName: 'custard'
   },
   {
@@ -16072,7 +17958,7 @@ export const emojis: CompressedEmojiData[] = [
       'sweet',
       'kitchen'
     ],
-    sheet: [7, 7],
+    sheet: [6, 47],
     shortName: 'honey_pot'
   },
   {
@@ -16084,7 +17970,7 @@ export const emojis: CompressedEmojiData[] = [
       'container',
       'milk'
     ],
-    sheet: [7, 20],
+    sheet: [6, 60],
     shortName: 'baby_bottle'
   },
   {
@@ -16096,7 +17982,7 @@ export const emojis: CompressedEmojiData[] = [
       'drink',
       'cow'
     ],
-    sheet: [41, 50],
+    sheet: [43, 37],
     shortName: 'glass_of_milk'
   },
   {
@@ -16107,9 +17993,11 @@ export const emojis: CompressedEmojiData[] = [
       'beverage',
       'caffeine',
       'latte',
-      'espresso'
+      'espresso',
+      'coffee',
+      'mug'
     ],
-    sheet: [54, 5],
+    sheet: [56, 48],
     shortName: 'coffee'
   },
   {
@@ -16120,7 +18008,7 @@ export const emojis: CompressedEmojiData[] = [
       'drink',
       'hot'
     ],
-    sheet: [53, 15],
+    sheet: [55, 8],
     shortName: 'teapot'
   },
   {
@@ -16134,7 +18022,7 @@ export const emojis: CompressedEmojiData[] = [
       'green',
       'british'
     ],
-    sheet: [7, 13],
+    sheet: [6, 53],
     shortName: 'tea'
   },
   {
@@ -16150,7 +18038,7 @@ export const emojis: CompressedEmojiData[] = [
       'alcohol',
       'booze'
     ],
-    sheet: [7, 14],
+    sheet: [6, 54],
     shortName: 'sake'
   },
   {
@@ -16163,7 +18051,7 @@ export const emojis: CompressedEmojiData[] = [
       'bottle',
       'celebration'
     ],
-    sheet: [7, 22],
+    sheet: [7, 1],
     shortName: 'champagne'
   },
   {
@@ -16177,7 +18065,7 @@ export const emojis: CompressedEmojiData[] = [
       'alcohol',
       'booze'
     ],
-    sheet: [7, 15],
+    sheet: [6, 55],
     shortName: 'wine_glass'
   },
   {
@@ -16192,7 +18080,7 @@ export const emojis: CompressedEmojiData[] = [
       'booze',
       'mojito'
     ],
-    sheet: [7, 16],
+    sheet: [6, 56],
     shortName: 'cocktail'
   },
   {
@@ -16208,7 +18096,7 @@ export const emojis: CompressedEmojiData[] = [
       'booze',
       'mojito'
     ],
-    sheet: [7, 17],
+    sheet: [6, 57],
     shortName: 'tropical_drink'
   },
   {
@@ -16226,7 +18114,7 @@ export const emojis: CompressedEmojiData[] = [
       'alcohol',
       'booze'
     ],
-    sheet: [7, 18],
+    sheet: [6, 58],
     shortName: 'beer'
   },
   {
@@ -16244,7 +18132,7 @@ export const emojis: CompressedEmojiData[] = [
       'alcohol',
       'booze'
     ],
-    sheet: [7, 19],
+    sheet: [6, 59],
     shortName: 'beers'
   },
   {
@@ -16262,7 +18150,7 @@ export const emojis: CompressedEmojiData[] = [
       'champagne',
       'toast'
     ],
-    sheet: [41, 26],
+    sheet: [43, 13],
     shortName: 'clinking_glasses'
   },
   {
@@ -16282,8 +18170,20 @@ export const emojis: CompressedEmojiData[] = [
       'glass',
       'shot'
     ],
-    sheet: [41, 27],
+    sheet: [43, 14],
     shortName: 'tumbler_glass'
+  },
+  {
+    name: 'Pouring Liquid',
+    unified: '1FAD7',
+    keywords: [
+      'pouring liquid',
+      'cup',
+      'water'
+    ],
+    sheet: [55, 9],
+    hidden: ['facebook'],
+    shortName: 'pouring_liquid'
   },
   {
     name: 'Cup with Straw',
@@ -16293,7 +18193,7 @@ export const emojis: CompressedEmojiData[] = [
       'drink',
       'soda'
     ],
-    sheet: [42, 1],
+    sheet: [43, 46],
     shortName: 'cup_with_straw'
   },
   {
@@ -16306,14 +18206,14 @@ export const emojis: CompressedEmojiData[] = [
       'milk tea',
       'straw'
     ],
-    sheet: [44, 37],
+    sheet: [46, 16],
     shortName: 'bubble_tea'
   },
   {
     name: 'Beverage Box',
     unified: '1F9C3',
     keywords: ['beverage_box', 'drink'],
-    sheet: [44, 29],
+    sheet: [46, 8],
     shortName: 'beverage_box'
   },
   {
@@ -16325,21 +18225,21 @@ export const emojis: CompressedEmojiData[] = [
       'tea',
       'beverage'
     ],
-    sheet: [44, 35],
+    sheet: [46, 14],
     shortName: 'mate_drink'
   },
   {
     name: 'Ice Cube',
     unified: '1F9CA',
     keywords: ['ice', 'water', 'cold'],
-    sheet: [44, 36],
+    sheet: [46, 15],
     shortName: 'ice_cube'
   },
   {
     name: 'Chopsticks',
     unified: '1F962',
     keywords: ['chopsticks', 'food'],
-    sheet: [41, 57],
+    sheet: [43, 44],
     shortName: 'chopsticks'
   },
   {
@@ -16354,7 +18254,7 @@ export const emojis: CompressedEmojiData[] = [
       'dinner',
       'restaurant'
     ],
-    sheet: [7, 21],
+    sheet: [7, 0],
     shortName: 'knife_fork_plate'
   },
   {
@@ -16365,7 +18265,7 @@ export const emojis: CompressedEmojiData[] = [
       'cutlery',
       'kitchen'
     ],
-    sheet: [7, 12],
+    sheet: [6, 52],
     shortName: 'fork_and_knife'
   },
   {
@@ -16377,7 +18277,7 @@ export const emojis: CompressedEmojiData[] = [
       'kitchen',
       'tableware'
     ],
-    sheet: [41, 28],
+    sheet: [43, 15],
     shortName: 'spoon'
   },
   {
@@ -16391,9 +18291,21 @@ export const emojis: CompressedEmojiData[] = [
       'kitchen',
       'weapon'
     ],
-    sheet: [28, 12],
+    sheet: [30, 6],
     shortNames: ['knife'],
     shortName: 'hocho'
+  },
+  {
+    name: 'Jar',
+    unified: '1FAD9',
+    keywords: [
+      'jar',
+      'container',
+      'sauce'
+    ],
+    sheet: [55, 11],
+    hidden: ['facebook'],
+    shortName: 'jar'
   },
   {
     name: 'Amphora',
@@ -16403,7 +18315,7 @@ export const emojis: CompressedEmojiData[] = [
       'vase',
       'jar'
     ],
-    sheet: [11, 12],
+    sheet: [10, 40],
     shortName: 'amphora'
   },
   {
@@ -16415,7 +18327,7 @@ export const emojis: CompressedEmojiData[] = [
       'world',
       'international'
     ],
-    sheet: [5, 27],
+    sheet: [5, 12],
     shortName: 'earth_africa'
   },
   {
@@ -16428,7 +18340,7 @@ export const emojis: CompressedEmojiData[] = [
       'USA',
       'international'
     ],
-    sheet: [5, 28],
+    sheet: [5, 13],
     shortName: 'earth_americas'
   },
   {
@@ -16441,7 +18353,7 @@ export const emojis: CompressedEmojiData[] = [
       'east',
       'international'
     ],
-    sheet: [5, 29],
+    sheet: [5, 14],
     shortName: 'earth_asia'
   },
   {
@@ -16456,7 +18368,7 @@ export const emojis: CompressedEmojiData[] = [
       'interweb',
       'i18n'
     ],
-    sheet: [5, 30],
+    sheet: [5, 15],
     shortName: 'globe_with_meridians'
   },
   {
@@ -16467,7 +18379,7 @@ export const emojis: CompressedEmojiData[] = [
       'location',
       'direction'
     ],
-    sheet: [30, 26],
+    sheet: [32, 14],
     shortName: 'world_map'
   },
   {
@@ -16480,7 +18392,7 @@ export const emojis: CompressedEmojiData[] = [
       'japanese',
       'asia'
     ],
-    sheet: [30, 30],
+    sheet: [32, 18],
     shortName: 'japan'
   },
   {
@@ -16492,7 +18404,7 @@ export const emojis: CompressedEmojiData[] = [
       'navigation',
       'orienteering'
     ],
-    sheet: [51, 56],
+    sheet: [53, 27],
     shortName: 'compass'
   },
   {
@@ -16506,7 +18418,7 @@ export const emojis: CompressedEmojiData[] = [
       'winter',
       'cold'
     ],
-    sheet: [10, 29],
+    sheet: [9, 60],
     shortName: 'snow_capped_mountain'
   },
   {
@@ -16518,7 +18430,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'environment'
     ],
-    sheet: [55, 16],
+    sheet: [57, 56],
     shortName: 'mountain'
   },
   {
@@ -16530,7 +18442,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'disaster'
     ],
-    sheet: [5, 25],
+    sheet: [5, 10],
     shortName: 'volcano'
   },
   {
@@ -16543,7 +18455,7 @@ export const emojis: CompressedEmojiData[] = [
       'nature',
       'japanese'
     ],
-    sheet: [30, 27],
+    sheet: [32, 15],
     shortName: 'mount_fuji'
   },
   {
@@ -16555,7 +18467,7 @@ export const emojis: CompressedEmojiData[] = [
       'outdoors',
       'tent'
     ],
-    sheet: [10, 30],
+    sheet: [10, 0],
     shortName: 'camping'
   },
   {
@@ -16569,7 +18481,7 @@ export const emojis: CompressedEmojiData[] = [
       'sand',
       'mojito'
     ],
-    sheet: [10, 31],
+    sheet: [10, 1],
     shortName: 'beach_with_umbrella'
   },
   {
@@ -16581,7 +18493,7 @@ export const emojis: CompressedEmojiData[] = [
       'warm',
       'saharah'
     ],
-    sheet: [10, 37],
+    sheet: [10, 7],
     shortName: 'desert'
   },
   {
@@ -16593,7 +18505,7 @@ export const emojis: CompressedEmojiData[] = [
       'tropical',
       'mojito'
     ],
-    sheet: [10, 38],
+    sheet: [10, 8],
     shortName: 'desert_island'
   },
   {
@@ -16605,7 +18517,7 @@ export const emojis: CompressedEmojiData[] = [
       'environment',
       'nature'
     ],
-    sheet: [10, 39],
+    sheet: [10, 9],
     shortName: 'national_park'
   },
   {
@@ -16619,7 +18531,7 @@ export const emojis: CompressedEmojiData[] = [
       'concert',
       'venue'
     ],
-    sheet: [10, 40],
+    sheet: [10, 10],
     shortName: 'stadium'
   },
   {
@@ -16631,7 +18543,7 @@ export const emojis: CompressedEmojiData[] = [
       'culture',
       'history'
     ],
-    sheet: [10, 36],
+    sheet: [10, 6],
     shortName: 'classical_building'
   },
   {
@@ -16643,21 +18555,21 @@ export const emojis: CompressedEmojiData[] = [
       'working',
       'progress'
     ],
-    sheet: [10, 32],
+    sheet: [10, 2],
     shortName: 'building_construction'
   },
   {
     name: 'Brick',
     unified: '1F9F1',
     keywords: ['brick', 'bricks'],
-    sheet: [52, 2],
+    sheet: [53, 31],
     shortName: 'bricks'
   },
   {
     name: 'Rock',
     unified: '1FAA8',
     keywords: ['rock', 'stone'],
-    sheet: [52, 56],
+    sheet: [54, 26],
     shortName: 'rock'
   },
   {
@@ -16669,7 +18581,7 @@ export const emojis: CompressedEmojiData[] = [
       'timber',
       'trunk'
     ],
-    sheet: [53, 4],
+    sheet: [54, 36],
     shortName: 'wood'
   },
   {
@@ -16680,7 +18592,7 @@ export const emojis: CompressedEmojiData[] = [
       'house',
       'structure'
     ],
-    sheet: [36, 33],
+    sheet: [38, 6],
     shortName: 'hut'
   },
   {
@@ -16691,7 +18603,7 @@ export const emojis: CompressedEmojiData[] = [
       'buildings',
       'photo'
     ],
-    sheet: [10, 33],
+    sheet: [10, 3],
     shortName: 'house_buildings'
   },
   {
@@ -16704,7 +18616,7 @@ export const emojis: CompressedEmojiData[] = [
       'broken',
       'building'
     ],
-    sheet: [10, 35],
+    sheet: [10, 5],
     shortName: 'derelict_house_building'
   },
   {
@@ -16715,7 +18627,7 @@ export const emojis: CompressedEmojiData[] = [
       'building',
       'home'
     ],
-    sheet: [10, 41],
+    sheet: [10, 11],
     shortName: 'house'
   },
   {
@@ -16727,7 +18639,7 @@ export const emojis: CompressedEmojiData[] = [
       'plant',
       'nature'
     ],
-    sheet: [10, 42],
+    sheet: [10, 12],
     shortName: 'house_with_garden'
   },
   {
@@ -16739,7 +18651,7 @@ export const emojis: CompressedEmojiData[] = [
       'bureau',
       'work'
     ],
-    sheet: [10, 43],
+    sheet: [10, 13],
     shortName: 'office'
   },
   {
@@ -16751,7 +18663,7 @@ export const emojis: CompressedEmojiData[] = [
       'envelope',
       'communication'
     ],
-    sheet: [10, 44],
+    sheet: [10, 14],
     shortName: 'post_office'
   },
   {
@@ -16762,7 +18674,7 @@ export const emojis: CompressedEmojiData[] = [
       'building',
       'email'
     ],
-    sheet: [10, 45],
+    sheet: [10, 15],
     shortName: 'european_post_office'
   },
   {
@@ -16775,7 +18687,7 @@ export const emojis: CompressedEmojiData[] = [
       'surgery',
       'doctor'
     ],
-    sheet: [10, 46],
+    sheet: [10, 16],
     shortName: 'hospital'
   },
   {
@@ -16790,7 +18702,7 @@ export const emojis: CompressedEmojiData[] = [
       'business',
       'enterprise'
     ],
-    sheet: [10, 47],
+    sheet: [10, 17],
     shortName: 'bank'
   },
   {
@@ -16802,7 +18714,7 @@ export const emojis: CompressedEmojiData[] = [
       'accomodation',
       'checkin'
     ],
-    sheet: [10, 49],
+    sheet: [10, 19],
     shortName: 'hotel'
   },
   {
@@ -16814,7 +18726,7 @@ export const emojis: CompressedEmojiData[] = [
       'affection',
       'dating'
     ],
-    sheet: [10, 50],
+    sheet: [10, 20],
     shortName: 'love_hotel'
   },
   {
@@ -16826,7 +18738,7 @@ export const emojis: CompressedEmojiData[] = [
       'shopping',
       'groceries'
     ],
-    sheet: [10, 51],
+    sheet: [10, 21],
     shortName: 'convenience_store'
   },
   {
@@ -16840,7 +18752,7 @@ export const emojis: CompressedEmojiData[] = [
       'learn',
       'teach'
     ],
-    sheet: [10, 52],
+    sheet: [10, 22],
     shortName: 'school'
   },
   {
@@ -16852,7 +18764,7 @@ export const emojis: CompressedEmojiData[] = [
       'shopping',
       'mall'
     ],
-    sheet: [10, 53],
+    sheet: [10, 23],
     shortName: 'department_store'
   },
   {
@@ -16865,7 +18777,7 @@ export const emojis: CompressedEmojiData[] = [
       'pollution',
       'smoke'
     ],
-    sheet: [10, 54],
+    sheet: [10, 24],
     shortName: 'factory'
   },
   {
@@ -16876,7 +18788,7 @@ export const emojis: CompressedEmojiData[] = [
       'photo',
       'building'
     ],
-    sheet: [10, 56],
+    sheet: [10, 26],
     shortName: 'japanese_castle'
   },
   {
@@ -16888,7 +18800,7 @@ export const emojis: CompressedEmojiData[] = [
       'royalty',
       'history'
     ],
-    sheet: [10, 57],
+    sheet: [10, 27],
     shortName: 'european_castle'
   },
   {
@@ -16904,7 +18816,7 @@ export const emojis: CompressedEmojiData[] = [
       'bride',
       'groom'
     ],
-    sheet: [25, 30],
+    sheet: [27, 33],
     shortName: 'wedding'
   },
   {
@@ -16915,7 +18827,7 @@ export const emojis: CompressedEmojiData[] = [
       'photo',
       'japanese'
     ],
-    sheet: [30, 28],
+    sheet: [32, 16],
     shortName: 'tokyo_tower'
   },
   {
@@ -16926,7 +18838,7 @@ export const emojis: CompressedEmojiData[] = [
       'american',
       'newyork'
     ],
-    sheet: [30, 29],
+    sheet: [32, 17],
     shortName: 'statue_of_liberty'
   },
   {
@@ -16938,7 +18850,7 @@ export const emojis: CompressedEmojiData[] = [
       'religion',
       'christ'
     ],
-    sheet: [55, 15],
+    sheet: [57, 55],
     shortName: 'church'
   },
   {
@@ -16950,7 +18862,7 @@ export const emojis: CompressedEmojiData[] = [
       'worship',
       'minaret'
     ],
-    sheet: [28, 35],
+    sheet: [30, 29],
     shortName: 'mosque'
   },
   {
@@ -16960,7 +18872,7 @@ export const emojis: CompressedEmojiData[] = [
       'hindu_temple',
       'religion'
     ],
-    sheet: [36, 32],
+    sheet: [38, 5],
     shortName: 'hindu_temple'
   },
   {
@@ -16973,7 +18885,7 @@ export const emojis: CompressedEmojiData[] = [
       'temple',
       'jewish'
     ],
-    sheet: [28, 36],
+    sheet: [30, 30],
     shortName: 'synagogue'
   },
   {
@@ -16985,7 +18897,7 @@ export const emojis: CompressedEmojiData[] = [
       'japan',
       'kyoto'
     ],
-    sheet: [55, 14],
+    sheet: [57, 54],
     shortName: 'shinto_shrine'
   },
   {
@@ -16997,7 +18909,7 @@ export const emojis: CompressedEmojiData[] = [
       'mosque',
       'islam'
     ],
-    sheet: [28, 34],
+    sheet: [30, 28],
     shortName: 'kaaba'
   },
   {
@@ -17010,7 +18922,7 @@ export const emojis: CompressedEmojiData[] = [
       'water',
       'fresh'
     ],
-    sheet: [55, 18],
+    sheet: [57, 58],
     shortName: 'fountain'
   },
   {
@@ -17022,7 +18934,7 @@ export const emojis: CompressedEmojiData[] = [
       'camping',
       'outdoors'
     ],
-    sheet: [55, 42],
+    sheet: [58, 21],
     shortName: 'tent'
   },
   {
@@ -17033,7 +18945,7 @@ export const emojis: CompressedEmojiData[] = [
       'photo',
       'mountain'
     ],
-    sheet: [5, 15],
+    sheet: [5, 0],
     shortName: 'foggy'
   },
   {
@@ -17045,7 +18957,7 @@ export const emojis: CompressedEmojiData[] = [
       'city',
       'downtown'
     ],
-    sheet: [5, 17],
+    sheet: [5, 2],
     shortName: 'night_with_stars'
   },
   {
@@ -17057,7 +18969,7 @@ export const emojis: CompressedEmojiData[] = [
       'night life',
       'urban'
     ],
-    sheet: [10, 34],
+    sheet: [10, 4],
     shortName: 'cityscape'
   },
   {
@@ -17069,7 +18981,7 @@ export const emojis: CompressedEmojiData[] = [
       'vacation',
       'photo'
     ],
-    sheet: [5, 18],
+    sheet: [5, 3],
     shortName: 'sunrise_over_mountains'
   },
   {
@@ -17082,7 +18994,7 @@ export const emojis: CompressedEmojiData[] = [
       'vacation',
       'photo'
     ],
-    sheet: [5, 19],
+    sheet: [5, 4],
     shortName: 'sunrise'
   },
   {
@@ -17095,7 +19007,7 @@ export const emojis: CompressedEmojiData[] = [
       'sky',
       'buildings'
     ],
-    sheet: [5, 20],
+    sheet: [5, 5],
     shortName: 'city_sunset'
   },
   {
@@ -17107,7 +19019,7 @@ export const emojis: CompressedEmojiData[] = [
       'good morning',
       'dawn'
     ],
-    sheet: [5, 21],
+    sheet: [5, 6],
     shortName: 'city_sunrise'
   },
   {
@@ -17118,7 +19030,7 @@ export const emojis: CompressedEmojiData[] = [
       'photo',
       'sanfrancisco'
     ],
-    sheet: [5, 23],
+    sheet: [5, 8],
     shortName: 'bridge_at_night'
   },
   {
@@ -17130,7 +19042,7 @@ export const emojis: CompressedEmojiData[] = [
       'warm',
       'relax'
     ],
-    sheet: [54, 42],
+    sheet: [57, 24],
     shortName: 'hotsprings'
   },
   {
@@ -17141,8 +19053,20 @@ export const emojis: CompressedEmojiData[] = [
       'photo',
       'carnival'
     ],
-    sheet: [7, 56],
+    sheet: [7, 35],
     shortName: 'carousel_horse'
+  },
+  {
+    name: 'Playground Slide',
+    unified: '1F6DD',
+    keywords: [
+      'playground slide',
+      'fun',
+      'park'
+    ],
+    sheet: [38, 8],
+    hidden: ['facebook'],
+    shortName: 'playground_slide'
   },
   {
     name: 'Ferris Wheel',
@@ -17153,7 +19077,7 @@ export const emojis: CompressedEmojiData[] = [
       'carnival',
       'londoneye'
     ],
-    sheet: [7, 57],
+    sheet: [7, 36],
     shortName: 'ferris_wheel'
   },
   {
@@ -17166,7 +19090,7 @@ export const emojis: CompressedEmojiData[] = [
       'photo',
       'fun'
     ],
-    sheet: [8, 0],
+    sheet: [7, 37],
     shortName: 'roller_coaster'
   },
   {
@@ -17178,7 +19102,7 @@ export const emojis: CompressedEmojiData[] = [
       'salon',
       'style'
     ],
-    sheet: [25, 20],
+    sheet: [26, 34],
     shortName: 'barber'
   },
   {
@@ -17190,7 +19114,7 @@ export const emojis: CompressedEmojiData[] = [
       'carnival',
       'party'
     ],
-    sheet: [8, 8],
+    sheet: [7, 45],
     shortName: 'circus_tent'
   },
   {
@@ -17202,7 +19126,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle',
       'train'
     ],
-    sheet: [33, 52],
+    sheet: [35, 34],
     shortName: 'steam_locomotive'
   },
   {
@@ -17213,7 +19137,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'vehicle'
     ],
-    sheet: [33, 53],
+    sheet: [35, 35],
     shortName: 'railway_car'
   },
   {
@@ -17224,7 +19148,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'vehicle'
     ],
-    sheet: [33, 54],
+    sheet: [35, 36],
     shortName: 'bullettrain_side'
   },
   {
@@ -17239,7 +19163,7 @@ export const emojis: CompressedEmojiData[] = [
       'public',
       'travel'
     ],
-    sheet: [33, 55],
+    sheet: [35, 37],
     shortName: 'bullettrain_front'
   },
   {
@@ -17250,7 +19174,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'vehicle'
     ],
-    sheet: [33, 56],
+    sheet: [35, 38],
     shortName: 'train2'
   },
   {
@@ -17264,7 +19188,7 @@ export const emojis: CompressedEmojiData[] = [
       'underground',
       'tube'
     ],
-    sheet: [33, 57],
+    sheet: [35, 39],
     shortName: 'metro'
   },
   {
@@ -17275,7 +19199,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'vehicle'
     ],
-    sheet: [34, 0],
+    sheet: [35, 40],
     shortName: 'light_rail'
   },
   {
@@ -17287,7 +19211,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle',
       'public'
     ],
-    sheet: [34, 1],
+    sheet: [35, 41],
     shortName: 'station'
   },
   {
@@ -17298,7 +19222,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'vehicle'
     ],
-    sheet: [34, 2],
+    sheet: [35, 42],
     shortName: 'tram'
   },
   {
@@ -17309,7 +19233,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'vehicle'
     ],
-    sheet: [34, 21],
+    sheet: [36, 0],
     shortName: 'monorail'
   },
   {
@@ -17320,7 +19244,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'vehicle'
     ],
-    sheet: [34, 22],
+    sheet: [36, 1],
     shortName: 'mountain_railway'
   },
   {
@@ -17334,7 +19258,7 @@ export const emojis: CompressedEmojiData[] = [
       'public',
       'travel'
     ],
-    sheet: [34, 3],
+    sheet: [35, 43],
     shortName: 'train'
   },
   {
@@ -17346,7 +19270,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle',
       'transportation'
     ],
-    sheet: [34, 4],
+    sheet: [35, 44],
     shortName: 'bus'
   },
   {
@@ -17357,7 +19281,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle',
       'transportation'
     ],
-    sheet: [34, 5],
+    sheet: [35, 45],
     shortName: 'oncoming_bus'
   },
   {
@@ -17369,7 +19293,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'vehicle'
     ],
-    sheet: [34, 6],
+    sheet: [35, 46],
     shortName: 'trolleybus'
   },
   {
@@ -17381,7 +19305,7 @@ export const emojis: CompressedEmojiData[] = [
       'car',
       'transportation'
     ],
-    sheet: [34, 8],
+    sheet: [35, 48],
     shortName: 'minibus'
   },
   {
@@ -17393,7 +19317,7 @@ export const emojis: CompressedEmojiData[] = [
       '911',
       'hospital'
     ],
-    sheet: [34, 9],
+    sheet: [35, 49],
     shortName: 'ambulance'
   },
   {
@@ -17405,7 +19329,7 @@ export const emojis: CompressedEmojiData[] = [
       'cars',
       'vehicle'
     ],
-    sheet: [34, 10],
+    sheet: [35, 50],
     shortName: 'fire_engine'
   },
   {
@@ -17420,7 +19344,7 @@ export const emojis: CompressedEmojiData[] = [
       'legal',
       'enforcement'
     ],
-    sheet: [34, 11],
+    sheet: [35, 51],
     shortName: 'police_car'
   },
   {
@@ -17434,7 +19358,7 @@ export const emojis: CompressedEmojiData[] = [
       'enforcement',
       '911'
     ],
-    sheet: [34, 12],
+    sheet: [35, 52],
     shortName: 'oncoming_police_car'
   },
   {
@@ -17447,7 +19371,7 @@ export const emojis: CompressedEmojiData[] = [
       'cars',
       'transportation'
     ],
-    sheet: [34, 13],
+    sheet: [35, 53],
     shortName: 'taxi'
   },
   {
@@ -17459,7 +19383,7 @@ export const emojis: CompressedEmojiData[] = [
       'cars',
       'uber'
     ],
-    sheet: [34, 14],
+    sheet: [35, 54],
     shortName: 'oncoming_taxi'
   },
   {
@@ -17471,7 +19395,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'vehicle'
     ],
-    sheet: [34, 15],
+    sheet: [35, 55],
     shortNames: ['red_car'],
     shortName: 'car'
   },
@@ -17484,7 +19408,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle',
       'transportation'
     ],
-    sheet: [34, 16],
+    sheet: [35, 56],
     shortName: 'oncoming_automobile'
   },
   {
@@ -17495,7 +19419,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'vehicle'
     ],
-    sheet: [34, 17],
+    sheet: [35, 57],
     shortName: 'blue_car'
   },
   {
@@ -17506,7 +19430,7 @@ export const emojis: CompressedEmojiData[] = [
       'car',
       'transportation'
     ],
-    sheet: [36, 53],
+    sheet: [38, 29],
     shortName: 'pickup_truck'
   },
   {
@@ -17517,7 +19441,7 @@ export const emojis: CompressedEmojiData[] = [
       'cars',
       'transportation'
     ],
-    sheet: [34, 18],
+    sheet: [35, 58],
     shortName: 'truck'
   },
   {
@@ -17530,7 +19454,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'express'
     ],
-    sheet: [34, 19],
+    sheet: [35, 59],
     shortName: 'articulated_lorry'
   },
   {
@@ -17543,7 +19467,7 @@ export const emojis: CompressedEmojiData[] = [
       'farming',
       'agriculture'
     ],
-    sheet: [34, 20],
+    sheet: [35, 60],
     shortName: 'tractor'
   },
   {
@@ -17557,7 +19481,7 @@ export const emojis: CompressedEmojiData[] = [
       'formula',
       'f1'
     ],
-    sheet: [10, 23],
+    sheet: [9, 54],
     shortName: 'racing_car'
   },
   {
@@ -17569,7 +19493,7 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'fast'
     ],
-    sheet: [10, 22],
+    sheet: [9, 53],
     shortName: 'racing_motorcycle'
   },
   {
@@ -17581,7 +19505,7 @@ export const emojis: CompressedEmojiData[] = [
       'vespa',
       'sasha'
     ],
-    sheet: [36, 47],
+    sheet: [38, 23],
     shortName: 'motor_scooter'
   },
   {
@@ -17591,7 +19515,7 @@ export const emojis: CompressedEmojiData[] = [
       'manual_wheelchair',
       'accessibility'
     ],
-    sheet: [44, 23],
+    sheet: [46, 2],
     shortName: 'manual_wheelchair'
   },
   {
@@ -17601,7 +19525,7 @@ export const emojis: CompressedEmojiData[] = [
       'motorized_wheelchair',
       'accessibility'
     ],
-    sheet: [44, 22],
+    sheet: [46, 1],
     shortName: 'motorized_wheelchair'
   },
   {
@@ -17612,7 +19536,7 @@ export const emojis: CompressedEmojiData[] = [
       'move',
       'transportation'
     ],
-    sheet: [36, 52],
+    sheet: [38, 28],
     shortName: 'auto_rickshaw'
   },
   {
@@ -17625,7 +19549,7 @@ export const emojis: CompressedEmojiData[] = [
       'exercise',
       'hipster'
     ],
-    sheet: [35, 1],
+    sheet: [36, 38],
     shortName: 'bike'
   },
   {
@@ -17637,14 +19561,14 @@ export const emojis: CompressedEmojiData[] = [
       'kick',
       'razor'
     ],
-    sheet: [36, 46],
+    sheet: [38, 22],
     shortName: 'scooter'
   },
   {
     name: 'Skateboard',
     unified: '1F6F9',
     keywords: ['skateboard', 'board'],
-    sheet: [36, 51],
+    sheet: [38, 27],
     shortName: 'skateboard'
   },
   {
@@ -17655,7 +19579,7 @@ export const emojis: CompressedEmojiData[] = [
       'footwear',
       'sports'
     ],
-    sheet: [36, 54],
+    sheet: [38, 30],
     shortName: 'roller_skate'
   },
   {
@@ -17666,7 +19590,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'wait'
     ],
-    sheet: [34, 7],
+    sheet: [35, 47],
     shortName: 'busstop'
   },
   {
@@ -17679,7 +19603,7 @@ export const emojis: CompressedEmojiData[] = [
       'interstate',
       'highway'
     ],
-    sheet: [36, 38],
+    sheet: [38, 14],
     shortName: 'motorway'
   },
   {
@@ -17690,14 +19614,14 @@ export const emojis: CompressedEmojiData[] = [
       'train',
       'transportation'
     ],
-    sheet: [36, 39],
+    sheet: [38, 15],
     shortName: 'railway_track'
   },
   {
     name: 'Oil Drum',
     unified: '1F6E2-FE0F',
     keywords: ['oil_drum', 'barrell'],
-    sheet: [36, 37],
+    sheet: [38, 13],
     shortName: 'oil_drum'
   },
   {
@@ -17708,8 +19632,20 @@ export const emojis: CompressedEmojiData[] = [
       'gas station',
       'petroleum'
     ],
-    sheet: [55, 43],
+    sheet: [58, 22],
     shortName: 'fuelpump'
+  },
+  {
+    name: 'Wheel',
+    unified: '1F6DE',
+    keywords: [
+      'wheel',
+      'car',
+      'transport'
+    ],
+    sheet: [38, 9],
+    hidden: ['facebook'],
+    shortName: 'wheel'
   },
   {
     name: 'Police Cars Revolving Light',
@@ -17726,7 +19662,7 @@ export const emojis: CompressedEmojiData[] = [
       'law',
       'legal'
     ],
-    sheet: [34, 49],
+    sheet: [36, 28],
     shortName: 'rotating_light'
   },
   {
@@ -17737,7 +19673,7 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'signal'
     ],
-    sheet: [34, 46],
+    sheet: [36, 25],
     shortName: 'traffic_light'
   },
   {
@@ -17748,14 +19684,14 @@ export const emojis: CompressedEmojiData[] = [
       'transportation',
       'driving'
     ],
-    sheet: [34, 47],
+    sheet: [36, 26],
     shortName: 'vertical_traffic_light'
   },
   {
     name: 'Octagonal Sign',
     unified: '1F6D1',
     keywords: ['stop_sign', 'stop'],
-    sheet: [36, 30],
+    sheet: [38, 3],
     shortName: 'octagonal_sign'
   },
   {
@@ -17768,7 +19704,7 @@ export const emojis: CompressedEmojiData[] = [
       'caution',
       'warning'
     ],
-    sheet: [34, 48],
+    sheet: [36, 27],
     shortName: 'construction'
   },
   {
@@ -17781,8 +19717,20 @@ export const emojis: CompressedEmojiData[] = [
       'sea',
       'boat'
     ],
-    sheet: [54, 47],
+    sheet: [57, 29],
     shortName: 'anchor'
+  },
+  {
+    name: 'Ring Buoy',
+    unified: '1F6DF',
+    keywords: [
+      'ring buoy',
+      'life saver',
+      'life preserver'
+    ],
+    sheet: [38, 10],
+    hidden: ['facebook'],
+    shortName: 'ring_buoy'
   },
   {
     name: 'Sailboat',
@@ -17795,7 +19743,7 @@ export const emojis: CompressedEmojiData[] = [
       'water',
       'sailing'
     ],
-    sheet: [55, 21],
+    sheet: [58, 0],
     shortNames: ['sailboat'],
     shortName: 'boat'
   },
@@ -17809,7 +19757,7 @@ export const emojis: CompressedEmojiData[] = [
       'water',
       'ship'
     ],
-    sheet: [36, 48],
+    sheet: [38, 24],
     shortName: 'canoe'
   },
   {
@@ -17822,7 +19770,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle',
       'summer'
     ],
-    sheet: [34, 45],
+    sheet: [36, 24],
     shortName: 'speedboat'
   },
   {
@@ -17834,7 +19782,7 @@ export const emojis: CompressedEmojiData[] = [
       'cruise',
       'ferry'
     ],
-    sheet: [36, 45],
+    sheet: [38, 21],
     shortName: 'passenger_ship'
   },
   {
@@ -17846,14 +19794,14 @@ export const emojis: CompressedEmojiData[] = [
       'ship',
       'yacht'
     ],
-    sheet: [55, 20],
+    sheet: [57, 60],
     shortName: 'ferry'
   },
   {
     name: 'Motor Boat',
     unified: '1F6E5-FE0F',
     keywords: ['motor_boat', 'ship'],
-    sheet: [36, 40],
+    sheet: [38, 16],
     shortName: 'motor_boat'
   },
   {
@@ -17865,7 +19813,7 @@ export const emojis: CompressedEmojiData[] = [
       'titanic',
       'deploy'
     ],
-    sheet: [34, 26],
+    sheet: [36, 5],
     shortName: 'ship'
   },
   {
@@ -17878,7 +19826,7 @@ export const emojis: CompressedEmojiData[] = [
       'flight',
       'fly'
     ],
-    sheet: [55, 46],
+    sheet: [58, 25],
     shortName: 'airplane'
   },
   {
@@ -17891,7 +19839,7 @@ export const emojis: CompressedEmojiData[] = [
       'fly',
       'vehicle'
     ],
-    sheet: [36, 41],
+    sheet: [38, 17],
     shortName: 'small_airplane'
   },
   {
@@ -17903,7 +19851,7 @@ export const emojis: CompressedEmojiData[] = [
       'flight',
       'landing'
     ],
-    sheet: [36, 42],
+    sheet: [38, 18],
     shortName: 'airplane_departure'
   },
   {
@@ -17915,7 +19863,7 @@ export const emojis: CompressedEmojiData[] = [
       'flight',
       'boarding'
     ],
-    sheet: [36, 43],
+    sheet: [38, 19],
     shortName: 'airplane_arriving'
   },
   {
@@ -17926,7 +19874,7 @@ export const emojis: CompressedEmojiData[] = [
       'fly',
       'glide'
     ],
-    sheet: [52, 27],
+    sheet: [53, 58],
     shortName: 'parachute'
   },
   {
@@ -17941,7 +19889,7 @@ export const emojis: CompressedEmojiData[] = [
       'flight',
       'fly'
     ],
-    sheet: [26, 17],
+    sheet: [28, 17],
     shortName: 'seat'
   },
   {
@@ -17953,7 +19901,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle',
       'fly'
     ],
-    sheet: [33, 51],
+    sheet: [35, 33],
     shortName: 'helicopter'
   },
   {
@@ -17964,7 +19912,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle',
       'transportation'
     ],
-    sheet: [34, 23],
+    sheet: [36, 2],
     shortName: 'suspension_railway'
   },
   {
@@ -17976,7 +19924,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle',
       'ski'
     ],
-    sheet: [34, 24],
+    sheet: [36, 3],
     shortName: 'mountain_cableway'
   },
   {
@@ -17988,7 +19936,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle',
       'ski'
     ],
-    sheet: [34, 25],
+    sheet: [36, 4],
     shortName: 'aerial_tramway'
   },
   {
@@ -18003,7 +19951,7 @@ export const emojis: CompressedEmojiData[] = [
       'NASA',
       'ISS'
     ],
-    sheet: [36, 44],
+    sheet: [38, 20],
     shortName: 'satellite'
   },
   {
@@ -18019,7 +19967,7 @@ export const emojis: CompressedEmojiData[] = [
       'outer_space',
       'fly'
     ],
-    sheet: [33, 50],
+    sheet: [35, 32],
     shortName: 'rocket'
   },
   {
@@ -18031,7 +19979,7 @@ export const emojis: CompressedEmojiData[] = [
       'vehicle',
       'ufo'
     ],
-    sheet: [36, 50],
+    sheet: [38, 26],
     shortName: 'flying_saucer'
   },
   {
@@ -18041,7 +19989,7 @@ export const emojis: CompressedEmojiData[] = [
       'bellhop_bell',
       'service'
     ],
-    sheet: [36, 27],
+    sheet: [38, 0],
     shortName: 'bellhop_bell'
   },
   {
@@ -18052,7 +20000,7 @@ export const emojis: CompressedEmojiData[] = [
       'packing',
       'travel'
     ],
-    sheet: [52, 4],
+    sheet: [53, 33],
     shortName: 'luggage'
   },
   {
@@ -18068,7 +20016,7 @@ export const emojis: CompressedEmojiData[] = [
       'quiz',
       'test'
     ],
-    sheet: [53, 29],
+    sheet: [56, 14],
     shortName: 'hourglass'
   },
   {
@@ -18080,7 +20028,7 @@ export const emojis: CompressedEmojiData[] = [
       'time',
       'countdown'
     ],
-    sheet: [53, 42],
+    sheet: [56, 27],
     shortName: 'hourglass_flowing_sand'
   },
   {
@@ -18091,7 +20039,7 @@ export const emojis: CompressedEmojiData[] = [
       'time',
       'accessories'
     ],
-    sheet: [53, 28],
+    sheet: [56, 13],
     shortName: 'watch'
   },
   {
@@ -18102,7 +20050,7 @@ export const emojis: CompressedEmojiData[] = [
       'time',
       'wake'
     ],
-    sheet: [53, 39],
+    sheet: [56, 24],
     shortName: 'alarm_clock'
   },
   {
@@ -18113,14 +20061,14 @@ export const emojis: CompressedEmojiData[] = [
       'time',
       'deadline'
     ],
-    sheet: [53, 40],
+    sheet: [56, 25],
     shortName: 'stopwatch'
   },
   {
     name: 'Timer Clock',
     unified: '23F2-FE0F',
     keywords: ['timer_clock', 'alarm'],
-    sheet: [53, 41],
+    sheet: [56, 26],
     shortName: 'timer_clock'
   },
   {
@@ -18130,7 +20078,7 @@ export const emojis: CompressedEmojiData[] = [
       'mantelpiece_clock',
       'time'
     ],
-    sheet: [29, 5],
+    sheet: [30, 57],
     shortName: 'mantelpiece_clock'
   },
   {
@@ -18138,6 +20086,11 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F55B',
     keywords: [
       'twelve_o_clock',
+      '12',
+      '00:00',
+      '0000',
+      '12:00',
+      '1200',
       'time',
       'noon',
       'midnight',
@@ -18146,7 +20099,7 @@ export const emojis: CompressedEmojiData[] = [
       'early',
       'schedule'
     ],
-    sheet: [28, 49],
+    sheet: [30, 43],
     shortName: 'clock12'
   },
   {
@@ -18154,12 +20107,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F567',
     keywords: [
       'twelve_thirty',
+      '00:30',
+      '0030',
+      '12:30',
+      '1230',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [29, 3],
+    sheet: [30, 55],
     shortName: 'clock1230'
   },
   {
@@ -18167,12 +20124,17 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F550',
     keywords: [
       'one_o_clock',
+      '1',
+      '1:00',
+      '100',
+      '13:00',
+      '1300',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 38],
+    sheet: [30, 32],
     shortName: 'clock1'
   },
   {
@@ -18180,12 +20142,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F55C',
     keywords: [
       'one_thirty',
+      '1:30',
+      '130',
+      '13:30',
+      '1330',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 50],
+    sheet: [30, 44],
     shortName: 'clock130'
   },
   {
@@ -18193,12 +20159,17 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F551',
     keywords: [
       'two_o_clock',
+      '2',
+      '2:00',
+      '200',
+      '14:00',
+      '1400',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 39],
+    sheet: [30, 33],
     shortName: 'clock2'
   },
   {
@@ -18206,12 +20177,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F55D',
     keywords: [
       'two_thirty',
+      '2:30',
+      '230',
+      '14:30',
+      '1430',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 51],
+    sheet: [30, 45],
     shortName: 'clock230'
   },
   {
@@ -18219,12 +20194,17 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F552',
     keywords: [
       'three_o_clock',
+      '3',
+      '3:00',
+      '300',
+      '15:00',
+      '1500',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 40],
+    sheet: [30, 34],
     shortName: 'clock3'
   },
   {
@@ -18232,12 +20212,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F55E',
     keywords: [
       'three_thirty',
+      '3:30',
+      '330',
+      '15:30',
+      '1530',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 52],
+    sheet: [30, 46],
     shortName: 'clock330'
   },
   {
@@ -18245,12 +20229,17 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F553',
     keywords: [
       'four_o_clock',
+      '4',
+      '4:00',
+      '400',
+      '16:00',
+      '1600',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 41],
+    sheet: [30, 35],
     shortName: 'clock4'
   },
   {
@@ -18258,12 +20247,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F55F',
     keywords: [
       'four_thirty',
+      '4:30',
+      '430',
+      '16:30',
+      '1630',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 53],
+    sheet: [30, 47],
     shortName: 'clock430'
   },
   {
@@ -18271,12 +20264,17 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F554',
     keywords: [
       'five_o_clock',
+      '5',
+      '5:00',
+      '500',
+      '17:00',
+      '1700',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 42],
+    sheet: [30, 36],
     shortName: 'clock5'
   },
   {
@@ -18284,12 +20282,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F560',
     keywords: [
       'five_thirty',
+      '5:30',
+      '530',
+      '17:30',
+      '1730',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 54],
+    sheet: [30, 48],
     shortName: 'clock530'
   },
   {
@@ -18297,6 +20299,11 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F555',
     keywords: [
       'six_o_clock',
+      '6',
+      '6:00',
+      '600',
+      '18:00',
+      '1800',
       'time',
       'late',
       'early',
@@ -18304,7 +20311,7 @@ export const emojis: CompressedEmojiData[] = [
       'dawn',
       'dusk'
     ],
-    sheet: [28, 43],
+    sheet: [30, 37],
     shortName: 'clock6'
   },
   {
@@ -18312,12 +20319,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F561',
     keywords: [
       'six_thirty',
+      '6:30',
+      '630',
+      '18:30',
+      '1830',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 55],
+    sheet: [30, 49],
     shortName: 'clock630'
   },
   {
@@ -18325,12 +20336,17 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F556',
     keywords: [
       'seven_o_clock',
+      '7',
+      '7:00',
+      '700',
+      '19:00',
+      '1900',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 44],
+    sheet: [30, 38],
     shortName: 'clock7'
   },
   {
@@ -18338,12 +20354,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F562',
     keywords: [
       'seven_thirty',
+      '7:30',
+      '730',
+      '19:30',
+      '1930',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 56],
+    sheet: [30, 50],
     shortName: 'clock730'
   },
   {
@@ -18351,12 +20371,17 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F557',
     keywords: [
       'eight_o_clock',
+      '8',
+      '8:00',
+      '800',
+      '20:00',
+      '2000',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 45],
+    sheet: [30, 39],
     shortName: 'clock8'
   },
   {
@@ -18364,12 +20389,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F563',
     keywords: [
       'eight_thirty',
+      '8:30',
+      '830',
+      '20:30',
+      '2030',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 57],
+    sheet: [30, 51],
     shortName: 'clock830'
   },
   {
@@ -18377,12 +20406,17 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F558',
     keywords: [
       'nine_o_clock',
+      '9',
+      '9:00',
+      '900',
+      '21:00',
+      '2100',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 46],
+    sheet: [30, 40],
     shortName: 'clock9'
   },
   {
@@ -18390,12 +20424,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F564',
     keywords: [
       'nine_thirty',
+      '9:30',
+      '930',
+      '21:30',
+      '2130',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [29, 0],
+    sheet: [30, 52],
     shortName: 'clock930'
   },
   {
@@ -18403,12 +20441,17 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F559',
     keywords: [
       'ten_o_clock',
+      '10',
+      '10:00',
+      '1000',
+      '22:00',
+      '2200',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 47],
+    sheet: [30, 41],
     shortName: 'clock10'
   },
   {
@@ -18416,12 +20459,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F565',
     keywords: [
       'ten_thirty',
+      '10:30',
+      '1030',
+      '22:30',
+      '2230',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [29, 1],
+    sheet: [30, 53],
     shortName: 'clock1030'
   },
   {
@@ -18429,12 +20476,17 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F55A',
     keywords: [
       'eleven_o_clock',
+      '11',
+      '11:00',
+      '1100',
+      '23:00',
+      '2300',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [28, 48],
+    sheet: [30, 42],
     shortName: 'clock11'
   },
   {
@@ -18442,12 +20494,16 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F566',
     keywords: [
       'eleven_thirty',
+      '11:30',
+      '1130',
+      '23:30',
+      '2330',
       'time',
       'late',
       'early',
       'schedule'
     ],
-    sheet: [29, 2],
+    sheet: [30, 54],
     shortName: 'clock1130'
   },
   {
@@ -18463,7 +20519,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'sleep'
     ],
-    sheet: [5, 31],
+    sheet: [5, 16],
     shortName: 'new_moon'
   },
   {
@@ -18479,7 +20535,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'sleep'
     ],
-    sheet: [5, 32],
+    sheet: [5, 17],
     shortName: 'waxing_crescent_moon'
   },
   {
@@ -18495,7 +20551,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'sleep'
     ],
-    sheet: [5, 33],
+    sheet: [5, 18],
     shortName: 'first_quarter_moon'
   },
   {
@@ -18513,7 +20569,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'sleep'
     ],
-    sheet: [5, 34],
+    sheet: [5, 19],
     shortNames: ['waxing_gibbous_moon'],
     shortName: 'moon'
   },
@@ -18531,7 +20587,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'sleep'
     ],
-    sheet: [5, 35],
+    sheet: [5, 20],
     shortName: 'full_moon'
   },
   {
@@ -18548,7 +20604,7 @@ export const emojis: CompressedEmojiData[] = [
       'sleep',
       'waxing_gibbous_moon'
     ],
-    sheet: [5, 36],
+    sheet: [5, 21],
     shortName: 'waning_gibbous_moon'
   },
   {
@@ -18564,7 +20620,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'sleep'
     ],
-    sheet: [5, 37],
+    sheet: [5, 22],
     shortName: 'last_quarter_moon'
   },
   {
@@ -18580,7 +20636,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'sleep'
     ],
-    sheet: [5, 38],
+    sheet: [5, 23],
     shortName: 'waning_crescent_moon'
   },
   {
@@ -18594,7 +20650,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'magic'
     ],
-    sheet: [5, 39],
+    sheet: [5, 24],
     shortName: 'crescent_moon'
   },
   {
@@ -18610,7 +20666,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'sleep'
     ],
-    sheet: [5, 40],
+    sheet: [5, 25],
     shortName: 'new_moon_with_face'
   },
   {
@@ -18626,7 +20682,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'sleep'
     ],
-    sheet: [5, 41],
+    sheet: [5, 26],
     shortName: 'first_quarter_moon_with_face'
   },
   {
@@ -18642,7 +20698,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'sleep'
     ],
-    sheet: [5, 42],
+    sheet: [5, 27],
     shortName: 'last_quarter_moon_with_face'
   },
   {
@@ -18655,7 +20711,7 @@ export const emojis: CompressedEmojiData[] = [
       'hot',
       'cold'
     ],
-    sheet: [5, 47],
+    sheet: [5, 32],
     shortName: 'thermometer'
   },
   {
@@ -18670,7 +20726,7 @@ export const emojis: CompressedEmojiData[] = [
       'beach',
       'spring'
     ],
-    sheet: [53, 55],
+    sheet: [56, 40],
     shortName: 'sunny'
   },
   {
@@ -18686,7 +20742,7 @@ export const emojis: CompressedEmojiData[] = [
       'evening',
       'sleep'
     ],
-    sheet: [5, 43],
+    sheet: [5, 28],
     shortName: 'full_moon_with_face'
   },
   {
@@ -18698,7 +20754,7 @@ export const emojis: CompressedEmojiData[] = [
       'morning',
       'sky'
     ],
-    sheet: [5, 44],
+    sheet: [5, 29],
     shortName: 'sun_with_face'
   },
   {
@@ -18708,7 +20764,7 @@ export const emojis: CompressedEmojiData[] = [
       'ringed_planet',
       'outerspace'
     ],
-    sheet: [52, 32],
+    sheet: [54, 2],
     shortName: 'ringed_planet'
   },
   {
@@ -18719,7 +20775,7 @@ export const emojis: CompressedEmojiData[] = [
       'night',
       'yellow'
     ],
-    sheet: [56, 46],
+    sheet: [59, 24],
     shortName: 'star'
   },
   {
@@ -18733,7 +20789,7 @@ export const emojis: CompressedEmojiData[] = [
       'good',
       'magic'
     ],
-    sheet: [5, 45],
+    sheet: [5, 30],
     shortName: 'star2'
   },
   {
@@ -18744,7 +20800,7 @@ export const emojis: CompressedEmojiData[] = [
       'night',
       'photo'
     ],
-    sheet: [5, 46],
+    sheet: [5, 31],
     shortName: 'stars'
   },
   {
@@ -18756,7 +20812,7 @@ export const emojis: CompressedEmojiData[] = [
       'space',
       'stars'
     ],
-    sheet: [5, 26],
+    sheet: [5, 11],
     shortName: 'milky_way'
   },
   {
@@ -18767,7 +20823,7 @@ export const emojis: CompressedEmojiData[] = [
       'weather',
       'sky'
     ],
-    sheet: [53, 56],
+    sheet: [56, 41],
     shortName: 'cloud'
   },
   {
@@ -18782,7 +20838,7 @@ export const emojis: CompressedEmojiData[] = [
       'fall',
       'spring'
     ],
-    sheet: [55, 7],
+    sheet: [57, 47],
     shortName: 'partly_sunny'
   },
   {
@@ -18793,7 +20849,7 @@ export const emojis: CompressedEmojiData[] = [
       'weather',
       'lightning'
     ],
-    sheet: [55, 8],
+    sheet: [57, 48],
     shortName: 'thunder_cloud_and_rain'
   },
   {
@@ -18803,7 +20859,7 @@ export const emojis: CompressedEmojiData[] = [
       'sun_behind_small_cloud',
       'weather'
     ],
-    sheet: [5, 48],
+    sheet: [5, 33],
     shortNames: ['sun_small_cloud'],
     shortName: 'mostly_sunny'
   },
@@ -18814,7 +20870,7 @@ export const emojis: CompressedEmojiData[] = [
       'sun_behind_large_cloud',
       'weather'
     ],
-    sheet: [5, 49],
+    sheet: [5, 34],
     shortNames: ['sun_behind_cloud'],
     shortName: 'barely_sunny'
   },
@@ -18825,7 +20881,7 @@ export const emojis: CompressedEmojiData[] = [
       'sun_behind_rain_cloud',
       'weather'
     ],
-    sheet: [5, 50],
+    sheet: [5, 35],
     shortNames: ['sun_behind_rain_cloud'],
     shortName: 'partly_sunny_rain'
   },
@@ -18836,7 +20892,7 @@ export const emojis: CompressedEmojiData[] = [
       'cloud_with_rain',
       'weather'
     ],
-    sheet: [5, 51],
+    sheet: [5, 36],
     shortName: 'rain_cloud'
   },
   {
@@ -18846,7 +20902,7 @@ export const emojis: CompressedEmojiData[] = [
       'cloud_with_snow',
       'weather'
     ],
-    sheet: [5, 52],
+    sheet: [5, 37],
     shortName: 'snow_cloud'
   },
   {
@@ -18857,7 +20913,7 @@ export const emojis: CompressedEmojiData[] = [
       'weather',
       'thunder'
     ],
-    sheet: [5, 53],
+    sheet: [5, 38],
     shortNames: ['lightning_cloud'],
     shortName: 'lightning'
   },
@@ -18870,7 +20926,7 @@ export const emojis: CompressedEmojiData[] = [
       'cyclone',
       'twister'
     ],
-    sheet: [5, 54],
+    sheet: [5, 39],
     shortNames: ['tornado_cloud'],
     shortName: 'tornado'
   },
@@ -18878,7 +20934,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Fog',
     unified: '1F32B-FE0F',
     keywords: ['fog', 'weather'],
-    sheet: [5, 55],
+    sheet: [5, 40],
     shortName: 'fog'
   },
   {
@@ -18889,7 +20945,7 @@ export const emojis: CompressedEmojiData[] = [
       'gust',
       'air'
     ],
-    sheet: [5, 56],
+    sheet: [5, 41],
     shortName: 'wind_blowing_face'
   },
   {
@@ -18909,7 +20965,7 @@ export const emojis: CompressedEmojiData[] = [
       'hurricane',
       'typhoon'
     ],
-    sheet: [5, 14],
+    sheet: [4, 60],
     shortName: 'cyclone'
   },
   {
@@ -18924,7 +20980,7 @@ export const emojis: CompressedEmojiData[] = [
       'sky',
       'spring'
     ],
-    sheet: [5, 22],
+    sheet: [5, 7],
     shortName: 'rainbow'
   },
   {
@@ -18936,7 +20992,7 @@ export const emojis: CompressedEmojiData[] = [
       'rain',
       'drizzle'
     ],
-    sheet: [5, 16],
+    sheet: [5, 1],
     shortName: 'closed_umbrella'
   },
   {
@@ -18947,7 +21003,7 @@ export const emojis: CompressedEmojiData[] = [
       'weather',
       'spring'
     ],
-    sheet: [53, 57],
+    sheet: [56, 42],
     shortName: 'umbrella'
   },
   {
@@ -18959,7 +21015,7 @@ export const emojis: CompressedEmojiData[] = [
       'weather',
       'spring'
     ],
-    sheet: [54, 4],
+    sheet: [56, 47],
     shortName: 'umbrella_with_rain_drops'
   },
   {
@@ -18970,7 +21026,7 @@ export const emojis: CompressedEmojiData[] = [
       'weather',
       'summer'
     ],
-    sheet: [55, 17],
+    sheet: [57, 57],
     shortName: 'umbrella_on_ground'
   },
   {
@@ -18983,7 +21039,7 @@ export const emojis: CompressedEmojiData[] = [
       'lightning bolt',
       'fast'
     ],
-    sheet: [54, 56],
+    sheet: [57, 38],
     shortName: 'zap'
   },
   {
@@ -18998,7 +21054,7 @@ export const emojis: CompressedEmojiData[] = [
       'christmas',
       'xmas'
     ],
-    sheet: [56, 23],
+    sheet: [58, 60],
     shortName: 'snowflake'
   },
   {
@@ -19014,7 +21070,7 @@ export const emojis: CompressedEmojiData[] = [
       'xmas',
       'frozen'
     ],
-    sheet: [54, 0],
+    sheet: [56, 43],
     shortName: 'snowman'
   },
   {
@@ -19031,14 +21087,14 @@ export const emojis: CompressedEmojiData[] = [
       'frozen',
       'without_snow'
     ],
-    sheet: [55, 6],
+    sheet: [57, 46],
     shortName: 'snowman_without_snow'
   },
   {
     name: 'Comet',
     unified: '2604-FE0F',
     keywords: ['comet', 'space'],
-    sheet: [54, 1],
+    sheet: [56, 44],
     shortName: 'comet'
   },
   {
@@ -19050,7 +21106,7 @@ export const emojis: CompressedEmojiData[] = [
       'cook',
       'flame'
     ],
-    sheet: [28, 7],
+    sheet: [30, 1],
     shortName: 'fire'
   },
   {
@@ -19063,7 +21119,7 @@ export const emojis: CompressedEmojiData[] = [
       'faucet',
       'spring'
     ],
-    sheet: [25, 51],
+    sheet: [27, 54],
     shortName: 'droplet'
   },
   {
@@ -19078,7 +21134,7 @@ export const emojis: CompressedEmojiData[] = [
       'tsunami',
       'disaster'
     ],
-    sheet: [5, 24],
+    sheet: [5, 9],
     shortName: 'ocean'
   },
   {
@@ -19092,7 +21148,7 @@ export const emojis: CompressedEmojiData[] = [
       'creepy',
       'fall'
     ],
-    sheet: [7, 27],
+    sheet: [7, 6],
     shortName: 'jack_o_lantern'
   },
   {
@@ -19106,7 +21162,7 @@ export const emojis: CompressedEmojiData[] = [
       'xmas',
       'celebration'
     ],
-    sheet: [7, 28],
+    sheet: [7, 7],
     shortName: 'christmas_tree'
   },
   {
@@ -19119,7 +21175,7 @@ export const emojis: CompressedEmojiData[] = [
       'carnival',
       'congratulations'
     ],
-    sheet: [7, 35],
+    sheet: [7, 14],
     shortName: 'fireworks'
   },
   {
@@ -19131,7 +21187,7 @@ export const emojis: CompressedEmojiData[] = [
       'night',
       'shine'
     ],
-    sheet: [7, 36],
+    sheet: [7, 15],
     shortName: 'sparkler'
   },
   {
@@ -19145,7 +21201,7 @@ export const emojis: CompressedEmojiData[] = [
       'explosion',
       'explosive'
     ],
-    sheet: [51, 51],
+    sheet: [53, 22],
     shortName: 'firecracker'
   },
   {
@@ -19161,7 +21217,7 @@ export const emojis: CompressedEmojiData[] = [
       'good',
       'magic'
     ],
-    sheet: [56, 20],
+    sheet: [58, 57],
     shortName: 'sparkles'
   },
   {
@@ -19174,7 +21230,7 @@ export const emojis: CompressedEmojiData[] = [
       'birthday',
       'circus'
     ],
-    sheet: [7, 37],
+    sheet: [7, 16],
     shortName: 'balloon'
   },
   {
@@ -19190,7 +21246,7 @@ export const emojis: CompressedEmojiData[] = [
       'celebration',
       'tada'
     ],
-    sheet: [7, 38],
+    sheet: [7, 17],
     shortName: 'tada'
   },
   {
@@ -19203,7 +21259,7 @@ export const emojis: CompressedEmojiData[] = [
       'birthday',
       'circus'
     ],
-    sheet: [7, 39],
+    sheet: [7, 18],
     shortName: 'confetti_ball'
   },
   {
@@ -19214,9 +21270,13 @@ export const emojis: CompressedEmojiData[] = [
       'plant',
       'nature',
       'branch',
-      'summer'
+      'summer',
+      'bamboo',
+      'wish',
+      'star_festival',
+      'tanzaku'
     ],
-    sheet: [7, 40],
+    sheet: [7, 19],
     shortName: 'tanabata_tree'
   },
   {
@@ -19224,13 +21284,15 @@ export const emojis: CompressedEmojiData[] = [
     unified: '1F38D',
     keywords: [
       'pine_decoration',
+      'japanese',
       'plant',
       'nature',
       'vegetable',
       'panda',
-      'pine_decoration'
+      'new_years',
+      'bamboo'
     ],
-    sheet: [7, 42],
+    sheet: [7, 21],
     shortName: 'bamboo'
   },
   {
@@ -19242,7 +21304,7 @@ export const emojis: CompressedEmojiData[] = [
       'toy',
       'kimono'
     ],
-    sheet: [7, 43],
+    sheet: [7, 22],
     shortName: 'dolls'
   },
   {
@@ -19256,7 +21318,7 @@ export const emojis: CompressedEmojiData[] = [
       'carp',
       'banner'
     ],
-    sheet: [7, 44],
+    sheet: [7, 23],
     shortName: 'flags'
   },
   {
@@ -19269,7 +21331,7 @@ export const emojis: CompressedEmojiData[] = [
       'spring',
       'bell'
     ],
-    sheet: [7, 45],
+    sheet: [7, 24],
     shortName: 'wind_chime'
   },
   {
@@ -19282,14 +21344,14 @@ export const emojis: CompressedEmojiData[] = [
       'asia',
       'tsukimi'
     ],
-    sheet: [7, 46],
+    sheet: [7, 25],
     shortName: 'rice_scene'
   },
   {
     name: 'Red Gift Envelope',
     unified: '1F9E7',
     keywords: ['red_envelope', 'gift'],
-    sheet: [51, 50],
+    sheet: [53, 21],
     shortName: 'red_envelope'
   },
   {
@@ -19302,7 +21364,7 @@ export const emojis: CompressedEmojiData[] = [
       'girl',
       'bowtie'
     ],
-    sheet: [7, 24],
+    sheet: [7, 3],
     shortName: 'ribbon'
   },
   {
@@ -19315,7 +21377,7 @@ export const emojis: CompressedEmojiData[] = [
       'christmas',
       'xmas'
     ],
-    sheet: [7, 25],
+    sheet: [7, 4],
     shortName: 'gift'
   },
   {
@@ -19328,7 +21390,7 @@ export const emojis: CompressedEmojiData[] = [
       'support',
       'awareness'
     ],
-    sheet: [7, 50],
+    sheet: [7, 29],
     shortName: 'reminder_ribbon'
   },
   {
@@ -19340,7 +21402,7 @@ export const emojis: CompressedEmojiData[] = [
       'concert',
       'entrance'
     ],
-    sheet: [7, 55],
+    sheet: [7, 34],
     shortName: 'admission_tickets'
   },
   {
@@ -19352,7 +21414,7 @@ export const emojis: CompressedEmojiData[] = [
       'concert',
       'pass'
     ],
-    sheet: [8, 9],
+    sheet: [7, 46],
     shortName: 'ticket'
   },
   {
@@ -19364,7 +21426,7 @@ export const emojis: CompressedEmojiData[] = [
       'winning',
       'army'
     ],
-    sheet: [7, 49],
+    sheet: [7, 28],
     shortName: 'medal'
   },
   {
@@ -19379,7 +21441,7 @@ export const emojis: CompressedEmojiData[] = [
       'ftw',
       'ceremony'
     ],
-    sheet: [9, 17],
+    sheet: [8, 51],
     shortName: 'trophy'
   },
   {
@@ -19390,7 +21452,7 @@ export const emojis: CompressedEmojiData[] = [
       'award',
       'winning'
     ],
-    sheet: [9, 16],
+    sheet: [8, 50],
     shortName: 'sports_medal'
   },
   {
@@ -19402,7 +21464,7 @@ export const emojis: CompressedEmojiData[] = [
       'winning',
       'first'
     ],
-    sheet: [41, 30],
+    sheet: [43, 17],
     shortName: 'first_place_medal'
   },
   {
@@ -19413,7 +21475,7 @@ export const emojis: CompressedEmojiData[] = [
       'award',
       'second'
     ],
-    sheet: [41, 31],
+    sheet: [43, 18],
     shortName: 'second_place_medal'
   },
   {
@@ -19424,7 +21486,7 @@ export const emojis: CompressedEmojiData[] = [
       'award',
       'third'
     ],
-    sheet: [41, 32],
+    sheet: [43, 19],
     shortName: 'third_place_medal'
   },
   {
@@ -19435,7 +21497,7 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'football'
     ],
-    sheet: [55, 4],
+    sheet: [57, 44],
     shortName: 'soccer'
   },
   {
@@ -19446,7 +21508,7 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'balls'
     ],
-    sheet: [55, 5],
+    sheet: [57, 45],
     shortName: 'baseball'
   },
   {
@@ -19457,7 +21519,7 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'balls'
     ],
-    sheet: [41, 37],
+    sheet: [43, 24],
     shortName: 'softball'
   },
   {
@@ -19469,7 +21531,7 @@ export const emojis: CompressedEmojiData[] = [
       'balls',
       'NBA'
     ],
-    sheet: [8, 30],
+    sheet: [8, 6],
     shortName: 'basketball'
   },
   {
@@ -19480,7 +21542,7 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'balls'
     ],
-    sheet: [10, 25],
+    sheet: [9, 56],
     shortName: 'volleyball'
   },
   {
@@ -19492,7 +21554,7 @@ export const emojis: CompressedEmojiData[] = [
       'balls',
       'NFL'
     ],
-    sheet: [9, 24],
+    sheet: [8, 58],
     shortName: 'football'
   },
   {
@@ -19503,7 +21565,7 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'team'
     ],
-    sheet: [9, 25],
+    sheet: [8, 59],
     shortName: 'rugby_football'
   },
   {
@@ -19515,7 +21577,7 @@ export const emojis: CompressedEmojiData[] = [
       'balls',
       'green'
     ],
-    sheet: [8, 28],
+    sheet: [8, 4],
     shortName: 'tennis'
   },
   {
@@ -19527,7 +21589,7 @@ export const emojis: CompressedEmojiData[] = [
       'frisbee',
       'ultimate'
     ],
-    sheet: [41, 38],
+    sheet: [43, 25],
     shortName: 'flying_disc'
   },
   {
@@ -19539,7 +21601,7 @@ export const emojis: CompressedEmojiData[] = [
       'fun',
       'play'
     ],
-    sheet: [8, 17],
+    sheet: [7, 54],
     shortName: 'bowling'
   },
   {
@@ -19549,7 +21611,7 @@ export const emojis: CompressedEmojiData[] = [
       'cricket_game',
       'sports'
     ],
-    sheet: [10, 24],
+    sheet: [9, 55],
     shortName: 'cricket_bat_and_ball'
   },
   {
@@ -19559,14 +21621,14 @@ export const emojis: CompressedEmojiData[] = [
       'field_hockey',
       'sports'
     ],
-    sheet: [10, 26],
+    sheet: [9, 57],
     shortName: 'field_hockey_stick_and_ball'
   },
   {
     name: 'Ice Hockey Stick and Puck',
     unified: '1F3D2',
     keywords: ['ice_hockey', 'sports'],
-    sheet: [10, 27],
+    sheet: [9, 58],
     shortName: 'ice_hockey_stick_and_puck'
   },
   {
@@ -19578,7 +21640,7 @@ export const emojis: CompressedEmojiData[] = [
       'ball',
       'stick'
     ],
-    sheet: [41, 36],
+    sheet: [43, 23],
     shortName: 'lacrosse'
   },
   {
@@ -19589,14 +21651,14 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'pingpong'
     ],
-    sheet: [10, 28],
+    sheet: [9, 59],
     shortName: 'table_tennis_paddle_and_ball'
   },
   {
     name: 'Badminton Racquet and Shuttlecock',
     unified: '1F3F8',
     keywords: ['badminton', 'sports'],
-    sheet: [11, 10],
+    sheet: [10, 38],
     shortName: 'badminton_racquet_and_shuttlecock'
   },
   {
@@ -19607,7 +21669,7 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'fighting'
     ],
-    sheet: [41, 33],
+    sheet: [43, 20],
     shortName: 'boxing_glove'
   },
   {
@@ -19619,14 +21681,14 @@ export const emojis: CompressedEmojiData[] = [
       'karate',
       'taekwondo'
     ],
-    sheet: [41, 34],
+    sheet: [43, 21],
     shortName: 'martial_arts_uniform'
   },
   {
     name: 'Goal Net',
     unified: '1F945',
     keywords: ['goal_net', 'sports'],
-    sheet: [41, 29],
+    sheet: [43, 16],
     shortName: 'goal_net'
   },
   {
@@ -19640,14 +21702,14 @@ export const emojis: CompressedEmojiData[] = [
       'hole',
       'summer'
     ],
-    sheet: [55, 19],
+    sheet: [57, 59],
     shortName: 'golf'
   },
   {
     name: 'Ice Skate',
     unified: '26F8-FE0F',
     keywords: ['ice_skate', 'sports'],
-    sheet: [55, 23],
+    sheet: [58, 2],
     shortName: 'ice_skate'
   },
   {
@@ -19659,7 +21721,7 @@ export const emojis: CompressedEmojiData[] = [
       'hobby',
       'summer'
     ],
-    sheet: [8, 1],
+    sheet: [7, 38],
     shortName: 'fishing_pole_and_fish'
   },
   {
@@ -19670,7 +21732,7 @@ export const emojis: CompressedEmojiData[] = [
       'sport',
       'ocean'
     ],
-    sheet: [41, 23],
+    sheet: [43, 10],
     shortName: 'diving_mask'
   },
   {
@@ -19681,7 +21743,7 @@ export const emojis: CompressedEmojiData[] = [
       'play',
       'pageant'
     ],
-    sheet: [8, 27],
+    sheet: [8, 3],
     shortName: 'running_shirt_with_sash'
   },
   {
@@ -19694,7 +21756,7 @@ export const emojis: CompressedEmojiData[] = [
       'cold',
       'snow'
     ],
-    sheet: [8, 29],
+    sheet: [8, 5],
     shortName: 'ski'
   },
   {
@@ -19706,7 +21768,7 @@ export const emojis: CompressedEmojiData[] = [
       'luge',
       'toboggan'
     ],
-    sheet: [36, 49],
+    sheet: [38, 25],
     shortName: 'sled'
   },
   {
@@ -19716,7 +21778,7 @@ export const emojis: CompressedEmojiData[] = [
       'curling_stone',
       'sports'
     ],
-    sheet: [41, 35],
+    sheet: [43, 22],
     shortName: 'curling_stone'
   },
   {
@@ -19730,21 +21792,21 @@ export const emojis: CompressedEmojiData[] = [
       'target',
       'bullseye'
     ],
-    sheet: [8, 13],
+    sheet: [7, 50],
     shortName: 'dart'
   },
   {
     name: 'Yo-Yo',
     unified: '1FA80',
     keywords: ['yo_yo', 'toy'],
-    sheet: [52, 25],
+    sheet: [53, 56],
     shortName: 'yo-yo'
   },
   {
     name: 'Kite',
     unified: '1FA81',
     keywords: ['kite', 'wind', 'fly'],
-    sheet: [52, 26],
+    sheet: [53, 57],
     shortName: 'kite'
   },
   {
@@ -19758,7 +21820,7 @@ export const emojis: CompressedEmojiData[] = [
       'luck',
       'magic'
     ],
-    sheet: [8, 15],
+    sheet: [7, 52],
     shortName: '8ball'
   },
   {
@@ -19772,7 +21834,7 @@ export const emojis: CompressedEmojiData[] = [
       'circus',
       'fortune_teller'
     ],
-    sheet: [28, 16],
+    sheet: [30, 10],
     shortName: 'crystal_ball'
   },
   {
@@ -19783,7 +21845,7 @@ export const emojis: CompressedEmojiData[] = [
       'supernature',
       'power'
     ],
-    sheet: [52, 29],
+    sheet: [53, 60],
     shortName: 'magic_wand'
   },
   {
@@ -19794,8 +21856,20 @@ export const emojis: CompressedEmojiData[] = [
       'bead',
       'charm'
     ],
-    sheet: [52, 16],
+    sheet: [53, 45],
     shortName: 'nazar_amulet'
+  },
+  {
+    name: 'Hamsa',
+    unified: '1FAAC',
+    keywords: [
+      'hamsa',
+      'religion',
+      'protection'
+    ],
+    sheet: [54, 30],
+    hidden: ['facebook'],
+    shortName: 'hamsa'
   },
   {
     name: 'Video Game',
@@ -19807,7 +21881,7 @@ export const emojis: CompressedEmojiData[] = [
       'PS4',
       'controller'
     ],
-    sheet: [8, 12],
+    sheet: [7, 49],
     shortName: 'video_game'
   },
   {
@@ -19818,7 +21892,7 @@ export const emojis: CompressedEmojiData[] = [
       'game',
       'play'
     ],
-    sheet: [29, 34],
+    sheet: [31, 25],
     shortName: 'joystick'
   },
   {
@@ -19833,7 +21907,7 @@ export const emojis: CompressedEmojiData[] = [
       'luck',
       'casino'
     ],
-    sheet: [8, 14],
+    sheet: [7, 51],
     shortName: 'slot_machine'
   },
   {
@@ -19847,7 +21921,7 @@ export const emojis: CompressedEmojiData[] = [
       'play',
       'luck'
     ],
-    sheet: [8, 16],
+    sheet: [7, 53],
     shortName: 'game_die'
   },
   {
@@ -19859,7 +21933,7 @@ export const emojis: CompressedEmojiData[] = [
       'puzzle',
       'piece'
     ],
-    sheet: [51, 52],
+    sheet: [53, 23],
     shortName: 'jigsaw'
   },
   {
@@ -19870,7 +21944,7 @@ export const emojis: CompressedEmojiData[] = [
       'plush',
       'stuffed'
     ],
-    sheet: [52, 9],
+    sheet: [53, 38],
     shortName: 'teddy_bear'
   },
   {
@@ -19882,8 +21956,21 @@ export const emojis: CompressedEmojiData[] = [
       'candy',
       'celebration'
     ],
-    sheet: [52, 30],
+    sheet: [54, 0],
     shortName: 'pinata'
+  },
+  {
+    name: 'Mirror Ball',
+    unified: '1FAA9',
+    keywords: [
+      'mirror ball',
+      'disco',
+      'dance',
+      'party'
+    ],
+    sheet: [54, 27],
+    hidden: ['facebook'],
+    shortName: 'mirror_ball'
   },
   {
     name: 'Nesting Dolls',
@@ -19893,7 +21980,7 @@ export const emojis: CompressedEmojiData[] = [
       'matryoshka',
       'toy'
     ],
-    sheet: [52, 31],
+    sheet: [54, 1],
     shortName: 'nesting_dolls'
   },
   {
@@ -19906,7 +21993,7 @@ export const emojis: CompressedEmojiData[] = [
       'suits',
       'magic'
     ],
-    sheet: [54, 38],
+    sheet: [57, 20],
     shortName: 'spades'
   },
   {
@@ -19919,7 +22006,7 @@ export const emojis: CompressedEmojiData[] = [
       'magic',
       'suits'
     ],
-    sheet: [54, 40],
+    sheet: [57, 22],
     shortName: 'hearts'
   },
   {
@@ -19932,7 +22019,7 @@ export const emojis: CompressedEmojiData[] = [
       'magic',
       'suits'
     ],
-    sheet: [54, 41],
+    sheet: [57, 23],
     shortName: 'diamonds'
   },
   {
@@ -19945,7 +22032,7 @@ export const emojis: CompressedEmojiData[] = [
       'magic',
       'suits'
     ],
-    sheet: [54, 39],
+    sheet: [57, 21],
     shortName: 'clubs'
   },
   {
@@ -19955,7 +22042,7 @@ export const emojis: CompressedEmojiData[] = [
       'chess_pawn',
       'expendable'
     ],
-    sheet: [54, 37],
+    sheet: [57, 19],
     shortName: 'chess_pawn'
   },
   {
@@ -19994,7 +22081,7 @@ export const emojis: CompressedEmojiData[] = [
       'sunset',
       'red'
     ],
-    sheet: [8, 18],
+    sheet: [7, 55],
     shortName: 'flower_playing_cards'
   },
   {
@@ -20006,7 +22093,7 @@ export const emojis: CompressedEmojiData[] = [
       'theater',
       'drama'
     ],
-    sheet: [8, 11],
+    sheet: [7, 48],
     shortName: 'performing_arts'
   },
   {
@@ -20016,7 +22103,7 @@ export const emojis: CompressedEmojiData[] = [
       'framed_picture',
       'photography'
     ],
-    sheet: [30, 11],
+    sheet: [31, 60],
     shortName: 'frame_with_picture'
   },
   {
@@ -20029,7 +22116,7 @@ export const emojis: CompressedEmojiData[] = [
       'draw',
       'colors'
     ],
-    sheet: [8, 6],
+    sheet: [7, 43],
     shortName: 'art'
   },
   {
@@ -20042,7 +22129,7 @@ export const emojis: CompressedEmojiData[] = [
       'spool',
       'string'
     ],
-    sheet: [52, 6],
+    sheet: [53, 35],
     shortName: 'thread'
   },
   {
@@ -20052,7 +22139,7 @@ export const emojis: CompressedEmojiData[] = [
       'sewing needle',
       'stitches'
     ],
-    sheet: [52, 49],
+    sheet: [54, 19],
     shortName: 'sewing_needle'
   },
   {
@@ -20064,14 +22151,14 @@ export const emojis: CompressedEmojiData[] = [
       'crochet',
       'knit'
     ],
-    sheet: [52, 7],
+    sheet: [53, 36],
     shortName: 'yarn'
   },
   {
     name: 'Knot',
     unified: '1FAA2',
     keywords: ['knot', 'rope', 'scout'],
-    sheet: [52, 50],
+    sheet: [54, 20],
     shortName: 'knot'
   },
   {
@@ -20086,7 +22173,7 @@ export const emojis: CompressedEmojiData[] = [
       'dork',
       'geek'
     ],
-    sheet: [13, 54],
+    sheet: [13, 15],
     shortName: 'eyeglasses'
   },
   {
@@ -20098,7 +22185,7 @@ export const emojis: CompressedEmojiData[] = [
       'cool',
       'accessories'
     ],
-    sheet: [29, 31],
+    sheet: [31, 22],
     shortName: 'dark_sunglasses'
   },
   {
@@ -20110,7 +22197,7 @@ export const emojis: CompressedEmojiData[] = [
       'protection',
       'safety'
     ],
-    sheet: [42, 30],
+    sheet: [44, 15],
     shortName: 'goggles'
   },
   {
@@ -20123,7 +22210,7 @@ export const emojis: CompressedEmojiData[] = [
       'scientist',
       'chemist'
     ],
-    sheet: [42, 29],
+    sheet: [44, 14],
     shortName: 'lab_coat'
   },
   {
@@ -20133,7 +22220,7 @@ export const emojis: CompressedEmojiData[] = [
       'safety_vest',
       'protection'
     ],
-    sheet: [44, 15],
+    sheet: [45, 55],
     shortName: 'safety_vest'
   },
   {
@@ -20148,7 +22235,7 @@ export const emojis: CompressedEmojiData[] = [
       'cloth',
       'business'
     ],
-    sheet: [13, 55],
+    sheet: [13, 16],
     shortName: 'necktie'
   },
   {
@@ -20162,7 +22249,7 @@ export const emojis: CompressedEmojiData[] = [
       'shirt',
       'tee'
     ],
-    sheet: [13, 56],
+    sheet: [13, 17],
     shortNames: ['tshirt'],
     shortName: 'shirt'
   },
@@ -20174,7 +22261,7 @@ export const emojis: CompressedEmojiData[] = [
       'fashion',
       'shopping'
     ],
-    sheet: [13, 57],
+    sheet: [13, 18],
     shortName: 'jeans'
   },
   {
@@ -20186,7 +22273,7 @@ export const emojis: CompressedEmojiData[] = [
       'winter',
       'clothes'
     ],
-    sheet: [51, 46],
+    sheet: [53, 17],
     shortName: 'scarf'
   },
   {
@@ -20198,14 +22285,14 @@ export const emojis: CompressedEmojiData[] = [
       'winter',
       'clothes'
     ],
-    sheet: [51, 47],
+    sheet: [53, 18],
     shortName: 'gloves'
   },
   {
     name: 'Coat',
     unified: '1F9E5',
     keywords: ['coat', 'jacket'],
-    sheet: [51, 48],
+    sheet: [53, 19],
     shortName: 'coat'
   },
   {
@@ -20216,7 +22303,7 @@ export const emojis: CompressedEmojiData[] = [
       'stockings',
       'clothes'
     ],
-    sheet: [51, 49],
+    sheet: [53, 20],
     shortName: 'socks'
   },
   {
@@ -20228,7 +22315,7 @@ export const emojis: CompressedEmojiData[] = [
       'fashion',
       'shopping'
     ],
-    sheet: [14, 0],
+    sheet: [13, 19],
     shortName: 'dress'
   },
   {
@@ -20242,14 +22329,14 @@ export const emojis: CompressedEmojiData[] = [
       'female',
       'japanese'
     ],
-    sheet: [14, 1],
+    sheet: [13, 20],
     shortName: 'kimono'
   },
   {
     name: 'Sari',
     unified: '1F97B',
     keywords: ['sari', 'dress'],
-    sheet: [42, 28],
+    sheet: [44, 13],
     shortName: 'sari'
   },
   {
@@ -20259,21 +22346,21 @@ export const emojis: CompressedEmojiData[] = [
       'one_piece_swimsuit',
       'fashion'
     ],
-    sheet: [52, 18],
+    sheet: [53, 47],
     shortName: 'one-piece_swimsuit'
   },
   {
     name: 'Briefs',
     unified: '1FA72',
     keywords: ['briefs', 'clothing'],
-    sheet: [52, 19],
+    sheet: [53, 48],
     shortName: 'briefs'
   },
   {
     name: 'Shorts',
     unified: '1FA73',
     keywords: ['shorts', 'clothing'],
-    sheet: [52, 20],
+    sheet: [53, 49],
     shortName: 'shorts'
   },
   {
@@ -20289,7 +22376,7 @@ export const emojis: CompressedEmojiData[] = [
       'beach',
       'summer'
     ],
-    sheet: [14, 2],
+    sheet: [13, 21],
     shortName: 'bikini'
   },
   {
@@ -20301,7 +22388,7 @@ export const emojis: CompressedEmojiData[] = [
       'shopping_bags',
       'female'
     ],
-    sheet: [14, 3],
+    sheet: [13, 22],
     shortName: 'womans_clothes'
   },
   {
@@ -20315,7 +22402,7 @@ export const emojis: CompressedEmojiData[] = [
       'sales',
       'shopping'
     ],
-    sheet: [14, 4],
+    sheet: [13, 23],
     shortName: 'purse'
   },
   {
@@ -20328,7 +22415,7 @@ export const emojis: CompressedEmojiData[] = [
       'accessories',
       'shopping'
     ],
-    sheet: [14, 5],
+    sheet: [13, 24],
     shortName: 'handbag'
   },
   {
@@ -20340,7 +22427,7 @@ export const emojis: CompressedEmojiData[] = [
       'accessories',
       'shopping'
     ],
-    sheet: [14, 6],
+    sheet: [13, 25],
     shortName: 'pouch'
   },
   {
@@ -20352,7 +22439,7 @@ export const emojis: CompressedEmojiData[] = [
       'buy',
       'purchase'
     ],
-    sheet: [36, 26],
+    sheet: [37, 60],
     shortName: 'shopping_bags'
   },
   {
@@ -20365,7 +22452,7 @@ export const emojis: CompressedEmojiData[] = [
       'bag',
       'backpack'
     ],
-    sheet: [7, 47],
+    sheet: [7, 26],
     shortName: 'school_satchel'
   },
   {
@@ -20376,7 +22463,7 @@ export const emojis: CompressedEmojiData[] = [
       'footwear',
       'summer'
     ],
-    sheet: [52, 21],
+    sheet: [53, 50],
     shortName: 'thong_sandal'
   },
   {
@@ -20387,7 +22474,7 @@ export const emojis: CompressedEmojiData[] = [
       'fashion',
       'male'
     ],
-    sheet: [14, 7],
+    sheet: [13, 26],
     shortNames: ['shoe'],
     shortName: 'mans_shoe'
   },
@@ -20400,7 +22487,7 @@ export const emojis: CompressedEmojiData[] = [
       'sports',
       'sneakers'
     ],
-    sheet: [14, 8],
+    sheet: [13, 27],
     shortName: 'athletic_shoe'
   },
   {
@@ -20412,7 +22499,7 @@ export const emojis: CompressedEmojiData[] = [
       'camping',
       'hiking'
     ],
-    sheet: [42, 31],
+    sheet: [44, 16],
     shortName: 'hiking_boot'
   },
   {
@@ -20424,7 +22511,7 @@ export const emojis: CompressedEmojiData[] = [
       'slip-on',
       'slipper'
     ],
-    sheet: [42, 32],
+    sheet: [44, 17],
     shortName: 'womans_flat_shoe'
   },
   {
@@ -20438,7 +22525,7 @@ export const emojis: CompressedEmojiData[] = [
       'pumps',
       'stiletto'
     ],
-    sheet: [14, 9],
+    sheet: [13, 28],
     shortName: 'high_heel'
   },
   {
@@ -20450,14 +22537,14 @@ export const emojis: CompressedEmojiData[] = [
       'fashion',
       'flip flops'
     ],
-    sheet: [14, 10],
+    sheet: [13, 29],
     shortName: 'sandal'
   },
   {
     name: 'Ballet Shoes',
     unified: '1FA70',
     keywords: ['ballet_shoes', 'dance'],
-    sheet: [52, 17],
+    sheet: [53, 46],
     shortName: 'ballet_shoes'
   },
   {
@@ -20468,7 +22555,7 @@ export const emojis: CompressedEmojiData[] = [
       'shoes',
       'fashion'
     ],
-    sheet: [14, 11],
+    sheet: [13, 30],
     shortName: 'boot'
   },
   {
@@ -20482,7 +22569,7 @@ export const emojis: CompressedEmojiData[] = [
       'royalty',
       'lord'
     ],
-    sheet: [13, 52],
+    sheet: [13, 13],
     shortName: 'crown'
   },
   {
@@ -20496,7 +22583,7 @@ export const emojis: CompressedEmojiData[] = [
       'lady',
       'spring'
     ],
-    sheet: [13, 53],
+    sheet: [13, 14],
     shortName: 'womans_hat'
   },
   {
@@ -20509,7 +22596,7 @@ export const emojis: CompressedEmojiData[] = [
       'classy',
       'circus'
     ],
-    sheet: [8, 7],
+    sheet: [7, 44],
     shortName: 'tophat'
   },
   {
@@ -20528,7 +22615,7 @@ export const emojis: CompressedEmojiData[] = [
       'learn',
       'education'
     ],
-    sheet: [7, 48],
+    sheet: [7, 27],
     shortName: 'mortar_board'
   },
   {
@@ -20539,7 +22626,7 @@ export const emojis: CompressedEmojiData[] = [
       'cap',
       'baseball'
     ],
-    sheet: [51, 45],
+    sheet: [53, 16],
     shortName: 'billed_cap'
   },
   {
@@ -20550,7 +22637,7 @@ export const emojis: CompressedEmojiData[] = [
       'army',
       'protection'
     ],
-    sheet: [52, 38],
+    sheet: [54, 8],
     shortName: 'military_helmet'
   },
   {
@@ -20561,7 +22648,7 @@ export const emojis: CompressedEmojiData[] = [
       'construction',
       'build'
     ],
-    sheet: [55, 11],
+    sheet: [57, 51],
     shortName: 'helmet_with_white_cross'
   },
   {
@@ -20572,7 +22659,7 @@ export const emojis: CompressedEmojiData[] = [
       'dhikr',
       'religious'
     ],
-    sheet: [27, 27],
+    sheet: [29, 24],
     shortName: 'prayer_beads'
   },
   {
@@ -20585,7 +22672,7 @@ export const emojis: CompressedEmojiData[] = [
       'fashion',
       'woman'
     ],
-    sheet: [24, 35],
+    sheet: [25, 52],
     shortName: 'lipstick'
   },
   {
@@ -20603,7 +22690,7 @@ export const emojis: CompressedEmojiData[] = [
       'gem',
       'engagement'
     ],
-    sheet: [25, 25],
+    sheet: [26, 39],
     shortName: 'ring'
   },
   {
@@ -20616,7 +22703,7 @@ export const emojis: CompressedEmojiData[] = [
       'diamond',
       'jewelry'
     ],
-    sheet: [25, 26],
+    sheet: [26, 40],
     shortName: 'gem'
   },
   {
@@ -20629,7 +22716,7 @@ export const emojis: CompressedEmojiData[] = [
       'silence',
       'quiet'
     ],
-    sheet: [27, 35],
+    sheet: [29, 32],
     shortName: 'mute'
   },
   {
@@ -20642,7 +22729,7 @@ export const emojis: CompressedEmojiData[] = [
       'silence',
       'broadcast'
     ],
-    sheet: [27, 36],
+    sheet: [29, 33],
     shortName: 'speaker'
   },
   {
@@ -20654,7 +22741,7 @@ export const emojis: CompressedEmojiData[] = [
       'speaker',
       'broadcast'
     ],
-    sheet: [27, 37],
+    sheet: [29, 34],
     shortName: 'sound'
   },
   {
@@ -20668,7 +22755,7 @@ export const emojis: CompressedEmojiData[] = [
       'speaker',
       'broadcast'
     ],
-    sheet: [27, 38],
+    sheet: [29, 35],
     shortName: 'loud_sound'
   },
   {
@@ -20679,7 +22766,7 @@ export const emojis: CompressedEmojiData[] = [
       'volume',
       'sound'
     ],
-    sheet: [26, 57],
+    sheet: [28, 57],
     shortName: 'loudspeaker'
   },
   {
@@ -20691,7 +22778,7 @@ export const emojis: CompressedEmojiData[] = [
       'speaker',
       'volume'
     ],
-    sheet: [27, 0],
+    sheet: [28, 58],
     shortName: 'mega'
   },
   {
@@ -20702,7 +22789,7 @@ export const emojis: CompressedEmojiData[] = [
       'instrument',
       'music'
     ],
-    sheet: [27, 12],
+    sheet: [29, 9],
     shortName: 'postal_horn'
   },
   {
@@ -20716,7 +22803,7 @@ export const emojis: CompressedEmojiData[] = [
       'xmas',
       'chime'
     ],
-    sheet: [27, 48],
+    sheet: [29, 45],
     shortName: 'bell'
   },
   {
@@ -20730,7 +22817,7 @@ export const emojis: CompressedEmojiData[] = [
       'quiet',
       'silent'
     ],
-    sheet: [27, 49],
+    sheet: [29, 46],
     shortName: 'no_bell'
   },
   {
@@ -20742,7 +22829,7 @@ export const emojis: CompressedEmojiData[] = [
       'clef',
       'compose'
     ],
-    sheet: [8, 26],
+    sheet: [8, 2],
     shortName: 'musical_score'
   },
   {
@@ -20754,7 +22841,7 @@ export const emojis: CompressedEmojiData[] = [
       'tone',
       'sound'
     ],
-    sheet: [8, 19],
+    sheet: [7, 56],
     shortName: 'musical_note'
   },
   {
@@ -20765,7 +22852,7 @@ export const emojis: CompressedEmojiData[] = [
       'music',
       'score'
     ],
-    sheet: [8, 20],
+    sheet: [7, 57],
     shortName: 'notes'
   },
   {
@@ -20778,21 +22865,21 @@ export const emojis: CompressedEmojiData[] = [
       'artist',
       'talkshow'
     ],
-    sheet: [7, 51],
+    sheet: [7, 30],
     shortName: 'studio_microphone'
   },
   {
     name: 'Level Slider',
     unified: '1F39A-FE0F',
     keywords: ['level_slider', 'scale'],
-    sheet: [7, 52],
+    sheet: [7, 31],
     shortName: 'level_slider'
   },
   {
     name: 'Control Knobs',
     unified: '1F39B-FE0F',
     keywords: ['control_knobs', 'dial'],
-    sheet: [7, 53],
+    sheet: [7, 32],
     shortName: 'control_knobs'
   },
   {
@@ -20806,7 +22893,7 @@ export const emojis: CompressedEmojiData[] = [
       'sing',
       'talkshow'
     ],
-    sheet: [8, 2],
+    sheet: [7, 39],
     shortName: 'microphone'
   },
   {
@@ -20818,7 +22905,7 @@ export const emojis: CompressedEmojiData[] = [
       'score',
       'gadgets'
     ],
-    sheet: [8, 5],
+    sheet: [7, 42],
     shortName: 'headphones'
   },
   {
@@ -20831,7 +22918,7 @@ export const emojis: CompressedEmojiData[] = [
       'podcast',
       'program'
     ],
-    sheet: [27, 24],
+    sheet: [29, 21],
     shortName: 'radio'
   },
   {
@@ -20844,14 +22931,14 @@ export const emojis: CompressedEmojiData[] = [
       'jazz',
       'blues'
     ],
-    sheet: [8, 21],
+    sheet: [7, 58],
     shortName: 'saxophone'
   },
   {
     name: 'Accordion',
     unified: '1FA97',
     keywords: ['accordion', 'music'],
-    sheet: [52, 39],
+    sheet: [54, 9],
     shortName: 'accordion'
   },
   {
@@ -20862,7 +22949,7 @@ export const emojis: CompressedEmojiData[] = [
       'music',
       'instrument'
     ],
-    sheet: [8, 22],
+    sheet: [7, 59],
     shortName: 'guitar'
   },
   {
@@ -20874,7 +22961,7 @@ export const emojis: CompressedEmojiData[] = [
       'instrument',
       'compose'
     ],
-    sheet: [8, 23],
+    sheet: [7, 60],
     shortName: 'musical_keyboard'
   },
   {
@@ -20885,7 +22972,7 @@ export const emojis: CompressedEmojiData[] = [
       'music',
       'brass'
     ],
-    sheet: [8, 24],
+    sheet: [8, 0],
     shortName: 'trumpet'
   },
   {
@@ -20898,7 +22985,7 @@ export const emojis: CompressedEmojiData[] = [
       'orchestra',
       'symphony'
     ],
-    sheet: [8, 25],
+    sheet: [8, 1],
     shortName: 'violin'
   },
   {
@@ -20909,7 +22996,7 @@ export const emojis: CompressedEmojiData[] = [
       'music',
       'instructment'
     ],
-    sheet: [52, 37],
+    sheet: [54, 7],
     shortName: 'banjo'
   },
   {
@@ -20922,14 +23009,14 @@ export const emojis: CompressedEmojiData[] = [
       'drumsticks',
       'snare'
     ],
-    sheet: [41, 25],
+    sheet: [43, 12],
     shortName: 'drum_with_drumsticks'
   },
   {
     name: 'Long Drum',
     unified: '1FA98',
     keywords: ['long drum', 'music'],
-    sheet: [52, 40],
+    sheet: [54, 10],
     shortName: 'long_drum'
   },
   {
@@ -20942,7 +23029,7 @@ export const emojis: CompressedEmojiData[] = [
       'gadgets',
       'dial'
     ],
-    sheet: [27, 14],
+    sheet: [29, 11],
     shortName: 'iphone'
   },
   {
@@ -20953,7 +23040,7 @@ export const emojis: CompressedEmojiData[] = [
       'iphone',
       'incoming'
     ],
-    sheet: [27, 15],
+    sheet: [29, 12],
     shortName: 'calling'
   },
   {
@@ -20966,7 +23053,7 @@ export const emojis: CompressedEmojiData[] = [
       'dial',
       'telephone'
     ],
-    sheet: [54, 2],
+    sheet: [56, 45],
     shortNames: ['telephone'],
     shortName: 'phone'
   },
@@ -20979,7 +23066,7 @@ export const emojis: CompressedEmojiData[] = [
       'communication',
       'dial'
     ],
-    sheet: [26, 53],
+    sheet: [28, 53],
     shortName: 'telephone_receiver'
   },
   {
@@ -20991,7 +23078,7 @@ export const emojis: CompressedEmojiData[] = [
       'oldschool',
       '90s'
     ],
-    sheet: [26, 54],
+    sheet: [28, 54],
     shortName: 'pager'
   },
   {
@@ -21002,7 +23089,7 @@ export const emojis: CompressedEmojiData[] = [
       'communication',
       'technology'
     ],
-    sheet: [26, 55],
+    sheet: [28, 55],
     shortName: 'fax'
   },
   {
@@ -21014,8 +23101,20 @@ export const emojis: CompressedEmojiData[] = [
       'energy',
       'sustain'
     ],
-    sheet: [27, 39],
+    sheet: [29, 36],
     shortName: 'battery'
+  },
+  {
+    name: 'Low Battery',
+    unified: '1FAAB',
+    keywords: [
+      'low battery',
+      'drained',
+      'dead'
+    ],
+    sheet: [54, 29],
+    hidden: ['facebook'],
+    shortName: 'low_battery'
   },
   {
     name: 'Electric Plug',
@@ -21025,7 +23124,7 @@ export const emojis: CompressedEmojiData[] = [
       'charger',
       'power'
     ],
-    sheet: [27, 40],
+    sheet: [29, 37],
     shortName: 'electric_plug'
   },
   {
@@ -21039,7 +23138,7 @@ export const emojis: CompressedEmojiData[] = [
       'display',
       'monitor'
     ],
-    sheet: [26, 18],
+    sheet: [28, 18],
     shortName: 'computer'
   },
   {
@@ -21051,7 +23150,7 @@ export const emojis: CompressedEmojiData[] = [
       'computing',
       'screen'
     ],
-    sheet: [30, 7],
+    sheet: [31, 56],
     shortName: 'desktop_computer'
   },
   {
@@ -21062,7 +23161,7 @@ export const emojis: CompressedEmojiData[] = [
       'paper',
       'ink'
     ],
-    sheet: [30, 8],
+    sheet: [31, 57],
     shortName: 'printer'
   },
   {
@@ -21076,7 +23175,7 @@ export const emojis: CompressedEmojiData[] = [
       'input',
       'text'
     ],
-    sheet: [53, 30],
+    sheet: [56, 15],
     shortName: 'keyboard'
   },
   {
@@ -21086,7 +23185,7 @@ export const emojis: CompressedEmojiData[] = [
       'computer_mouse',
       'click'
     ],
-    sheet: [30, 9],
+    sheet: [31, 58],
     shortName: 'three_button_mouse'
   },
   {
@@ -21097,7 +23196,7 @@ export const emojis: CompressedEmojiData[] = [
       'technology',
       'trackpad'
     ],
-    sheet: [30, 10],
+    sheet: [31, 59],
     shortName: 'trackball'
   },
   {
@@ -21111,7 +23210,7 @@ export const emojis: CompressedEmojiData[] = [
       'disk',
       '90s'
     ],
-    sheet: [26, 20],
+    sheet: [28, 20],
     shortName: 'minidisc'
   },
   {
@@ -21125,7 +23224,7 @@ export const emojis: CompressedEmojiData[] = [
       '90s',
       '80s'
     ],
-    sheet: [26, 21],
+    sheet: [28, 21],
     shortName: 'floppy_disk'
   },
   {
@@ -21139,7 +23238,7 @@ export const emojis: CompressedEmojiData[] = [
       'disc',
       '90s'
     ],
-    sheet: [26, 22],
+    sheet: [28, 22],
     shortName: 'cd'
   },
   {
@@ -21151,14 +23250,14 @@ export const emojis: CompressedEmojiData[] = [
       'disk',
       'disc'
     ],
-    sheet: [26, 23],
+    sheet: [28, 23],
     shortName: 'dvd'
   },
   {
     name: 'Abacus',
     unified: '1F9EE',
     keywords: ['abacus', 'calculation'],
-    sheet: [51, 57],
+    sheet: [53, 28],
     shortName: 'abacus'
   },
   {
@@ -21169,14 +23268,14 @@ export const emojis: CompressedEmojiData[] = [
       'film',
       'record'
     ],
-    sheet: [8, 3],
+    sheet: [7, 40],
     shortName: 'movie_camera'
   },
   {
     name: 'Film Frames',
     unified: '1F39E-FE0F',
     keywords: ['film_frames', 'movie'],
-    sheet: [7, 54],
+    sheet: [7, 33],
     shortName: 'film_frames'
   },
   {
@@ -21189,7 +23288,7 @@ export const emojis: CompressedEmojiData[] = [
       'record',
       'movie'
     ],
-    sheet: [27, 26],
+    sheet: [29, 23],
     shortName: 'film_projector'
   },
   {
@@ -21201,7 +23300,7 @@ export const emojis: CompressedEmojiData[] = [
       'film',
       'record'
     ],
-    sheet: [8, 10],
+    sheet: [7, 47],
     shortName: 'clapper'
   },
   {
@@ -21215,7 +23314,7 @@ export const emojis: CompressedEmojiData[] = [
       'show',
       'television'
     ],
-    sheet: [27, 23],
+    sheet: [29, 20],
     shortName: 'tv'
   },
   {
@@ -21226,7 +23325,7 @@ export const emojis: CompressedEmojiData[] = [
       'gadgets',
       'photography'
     ],
-    sheet: [27, 20],
+    sheet: [29, 17],
     shortName: 'camera'
   },
   {
@@ -21237,7 +23336,7 @@ export const emojis: CompressedEmojiData[] = [
       'photography',
       'gadgets'
     ],
-    sheet: [27, 21],
+    sheet: [29, 18],
     shortName: 'camera_with_flash'
   },
   {
@@ -21248,7 +23347,7 @@ export const emojis: CompressedEmojiData[] = [
       'film',
       'record'
     ],
-    sheet: [27, 22],
+    sheet: [29, 19],
     shortName: 'video_camera'
   },
   {
@@ -21262,7 +23361,7 @@ export const emojis: CompressedEmojiData[] = [
       '90s',
       '80s'
     ],
-    sheet: [27, 25],
+    sheet: [29, 22],
     shortName: 'vhs'
   },
   {
@@ -21275,7 +23374,7 @@ export const emojis: CompressedEmojiData[] = [
       'find',
       'detective'
     ],
-    sheet: [27, 41],
+    sheet: [29, 38],
     shortName: 'mag'
   },
   {
@@ -21288,14 +23387,14 @@ export const emojis: CompressedEmojiData[] = [
       'find',
       'detective'
     ],
-    sheet: [27, 42],
+    sheet: [29, 39],
     shortName: 'mag_right'
   },
   {
     name: 'Candle',
     unified: '1F56F-FE0F',
     keywords: ['candle', 'fire', 'wax'],
-    sheet: [29, 4],
+    sheet: [30, 56],
     shortName: 'candle'
   },
   {
@@ -21307,7 +23406,7 @@ export const emojis: CompressedEmojiData[] = [
       'electricity',
       'idea'
     ],
-    sheet: [25, 45],
+    sheet: [27, 48],
     shortName: 'bulb'
   },
   {
@@ -21320,7 +23419,7 @@ export const emojis: CompressedEmojiData[] = [
       'sight',
       'night'
     ],
-    sheet: [28, 8],
+    sheet: [30, 2],
     shortName: 'flashlight'
   },
   {
@@ -21333,7 +23432,7 @@ export const emojis: CompressedEmojiData[] = [
       'halloween',
       'spooky'
     ],
-    sheet: [10, 55],
+    sheet: [10, 25],
     shortNames: ['lantern'],
     shortName: 'izakaya_lantern'
   },
@@ -21341,7 +23440,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Diya Lamp',
     unified: '1FA94',
     keywords: ['diya_lamp', 'lighting'],
-    sheet: [52, 36],
+    sheet: [54, 6],
     shortName: 'diya_lamp'
   },
   {
@@ -21355,7 +23454,7 @@ export const emojis: CompressedEmojiData[] = [
       'paper',
       'study'
     ],
-    sheet: [26, 43],
+    sheet: [28, 43],
     shortName: 'notebook_with_decorative_cover'
   },
   {
@@ -21369,7 +23468,7 @@ export const emojis: CompressedEmojiData[] = [
       'textbook',
       'learn'
     ],
-    sheet: [26, 44],
+    sheet: [28, 44],
     shortName: 'closed_book'
   },
   {
@@ -21385,7 +23484,7 @@ export const emojis: CompressedEmojiData[] = [
       'learn',
       'study'
     ],
-    sheet: [26, 45],
+    sheet: [28, 45],
     shortNames: ['open_book'],
     shortName: 'book'
   },
@@ -21399,7 +23498,7 @@ export const emojis: CompressedEmojiData[] = [
       'knowledge',
       'study'
     ],
-    sheet: [26, 46],
+    sheet: [28, 46],
     shortName: 'green_book'
   },
   {
@@ -21413,7 +23512,7 @@ export const emojis: CompressedEmojiData[] = [
       'learn',
       'study'
     ],
-    sheet: [26, 47],
+    sheet: [28, 47],
     shortName: 'blue_book'
   },
   {
@@ -21427,7 +23526,7 @@ export const emojis: CompressedEmojiData[] = [
       'textbook',
       'study'
     ],
-    sheet: [26, 48],
+    sheet: [28, 48],
     shortName: 'orange_book'
   },
   {
@@ -21439,7 +23538,7 @@ export const emojis: CompressedEmojiData[] = [
       'library',
       'study'
     ],
-    sheet: [26, 49],
+    sheet: [28, 49],
     shortName: 'books'
   },
   {
@@ -21453,7 +23552,7 @@ export const emojis: CompressedEmojiData[] = [
       'paper',
       'study'
     ],
-    sheet: [26, 42],
+    sheet: [28, 42],
     shortName: 'notebook'
   },
   {
@@ -21464,7 +23563,7 @@ export const emojis: CompressedEmojiData[] = [
       'notes',
       'paper'
     ],
-    sheet: [26, 41],
+    sheet: [28, 41],
     shortName: 'ledger'
   },
   {
@@ -21476,7 +23575,7 @@ export const emojis: CompressedEmojiData[] = [
       'office',
       'paper'
     ],
-    sheet: [26, 26],
+    sheet: [28, 26],
     shortName: 'page_with_curl'
   },
   {
@@ -21489,7 +23588,7 @@ export const emojis: CompressedEmojiData[] = [
       'history',
       'paper'
     ],
-    sheet: [26, 51],
+    sheet: [28, 51],
     shortName: 'scroll'
   },
   {
@@ -21502,7 +23601,7 @@ export const emojis: CompressedEmojiData[] = [
       'paper',
       'information'
     ],
-    sheet: [26, 27],
+    sheet: [28, 27],
     shortName: 'page_facing_up'
   },
   {
@@ -21513,7 +23612,7 @@ export const emojis: CompressedEmojiData[] = [
       'press',
       'headline'
     ],
-    sheet: [27, 13],
+    sheet: [29, 10],
     shortName: 'newspaper'
   },
   {
@@ -21524,7 +23623,7 @@ export const emojis: CompressedEmojiData[] = [
       'press',
       'headline'
     ],
-    sheet: [30, 20],
+    sheet: [32, 8],
     shortName: 'rolled_up_newspaper'
   },
   {
@@ -21537,7 +23636,7 @@ export const emojis: CompressedEmojiData[] = [
       'order',
       'tidy'
     ],
-    sheet: [26, 40],
+    sheet: [28, 40],
     shortName: 'bookmark_tabs'
   },
   {
@@ -21549,14 +23648,14 @@ export const emojis: CompressedEmojiData[] = [
       'label',
       'save'
     ],
-    sheet: [27, 50],
+    sheet: [29, 47],
     shortName: 'bookmark'
   },
   {
     name: 'Label',
     unified: '1F3F7-FE0F',
     keywords: ['label', 'sale', 'tag'],
-    sheet: [11, 9],
+    sheet: [10, 37],
     shortName: 'label'
   },
   {
@@ -21569,7 +23668,7 @@ export const emojis: CompressedEmojiData[] = [
       'coins',
       'sale'
     ],
-    sheet: [26, 7],
+    sheet: [28, 7],
     shortName: 'moneybag'
   },
   {
@@ -21580,7 +23679,7 @@ export const emojis: CompressedEmojiData[] = [
       'money',
       'currency'
     ],
-    sheet: [52, 41],
+    sheet: [54, 11],
     shortName: 'coin'
   },
   {
@@ -21594,7 +23693,7 @@ export const emojis: CompressedEmojiData[] = [
       'dollar',
       'currency'
     ],
-    sheet: [26, 11],
+    sheet: [28, 11],
     shortName: 'yen'
   },
   {
@@ -21607,7 +23706,7 @@ export const emojis: CompressedEmojiData[] = [
       'bill',
       'currency'
     ],
-    sheet: [26, 12],
+    sheet: [28, 12],
     shortName: 'dollar'
   },
   {
@@ -21620,7 +23719,7 @@ export const emojis: CompressedEmojiData[] = [
       'dollar',
       'currency'
     ],
-    sheet: [26, 13],
+    sheet: [28, 13],
     shortName: 'euro'
   },
   {
@@ -21637,7 +23736,7 @@ export const emojis: CompressedEmojiData[] = [
       'england',
       'currency'
     ],
-    sheet: [26, 14],
+    sheet: [28, 14],
     shortName: 'pound'
   },
   {
@@ -21650,7 +23749,7 @@ export const emojis: CompressedEmojiData[] = [
       'payment',
       'sale'
     ],
-    sheet: [26, 15],
+    sheet: [28, 15],
     shortName: 'money_with_wings'
   },
   {
@@ -21665,7 +23764,7 @@ export const emojis: CompressedEmojiData[] = [
       'payment',
       'shopping'
     ],
-    sheet: [26, 10],
+    sheet: [28, 10],
     shortName: 'credit_card'
   },
   {
@@ -21676,7 +23775,7 @@ export const emojis: CompressedEmojiData[] = [
       'accounting',
       'expenses'
     ],
-    sheet: [52, 15],
+    sheet: [53, 44],
     shortName: 'receipt'
   },
   {
@@ -21689,7 +23788,7 @@ export const emojis: CompressedEmojiData[] = [
       'presentation',
       'stats'
     ],
-    sheet: [26, 16],
+    sheet: [28, 16],
     shortName: 'chart'
   },
   {
@@ -21702,7 +23801,7 @@ export const emojis: CompressedEmojiData[] = [
       'inbox',
       'communication'
     ],
-    sheet: [55, 47],
+    sheet: [58, 26],
     shortNames: ['envelope'],
     shortName: 'email'
   },
@@ -21714,7 +23813,7 @@ export const emojis: CompressedEmojiData[] = [
       'communication',
       'inbox'
     ],
-    sheet: [27, 4],
+    sheet: [29, 1],
     shortName: 'e-mail'
   },
   {
@@ -21725,7 +23824,7 @@ export const emojis: CompressedEmojiData[] = [
       'email',
       'inbox'
     ],
-    sheet: [27, 5],
+    sheet: [29, 2],
     shortName: 'incoming_envelope'
   },
   {
@@ -21736,7 +23835,7 @@ export const emojis: CompressedEmojiData[] = [
       'email',
       'communication'
     ],
-    sheet: [27, 6],
+    sheet: [29, 3],
     shortName: 'envelope_with_arrow'
   },
   {
@@ -21747,7 +23846,7 @@ export const emojis: CompressedEmojiData[] = [
       'inbox',
       'email'
     ],
-    sheet: [27, 1],
+    sheet: [28, 59],
     shortName: 'outbox_tray'
   },
   {
@@ -21758,7 +23857,7 @@ export const emojis: CompressedEmojiData[] = [
       'email',
       'documents'
     ],
-    sheet: [27, 2],
+    sheet: [28, 60],
     shortName: 'inbox_tray'
   },
   {
@@ -21772,7 +23871,7 @@ export const emojis: CompressedEmojiData[] = [
       'box',
       'moving'
     ],
-    sheet: [27, 3],
+    sheet: [29, 0],
     shortName: 'package'
   },
   {
@@ -21784,7 +23883,7 @@ export const emojis: CompressedEmojiData[] = [
       'inbox',
       'communication'
     ],
-    sheet: [27, 8],
+    sheet: [29, 5],
     shortName: 'mailbox'
   },
   {
@@ -21796,7 +23895,7 @@ export const emojis: CompressedEmojiData[] = [
       'communication',
       'inbox'
     ],
-    sheet: [27, 7],
+    sheet: [29, 4],
     shortName: 'mailbox_closed'
   },
   {
@@ -21808,7 +23907,7 @@ export const emojis: CompressedEmojiData[] = [
       'inbox',
       'communication'
     ],
-    sheet: [27, 9],
+    sheet: [29, 6],
     shortName: 'mailbox_with_mail'
   },
   {
@@ -21819,7 +23918,7 @@ export const emojis: CompressedEmojiData[] = [
       'email',
       'inbox'
     ],
-    sheet: [27, 10],
+    sheet: [29, 7],
     shortName: 'mailbox_with_no_mail'
   },
   {
@@ -21831,7 +23930,7 @@ export const emojis: CompressedEmojiData[] = [
       'letter',
       'envelope'
     ],
-    sheet: [27, 11],
+    sheet: [29, 8],
     shortName: 'postbox'
   },
   {
@@ -21842,7 +23941,7 @@ export const emojis: CompressedEmojiData[] = [
       'election',
       'vote'
     ],
-    sheet: [30, 25],
+    sheet: [32, 13],
     shortName: 'ballot_box_with_ballot'
   },
   {
@@ -21857,7 +23956,7 @@ export const emojis: CompressedEmojiData[] = [
       'school',
       'study'
     ],
-    sheet: [56, 14],
+    sheet: [58, 51],
     shortName: 'pencil2'
   },
   {
@@ -21870,7 +23969,7 @@ export const emojis: CompressedEmojiData[] = [
       'writing',
       'write'
     ],
-    sheet: [56, 15],
+    sheet: [58, 52],
     shortName: 'black_nib'
   },
   {
@@ -21882,7 +23981,7 @@ export const emojis: CompressedEmojiData[] = [
       'writing',
       'write'
     ],
-    sheet: [29, 43],
+    sheet: [31, 34],
     shortName: 'lower_left_fountain_pen'
   },
   {
@@ -21894,7 +23993,7 @@ export const emojis: CompressedEmojiData[] = [
       'writing',
       'write'
     ],
-    sheet: [29, 42],
+    sheet: [31, 33],
     shortName: 'lower_left_ballpoint_pen'
   },
   {
@@ -21906,7 +24005,7 @@ export const emojis: CompressedEmojiData[] = [
       'creativity',
       'art'
     ],
-    sheet: [29, 44],
+    sheet: [31, 35],
     shortName: 'lower_left_paintbrush'
   },
   {
@@ -21917,7 +24016,7 @@ export const emojis: CompressedEmojiData[] = [
       'drawing',
       'creativity'
     ],
-    sheet: [29, 45],
+    sheet: [31, 36],
     shortName: 'lower_left_crayon'
   },
   {
@@ -21938,7 +24037,7 @@ export const emojis: CompressedEmojiData[] = [
       'study',
       'compose'
     ],
-    sheet: [26, 52],
+    sheet: [28, 52],
     shortNames: ['pencil'],
     shortName: 'memo'
   },
@@ -21955,7 +24054,7 @@ export const emojis: CompressedEmojiData[] = [
       'job',
       'career'
     ],
-    sheet: [26, 19],
+    sheet: [28, 19],
     shortName: 'briefcase'
   },
   {
@@ -21967,7 +24066,7 @@ export const emojis: CompressedEmojiData[] = [
       'business',
       'office'
     ],
-    sheet: [26, 24],
+    sheet: [28, 24],
     shortName: 'file_folder'
   },
   {
@@ -21978,7 +24077,7 @@ export const emojis: CompressedEmojiData[] = [
       'documents',
       'load'
     ],
-    sheet: [26, 25],
+    sheet: [28, 25],
     shortName: 'open_file_folder'
   },
   {
@@ -21990,7 +24089,7 @@ export const emojis: CompressedEmojiData[] = [
       'business',
       'stationery'
     ],
-    sheet: [30, 12],
+    sheet: [32, 0],
     shortName: 'card_index_dividers'
   },
   {
@@ -22001,7 +24100,7 @@ export const emojis: CompressedEmojiData[] = [
       'calendar',
       'schedule'
     ],
-    sheet: [26, 28],
+    sheet: [28, 28],
     shortName: 'date'
   },
   {
@@ -22013,7 +24112,7 @@ export const emojis: CompressedEmojiData[] = [
       'date',
       'planning'
     ],
-    sheet: [26, 29],
+    sheet: [28, 29],
     shortName: 'calendar'
   },
   {
@@ -22024,7 +24123,7 @@ export const emojis: CompressedEmojiData[] = [
       'memo',
       'stationery'
     ],
-    sheet: [30, 16],
+    sheet: [32, 4],
     shortName: 'spiral_note_pad'
   },
   {
@@ -22036,7 +24135,7 @@ export const emojis: CompressedEmojiData[] = [
       'schedule',
       'planning'
     ],
-    sheet: [30, 17],
+    sheet: [32, 5],
     shortName: 'spiral_calendar_pad'
   },
   {
@@ -22047,7 +24146,7 @@ export const emojis: CompressedEmojiData[] = [
       'business',
       'stationery'
     ],
-    sheet: [26, 30],
+    sheet: [28, 30],
     shortName: 'card_index'
   },
   {
@@ -22066,7 +24165,7 @@ export const emojis: CompressedEmojiData[] = [
       'good',
       'success'
     ],
-    sheet: [26, 31],
+    sheet: [28, 31],
     shortName: 'chart_with_upwards_trend'
   },
   {
@@ -22085,7 +24184,7 @@ export const emojis: CompressedEmojiData[] = [
       'bad',
       'failure'
     ],
-    sheet: [26, 32],
+    sheet: [28, 32],
     shortName: 'chart_with_downwards_trend'
   },
   {
@@ -22097,7 +24196,7 @@ export const emojis: CompressedEmojiData[] = [
       'presentation',
       'stats'
     ],
-    sheet: [26, 33],
+    sheet: [28, 33],
     shortName: 'bar_chart'
   },
   {
@@ -22108,7 +24207,7 @@ export const emojis: CompressedEmojiData[] = [
       'stationery',
       'documents'
     ],
-    sheet: [26, 34],
+    sheet: [28, 34],
     shortName: 'clipboard'
   },
   {
@@ -22120,7 +24219,7 @@ export const emojis: CompressedEmojiData[] = [
       'mark',
       'here'
     ],
-    sheet: [26, 35],
+    sheet: [28, 35],
     shortName: 'pushpin'
   },
   {
@@ -22133,7 +24232,7 @@ export const emojis: CompressedEmojiData[] = [
       'map',
       'here'
     ],
-    sheet: [26, 36],
+    sheet: [28, 36],
     shortName: 'round_pushpin'
   },
   {
@@ -22144,7 +24243,7 @@ export const emojis: CompressedEmojiData[] = [
       'documents',
       'stationery'
     ],
-    sheet: [26, 37],
+    sheet: [28, 37],
     shortName: 'paperclip'
   },
   {
@@ -22155,7 +24254,7 @@ export const emojis: CompressedEmojiData[] = [
       'documents',
       'stationery'
     ],
-    sheet: [29, 41],
+    sheet: [31, 32],
     shortName: 'linked_paperclips'
   },
   {
@@ -22172,7 +24271,7 @@ export const emojis: CompressedEmojiData[] = [
       'architect',
       'sketch'
     ],
-    sheet: [26, 38],
+    sheet: [28, 38],
     shortName: 'straight_ruler'
   },
   {
@@ -22185,7 +24284,7 @@ export const emojis: CompressedEmojiData[] = [
       'architect',
       'sketch'
     ],
-    sheet: [26, 39],
+    sheet: [28, 39],
     shortName: 'triangular_ruler'
   },
   {
@@ -22196,7 +24295,7 @@ export const emojis: CompressedEmojiData[] = [
       'stationery',
       'cut'
     ],
-    sheet: [55, 44],
+    sheet: [58, 23],
     shortName: 'scissors'
   },
   {
@@ -22207,7 +24306,7 @@ export const emojis: CompressedEmojiData[] = [
       'business',
       'stationery'
     ],
-    sheet: [30, 13],
+    sheet: [32, 1],
     shortName: 'card_file_box'
   },
   {
@@ -22218,7 +24317,7 @@ export const emojis: CompressedEmojiData[] = [
       'filing',
       'organizing'
     ],
-    sheet: [30, 14],
+    sheet: [32, 2],
     shortName: 'file_cabinet'
   },
   {
@@ -22232,7 +24331,7 @@ export const emojis: CompressedEmojiData[] = [
       'garbage',
       'toss'
     ],
-    sheet: [30, 15],
+    sheet: [32, 3],
     shortName: 'wastebasket'
   },
   {
@@ -22244,7 +24343,7 @@ export const emojis: CompressedEmojiData[] = [
       'password',
       'padlock'
     ],
-    sheet: [27, 46],
+    sheet: [29, 43],
     shortName: 'lock'
   },
   {
@@ -22255,7 +24354,7 @@ export const emojis: CompressedEmojiData[] = [
       'privacy',
       'security'
     ],
-    sheet: [27, 47],
+    sheet: [29, 44],
     shortName: 'unlock'
   },
   {
@@ -22266,7 +24365,7 @@ export const emojis: CompressedEmojiData[] = [
       'security',
       'secret'
     ],
-    sheet: [27, 43],
+    sheet: [29, 40],
     shortName: 'lock_with_ink_pen'
   },
   {
@@ -22277,7 +24376,7 @@ export const emojis: CompressedEmojiData[] = [
       'security',
       'privacy'
     ],
-    sheet: [27, 44],
+    sheet: [29, 41],
     shortName: 'closed_lock_with_key'
   },
   {
@@ -22289,7 +24388,7 @@ export const emojis: CompressedEmojiData[] = [
       'door',
       'password'
     ],
-    sheet: [27, 45],
+    sheet: [29, 42],
     shortName: 'key'
   },
   {
@@ -22301,7 +24400,7 @@ export const emojis: CompressedEmojiData[] = [
       'door',
       'password'
     ],
-    sheet: [30, 19],
+    sheet: [32, 7],
     shortName: 'old_key'
   },
   {
@@ -22313,7 +24412,7 @@ export const emojis: CompressedEmojiData[] = [
       'build',
       'create'
     ],
-    sheet: [28, 10],
+    sheet: [30, 4],
     shortName: 'hammer'
   },
   {
@@ -22325,14 +24424,14 @@ export const emojis: CompressedEmojiData[] = [
       'chop',
       'cut'
     ],
-    sheet: [52, 35],
+    sheet: [54, 5],
     shortName: 'axe'
   },
   {
     name: 'Pick',
     unified: '26CF-FE0F',
     keywords: ['pick', 'tools', 'dig'],
-    sheet: [55, 10],
+    sheet: [57, 50],
     shortName: 'pick'
   },
   {
@@ -22344,7 +24443,7 @@ export const emojis: CompressedEmojiData[] = [
       'build',
       'create'
     ],
-    sheet: [54, 46],
+    sheet: [57, 28],
     shortName: 'hammer_and_pick'
   },
   {
@@ -22356,14 +24455,14 @@ export const emojis: CompressedEmojiData[] = [
       'build',
       'create'
     ],
-    sheet: [36, 35],
+    sheet: [38, 11],
     shortName: 'hammer_and_wrench'
   },
   {
     name: 'Dagger',
     unified: '1F5E1-FE0F',
     keywords: ['dagger', 'weapon'],
-    sheet: [30, 21],
+    sheet: [32, 9],
     shortName: 'dagger_knife'
   },
   {
@@ -22373,7 +24472,7 @@ export const emojis: CompressedEmojiData[] = [
       'crossed_swords',
       'weapon'
     ],
-    sheet: [54, 48],
+    sheet: [57, 30],
     shortName: 'crossed_swords'
   },
   {
@@ -22386,14 +24485,14 @@ export const emojis: CompressedEmojiData[] = [
       'pistol',
       'revolver'
     ],
-    sheet: [28, 13],
+    sheet: [30, 7],
     shortName: 'gun'
   },
   {
     name: 'Boomerang',
     unified: '1FA83',
     keywords: ['boomerang', 'weapon'],
-    sheet: [52, 28],
+    sheet: [53, 59],
     shortName: 'boomerang'
   },
   {
@@ -22403,7 +24502,7 @@ export const emojis: CompressedEmojiData[] = [
       'bow_and_arrow',
       'sports'
     ],
-    sheet: [11, 11],
+    sheet: [10, 39],
     shortName: 'bow_and_arrow'
   },
   {
@@ -22414,7 +24513,7 @@ export const emojis: CompressedEmojiData[] = [
       'protection',
       'security'
     ],
-    sheet: [36, 36],
+    sheet: [38, 12],
     shortName: 'shield'
   },
   {
@@ -22425,7 +24524,7 @@ export const emojis: CompressedEmojiData[] = [
       'cut',
       'chop'
     ],
-    sheet: [52, 42],
+    sheet: [54, 12],
     shortName: 'carpentry_saw'
   },
   {
@@ -22439,14 +24538,14 @@ export const emojis: CompressedEmojiData[] = [
       'fix',
       'maintainer'
     ],
-    sheet: [28, 9],
+    sheet: [30, 3],
     shortName: 'wrench'
   },
   {
     name: 'Screwdriver',
     unified: '1FA9B',
     keywords: ['screwdriver', 'tools'],
-    sheet: [52, 43],
+    sheet: [54, 13],
     shortName: 'screwdriver'
   },
   {
@@ -22458,21 +24557,21 @@ export const emojis: CompressedEmojiData[] = [
       'tools',
       'fix'
     ],
-    sheet: [28, 11],
+    sheet: [30, 5],
     shortName: 'nut_and_bolt'
   },
   {
     name: 'Gear',
     unified: '2699-FE0F',
     keywords: ['gear', 'cog'],
-    sheet: [54, 52],
+    sheet: [57, 34],
     shortName: 'gear'
   },
   {
     name: 'Clamp',
     unified: '1F5DC-FE0F',
     keywords: ['clamp', 'tool'],
-    sheet: [30, 18],
+    sheet: [32, 6],
     shortName: 'compression'
   },
   {
@@ -22484,7 +24583,7 @@ export const emojis: CompressedEmojiData[] = [
       'fairness',
       'weight'
     ],
-    sheet: [54, 50],
+    sheet: [57, 32],
     shortName: 'scales'
   },
   {
@@ -22494,14 +24593,14 @@ export const emojis: CompressedEmojiData[] = [
       'probing_cane',
       'accessibility'
     ],
-    sheet: [43, 22],
+    sheet: [45, 4],
     shortName: 'probing_cane'
   },
   {
     name: 'Link Symbol',
     unified: '1F517',
     keywords: ['link', 'rings', 'url'],
-    sheet: [27, 51],
+    sheet: [29, 48],
     shortName: 'link'
   },
   {
@@ -22512,14 +24611,14 @@ export const emojis: CompressedEmojiData[] = [
       'lock',
       'arrest'
     ],
-    sheet: [55, 12],
+    sheet: [57, 52],
     shortName: 'chains'
   },
   {
     name: 'Hook',
     unified: '1FA9D',
     keywords: ['hook', 'tools'],
-    sheet: [52, 45],
+    sheet: [54, 15],
     shortName: 'hook'
   },
   {
@@ -22533,7 +24632,7 @@ export const emojis: CompressedEmojiData[] = [
       'maintainer',
       'mechanic'
     ],
-    sheet: [52, 1],
+    sheet: [53, 30],
     shortName: 'toolbox'
   },
   {
@@ -22544,14 +24643,14 @@ export const emojis: CompressedEmojiData[] = [
       'attraction',
       'magnetic'
     ],
-    sheet: [52, 3],
+    sheet: [53, 32],
     shortName: 'magnet'
   },
   {
     name: 'Ladder',
     unified: '1FA9C',
     keywords: ['ladder', 'tools'],
-    sheet: [52, 44],
+    sheet: [54, 14],
     shortName: 'ladder'
   },
   {
@@ -22564,7 +24663,7 @@ export const emojis: CompressedEmojiData[] = [
       'experiment',
       'chemistry'
     ],
-    sheet: [54, 51],
+    sheet: [57, 33],
     shortName: 'alembic'
   },
   {
@@ -22577,7 +24676,7 @@ export const emojis: CompressedEmojiData[] = [
       'lab',
       'science'
     ],
-    sheet: [51, 53],
+    sheet: [53, 24],
     shortName: 'test_tube'
   },
   {
@@ -22590,7 +24689,7 @@ export const emojis: CompressedEmojiData[] = [
       'culture',
       'lab'
     ],
-    sheet: [51, 54],
+    sheet: [53, 25],
     shortName: 'petri_dish'
   },
   {
@@ -22602,7 +24701,7 @@ export const emojis: CompressedEmojiData[] = [
       'genetics',
       'life'
     ],
-    sheet: [51, 55],
+    sheet: [53, 26],
     shortName: 'dna'
   },
   {
@@ -22616,7 +24715,7 @@ export const emojis: CompressedEmojiData[] = [
       'science',
       'study'
     ],
-    sheet: [28, 14],
+    sheet: [30, 8],
     shortName: 'microscope'
   },
   {
@@ -22630,7 +24729,7 @@ export const emojis: CompressedEmojiData[] = [
       'science',
       'astronomy'
     ],
-    sheet: [28, 15],
+    sheet: [30, 9],
     shortName: 'telescope'
   },
   {
@@ -22643,7 +24742,7 @@ export const emojis: CompressedEmojiData[] = [
       'radio',
       'space'
     ],
-    sheet: [26, 56],
+    sheet: [28, 56],
     shortName: 'satellite_antenna'
   },
   {
@@ -22660,7 +24759,7 @@ export const emojis: CompressedEmojiData[] = [
       'doctor',
       'nurse'
     ],
-    sheet: [25, 21],
+    sheet: [26, 35],
     shortName: 'syringe'
   },
   {
@@ -22673,7 +24772,7 @@ export const emojis: CompressedEmojiData[] = [
       'harm',
       'wound'
     ],
-    sheet: [52, 22],
+    sheet: [53, 51],
     shortName: 'drop_of_blood'
   },
   {
@@ -22687,7 +24786,7 @@ export const emojis: CompressedEmojiData[] = [
       'pharmacy',
       'drug'
     ],
-    sheet: [25, 22],
+    sheet: [26, 36],
     shortName: 'pill'
   },
   {
@@ -22697,15 +24796,39 @@ export const emojis: CompressedEmojiData[] = [
       'adhesive_bandage',
       'heal'
     ],
-    sheet: [52, 23],
+    sheet: [53, 52],
     shortName: 'adhesive_bandage'
+  },
+  {
+    name: 'Crutch',
+    unified: '1FA7C',
+    keywords: [
+      'crutch',
+      'accessibility',
+      'assist'
+    ],
+    sheet: [53, 55],
+    hidden: ['facebook'],
+    shortName: 'crutch'
   },
   {
     name: 'Stethoscope',
     unified: '1FA7A',
     keywords: ['stethoscope', 'health'],
-    sheet: [52, 24],
+    sheet: [53, 53],
     shortName: 'stethoscope'
+  },
+  {
+    name: 'X-Ray',
+    unified: '1FA7B',
+    keywords: [
+      'x-ray',
+      'skeleton',
+      'medicine'
+    ],
+    sheet: [53, 54],
+    hidden: ['facebook'],
+    shortName: 'x-ray'
   },
   {
     name: 'Door',
@@ -22716,35 +24839,35 @@ export const emojis: CompressedEmojiData[] = [
       'entry',
       'exit'
     ],
-    sheet: [34, 51],
+    sheet: [36, 30],
     shortName: 'door'
   },
   {
     name: 'Elevator',
     unified: '1F6D7',
     keywords: ['elevator', 'lift'],
-    sheet: [36, 34],
+    sheet: [38, 7],
     shortName: 'elevator'
   },
   {
     name: 'Mirror',
     unified: '1FA9E',
     keywords: ['mirror', 'reflection'],
-    sheet: [52, 46],
+    sheet: [54, 16],
     shortName: 'mirror'
   },
   {
     name: 'Window',
     unified: '1FA9F',
     keywords: ['window', 'scenery'],
-    sheet: [52, 47],
+    sheet: [54, 17],
     shortName: 'window'
   },
   {
     name: 'Bed',
     unified: '1F6CF-FE0F',
     keywords: ['bed', 'sleep', 'rest'],
-    sheet: [36, 28],
+    sheet: [38, 1],
     shortName: 'bed'
   },
   {
@@ -22755,7 +24878,7 @@ export const emojis: CompressedEmojiData[] = [
       'read',
       'chill'
     ],
-    sheet: [36, 19],
+    sheet: [37, 53],
     shortName: 'couch_and_lamp'
   },
   {
@@ -22766,7 +24889,7 @@ export const emojis: CompressedEmojiData[] = [
       'sit',
       'furniture'
     ],
-    sheet: [52, 33],
+    sheet: [54, 3],
     shortName: 'chair'
   },
   {
@@ -22780,14 +24903,14 @@ export const emojis: CompressedEmojiData[] = [
       'bathroom',
       'potty'
     ],
-    sheet: [36, 5],
+    sheet: [37, 39],
     shortName: 'toilet'
   },
   {
     name: 'Plunger',
     unified: '1FAA0',
     keywords: ['plunger', 'toilet'],
-    sheet: [52, 48],
+    sheet: [54, 18],
     shortName: 'plunger'
   },
   {
@@ -22799,7 +24922,7 @@ export const emojis: CompressedEmojiData[] = [
       'water',
       'bathroom'
     ],
-    sheet: [36, 7],
+    sheet: [37, 41],
     shortName: 'shower'
   },
   {
@@ -22811,21 +24934,21 @@ export const emojis: CompressedEmojiData[] = [
       'shower',
       'bathroom'
     ],
-    sheet: [36, 14],
+    sheet: [37, 48],
     shortName: 'bathtub'
   },
   {
     name: 'Mouse Trap',
     unified: '1FAA4',
     keywords: ['mouse trap', 'cheese'],
-    sheet: [52, 52],
+    sheet: [54, 22],
     shortName: 'mouse_trap'
   },
   {
     name: 'Razor',
     unified: '1FA92',
     keywords: ['razor', 'cut'],
-    sheet: [52, 34],
+    sheet: [54, 4],
     shortName: 'razor'
   },
   {
@@ -22836,14 +24959,14 @@ export const emojis: CompressedEmojiData[] = [
       'moisturizer',
       'sunscreen'
     ],
-    sheet: [52, 5],
+    sheet: [53, 34],
     shortName: 'lotion_bottle'
   },
   {
     name: 'Safety Pin',
     unified: '1F9F7',
     keywords: ['safety_pin', 'diaper'],
-    sheet: [52, 8],
+    sheet: [53, 37],
     shortName: 'safety_pin'
   },
   {
@@ -22855,21 +24978,21 @@ export const emojis: CompressedEmojiData[] = [
       'sweeping',
       'witch'
     ],
-    sheet: [52, 10],
+    sheet: [53, 39],
     shortName: 'broom'
   },
   {
     name: 'Basket',
     unified: '1F9FA',
     keywords: ['basket', 'laundry'],
-    sheet: [52, 11],
+    sheet: [53, 40],
     shortName: 'basket'
   },
   {
     name: 'Roll of Paper',
     unified: '1F9FB',
     keywords: ['roll_of_paper', 'roll'],
-    sheet: [52, 12],
+    sheet: [53, 41],
     shortName: 'roll_of_paper'
   },
   {
@@ -22880,7 +25003,7 @@ export const emojis: CompressedEmojiData[] = [
       'water',
       'container'
     ],
-    sheet: [52, 51],
+    sheet: [54, 21],
     shortName: 'bucket'
   },
   {
@@ -22893,8 +25016,22 @@ export const emojis: CompressedEmojiData[] = [
       'cleaning',
       'lather'
     ],
-    sheet: [52, 13],
+    sheet: [53, 42],
     shortName: 'soap'
+  },
+  {
+    name: 'Bubbles',
+    unified: '1FAE7',
+    keywords: [
+      'bubbles',
+      'soap',
+      'fun',
+      'carbonation',
+      'sparkling'
+    ],
+    sheet: [55, 19],
+    hidden: ['facebook'],
+    shortName: 'bubbles'
   },
   {
     name: 'Toothbrush',
@@ -22904,7 +25041,7 @@ export const emojis: CompressedEmojiData[] = [
       'hygiene',
       'dental'
     ],
-    sheet: [52, 53],
+    sheet: [54, 23],
     shortName: 'toothbrush'
   },
   {
@@ -22916,7 +25053,7 @@ export const emojis: CompressedEmojiData[] = [
       'cleaning',
       'porous'
     ],
-    sheet: [52, 14],
+    sheet: [53, 43],
     shortName: 'sponge'
   },
   {
@@ -22926,7 +25063,7 @@ export const emojis: CompressedEmojiData[] = [
       'fire_extinguisher',
       'quench'
     ],
-    sheet: [52, 0],
+    sheet: [53, 29],
     shortName: 'fire_extinguisher'
   },
   {
@@ -22936,7 +25073,7 @@ export const emojis: CompressedEmojiData[] = [
       'shopping_cart',
       'trolley'
     ],
-    sheet: [36, 31],
+    sheet: [38, 4],
     shortName: 'shopping_trolley'
   },
   {
@@ -22950,7 +25087,7 @@ export const emojis: CompressedEmojiData[] = [
       'joint',
       'smoke'
     ],
-    sheet: [34, 53],
+    sheet: [36, 32],
     shortName: 'smoking'
   },
   {
@@ -22969,7 +25106,7 @@ export const emojis: CompressedEmojiData[] = [
       'funeral',
       'box'
     ],
-    sheet: [55, 2],
+    sheet: [57, 42],
     shortName: 'coffin'
   },
   {
@@ -22981,7 +25118,7 @@ export const emojis: CompressedEmojiData[] = [
       'rip',
       'grave'
     ],
-    sheet: [52, 54],
+    sheet: [54, 24],
     shortName: 'headstone'
   },
   {
@@ -22995,7 +25132,7 @@ export const emojis: CompressedEmojiData[] = [
       'rip',
       'ashes'
     ],
-    sheet: [55, 3],
+    sheet: [57, 43],
     shortName: 'funeral_urn'
   },
   {
@@ -23007,7 +25144,7 @@ export const emojis: CompressedEmojiData[] = [
       'easter island',
       'moai'
     ],
-    sheet: [30, 31],
+    sheet: [32, 19],
     shortName: 'moyai'
   },
   {
@@ -23017,8 +25154,19 @@ export const emojis: CompressedEmojiData[] = [
       'placard',
       'announcement'
     ],
-    sheet: [52, 55],
+    sheet: [54, 25],
     shortName: 'placard'
+  },
+  {
+    name: 'Identification Card',
+    unified: '1FAAA',
+    keywords: [
+      'identification card',
+      'document'
+    ],
+    sheet: [54, 28],
+    hidden: ['facebook'],
+    shortName: 'identification_card'
   },
   {
     name: 'Automated Teller Machine',
@@ -23032,7 +25180,7 @@ export const emojis: CompressedEmojiData[] = [
       'payment',
       'bank'
     ],
-    sheet: [10, 48],
+    sheet: [10, 18],
     shortName: 'atm'
   },
   {
@@ -23045,7 +25193,7 @@ export const emojis: CompressedEmojiData[] = [
       'human',
       'info'
     ],
-    sheet: [34, 55],
+    sheet: [36, 34],
     shortName: 'put_litter_in_its_place'
   },
   {
@@ -23059,7 +25207,7 @@ export const emojis: CompressedEmojiData[] = [
       'cleaning',
       'faucet'
     ],
-    sheet: [34, 57],
+    sheet: [36, 36],
     shortName: 'potable_water'
   },
   {
@@ -23071,7 +25219,7 @@ export const emojis: CompressedEmojiData[] = [
       'disabled',
       'accessibility'
     ],
-    sheet: [54, 45],
+    sheet: [57, 27],
     shortName: 'wheelchair'
   },
   {
@@ -23086,7 +25234,7 @@ export const emojis: CompressedEmojiData[] = [
       'gender',
       'male'
     ],
-    sheet: [36, 1],
+    sheet: [37, 35],
     shortName: 'mens'
   },
   {
@@ -23102,7 +25250,7 @@ export const emojis: CompressedEmojiData[] = [
       'restroom',
       'gender'
     ],
-    sheet: [36, 2],
+    sheet: [37, 36],
     shortName: 'womens'
   },
   {
@@ -23116,7 +25264,7 @@ export const emojis: CompressedEmojiData[] = [
       'wc',
       'gender'
     ],
-    sheet: [36, 3],
+    sheet: [37, 37],
     shortName: 'restroom'
   },
   {
@@ -23127,7 +25275,7 @@ export const emojis: CompressedEmojiData[] = [
       'orange-square',
       'child'
     ],
-    sheet: [36, 4],
+    sheet: [37, 38],
     shortName: 'baby_symbol'
   },
   {
@@ -23139,7 +25287,7 @@ export const emojis: CompressedEmojiData[] = [
       'restroom',
       'blue-square'
     ],
-    sheet: [36, 6],
+    sheet: [37, 40],
     shortName: 'wc'
   },
   {
@@ -23150,7 +25298,7 @@ export const emojis: CompressedEmojiData[] = [
       'custom',
       'blue-square'
     ],
-    sheet: [36, 15],
+    sheet: [37, 49],
     shortName: 'passport_control'
   },
   {
@@ -23162,7 +25310,7 @@ export const emojis: CompressedEmojiData[] = [
       'border',
       'blue-square'
     ],
-    sheet: [36, 16],
+    sheet: [37, 50],
     shortName: 'customs'
   },
   {
@@ -23174,7 +25322,7 @@ export const emojis: CompressedEmojiData[] = [
       'airport',
       'transport'
     ],
-    sheet: [36, 17],
+    sheet: [37, 51],
     shortName: 'baggage_claim'
   },
   {
@@ -23185,7 +25333,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-square',
       'travel'
     ],
-    sheet: [36, 18],
+    sheet: [37, 52],
     shortName: 'left_luggage'
   },
   {
@@ -23200,7 +25348,7 @@ export const emojis: CompressedEmojiData[] = [
       'problem',
       'issue'
     ],
-    sheet: [54, 55],
+    sheet: [57, 37],
     shortName: 'warning'
   },
   {
@@ -23215,7 +25363,7 @@ export const emojis: CompressedEmojiData[] = [
       'driving',
       'yellow-diamond'
     ],
-    sheet: [36, 0],
+    sheet: [37, 34],
     shortName: 'children_crossing'
   },
   {
@@ -23231,7 +25379,7 @@ export const emojis: CompressedEmojiData[] = [
       'stop',
       'circle'
     ],
-    sheet: [55, 13],
+    sheet: [57, 53],
     shortName: 'no_entry'
   },
   {
@@ -23246,7 +25394,7 @@ export const emojis: CompressedEmojiData[] = [
       'disallow',
       'circle'
     ],
-    sheet: [34, 52],
+    sheet: [36, 31],
     shortName: 'no_entry_sign'
   },
   {
@@ -23258,7 +25406,7 @@ export const emojis: CompressedEmojiData[] = [
       'prohibited',
       'circle'
     ],
-    sheet: [35, 2],
+    sheet: [36, 39],
     shortName: 'no_bicycles'
   },
   {
@@ -23271,7 +25419,7 @@ export const emojis: CompressedEmojiData[] = [
       'smell',
       'smoke'
     ],
-    sheet: [34, 54],
+    sheet: [36, 33],
     shortName: 'no_smoking'
   },
   {
@@ -23284,7 +25432,7 @@ export const emojis: CompressedEmojiData[] = [
       'garbage',
       'circle'
     ],
-    sheet: [34, 56],
+    sheet: [36, 35],
     shortName: 'do_not_litter'
   },
   {
@@ -23297,7 +25445,7 @@ export const emojis: CompressedEmojiData[] = [
       'tap',
       'circle'
     ],
-    sheet: [35, 0],
+    sheet: [36, 37],
     shortName: 'non-potable_water'
   },
   {
@@ -23310,7 +25458,7 @@ export const emojis: CompressedEmojiData[] = [
       'walking',
       'circle'
     ],
-    sheet: [35, 57],
+    sheet: [37, 33],
     shortName: 'no_pedestrians'
   },
   {
@@ -23322,7 +25470,7 @@ export const emojis: CompressedEmojiData[] = [
       'mute',
       'circle'
     ],
-    sheet: [27, 18],
+    sheet: [29, 15],
     shortName: 'no_mobile_phones'
   },
   {
@@ -23337,7 +25485,7 @@ export const emojis: CompressedEmojiData[] = [
       'minor',
       'circle'
     ],
-    sheet: [28, 0],
+    sheet: [29, 55],
     shortName: 'underage'
   },
   {
@@ -23348,14 +25496,14 @@ export const emojis: CompressedEmojiData[] = [
       'nuclear',
       'danger'
     ],
-    sheet: [54, 14],
+    sheet: [56, 57],
     shortName: 'radioactive_sign'
   },
   {
     name: 'Biohazard',
     unified: '2623-FE0F',
     keywords: ['biohazard', 'danger'],
-    sheet: [54, 15],
+    sheet: [56, 58],
     shortName: 'biohazard_sign'
   },
   {
@@ -23368,7 +25516,7 @@ export const emojis: CompressedEmojiData[] = [
       'top',
       'direction'
     ],
-    sheet: [56, 42],
+    sheet: [59, 20],
     shortName: 'arrow_up'
   },
   {
@@ -23382,7 +25530,7 @@ export const emojis: CompressedEmojiData[] = [
       'diagonal',
       'northeast'
     ],
-    sheet: [53, 23],
+    sheet: [56, 8],
     shortName: 'arrow_upper_right'
   },
   {
@@ -23393,7 +25541,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-square',
       'next'
     ],
-    sheet: [56, 36],
+    sheet: [59, 14],
     shortName: 'arrow_right'
   },
   {
@@ -23406,7 +25554,7 @@ export const emojis: CompressedEmojiData[] = [
       'diagonal',
       'southeast'
     ],
-    sheet: [53, 24],
+    sheet: [56, 9],
     shortName: 'arrow_lower_right'
   },
   {
@@ -23418,7 +25566,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'bottom'
     ],
-    sheet: [56, 43],
+    sheet: [59, 21],
     shortName: 'arrow_down'
   },
   {
@@ -23431,7 +25579,7 @@ export const emojis: CompressedEmojiData[] = [
       'diagonal',
       'southwest'
     ],
-    sheet: [53, 25],
+    sheet: [56, 10],
     shortName: 'arrow_lower_left'
   },
   {
@@ -23443,7 +25591,7 @@ export const emojis: CompressedEmojiData[] = [
       'previous',
       'back'
     ],
-    sheet: [56, 41],
+    sheet: [59, 19],
     shortName: 'arrow_left'
   },
   {
@@ -23457,7 +25605,7 @@ export const emojis: CompressedEmojiData[] = [
       'diagonal',
       'northwest'
     ],
-    sheet: [53, 22],
+    sheet: [56, 7],
     shortName: 'arrow_upper_left'
   },
   {
@@ -23470,7 +25618,7 @@ export const emojis: CompressedEmojiData[] = [
       'way',
       'vertical'
     ],
-    sheet: [53, 21],
+    sheet: [56, 6],
     shortName: 'arrow_up_down'
   },
   {
@@ -23483,7 +25631,7 @@ export const emojis: CompressedEmojiData[] = [
       'horizontal',
       'sideways'
     ],
-    sheet: [53, 20],
+    sheet: [56, 5],
     shortName: 'left_right_arrow'
   },
   {
@@ -23497,7 +25645,7 @@ export const emojis: CompressedEmojiData[] = [
       'undo',
       'enter'
     ],
-    sheet: [53, 26],
+    sheet: [56, 11],
     shortName: 'leftwards_arrow_with_hook'
   },
   {
@@ -23510,7 +25658,7 @@ export const emojis: CompressedEmojiData[] = [
       'rotate',
       'direction'
     ],
-    sheet: [53, 27],
+    sheet: [56, 12],
     shortName: 'arrow_right_hook'
   },
   {
@@ -23522,7 +25670,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'top'
     ],
-    sheet: [56, 39],
+    sheet: [59, 17],
     shortName: 'arrow_heading_up'
   },
   {
@@ -23534,7 +25682,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'bottom'
     ],
-    sheet: [56, 40],
+    sheet: [59, 18],
     shortName: 'arrow_heading_down'
   },
   {
@@ -23547,7 +25695,7 @@ export const emojis: CompressedEmojiData[] = [
       'round',
       'repeat'
     ],
-    sheet: [27, 31],
+    sheet: [29, 28],
     shortName: 'arrows_clockwise'
   },
   {
@@ -23559,7 +25707,7 @@ export const emojis: CompressedEmojiData[] = [
       'sync',
       'cycle'
     ],
-    sheet: [27, 32],
+    sheet: [29, 29],
     shortName: 'arrows_counterclockwise'
   },
   {
@@ -23571,7 +25719,7 @@ export const emojis: CompressedEmojiData[] = [
       'words',
       'return'
     ],
-    sheet: [27, 53],
+    sheet: [29, 50],
     shortName: 'back'
   },
   {
@@ -23582,7 +25730,7 @@ export const emojis: CompressedEmojiData[] = [
       'words',
       'arrow'
     ],
-    sheet: [27, 54],
+    sheet: [29, 51],
     shortName: 'end'
   },
   {
@@ -23593,7 +25741,7 @@ export const emojis: CompressedEmojiData[] = [
       'arrow',
       'words'
     ],
-    sheet: [27, 55],
+    sheet: [29, 52],
     shortName: 'on'
   },
   {
@@ -23604,7 +25752,7 @@ export const emojis: CompressedEmojiData[] = [
       'arrow',
       'words'
     ],
-    sheet: [27, 56],
+    sheet: [29, 53],
     shortName: 'soon'
   },
   {
@@ -23615,7 +25763,7 @@ export const emojis: CompressedEmojiData[] = [
       'words',
       'blue-square'
     ],
-    sheet: [27, 57],
+    sheet: [29, 54],
     shortName: 'top'
   },
   {
@@ -23628,7 +25776,7 @@ export const emojis: CompressedEmojiData[] = [
       'temple',
       'prayer'
     ],
-    sheet: [36, 29],
+    sheet: [38, 2],
     shortName: 'place_of_worship'
   },
   {
@@ -23640,7 +25788,7 @@ export const emojis: CompressedEmojiData[] = [
       'physics',
       'chemistry'
     ],
-    sheet: [54, 53],
+    sheet: [57, 35],
     shortName: 'atom_symbol'
   },
   {
@@ -23653,7 +25801,7 @@ export const emojis: CompressedEmojiData[] = [
       'sikhism',
       'jainism'
     ],
-    sheet: [28, 32],
+    sheet: [30, 26],
     shortName: 'om_symbol'
   },
   {
@@ -23663,7 +25811,7 @@ export const emojis: CompressedEmojiData[] = [
       'star_of_david',
       'judaism'
     ],
-    sheet: [56, 19],
+    sheet: [58, 56],
     shortName: 'star_of_david'
   },
   {
@@ -23676,14 +25824,14 @@ export const emojis: CompressedEmojiData[] = [
       'sikhism',
       'jainism'
     ],
-    sheet: [54, 20],
+    sheet: [57, 2],
     shortName: 'wheel_of_dharma'
   },
   {
     name: 'Yin Yang',
     unified: '262F-FE0F',
     keywords: ['yin_yang', 'balance'],
-    sheet: [54, 19],
+    sheet: [57, 1],
     shortName: 'yin_yang'
   },
   {
@@ -23693,7 +25841,7 @@ export const emojis: CompressedEmojiData[] = [
       'latin_cross',
       'christianity'
     ],
-    sheet: [56, 18],
+    sheet: [58, 55],
     shortName: 'latin_cross'
   },
   {
@@ -23704,7 +25852,7 @@ export const emojis: CompressedEmojiData[] = [
       'suppedaneum',
       'religion'
     ],
-    sheet: [54, 16],
+    sheet: [56, 59],
     shortName: 'orthodox_cross'
   },
   {
@@ -23714,7 +25862,7 @@ export const emojis: CompressedEmojiData[] = [
       'star_and_crescent',
       'islam'
     ],
-    sheet: [54, 17],
+    sheet: [56, 60],
     shortName: 'star_and_crescent'
   },
   {
@@ -23724,7 +25872,7 @@ export const emojis: CompressedEmojiData[] = [
       'peace_symbol',
       'hippie'
     ],
-    sheet: [54, 18],
+    sheet: [57, 0],
     shortName: 'peace_symbol'
   },
   {
@@ -23736,7 +25884,7 @@ export const emojis: CompressedEmojiData[] = [
       'candles',
       'jewish'
     ],
-    sheet: [28, 37],
+    sheet: [30, 31],
     shortName: 'menorah_with_nine_branches'
   },
   {
@@ -23749,7 +25897,7 @@ export const emojis: CompressedEmojiData[] = [
       'jewish',
       'hexagram'
     ],
-    sheet: [28, 17],
+    sheet: [30, 11],
     shortName: 'six_pointed_star'
   },
   {
@@ -23762,7 +25910,7 @@ export const emojis: CompressedEmojiData[] = [
       'zodiac',
       'astrology'
     ],
-    sheet: [54, 25],
+    sheet: [57, 7],
     shortName: 'aries'
   },
   {
@@ -23775,7 +25923,7 @@ export const emojis: CompressedEmojiData[] = [
       'zodiac',
       'astrology'
     ],
-    sheet: [54, 26],
+    sheet: [57, 8],
     shortName: 'taurus'
   },
   {
@@ -23788,7 +25936,7 @@ export const emojis: CompressedEmojiData[] = [
       'purple-square',
       'astrology'
     ],
-    sheet: [54, 27],
+    sheet: [57, 9],
     shortName: 'gemini'
   },
   {
@@ -23801,7 +25949,7 @@ export const emojis: CompressedEmojiData[] = [
       'purple-square',
       'astrology'
     ],
-    sheet: [54, 28],
+    sheet: [57, 10],
     shortName: 'cancer'
   },
   {
@@ -23814,7 +25962,7 @@ export const emojis: CompressedEmojiData[] = [
       'zodiac',
       'astrology'
     ],
-    sheet: [54, 29],
+    sheet: [57, 11],
     shortName: 'leo'
   },
   {
@@ -23827,7 +25975,7 @@ export const emojis: CompressedEmojiData[] = [
       'purple-square',
       'astrology'
     ],
-    sheet: [54, 30],
+    sheet: [57, 12],
     shortName: 'virgo'
   },
   {
@@ -23840,7 +25988,7 @@ export const emojis: CompressedEmojiData[] = [
       'zodiac',
       'astrology'
     ],
-    sheet: [54, 31],
+    sheet: [57, 13],
     shortName: 'libra'
   },
   {
@@ -23854,7 +26002,7 @@ export const emojis: CompressedEmojiData[] = [
       'astrology',
       'scorpio'
     ],
-    sheet: [54, 32],
+    sheet: [57, 14],
     shortName: 'scorpius'
   },
   {
@@ -23867,7 +26015,7 @@ export const emojis: CompressedEmojiData[] = [
       'purple-square',
       'astrology'
     ],
-    sheet: [54, 33],
+    sheet: [57, 15],
     shortName: 'sagittarius'
   },
   {
@@ -23880,7 +26028,7 @@ export const emojis: CompressedEmojiData[] = [
       'purple-square',
       'astrology'
     ],
-    sheet: [54, 34],
+    sheet: [57, 16],
     shortName: 'capricorn'
   },
   {
@@ -23893,7 +26041,7 @@ export const emojis: CompressedEmojiData[] = [
       'zodiac',
       'astrology'
     ],
-    sheet: [54, 35],
+    sheet: [57, 17],
     shortName: 'aquarius'
   },
   {
@@ -23906,7 +26054,7 @@ export const emojis: CompressedEmojiData[] = [
       'zodiac',
       'astrology'
     ],
-    sheet: [54, 36],
+    sheet: [57, 18],
     shortName: 'pisces'
   },
   {
@@ -23919,7 +26067,7 @@ export const emojis: CompressedEmojiData[] = [
       'constellation',
       'astrology'
     ],
-    sheet: [55, 9],
+    sheet: [57, 49],
     shortName: 'ophiuchus'
   },
   {
@@ -23932,7 +26080,7 @@ export const emojis: CompressedEmojiData[] = [
       'music',
       'random'
     ],
-    sheet: [27, 28],
+    sheet: [29, 25],
     shortName: 'twisted_rightwards_arrows'
   },
   {
@@ -23943,7 +26091,7 @@ export const emojis: CompressedEmojiData[] = [
       'loop',
       'record'
     ],
-    sheet: [27, 29],
+    sheet: [29, 26],
     shortName: 'repeat'
   },
   {
@@ -23954,7 +26102,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-square',
       'loop'
     ],
-    sheet: [27, 30],
+    sheet: [29, 27],
     shortName: 'repeat_one'
   },
   {
@@ -23967,7 +26115,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'play'
     ],
-    sheet: [53, 49],
+    sheet: [56, 34],
     shortName: 'arrow_forward'
   },
   {
@@ -23980,7 +26128,7 @@ export const emojis: CompressedEmojiData[] = [
       'speed',
       'continue'
     ],
-    sheet: [53, 32],
+    sheet: [56, 17],
     shortName: 'fast_forward'
   },
   {
@@ -23992,7 +26140,7 @@ export const emojis: CompressedEmojiData[] = [
       'next',
       'blue-square'
     ],
-    sheet: [53, 36],
+    sheet: [56, 21],
     shortName: 'black_right_pointing_double_triangle_with_vertical_bar'
   },
   {
@@ -24004,7 +26152,7 @@ export const emojis: CompressedEmojiData[] = [
       'play',
       'pause'
     ],
-    sheet: [53, 38],
+    sheet: [56, 23],
     shortName: 'black_right_pointing_triangle_with_double_vertical_bar'
   },
   {
@@ -24016,7 +26164,7 @@ export const emojis: CompressedEmojiData[] = [
       'left',
       'direction'
     ],
-    sheet: [53, 50],
+    sheet: [56, 35],
     shortName: 'arrow_backward'
   },
   {
@@ -24027,7 +26175,7 @@ export const emojis: CompressedEmojiData[] = [
       'play',
       'blue-square'
     ],
-    sheet: [53, 33],
+    sheet: [56, 18],
     shortName: 'rewind'
   },
   {
@@ -24037,7 +26185,7 @@ export const emojis: CompressedEmojiData[] = [
       'last_track_button',
       'backward'
     ],
-    sheet: [53, 37],
+    sheet: [56, 22],
     shortName: 'black_left_pointing_double_triangle_with_vertical_bar'
   },
   {
@@ -24052,7 +26200,7 @@ export const emojis: CompressedEmojiData[] = [
       'forward',
       'top'
     ],
-    sheet: [28, 30],
+    sheet: [30, 24],
     shortName: 'arrow_up_small'
   },
   {
@@ -24064,7 +26212,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'top'
     ],
-    sheet: [53, 34],
+    sheet: [56, 19],
     shortName: 'arrow_double_up'
   },
   {
@@ -24076,7 +26224,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'bottom'
     ],
-    sheet: [28, 31],
+    sheet: [30, 25],
     shortName: 'arrow_down_small'
   },
   {
@@ -24088,7 +26236,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'bottom'
     ],
-    sheet: [53, 35],
+    sheet: [56, 20],
     shortName: 'arrow_double_down'
   },
   {
@@ -24099,7 +26247,7 @@ export const emojis: CompressedEmojiData[] = [
       'pause',
       'blue-square'
     ],
-    sheet: [53, 43],
+    sheet: [56, 28],
     shortName: 'double_vertical_bar'
   },
   {
@@ -24109,7 +26257,7 @@ export const emojis: CompressedEmojiData[] = [
       'stop_button',
       'blue-square'
     ],
-    sheet: [53, 44],
+    sheet: [56, 29],
     shortName: 'black_square_for_stop'
   },
   {
@@ -24119,7 +26267,7 @@ export const emojis: CompressedEmojiData[] = [
       'record_button',
       'blue-square'
     ],
-    sheet: [53, 45],
+    sheet: [56, 30],
     shortName: 'black_circle_for_record'
   },
   {
@@ -24129,7 +26277,7 @@ export const emojis: CompressedEmojiData[] = [
       'eject_button',
       'blue-square'
     ],
-    sheet: [53, 31],
+    sheet: [56, 16],
     shortName: 'eject'
   },
   {
@@ -24145,7 +26293,7 @@ export const emojis: CompressedEmojiData[] = [
       'stage',
       'theater'
     ],
-    sheet: [8, 4],
+    sheet: [7, 41],
     shortName: 'cinema'
   },
   {
@@ -24158,7 +26306,7 @@ export const emojis: CompressedEmojiData[] = [
       'warm',
       'summer'
     ],
-    sheet: [27, 33],
+    sheet: [29, 30],
     shortName: 'low_brightness'
   },
   {
@@ -24169,7 +26317,7 @@ export const emojis: CompressedEmojiData[] = [
       'sun',
       'light'
     ],
-    sheet: [27, 34],
+    sheet: [29, 31],
     shortName: 'high_brightness'
   },
   {
@@ -24186,7 +26334,7 @@ export const emojis: CompressedEmojiData[] = [
       'bluetooth',
       'bars'
     ],
-    sheet: [27, 19],
+    sheet: [29, 16],
     shortName: 'signal_strength'
   },
   {
@@ -24197,7 +26345,7 @@ export const emojis: CompressedEmojiData[] = [
       'orange-square',
       'phone'
     ],
-    sheet: [27, 16],
+    sheet: [29, 13],
     shortName: 'vibration_mode'
   },
   {
@@ -24210,7 +26358,7 @@ export const emojis: CompressedEmojiData[] = [
       'silence',
       'quiet'
     ],
-    sheet: [27, 17],
+    sheet: [29, 14],
     shortName: 'mobile_phone_off'
   },
   {
@@ -24223,7 +26371,7 @@ export const emojis: CompressedEmojiData[] = [
       'lady',
       'girl'
     ],
-    sheet: [54, 23],
+    sheet: [57, 5],
     hidden: ['apple'],
     shortName: 'female_sign'
   },
@@ -24236,7 +26384,7 @@ export const emojis: CompressedEmojiData[] = [
       'boy',
       'men'
     ],
-    sheet: [54, 24],
+    sheet: [57, 6],
     hidden: ['apple'],
     shortName: 'male_sign'
   },
@@ -24247,7 +26395,7 @@ export const emojis: CompressedEmojiData[] = [
       'transgender symbol',
       'lgbtq'
     ],
-    sheet: [54, 57],
+    sheet: [57, 39],
     shortName: 'transgender_symbol'
   },
   {
@@ -24258,7 +26406,7 @@ export const emojis: CompressedEmojiData[] = [
       'math',
       'calculation'
     ],
-    sheet: [56, 17],
+    sheet: [58, 54],
     shortName: 'heavy_multiplication_x'
   },
   {
@@ -24272,7 +26420,7 @@ export const emojis: CompressedEmojiData[] = [
       'more',
       'increase'
     ],
-    sheet: [56, 33],
+    sheet: [59, 11],
     shortName: 'heavy_plus_sign'
   },
   {
@@ -24285,7 +26433,7 @@ export const emojis: CompressedEmojiData[] = [
       'subtract',
       'less'
     ],
-    sheet: [56, 34],
+    sheet: [59, 12],
     shortName: 'heavy_minus_sign'
   },
   {
@@ -24297,14 +26445,25 @@ export const emojis: CompressedEmojiData[] = [
       'math',
       'calculation'
     ],
-    sheet: [56, 35],
+    sheet: [59, 13],
     shortName: 'heavy_division_sign'
+  },
+  {
+    name: 'Heavy Equals Sign',
+    unified: '1F7F0',
+    keywords: [
+      'heavy equals sign',
+      'math'
+    ],
+    sheet: [38, 43],
+    hidden: ['facebook'],
+    shortName: 'heavy_equals_sign'
   },
   {
     name: 'Infinity',
     unified: '267E-FE0F',
     keywords: ['infinity', 'forever'],
-    sheet: [54, 44],
+    sheet: [57, 26],
     shortName: 'infinity'
   },
   {
@@ -24315,7 +26474,7 @@ export const emojis: CompressedEmojiData[] = [
       'exclamation',
       'surprise'
     ],
-    sheet: [53, 16],
+    sheet: [56, 1],
     shortName: 'bangbang'
   },
   {
@@ -24327,7 +26486,7 @@ export const emojis: CompressedEmojiData[] = [
       'punctuation',
       'surprise'
     ],
-    sheet: [53, 17],
+    sheet: [56, 2],
     shortName: 'interrobang'
   },
   {
@@ -24338,7 +26497,7 @@ export const emojis: CompressedEmojiData[] = [
       'doubt',
       'confused'
     ],
-    sheet: [56, 27],
+    sheet: [59, 3],
     shortName: 'question'
   },
   {
@@ -24351,7 +26510,7 @@ export const emojis: CompressedEmojiData[] = [
       'huh',
       'confused'
     ],
-    sheet: [56, 28],
+    sheet: [59, 4],
     shortName: 'grey_question'
   },
   {
@@ -24365,7 +26524,7 @@ export const emojis: CompressedEmojiData[] = [
       'wow',
       'warning'
     ],
-    sheet: [56, 29],
+    sheet: [59, 5],
     shortName: 'grey_exclamation'
   },
   {
@@ -24380,7 +26539,7 @@ export const emojis: CompressedEmojiData[] = [
       'wow',
       'warning'
     ],
-    sheet: [56, 30],
+    sheet: [59, 6],
     shortNames: [
       'heavy_exclamation_mark'
     ],
@@ -24398,7 +26557,7 @@ export const emojis: CompressedEmojiData[] = [
       'squiggle',
       'scribble'
     ],
-    sheet: [56, 48],
+    sheet: [59, 26],
     shortName: 'wavy_dash'
   },
   {
@@ -24411,7 +26570,7 @@ export const emojis: CompressedEmojiData[] = [
       'dollar',
       'travel'
     ],
-    sheet: [26, 8],
+    sheet: [28, 8],
     shortName: 'currency_exchange'
   },
   {
@@ -24425,7 +26584,7 @@ export const emojis: CompressedEmojiData[] = [
       'currency',
       'buck'
     ],
-    sheet: [26, 9],
+    sheet: [28, 9],
     shortName: 'heavy_dollar_sign'
   },
   {
@@ -24436,7 +26595,7 @@ export const emojis: CompressedEmojiData[] = [
       'health',
       'hospital'
     ],
-    sheet: [54, 49],
+    sheet: [57, 31],
     hidden: ['apple'],
     shortNames: ['staff_of_aesculapius'],
     shortName: 'medical_symbol'
@@ -24451,7 +26610,7 @@ export const emojis: CompressedEmojiData[] = [
       'garbage',
       'trash'
     ],
-    sheet: [54, 43],
+    sheet: [57, 25],
     shortName: 'recycle'
   },
   {
@@ -24462,7 +26621,7 @@ export const emojis: CompressedEmojiData[] = [
       'decorative',
       'scout'
     ],
-    sheet: [54, 54],
+    sheet: [57, 36],
     shortName: 'fleur_de_lis'
   },
   {
@@ -24473,7 +26632,7 @@ export const emojis: CompressedEmojiData[] = [
       'weapon',
       'spear'
     ],
-    sheet: [28, 19],
+    sheet: [30, 13],
     shortName: 'trident'
   },
   {
@@ -24484,7 +26643,7 @@ export const emojis: CompressedEmojiData[] = [
       'fire',
       'forbid'
     ],
-    sheet: [26, 50],
+    sheet: [28, 50],
     shortName: 'name_badge'
   },
   {
@@ -24495,7 +26654,7 @@ export const emojis: CompressedEmojiData[] = [
       'badge',
       'shield'
     ],
-    sheet: [28, 18],
+    sheet: [30, 12],
     shortName: 'beginner'
   },
   {
@@ -24506,7 +26665,7 @@ export const emojis: CompressedEmojiData[] = [
       'circle',
       'round'
     ],
-    sheet: [56, 47],
+    sheet: [59, 25],
     shortName: 'o'
   },
   {
@@ -24522,7 +26681,7 @@ export const emojis: CompressedEmojiData[] = [
       'answer',
       'tick'
     ],
-    sheet: [55, 45],
+    sheet: [58, 24],
     shortName: 'white_check_mark'
   },
   {
@@ -24539,7 +26698,7 @@ export const emojis: CompressedEmojiData[] = [
       'yes',
       'tick'
     ],
-    sheet: [54, 3],
+    sheet: [56, 46],
     shortName: 'ballot_box_with_check'
   },
   {
@@ -24553,7 +26712,7 @@ export const emojis: CompressedEmojiData[] = [
       'yes',
       'tick'
     ],
-    sheet: [56, 16],
+    sheet: [58, 53],
     shortName: 'heavy_check_mark'
   },
   {
@@ -24567,7 +26726,7 @@ export const emojis: CompressedEmojiData[] = [
       'cancel',
       'red'
     ],
-    sheet: [56, 25],
+    sheet: [59, 1],
     shortName: 'x'
   },
   {
@@ -24580,7 +26739,7 @@ export const emojis: CompressedEmojiData[] = [
       'no',
       'deny'
     ],
-    sheet: [56, 26],
+    sheet: [59, 2],
     shortName: 'negative_squared_cross_mark'
   },
   {
@@ -24593,7 +26752,7 @@ export const emojis: CompressedEmojiData[] = [
       'shape',
       'squiggle'
     ],
-    sheet: [56, 37],
+    sheet: [59, 15],
     shortName: 'curly_loop'
   },
   {
@@ -24604,7 +26763,7 @@ export const emojis: CompressedEmojiData[] = [
       'tape',
       'cassette'
     ],
-    sheet: [56, 38],
+    sheet: [59, 16],
     shortName: 'loop'
   },
   {
@@ -24619,7 +26778,7 @@ export const emojis: CompressedEmojiData[] = [
       'economics',
       'bad'
     ],
-    sheet: [56, 49],
+    sheet: [59, 27],
     shortName: 'part_alternation_mark'
   },
   {
@@ -24631,7 +26790,7 @@ export const emojis: CompressedEmojiData[] = [
       'sparkle',
       'green-square'
     ],
-    sheet: [56, 21],
+    sheet: [58, 58],
     shortName: 'eight_spoked_asterisk'
   },
   {
@@ -24643,7 +26802,7 @@ export const emojis: CompressedEmojiData[] = [
       'shape',
       'polygon'
     ],
-    sheet: [56, 22],
+    sheet: [58, 59],
     shortName: 'eight_pointed_black_star'
   },
   {
@@ -24657,7 +26816,7 @@ export const emojis: CompressedEmojiData[] = [
       'good',
       'fireworks'
     ],
-    sheet: [56, 24],
+    sheet: [59, 0],
     shortName: 'sparkle'
   },
   {
@@ -24697,7 +26856,7 @@ export const emojis: CompressedEmojiData[] = [
       'law',
       'legal'
     ],
-    sheet: [53, 18],
+    sheet: [56, 3],
     shortName: 'tm'
   },
   {
@@ -24869,7 +27028,7 @@ export const emojis: CompressedEmojiData[] = [
       '10',
       'blue-square'
     ],
-    sheet: [28, 1],
+    sheet: [29, 56],
     shortName: 'keycap_ten'
   },
   {
@@ -24881,7 +27040,7 @@ export const emojis: CompressedEmojiData[] = [
       'words',
       'blue-square'
     ],
-    sheet: [28, 2],
+    sheet: [29, 57],
     shortName: 'capital_abcd'
   },
   {
@@ -24892,7 +27051,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-square',
       'alphabet'
     ],
-    sheet: [28, 3],
+    sheet: [29, 58],
     shortName: 'abcd'
   },
   {
@@ -24901,9 +27060,14 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'input_numbers',
       'numbers',
-      'blue-square'
+      'blue-square',
+      '1234',
+      '1',
+      '2',
+      '3',
+      '4'
     ],
-    sheet: [28, 4],
+    sheet: [29, 59],
     shortName: '1234'
   },
   {
@@ -24919,7 +27083,7 @@ export const emojis: CompressedEmojiData[] = [
       'glyphs',
       'characters'
     ],
-    sheet: [28, 5],
+    sheet: [29, 60],
     shortName: 'symbols'
   },
   {
@@ -24930,7 +27094,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-square',
       'alphabet'
     ],
-    sheet: [28, 6],
+    sheet: [30, 0],
     shortName: 'abc'
   },
   {
@@ -25011,7 +27175,7 @@ export const emojis: CompressedEmojiData[] = [
       'alphabet',
       'letter'
     ],
-    sheet: [53, 19],
+    sheet: [56, 4],
     shortName: 'information_source'
   },
   {
@@ -25034,7 +27198,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-circle',
       'letter'
     ],
-    sheet: [53, 46],
+    sheet: [56, 31],
     shortName: 'm'
   },
   {
@@ -25148,7 +27312,7 @@ export const emojis: CompressedEmojiData[] = [
       'japanese',
       'destination'
     ],
-    sheet: [4, 57],
+    sheet: [4, 45],
     shortName: 'koko'
   },
   {
@@ -25160,7 +27324,7 @@ export const emojis: CompressedEmojiData[] = [
       'blue-square',
       'katakana'
     ],
-    sheet: [5, 0],
+    sheet: [4, 46],
     shortName: 'sa'
   },
   {
@@ -25175,7 +27339,7 @@ export const emojis: CompressedEmojiData[] = [
       'orange-square',
       'kanji'
     ],
-    sheet: [5, 8],
+    sheet: [4, 54],
     shortName: 'u6708'
   },
   {
@@ -25188,7 +27352,7 @@ export const emojis: CompressedEmojiData[] = [
       'have',
       'kanji'
     ],
-    sheet: [5, 7],
+    sheet: [4, 53],
     shortName: 'u6709'
   },
   {
@@ -25201,7 +27365,7 @@ export const emojis: CompressedEmojiData[] = [
       'green-square',
       'kanji'
     ],
-    sheet: [5, 2],
+    sheet: [4, 48],
     shortName: 'u6307'
   },
   {
@@ -25215,7 +27379,7 @@ export const emojis: CompressedEmojiData[] = [
       'get',
       'circle'
     ],
-    sheet: [5, 12],
+    sheet: [4, 58],
     shortName: 'ideograph_advantage'
   },
   {
@@ -25229,7 +27393,7 @@ export const emojis: CompressedEmojiData[] = [
       'kanji',
       'pink-square'
     ],
-    sheet: [5, 10],
+    sheet: [4, 56],
     shortName: 'u5272'
   },
   {
@@ -25243,7 +27407,7 @@ export const emojis: CompressedEmojiData[] = [
       'japanese',
       'orange-square'
     ],
-    sheet: [5, 1],
+    sheet: [4, 47],
     shortName: 'u7121'
   },
   {
@@ -25259,7 +27423,7 @@ export const emojis: CompressedEmojiData[] = [
       'restricted',
       'red-square'
     ],
-    sheet: [5, 3],
+    sheet: [4, 49],
     shortName: 'u7981'
   },
   {
@@ -25275,7 +27439,7 @@ export const emojis: CompressedEmojiData[] = [
       'yes',
       'orange-circle'
     ],
-    sheet: [5, 13],
+    sheet: [4, 59],
     shortName: 'accept'
   },
   {
@@ -25288,7 +27452,7 @@ export const emojis: CompressedEmojiData[] = [
       'kanji',
       'orange-square'
     ],
-    sheet: [5, 9],
+    sheet: [4, 55],
     shortName: 'u7533'
   },
   {
@@ -25302,7 +27466,7 @@ export const emojis: CompressedEmojiData[] = [
       'kanji',
       'red-square'
     ],
-    sheet: [5, 5],
+    sheet: [4, 51],
     shortName: 'u5408'
   },
   {
@@ -25317,7 +27481,7 @@ export const emojis: CompressedEmojiData[] = [
       'sky',
       'blue-square'
     ],
-    sheet: [5, 4],
+    sheet: [4, 50],
     shortName: 'u7a7a'
   },
   {
@@ -25330,7 +27494,7 @@ export const emojis: CompressedEmojiData[] = [
       'japanese',
       'red-circle'
     ],
-    sheet: [56, 50],
+    sheet: [59, 28],
     shortName: 'congratulations'
   },
   {
@@ -25344,7 +27508,7 @@ export const emojis: CompressedEmojiData[] = [
       'kanji',
       'red-circle'
     ],
-    sheet: [56, 51],
+    sheet: [59, 29],
     shortName: 'secret'
   },
   {
@@ -25356,7 +27520,7 @@ export const emojis: CompressedEmojiData[] = [
       'opening hours',
       'orange-square'
     ],
-    sheet: [5, 11],
+    sheet: [4, 57],
     shortName: 'u55b6'
   },
   {
@@ -25370,7 +27534,7 @@ export const emojis: CompressedEmojiData[] = [
       'red-square',
       'kanji'
     ],
-    sheet: [5, 6],
+    sheet: [4, 52],
     shortName: 'u6e80'
   },
   {
@@ -25382,7 +27546,7 @@ export const emojis: CompressedEmojiData[] = [
       'error',
       'danger'
     ],
-    sheet: [28, 22],
+    sheet: [30, 16],
     shortName: 'red_circle'
   },
   {
@@ -25392,7 +27556,7 @@ export const emojis: CompressedEmojiData[] = [
       'orange_circle',
       'round'
     ],
-    sheet: [36, 55],
+    sheet: [38, 31],
     shortName: 'large_orange_circle'
   },
   {
@@ -25402,14 +27566,14 @@ export const emojis: CompressedEmojiData[] = [
       'yellow_circle',
       'round'
     ],
-    sheet: [36, 56],
+    sheet: [38, 32],
     shortName: 'large_yellow_circle'
   },
   {
     name: 'Large Green Circle',
     unified: '1F7E2',
     keywords: ['green_circle', 'round'],
-    sheet: [36, 57],
+    sheet: [38, 33],
     shortName: 'large_green_circle'
   },
   {
@@ -25421,7 +27585,7 @@ export const emojis: CompressedEmojiData[] = [
       'icon',
       'button'
     ],
-    sheet: [28, 23],
+    sheet: [30, 17],
     shortName: 'large_blue_circle'
   },
   {
@@ -25431,14 +27595,14 @@ export const emojis: CompressedEmojiData[] = [
       'purple_circle',
       'round'
     ],
-    sheet: [37, 0],
+    sheet: [38, 34],
     shortName: 'large_purple_circle'
   },
   {
     name: 'Large Brown Circle',
     unified: '1F7E4',
     keywords: ['brown_circle', 'round'],
-    sheet: [37, 1],
+    sheet: [38, 35],
     shortName: 'large_brown_circle'
   },
   {
@@ -25450,7 +27614,7 @@ export const emojis: CompressedEmojiData[] = [
       'button',
       'round'
     ],
-    sheet: [55, 1],
+    sheet: [57, 41],
     shortName: 'black_circle'
   },
   {
@@ -25461,56 +27625,56 @@ export const emojis: CompressedEmojiData[] = [
       'shape',
       'round'
     ],
-    sheet: [55, 0],
+    sheet: [57, 40],
     shortName: 'white_circle'
   },
   {
     name: 'Large Red Square',
     unified: '1F7E5',
     keywords: ['red_square'],
-    sheet: [37, 2],
+    sheet: [38, 36],
     shortName: 'large_red_square'
   },
   {
     name: 'Large Orange Square',
     unified: '1F7E7',
     keywords: ['orange_square'],
-    sheet: [37, 4],
+    sheet: [38, 38],
     shortName: 'large_orange_square'
   },
   {
     name: 'Large Yellow Square',
     unified: '1F7E8',
     keywords: ['yellow_square'],
-    sheet: [37, 5],
+    sheet: [38, 39],
     shortName: 'large_yellow_square'
   },
   {
     name: 'Large Green Square',
     unified: '1F7E9',
     keywords: ['green_square'],
-    sheet: [37, 6],
+    sheet: [38, 40],
     shortName: 'large_green_square'
   },
   {
     name: 'Large Blue Square',
     unified: '1F7E6',
     keywords: ['blue_square'],
-    sheet: [37, 3],
+    sheet: [38, 37],
     shortName: 'large_blue_square'
   },
   {
     name: 'Large Purple Square',
     unified: '1F7EA',
     keywords: ['purple_square'],
-    sheet: [37, 7],
+    sheet: [38, 41],
     shortName: 'large_purple_square'
   },
   {
     name: 'Large Brown Square',
     unified: '1F7EB',
     keywords: ['brown_square'],
-    sheet: [37, 8],
+    sheet: [38, 42],
     shortName: 'large_brown_square'
   },
   {
@@ -25522,7 +27686,7 @@ export const emojis: CompressedEmojiData[] = [
       'icon',
       'button'
     ],
-    sheet: [56, 44],
+    sheet: [59, 22],
     shortName: 'black_large_square'
   },
   {
@@ -25535,7 +27699,7 @@ export const emojis: CompressedEmojiData[] = [
       'stone',
       'button'
     ],
-    sheet: [56, 45],
+    sheet: [59, 23],
     shortName: 'white_large_square'
   },
   {
@@ -25547,7 +27711,7 @@ export const emojis: CompressedEmojiData[] = [
       'button',
       'icon'
     ],
-    sheet: [53, 52],
+    sheet: [56, 37],
     shortName: 'black_medium_square'
   },
   {
@@ -25559,7 +27723,7 @@ export const emojis: CompressedEmojiData[] = [
       'stone',
       'icon'
     ],
-    sheet: [53, 51],
+    sheet: [56, 36],
     shortName: 'white_medium_square'
   },
   {
@@ -25571,7 +27735,7 @@ export const emojis: CompressedEmojiData[] = [
       'shape',
       'button'
     ],
-    sheet: [53, 54],
+    sheet: [56, 39],
     shortName: 'black_medium_small_square'
   },
   {
@@ -25584,7 +27748,7 @@ export const emojis: CompressedEmojiData[] = [
       'icon',
       'button'
     ],
-    sheet: [53, 53],
+    sheet: [56, 38],
     shortName: 'white_medium_small_square'
   },
   {
@@ -25595,7 +27759,7 @@ export const emojis: CompressedEmojiData[] = [
       'shape',
       'icon'
     ],
-    sheet: [53, 47],
+    sheet: [56, 32],
     shortName: 'black_small_square'
   },
   {
@@ -25606,7 +27770,7 @@ export const emojis: CompressedEmojiData[] = [
       'shape',
       'icon'
     ],
-    sheet: [53, 48],
+    sheet: [56, 33],
     shortName: 'white_small_square'
   },
   {
@@ -25618,7 +27782,7 @@ export const emojis: CompressedEmojiData[] = [
       'jewel',
       'gem'
     ],
-    sheet: [28, 24],
+    sheet: [30, 18],
     shortName: 'large_orange_diamond'
   },
   {
@@ -25630,7 +27794,7 @@ export const emojis: CompressedEmojiData[] = [
       'jewel',
       'gem'
     ],
-    sheet: [28, 25],
+    sheet: [30, 19],
     shortName: 'large_blue_diamond'
   },
   {
@@ -25642,7 +27806,7 @@ export const emojis: CompressedEmojiData[] = [
       'jewel',
       'gem'
     ],
-    sheet: [28, 26],
+    sheet: [30, 20],
     shortName: 'small_orange_diamond'
   },
   {
@@ -25654,7 +27818,7 @@ export const emojis: CompressedEmojiData[] = [
       'jewel',
       'gem'
     ],
-    sheet: [28, 27],
+    sheet: [30, 21],
     shortName: 'small_blue_diamond'
   },
   {
@@ -25667,7 +27831,7 @@ export const emojis: CompressedEmojiData[] = [
       'up',
       'top'
     ],
-    sheet: [28, 28],
+    sheet: [30, 22],
     shortName: 'small_red_triangle'
   },
   {
@@ -25679,7 +27843,7 @@ export const emojis: CompressedEmojiData[] = [
       'direction',
       'bottom'
     ],
-    sheet: [28, 29],
+    sheet: [30, 23],
     shortName: 'small_red_triangle_down'
   },
   {
@@ -25693,7 +27857,7 @@ export const emojis: CompressedEmojiData[] = [
       'crystal',
       'fancy'
     ],
-    sheet: [25, 44],
+    sheet: [27, 47],
     shortName: 'diamond_shape_with_a_dot_inside'
   },
   {
@@ -25706,7 +27870,7 @@ export const emojis: CompressedEmojiData[] = [
       'music',
       'circle'
     ],
-    sheet: [27, 52],
+    sheet: [29, 49],
     shortName: 'radio_button'
   },
   {
@@ -25717,7 +27881,7 @@ export const emojis: CompressedEmojiData[] = [
       'shape',
       'input'
     ],
-    sheet: [28, 21],
+    sheet: [30, 15],
     shortName: 'white_square_button'
   },
   {
@@ -25729,7 +27893,7 @@ export const emojis: CompressedEmojiData[] = [
       'input',
       'frame'
     ],
-    sheet: [28, 20],
+    sheet: [30, 14],
     shortName: 'black_square_button'
   },
   {
@@ -25742,7 +27906,7 @@ export const emojis: CompressedEmojiData[] = [
       'race',
       'gokart'
     ],
-    sheet: [8, 31],
+    sheet: [8, 7],
     shortName: 'checkered_flag'
   },
   {
@@ -25754,7 +27918,7 @@ export const emojis: CompressedEmojiData[] = [
       'milestone',
       'place'
     ],
-    sheet: [34, 50],
+    sheet: [36, 29],
     shortName: 'triangular_flag_on_post'
   },
   {
@@ -25767,14 +27931,14 @@ export const emojis: CompressedEmojiData[] = [
       'country',
       'border'
     ],
-    sheet: [7, 41],
+    sheet: [7, 20],
     shortName: 'crossed_flags'
   },
   {
     name: 'Waving Black Flag',
     unified: '1F3F4',
     keywords: ['black_flag', 'pirate'],
-    sheet: [11, 7],
+    sheet: [10, 35],
     shortName: 'waving_black_flag'
   },
   {
@@ -25789,7 +27953,7 @@ export const emojis: CompressedEmojiData[] = [
       'give up',
       'fail'
     ],
-    sheet: [11, 2],
+    sheet: [10, 30],
     shortName: 'waving_white_flag'
   },
   {
@@ -25809,7 +27973,7 @@ export const emojis: CompressedEmojiData[] = [
       'bisexual',
       'transgender'
     ],
-    sheet: [11, 0],
+    sheet: [10, 28],
     shortName: 'rainbow-flag'
   },
   {
@@ -25819,7 +27983,7 @@ export const emojis: CompressedEmojiData[] = [
       'transgender flag',
       'lgbtq'
     ],
-    sheet: [11, 1],
+    sheet: [10, 29],
     hidden: ['facebook'],
     shortName: 'transgender_flag'
   },
@@ -25833,7 +27997,7 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'banner'
     ],
-    sheet: [11, 3],
+    sheet: [10, 31],
     shortName: 'pirate_flag'
   },
   {
@@ -25852,7 +28016,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'andorra'
     ],
     sheet: [0, 32],
     shortName: 'flag-ad'
@@ -25868,7 +28033,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'united_arab_emirates'
     ],
     sheet: [0, 33],
     shortName: 'flag-ae'
@@ -25882,7 +28048,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'afghanistan'
     ],
     sheet: [0, 34],
     shortName: 'flag-af'
@@ -25897,7 +28064,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'antigua_barbuda'
     ],
     sheet: [0, 35],
     shortName: 'flag-ag'
@@ -25911,7 +28079,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'anguilla'
     ],
     sheet: [0, 36],
     shortName: 'flag-ai'
@@ -25925,7 +28094,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'albania'
     ],
     sheet: [0, 37],
     shortName: 'flag-al'
@@ -25939,7 +28109,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'armenia'
     ],
     sheet: [0, 38],
     shortName: 'flag-am'
@@ -25953,7 +28124,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'angola'
     ],
     sheet: [0, 39],
     shortName: 'flag-ao'
@@ -25967,7 +28139,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'antarctica'
     ],
     sheet: [0, 40],
     shortName: 'flag-aq'
@@ -25981,7 +28154,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'argentina'
     ],
     sheet: [0, 41],
     shortName: 'flag-ar'
@@ -25996,7 +28170,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'american_samoa'
     ],
     sheet: [0, 42],
     shortName: 'flag-as'
@@ -26010,7 +28185,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'austria'
     ],
     sheet: [0, 43],
     shortName: 'flag-at'
@@ -26024,7 +28200,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'australia'
     ],
     sheet: [0, 44],
     shortName: 'flag-au'
@@ -26038,7 +28215,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'aruba'
     ],
     sheet: [0, 45],
     shortName: 'flag-aw'
@@ -26053,7 +28231,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'aland_islands'
     ],
     sheet: [0, 46],
     shortName: 'flag-ax'
@@ -26067,7 +28246,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'azerbaijan'
     ],
     sheet: [0, 47],
     shortName: 'flag-az'
@@ -26082,7 +28262,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'bosnia_herzegovina'
     ],
     sheet: [0, 48],
     shortName: 'flag-ba'
@@ -26096,7 +28277,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'barbados'
     ],
     sheet: [0, 49],
     shortName: 'flag-bb'
@@ -26110,7 +28292,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'bangladesh'
     ],
     sheet: [0, 50],
     shortName: 'flag-bd'
@@ -26124,7 +28307,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'belgium'
     ],
     sheet: [0, 51],
     shortName: 'flag-be'
@@ -26139,7 +28323,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'burkina_faso'
     ],
     sheet: [0, 52],
     shortName: 'flag-bf'
@@ -26153,7 +28338,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'bulgaria'
     ],
     sheet: [0, 53],
     shortName: 'flag-bg'
@@ -26167,7 +28353,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'bahrain'
     ],
     sheet: [0, 54],
     shortName: 'flag-bh'
@@ -26181,7 +28368,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'burundi'
     ],
     sheet: [0, 55],
     shortName: 'flag-bi'
@@ -26195,7 +28383,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'benin'
     ],
     sheet: [0, 56],
     shortName: 'flag-bj'
@@ -26210,7 +28399,8 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'st_barthelemy'
     ],
     sheet: [0, 57],
     shortName: 'flag-bl'
@@ -26224,9 +28414,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'bermuda'
     ],
-    sheet: [1, 0],
+    sheet: [0, 58],
     shortName: 'flag-bm'
   },
   {
@@ -26239,9 +28430,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'brunei'
     ],
-    sheet: [1, 1],
+    sheet: [0, 59],
     shortName: 'flag-bn'
   },
   {
@@ -26253,9 +28445,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'bolivia'
     ],
-    sheet: [1, 2],
+    sheet: [0, 60],
     shortName: 'flag-bo'
   },
   {
@@ -26267,9 +28460,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'caribbean_netherlands'
     ],
-    sheet: [1, 3],
+    sheet: [1, 0],
     shortName: 'flag-bq'
   },
   {
@@ -26281,9 +28475,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'brazil'
     ],
-    sheet: [1, 4],
+    sheet: [1, 1],
     shortName: 'flag-br'
   },
   {
@@ -26295,9 +28490,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'bahamas'
     ],
-    sheet: [1, 5],
+    sheet: [1, 2],
     shortName: 'flag-bs'
   },
   {
@@ -26309,9 +28505,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'bhutan'
     ],
-    sheet: [1, 6],
+    sheet: [1, 3],
     shortName: 'flag-bt'
   },
   {
@@ -26321,7 +28518,7 @@ export const emojis: CompressedEmojiData[] = [
       'flag_bouvet_island',
       'norway'
     ],
-    sheet: [1, 7],
+    sheet: [1, 4],
     shortName: 'flag-bv'
   },
   {
@@ -26333,9 +28530,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'botswana'
     ],
-    sheet: [1, 8],
+    sheet: [1, 5],
     shortName: 'flag-bw'
   },
   {
@@ -26347,9 +28545,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'belarus'
     ],
-    sheet: [1, 9],
+    sheet: [1, 6],
     shortName: 'flag-by'
   },
   {
@@ -26361,9 +28560,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'belize'
     ],
-    sheet: [1, 10],
+    sheet: [1, 7],
     shortName: 'flag-bz'
   },
   {
@@ -26375,9 +28575,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'canada'
     ],
-    sheet: [1, 11],
+    sheet: [1, 8],
     shortName: 'flag-ca'
   },
   {
@@ -26391,9 +28592,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'cocos_islands'
     ],
-    sheet: [1, 12],
+    sheet: [1, 9],
     shortName: 'flag-cc'
   },
   {
@@ -26407,9 +28609,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'congo_kinshasa'
     ],
-    sheet: [1, 13],
+    sheet: [1, 10],
     shortName: 'flag-cd'
   },
   {
@@ -26423,9 +28626,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'central_african_republic'
     ],
-    sheet: [1, 14],
+    sheet: [1, 11],
     shortName: 'flag-cf'
   },
   {
@@ -26437,9 +28641,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'congo_brazzaville'
     ],
-    sheet: [1, 15],
+    sheet: [1, 12],
     shortName: 'flag-cg'
   },
   {
@@ -26451,9 +28656,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'switzerland'
     ],
-    sheet: [1, 16],
+    sheet: [1, 13],
     shortName: 'flag-ch'
   },
   {
@@ -26466,9 +28672,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'cote_d_ivoire'
     ],
-    sheet: [1, 17],
+    sheet: [1, 14],
     shortName: 'flag-ci'
   },
   {
@@ -26481,9 +28688,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'cook_islands'
     ],
-    sheet: [1, 18],
+    sheet: [1, 15],
     shortName: 'flag-ck'
   },
   {
@@ -26494,9 +28702,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'chile'
     ],
-    sheet: [1, 19],
+    sheet: [1, 16],
     shortName: 'flag-cl'
   },
   {
@@ -26508,9 +28717,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'cameroon'
     ],
-    sheet: [1, 20],
+    sheet: [1, 17],
     shortName: 'flag-cm'
   },
   {
@@ -26524,9 +28734,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'country',
       'nation',
-      'banner'
+      'banner',
+      'china'
     ],
-    sheet: [1, 21],
+    sheet: [1, 18],
     shortNames: ['flag-cn'],
     shortName: 'cn'
   },
@@ -26539,9 +28750,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'colombia'
     ],
-    sheet: [1, 22],
+    sheet: [1, 19],
     shortName: 'flag-co'
   },
   {
@@ -26550,7 +28762,7 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'flag_clipperton_island'
     ],
-    sheet: [1, 23],
+    sheet: [1, 20],
     shortName: 'flag-cp'
   },
   {
@@ -26563,9 +28775,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'costa_rica'
     ],
-    sheet: [1, 24],
+    sheet: [1, 21],
     shortName: 'flag-cr'
   },
   {
@@ -26577,9 +28790,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'cuba'
     ],
-    sheet: [1, 25],
+    sheet: [1, 22],
     shortName: 'flag-cu'
   },
   {
@@ -26592,9 +28806,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'cape_verde'
     ],
-    sheet: [1, 26],
+    sheet: [1, 23],
     shortName: 'flag-cv'
   },
   {
@@ -26606,9 +28821,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'curacao'
     ],
-    sheet: [1, 27],
+    sheet: [1, 24],
     shortName: 'flag-cw'
   },
   {
@@ -26621,9 +28837,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'christmas_island'
     ],
-    sheet: [1, 28],
+    sheet: [1, 25],
     shortName: 'flag-cx'
   },
   {
@@ -26635,9 +28852,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'cyprus'
     ],
-    sheet: [1, 29],
+    sheet: [1, 26],
     shortName: 'flag-cy'
   },
   {
@@ -26649,9 +28867,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'czechia'
     ],
-    sheet: [1, 30],
+    sheet: [1, 27],
     shortName: 'flag-cz'
   },
   {
@@ -26663,9 +28882,10 @@ export const emojis: CompressedEmojiData[] = [
       'nation',
       'flag',
       'country',
-      'banner'
+      'banner',
+      'germany'
     ],
-    sheet: [1, 31],
+    sheet: [1, 28],
     shortNames: ['flag-de'],
     shortName: 'de'
   },
@@ -26673,7 +28893,7 @@ export const emojis: CompressedEmojiData[] = [
     name: 'Diego Garcia Flag',
     unified: '1F1E9-1F1EC',
     keywords: ['flag_diego_garcia'],
-    sheet: [1, 32],
+    sheet: [1, 29],
     shortName: 'flag-dg'
   },
   {
@@ -26685,9 +28905,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'djibouti'
     ],
-    sheet: [1, 33],
+    sheet: [1, 30],
     shortName: 'flag-dj'
   },
   {
@@ -26699,9 +28920,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'denmark'
     ],
-    sheet: [1, 34],
+    sheet: [1, 31],
     shortName: 'flag-dk'
   },
   {
@@ -26713,9 +28935,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'dominica'
     ],
-    sheet: [1, 35],
+    sheet: [1, 32],
     shortName: 'flag-dm'
   },
   {
@@ -26728,9 +28951,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'dominican_republic'
     ],
-    sheet: [1, 36],
+    sheet: [1, 33],
     shortName: 'flag-do'
   },
   {
@@ -26742,16 +28966,17 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'algeria'
     ],
-    sheet: [1, 37],
+    sheet: [1, 34],
     shortName: 'flag-dz'
   },
   {
     name: 'Ceuta & Melilla Flag',
     unified: '1F1EA-1F1E6',
     keywords: ['flag_ceuta_melilla'],
-    sheet: [1, 38],
+    sheet: [1, 35],
     shortName: 'flag-ea'
   },
   {
@@ -26763,9 +28988,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'ecuador'
     ],
-    sheet: [1, 39],
+    sheet: [1, 36],
     shortName: 'flag-ec'
   },
   {
@@ -26777,9 +29003,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'estonia'
     ],
-    sheet: [1, 40],
+    sheet: [1, 37],
     shortName: 'flag-ee'
   },
   {
@@ -26791,9 +29018,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'egypt'
     ],
-    sheet: [1, 41],
+    sheet: [1, 38],
     shortName: 'flag-eg'
   },
   {
@@ -26806,9 +29034,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'western_sahara'
     ],
-    sheet: [1, 42],
+    sheet: [1, 39],
     shortName: 'flag-eh'
   },
   {
@@ -26820,9 +29049,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'eritrea'
     ],
-    sheet: [1, 43],
+    sheet: [1, 40],
     shortName: 'flag-er'
   },
   {
@@ -26834,9 +29064,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'spain'
     ],
-    sheet: [1, 44],
+    sheet: [1, 41],
     shortNames: ['flag-es'],
     shortName: 'es'
   },
@@ -26849,9 +29080,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'ethiopia'
     ],
-    sheet: [1, 45],
+    sheet: [1, 42],
     shortName: 'flag-et'
   },
   {
@@ -26864,7 +29096,7 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'banner'
     ],
-    sheet: [1, 46],
+    sheet: [1, 43],
     shortName: 'flag-eu'
   },
   {
@@ -26876,9 +29108,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'finland'
     ],
-    sheet: [1, 47],
+    sheet: [1, 44],
     shortName: 'flag-fi'
   },
   {
@@ -26890,9 +29123,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'fiji'
     ],
-    sheet: [1, 48],
+    sheet: [1, 45],
     shortName: 'flag-fj'
   },
   {
@@ -26906,9 +29140,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'falkland_islands'
     ],
-    sheet: [1, 49],
+    sheet: [1, 46],
     shortName: 'flag-fk'
   },
   {
@@ -26922,9 +29157,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'micronesia'
     ],
-    sheet: [1, 50],
+    sheet: [1, 47],
     shortName: 'flag-fm'
   },
   {
@@ -26937,9 +29173,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'faroe_islands'
     ],
-    sheet: [1, 51],
+    sheet: [1, 48],
     shortName: 'flag-fo'
   },
   {
@@ -26952,9 +29189,10 @@ export const emojis: CompressedEmojiData[] = [
       'nation',
       'france',
       'french',
-      'country'
+      'country',
+      'france'
     ],
-    sheet: [1, 52],
+    sheet: [1, 49],
     shortNames: ['flag-fr'],
     shortName: 'fr'
   },
@@ -26967,9 +29205,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'gabon'
     ],
-    sheet: [1, 53],
+    sheet: [1, 50],
     shortName: 'flag-ga'
   },
   {
@@ -26991,9 +29230,10 @@ export const emojis: CompressedEmojiData[] = [
       'UK',
       'english',
       'england',
-      'union jack'
+      'union jack',
+      'united_kingdom'
     ],
-    sheet: [1, 54],
+    sheet: [1, 51],
     shortNames: ['uk', 'flag-gb'],
     shortName: 'gb'
   },
@@ -27006,9 +29246,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'grenada'
     ],
-    sheet: [1, 55],
+    sheet: [1, 52],
     shortName: 'flag-gd'
   },
   {
@@ -27020,9 +29261,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'georgia'
     ],
-    sheet: [1, 56],
+    sheet: [1, 53],
     shortName: 'flag-ge'
   },
   {
@@ -27035,9 +29277,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'french_guiana'
     ],
-    sheet: [1, 57],
+    sheet: [1, 54],
     shortName: 'flag-gf'
   },
   {
@@ -27049,9 +29292,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'guernsey'
     ],
-    sheet: [2, 0],
+    sheet: [1, 55],
     shortName: 'flag-gg'
   },
   {
@@ -27063,9 +29307,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'ghana'
     ],
-    sheet: [2, 1],
+    sheet: [1, 56],
     shortName: 'flag-gh'
   },
   {
@@ -27077,9 +29322,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'gibraltar'
     ],
-    sheet: [2, 2],
+    sheet: [1, 57],
     shortName: 'flag-gi'
   },
   {
@@ -27091,9 +29337,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'greenland'
     ],
-    sheet: [2, 3],
+    sheet: [1, 58],
     shortName: 'flag-gl'
   },
   {
@@ -27105,9 +29352,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'gambia'
     ],
-    sheet: [2, 4],
+    sheet: [1, 59],
     shortName: 'flag-gm'
   },
   {
@@ -27119,9 +29367,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'guinea'
     ],
-    sheet: [2, 5],
+    sheet: [1, 60],
     shortName: 'flag-gn'
   },
   {
@@ -27133,9 +29382,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'guadeloupe'
     ],
-    sheet: [2, 6],
+    sheet: [2, 0],
     shortName: 'flag-gp'
   },
   {
@@ -27148,9 +29398,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'equatorial_guinea'
     ],
-    sheet: [2, 7],
+    sheet: [2, 1],
     shortName: 'flag-gq'
   },
   {
@@ -27162,9 +29413,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'greece'
     ],
-    sheet: [2, 8],
+    sheet: [2, 2],
     shortName: 'flag-gr'
   },
   {
@@ -27179,9 +29431,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'south_georgia_south_sandwich_islands'
     ],
-    sheet: [2, 9],
+    sheet: [2, 3],
     shortName: 'flag-gs'
   },
   {
@@ -27193,9 +29446,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'guatemala'
     ],
-    sheet: [2, 10],
+    sheet: [2, 4],
     shortName: 'flag-gt'
   },
   {
@@ -27207,9 +29461,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'guam'
     ],
-    sheet: [2, 11],
+    sheet: [2, 5],
     shortName: 'flag-gu'
   },
   {
@@ -27222,9 +29477,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'guinea_bissau'
     ],
-    sheet: [2, 12],
+    sheet: [2, 6],
     shortName: 'flag-gw'
   },
   {
@@ -27236,9 +29492,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'guyana'
     ],
-    sheet: [2, 13],
+    sheet: [2, 7],
     shortName: 'flag-gy'
   },
   {
@@ -27251,9 +29508,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'hong_kong_sar_china'
     ],
-    sheet: [2, 14],
+    sheet: [2, 8],
     shortName: 'flag-hk'
   },
   {
@@ -27262,7 +29520,7 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'flag_heard_mcdonald_islands'
     ],
-    sheet: [2, 15],
+    sheet: [2, 9],
     shortName: 'flag-hm'
   },
   {
@@ -27274,9 +29532,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'honduras'
     ],
-    sheet: [2, 16],
+    sheet: [2, 10],
     shortName: 'flag-hn'
   },
   {
@@ -27288,9 +29547,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'croatia'
     ],
-    sheet: [2, 17],
+    sheet: [2, 11],
     shortName: 'flag-hr'
   },
   {
@@ -27302,9 +29562,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'haiti'
     ],
-    sheet: [2, 18],
+    sheet: [2, 12],
     shortName: 'flag-ht'
   },
   {
@@ -27316,9 +29577,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'hungary'
     ],
-    sheet: [2, 19],
+    sheet: [2, 13],
     shortName: 'flag-hu'
   },
   {
@@ -27331,9 +29593,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'canary_islands'
     ],
-    sheet: [2, 20],
+    sheet: [2, 14],
     shortName: 'flag-ic'
   },
   {
@@ -27344,9 +29607,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'indonesia'
     ],
-    sheet: [2, 21],
+    sheet: [2, 15],
     shortName: 'flag-id'
   },
   {
@@ -27358,9 +29622,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'ireland'
     ],
-    sheet: [2, 22],
+    sheet: [2, 16],
     shortName: 'flag-ie'
   },
   {
@@ -27372,9 +29637,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'israel'
     ],
-    sheet: [2, 23],
+    sheet: [2, 17],
     shortName: 'flag-il'
   },
   {
@@ -27387,9 +29653,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'isle_of_man'
     ],
-    sheet: [2, 24],
+    sheet: [2, 18],
     shortName: 'flag-im'
   },
   {
@@ -27401,9 +29668,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'india'
     ],
-    sheet: [2, 25],
+    sheet: [2, 19],
     shortName: 'flag-in'
   },
   {
@@ -27418,9 +29686,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'british_indian_ocean_territory'
     ],
-    sheet: [2, 26],
+    sheet: [2, 20],
     shortName: 'flag-io'
   },
   {
@@ -27432,9 +29701,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'iraq'
     ],
-    sheet: [2, 27],
+    sheet: [2, 21],
     shortName: 'flag-iq'
   },
   {
@@ -27448,9 +29718,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'iran'
     ],
-    sheet: [2, 28],
+    sheet: [2, 22],
     shortName: 'flag-ir'
   },
   {
@@ -27462,9 +29733,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'iceland'
     ],
-    sheet: [2, 29],
+    sheet: [2, 23],
     shortName: 'flag-is'
   },
   {
@@ -27476,9 +29748,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'italy'
     ],
-    sheet: [2, 30],
+    sheet: [2, 24],
     shortNames: ['flag-it'],
     shortName: 'it'
   },
@@ -27491,9 +29764,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'jersey'
     ],
-    sheet: [2, 31],
+    sheet: [2, 25],
     shortName: 'flag-je'
   },
   {
@@ -27505,9 +29779,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'jamaica'
     ],
-    sheet: [2, 32],
+    sheet: [2, 26],
     shortName: 'flag-jm'
   },
   {
@@ -27519,9 +29794,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'jordan'
     ],
-    sheet: [2, 33],
+    sheet: [2, 27],
     shortName: 'flag-jo'
   },
   {
@@ -27533,9 +29809,12 @@ export const emojis: CompressedEmojiData[] = [
       'nation',
       'flag',
       'country',
-      'banner'
+      'banner',
+      'japan',
+      'jp',
+      'ja'
     ],
-    sheet: [2, 34],
+    sheet: [2, 28],
     shortNames: ['flag-jp'],
     shortName: 'jp'
   },
@@ -27548,9 +29827,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'kenya'
     ],
-    sheet: [2, 35],
+    sheet: [2, 29],
     shortName: 'flag-ke'
   },
   {
@@ -27562,9 +29842,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'kyrgyzstan'
     ],
-    sheet: [2, 36],
+    sheet: [2, 30],
     shortName: 'flag-kg'
   },
   {
@@ -27576,9 +29857,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'cambodia'
     ],
-    sheet: [2, 37],
+    sheet: [2, 31],
     shortName: 'flag-kh'
   },
   {
@@ -27590,9 +29872,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'kiribati'
     ],
-    sheet: [2, 38],
+    sheet: [2, 32],
     shortName: 'flag-ki'
   },
   {
@@ -27604,9 +29887,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'comoros'
     ],
-    sheet: [2, 39],
+    sheet: [2, 33],
     shortName: 'flag-km'
   },
   {
@@ -27620,9 +29904,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'st_kitts_nevis'
     ],
-    sheet: [2, 40],
+    sheet: [2, 34],
     shortName: 'flag-kn'
   },
   {
@@ -27635,9 +29920,10 @@ export const emojis: CompressedEmojiData[] = [
       'nation',
       'flag',
       'country',
-      'banner'
+      'banner',
+      'north_korea'
     ],
-    sheet: [2, 41],
+    sheet: [2, 35],
     shortName: 'flag-kp'
   },
   {
@@ -27650,9 +29936,10 @@ export const emojis: CompressedEmojiData[] = [
       'nation',
       'flag',
       'country',
-      'banner'
+      'banner',
+      'south_korea'
     ],
-    sheet: [2, 42],
+    sheet: [2, 36],
     shortNames: ['flag-kr'],
     shortName: 'kr'
   },
@@ -27665,9 +29952,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'kuwait'
     ],
-    sheet: [2, 43],
+    sheet: [2, 37],
     shortName: 'flag-kw'
   },
   {
@@ -27680,9 +29968,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'cayman_islands'
     ],
-    sheet: [2, 44],
+    sheet: [2, 38],
     shortName: 'flag-ky'
   },
   {
@@ -27694,9 +29983,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'kazakhstan'
     ],
-    sheet: [2, 45],
+    sheet: [2, 39],
     shortName: 'flag-kz'
   },
   {
@@ -27710,9 +30000,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'laos'
     ],
-    sheet: [2, 46],
+    sheet: [2, 40],
     shortName: 'flag-la'
   },
   {
@@ -27724,9 +30015,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'lebanon'
     ],
-    sheet: [2, 47],
+    sheet: [2, 41],
     shortName: 'flag-lb'
   },
   {
@@ -27739,9 +30031,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'st_lucia'
     ],
-    sheet: [2, 48],
+    sheet: [2, 42],
     shortName: 'flag-lc'
   },
   {
@@ -27753,9 +30046,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'liechtenstein'
     ],
-    sheet: [2, 49],
+    sheet: [2, 43],
     shortName: 'flag-li'
   },
   {
@@ -27768,9 +30062,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'sri_lanka'
     ],
-    sheet: [2, 50],
+    sheet: [2, 44],
     shortName: 'flag-lk'
   },
   {
@@ -27782,9 +30077,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'liberia'
     ],
-    sheet: [2, 51],
+    sheet: [2, 45],
     shortName: 'flag-lr'
   },
   {
@@ -27796,9 +30092,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'lesotho'
     ],
-    sheet: [2, 52],
+    sheet: [2, 46],
     shortName: 'flag-ls'
   },
   {
@@ -27810,9 +30107,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'lithuania'
     ],
-    sheet: [2, 53],
+    sheet: [2, 47],
     shortName: 'flag-lt'
   },
   {
@@ -27824,9 +30122,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'luxembourg'
     ],
-    sheet: [2, 54],
+    sheet: [2, 48],
     shortName: 'flag-lu'
   },
   {
@@ -27838,9 +30137,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'latvia'
     ],
-    sheet: [2, 55],
+    sheet: [2, 49],
     shortName: 'flag-lv'
   },
   {
@@ -27852,9 +30152,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'libya'
     ],
-    sheet: [2, 56],
+    sheet: [2, 50],
     shortName: 'flag-ly'
   },
   {
@@ -27866,9 +30167,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'morocco'
     ],
-    sheet: [2, 57],
+    sheet: [2, 51],
     shortName: 'flag-ma'
   },
   {
@@ -27880,9 +30182,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'monaco'
     ],
-    sheet: [3, 0],
+    sheet: [2, 52],
     shortName: 'flag-mc'
   },
   {
@@ -27895,9 +30198,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'moldova'
     ],
-    sheet: [3, 1],
+    sheet: [2, 53],
     shortName: 'flag-md'
   },
   {
@@ -27909,16 +30213,17 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'montenegro'
     ],
-    sheet: [3, 2],
+    sheet: [2, 54],
     shortName: 'flag-me'
   },
   {
     name: 'St. Martin Flag',
     unified: '1F1F2-1F1EB',
     keywords: ['flag_st_martin'],
-    sheet: [3, 3],
+    sheet: [2, 55],
     shortName: 'flag-mf'
   },
   {
@@ -27930,9 +30235,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'madagascar'
     ],
-    sheet: [3, 4],
+    sheet: [2, 56],
     shortName: 'flag-mg'
   },
   {
@@ -27945,9 +30251,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'marshall_islands'
     ],
-    sheet: [3, 5],
+    sheet: [2, 57],
     shortName: 'flag-mh'
   },
   {
@@ -27959,9 +30266,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'north_macedonia'
     ],
-    sheet: [3, 6],
+    sheet: [2, 58],
     shortName: 'flag-mk'
   },
   {
@@ -27973,9 +30281,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'mali'
     ],
-    sheet: [3, 7],
+    sheet: [2, 59],
     shortName: 'flag-ml'
   },
   {
@@ -27987,9 +30296,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'myanmar'
     ],
-    sheet: [3, 8],
+    sheet: [2, 60],
     shortName: 'flag-mm'
   },
   {
@@ -28001,9 +30311,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'mongolia'
     ],
-    sheet: [3, 9],
+    sheet: [3, 0],
     shortName: 'flag-mn'
   },
   {
@@ -28015,9 +30326,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'macao_sar_china'
     ],
-    sheet: [3, 10],
+    sheet: [3, 1],
     shortName: 'flag-mo'
   },
   {
@@ -28031,9 +30343,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'northern_mariana_islands'
     ],
-    sheet: [3, 11],
+    sheet: [3, 2],
     shortName: 'flag-mp'
   },
   {
@@ -28045,9 +30358,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'martinique'
     ],
-    sheet: [3, 12],
+    sheet: [3, 3],
     shortName: 'flag-mq'
   },
   {
@@ -28059,9 +30373,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'mauritania'
     ],
-    sheet: [3, 13],
+    sheet: [3, 4],
     shortName: 'flag-mr'
   },
   {
@@ -28073,9 +30388,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'montserrat'
     ],
-    sheet: [3, 14],
+    sheet: [3, 5],
     shortName: 'flag-ms'
   },
   {
@@ -28087,9 +30403,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'malta'
     ],
-    sheet: [3, 15],
+    sheet: [3, 6],
     shortName: 'flag-mt'
   },
   {
@@ -28101,9 +30418,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'mauritius'
     ],
-    sheet: [3, 16],
+    sheet: [3, 7],
     shortName: 'flag-mu'
   },
   {
@@ -28115,9 +30433,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'maldives'
     ],
-    sheet: [3, 17],
+    sheet: [3, 8],
     shortName: 'flag-mv'
   },
   {
@@ -28129,9 +30448,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'malawi'
     ],
-    sheet: [3, 18],
+    sheet: [3, 9],
     shortName: 'flag-mw'
   },
   {
@@ -28143,9 +30463,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'mexico'
     ],
-    sheet: [3, 19],
+    sheet: [3, 10],
     shortName: 'flag-mx'
   },
   {
@@ -28157,9 +30478,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'malaysia'
     ],
-    sheet: [3, 20],
+    sheet: [3, 11],
     shortName: 'flag-my'
   },
   {
@@ -28171,9 +30493,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'mozambique'
     ],
-    sheet: [3, 21],
+    sheet: [3, 12],
     shortName: 'flag-mz'
   },
   {
@@ -28185,9 +30508,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'namibia'
     ],
-    sheet: [3, 22],
+    sheet: [3, 13],
     shortName: 'flag-na'
   },
   {
@@ -28200,9 +30524,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'new_caledonia'
     ],
-    sheet: [3, 23],
+    sheet: [3, 14],
     shortName: 'flag-nc'
   },
   {
@@ -28214,9 +30539,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'niger'
     ],
-    sheet: [3, 24],
+    sheet: [3, 15],
     shortName: 'flag-ne'
   },
   {
@@ -28229,9 +30555,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'norfolk_island'
     ],
-    sheet: [3, 25],
+    sheet: [3, 16],
     shortName: 'flag-nf'
   },
   {
@@ -28242,9 +30569,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'nigeria'
     ],
-    sheet: [3, 26],
+    sheet: [3, 17],
     shortName: 'flag-ng'
   },
   {
@@ -28256,9 +30584,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'nicaragua'
     ],
-    sheet: [3, 27],
+    sheet: [3, 18],
     shortName: 'flag-ni'
   },
   {
@@ -28270,9 +30599,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'netherlands'
     ],
-    sheet: [3, 28],
+    sheet: [3, 19],
     shortName: 'flag-nl'
   },
   {
@@ -28284,9 +30614,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'norway'
     ],
-    sheet: [3, 29],
+    sheet: [3, 20],
     shortName: 'flag-no'
   },
   {
@@ -28298,9 +30629,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'nepal'
     ],
-    sheet: [3, 30],
+    sheet: [3, 21],
     shortName: 'flag-np'
   },
   {
@@ -28312,9 +30644,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'nauru'
     ],
-    sheet: [3, 31],
+    sheet: [3, 22],
     shortName: 'flag-nr'
   },
   {
@@ -28326,9 +30659,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'niue'
     ],
-    sheet: [3, 32],
+    sheet: [3, 23],
     shortName: 'flag-nu'
   },
   {
@@ -28341,9 +30675,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'new_zealand'
     ],
-    sheet: [3, 33],
+    sheet: [3, 24],
     shortName: 'flag-nz'
   },
   {
@@ -28355,9 +30690,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'oman'
     ],
-    sheet: [3, 34],
+    sheet: [3, 25],
     shortName: 'flag-om'
   },
   {
@@ -28369,9 +30705,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'panama'
     ],
-    sheet: [3, 35],
+    sheet: [3, 26],
     shortName: 'flag-pa'
   },
   {
@@ -28383,9 +30720,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'peru'
     ],
-    sheet: [3, 36],
+    sheet: [3, 27],
     shortName: 'flag-pe'
   },
   {
@@ -28398,9 +30736,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'french_polynesia'
     ],
-    sheet: [3, 37],
+    sheet: [3, 28],
     shortName: 'flag-pf'
   },
   {
@@ -28414,9 +30753,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'papua_new_guinea'
     ],
-    sheet: [3, 38],
+    sheet: [3, 29],
     shortName: 'flag-pg'
   },
   {
@@ -28428,9 +30768,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'philippines'
     ],
-    sheet: [3, 39],
+    sheet: [3, 30],
     shortName: 'flag-ph'
   },
   {
@@ -28442,9 +30783,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'pakistan'
     ],
-    sheet: [3, 40],
+    sheet: [3, 31],
     shortName: 'flag-pk'
   },
   {
@@ -28456,9 +30798,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'poland'
     ],
-    sheet: [3, 41],
+    sheet: [3, 32],
     shortName: 'flag-pl'
   },
   {
@@ -28472,9 +30815,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'st_pierre_miquelon'
     ],
-    sheet: [3, 42],
+    sheet: [3, 33],
     shortName: 'flag-pm'
   },
   {
@@ -28486,9 +30830,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'pitcairn_islands'
     ],
-    sheet: [3, 43],
+    sheet: [3, 34],
     shortName: 'flag-pn'
   },
   {
@@ -28501,9 +30846,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'puerto_rico'
     ],
-    sheet: [3, 44],
+    sheet: [3, 35],
     shortName: 'flag-pr'
   },
   {
@@ -28517,9 +30863,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'palestinian_territories'
     ],
-    sheet: [3, 45],
+    sheet: [3, 36],
     shortName: 'flag-ps'
   },
   {
@@ -28531,9 +30878,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'portugal'
     ],
-    sheet: [3, 46],
+    sheet: [3, 37],
     shortName: 'flag-pt'
   },
   {
@@ -28545,9 +30893,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'palau'
     ],
-    sheet: [3, 47],
+    sheet: [3, 38],
     shortName: 'flag-pw'
   },
   {
@@ -28559,9 +30908,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'paraguay'
     ],
-    sheet: [3, 48],
+    sheet: [3, 39],
     shortName: 'flag-py'
   },
   {
@@ -28573,9 +30923,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'qatar'
     ],
-    sheet: [3, 49],
+    sheet: [3, 40],
     shortName: 'flag-qa'
   },
   {
@@ -28587,9 +30938,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'reunion'
     ],
-    sheet: [3, 50],
+    sheet: [3, 41],
     shortName: 'flag-re'
   },
   {
@@ -28601,9 +30953,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'romania'
     ],
-    sheet: [3, 51],
+    sheet: [3, 42],
     shortName: 'flag-ro'
   },
   {
@@ -28615,9 +30968,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'serbia'
     ],
-    sheet: [3, 52],
+    sheet: [3, 43],
     shortName: 'flag-rs'
   },
   {
@@ -28630,9 +30984,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'russia'
     ],
-    sheet: [3, 53],
+    sheet: [3, 44],
     shortNames: ['flag-ru'],
     shortName: 'ru'
   },
@@ -28645,9 +31000,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'rwanda'
     ],
-    sheet: [3, 54],
+    sheet: [3, 45],
     shortName: 'flag-rw'
   },
   {
@@ -28658,9 +31014,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'saudi_arabia'
     ],
-    sheet: [3, 55],
+    sheet: [3, 46],
     shortName: 'flag-sa'
   },
   {
@@ -28673,9 +31030,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'solomon_islands'
     ],
-    sheet: [3, 56],
+    sheet: [3, 47],
     shortName: 'flag-sb'
   },
   {
@@ -28687,9 +31045,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'seychelles'
     ],
-    sheet: [3, 57],
+    sheet: [3, 48],
     shortName: 'flag-sc'
   },
   {
@@ -28701,9 +31060,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'sudan'
     ],
-    sheet: [4, 0],
+    sheet: [3, 49],
     shortName: 'flag-sd'
   },
   {
@@ -28715,9 +31075,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'sweden'
     ],
-    sheet: [4, 1],
+    sheet: [3, 50],
     shortName: 'flag-se'
   },
   {
@@ -28729,9 +31090,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'singapore'
     ],
-    sheet: [4, 2],
+    sheet: [3, 51],
     shortName: 'flag-sg'
   },
   {
@@ -28747,9 +31109,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'st_helena'
     ],
-    sheet: [4, 3],
+    sheet: [3, 52],
     shortName: 'flag-sh'
   },
   {
@@ -28761,9 +31124,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'slovenia'
     ],
-    sheet: [4, 4],
+    sheet: [3, 53],
     shortName: 'flag-si'
   },
   {
@@ -28772,7 +31136,7 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'flag_svalbard_jan_mayen'
     ],
-    sheet: [4, 5],
+    sheet: [3, 54],
     shortName: 'flag-sj'
   },
   {
@@ -28784,9 +31148,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'slovakia'
     ],
-    sheet: [4, 6],
+    sheet: [3, 55],
     shortName: 'flag-sk'
   },
   {
@@ -28799,9 +31164,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'sierra_leone'
     ],
-    sheet: [4, 7],
+    sheet: [3, 56],
     shortName: 'flag-sl'
   },
   {
@@ -28814,9 +31180,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'san_marino'
     ],
-    sheet: [4, 8],
+    sheet: [3, 57],
     shortName: 'flag-sm'
   },
   {
@@ -28828,9 +31195,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'senegal'
     ],
-    sheet: [4, 9],
+    sheet: [3, 58],
     shortName: 'flag-sn'
   },
   {
@@ -28842,9 +31210,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'somalia'
     ],
-    sheet: [4, 10],
+    sheet: [3, 59],
     shortName: 'flag-so'
   },
   {
@@ -28856,9 +31225,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'suriname'
     ],
-    sheet: [4, 11],
+    sheet: [3, 60],
     shortName: 'flag-sr'
   },
   {
@@ -28871,9 +31241,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'south_sudan'
     ],
-    sheet: [4, 12],
+    sheet: [4, 0],
     shortName: 'flag-ss'
   },
   {
@@ -28887,9 +31258,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'sao_tome_principe'
     ],
-    sheet: [4, 13],
+    sheet: [4, 1],
     shortName: 'flag-st'
   },
   {
@@ -28902,9 +31274,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'el_salvador'
     ],
-    sheet: [4, 14],
+    sheet: [4, 2],
     shortName: 'flag-sv'
   },
   {
@@ -28918,9 +31291,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'sint_maarten'
     ],
-    sheet: [4, 15],
+    sheet: [4, 3],
     shortName: 'flag-sx'
   },
   {
@@ -28934,9 +31308,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'syria'
     ],
-    sheet: [4, 16],
+    sheet: [4, 4],
     shortName: 'flag-sy'
   },
   {
@@ -28948,16 +31323,17 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'eswatini'
     ],
-    sheet: [4, 17],
+    sheet: [4, 5],
     shortName: 'flag-sz'
   },
   {
     name: 'Tristan Da Cunha Flag',
     unified: '1F1F9-1F1E6',
     keywords: ['flag_tristan_da_cunha'],
-    sheet: [4, 18],
+    sheet: [4, 6],
     shortName: 'flag-ta'
   },
   {
@@ -28971,9 +31347,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'turks_caicos_islands'
     ],
-    sheet: [4, 19],
+    sheet: [4, 7],
     shortName: 'flag-tc'
   },
   {
@@ -28985,9 +31362,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'chad'
     ],
-    sheet: [4, 20],
+    sheet: [4, 8],
     shortName: 'flag-td'
   },
   {
@@ -29001,9 +31379,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'french_southern_territories'
     ],
-    sheet: [4, 21],
+    sheet: [4, 9],
     shortName: 'flag-tf'
   },
   {
@@ -29015,9 +31394,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'togo'
     ],
-    sheet: [4, 22],
+    sheet: [4, 10],
     shortName: 'flag-tg'
   },
   {
@@ -29029,9 +31409,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'thailand'
     ],
-    sheet: [4, 23],
+    sheet: [4, 11],
     shortName: 'flag-th'
   },
   {
@@ -29043,9 +31424,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'tajikistan'
     ],
-    sheet: [4, 24],
+    sheet: [4, 12],
     shortName: 'flag-tj'
   },
   {
@@ -29057,9 +31439,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'tokelau'
     ],
-    sheet: [4, 25],
+    sheet: [4, 13],
     shortName: 'flag-tk'
   },
   {
@@ -29072,9 +31455,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'timor_leste'
     ],
-    sheet: [4, 26],
+    sheet: [4, 14],
     shortName: 'flag-tl'
   },
   {
@@ -29085,9 +31469,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'turkmenistan'
     ],
-    sheet: [4, 27],
+    sheet: [4, 15],
     shortName: 'flag-tm'
   },
   {
@@ -29099,9 +31484,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'tunisia'
     ],
-    sheet: [4, 28],
+    sheet: [4, 16],
     shortName: 'flag-tn'
   },
   {
@@ -29113,9 +31499,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'tonga'
     ],
-    sheet: [4, 29],
+    sheet: [4, 17],
     shortName: 'flag-to'
   },
   {
@@ -29127,9 +31514,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'turkey'
     ],
-    sheet: [4, 30],
+    sheet: [4, 18],
     shortName: 'flag-tr'
   },
   {
@@ -29142,9 +31530,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'trinidad_tobago'
     ],
-    sheet: [4, 31],
+    sheet: [4, 19],
     shortName: 'flag-tt'
   },
   {
@@ -29155,9 +31544,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'tuvalu'
     ],
-    sheet: [4, 32],
+    sheet: [4, 20],
     shortName: 'flag-tv'
   },
   {
@@ -29169,9 +31559,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'taiwan'
     ],
-    sheet: [4, 33],
+    sheet: [4, 21],
     shortName: 'flag-tw'
   },
   {
@@ -29185,9 +31576,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'tanzania'
     ],
-    sheet: [4, 34],
+    sheet: [4, 22],
     shortName: 'flag-tz'
   },
   {
@@ -29199,9 +31591,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'ukraine'
     ],
-    sheet: [4, 35],
+    sheet: [4, 23],
     shortName: 'flag-ua'
   },
   {
@@ -29213,9 +31606,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'uganda'
     ],
-    sheet: [4, 36],
+    sheet: [4, 24],
     shortName: 'flag-ug'
   },
   {
@@ -29224,7 +31618,7 @@ export const emojis: CompressedEmojiData[] = [
     keywords: [
       'flag_u_s_outlying_islands'
     ],
-    sheet: [4, 37],
+    sheet: [4, 25],
     shortName: 'flag-um'
   },
   {
@@ -29236,7 +31630,7 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'banner'
     ],
-    sheet: [4, 38],
+    sheet: [4, 26],
     shortName: 'flag-un'
   },
   {
@@ -29250,9 +31644,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'united_states'
     ],
-    sheet: [4, 39],
+    sheet: [4, 27],
     shortNames: ['flag-us'],
     shortName: 'us'
   },
@@ -29265,9 +31660,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'uruguay'
     ],
-    sheet: [4, 40],
+    sheet: [4, 28],
     shortName: 'flag-uy'
   },
   {
@@ -29279,9 +31675,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'uzbekistan'
     ],
-    sheet: [4, 41],
+    sheet: [4, 29],
     shortName: 'flag-uz'
   },
   {
@@ -29294,9 +31691,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'vatican_city'
     ],
-    sheet: [4, 42],
+    sheet: [4, 30],
     shortName: 'flag-va'
   },
   {
@@ -29310,9 +31708,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'st_vincent_grenadines'
     ],
-    sheet: [4, 43],
+    sheet: [4, 31],
     shortName: 'flag-vc'
   },
   {
@@ -29326,9 +31725,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'venezuela'
     ],
-    sheet: [4, 44],
+    sheet: [4, 32],
     shortName: 'flag-ve'
   },
   {
@@ -29343,9 +31743,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'british_virgin_islands'
     ],
-    sheet: [4, 45],
+    sheet: [4, 33],
     shortName: 'flag-vg'
   },
   {
@@ -29359,9 +31760,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'u_s_virgin_islands'
     ],
-    sheet: [4, 46],
+    sheet: [4, 34],
     shortName: 'flag-vi'
   },
   {
@@ -29374,9 +31776,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'vietnam'
     ],
-    sheet: [4, 47],
+    sheet: [4, 35],
     shortName: 'flag-vn'
   },
   {
@@ -29388,9 +31791,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'vanuatu'
     ],
-    sheet: [4, 48],
+    sheet: [4, 36],
     shortName: 'flag-vu'
   },
   {
@@ -29403,9 +31807,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'wallis_futuna'
     ],
-    sheet: [4, 49],
+    sheet: [4, 37],
     shortName: 'flag-wf'
   },
   {
@@ -29417,9 +31822,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'samoa'
     ],
-    sheet: [4, 50],
+    sheet: [4, 38],
     shortName: 'flag-ws'
   },
   {
@@ -29431,9 +31837,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'kosovo'
     ],
-    sheet: [4, 51],
+    sheet: [4, 39],
     shortName: 'flag-xk'
   },
   {
@@ -29445,9 +31852,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'yemen'
     ],
-    sheet: [4, 52],
+    sheet: [4, 40],
     shortName: 'flag-ye'
   },
   {
@@ -29459,9 +31867,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'mayotte'
     ],
-    sheet: [4, 53],
+    sheet: [4, 41],
     shortName: 'flag-yt'
   },
   {
@@ -29474,9 +31883,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'south_africa'
     ],
-    sheet: [4, 54],
+    sheet: [4, 42],
     shortName: 'flag-za'
   },
   {
@@ -29488,9 +31898,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'zambia'
     ],
-    sheet: [4, 55],
+    sheet: [4, 43],
     shortName: 'flag-zm'
   },
   {
@@ -29502,9 +31913,10 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'nation',
       'country',
-      'banner'
+      'banner',
+      'zimbabwe'
     ],
-    sheet: [4, 56],
+    sheet: [4, 44],
     shortName: 'flag-zw'
   },
   {
@@ -29515,7 +31927,7 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'english'
     ],
-    sheet: [11, 4],
+    sheet: [10, 32],
     shortName: 'flag-england'
   },
   {
@@ -29526,7 +31938,7 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'scottish'
     ],
-    sheet: [11, 5],
+    sheet: [10, 33],
     shortName: 'flag-scotland'
   },
   {
@@ -29537,7 +31949,7 @@ export const emojis: CompressedEmojiData[] = [
       'flag',
       'welsh'
     ],
-    sheet: [11, 6],
+    sheet: [10, 34],
     shortName: 'flag-wales'
   }
 ];

@@ -1,12 +1,17 @@
 import * as emojiDataRaw from 'emoji-datasource/emoji.json';
 import fs from 'fs';
-import path from 'path';
+import path from 'node:path';
 import inflection from 'inflection';
 import stringifyObject from 'stringify-object';
+import { fileURLToPath } from "node:url";
 
-import { EmojiData } from './emoji';
+import { EmojiData } from './emoji.js';
 
-const emojiLib = require('emojilib');
+// @ts-ignore
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+import * as emojiLib from 'emojilib';
 // cast types to emojiData
 // @ts-expect-error
 const emojiData: EmojiData[] = emojiDataRaw.default;
