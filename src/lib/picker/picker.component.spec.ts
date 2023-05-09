@@ -29,7 +29,7 @@ describe('PickerComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should update preview on `mouseleave` but should not trigger change detection', fakeAsync(() => {
+  it('should update preview on `mouseenter` and `mouseleave` but should not trigger change detection', fakeAsync(() => {
     const picker = fixture.debugElement.query(By.directive(PickerComponent));
     expect(picker.componentInstance.previewEmoji).toEqual(null);
 

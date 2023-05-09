@@ -49,7 +49,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
             [imageUrlFn]="emojiImageUrlFn"
             [hideObsolete]="hideObsolete"
             [useButton]="emojiUseButton"
-            (emojiOver)="emojiOver.emit($event)"
+            (emojiOverOutsideAngular)="emojiOverOutsideAngular.emit($event)"
             (emojiLeaveOutsideAngular)="emojiLeaveOutsideAngular.emit($event)"
             (emojiClick)="emojiClick.emit($event)"
           ></ngx-emoji>
@@ -93,7 +93,7 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
         [imageUrlFn]="emojiImageUrlFn"
         [hideObsolete]="hideObsolete"
         [useButton]="emojiUseButton"
-        (emojiOver)="emojiOver.emit($event)"
+        (emojiOverOutsideAngular)="emojiOverOutsideAngular.emit($event)"
         (emojiLeaveOutsideAngular)="emojiLeaveOutsideAngular.emit($event)"
         (emojiClick)="emojiClick.emit($event)"
       ></ngx-emoji>
@@ -126,12 +126,12 @@ export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   @Input() emojiBackgroundImageFn?: Emoji['backgroundImageFn'];
   @Input() emojiImageUrlFn?: Emoji['imageUrlFn'];
   @Input() emojiUseButton?: boolean;
-  @Output() emojiOver: Emoji['emojiOver'] = new EventEmitter();
+  @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
   /**
    * Note: the suffix is added explicitly so we know the event is dispatched outside of the Angular zone.
    */
+  @Output() emojiOverOutsideAngular: Emoji['emojiOver'] = new EventEmitter();
   @Output() emojiLeaveOutsideAngular: Emoji['emojiLeave'] = new EventEmitter();
-  @Output() emojiClick: Emoji['emojiClick'] = new EventEmitter();
   @ViewChild('container', { static: true }) container!: ElementRef;
   @ViewChild('label', { static: true }) label!: ElementRef;
   containerStyles: any = {};
