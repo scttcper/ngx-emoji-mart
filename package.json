@@ -11,7 +11,7 @@
     "build-data": "tsx scripts/build-data.ts",
     "test": "ng test --watch=false",
     "test:watch": "ng test",
-    "test:ci": "ng test --watch=false --code-coverage --no-progress --browsers=ChromeHeadless",
+    "test:ci": "ng test --watch=false --code-coverage --no-progress --browsers=ChromeHeadlessCustom",
     "link": "cd dist && npm link",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
