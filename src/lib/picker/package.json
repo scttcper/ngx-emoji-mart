@@ -4,12 +4,9 @@
   "homepage": "https://ngx-emoji-mart.vercel.app",
   "repository": "scttcper/ngx-emoji-mart",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "description": "Customizable Slack-like emoji picker for Angular",
   "peerDependencies": {
-    "@angular/core": ">=14.0.0-0"
+    "@angular/core": ">=15.0.0-0"
   },
   "exports": {
     "./picker": {
@@ -21,5 +18,14 @@
     "angular",
     "emoji",
     "picker"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "release": {
+    "branches": [
+      "master"
+    ]
+  }
 }
