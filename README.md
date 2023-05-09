@@ -3,7 +3,6 @@
 # ngx-emoji-mart
 
 [![npm](https://badge.fury.io/js/%40ctrl%2Fngx-emoji-mart.svg)](https://www.npmjs.org/package/@ctrl/ngx-emoji-mart)
-[![CircleCI](https://badgen.net/circleci/github/scttcper/ngx-emoji-mart)](https://circleci.com/gh/scttcper/ngx-emoji-mart)
 [![codecov](https://img.shields.io/codecov/c/github/scttcper/ngx-emoji-mart.svg)](https://codecov.io/github/scttcper/ngx-emoji-mart)
 
 **DEMO**: https://ngx-emoji-mart.vercel.app
