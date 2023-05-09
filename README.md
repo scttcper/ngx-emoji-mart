@@ -13,6 +13,10 @@ This project is a port of [emoji-mart](https://github.com/missive/emoji-mart) by
 
 ```sh
 npm install @ctrl/ngx-emoji-mart
+# Or if you're using yarn
+yarn add @ctrl/ngx-emoji-mart
+# Or if you're using pnpm
+pnpm install @ctrl/ngx-emoji-mart
 ```
 
 ## Dependencies
@@ -26,34 +30,52 @@ Latest version available for each version of Angular
 | 5.1.2                | 10.x 11.x |
 | 6.2.0                | 12.x 13.x |
 | 7.1.0                | 14.x      |
-| current              | >=15.x    |
+| 8.2.0                | 15.x      |
+| current              | >=16.x    |
 
 ## Components
 
 ### Picker
 
-Import Module in ngModule
+Add `PickerComponent` to your module imports:
 
 ```ts
-import { PickerModule } from '@ctrl/ngx-emoji-mart';
+import { PickerComponent } from '@ctrl/ngx-emoji-mart';
+
+@NgModule({
+  imports: [PickerComponent],
+})
+export class AppModule {}
+
+// Or if using standalone components
+
+@Component({
+  standalone: true,
+  imports: [PickerComponent],
+})
+export class AppComponent {}
 ```
 
-Import styles in styles.scss if using SASS
+Import styles in `styles.scss`:
 
 ```scss
-@import '~@ctrl/ngx-emoji-mart/picker';
+@import '@ctrl/ngx-emoji-mart/picker';
 ```
 
-Or angular-cli can also include it via angular-cli.json
+Or bundle those styles through `angular.json` configuration:
 
-```
-"styles": [
-  "styles.scss",
-  "node_modules/@ctrl/ngx-emoji-mart/picker.css"
-]
+```json
+"build": {
+  "options": {
+    "styles": [
+      "src/styles.scss",
+      "node_modules/@ctrl/ngx-emoji-mart/picker.css"
+    ]
+  }
+}
 ```
 
-use component
+Now we can use the `emoji-mart` component:
 
 ```html
 <emoji-mart title="Pick your emoji…" emoji="point_up"></emoji-mart>
@@ -195,8 +217,10 @@ Sheets are served from [unpkg](https://unpkg.com), a global CDN that serves file
 
 ### Emoji
 
+Add `EmojiComponent` to your module or standalone component `imports`:
+
 ```ts
-import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import { EmojiComponent } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 ```
 
 ```html
@@ -206,7 +230,7 @@ import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 ```
 
 | Prop                                         | Required | Default                   | Description                                                                                                      |
-| -------------------------------------------- | :------: | ------------------------- | ------------------------------------------------------------------------------ |
+| -------------------------------------------- | :------: | ------------------------- | ---------------------------------------------------------------------------------------------------------------- | --- |
 | **emoji**                                    |    ✓     |                           | Either a string or an `emoji` object                                                                             |
 | **size**                                     |    ✓     |                           | The emoji width and height.                                                                                      |
 | **isNative**                                 |          | `false`                   | Renders the native unicode emoji                                                                                 |
@@ -276,6 +300,7 @@ The `Picker` doesn’t have to be mounted for you to take advantage of the advan
 
 ```ts
 import { EmojiSearch } from '@ctrl/ngx-emoji-mart';
+
 class ex {
   constructor(private emojiSearch: EmojiSearch) {
     this.emojiSearch.search('christmas').map(o => o.native);

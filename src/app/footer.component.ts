@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, VERSION } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
+import { GhButtonModule } from '@ctrl/ngx-github-buttons';
 
 @Component({
   selector: 'app-footer',
@@ -25,6 +26,8 @@ import { ChangeDetectionStrategy, Component, VERSION } from '@angular/core';
       }
     `,
   ],
+  standalone: true,
+  imports: [GhButtonModule],
 })
 export class FooterComponent {
   version = VERSION.full;

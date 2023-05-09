@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { EmojiEvent } from '../lib/picker/ngx-emoji';
+import { CommonModule } from '@angular/common';
+
+import { EmojiComponent, EmojiEvent } from '../lib/picker/ngx-emoji';
+import { PickerComponent } from '../lib/picker/picker.component';
+import { FooterComponent } from './footer.component';
 
 const CUSTOM_EMOJIS = [
   {
@@ -25,19 +29,13 @@ const CUSTOM_EMOJIS = [
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styles: [],
+  standalone: true,
+  imports: [CommonModule, PickerComponent, EmojiComponent, FooterComponent],
 })
 export class AppComponent {
-  themes = [
-    'native',
-    'apple',
-    'google',
-    'twitter',
-    'facebook',
-  ];
+  themes = ['native', 'apple', 'google', 'twitter', 'facebook'];
   darkMode: undefined | boolean = !!(
-    typeof matchMedia === 'function' &&
-    matchMedia('(prefers-color-scheme: dark)').matches
+    typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: dark)').matches
   );
   darkestMode: undefined | boolean = undefined;
   set = 'native';
@@ -52,8 +50,7 @@ export class AppComponent {
     if (mode === undefined) {
       this.darkestMode = mode;
       this.darkMode = !!(
-        typeof matchMedia === 'function' &&
-        matchMedia('(prefers-color-scheme: dark)').matches
+        typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: dark)').matches
       );
     } else {
       this.darkMode = mode;

@@ -1,4 +1,4 @@
-import { Emoji, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import { Emoji, EmojiComponent, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import {
   AfterViewInit,
   ChangeDetectionStrategy,
@@ -13,7 +13,9 @@ import {
   SimpleChanges,
   ViewChild,
 } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Observable, Subject } from 'rxjs';
+
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 
 @Component({
@@ -101,6 +103,8 @@ import { EmojiFrequentlyService } from './emoji-frequently.service';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
+  standalone: true,
+  imports: [CommonModule, EmojiComponent],
 })
 export class CategoryComponent implements OnChanges, OnInit, AfterViewInit {
   @Input() emojis: any[] | null = null;

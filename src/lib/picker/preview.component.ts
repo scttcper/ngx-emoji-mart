@@ -1,4 +1,4 @@
-import { Emoji, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import { Emoji, EmojiComponent, EmojiData, EmojiService } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -8,6 +8,9 @@ import {
   OnChanges,
   Output,
 } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { SkinComponent } from './skins.component';
 
 @Component({
   selector: 'emoji-preview',
@@ -74,6 +77,8 @@ import {
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
+  standalone: true,
+  imports: [CommonModule, EmojiComponent, SkinComponent],
 })
 export class PreviewComponent implements OnChanges {
   @Input() title?: string;

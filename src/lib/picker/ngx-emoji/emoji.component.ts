@@ -11,6 +11,7 @@ import {
   ViewChild,
   inject,
 } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { EMPTY, Subject, fromEvent, switchMap, takeUntil } from 'rxjs';
 
 import { EmojiData } from './data/data.interfaces';
@@ -81,6 +82,8 @@ export interface EmojiEvent {
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class EmojiComponent implements OnChanges, Emoji, OnDestroy {
   @Input() skin: Emoji['skin'] = 1;
