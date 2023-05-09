@@ -4,6 +4,33 @@ import { TestBed } from '@angular/core/testing';
 import { EmojiModule } from './emoji.module';
 
 describe('EmojiComponent', () => {
+  it('should trigger change detection whenever `emojiOver` has observers', () => {
+    @Component({
+      template: '<ngx-emoji (emojiOver)="onEmojiOver()"></ngx-emoji>',
+    })
+    class TestComponent {
+      onEmojiOver() {}
+    }
+
+    TestBed.configureTestingModule({
+      imports: [EmojiModule],
+      declarations: [TestComponent],
+    });
+
+    const fixture = TestBed.createComponent(TestComponent);
+    fixture.detectChanges();
+
+    const appRef = TestBed.inject(ApplicationRef);
+    spyOn(appRef, 'tick');
+    spyOn(fixture.componentInstance, 'onEmojiOver');
+
+    const emoji = fixture.nativeElement.querySelector('span.emoji-mart-emoji');
+    emoji.dispatchEvent(new MouseEvent('mouseenter'));
+
+    expect(appRef.tick).toHaveBeenCalledTimes(1);
+    expect(fixture.componentInstance.onEmojiOver).toHaveBeenCalled();
+  });
+
   it('should trigger change detection whenever `emojiLeave` has observers', () => {
     @Component({
       template: '<ngx-emoji (emojiLeave)="onEmojiLeave()"></ngx-emoji>',
