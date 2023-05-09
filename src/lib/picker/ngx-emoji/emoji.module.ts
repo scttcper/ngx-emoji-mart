@@ -1,11 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { EmojiComponent } from './emoji.component';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [EmojiComponent],
   exports: [EmojiComponent],
-  declarations: [EmojiComponent],
 })
 export class EmojiModule {}

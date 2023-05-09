@@ -1,4 +1,4 @@
-import { isPlatformBrowser } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -31,6 +31,8 @@ import { PreviewComponent } from './preview.component';
 import { SearchComponent } from './search.component';
 import * as icons from './svgs';
 import { measureScrollbar } from './utils';
+
+import { AnchorsComponent } from './anchors.component';
 
 const I18N: any = {
   search: 'Search',
@@ -65,6 +67,8 @@ const I18N: any = {
   templateUrl: './picker.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
+  standalone: true,
+  imports: [CommonModule, AnchorsComponent, SearchComponent, PreviewComponent, CategoryComponent],
 })
 export class PickerComponent implements OnInit, OnDestroy {
   @Input() perLine = 9;

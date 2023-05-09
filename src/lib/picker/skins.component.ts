@@ -1,20 +1,12 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  EventEmitter,
-  Input,
-  Output,
-} from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { Emoji } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 
 @Component({
   selector: 'emoji-skins',
   template: `
-    <section
-      class="emoji-mart-skin-swatches"
-      [class.opened]="opened"
-    >
+    <section class="emoji-mart-skin-swatches" [class.opened]="opened">
       <span
         *ngFor="let skinTone of skinTones"
         class="emoji-mart-skin-swatch"
@@ -39,6 +31,8 @@ import { Emoji } from '@ctrl/ngx-emoji-mart/ngx-emoji';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   preserveWhitespaces: false,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class SkinComponent {
   /** currently selected skin */

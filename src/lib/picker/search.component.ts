@@ -8,6 +8,7 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { EmojiSearch } from './emoji-search.service';
 
@@ -55,6 +56,8 @@ let id = 0;
     </div>
   `,
   preserveWhitespaces: false,
+  standalone: true,
+  imports: [FormsModule],
 })
 export class SearchComponent implements AfterViewInit, OnInit {
   @Input() maxResults = 75;
