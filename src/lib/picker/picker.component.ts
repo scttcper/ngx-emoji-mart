@@ -208,7 +208,6 @@ export class PickerComponent implements OnInit, OnDestroy {
         const newEmojis = [];
 
         const { emojis } = category;
-        // eslint-disable-next-line @typescript-eslint/prefer-for-of
         for (let emojiIndex = 0; emojiIndex < emojis!.length; emojiIndex++) {
           const emoji = emojis![emojiIndex];
           if (this.emojisToShowFilter(emoji)) {
@@ -272,7 +271,6 @@ export class PickerComponent implements OnInit, OnDestroy {
       // component and going down to the children.
       this.ref.detectChanges();
 
-      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       isPlatformBrowser(this.platformId) &&
         this.ngZone.runOutsideAngular(() => {
           // The `updateCategoriesSize` doesn't change properties that are used
