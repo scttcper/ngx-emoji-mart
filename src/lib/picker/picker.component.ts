@@ -121,7 +121,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   nextScroll?: string;
   scrollTop?: number;
   firstRender = true;
-  previewEmoji: any;
+  previewEmoji: EmojiData | null = null;
   animationFrameRequestId: number | null = null;
   NAMESPACE = 'emoji-mart';
   measureScrollbar = 0;
@@ -145,7 +145,7 @@ export class PickerComponent implements OnInit, OnDestroy {
 
   @Input()
   backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
-    `https://unpkg.com/emoji-datasource-${this.set}@6.0.1/img/${this.set}/sheets-256/${this.sheetSize}.png`
+    `https://unpkg.com/emoji-datasource-${this.set}@6.0.1/img/${this.set}/sheets-256/${this.sheetSize}.png`;
 
   constructor(
     private ngZone: NgZone,
@@ -451,18 +451,19 @@ export class PickerComponent implements OnInit, OnDestroy {
 
     this.previewEmoji = $event.emoji;
     this.cancelAnimationFrame();
-    this.ref?.detectChanges();
+    this.ref.detectChanges();
   }
   handleEmojiLeave() {
     if (!this.showPreview || !this.previewRef) {
       return;
     }
-
-    this.ngZone.runOutsideAngular(() => {
-      this.animationFrameRequestId = requestAnimationFrame(() => {
-        this.previewEmoji = null;
-        this.ref.detectChanges();
-      });
+    // Note: `handleEmojiLeave` will be invoked outside of the Angular zone because of the `mouseleave`
+    //       event set up outside of the Angular zone in `ngx-emoji`. See `setupMouseLeaveListener`.
+    //       This is done explicitly because we don't have to run redundant change detection since we
+    //       would still want to leave the Angular zone here when scheduling animation frame.
+    this.animationFrameRequestId = requestAnimationFrame(() => {
+      this.previewEmoji = null;
+      this.ref.detectChanges();
     });
   }
   handleEmojiClick($event: EmojiEvent) {
