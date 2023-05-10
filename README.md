@@ -280,12 +280,12 @@ const customEmojis = [
     text: '',
     emoticons: [],
     keywords: ['test', 'flag'],
-    spriteUrl: 'https://unpkg.com/emoji-datasource-twitter@6.0.1/img/twitter/sheets-256/64.png',
+    spriteUrl: 'https://cdn.jsdelivr.net/npm/emoji-datasource-twitter@14.0.0/img/twitter/sheets-256/64.png',
     sheet_x: 1,
     sheet_y: 1,
     size: 64,
-    sheetColumns: 57,
-    sheetRows: 58,
+    sheetColumns: 61,
+    sheetRows: 57,
   },
 ];
 ```
