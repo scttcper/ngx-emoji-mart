@@ -131,7 +131,7 @@ export class EmojiService {
     set: Emoji['set'] = 'apple',
     size: Emoji['size'] = 24,
     sheetSize: Emoji['sheetSize'] = 64,
-    sheetRows: Emoji['sheetRows'] = 57,
+    sheetRows: Emoji['sheetRows'] = 60,
     backgroundImageFn: Emoji['backgroundImageFn'] = DEFAULT_BACKGROUNDFN,
     sheetColumns = 61,
     url?: string,

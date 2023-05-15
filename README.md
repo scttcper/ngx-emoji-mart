@@ -285,7 +285,7 @@ const customEmojis = [
     sheet_y: 1,
     size: 64,
     sheetColumns: 61,
-    sheetRows: 57,
+    sheetRows: 60,
   },
 ];
 ```
