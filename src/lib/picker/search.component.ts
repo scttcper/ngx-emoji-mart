@@ -4,6 +4,8 @@ import {
   ElementRef,
   EventEmitter,
   Input,
+  NgZone,
+  OnDestroy,
   OnInit,
   Output,
   ViewChild,
@@ -11,6 +13,7 @@ import {
 import { FormsModule } from '@angular/forms';
 
 import { EmojiSearch } from './emoji-search.service';
+import { Subject, fromEvent, takeUntil } from 'rxjs';
 
 let id = 0;
 
@@ -22,7 +25,6 @@ let id = 0;
         [id]="inputId"
         #inputRef
         type="search"
-        (keyup.enter)="handleEnterKey($event)"
         [placeholder]="i18n.search"
         [autofocus]="autoFocus"
         [(ngModel)]="query"
@@ -59,7 +61,7 @@ let id = 0;
   standalone: true,
   imports: [FormsModule],
 })
-export class SearchComponent implements AfterViewInit, OnInit {
+export class SearchComponent implements AfterViewInit, OnInit, OnDestroy {
   @Input() maxResults = 75;
   @Input() autoFocus = false;
   @Input() i18n: any;
@@ -69,35 +71,38 @@ export class SearchComponent implements AfterViewInit, OnInit {
   @Input() icons!: { [key: string]: string };
   @Input() emojisToShowFilter?: (x: any) => boolean;
   @Output() searchResults = new EventEmitter<any[]>();
-  @Output() enterKey = new EventEmitter<any>();
-  @ViewChild('inputRef', { static: true }) private inputRef!: ElementRef;
+  @Output() enterKeyOutsideAngular = new EventEmitter<KeyboardEvent>();
+  @ViewChild('inputRef', { static: true }) private inputRef!: ElementRef<HTMLInputElement>;
   isSearching = false;
   icon?: string;
   query = '';
   inputId = `emoji-mart-search-${++id}`;
 
-  constructor(private emojiSearch: EmojiSearch) {}
+  private destroy$ = new Subject<void>();
+
+  constructor(private ngZone: NgZone, private emojiSearch: EmojiSearch) {}
 
   ngOnInit() {
     this.icon = this.icons.search;
+    this.setupKeyupListener();
   }
+
   ngAfterViewInit() {
     if (this.autoFocus) {
       this.inputRef.nativeElement.focus();
     }
   }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+  }
+
   clear() {
     this.query = '';
     this.handleSearch('');
     this.inputRef.nativeElement.focus();
   }
-  handleEnterKey($event: Event) {
-    if (!this.query) {
-      return;
-    }
-    this.enterKey.emit($event);
-    $event.preventDefault();
-  }
+
   handleSearch(value: string) {
     if (value === '') {
       this.icon = this.icons.search;
@@ -116,7 +121,22 @@ export class SearchComponent implements AfterViewInit, OnInit {
     ) as any[];
     this.searchResults.emit(emojis);
   }
+
   handleChange() {
     this.handleSearch(this.query);
+  }
+
+  private setupKeyupListener(): void {
+    this.ngZone.runOutsideAngular(() =>
+      fromEvent<KeyboardEvent>(this.inputRef.nativeElement, 'keyup')
+        .pipe(takeUntil(this.destroy$))
+        .subscribe($event => {
+          if (!this.query || $event.key !== 'Enter') {
+            return;
+          }
+          this.enterKeyOutsideAngular.emit($event);
+          $event.preventDefault();
+        }),
+    );
   }
 }

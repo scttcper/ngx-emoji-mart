@@ -402,6 +402,7 @@ export class PickerComponent implements OnInit, OnDestroy {
       this.ref.detectChanges();
     }
   }
+
   handleSearch($emojis: any[] | null) {
     this.SEARCH_CATEGORY.emojis = $emojis;
     for (const component of this.categoryRefs.toArray()) {
@@ -417,12 +418,18 @@ export class PickerComponent implements OnInit, OnDestroy {
     this.handleScroll();
   }
 
-  handleEnterKey($event: Event, emoji?: EmojiData) {
+  handleEnterKey($event: Event, emoji?: EmojiData): void {
+    // Note: the `handleEnterKey` is invoked when the search component dispatches the
+    //       `enterKeyOutsideAngular` event or when any emoji is clicked thus `emojiClickOutsideAngular`
+    //       event is dispatched. Both events are dispatched outside of the Angular zone to prevent
+    //       no-op ticks, basically when users outside of the picker component are not listening
+    //       to any of these events.
+
     if (!emoji) {
       if (this.SEARCH_CATEGORY.emojis !== null && this.SEARCH_CATEGORY.emojis.length) {
         emoji = this.SEARCH_CATEGORY.emojis[0];
         if (emoji) {
-          this.emojiSelect.emit({ $event, emoji });
+          dispatchInAngularContextIfObserved(this.emojiSelect, this.ngZone, { $event, emoji });
         } else {
           return;
         }
@@ -435,8 +442,10 @@ export class PickerComponent implements OnInit, OnDestroy {
 
     const component = this.categoryRefs.toArray()[1];
     if (component && this.enableFrequentEmojiSort) {
-      component.updateRecentEmojis();
-      component.ref.markForCheck();
+      this.ngZone.run(() => {
+        component.updateRecentEmojis();
+        component.ref.markForCheck();
+      });
     }
   }
   handleEmojiOver($event: EmojiEvent) {
@@ -455,6 +464,7 @@ export class PickerComponent implements OnInit, OnDestroy {
     this.cancelAnimationFrame();
     this.ref.detectChanges();
   }
+
   handleEmojiLeave() {
     if (!this.showPreview || !this.previewRef) {
       return;
@@ -468,16 +478,21 @@ export class PickerComponent implements OnInit, OnDestroy {
       this.ref.detectChanges();
     });
   }
+
   handleEmojiClick($event: EmojiEvent) {
-    this.emojiClick.emit($event);
-    this.emojiSelect.emit($event);
+    // Note: we're getting back into the Angular zone because click events on emojis are handled
+    //       outside of the Angular zone.
+    dispatchInAngularContextIfObserved(this.emojiClick, this.ngZone, $event);
+    dispatchInAngularContextIfObserved(this.emojiSelect, this.ngZone, $event);
     this.handleEnterKey($event.$event, $event.emoji);
   }
+
   handleSkinChange(skin: Emoji['skin']) {
     this.skin = skin;
     localStorage.setItem(`${this.NAMESPACE}.skin`, String(skin));
     this.skinChange.emit(skin);
   }
+
   getWidth(): string {
     if (this.style && this.style.width) {
       return this.style.width;
@@ -490,5 +505,18 @@ export class PickerComponent implements OnInit, OnDestroy {
       cancelAnimationFrame(this.animationFrameRequestId);
       this.animationFrameRequestId = null;
     }
+  }
+}
+
+/**
+ * This is only a helper function because the same code is being re-used many times.
+ */
+function dispatchInAngularContextIfObserved<T>(
+  emitter: EventEmitter<T>,
+  ngZone: NgZone,
+  value: T,
+): void {
+  if (emitter.observed) {
+    ngZone.run(() => emitter.emit(value));
   }
 }

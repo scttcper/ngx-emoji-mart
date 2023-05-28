@@ -17,7 +17,7 @@
     *ngIf="enableSearch"
     [i18n]="i18n"
     (searchResults)="handleSearch($event)"
-    (enterKey)="handleEnterKey($event)"
+    (enterKeyOutsideAngular)="handleEnterKey($event)"
     [include]="include"
     [exclude]="exclude"
     [custom]="custom"
@@ -53,7 +53,7 @@
       [emojiUseButton]="useButton"
       (emojiOverOutsideAngular)="handleEmojiOver($event)"
       (emojiLeaveOutsideAngular)="handleEmojiLeave()"
-      (emojiClick)="handleEmojiClick($event)"
+      (emojiClickOutsideAngular)="handleEmojiClick($event)"
     ></emoji-category>
   </section>
   <div class="emoji-mart-bar" *ngIf="showPreview">
