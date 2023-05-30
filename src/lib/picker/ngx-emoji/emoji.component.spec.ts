@@ -57,4 +57,31 @@ describe('EmojiComponent', () => {
     expect(appRef.tick).toHaveBeenCalledTimes(1);
     expect(fixture.componentInstance.onEmojiLeave).toHaveBeenCalled();
   });
+
+  it('should trigger change detection whenever `emojiClick` has observers', () => {
+    @Component({
+      template: '<ngx-emoji (emojiClick)="onEmojiClick()"></ngx-emoji>',
+    })
+    class TestComponent {
+      onEmojiClick() {}
+    }
+
+    TestBed.configureTestingModule({
+      imports: [EmojiModule],
+      declarations: [TestComponent],
+    });
+
+    const fixture = TestBed.createComponent(TestComponent);
+    fixture.detectChanges();
+
+    const appRef = TestBed.inject(ApplicationRef);
+    spyOn(appRef, 'tick');
+    spyOn(fixture.componentInstance, 'onEmojiClick');
+
+    const emoji = fixture.nativeElement.querySelector('span.emoji-mart-emoji');
+    emoji.dispatchEvent(new MouseEvent('click'));
+
+    expect(appRef.tick).toHaveBeenCalledTimes(1);
+    expect(fixture.componentInstance.onEmojiClick).toHaveBeenCalled();
+  });
 });
