@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { environment } from '../environments/environment';
 import { EmojiComponent, EmojiEvent } from '../lib/picker/ngx-emoji';
 import { PickerComponent } from '../lib/picker/picker.component';
 import { FooterComponent } from './footer.component';
@@ -41,6 +42,8 @@ export class AppComponent {
   set = 'native';
   native = true;
   CUSTOM_EMOJIS = CUSTOM_EMOJIS;
+
+  readonly environment = environment;
 
   setTheme(set: string) {
     this.native = set === 'native';

@@ -6,22 +6,11 @@
   <div class="flex justify-center gap-1 my-3">
     <button
       type="button"
-      class="
-        inline-flex
-        items-center
-        px-3
-        py-2
-        border border-gray-300
-        shadow-sm
-        text-sm
-        leading-4
-        font-medium
-        rounded-md
-        text-gray-700
-        focus:outline-none
-        focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500
-      "
-      [ngClass]="{ 'bg-indigo-600 text-white': theme === set, 'bg-white hover:bg-gray-50': theme !== set }"
+      class="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500"
+      [ngClass]="{
+        'bg-indigo-600 text-white': theme === set,
+        'bg-white hover:bg-gray-50': theme !== set
+      }"
       *ngFor="let theme of themes"
       (click)="setTheme(theme)"
     >
@@ -32,70 +21,34 @@
   <div class="flex justify-center gap-1 my-2">
     <button
       type="button"
-      class="
-          inline-flex
-          items-center
-          px-3
-          py-2
-          border border-gray-300
-          shadow-sm
-          text-sm
-          leading-4
-          font-medium
-          rounded-md
-          text-gray-700
-          hover:bg-gray-50
-          focus:outline-none
-          focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500
-        "
-      [ngClass]="{ 'bg-indigo-600 text-white': darkestMode === undefined, 'bg-white hover:bg-gray-50': darkestMode !== undefined }"
+      class="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500"
+      [ngClass]="{
+        'bg-indigo-600 text-white': darkestMode === undefined,
+        'bg-white hover:bg-gray-50': darkestMode !== undefined
+      }"
       (click)="setDarkmode(undefined)"
     >
       auto
     </button>
     <button
       type="button"
-      class="
-        inline-flex
-        items-center
-        px-3
-        py-2
-        border border-gray-300
-        shadow-sm
-        text-sm
-        leading-4
-        font-medium
-        rounded-md
-        text-gray-700
-        hover:bg-gray-50
-        focus:outline-none
-        focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500
-      "
+      class="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500"
       (click)="setDarkmode(true)"
-      [ngClass]="{ 'bg-indigo-600 text-white': darkestMode === true, 'bg-white hover:bg-gray-50': darkestMode !== true }"
+      [ngClass]="{
+        'bg-indigo-600 text-white': darkestMode === true,
+        'bg-white hover:bg-gray-50': darkestMode !== true
+      }"
     >
       dark
     </button>
     <button
       type="button"
-      class="
-        inline-flex
-        items-center
-        px-3
-        py-2
-        border border-gray-300
-        shadow-sm
-        text-sm
-        leading-4
-        font-medium
-        rounded-md
-        text-gray-700
-        hover:bg-gray-50
-        focus:outline-none
-        focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500
-      "
+      class="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500"
       (click)="setDarkmode(false)"
-      [ngClass]="{ 'bg-indigo-600 text-white': darkestMode === false, 'bg-white hover:bg-gray-50': darkestMode !== false }"
+      [ngClass]="{
+        'bg-indigo-600 text-white': darkestMode === false,
+        'bg-white hover:bg-gray-50': darkestMode !== false
+      }"
     >
       light
     </button>
@@ -118,4 +71,9 @@
   </div>
 </div>
 
-<app-footer></app-footer>
+<!--
+  We should be rendering `app-footer` only when we deploy to Vercel.
+  There's no reason to render it locally or when running Cypress tests
+  since it makes HTTP requests to get GH stats.
+-->
+<app-footer *ngIf="environment.vercel"></app-footer>

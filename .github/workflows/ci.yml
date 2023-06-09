@@ -16,11 +16,22 @@ jobs:
           node-version: 20
           cache: 'npm'
       - run: npm ci
-      - name: lint
+
+      - name: Run ESLint
         run: npm run lint
-      - run: npm run build
-      - name: test
+
+      - name: Build library
+        run: npm run build
+
+      - name: Run unit tests
         run: npm run test:ci
+
+      - name: Build integration app
+        run: npm run build:integration:prod
+
+      - name: Run Cypress
+        run: npm run e2e:ci
+
       - name: coverage
         uses: codecov/codecov-action@v3
         with:

@@ -1,4 +1,4 @@
 export const environment = {
-  vercel: false,
+  vercel: true,
   production: true,
 };
