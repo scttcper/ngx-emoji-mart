@@ -175,7 +175,7 @@ export class EmojiComponent implements OnChanges, Emoji, OnDestroy {
       this.style = { fontSize: `${this.size}px` };
 
       if (this.forceSize) {
-        this.style.display = 'flex';
+        this.style.display = 'inline-flex';
         this.style.justifyContent = 'center';
         this.style.alignItems = 'center';
         this.style.width = `${this.size}px`;
