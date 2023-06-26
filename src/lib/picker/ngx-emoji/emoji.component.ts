@@ -173,7 +173,6 @@ export class EmojiComponent implements OnChanges, Emoji, OnDestroy {
     if (this.isNative && data.unified && data.native) {
       // hide older emoji before the split into gendered emoji
       this.style = { fontSize: `${this.size}px` };
-      console.log(this.forceSize)
 
       if (this.forceSize) {
         this.style.display = 'flex';
