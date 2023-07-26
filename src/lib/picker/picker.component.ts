@@ -5,7 +5,6 @@ import {
   Component,
   ElementRef,
   EventEmitter,
-  Inject,
   Input,
   NgZone,
   OnDestroy,
@@ -13,18 +12,16 @@ import {
   Output,
   PLATFORM_ID,
   QueryList,
-  Renderer2,
   ViewChild,
   ViewChildren,
+  inject,
 } from '@angular/core';
+import { Subject, firstValueFrom, fromEvent } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
-import {
-  categories,
-  Emoji,
-  EmojiCategory,
-  EmojiData,
-  EmojiEvent,
-} from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import { EmojiLoaderService } from '@ctrl/ngx-emoji-mart/loader';
+import type { Emoji, EmojiCategory, EmojiData, EmojiEvent } from '@ctrl/ngx-emoji-mart/types';
+
 import { CategoryComponent } from './category.component';
 import { EmojiFrequentlyService } from './emoji-frequently.service';
 import { PreviewComponent } from './preview.component';
@@ -114,7 +111,7 @@ export class PickerComponent implements OnInit, OnDestroy {
   @Output() emojiClick = new EventEmitter<any>();
   @Output() emojiSelect = new EventEmitter<any>();
   @Output() skinChange = new EventEmitter<Emoji['skin']>();
-  @ViewChild('scrollRef', { static: true }) private scrollRef!: ElementRef;
+  @ViewChild('scrollRef', { static: true }) private scrollRef!: ElementRef<HTMLElement>;
   @ViewChild(PreviewComponent, { static: false }) previewRef?: PreviewComponent;
   @ViewChild(SearchComponent, { static: false }) searchRef?: SearchComponent;
   @ViewChildren(CategoryComponent) categoryRefs!: QueryList<CategoryComponent>;
@@ -145,7 +142,11 @@ export class PickerComponent implements OnInit, OnDestroy {
     name: 'Custom',
     emojis: [],
   };
-  private scrollListener!: () => void;
+
+  private destroyed = false;
+  private destroy$ = new Subject<void>();
+
+  private isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
 
   @Input()
   backgroundImageFn: Emoji['backgroundImageFn'] = (set: string, sheetSize: number) =>
@@ -153,23 +154,29 @@ export class PickerComponent implements OnInit, OnDestroy {
 
   constructor(
     private ngZone: NgZone,
-    private renderer: Renderer2,
     private ref: ChangeDetectorRef,
     private frequently: EmojiFrequentlyService,
-    @Inject(PLATFORM_ID) private platformId: string,
+    private emojiLoaderService: EmojiLoaderService,
   ) {}
 
-  ngOnInit() {
+  async ngOnInit() {
     // measure scroll
     this.measureScrollbar = measureScrollbar();
 
     this.i18n = { ...I18N, ...this.i18n };
     this.i18n.categories = { ...I18N.categories, ...this.i18n.categories };
     this.skin =
-      JSON.parse(
-        (isPlatformBrowser(this.platformId) && localStorage.getItem(`${this.NAMESPACE}.skin`)) ||
-          'null',
-      ) || this.skin;
+      JSON.parse((this.isBrowser && localStorage.getItem(`${this.NAMESPACE}.skin`)) || 'null') ||
+      this.skin;
+
+    const categories = await firstValueFrom(this.emojiLoaderService.getCategories());
+
+    // We can't cancel the code from being executed if the above promise gets resolved
+    // after the component is destroyed. This is the safest way to have a variable that
+    // is set when the component is destroyed and returned from the execution scope.
+    if (this.destroyed) {
+      return;
+    }
 
     const allCategories = [...categories];
 
@@ -271,7 +278,7 @@ export class PickerComponent implements OnInit, OnDestroy {
       // component and going down to the children.
       this.ref.detectChanges();
 
-      isPlatformBrowser(this.platformId) &&
+      this.isBrowser &&
         this.ngZone.runOutsideAngular(() => {
           // The `updateCategoriesSize` doesn't change properties that are used
           // in templates, thus this is run in the context of the root zone to avoid
@@ -282,19 +289,22 @@ export class PickerComponent implements OnInit, OnDestroy {
         });
     });
 
-    this.ngZone.runOutsideAngular(() => {
-      // DOM events that are listened by Angular inside the template trigger change detection
-      // and also wrapped into additional functions that call `markForCheck()`. We listen `scroll`
-      // in the context of the root zone since it will not trigger change detection each time
-      // the `scroll` event is dispatched.
-      this.scrollListener = this.renderer.listen(this.scrollRef.nativeElement, 'scroll', () => {
-        this.handleScroll();
+    this.isBrowser &&
+      this.ngZone.runOutsideAngular(() => {
+        // DOM events that are listened to by Angular inside the template trigger
+        // change detection and are also wrapped into additional functions that call
+        // `markForCheck()`. We listen for the `scroll` event in the context of the root
+        // zone since it will not trigger change detection each time the `scroll` event
+        // is dispatched.
+        fromEvent(this.scrollRef.nativeElement, 'scroll')
+          .pipe(takeUntil(this.destroy$))
+          .subscribe(() => this.handleScroll());
       });
-    });
   }
 
   ngOnDestroy(): void {
-    this.scrollListener?.();
+    this.destroyed = true;
+    this.destroy$.next();
     // This is called here because the component might be destroyed
     // but there will still be a `requestAnimationFrame` callback in the queue
     // that calls `detectChanges()` on the `ViewRef`. This will lead to a runtime

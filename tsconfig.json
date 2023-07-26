@@ -19,6 +19,10 @@
     "module": "es2020",
     "lib": ["es2022", "dom"],
     "paths": {
+      "@ctrl/ngx-emoji-mart": ["./src/lib/picker/public_api"],
+      "@ctrl/ngx-emoji-mart/types": ["./src/lib/picker/types/index"],
+      "@ctrl/ngx-emoji-mart/loader": ["./src/lib/picker/loader/index"],
+      "@ctrl/ngx-emoji-mart/emojis": ["./src/lib/picker/emojis/index"],
       "@ctrl/ngx-emoji-mart/ngx-emoji": ["./src/lib/picker/ngx-emoji/index"]
     }
   },
