@@ -1,4 +1,4 @@
-import { SkinData } from './data.interfaces';
+import type { SkinData } from '@ctrl/ngx-emoji-mart/types';
 export const skins: SkinData[] = [
   {
     name: 'Emoji Modifier Fitzpatrick Type-1-2',

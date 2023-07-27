@@ -1,4 +1,4 @@
-import { EmojiCategory } from './data.interfaces';
+import type { EmojiCategory } from '@ctrl/ngx-emoji-mart/types';
 export const categories: EmojiCategory[] = [
   {
     id: 'people',

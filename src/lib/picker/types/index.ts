@@ -1,4 +1,28 @@
-import { Emoji } from '../emoji.component';
+import { EventEmitter } from '@angular/core';
+
+export interface EmojiEvent {
+  emoji: EmojiData;
+  $event: Event;
+}
+
+export interface Emoji {
+  /** Renders the native unicode emoji */
+  isNative: boolean;
+  forceSize: boolean;
+  tooltip: boolean;
+  skin: 1 | 2 | 3 | 4 | 5 | 6;
+  sheetSize: 16 | 20 | 32 | 64 | 72;
+  sheetRows?: number;
+  set: 'apple' | 'google' | 'twitter' | 'facebook' | '';
+  size: number;
+  emoji: string | EmojiData;
+  backgroundImageFn: (set: string, sheetSize: number) => string;
+  fallback?: (data: any, props: any) => string;
+  emojiOver: EventEmitter<EmojiEvent>;
+  emojiLeave: EventEmitter<EmojiEvent>;
+  emojiClick: EventEmitter<EmojiEvent>;
+  imageUrlFn?: (emoji: EmojiData | null) => string;
+}
 
 export interface EmojiCategory {
   id: string;

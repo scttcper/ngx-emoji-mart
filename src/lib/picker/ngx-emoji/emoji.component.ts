@@ -13,33 +13,9 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EMPTY, Subject, fromEvent, switchMap, takeUntil } from 'rxjs';
+import type { Emoji, EmojiData } from '@ctrl/ngx-emoji-mart/types';
 
-import { EmojiData } from './data/data.interfaces';
 import { DEFAULT_BACKGROUNDFN, EmojiService } from './emoji.service';
-
-export interface Emoji {
-  /** Renders the native unicode emoji */
-  isNative: boolean;
-  forceSize: boolean;
-  tooltip: boolean;
-  skin: 1 | 2 | 3 | 4 | 5 | 6;
-  sheetSize: 16 | 20 | 32 | 64 | 72;
-  sheetRows?: number;
-  set: 'apple' | 'google' | 'twitter' | 'facebook' | '';
-  size: number;
-  emoji: string | EmojiData;
-  backgroundImageFn: (set: string, sheetSize: number) => string;
-  fallback?: (data: any, props: any) => string;
-  emojiOver: EventEmitter<EmojiEvent>;
-  emojiLeave: EventEmitter<EmojiEvent>;
-  emojiClick: EventEmitter<EmojiEvent>;
-  imageUrlFn?: (emoji: EmojiData | null) => string;
-}
-
-export interface EmojiEvent {
-  emoji: EmojiData;
-  $event: Event;
-}
 
 @Component({
   selector: 'ngx-emoji',

@@ -1,9 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import { ComponentFixture, TestBed, fakeAsync, tick, waitForAsync } from '@angular/core/testing';
+import { of } from 'rxjs';
 
 import { PickerModule } from './picker.module';
 import { PickerComponent } from './picker.component';
+import { provideEmojiLoader } from './loader';
+import { categories, emojis, skins } from './emojis';
 
 describe('PickerComponent', () => {
   @Component({
@@ -20,13 +23,21 @@ describe('PickerComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [TestComponent],
+      providers: [
+        provideEmojiLoader({
+          skins: () => of(skins),
+          emojis: () => of(emojis),
+          categories: () => of(categories),
+        }),
+      ],
     }).compileComponents();
   }));
 
-  beforeEach(() => {
+  beforeEach(async () => {
     fixture = TestBed.createComponent(TestComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+    await fixture.whenStable();
   });
 
   it('should update preview on `mouseenter` and `mouseleave` but should not trigger change detection', fakeAsync(() => {

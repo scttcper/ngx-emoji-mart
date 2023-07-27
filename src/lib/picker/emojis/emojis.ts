@@ -1,4 +1,4 @@
-import { CompressedEmojiData } from './data.interfaces';
+import type { CompressedEmojiData } from '@ctrl/ngx-emoji-mart/types';
 export const emojis: CompressedEmojiData[] = [
   {
     name: 'Grinning Face',

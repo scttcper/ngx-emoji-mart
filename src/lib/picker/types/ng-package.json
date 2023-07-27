@@ -1,0 +1,6 @@
+{
+  "lib": {
+    "entryFile": "index.ts"
+  },
+  "dest": "../../../../dist/emojis"
+}

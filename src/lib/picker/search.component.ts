@@ -111,15 +111,18 @@ export class SearchComponent implements AfterViewInit, OnInit, OnDestroy {
       this.icon = this.icons.delete;
       this.isSearching = true;
     }
-    const emojis = this.emojiSearch.search(
-      this.query,
-      this.emojisToShowFilter,
-      this.maxResults,
-      this.include,
-      this.exclude,
-      this.custom,
-    ) as any[];
-    this.searchResults.emit(emojis);
+    this.emojiSearch
+      .search(
+        this.query,
+        this.emojisToShowFilter,
+        this.maxResults,
+        this.include,
+        this.exclude,
+        this.custom,
+      )
+      .subscribe(emojis => {
+        this.searchResults.emit(emojis as any[]);
+      });
   }
 
   handleChange() {

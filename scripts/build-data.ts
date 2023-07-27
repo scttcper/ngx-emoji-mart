@@ -3,15 +3,15 @@ import fs from 'fs';
 import path from 'node:path';
 import inflection from 'inflection';
 import stringifyObject from 'stringify-object';
-import { fileURLToPath } from "node:url";
 
-import { EmojiData } from './emoji.js';
+import { EmojiData } from './emoji';
 
 // @ts-ignore
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 import * as emojiLib from 'emojilib';
+
 // cast types to emojiData
 // @ts-expect-error
 const emojiData: EmojiData[] = emojiDataRaw.default;
@@ -29,14 +29,14 @@ const catPairs = [
   ['Travel & Places', 'places'],
   ['Objects', 'objects'],
   ['Symbols', 'symbols'],
-  ['Flags', 'flags']
+  ['Flags', 'flags'],
 ];
 const sets = ['apple', 'google', 'twitter', 'facebook'];
 
 const unifiedToNative = (unified: string) => {
   const codePoints = unified.split('-').map(u => parseInt(`0x${u}`, 16));
   return String.fromCodePoint(...codePoints);
-}
+};
 
 catPairs.forEach((category, i) => {
   const [name, id] = category;
@@ -136,9 +136,7 @@ emojiData.forEach((datum: any) => {
     delete datum.skin_variations;
   }
 
-  datum.shortNames = datum.short_names.filter(
-    (i: any) => i !== datum.short_name
-  );
+  datum.shortNames = datum.short_names.filter((i: any) => i !== datum.short_name);
   delete datum.short_names;
 
   // renaming
@@ -192,11 +190,7 @@ const people = categories[1];
 const smileysAndPeople = {
   id: 'people',
   name: 'Smileys & People',
-  emojis: [
-    ...smileys.emojis.slice(0, 114),
-    ...people.emojis,
-    ...smileys.emojis.slice(114)
-  ]
+  emojis: [...smileys.emojis.slice(0, 114), ...people.emojis, ...smileys.emojis.slice(114)],
 };
 
 categories.unshift(smileysAndPeople);
@@ -204,39 +198,30 @@ categories.splice(1, 2);
 
 const sEmojis = stringifyObject(emojis, {
   inlineCharacterLimit: 25,
-  indent: '  '
+  indent: '  ',
 });
-let doc = `import { CompressedEmojiData } from './data.interfaces';
+let doc = `import type { CompressedEmojiData } from '@ctrl/ngx-emoji-mart/types';
 export const emojis: CompressedEmojiData[] = ${sEmojis};
 `;
-fs.writeFileSync(
-  path.join(__dirname, '../src/lib/picker/ngx-emoji/data/emojis.ts'),
-  doc
-);
+fs.writeFileSync(path.join(__dirname, '../src/lib/picker/emojis/emojis.ts'), doc);
 
 const sCategories = stringifyObject(categories, {
   inlineCharacterLimit: 25,
-  indent: '  '
+  indent: '  ',
 });
-doc = `import { EmojiCategory } from './data.interfaces';
+doc = `import type { EmojiCategory } from '@ctrl/ngx-emoji-mart/types';
 export const categories: EmojiCategory[] = ${sCategories};
 `;
-fs.writeFileSync(
-  path.join(__dirname, '../src/lib/picker/ngx-emoji/data/categories.ts'),
-  doc
-);
+fs.writeFileSync(path.join(__dirname, '../src/lib/picker/emojis/categories.ts'), doc);
 
 const sSkins = stringifyObject(skins, {
   inlineCharacterLimit: 25,
-  indent: '  '
+  indent: '  ',
 });
-doc = `import { SkinData } from './data.interfaces';
+doc = `import type { SkinData } from '@ctrl/ngx-emoji-mart/types';
 export const skins: SkinData[] = ${sSkins};
 `;
-fs.writeFileSync(
-  path.join(__dirname, '../src/lib/picker/ngx-emoji/data/skins.ts'),
-  doc
-);
+fs.writeFileSync(path.join(__dirname, '../src/lib/picker/emojis/skins.ts'), doc);
 
 // const sShortNames = stringifyObject(short_names, {
 //   inlineCharacterLimit: 25,
