@@ -378,9 +378,11 @@ export class PickerComponent implements OnInit, OnDestroy {
       if (target.scrollTop === 0) {
         // hit the TOP
         activeCategory = this.categories.find(n => n.first === true);
+        this.categoryRefs.forEach((component) => component.handleScroll(target.scrollTop));
       } else if (target.scrollHeight - target.scrollTop === this.clientHeight) {
         // scrolled to bottom activate last category
         activeCategory = this.categories[this.categories.length - 1];
+        this.categoryRefs.forEach((component) => component.handleScroll(target.scrollTop));
       } else {
         // scrolling
         for (const category of this.categories) {
