@@ -57,6 +57,8 @@ export class EmojiSearch {
     let results: EmojiData[] | undefined;
     let pool = this.originalPool;
 
+    value = this.extractShortNameForEmoji(value, pool)
+
     if (value.length) {
       if (value === '-' || value === '-1') {
         return [this.emojisList['-1']];
@@ -227,5 +229,19 @@ export class EmojiSearch {
     addToSearch(emoticons, false);
 
     return search.join(',');
+  }
+
+  extractShortNameForEmoji(value: string, pool: any[]): string {
+    if(value.codePointAt(0) && Object.values(pool).some((singlePool: any) => singlePool.unified?.toLowerCase() === value.codePointAt(0)!.toString(16).toLowerCase())) {
+      value = (Object.values(pool).find((singlePool:any) => {
+        return singlePool.unified?.toLowerCase() === value.codePointAt(0)!.toString(16).toLowerCase()
+      }) as any).shortName
+    } else if(Object.values(pool).some((singlePool: any) => singlePool.native?.toLowerCase() === value.toLowerCase())) {
+      value = (Object.values(pool).find((singlePool:any) => {
+        return singlePool.native?.toLowerCase() === value.toLowerCase()
+      }) as any).shortName
+    }
+
+    return value
   }
 }
